@@ -87,6 +87,24 @@ The relay sends a summary to the room when it changes, at most every ten seconds
 | `toDateString(date)` / `addDays(date, n)` | Local `YYYY-MM-DD` helpers, so every screen agrees on "today".                                                                   |
 | `metricIds`, `targetIds`                  | The fixed id lists.                                                                                                              |
 
+## Automatic alerts
+
+Built by lane 18 in `autoAlert.ts`. It starts by itself in the browser, like the simulator.
+
+| Name | Does | Use |
+| --- | --- | --- |
+| `useAutoAlert()` | `{ pending, fallDetection, vitalsWatch, motionAvailable }`. `pending` is `null` or `{ cause, secondsLeft }`, `cause` is `fall`, `heart-rate` or `oxygen` | Show the countdown. The shell's `AutoAlertBanner` and the watch view already do |
+| `setFallDetection(on)` | Listens to this device's motion sensor. Turning it on asks for access where the browser requires it (iOS). Does nothing while `motionAvailable` is false | A `Switch` |
+| `setVitalsWatch(on)` | Watches the latest vitals of the active member profile. On at the start | A `Switch` |
+| `cancelAutoAlert()` | Stops the countdown. Nothing is raised | The "I'm OK" button |
+| `simulateAutoAlert(cause)` | The same countdown for `fall` or `heart-rate`. The message ends " (test)" | "Try it" buttons |
+
+- **Triggers.** A fall: near weightlessness, a hard impact, then stillness with the device turned (`detectFall`, a pure function over samples). Vitals: heart rate at or above 170 or at or below 35, or blood oxygen at or below 88%, for 20 seconds; once per episode, again only after a minute back in range. All limits are in `AUTO_ALERT_LIMITS` and are illustrative.
+- **Never from simulated readings.** The demo profile and any `simulated` reading never start a countdown; use `simulateAutoAlert`.
+- **The countdown** lasts 10 seconds. When it runs out the module calls `raiseAlert('emergency', origin, message, 'emergency')`, origin `watch` on `/w` and `console` elsewhere. A real detection while an emergency alert is already open starts nothing. Switching profile cancels it.
+- **The message** says what was measured, then the profile's role, never the display name: "Fall detected, no response · Flight engineer", "Heart rate 182 bpm for 20 seconds, no response", "Blood oxygen 86% for 20 seconds, no response".
+- The two switches are saved on this device under `ophiuchus:v1:autoAlert`.
+
 The crew-network names (`useSocialAccount`, `joinSocial` and the rest of CONTRACTS section 9, "Social") are added by lane 17 in `social/`.
 
 ## Inside the folder

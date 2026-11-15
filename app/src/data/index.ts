@@ -109,3 +109,15 @@ if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') {
   installSimulator()
   installRelay()
 }
+
+// --- Automatic alerts (CONTRACTS section 9, built by lane 18) ---
+export {
+  useAutoAlert,
+  setFallDetection,
+  setVitalsWatch,
+  cancelAutoAlert,
+  simulateAutoAlert,
+} from './autoAlert'
+import { installAutoAlert } from './autoAlert'
+if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') installAutoAlert()
+// --- end of automatic alerts ---
