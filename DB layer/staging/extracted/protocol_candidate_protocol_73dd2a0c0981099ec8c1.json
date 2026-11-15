@@ -1,0 +1,115 @@
+{
+  "source_id": "source_272ff97648e63fa98488",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_272ff97648e63fa98488",
+    "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+    "chunk_id": "chunk_fc0e62f031682e6d151e",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1319",
+    "text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. ",
+    "original_text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_385f44abcfe940fa01f9",
+        "entity_type": "conditions",
+        "canonical_name": "sleep-wake cycle disruption",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better"
+      },
+      {
+        "local_id": "treatments_b6ce10da5f1519af93af",
+        "entity_type": "treatments",
+        "canonical_name": "LED light simulation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better"
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_385f44abcfe940fa01f9",
+        "treatment": "treatments_b6ce10da5f1519af93af",
+        "indication": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "required_conditions": null,
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": null,
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better"
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_73dd2a0c0981099ec8c1",
+        "related_condition_id": "conditions_385f44abcfe940fa01f9",
+        "treatment_id": "treatments_b6ce10da5f1519af93af",
+        "indication": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "required_conditions": "",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "",
+        "source_id": "source_272ff97648e63fa98488",
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_ef67a77da7fb83fcf3aa",
+    "claim_id": "claim_ed247eadecf402408a4f"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}

@@ -15,7 +15,15 @@ def create_app(agent=None, tokens=None):
         mode = os.getenv('HEALTH_KNOWLEDGE_MODE', 'draft')
         if mode not in ('draft', 'approved'):
             raise ValueError('HEALTH_KNOWLEDGE_MODE must be draft or approved')
-        agent = PreventiveHealthAgent(HealthStore(os.getenv('HEALTH_DB_PATH', str(Path(__file__).resolve().parents[1] / 'data' / 'health.sqlite3'))), KnowledgeTools(root=DB_LAYER / 'DB' / mode, governance=governance))
+        protocol_mode = os.getenv('HEALTH_PROTOCOL_MODE', 'candidate_review')
+        if protocol_mode not in ('approved', 'candidate_review'):
+            raise ValueError('HEALTH_PROTOCOL_MODE must be approved or candidate_review')
+        if protocol_mode == 'candidate_review' and mode != 'draft':
+            raise ValueError('candidate_review requires HEALTH_KNOWLEDGE_MODE=draft')
+        candidate_config_path = os.getenv('HEALTH_CANDIDATE_CONFIG')
+        candidate_config = json.loads(Path(candidate_config_path).read_text(encoding='utf-8')) if candidate_config_path else None
+        agent = PreventiveHealthAgent(HealthStore(os.getenv('HEALTH_DB_PATH', str(Path(__file__).resolve().parents[1] / 'data' / 'health.sqlite3'))),
+            KnowledgeTools(root=DB_LAYER / 'DB' / mode, governance=governance), protocol_mode=protocol_mode, candidate_config=candidate_config)
     tokens = tokens if tokens is not None else json.loads(os.getenv('HEALTH_API_TOKENS', '{}'))
     app = FastAPI(title='Orbital Health Recommendation Agent', version='0.1.0')
 

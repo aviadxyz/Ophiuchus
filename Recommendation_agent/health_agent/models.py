@@ -75,6 +75,11 @@ class Recommendation(Model):
     recheck_time: str | None = None
     requires_medical_approval: bool = False
     reasoning_summary: str
+    protocol_origin: Literal['approved_protocol', 'draft_candidate'] = 'approved_protocol'
+    protocol_review_status: str | None = None
+    matching_condition_ids: list[str] = Field(default_factory=list)
+    matching_relation_ids: list[str] = Field(default_factory=list)
+    applicability_limitations: list[str] = Field(default_factory=list)
 
 class Assessment(Model):
     assessment_id: str
@@ -93,6 +98,7 @@ class Assessment(Model):
     rules_version: str
     professional_review_status: str = 'not_reviewed'
     research_knowledge: list[dict[str, Any]] = Field(default_factory=list)
+    protocol_mode: Literal['approved', 'candidate_review'] = 'approved'
 
 class LLMSelection(Model):
     protocol_ids: list[str] = Field(max_length=5)

@@ -1,0 +1,115 @@
+{
+  "source_id": "source_a52493076e4308064964",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_a52493076e4308064964",
+    "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+    "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1421",
+    "text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. ",
+    "original_text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_a43ce5e9e0220b25a587",
+        "entity_type": "conditions",
+        "canonical_name": "anxiety",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth."
+      },
+      {
+        "local_id": "treatments_acb57b3cb059a9fa5c7b",
+        "entity_type": "treatments",
+        "canonical_name": "keeping a regular journal",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_a43ce5e9e0220b25a587",
+        "treatment": "treatments_acb57b3cb059a9fa5c7b",
+        "indication": "NASA encourages astronauts to explore self-care options including keeping a regular journal.",
+        "required_conditions": null,
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": null,
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth."
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_18933cb62234938546bb",
+        "related_condition_id": "conditions_a43ce5e9e0220b25a587",
+        "treatment_id": "treatments_acb57b3cb059a9fa5c7b",
+        "indication": "NASA encourages astronauts to explore self-care options including keeping a regular journal.",
+        "required_conditions": "",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_9f133da3bc8fd2e3cf75",
+    "claim_id": "claim_04235d1fa72b1b6d15c2"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}

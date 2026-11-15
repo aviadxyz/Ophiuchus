@@ -1,0 +1,116 @@
+{
+  "assessment_id": "assessment_78bc97fc53567d4fc30cc36d",
+  "astronaut_id": "demo",
+  "assessment_status": "medical_review_required",
+  "risk_level": "undetermined",
+  "escalation_required": false,
+  "escalation_status": "not_required",
+  "recommendations": [
+    {
+      "recommendation_id": "recommendation_6b19c9e9a17310d2b22d5217",
+      "title": "Review: LED light simulation",
+      "description": "Research candidate for discussion with a medical professional. Individual safety and applicability are unconfirmed; this is not an instruction to start or change care.",
+      "category": "preventive",
+      "priority": 1,
+      "severity": "undetermined",
+      "status": "requires_review",
+      "related_risk_ids": [],
+      "supporting_metric_ids": [],
+      "protocol_id": "protocol_73dd2a0c0981099ec8c1",
+      "evidence_ids": [
+        "evidence_4070e6fcc8a6f75b0cc5"
+      ],
+      "source_links": [
+        "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/"
+      ],
+      "frequency_label": null,
+      "recheck_time": null,
+      "requires_medical_approval": true,
+      "reasoning_summary": "Matched trusted recorded condition(s): conditions_385f44abcfe940fa01f9. Documented mission context matched; treatment eligibility is not established.",
+      "protocol_origin": "draft_candidate",
+      "protocol_review_status": "pending",
+      "matching_condition_ids": [
+        "conditions_385f44abcfe940fa01f9"
+      ],
+      "matching_relation_ids": [
+        "relation_ef67a77da7fb83fcf3aa"
+      ],
+      "applicability_limitations": [
+        "Research candidate only; individual safety and applicability are not established.",
+        "Contraindications and complete eligibility requirements are undocumented; medical review is required.",
+        "A condition association or monitored biomarker is not a diagnosis or evidence of treatment benefit for this astronaut."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "metric": "sleep_duration",
+      "current_value": 5.8,
+      "baseline_value": 7.2,
+      "unit": "hours",
+      "deviation": -1.4000000000000004,
+      "moving_average": 5.8,
+      "slope_per_day": null,
+      "trend": "insufficient_data",
+      "finding_type": "statistical_observation",
+      "data_quality": "limited",
+      "measurement_ids": [
+        "synthetic-sleep-1"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "observation_4215026274bdf78b7d43876b",
+      "risk_type": "sleep_duration",
+      "severity": "undetermined",
+      "supporting_measurement_ids": [
+        "synthetic-sleep-1"
+      ],
+      "rule_ids": [],
+      "evidence_ids": [],
+      "uncertainty": "No applicable approved assessment criterion.",
+      "escalation_required": false,
+      "escalation_protocol_id": null
+    }
+  ],
+  "validation": {
+    "status": "valid",
+    "normalized": [
+      {
+        "measurement_id": "synthetic-sleep-1",
+        "astronaut_id": "demo",
+        "metric": "sleep_duration",
+        "value": 5.8,
+        "unit": "hours",
+        "timestamp": "2026-11-15T12:26:31.670490Z",
+        "source": "synthetic-device",
+        "quality": null
+      }
+    ],
+    "rejected": [],
+    "warnings": [],
+    "data_quality": "available"
+  },
+  "limitations": [
+    "Candidate-review mode: all returned cards require medical review and authorize no clinical action.",
+    "Draft CSV research is unreviewed informational context; it does not authorize medical actions.",
+    "No approved preventive action is available. Medical review may be required.",
+    "SYNTHETIC profile: recorded conditions and measurements are demonstration data."
+  ],
+  "generated_at": "2026-11-15T12:26:31.704870Z",
+  "model_version": "synthetic-review-selection-stub",
+  "rules_version": "unconfigured;candidate_matching=draft-candidate-context-v1",
+  "professional_review_status": "not_reviewed",
+  "research_knowledge": [
+    {
+      "entities": [],
+      "relationships": [],
+      "claims": [],
+      "clinical_action_authorized": false,
+      "knowledge_mode": "draft_research",
+      "research_only": true
+    }
+  ],
+  "protocol_mode": "candidate_review"
+}

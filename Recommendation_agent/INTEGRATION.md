@@ -2,6 +2,18 @@
 
 All routes require `Authorization: Bearer <server-configured-token>` with permission for the requested astronaut. API tokens belong in a trusted backend proxy, not bundled Base44/browser source. Configure a same-origin proxy to this service; no wildcard CORS policy is enabled.
 
+## Candidate-review mode
+
+The recommendation API defaults to `HEALTH_PROTOCOL_MODE=candidate_review` with `HEALTH_KNOWLEDGE_MODE=draft`. Set the protocol mode to `approved` to retain the original approved-action behavior. No frontend or Med Bot source was changed.
+
+The existing `recommendations` array may now contain personally matched draft records with `status: requires_review`, `requires_medical_approval: true`, `protocol_origin: draft_candidate`, and the original `protocol_review_status: pending`. The assessment has `protocol_mode: candidate_review` and remains `medical_review_required`. This is not confirmation that an intervention is safe or approved.
+
+Additional per-card provenance fields are `matching_condition_ids`, `matching_relation_ids`, and `applicability_limitations`. Display the limitations and review badge prominently. Do not attach treatment-start controls or display the card as an approved action. Candidate frequency and recheck fields remain null. The existing evidence endpoint returns actual draft source records marked `research_only: true` with their original review flags. These snapshots are saved with the assessment and remain subject to astronaut authorization.
+
+Condition-only matches have no supporting measurement IDs. Do not invent metric links in the UI. Condition IDs and mission applicability fields come from trusted profile provisioning; client-supplied `mission_context` cannot add diagnoses or select a mission phase for this path. With the present CSV graph, the agent needs a matching recorded condition because the nine candidates have no direct biomarker links. Missing personal or mission context legitimately produces zero cards.
+
+See [examples/candidate_review_response.json](examples/candidate_review_response.json) for a response generated from the actual CSV and a synthetic profile. The selection model in that demonstration is an explicitly labeled stub; production requests continue to use the installed local Ollama model. Use a new request ID after changing mode or profile/configuration because retries return the original saved assessment.
+
 ## Endpoints
 
 | Method | Path | Result |

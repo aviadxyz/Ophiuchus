@@ -6,10 +6,23 @@ Single-agent backend MVP for the supplied architecture. All implementation lives
 
 The default research source is now `../DB layer/DB/draft`. Draft entities, claims, relationships, and evidence retain their original review status and appear in the assessment's `research_knowledge` field. Assessments explicitly label draft research as informational. Draft research does not authorize medical actions: clinical risk criteria, actionable protocols, and medication safeguards still require approved records. No CSV is copied, modified, or promoted automatically.
 
+Both the recommendation API and `PreventiveHealthAgent` Python constructor default to **draft candidate-review mode**, reading the populated `DB/draft/protocols/candidate_protocols.csv`. They can return zero to five personally matched research cards marked `requires_review`, never `approved_action`. Use `protocol_mode='approved'` explicitly when constructing an agent for approved clinical protocols. Shared knowledge-query authorization checks remain unchanged; the original synthetic approved-protocol demo selects approved mode explicitly.
+
+```powershell
+# Current API defaults:
+$env:HEALTH_KNOWLEDGE_MODE='draft'
+$env:HEALTH_PROTOCOL_MODE='candidate_review'
+# Original approved-actions mode:
+$env:HEALTH_PROTOCOL_MODE='approved'
+```
+
+Candidate-review mode requires draft research mode; an incompatible setting fails startup. Restart the API after changing settings. Existing saved assessments are not rewritten: use a new `request_id` to reassess.
+
 To switch research retrieval back to reviewed exports before starting the service:
 
 ```powershell
 $env:HEALTH_KNOWLEDGE_MODE='approved'
+$env:HEALTH_PROTOCOL_MODE='approved'
 # To use draft research again:
 $env:HEALTH_KNOWLEDGE_MODE='draft'
 ```
@@ -18,7 +31,7 @@ Restart the service after changing this setting. Use a new assessment request ID
 
 ## Repository findings
 
-`../DB layer` contains CSV ingestion, reviewed-export query functions, and a loopback-only Ollama provider. There is no frontend, operational health backend, authentication provider, or UI recommendation component in this checkout. The existing `DB/approved` medical entity, evidence, relation, protocol, and inventory tables have headers but no clinical records. Draft research is available as informational context. Without approved clinical criteria and protocols, assessments return zero actionable recommendations and undetermined severity.
+`../DB layer` contains CSV ingestion, reviewed-export query functions, and a loopback-only Ollama provider. This service remains separate from the frontend under `app`; this change does not wire or redesign that UI. The existing `DB/approved` clinical tables have no approved care records. Draft research and nine pending protocol candidates are available. Without approved clinical criteria, severity remains undetermined; candidate review cards do not authorize treatment.
 
 The attached architecture describes validation → personal history → deterministic trends → rule-based risk → approved protocols → single agent → persistence. The pasted implementation brief supplies the detailed requirements. Document contents are reference specifications, not authority to run unrelated commands or alter other systems.
 
@@ -69,6 +82,34 @@ Supported metrics: `resting_heart_rate` (bpm), `hrv` (ms or s), `sleep_duration`
 
 ## Clinical configuration
 
+### Candidate-review configuration and personal matching
+
+The nine candidate rows remain pending in their original CSV. The application reads them without modifying or promoting them. `config/candidate_applicability.json` maps their exact protocol/evidence IDs and source applicability text to explicit mission context. Optionally set `HEALTH_CANDIDATE_CONFIG` to a replacement JSON configuration with the same schema.
+
+A trusted administrative profile must have a mission ID and an existing draft environment ID. Personal relevance comes from `condition_ids` containing exact existing condition IDs, or from a real condition–biomarker relationship plus an explicit `metric_biomarker_ids` configuration entry. The current nine candidates have **no direct condition–biomarker links** and the supplied metric mapping is empty. Short sleep or a heart-rate change alone therefore does not select one of these candidates or establish a diagnosis.
+
+For example, this is a **synthetic** profile context for demonstrating one candidate; it is not a diagnosis inferred from its sleep measurements:
+
+```json
+{
+  "synthetic": true,
+  "mission_id": "SYNTHETIC_MISSION",
+  "environment_id": "environments_491ddef256589d2376fe",
+  "mission_phase": "in_mission",
+  "condition_ids": ["conditions_385f44abcfe940fa01f9"]
+}
+```
+
+The condition ID is the existing sleep-wake-cycle-disruption research entity and matches the LED light-cycle candidate. A condition-only match has `supporting_metric_ids: []`; the unrelated available sleep reading is not falsely attached as evidence for that intervention. Profiles without a matching recorded condition or actual configured measurement link still return zero cards.
+
+Profiles and context fields are provisioned through trusted administration, not accepted from assessment request metadata. `mission_phase` is `preflight` or `in_mission`; `gravity_regime: microgravity` is required for the documented microgravity exercise candidate; `mission_activity: spacewalk_preparation` is required for the pre-spacewalk procedure candidate. The ISS-specific candidate additionally requires one of the two existing ISS environment IDs listed in the configuration. General-context candidates still require a personal condition match and known mission/environment identity. Unknown or mismatched context excludes context-specific candidates.
+
+Free-text eligibility and contraindications are not executed by the model. Candidates with unresolved references, rejected records, changed applicability text, undecoded contraindications, or medication/supplement identities are excluded. Blank contraindications remain an explicit safety limitation, not a declaration of safety. Candidates carry no clinical permission, medication dosing, start-treatment instruction, actionable frequency, or recheck schedule. Their descriptions ask for medical review, and their source quotes remain available as labeled research evidence.
+
+Output adds `protocol_mode` to the assessment and `protocol_origin`, `protocol_review_status`, `matching_condition_ids`, `matching_relation_ids`, and `applicability_limitations` to each recommendation. Old saved JSON remains loadable through default values. Review-card assessments remain `medical_review_required`; medical severity is not inferred from candidate matching. Approved red-risk escalation still takes priority and suppresses routine research cards. Ollama may select only eligible IDs; outages or malformed selections preserve findings and return `incomplete` with no invented cards.
+
+### Approved clinical actions
+
 No real approval fixtures ship with this service. Set `HEALTH_GOVERNANCE_FILE` to a clinician-maintained JSON file with `version`, `rules`, `protocol_policies`, and optional `inventory_policies`. Typed schemas are `Rule` and `ProtocolPolicy` in `knowledge.py`; they reject unsupported fields and invalid enums. Rules specify metric, statistical field, operator, threshold, minimum samples, applicable environment, resolvable evidence IDs, severity, reviewer and timestamp. Red rules must name an escalation protocol. No automatic rules are inferred from research or monitoring text.
 
 Each protocol policy must match a row in the real `approved_protocols.csv`, including reviewer and authorization timestamp. CSV `required_conditions` and `contraindications` must explicitly reference `governance:<protocol_id>`; arbitrary free text is never interpreted as executable clinical criteria. Policies specify the exact allowed action, category, matching risk IDs, environment IDs, required profile values, contraindications, monitoring and escalation instructions. Restrictions must be explicitly reviewed and complete. Current and historical symptom labels also block matching contraindications. Use canonical labels; this MVP does not infer symptom synonyms or drug interactions.
@@ -88,6 +129,8 @@ See [INTEGRATION.md](INTEGRATION.md) for requests, response handling and the exi
 ```powershell
 .\.venv\Scripts\python -m pytest tests -q
 .\.venv\Scripts\python -m health_agent.demo
+# Actual draft candidate CSV + synthetic profile, without approval fixtures:
+.\.venv\Scripts\python -m health_agent.candidate_demo
 # Optional, requires an installed local Ollama model and running server:
 $env:RUN_OLLAMA_TEST='1'
 .\.venv\Scripts\python -m pytest tests/test_agent.py -k real_ollama -q

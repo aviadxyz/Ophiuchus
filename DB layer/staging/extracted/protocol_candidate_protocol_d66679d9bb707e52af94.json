@@ -1,0 +1,115 @@
+{
+  "source_id": "source_cf2e7b26631f3a802e27",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_cf2e7b26631f3a802e27",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+    "chunk_id": "chunk_01681a5c7f595f792b87",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1591",
+    "text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. ",
+    "original_text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_14c5f743561cc66e4c7e",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate teamwork",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission"
+      },
+      {
+        "local_id": "treatments_5e24dc0bb5823754c367",
+        "entity_type": "treatments",
+        "canonical_name": "team-building exercises",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission"
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_14c5f743561cc66e4c7e",
+        "treatment": "treatments_5e24dc0bb5823754c367",
+        "indication": "NASA astronauts practice team-building skills and exercises before their mission",
+        "required_conditions": "before their mission",
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": null,
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission"
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_d66679d9bb707e52af94",
+        "related_condition_id": "conditions_14c5f743561cc66e4c7e",
+        "treatment_id": "treatments_5e24dc0bb5823754c367",
+        "indication": "NASA astronauts practice team-building skills and exercises before their mission",
+        "required_conditions": "before their mission",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_5a0a49a5c7894198394e",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_b3dc743027083b17f67c",
+    "claim_id": "claim_c0969b040406af1621a6"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}
