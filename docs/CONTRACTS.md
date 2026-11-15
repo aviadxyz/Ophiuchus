@@ -287,6 +287,17 @@ While `shareMood` is on, a new or edited mood check-in updates the shared mood w
 | `startSimulator()` / `stopSimulator()` | Simulated vitals, source `simulated`. Demo profile only |
 | `joinRoom(code)` / `createRoom()` / `leaveRoom()` / `useRoom()` | Pairs this browser with a watch through the relay (section 10). `createRoom` makes a new code, joins it and returns it. `useRoom` gives the current code or none, and the connection state |
 
+**Automatic alerts, from `@/data`** (added Sunday 15 November, built by prompt 18):
+
+| Name | Does |
+|---|---|
+| `useAutoAlert()` | Gives `pending` (none, or `cause` and `secondsLeft`), `fallDetection` (on/off), `vitalsWatch` (on/off) and `motionAvailable` (yes/no). `cause` is `fall`, `heart-rate` or `oxygen` |
+| `setFallDetection(on)` / `setVitalsWatch(on)` | Switch each watcher on this device |
+| `cancelAutoAlert()` | The person answers "I'm OK" during the 10 second countdown. Nothing is raised |
+| `simulateAutoAlert(cause)` | Starts the same countdown for demonstration. `cause` is `fall` or `heart-rate` |
+
+When a countdown runs out, the app calls `raiseAlert('emergency', origin, message, 'emergency')` itself. The message says what was measured and may end with the profile's role. It never holds a display name.
+
 Browser storage keys all start with `ophiuchus:v1:`.
 
 ## 10. Messages between watch and console
