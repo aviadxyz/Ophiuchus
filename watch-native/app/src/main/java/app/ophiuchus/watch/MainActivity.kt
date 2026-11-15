@@ -192,12 +192,13 @@ class MainActivity : Activity() {
             textSize = 10f
             setTextColor(getColor(R.color.text_secondary))
             gravity = Gravity.CENTER
+            setBackgroundColor(getColor(R.color.background))
+            setPadding(0, dp(3), 0, dp(if (resources.configuration.isScreenRound) 12 else 3))
         }
         host.addView(page, matchParent())
         host.addView(
             dotsView,
             FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.BOTTOM)
-                .apply { bottomMargin = dp(if (resources.configuration.isScreenRound) 12 else 4) },
         )
         pageHost = page
         dots = dotsView

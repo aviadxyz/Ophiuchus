@@ -157,6 +157,8 @@ class OphiPage(
     // ---- Asking ----
 
     private fun ask(question: String) {
+        recognizer?.cancel()
+        listening = false
         heard = question
         reply = null
         urgent = false

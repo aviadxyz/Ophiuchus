@@ -66,6 +66,10 @@ fun Context.badge(text: String, color: Int = R.color.text_secondary): TextView =
         setStroke(dp(1), getColor(color))
         cornerRadius = dp(8).toFloat()
     }
+    layoutParams = LinearLayout.LayoutParams(
+        ViewGroup.LayoutParams.WRAP_CONTENT,
+        ViewGroup.LayoutParams.WRAP_CONTENT,
+    ).apply { gravity = Gravity.CENTER_HORIZONTAL }
 }
 
 /** A page body that scrolls, with room for a round face. Rotary input scrolls it. */
