@@ -15,3 +15,6 @@
 - Clean build, typecheck, lint, and test suites passing.
 - Round (200px) and square (400px) scaling verified with zero bezel clipping.
 - Real-time synchronization with `/w?room=CODE` via shared store and BroadcastChannel relay.
+
+## Polish (prompt 19, task 1)
+The companion card now says the browser view is what runs today and a native Wear OS app is in progress.

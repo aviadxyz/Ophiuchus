@@ -56,6 +56,15 @@ function scoreTone(score: number): {
   }
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+/** "2 Nov" from "2026-11-02". */
+function dayAndMonth(d: DateString): string {
+  const [, month, day] = d.split('-')
+  return `${Number(day)} ${MONTHS[Number(month) - 1] ?? ''}`
+}
+
 export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProps) {
   const [selectedDate, setSelectedDate] = useState<DateString>(today)
 
@@ -78,20 +87,12 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
         ).toFixed(1)
       : 'no'
 
-  const formatShortDay = (d: DateString) => {
-    if (d === today) return 'Today'
-    const parts = d.split('-')
-    return `${parts[1]}/${parts[2]}`
-  }
+  const formatShortDay = (d: DateString) => (d === today ? 'Today' : dayAndMonth(d))
 
   const formatDayHeading = (d: DateString) => {
     if (d === today) return 'Today'
-    const dateObj = new Date(`${d}T12:00:00`)
-    return dateObj.toLocaleDateString(undefined, {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric',
-    })
+    const weekday = WEEKDAYS[new Date(`${d}T12:00:00`).getDay()] ?? ''
+    return `${weekday} ${dayAndMonth(d)}`
   }
 
   const formatTime = (isoString: string) => {
@@ -182,10 +183,12 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
 
           {/* Middle section: Day labels (interactive selector buttons) */}
           <div className="grid grid-cols-[repeat(14,minmax(0,1fr))] gap-0.5 py-1">
-            {dates.map((d) => {
+            {dates.map((d, index) => {
               const isSelected = d === selectedDate
               const isToday = d === today
               const hasCheckin = moodByDate.has(d)
+              // Under 1024 px only every other date fits; counting back from today keeps Today shown.
+              const labelWhenNarrow = (dates.length - 1 - index) % 2 === 0
               return (
                 <button
                   key={d}
@@ -202,9 +205,11 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
                   aria-label={`${formatDayHeading(d)}${hasCheckin ? ', has check-in' : ''}`}
                 >
                   <span
-                    className={`text-[9px] sm:text-[11px] font-medium leading-none ${
-                      isToday ? 'font-bold text-accent' : ''
-                    }`}
+                    className={[
+                      'whitespace-nowrap text-[9px] sm:text-[11px] font-medium leading-none',
+                      labelWhenNarrow ? '' : 'invisible lg:visible',
+                      isToday ? 'font-bold text-accent' : '',
+                    ].join(' ')}
                   >
                     {formatShortDay(d)}
                   </span>

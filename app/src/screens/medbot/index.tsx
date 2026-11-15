@@ -415,35 +415,6 @@ export default function MedbotScreen() {
           emptyText="No messages yet. Ask the Med bot a question."
         />
 
-        {/* Flight surgeon forwarding card or quiet action */}
-        {!urgentDetected && showForwardCard && (
-          <div className="my-2">
-            <Card title="This is one for the flight surgeon">
-              <div className="flex flex-col gap-3">
-                <TextField
-                  label="Summary"
-                  value={forwardSummary}
-                  onChange={setForwardSummary}
-                  maxLength={200}
-                />
-                <div className="flex justify-end gap-2">
-                  <Button variant="quiet" size="md" onClick={() => setShowForwardCard(false)}>
-                    Cancel
-                  </Button>
-                  <Button
-                    variant="primary"
-                    size="md"
-                    disabled={!forwardSummary.trim()}
-                    onClick={handleSendToSurgeon}
-                  >
-                    Send to flight surgeon
-                  </Button>
-                </div>
-              </div>
-            </Card>
-          </div>
-        )}
-
         {/* Quiet button under assistant reply when not urgent, not currently showing forward card, and not yet forwarded */}
         {!urgentDetected && !showForwardCard && hasAssistantReply && !hasForwardedLatest && (
           <div className="flex justify-start py-1 px-1">
@@ -490,6 +461,33 @@ export default function MedbotScreen() {
           Demo assistant. Not medical advice.
         </p>
       </section>
+
+      {/* Flight surgeon forwarding card, under the conversation so the thread keeps its height */}
+      {!urgentDetected && showForwardCard && (
+        <Card title="This is one for the flight surgeon">
+          <div className="flex flex-col gap-3">
+            <TextField
+              label="Summary"
+              value={forwardSummary}
+              onChange={setForwardSummary}
+              maxLength={200}
+            />
+            <div className="flex justify-end gap-2">
+              <Button variant="quiet" size="md" onClick={() => setShowForwardCard(false)}>
+                Cancel
+              </Button>
+              <Button
+                variant="primary"
+                size="md"
+                disabled={!forwardSummary.trim()}
+                onClick={handleSendToSurgeon}
+              >
+                Send to flight surgeon
+              </Button>
+            </div>
+          </div>
+        </Card>
+      )}
 
       {/* Sent to Flight Surgeon List Card */}
       <Card title="Sent to flight surgeon">

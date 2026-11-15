@@ -117,8 +117,9 @@ export function HealthOverviewPage() {
       </div>
 
       {/* Bottom: Ophi line / 5-second detail text */}
-      <div className="flex h-10 w-full items-center justify-center px-4 pb-1">
-        <p className="m-0 text-xs leading-snug line-clamp-2 text-text-secondary">
+      {/* Kept to the middle two thirds so both lines stay inside the round face. */}
+      <div className="mx-auto flex h-10 w-2/3 items-center justify-center pb-1">
+        <p className="m-0 line-clamp-2 text-center text-xs leading-snug text-text-secondary">
           {lineText}
         </p>
       </div>

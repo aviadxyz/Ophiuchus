@@ -46,3 +46,6 @@
 7. Click "Send to flight surgeon". Notice the header pill updates to "1 SENT TO SURGEON", and the item appears in the "Sent to flight surgeon" card with "WAITING FOR REPLY".
 8. Click "Withdraw". The status pill updates to "WITHDRAWN".
 9. Click "Clear conversation". Notice the conversation resets to the opening line, but the sent item in "Sent to flight surgeon" is preserved.
+
+## Polish (prompt 19, task 1)
+The "This is one for the flight surgeon" card sits directly under the conversation column, not inside it, so the thread keeps its height.
