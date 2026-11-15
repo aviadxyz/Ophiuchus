@@ -77,6 +77,9 @@ export default {
           } else if (url.pathname.startsWith('/api/social/')) {
             // The whole crew network lives in one Durable Object, which checks the token itself.
             response = await env.CREW_DO.get(env.CREW_DO.idFromName('crew')).fetch(request)
+          } else if (url.pathname.startsWith('/api/ground/')) {
+            // The ground reports share the crew network's object, so no new class or migration.
+            response = await env.CREW_DO.get(env.CREW_DO.idFromName('crew')).fetch(request)
           } else {
             response = new Response(JSON.stringify({ error: 'Not found' }), {
               status: 404,

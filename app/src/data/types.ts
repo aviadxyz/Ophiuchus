@@ -301,6 +301,13 @@ export type VitalInput = {
   source: Source
 }
 
+/**
+ * Ground sharing for one profile (prompt 28). Present only while sharing is on, or while a
+ * report may still be on the server and must be removed. `reportId` and `key` are random and
+ * made on the first send; the key proves this device sent the report.
+ */
+export type GroundShareSetting = { on: boolean; reportId: string; key: string }
+
 /** The station around the crew at one moment. The same for every profile; never stored. */
 export type EnvironmentSample = {
   at: Timestamp

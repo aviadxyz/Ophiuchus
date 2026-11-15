@@ -9,6 +9,7 @@
 // without use, on every write.
 
 import type { DurableObjectContext, Env } from '../types.ts'
+import { GROUND_TABLE_SQL, handleGround } from '../ground/reports.ts'
 import {
   CHALLENGE_IDS,
   cleanAction,
@@ -115,6 +116,8 @@ export class CrewNetworkDurableObject {
         PRIMARY KEY (social_id, challenge)
       );
     `)
+    // The ground reports (prompt 28) share this object. See ../ground/reports.ts.
+    this.run(GROUND_TABLE_SQL)
     // Two accounts left behind by a test run on 15 November. Removing them is harmless once gone.
     for (const row of this.rows(
       `SELECT social_id FROM accounts WHERE handle_key IN ('probe_alpha', 'probe_beta')`,
@@ -209,6 +212,10 @@ export class CrewNetworkDurableObject {
     const url = new URL(request.url)
     const path = url.pathname.replace(/^\/api\/social/, '')
     const now = Date.now()
+
+    if (url.pathname.startsWith('/api/ground/')) {
+      return handleGround(request, this.env, { rows: this.rows.bind(this), run: this.run.bind(this) }, now)
+    }
 
     if (path === '/ping' && request.method === 'GET') return json({ ok: true })
 

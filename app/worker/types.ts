@@ -42,6 +42,8 @@ export interface Env {
     get: (id: DurableObjectId) => DurableObjectStub
   }
   CHAT_MODEL?: string
+  /** The ground code: a secret set in the Cloudflare dashboard, never in the repo. */
+  GROUND_CODE?: string
 }
 
 export interface ChatRequestBody {

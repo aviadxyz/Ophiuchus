@@ -17,11 +17,12 @@ const contractIds = [
   'research',
   'watch',
   'about',
+  'admin',
   'emergency',
 ]
 
 describe('registry', () => {
-  it('collects all sixteen screens from CONTRACTS section 3', () => {
+  it('collects all seventeen screens from CONTRACTS section 3', () => {
     expect(screens.map((s) => s.id).sort()).toEqual([...contractIds].sort())
   })
 
@@ -42,7 +43,7 @@ describe('registry', () => {
       'mood',
       'social',
     ])
-    expect(screensByGroup('reference').map((s) => s.id)).toEqual(['research', 'watch', 'about'])
+    expect(screensByGroup('reference').map((s) => s.id)).toEqual(['research', 'watch', 'about', 'admin'])
     expect(screensByGroup('pinned').map((s) => s.id)).toEqual(['emergency'])
   })
 
