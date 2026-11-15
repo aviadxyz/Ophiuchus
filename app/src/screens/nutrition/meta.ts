@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 10,
   icon: 'apple',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · NUTRITION',
   description: 'What you have eaten and drunk today against what your body needs on this mission.',
 }
