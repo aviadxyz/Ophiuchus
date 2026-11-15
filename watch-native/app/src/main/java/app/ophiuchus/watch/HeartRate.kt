@@ -11,15 +11,9 @@ import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
-import android.util.Log
 import org.json.JSONObject
-import java.net.HttpURLConnection
-import java.net.URL
-import java.time.Instant
-import java.util.UUID
 import kotlin.concurrent.thread
 
-private const val TAG = "Ophiuchus"
 private const val SEND_EVERY_MS = 5_000L
 private const val STALE_AFTER_MS = 15_000L
 private const val MIN_BPM = 20f
@@ -85,33 +79,11 @@ class HeartRateSender(context: Context, private val room: String) : SensorEventL
 
     private fun post(room: String, heartRate: Int) {
         thread(name = "ophiuchus-send") {
-            try {
-                val body = JSONObject()
-                    .put("id", UUID.randomUUID().toString())
-                    .put("room", room)
-                    .put("type", "vitals.sample")
-                    .put("at", Instant.now().toString())
-                    .put("origin", "watch")
-                    .put(
-                        "payload",
-                        JSONObject().put("heartRate", heartRate).put("source", "live"),
-                    )
-                val connection = URL("$BASE_URL/api/events").openConnection() as HttpURLConnection
-                try {
-                    connection.requestMethod = "POST"
-                    connection.connectTimeout = 5_000
-                    connection.readTimeout = 5_000
-                    connection.doOutput = true
-                    connection.setRequestProperty("Content-Type", "application/json")
-                    connection.outputStream.use { it.write(body.toString().toByteArray()) }
-                    val status = connection.responseCode
-                    if (status !in 200..299) Log.w(TAG, "heart rate send: HTTP $status")
-                } finally {
-                    connection.disconnect()
-                }
-            } catch (e: Exception) {
-                Log.w(TAG, "heart rate send failed: ${e.javaClass.simpleName}")
-            }
+            Relay.post(
+                room,
+                "vitals.sample",
+                JSONObject().put("heartRate", heartRate).put("source", "live"),
+            )
         }
     }
 }

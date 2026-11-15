@@ -29,7 +29,7 @@ private const val PERMISSION_REQUEST = 1
 private const val ABOUT_LINE = "Demo. Not a medical device."
 private const val LONG_PRESS_TOP_FRACTION = 0.15f
 
-private enum class Screen { PICKER, RATIONALE, CODE, FACE }
+private enum class Screen { PICKER, RATIONALE, CODE, FACE, MENU, DISTRESS }
 
 class MainActivity : Activity() {
     private lateinit var settings: Settings
@@ -40,6 +40,8 @@ class MainActivity : Activity() {
     private var faceFailed = false
     private lateinit var longPress: GestureDetector
 
+    private var distress: DistressScreen? = null
+
     private val goToFace = Runnable { showFace() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +50,7 @@ class MainActivity : Activity() {
         longPress = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
             override fun onLongPress(e: MotionEvent) {
                 val inTopEdge = e.y < window.decorView.height * LONG_PRESS_TOP_FRACTION
-                if (screen == Screen.FACE && inTopEdge) showPicker()
+                if (screen == Screen.FACE && inTopEdge) showMenu()
             }
         })
         if (settings.name == null) showPicker() else showFace()
@@ -74,6 +76,7 @@ class MainActivity : Activity() {
 
     override fun onDestroy() {
         handler.removeCallbacks(goToFace)
+        distress?.stop()
         webView?.destroy()
         super.onDestroy()
     }
@@ -97,6 +100,25 @@ class MainActivity : Activity() {
         PEOPLE.forEach { person -> list.addView(personRow(person)) }
         list.addView(small(ABOUT_LINE))
         setContentView(scrolling(list))
+    }
+
+    private fun showMenu() {
+        enter(Screen.MENU)
+        val content = column()
+        content.addView(title("Ophiuchus"))
+        content.addView(button("Send distress") { showDistress { showFace() } })
+        content.addView(button("Change person") { showPicker() })
+        content.addView(button("Back to face") { showFace() })
+        content.addView(small(ABOUT_LINE))
+        setContentView(scrolling(content))
+    }
+
+    private fun showDistress(back: () -> Unit) {
+        enter(Screen.DISTRESS)
+        val screenView = DistressScreen(this, settings.code, back)
+        distress = screenView
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        setContentView(screenView.view)
     }
 
     private fun choose(person: String) {
@@ -167,6 +189,7 @@ class MainActivity : Activity() {
             typeface = Typeface.create(Typeface.MONOSPACE, Typeface.BOLD)
             gravity = Gravity.CENTER
         })
+        content.addView(button("Send distress") { showDistress { showFace() } })
         content.addView(small(ABOUT_LINE))
         return content
     }
@@ -207,6 +230,8 @@ class MainActivity : Activity() {
 
     private fun enter(next: Screen) {
         handler.removeCallbacks(goToFace)
+        distress?.stop()
+        distress = null
         stopHeartRate()
         window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         if (next != Screen.FACE) {

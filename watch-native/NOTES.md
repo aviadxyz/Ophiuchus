@@ -18,6 +18,16 @@
 - About line "Demo. Not a medical device." is on the name list and the code screen.
 - Icon: adaptive icon, dark background `#07090F`, green ring `#34D399`. No agency logo.
 
+## Added after the first version
+
+- **Distress button (native).** Long press the top edge of the face for a menu: Send distress, Change person, Back to face. Hold the amber SOS button for two seconds (a ring fills; releasing early cancels). It posts `emergency.raised` with `alertId` and the message "Emergency from watch" (no role: the watch does not know one), vibrates, and shows "Alert sent" with the time. Cancel is offered for ten seconds and posts `emergency.cancelled`. The screen polls the events endpoint every two seconds and shows "Help is on the way" with a vibration when `emergency.acknowledged` arrives for that alert. If the send fails it says "Sending when connected" and retries every three seconds for up to ten minutes. The same button is on the no-web-view screen.
+- `Relay.kt` is the one place that talks to `/api/events`; the heart-rate sender uses it too.
+
+## Not added, and why
+
+- **Blood oxygen and skin temperature:** Health Services 1.1.0 (the current stable library) has no data type for either, so there is no supported way to read them from a third-party app. Samsung's own sensor SDK would be needed and requires Samsung's approval. Not built.
+- **Steps:** `vitals.sample` in CONTRACTS section 10 has no `steps` field. It needs the contract and the console changed first. Not built.
+
 ## Differences from the prompt
 
 - **Long press to change the person** works only in the top 15% of the face. The page's emergency button is a two-second hold, and a long press anywhere would fire in the middle of it.
