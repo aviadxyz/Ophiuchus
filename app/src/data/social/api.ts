@@ -146,3 +146,39 @@ export async function apiSync(token: string, cursor: string | null): Promise<Syn
     cursor: typeof body.cursor === 'string' ? body.cursor : null,
   }
 }
+
+// ---- Crew challenges ----------------------------------------------------------------------
+
+/** One person on a challenge board, as the server sends it: a handle and one score. */
+export type RemoteChallengeEntry = { socialId: string; handle: string; score: number }
+
+/** Sends one score, or `leave`. The body holds `id` and `score`, or `id` and `leave`, and nothing else. */
+export async function apiChallenge(
+  token: string,
+  id: 'exercise' | 'nutrition',
+  score: number | 'leave',
+): Promise<boolean> {
+  const body = score === 'leave' ? { id, leave: true } : { id, score }
+  const { status } = await call('POST', '/challenge', token, body)
+  return status < 400
+}
+
+const remoteEntries = (v: unknown): RemoteChallengeEntry[] =>
+  Array.isArray(v)
+    ? v.flatMap((e: unknown) => {
+        if (typeof e !== 'object' || e === null) return []
+        const { socialId, handle, score } = e as Record<string, unknown>
+        if (typeof socialId !== 'string' || !socialId) return []
+        if (typeof handle !== 'string' || !handle) return []
+        if (typeof score !== 'number' || !Number.isFinite(score)) return []
+        return [{ socialId, handle, score }]
+      })
+    : []
+
+export async function apiChallenges(
+  token: string,
+): Promise<{ exercise: RemoteChallengeEntry[]; nutrition: RemoteChallengeEntry[] } | null> {
+  const { status, body } = await call('GET', '/challenges', token)
+  if (status >= 400) return null
+  return { exercise: remoteEntries(body.exercise), nutrition: remoteEntries(body.nutrition) }
+}

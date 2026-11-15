@@ -2,6 +2,12 @@
 
 **Owner: Rami.** Built from [prompt 17](../../../../prompts/17-social.md) part B, in prompt 19, task 4.
 
+## Crew challenges (prompt 26)
+
+Plan: `Challenges.tsx` (the "Crew challenges" section: two cards, Take part switch, confirmation, ranked board, links), `challengeText.ts` (all wording, score words, tied positions), three lines in `index.tsx` that show it in every state, `challenges.test.tsx`.
+
+Built: part 3. The section sits below the friends list and also shows, with an explanation, before joining and when the network cannot be reached. Bars use the `info` tone for everyone, never red; ties share a position. The confirmation shows every time the switch goes from off to on, not only the first time, because remembering "seen once" would need a name the contract does not have. Leaving needs no confirmation and stays possible while offline. Checked in the browser on the demo profile at 360 px and 1440 px with no sideways scrolling.
+
 ## Plan
 
 - `moodDisplay.ts`: one mood look everywhere (word, face, tone, tags, "2 h ago"), the crew mood line, message times.

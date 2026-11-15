@@ -66,6 +66,41 @@ export function cleanAction(value: unknown): RelationAction | null {
     : null
 }
 
+// ---- Crew challenges (CONTRACTS sections 8 and 11) -------------------------------------------
+
+export type ChallengeId = 'exercise' | 'nutrition'
+export const CHALLENGE_IDS: readonly ChallengeId[] = ['exercise', 'nutrition']
+
+/** The highest score of each challenge: a percentage, and a number of days in a week. */
+const CHALLENGE_MAX: Record<ChallengeId, number> = { exercise: 100, nutrition: 7 }
+
+export function cleanChallengeId(value: unknown): ChallengeId | null {
+  return value === 'exercise' || value === 'nutrition' ? value : null
+}
+
+export type CleanChallengeWrite =
+  | { id: ChallengeId; leave: true }
+  | { id: ChallengeId; leave: false; score: number }
+
+/**
+ * A challenge write is `id` and a whole-number `score` in range, or `id` and `leave: true`.
+ * Anything else, including any field besides those, is refused.
+ */
+export function cleanChallengeWrite(body: Record<string, unknown>): CleanChallengeWrite | null {
+  const id = cleanChallengeId(body.id)
+  if (!id) return null
+  const keys = Object.keys(body)
+  if ('leave' in body) {
+    if (body.leave !== true || keys.length !== 2) return null
+    return { id, leave: true }
+  }
+  if (keys.length !== 2) return null
+  const score = body.score
+  if (typeof score !== 'number' || !Number.isInteger(score)) return null
+  if (score < 0 || score > CHALLENGE_MAX[id]) return null
+  return { id, leave: false, score }
+}
+
 /** Escapes the wildcard characters of a LIKE pattern. */
 export function likePattern(query: string): string {
   return `%${query.replace(/[\\%_]/g, (c) => `\\${c}`)}%`

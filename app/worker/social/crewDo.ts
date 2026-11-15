@@ -3,12 +3,16 @@
 //
 // What it stores: a handle, an optional role, friendships, at most one shared mood per person
 // (a score, up to two tags and a time) and chat text. Never a display name, a reading or a note.
-// Tokens are stored only as a SHA-256 hash. Chat messages are deleted after 24 hours and accounts
-// after 7 days without use, on every write.
+// For crew challenges it holds one whole-number score per person per challenge and the time it
+// was sent, and nothing else. Tokens are stored only as a SHA-256 hash. Chat messages are deleted
+// after 24 hours, challenge scores after 8 days without an update and accounts after 7 days
+// without use, on every write.
 
 import type { DurableObjectContext, Env } from '../types.ts'
 import {
+  CHALLENGE_IDS,
   cleanAction,
+  cleanChallengeWrite,
   cleanHandle,
   cleanMessage,
   cleanMood,
@@ -21,6 +25,7 @@ import {
 
 const DAY_MS = 24 * 60 * 60 * 1000
 const ACCOUNT_IDLE_MS = 7 * DAY_MS
+const CHALLENGE_IDLE_MS = 8 * DAY_MS
 const SEEN_REFRESH_MS = 60 * 60 * 1000
 const MAX_PEOPLE = 20
 
@@ -102,6 +107,13 @@ export class CrewNetworkDurableObject {
       );
       CREATE INDEX IF NOT EXISTS idx_messages_to ON messages(to_id, seq);
       CREATE INDEX IF NOT EXISTS idx_messages_from ON messages(from_id, seq);
+      CREATE TABLE IF NOT EXISTS challenge_scores (
+        social_id TEXT NOT NULL,
+        challenge TEXT NOT NULL,
+        score INTEGER NOT NULL,
+        updated_at INTEGER NOT NULL,
+        PRIMARY KEY (social_id, challenge)
+      );
     `)
     // Two accounts left behind by a test run on 15 November. Removing them is harmless once gone.
     for (const row of this.rows(
@@ -115,15 +127,20 @@ export class CrewNetworkDurableObject {
   // ---- Retention ----------------------------------------------------------------------------
 
   private removeAccount(socialId: string): void {
+    this.run(`DELETE FROM challenge_scores WHERE social_id = ?`, socialId)
     this.run(`DELETE FROM messages WHERE from_id = ? OR to_id = ?`, socialId, socialId)
     this.run(`DELETE FROM relations WHERE a = ? OR b = ?`, socialId, socialId)
     this.run(`DELETE FROM tokens WHERE social_id = ?`, socialId)
     this.run(`DELETE FROM accounts WHERE social_id = ?`, socialId)
   }
 
-  /** Runs on every write: chat older than 24 hours and accounts idle for 7 days are removed. */
+  /**
+   * Runs on every write: chat older than 24 hours, challenge scores not updated for 8 days and
+   * accounts idle for 7 days are removed.
+   */
   private prune(now: number): void {
     this.run(`DELETE FROM messages WHERE created_at < ?`, now - DAY_MS)
+    this.run(`DELETE FROM challenge_scores WHERE updated_at < ?`, now - CHALLENGE_IDLE_MS)
     const idle = this.rows(`SELECT social_id FROM accounts WHERE seen_at < ?`, now - ACCOUNT_IDLE_MS)
     for (const row of idle) this.removeAccount(String(row.social_id))
   }
@@ -226,6 +243,8 @@ export class CrewNetworkDurableObject {
     if (path === '/sync' && request.method === 'GET') {
       return this.sync(me, url.searchParams.get('after'), now)
     }
+    if (path === '/challenge' && request.method === 'POST') return this.challenge(me, body, now)
+    if (path === '/challenges' && request.method === 'GET') return this.challenges(me, now)
     return json({ error: 'Not found' }, 404)
   }
 
@@ -398,6 +417,75 @@ export class CrewNetworkDurableObject {
       now,
     )
     return json({ id })
+  }
+
+  /** One score per person per challenge, or `leave` to remove it at once. Nothing else is kept. */
+  private challenge(me: Account, body: Record<string, unknown>, now: number): Response {
+    const write = cleanChallengeWrite(body)
+    if (!write) return json({ error: 'invalid' }, 400)
+    this.prune(now)
+    if (write.leave) {
+      this.run(
+        `DELETE FROM challenge_scores WHERE social_id = ? AND challenge = ?`,
+        me.socialId,
+        write.id,
+      )
+    } else {
+      this.run(
+        `INSERT OR REPLACE INTO challenge_scores (social_id, challenge, score, updated_at)
+         VALUES (?, ?, ?, ?)`,
+        me.socialId,
+        write.id,
+        write.score,
+        now,
+      )
+    }
+    return json({ ok: true })
+  }
+
+  /**
+   * For each challenge the caller takes part in: the caller's score and those of friends who take
+   * part too, highest first. Empty for a challenge the caller has not joined. A person who is not
+   * a friend is never returned, so ending a friendship hides both scores the same moment.
+   */
+  private challenges(me: Account, now: number): Response {
+    const fresh = now - CHALLENGE_IDLE_MS
+    const boards: Record<string, Array<{ socialId: string; handle: string; score: number }>> = {}
+    for (const id of CHALLENGE_IDS) {
+      const joined = this.rows(
+        `SELECT 1 FROM challenge_scores WHERE social_id = ? AND challenge = ? AND updated_at >= ?`,
+        me.socialId,
+        id,
+        fresh,
+      )[0]
+      if (!joined) {
+        boards[id] = []
+        continue
+      }
+      const rows = this.rows(
+        `SELECT c.social_id, acc.handle, c.score
+         FROM challenge_scores c
+         JOIN accounts acc ON acc.social_id = c.social_id
+         WHERE c.challenge = ? AND c.updated_at >= ?
+           AND (c.social_id = ? OR c.social_id IN (
+             SELECT CASE WHEN r.a = ? THEN r.b ELSE r.a END FROM relations r
+             WHERE (r.a = ? OR r.b = ?) AND r.state = 'friend'
+           ))
+         ORDER BY c.score DESC, acc.handle_key ASC`,
+        id,
+        fresh,
+        me.socialId,
+        me.socialId,
+        me.socialId,
+        me.socialId,
+      )
+      boards[id] = rows.map((row) => ({
+        socialId: String(row.social_id),
+        handle: String(row.handle),
+        score: Number(row.score),
+      }))
+    }
+    return json(boards)
   }
 
   private sync(me: Account, after: string | null, now: number): Response {
