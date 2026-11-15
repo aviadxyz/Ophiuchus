@@ -1,67 +1,111 @@
-// STUB. Lane 02 (prompt 02) replaces this whole file with the real store.
-// It exists only so the shell compiles. Every value here is fixed demo data; nothing is stored.
+// The only import path for screens: `@/data`. Names follow CONTRACTS sections 8 and 9.
+// The crew-network names (section 9, "Social") are added by lane 17 from data/social.
 
-import { useSyncExternalStore } from 'react'
+export type {
+  Alert,
+  AlertKind,
+  AlertOrigin,
+  AlertStatus,
+  BodyMass,
+  CrewProfile,
+  DateString,
+  DaySummary,
+  ExerciseDevice,
+  ExerciseKind,
+  ExerciseSession,
+  FoodItem,
+  HealthSummary,
+  AreaSummary,
+  MealEntry,
+  MealWithFood,
+  MetricId,
+  MetricValue,
+  Mission,
+  MissionLocation,
+  MoodCheckin,
+  ProfileChanges,
+  ProfileDetails,
+  SeriesPoint,
+  SessionStatus,
+  Sex,
+  SleepRecord,
+  Target,
+  TargetId,
+  TargetKind,
+  TargetMap,
+  Timestamp,
+  VitalInput,
+  VitalSample,
+  VitalsConnection,
+  WaterEntry,
+} from './types'
+export { metricIds, targetIds } from './types'
 
-type CrewProfile = {
-  id: string
-  displayName: string
-  role: string
-  kind: 'member' | 'demo'
-  sex?: string
-  birthYear?: number
-  heightCm?: number
-  massKg?: number
-  consent: { relay: boolean; assistant: boolean }
-  createdAt: string
-}
+// Reading
+export {
+  useActiveProfile,
+  useProfiles,
+  useMission,
+  useToday,
+  useDay,
+  useSeries,
+  useMeals,
+  useWater,
+  useExerciseSessions,
+  useMoodCheckins,
+  useSleep,
+  useLatestVitals,
+  useAlerts,
+  useTargets,
+  useFoods,
+  useHealthSummary,
+  type LatestVitals,
+} from './selectors'
 
-type Alert = {
-  id: string
-  profileId: string
-  at: string
-  kind: 'emergency' | 'health'
-  origin: 'console' | 'watch'
-  message: string
-  screenId?: string
-  status: 'open' | 'cancelled' | 'acknowledged'
-  acknowledgedAt?: string
-}
+// Writing
+export {
+  addMeal,
+  removeMeal,
+  addWater,
+  removeWater,
+  setSessionStatus,
+  logGameMinutes,
+  addMoodCheckin,
+  updateMoodCheckin,
+  addSleep,
+  addBodyMass,
+  pushVital,
+  raiseAlert,
+  cancelAlert,
+  acknowledgeAlert,
+  createProfile,
+  updateProfile,
+  setActiveProfile,
+  deleteProfileData,
+  resetDemoProfile,
+} from './store'
 
-const demoProfile: CrewProfile = {
-  id: 'demo',
-  displayName: 'Demo crew member',
-  role: 'Flight engineer',
-  kind: 'demo',
-  consent: { relay: false, assistant: false },
-  createdAt: '2026-11-01T07:00:00.000Z',
-}
+// Level rules, shared vocabulary helpers and plain facts
+export { levelFor, expectedShare, worstLevel } from './levels'
+export { moodWord } from './compute'
+export { toDateString, addDays } from './dates'
 
-const profiles: CrewProfile[] = [demoProfile]
-const alerts: Alert[] = []
+// Sensors and sync
+export { startSimulator, stopSimulator } from './simulator'
+export {
+  connectHeartRateSensor,
+  disconnectHeartRateSensor,
+  type SensorResult,
+} from './sources/bluetoothHeartRate'
+export { joinRoom, createRoom, leaveRoom, useRoom, type RoomState } from './sources/relay'
+export type { RoomConnection } from './runtime'
+export { importHealthExport, type HealthImportResult } from './sources/healthImport'
 
-let activeId = demoProfile.id
-const listeners = new Set<() => void>()
-const subscribe = (listener: () => void) => {
-  listeners.add(listener)
-  return () => listeners.delete(listener)
-}
+import { installSimulator } from './simulator'
+import { installRelay } from './sources/relay'
 
-export function useActiveProfile(): CrewProfile {
-  const id = useSyncExternalStore(subscribe, () => activeId)
-  return profiles.find((profile) => profile.id === id) ?? demoProfile
-}
-
-export function useProfiles(): CrewProfile[] {
-  return profiles
-}
-
-export function setActiveProfile(id: string): void {
-  if (!profiles.some((profile) => profile.id === id) || id === activeId) return
-  activeId = id
-  listeners.forEach((listener) => listener())
-}
-
-export function useAlerts(): Alert[] {
-  return alerts
+// In the browser, the demo profile's simulator and the watch relay follow the store by themselves.
+if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') {
+  installSimulator()
+  installRelay()
 }
