@@ -1,10 +1,13 @@
 import type { Guide } from '@/registry'
 
-// Default wording until this screen's owner writes the real explanation. Keep all four fields.
 export const guide: Guide = {
   shows:
-    'This screen is still being built. Here is what it will show: A medical assistant you can ask, which helps you send the right questions to the flight surgeon.',
-  whyItMatters: 'Its owner will add why this matters in space when the screen is built.',
-  howToRead: ['Screens marked "soon" in the sidebar are still being built.'],
-  whenToAct: 'This screen is still being built. For anything urgent, use Emergency.',
+    'A medical assistant you can ask about your health and your data, and the questions you have sent on to the flight surgeon.',
+  whyItMatters:
+    'Far from Earth, an answer from the ground can take a long time. A first answer on board helps you act, and tells you what must still go to a person.',
+  howToRead: [
+    'Type a question or tap a suggestion. A card under an answer means the Med bot thinks the flight surgeon should see it. The list at the bottom shows what you have sent.',
+  ],
+  whenToAct:
+    'Send anything about medicines, lasting symptoms or a worry that will not go away to the flight surgeon. For anything urgent, use Emergency, not the chat.',
 }
