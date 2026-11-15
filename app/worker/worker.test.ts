@@ -577,3 +577,122 @@ describe('Worker Entry Point & Routing', () => {
     expect(res.status).toBe(404)
   })
 })
+
+describe('Med bot answers from the team research', () => {
+  type SentMessage = { role: string; content: string }
+  type FakeModel = { calls: SentMessage[][]; env: Env }
+
+  function fakeModel(answer: string | Error): FakeModel {
+    const calls: SentMessage[][] = []
+    const env: Env = {
+      ASSETS: { fetch: async () => new Response('assets') },
+      ROOM_DO: {
+        idFromName: () => ({ toString: () => 'id' }),
+        get: () => ({ fetch: async () => new Response('do') }),
+      },
+      CREW_DO: {
+        idFromName: () => ({ toString: () => 'id' }),
+        get: () => ({ fetch: async () => new Response('do') }),
+      },
+      AI: {
+        run: async (_model, options) => {
+          calls.push(options.messages as SentMessage[])
+          if (answer instanceof Error) throw answer
+          return { response: answer }
+        },
+      },
+    }
+    return { calls, env }
+  }
+
+  async function ask(env: Env, message: string, replyMode: 'standard' | 'watch' = 'standard') {
+    const res = await handleChat(
+      new Request('http://localhost/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message,
+          screenId: 'medbot',
+          screenLabel: 'Med bot',
+          context: '[context]\nscreen: Med bot\n[end context]',
+          replyMode,
+        }),
+      }),
+      env,
+    )
+    expect(res.status).toBe(200)
+    return (await res.json()) as {
+      reply: string
+      urgent: boolean
+      forward: boolean
+      sources?: { title: string; url: string; quote: string }[]
+    }
+  }
+
+  const userTurn = (model: FakeModel) => model.calls[0]?.find((m) => m.role === 'user')?.content ?? ''
+
+  it('puts the research block in the user turn for a bone question and returns the sources', async () => {
+    const model = fakeModel('The team research says bone thins without load. Keep up resistive exercise.')
+    const data = await ask(model.env, 'why do I lose bone in space')
+    const turn = userTurn(model)
+    expect(turn).toContain('[research]')
+    expect(turn).toContain('[end research]')
+    // Context first, then research, then the question.
+    expect(turn.indexOf('[end context]')).toBeLessThan(turn.indexOf('[research]'))
+    expect(turn.indexOf('[end research]')).toBeLessThan(turn.indexOf('why do I lose bone in space'))
+    expect(data.sources?.length).toBeGreaterThan(0)
+    for (const source of data.sources ?? []) {
+      expect(source.url.startsWith('https://')).toBe(true)
+      expect(source.title).not.toBe('')
+      expect(turn).toContain(`"${source.quote}" (${source.title})`)
+    }
+  })
+
+  it('sends no block and returns no sources when nothing matches', async () => {
+    const model = fakeModel('Loop, swoop and pull. Now, how are you feeling today?')
+    const data = await ask(model.env, 'how do I tie my shoes')
+    expect(userTurn(model)).not.toContain('[research]')
+    expect(data.sources).toEqual([])
+  })
+
+  it('never adds the block or sources in watch mode', async () => {
+    const model = fakeModel('Bone thins without load. Do your resistive session today.')
+    const data = await ask(model.env, 'why do I lose bone in space', 'watch')
+    expect(userTurn(model)).not.toContain('[research]')
+    expect(data.sources).toEqual([])
+  })
+
+  it('falls back with the sources when the model fails and passages were found', async () => {
+    const model = fakeModel(new Error('model down'))
+    const data = await ask(model.env, 'why do I lose bone in space')
+    expect(data.reply).toContain("can't reach my full brain")
+    expect(data.reply).toContain("team's research")
+    expect(data.sources?.length).toBeGreaterThan(0)
+  })
+
+  it('keeps the old fallback when the model fails and nothing was found', async () => {
+    const model = fakeModel(new Error('model down'))
+    const data = await ask(model.env, 'how do I tie my shoes')
+    expect(data.reply).toBe(getScriptedFallback('how do I tie my shoes'))
+    expect(data.sources).toEqual([])
+  })
+
+  it('returns no sources with an urgent reply', async () => {
+    const model = fakeModel('Open the Emergency screen now. Sit down and call a crewmate.')
+    const data = await ask(model.env, 'my bone hurts after a fall and I have trouble breathing')
+    expect(data.urgent).toBe(true)
+    expect(data.forward).toBe(false)
+    expect(data.sources).toEqual([])
+  })
+
+  it('still gives an old client reply, urgent and forward as before', async () => {
+    const model = fakeModel(
+      'Bone loss in space is well studied. A person should look at a pain that lasts. This is one for the flight surgeon.',
+    )
+    const data = await ask(model.env, 'why do I lose bone in space')
+    expect(typeof data.reply).toBe('string')
+    expect(data.reply.endsWith('This is one for the flight surgeon.')).toBe(true)
+    expect(data.urgent).toBe(false)
+    expect(data.forward).toBe(true)
+  })
+})
