@@ -199,7 +199,7 @@ All defined in `data/types.ts`. Every record that holds a measurement has a `sou
 | `MoodCheckin` | `id`, `profileId`, `at`, `score` (1 to 5), `tags` (list), `note` (optional), `source` |
 | `BodyMass` | `id`, `profileId`, `date`, `kg`, `source` |
 | `VitalSample` | `id`, `profileId`, `at`, `heartRate` (optional), `spo2` (optional), `skinTempC` (optional), `source` |
-| `Alert` | `id`, `profileId`, `at`, `kind` (`emergency`, `health`), `origin` (`console`, `watch`), `message`, `screenId` (optional), `status` (`open`, `cancelled`, `acknowledged`), `acknowledgedAt` (optional). A question the Med bot forwards to the flight surgeon is an alert of kind `health` with `screenId` `medbot`; it stays on the device |
+| `Alert` | `id`, `profileId`, `at`, `kind` (`emergency`, `health`), `origin` (`console`, `watch`), `message`, `screenId` (optional), `status` (`open`, `cancelled`, `acknowledged`), `acknowledgedAt` (optional), `from` (optional text: the role of the person who raised it, present only on an alert that arrived from another device). A question the Med bot forwards to the flight surgeon is an alert of kind `health` with `screenId` `medbot`; it stays on the device |
 | `FoodItem` | `id`, `name`, `kcal`, `proteinG`, `sodiumMg`, `calciumMg`, `ironMg`, `vitaminDIu`, `omega3G`, `potassiumMg`, `waterMl` |
 | `Target` | `id`, `label`, `kind` (`min`, `max`, `range`), `value`, `upper` (ranges only), `unit`, `sourceText`, `sourceUrl`, `verified` (yes/no) |
 | `MetricValue` | `value` (number or none), `targetId`, `level`, `source` |
@@ -287,6 +287,13 @@ While `shareMood` is on, a new or edited mood check-in updates the shared mood w
 | `startSimulator()` / `stopSimulator()` | Simulated vitals, source `simulated`. Demo profile only |
 | `joinRoom(code)` / `createRoom()` / `leaveRoom()` / `useRoom()` | Pairs this browser with a watch through the relay (section 10). `createRoom` makes a new code, joins it and returns it. `useRoom` gives the current code or none, and the connection state |
 
+**This device, from `@/data`** (added Sunday 15 November, built by prompt 21):
+
+| Name | Does |
+|---|---|
+| `useDevice()` | Gives `kind` (`computer`, `phone` or `watch`) and `setupDone` (yes/no). `watch` on the route `/w`, `phone` under 640 px wide, otherwise `computer` |
+| `completeDeviceSetup()` / `resetDeviceSetup()` | Finish, or show again, the first-open choice of who is using this device |
+
 **Automatic alerts, from `@/data`** (added Sunday 15 November, built by prompt 18):
 
 | Name | Does |
@@ -315,13 +322,13 @@ One shape for every message, carried by the events endpoint or directly between 
 
 | Type | Sent by | Payload |
 |---|---|---|
-| `emergency.raised` | Either | `alertId`, `message` |
+| `emergency.raised` | Either | `alertId`, `message`, `role` (optional: the sender's profile role, never the display name) |
 | `emergency.cancelled` | Whoever raised it | `alertId` |
 | `emergency.acknowledged` | Console | `alertId` |
 | `vitals.sample` | Watch | `heartRate`, `spo2`, `skinTempC` (any may be missing), `source` |
 | `summary.updated` | Console | A `HealthSummary` |
 
-Messages carry no name and no profile details. The room code is the only link between devices.
+Messages carry no name. The only profile detail that may travel is the role on `emergency.raised`. The room code is the only link between devices.
 
 ## 11. Server endpoints and settings
 
