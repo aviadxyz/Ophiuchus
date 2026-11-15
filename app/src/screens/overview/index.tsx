@@ -230,8 +230,8 @@ export default function OverviewScreen() {
 
         <div className="lg:col-span-7">
           <Card title="Body">
-            <div className="flex flex-col items-start gap-6 min-[900px]:flex-row">
-              <div className="w-full shrink-0 min-[900px]:w-[320px]">
+            <div className="flex flex-col items-center gap-6">
+              <div className="w-full max-w-[320px]">
                 <BodyFigure
                   systems={systemsWithStatus}
                   selectedId={selectedSystemId}
@@ -239,7 +239,7 @@ export default function OverviewScreen() {
                   heartRate={latestVitals?.latest?.heartRate}
                 />
               </div>
-              <div className="min-w-0 w-full flex-1">
+              <div className="min-w-0 w-full">
                 <SystemList
                   systems={systemsWithStatus}
                   selectedId={selectedSystemId}

@@ -49,13 +49,13 @@ export function SystemList({ systems, selectedId, onSelect }: SystemListProps) {
       {/* Organs Section */}
       <div className="flex flex-col gap-2">
         <SectionLabel>ORGANS</SectionLabel>
-        <div className="flex flex-col gap-1.5">{organs.map(renderRow)}</div>
+        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-1 min-[1200px]:grid-cols-2">{organs.map(renderRow)}</div>
       </div>
 
       {/* Whole Body Section */}
       <div className="flex flex-col gap-2">
         <SectionLabel>WHOLE BODY</SectionLabel>
-        <div className="flex flex-col gap-1.5">{wholeBody.map(renderRow)}</div>
+        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-1 min-[1200px]:grid-cols-2">{wholeBody.map(renderRow)}</div>
       </div>
     </div>
   )
