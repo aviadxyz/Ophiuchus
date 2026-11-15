@@ -40,7 +40,7 @@ export type Guide = {
 }
 
 export type GameMeta = {
-  /** Equals the folder name. Fixed ids: 'futvolley', 'samba-time'. */
+  /** Equals the folder name, in lower case with hyphens. */
   id: string
   label: string
   description: string
