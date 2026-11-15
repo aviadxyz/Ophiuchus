@@ -37,7 +37,7 @@ Gravity has no target. It is not a target id, so `TargetMap` leaves the environm
 - `TargetKind` has no "none", and a target for gravity would have to invent a limit. Gravity has no target and no level pill.
 - `useEnvironment()` gives `{ sample, connection }`. The contract does not name the field; `sample` follows `useLatestVitals`.
 - Adding the eight ids to `targetIds` broke a hand-written `TargetMap` in `watch.test.tsx` and `MetricValue.targetId` users. To avoid touching other lanes, `TargetMap` keeps the core ids required and the environment ids optional, and `MetricValue.targetId` is the core ids only (`CoreTargetId`).
-- `registry/registry.test.ts` lists the screens by hand and does not yet include `environment`, so two of its tests fail. It is a shared file, so it was not edited.
+- `registry/registry.test.ts` lists the screens by hand. It is a shared file; at Rami's OK I added `environment` to its two lists (the only edit outside my files besides `data/types.ts`, `targets.ts`, `index.ts`).
 
 ## What I could not verify
 
