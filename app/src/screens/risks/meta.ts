@@ -7,7 +7,8 @@ export const meta: ScreenMeta = {
   order: 20,
   icon: 'shield-alert',
   owner: 'Aviad',
-  status: 'placeholder',
-  eyebrow: 'DOMAIN · RISKS',
-  description: 'The main spaceflight health risks and how much each one matters on this mission.',
+  status: 'ready',
+  eyebrow: 'DOMAIN · FLIGHT RISK MAP',
+  description:
+    'What spaceflight does to each part of the body, the signs you are showing today, and what is done about it.',
 }
