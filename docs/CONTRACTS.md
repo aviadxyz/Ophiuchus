@@ -94,6 +94,7 @@ Screen ids are fixed. The folder name is the id.
 | `research` | Research | reference | 10 | Aviad |
 | `watch` | Watch | reference | 20 | Rami |
 | `about` | About | reference | 30 | Rami |
+| `admin` | Admin | reference | 40 | Rami |
 | `emergency` | Emergency | pinned | 10 | Elia / Rami |
 
 Group headings shown in the sidebar: console is "CONSOLE", daily is "DAILY LIFE", reference is "REFERENCE". The pinned group has no heading and sits at the bottom.
@@ -200,7 +201,7 @@ All defined in `data/types.ts`. Every record that holds a measurement has a `sou
 | `MoodCheckin` | `id`, `profileId`, `at`, `score` (1 to 5), `tags` (list), `note` (optional), `source` |
 | `BodyMass` | `id`, `profileId`, `date`, `kg`, `source` |
 | `VitalSample` | `id`, `profileId`, `at`, `heartRate` (optional), `spo2` (optional), `skinTempC` (optional), `source` |
-| `Alert` | `id`, `profileId`, `at`, `kind` (`emergency`, `health`), `origin` (`console`, `watch`), `message`, `screenId` (optional), `status` (`open`, `cancelled`, `acknowledged`), `acknowledgedAt` (optional), `from` (optional text: the role of the person who raised it, present only on an alert that arrived from another device). A question the Med bot forwards to the flight surgeon is an alert of kind `health` with `screenId` `medbot`; it stays on the device |
+| `Alert` | `id`, `profileId`, `at`, `kind` (`emergency`, `health`), `origin` (`console`, `watch`), `message`, `screenId` (optional), `status` (`open`, `cancelled`, `acknowledged`), `acknowledgedAt` (optional), `from` (optional text: the role of the person who raised it, present only on an alert that arrived from another device). A question the Med bot forwards to the flight surgeon is an alert of kind `health` with `screenId` `medbot`; it stays on the device, unless that profile has switched ground sharing on, in which case it travels inside the `GroundReport` |
 | `FoodItem` | `id`, `name`, `kcal`, `proteinG`, `sodiumMg`, `calciumMg`, `ironMg`, `vitaminDIu`, `omega3G`, `potassiumMg`, `waterMl` |
 | `Target` | `id`, `label`, `kind` (`min`, `max`, `range`), `value`, `upper` (ranges only), `unit`, `sourceText`, `sourceUrl`, `verified` (yes/no) |
 | `MetricValue` | `value` (number or none), `targetId`, `level`, `source` |
@@ -213,6 +214,8 @@ All defined in `data/types.ts`. Every record that holds a measurement has a `sou
 | `EnvironmentSample` | `at`, then one number per environment metric id below, `source` (always `simulated` in this demo: the app has no cabin sensor) |
 | `ChallengeEntry` | `socialId`, `handle`, `score` (a number), `me` (yes/no), `source` (`entered` for a real person, `simulated` for the demo crew) |
 | `ChallengeBoard` | `id` (a challenge id below), `joined` (yes/no: is the active profile taking part), `myScore` (a number or none), `entries` (list of `ChallengeEntry`, highest score first; empty when not joined) |
+| `GroundReport` | `reportId`, `displayName`, `role`, `kind` (`member` for a real crew member, `demo` for the demo profile and the simulated crew), `missionDay`, `sentAt`, `receivedAt` (set by the server; for a `demo` report it is `sentAt` plus the mission's `commDelaySeconds`), `today` (a `DaySummary`), `summary` (a `HealthSummary`), `week` (for each of `sleepHours`, `energyKcal`, `waterMl`, `exerciseMinutes`, `moodScore`: seven entries, oldest first, each `date`, `value` or none, `source`), `vitals` (the latest `VitalSample` without `id` and `profileId`, or none), `alerts` (alerts that are open or from the last 24 hours, newest first: `at`, `kind`, `message`, `status`). It never holds a mood note, a meal list, a body mass, a birth year or a chat message |
+| `ChatSource` | `title`, `url`, `quote` (word for word from the team's research database) |
 
 Metric ids: `sleepHours`, `energyKcal`, `waterMl`, `proteinG`, `sodiumMg`, `calciumMg`, `ironMg`, `vitaminDIu`, `omega3G`, `potassiumMg`, `exerciseMinutes`, `moodScore`, `bodyMassKg`, `heartRate`.
 
@@ -275,6 +278,8 @@ All exported from `@/data`. Everything reads the **active profile** unless it ta
 | `useEnvironment()` | The latest `EnvironmentSample`, plus `connection` (`simulated` or `off`) |
 | `useEnvironmentSeries(metricId, hours)` | One entry per hour, oldest first: `at`, `value`, `source`. `metricId` is an environment metric id |
 | `useChallenges()` | The two `ChallengeBoard`s, as `exercise` and `nutrition` |
+| `useGroundShare()` | For the active profile: `on` (yes/no), `state` (`off`, `sending`, `sent`, `failed`), `lastSentAt` (or none) |
+| `useGroundView()` | `state` (`closed`, `checking`, `open`, `wrong-code`, `not-set-up`, `offline`), `mode` (`live` or `simulated`), `reports` (list of `GroundReport`, the worst `summary` level first, then the newest), `fetchedAt` (or none) |
 
 **Writing (plain functions):**
 
@@ -302,8 +307,14 @@ All exported from `@/data`. Everything reads the **active profile** unless it ta
 | `sendChatMessage(socialId, text)` | Friends only. Text of 1 to 500 characters |
 | `markConversationRead(socialId)` | Sets that friend's `unread` to 0 |
 | `setChallengeJoined(challengeId, on)` | Takes the active profile in or out of a challenge. Off removes its score from the network at once. Needs a social account; returns `ok` or `not-joined` |
+| `setGroundShare(on)` | Switches sending the active profile's `GroundReport` to the ground team on or off. On sends one now, then again when it changes, at most once a minute. Off deletes the report from the server at once |
+| `openGroundView(code)` | Asks the server for every report with the ground code. The code is kept in memory for this visit only, never stored |
+| `openSimulatedGroundView()` | Opens the ground view on the simulated crew, with no network call |
+| `closeGroundView()` | Forgets the code and the reports |
 
 The environment is worked out from the clock by one function in `data`, the same on every device, and is never stored. While a challenge is joined, the data layer works out the score from the store and sends it without the screen doing anything; nobody is in a challenge until they switch it on. While `shareMood` is on, a new or edited mood check-in updates the shared mood without the screen doing anything. `deleteProfileData` also leaves the network.
+
+Ground sharing (added Sunday 15 November, built by prompt 28) is off for every profile until that person switches it on, and is remembered per profile through the store together with a random `reportId` and `key` made on the first send. The data layer builds the `GroundReport` from the store and sends it; the screen never builds or sends one. The demo profile never touches the network: its report and the simulated crew's reports are made on the device with `kind` `demo`. `deleteProfileData` also deletes that profile's report from the server.
 
 **Sensors and sync, from `@/data`:**
 
@@ -360,7 +371,7 @@ Messages carry no name. The only profile detail that may travel is the role on `
 
 | Endpoint | In | Out |
 |---|---|---|
-| `POST /api/chat` | `message`, `screenId`, `screenLabel`, `context` (the block in the companion prompt, as text), `replyMode` (`standard` or `watch`) | `reply` (text), `urgent` (yes/no), `forward` (yes/no: the Med bot thinks this question should go to the flight surgeon) |
+| `POST /api/chat` | `message`, `screenId`, `screenLabel`, `context` (the block in the companion prompt, as text), `replyMode` (`standard` or `watch`) | `reply` (text), `urgent` (yes/no), `forward` (yes/no: the Med bot thinks this question should go to the flight surgeon), `sources` (list of `ChatSource`: the passages from the team's research database that were found for this question and given to the model; empty when nothing matched and always empty in `watch` mode) |
 | `POST /api/events` | One message as in section 10 | `ok`, `id` |
 | `GET /api/events?room=CODE&after=CURSOR` | | `events` (list), `cursor` |
 
@@ -376,7 +387,14 @@ Messages carry no name. The only profile detail that may travel is the role on `
 
 Every social call except `join` carries the `token` that `join` returned. The token stays inside `data/social` and is never given to a screen. The network holds a handle, an optional role, friendships, at most one `SharedMood` per person and chat text. For a challenge it holds one score per person per challenge and nothing else, visible to friends who take part in the same challenge, and deleted after 8 days without an update. It never holds a display name, a reading, a mood note or anything else from the store.
 
-Settings read in `config.ts`: `VITE_CHAT_URL`, `VITE_EVENTS_URL`, `VITE_SOCIAL_URL`. When one is empty, that feature uses its offline fallback and nothing breaks.
+| Endpoint (ground, added Sunday 15 November, built by prompt 28) | In | Out |
+|---|---|---|
+| `POST /api/ground/report` | `reportId`, `key`, `report` (a `GroundReport` with `kind` `member` and without `receivedAt`); or `reportId`, `key`, `remove` (yes) | `ok` |
+| `GET /api/ground/reports` | The ground code in the header `Authorization: Bearer CODE` | `reports` (list of `GroundReport`). Status 401 when the code is wrong, 503 when the server has no code set |
+
+The first `report` for a `reportId` fixes its `key`; a later `report` or `remove` with another key is refused. The server keeps only the latest report per `reportId`, deletes it at once on `remove`, and deletes it 7 days after its last update. Reports can be read only with the ground code, which is the server secret `GROUND_CODE`, set in the Cloudflare dashboard and never written in the repo, a log or the browser bundle. While `GROUND_CODE` is not set, nothing can be read.
+
+Settings read in `config.ts`: `VITE_CHAT_URL`, `VITE_EVENTS_URL`, `VITE_SOCIAL_URL`, `VITE_GROUND_URL`. When one is empty, that feature uses its offline fallback and nothing breaks.
 
 ## 12. Ophi interface
 
