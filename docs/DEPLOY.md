@@ -76,7 +76,7 @@ Per CONTRACTS section 11, the app checks two environment variables in `app/src/c
 - `VITE_EVENTS_URL`: Custom base URL for watch/console relay messages (`POST /api/events` and `GET /api/events`).
 - `VITE_SOCIAL_URL`: Crew network endpoint URL.
 
-When these are left empty, the application falls back gracefully to relative paths (`/api/*`) or offline fallbacks.
+When one is left empty, that feature uses its offline fallback and calls no server (CONTRACTS section 11). The app does not guess a relative `/api/*` path.
 
 ### Where to Set Them:
 
@@ -94,7 +94,7 @@ Vite requires `VITE_` variables to be present during `npm run build`:
        VITE_CHAT_URL: ${{ vars.VITE_CHAT_URL }}
        VITE_EVENTS_URL: ${{ vars.VITE_EVENTS_URL }}
    ```
-   *(Note: When backend API functions run under the same Azure Static Web App domain in Part B, leaving these blank means the app automatically calls relative `/api/chat` and `/api/events`, which requires zero configuration).*
+   *(Note: When the API functions run under the same Azure Static Web App domain in Part B, set these to the relative paths `/api/chat` and `/api/events`. Left blank, the features stay on their offline fallbacks.)*
 
 #### For Backend API / Function Secrets (Azure Portal - Part B):
 Application secrets (such as model provider API keys) must **never** be prefixed with `VITE_` and never go into GitHub repo settings or browser bundles:
