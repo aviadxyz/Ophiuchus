@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 30,
   icon: 'smile',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · MOOD',
   description: 'Your daily mood check-ins and how they line up with your sleep.',
 }
