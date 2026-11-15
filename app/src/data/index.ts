@@ -179,3 +179,27 @@ export type {
   EnvironmentTargetId,
 } from './types'
 // --- end of station environment ---
+// --- Ground sharing (prompt 28, CONTRACTS sections 8, 9 and 11) ---
+export type {
+  GroundAlert,
+  GroundReport,
+  GroundShare,
+  GroundShareState,
+  GroundView,
+  GroundViewState,
+  GroundWeekMetric,
+} from './ground'
+export {
+  closeGroundView,
+  openGroundView,
+  openSimulatedGroundView,
+  setGroundShare,
+  useGroundShare,
+  useGroundView,
+} from './ground'
+import { installGround, installGroundView } from './ground'
+if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') {
+  installGround()
+  installGroundView()
+}
+// --- end of ground sharing ---

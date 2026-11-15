@@ -11,6 +11,7 @@ import { getFood } from './foods'
 import {
   safeStorage,
   sanitizeAlerts,
+  sanitizeGroundShare,
   sanitizeProfileData,
   sanitizeProfiles,
   STORE_KEY,
@@ -24,6 +25,7 @@ import type {
   AlertOrigin,
   CrewProfile,
   DateString,
+  GroundShareSetting,
   MoodCheckin,
   ProfileChanges,
   ProfileData,
@@ -43,6 +45,8 @@ export type StoreState = {
   room: string | null
   /** The day the demo profile was last built, so it can be rebuilt when the date moves on. */
   demoSeededOn: DateString | null
+  /** Ground sharing per profile id. Absent means off. Written only by data/ground. */
+  groundShare: Record<string, GroundShareSetting>
 }
 
 const emptyState = (): StoreState => ({
@@ -52,6 +56,7 @@ const emptyState = (): StoreState => ({
   alerts: [],
   room: null,
   demoSeededOn: null,
+  groundShare: {},
 })
 
 const MAX_ALERTS = 200
@@ -81,6 +86,8 @@ export const useDataStore = create<StoreState>()(
           typeof p.activeProfileId === 'string' ? p.activeProfileId : DEMO_PROFILE_ID,
         room: typeof p.room === 'string' && p.room.length > 0 ? p.room : null,
         demoSeededOn: typeof p.demoSeededOn === 'string' ? p.demoSeededOn : null,
+        // Kept for a deleted profile too, so data/ground can still remove its report.
+        groundShare: sanitizeGroundShare(p.groundShare),
       }
     },
   }),
@@ -611,4 +618,19 @@ export function resetDemoProfile(): void {
 
 export function setStoredRoom(code: string | null): void {
   set(() => ({ room: code }))
+}
+
+// ---------------------------------------------------------------------------------------------
+// Ground sharing, used by data/ground (prompt 28)
+// ---------------------------------------------------------------------------------------------
+
+/** Sets or forgets one profile's ground sharing. Kept per profile, so it never carries over. */
+export function setStoredGroundShare(profileId: string, setting: GroundShareSetting | null): void {
+  set((state) => {
+    if (setting) return { groundShare: { ...state.groundShare, [profileId]: setting } }
+    if (!(profileId in state.groundShare)) return {}
+    const { [profileId]: removed, ...rest } = state.groundShare
+    void removed
+    return { groundShare: rest }
+  })
 }

@@ -8,6 +8,7 @@ import type {
   BodyMass,
   CrewProfile,
   ExerciseSession,
+  GroundShareSetting,
   MealEntry,
   MoodCheckin,
   ProfileData,
@@ -150,4 +151,19 @@ export function sanitizeAlerts(value: unknown): Alert[] {
       typeof a.message === 'string' &&
       ['open', 'cancelled', 'acknowledged'].includes(a.status as string),
   )
+}
+
+const GROUND_ID = /^[A-Za-z0-9-]{16,64}$/
+
+/** Ground sharing per profile. Saved data from before prompt 28 has none, so sharing is off. */
+export function sanitizeGroundShare(value: unknown): Record<string, GroundShareSetting> {
+  if (!isObj(value)) return {}
+  const result: Record<string, GroundShareSetting> = {}
+  for (const [profileId, raw] of Object.entries(value)) {
+    if (!isObj(raw) || typeof raw.on !== 'boolean') continue
+    if (typeof raw.reportId !== 'string' || !GROUND_ID.test(raw.reportId)) continue
+    if (typeof raw.key !== 'string' || !GROUND_ID.test(raw.key)) continue
+    result[profileId] = { on: raw.on, reportId: raw.reportId, key: raw.key }
+  }
+  return result
 }

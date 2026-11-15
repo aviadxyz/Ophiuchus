@@ -9,4 +9,5 @@ export const config = {
   chatUrl: read(import.meta.env.VITE_CHAT_URL),
   eventsUrl: read(import.meta.env.VITE_EVENTS_URL),
   socialUrl: read(import.meta.env.VITE_SOCIAL_URL),
+  groundUrl: read(import.meta.env.VITE_GROUND_URL),
 } as const
