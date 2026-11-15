@@ -1,0 +1,48 @@
+{
+  "job_id": "focused_9bf7d8f8a4ca136559bc",
+  "focus": "monitoring",
+  "source_id": "source_272ff97648e63fa98488",
+  "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "28959a754af54b3f9746b51a9bab5a5e71c3464f004b2b02fdcc360c9873a564"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "behavioral",
+        "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+        "indicator": "number of sunrises and sunsets per day",
+        "related_kind": "conditions",
+        "related_name": "sleep-wake cycle disruption",
+        "relationship": "associated_with",
+        "population_text": "astronauts",
+        "unit": "per day"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

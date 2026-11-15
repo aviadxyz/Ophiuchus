@@ -1,0 +1,42 @@
+{
+  "source_id": "source_5611ecb4c6d90b86677b",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_3d2a04e92ccb4f5b5153",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2210:3312",
+    "text": "Gravity Fields Astronauts' entire bodies – muscles, bones, inner ear, and organs – must adjust to the new gravities encountered on the space station or their spacecraft, as well as on the Moon, Mars, and Earth once they return home. Hostile/Closed Environments Maintaining a safe ecosystem inside a spacecraft presents unique challenges, from ensuring optimal temperatures, pressures, and lighting, to reducing noise, monitoring microbial communities, and tracking immune responses. Watch Videos Space Radiation This hazard of a human mission to Mars is the most difficult to visualize because, well, space radiation is invisible to the human eye. Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight. Watch Isolation and Confinement Behavioral responses occur among groups of people isolated and confined in a small space over a long period of time. Crews must be carefully chosen, trained, and supported to ensure they can work effectively as a team for months or years in space. Watch Distance From Earth Mars is, on average, 140 million miles from Earth. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "618d13f111d956a5e0b22e7f70bfb7017e5facdc5a82d210db83653a6f731a5a"
+  },
+  "tables": {},
+  "rejected": [],
+  "statistics": {
+    "candidates": 0,
+    "valid_records": 0,
+    "rejected": [],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

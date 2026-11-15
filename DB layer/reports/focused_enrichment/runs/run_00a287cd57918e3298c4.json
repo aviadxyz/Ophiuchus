@@ -1,0 +1,151 @@
+{
+  "started_at": "2026-11-15T13:19:49.164368+00:00",
+  "status": "completed",
+  "focuses": [
+    "monitoring",
+    "microbiome"
+  ],
+  "sources": [
+    {
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "microbiome": 2
+      },
+      "status": "eligible"
+    }
+  ],
+  "eligible_jobs": 2,
+  "processed": 2,
+  "resumed": 0,
+  "errors": [],
+  "jobs": [
+    {
+      "job_id": "focused_3fcc9d0a3c3965afef6d",
+      "focus": "microbiome",
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0
+        },
+        "prompt_version": "1",
+        "schema_version": "1",
+        "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+      },
+      "status": "committed",
+      "candidates": 3,
+      "valid_records": 1,
+      "rejected": [
+        {
+          "index": 1,
+          "reason": "incomplete_relationship_endpoints",
+          "record": {
+            "category": "microbiome",
+            "evidence_text": "Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk.",
+            "microbiome_concept": "Some microbes",
+            "scope": "environmental",
+            "related_name": "disease risk",
+            "relationship": "associated_with",
+            "study_population": "unknown",
+            "study_schedule": null
+          }
+        },
+        {
+          "index": 2,
+          "reason": "incomplete_relationship_endpoints",
+          "record": {
+            "category": "microbiome",
+            "evidence_text": "Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function.",
+            "microbiome_concept": "microbiome changes",
+            "scope": "human",
+            "related_name": "risk",
+            "relationship": "associated_with",
+            "study_population": "unknown",
+            "study_schedule": null
+          }
+        }
+      ],
+      "new_rows": {
+        "evidence/evidence": 1,
+        "entities/microbiome": 1,
+        "evidence/knowledge_claims": 1
+      },
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_6c3c252741917abba03f",
+      "focus": "microbiome",
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0
+        },
+        "prompt_version": "1",
+        "schema_version": "1",
+        "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+      },
+      "status": "committed",
+      "candidates": 2,
+      "valid_records": 1,
+      "rejected": [
+        {
+          "index": 1,
+          "reason": "incomplete_relationship_endpoints",
+          "record": {
+            "category": "microbiome",
+            "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+            "microbiome_concept": "Multi-Drug Resistant Bacteria",
+            "scope": "environmental",
+            "related_name": "ISS",
+            "relationship": "monitored_by",
+            "study_population": "unknown",
+            "study_schedule": null
+          }
+        }
+      ],
+      "new_rows": {
+        "evidence/evidence": 1,
+        "entities/microbiome": 1,
+        "evidence/knowledge_claims": 1
+      },
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    }
+  ],
+  "new_rows": {
+    "evidence/evidence": 2,
+    "entities/microbiome": 2,
+    "evidence/knowledge_claims": 2
+  },
+  "duplicates_skipped": 0,
+  "reused_entities": [],
+  "limitations": [
+    "All new records remain pending professional review; exact quotations do not prove semantic or clinical validity.",
+    "Study schedules are stored as research observations, never recommended monitoring frequencies.",
+    "No treatments, protocols, existing records or approved data are modified.",
+    "Cached NASA risk summaries are used when HRR evidence PDFs are unavailable; missing coverage is reported."
+  ],
+  "finished_at": "2026-11-15T13:21:53.005290+00:00"
+}

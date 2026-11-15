@@ -202,6 +202,9 @@ def batches(root):
         yield p,read_json(root/'staging/reviewed'/p.name,read_json(p))
 
 def export(root,draft=True):
+    if draft and any((root/'staging/focused/transactions').glob('*.json')):
+        from knowledge_ingestion.focused.append import preserve_draft_export
+        return preserve_draft_export(root)
     tables={k:{} for k in SCHEMAS}
     from knowledge_ingestion.enrichment.merge import merge_entity
     baseline_conflicts=[]

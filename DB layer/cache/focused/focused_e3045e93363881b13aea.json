@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "36a3f1911c088326bb9d54742ae93ff578dcaece8ee584b90a83a6d2b5bb73c6"
+  },
+  "content": "{\"records\": [{\"category\": \"behavioral\", \"evidence_text\": \"They’re also mapping the myriad risks from miscommunications and related team tensions.\", \"indicator\": \"miscommunications\", \"related_kind\": \"risk_factors\", \"related_name\": \"team tensions\", \"relationship\": \"associated_with\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"behavioral\",\n      \"evidence_text\": \"They’re also mapping the myriad risks from miscommunications and related team tensions.\",\n      \"indicator\": \"miscommunications\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"team tensions\",\n      \"relationship\": \"associated_with\",\n      \"details\": null\n    }\n  ]\n}"
+}

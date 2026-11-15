@@ -1,0 +1,70 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_e35385805299ef8d7dee",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1936:3072",
+    "text": "Research focuses on developing better prevention and faster treatment options. Read About Decompression Sickness Risk of Host-Microorganism Interactions Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick. To help keep crews healthy, researchers are exploring these microbial ecosystems and how they evolve in space. Read About Host-Microorganism Interaction Risks Risk of Hypoxia Astronauts on future deep space missions will take steps to avoid “the bends” during spacewalks, but following those steps also elevates the risk of mild hypoxia — a condition that occurs when oxygen levels in body tissues become lower than normal. Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "b1e544f7e267f9f53190a512ff62a8d9776e0bdced569095e2301a978ff87cb2"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "community",
+        "evidence_text": "skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick",
+        "microbiome_concept": "skin and gut microbiomes",
+        "related_kind": "risk_factors",
+        "related_name": "getting sick",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "community",
+          "evidence_text": "skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick",
+          "microbiome_concept": "skin and gut microbiomes",
+          "related_kind": "risk_factors",
+          "related_name": "getting sick",
+          "relationship": "investigated_in_relation_to",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "e51c73917d24f231b30e90652f6c17dc24a143475850b817688715ec49a95bf4"
+  },
+  "content": "{\"records\": [{\"category\": \"physiological\", \"evidence_text\": \"The effects of exposure to microgravity can vary substantially between individual astronauts. However, data from International Space Station missions indicates that average losses to strength and aerobic fitness are 10-12% of pre-mission levels. Depending on how it’s measured, between \", \"indicator\": \"losses to strength and aerobic fitness\", \"related_kind\": \"conditions\", \"related_name\": \"reduced cardiorespiratory and musculoskeletal fitness\", \"relationship\": \"associated_with\", \"population_text\": \"International Space Station missions\", \"unit\": null}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"physiological\",\n      \"evidence_text\": \"The effects of exposure to microgravity can vary substantially between individual astronauts. However, data from International Space Station missions indicates that average losses to strength and aerobic fitness are 10-12% of pre-mission levels. Depending on how it’s measured, between \",\n      \"indicator\": \"losses to strength and aerobic fitness\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"reduced cardiorespiratory and musculoskeletal fitness\",\n      \"relationship\": \"associated_with\",\n      \"details\": {\n        \"population_text\": \"International Space Station missions\",\n        \"unit\": null\n      }\n    }\n  ]\n}"
+}

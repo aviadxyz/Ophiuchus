@@ -1,0 +1,68 @@
+{
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_8375f5abb67b7b24d75f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1019:2192",
+    "text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones. Simultaneously, muscles usually activated by simply standing on Earth start to atrophy because they no longer need to work as hard. To learn more, NASA turns to researchers like Dr. Ashley Weaver, a biomedical engineer at Wake Forest School of Medicine in Winston-Salem, North Carolina. Weaver and her team study how spaceflight affects the network of bones and muscles in the spinal column. This network provides structural support for vital organs, including the brain, heart, and lungs. “Spinal health is integral to postural control and facilitating the core trunk movements required for all activities on mission,” explained Weaver. “So, it’s crucial that we understand how these muscle changes are influenced by long-duration exposure to microgravity.” Weaver’s team compares detailed scans of astronauts’ spines immediately before and after spaceflight. Techniques such as quantitative computed tomography, or “qCT,” and magnetic resonance imaging, or MRI, allow researchers to pinpoint subtle shifts in bone density and muscle size upon return to Earth. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "ea1b2b83aab04ef559db344d0407ed9764682fb68a207d212a5cfec47d428b73"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "not_a_named_measurable_indicator",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+        "indicator": "removal outpaces growth",
+        "related_kind": "conditions",
+        "related_name": "weaker, more brittle bones",
+        "relationship": "investigated_in_relation_to"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "not_a_named_measurable_indicator",
+        "record": {
+          "category": "environmental_exposure",
+          "evidence_text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+          "indicator": "removal outpaces growth",
+          "related_kind": "conditions",
+          "related_name": "weaker, more brittle bones",
+          "relationship": "investigated_in_relation_to"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

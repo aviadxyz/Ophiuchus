@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "9d684d1767fd74286c849f34ddcb9da8346dddf25f8490055f1b360bf65d2383"
+  },
+  "content": "{\"records\": [{\"category\": \"community\", \"evidence_text\": \"Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.\", \"microbiome_concept\": \"microbial changes\", \"related_kind\": \"risk_factors\", \"related_name\": \"host-microorganism interactions\", \"relationship\": \"monitored_by\", \"scope\": \"environmental\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.\",\n      \"microbiome_concept\": \"microbial changes\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"host-microorganism interactions\",\n      \"relationship\": \"monitored_by\",\n      \"scope\": \"environmental\",\n      \"details\": null\n    }\n  ]\n}"
+}

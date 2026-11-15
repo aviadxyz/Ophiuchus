@@ -1,0 +1,48 @@
+{
+  "job_id": "focused_d6be07949ac7736b8888",
+  "focus": "monitoring",
+  "source_id": "source_b4bd76d26d8b64355543",
+  "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "777e19d4c0a31fdae548223199adc783c3873e0b5b2b1662dc9f62830590d8a9"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "In microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions.",
+        "indicator": "bone density loss",
+        "related_kind": "conditions",
+        "related_name": "premature osteoporosis",
+        "relationship": "associated_with",
+        "population_text": "crew members",
+        "unit": "percent of density per month"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

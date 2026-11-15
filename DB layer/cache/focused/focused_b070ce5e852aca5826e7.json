@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"the gut microbiome\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"microbiome_concept\": \"gut microbiome\",\n      \"observed_change\": null,\n      \"population_text\": \"participating astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"immune system\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"scope\": \"human\",\n      \"site\": null,\n      \"study_environment\": null,\n      \"study_population\": \"animal_models\",\n      \"study_schedule\": null\n    }\n  ]\n}"
+}

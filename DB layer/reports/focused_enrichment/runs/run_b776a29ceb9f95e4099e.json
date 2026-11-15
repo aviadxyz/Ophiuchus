@@ -1,0 +1,2053 @@
+{
+  "started_at": "2026-11-15T14:10:33.307088+00:00",
+  "status": "completed",
+  "focuses": [
+    "monitoring",
+    "microbiome"
+  ],
+  "sources": [
+    {
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "microbiome": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_13286a5f480896318f1f",
+      "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "microbiome": 1
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_1b74656c820988255936",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_272ff97648e63fa98488",
+      "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_28df3ab5607abcc44fe7",
+      "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 3
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1,
+        "microbiome": 3
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_4e0f2521ffc550287338",
+      "source_url": "https://www.nasa.gov/reference/risk-of-altered-sensorimotor-and-vestibular-function/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "source_url": "https://www.nasa.gov/hrp/hazards/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2,
+        "microbiome": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_595c9981ebc185e5870a",
+      "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_5af66404068466682af7",
+      "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "microbiome": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_5c511e99e567d27ec313",
+      "source_url": "https://www.nasa.gov/hrp",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_8c833efac46b3f69da00",
+      "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2,
+        "microbiome": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_964a3b024cff8881b0d4",
+      "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1,
+        "microbiome": 1
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_9fc83afed4c3c844eb53",
+      "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_a04de5b744ab7f9d06b3",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_a52493076e4308064964",
+      "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_a8159d920b53fd31fdc6",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_a88298f30673509167a9",
+      "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_b4bd76d26d8b64355543",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_c2699be8927456ed51f5",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_cf2e7b26631f3a802e27",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {},
+      "status": "no_targeted_passage"
+    },
+    {
+      "source_id": "source_dcd2bf837a04a29770e5",
+      "source_url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "microbiome": 2,
+        "monitoring": 2
+      },
+      "status": "eligible"
+    },
+    {
+      "source_id": "source_e79603c096ca70d9c009",
+      "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+      "hrr_evidence_report": false,
+      "eligible_chunks": {
+        "monitoring": 1
+      },
+      "status": "eligible"
+    }
+  ],
+  "eligible_jobs": 40,
+  "processed": 0,
+  "resumed": 40,
+  "errors": [],
+  "jobs": [
+    {
+      "job_id": "focused_8347ee60dd31eb23053c",
+      "focus": "microbiome",
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "community",
+            "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+            "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+            "related_kind": "conditions",
+            "related_name": "disease risk",
+            "relationship": "associated_with",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_e7822191d00fb865839a",
+      "focus": "microbiome",
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "9d684d1767fd74286c849f34ddcb9da8346dddf25f8490055f1b360bf65d2383"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "community",
+            "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+            "microbiome_concept": "microbial changes",
+            "related_kind": "risk_factors",
+            "related_name": "host-microorganism interactions",
+            "relationship": "monitored_by",
+            "scope": "environmental"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_b5b94aee0e49cd0692fc",
+      "focus": "microbiome",
+      "source_id": "source_13286a5f480896318f1f",
+      "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "0ccf9fd4901d736841f3537b3f1b62a73bd70535c47190828e1be77bd34075cb"
+      },
+      "status": "committed",
+      "candidates": 0,
+      "valid_records": 0,
+      "rejected": [],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_73d5825d366c441cae55",
+      "focus": "monitoring",
+      "source_id": "source_1b74656c820988255936",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "de7d88bf12cd3b6cd7b491282bae4a171e0ccbcd6d49dbc3cad9ae6bb4e099c8"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness.",
+            "indicator": "difference between atmospheric pressures",
+            "related_kind": "conditions",
+            "related_name": "decompression sickness",
+            "relationship": "correlates_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_6d7c452f6af5d4646b5e",
+      "focus": "monitoring",
+      "source_id": "source_272ff97648e63fa98488",
+      "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "e7dfffda4d5a5111aa59ee39befeb9cdbe4af98d7b7196671aa6dc910faa911c"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions.",
+            "indicator": "irregular light-dark cycles",
+            "related_kind": "risk_factors",
+            "related_name": "sleep-pattern disruptions",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_9bf7d8f8a4ca136559bc",
+      "focus": "monitoring",
+      "source_id": "source_272ff97648e63fa98488",
+      "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "28959a754af54b3f9746b51a9bab5a5e71c3464f004b2b02fdcc360c9873a564"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "entity_name_not_verbatim",
+          "record": {
+            "category": "behavioral",
+            "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+            "indicator": "number of sunrises and sunsets per day",
+            "related_kind": "conditions",
+            "related_name": "sleep-wake cycle disruption",
+            "relationship": "associated_with",
+            "population_text": "astronauts",
+            "unit": "per day"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_dcc01553cbc46d01e322",
+      "focus": "monitoring",
+      "source_id": "source_28df3ab5607abcc44fe7",
+      "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "f09549321014b875012848e99f3d088955bbb9306b9cf910c11a4a39c38ced12"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "entity_name_not_verbatim",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.",
+            "indicator": "bone density",
+            "related_kind": "conditions",
+            "related_name": "loss of bone density",
+            "relationship": "correlates_with",
+            "population_text": "astronauts",
+            "unit": "1% per month in space"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_664d6e2848dbb2b7905d",
+      "focus": "monitoring",
+      "source_id": "source_28df3ab5607abcc44fe7",
+      "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "ea1b2b83aab04ef559db344d0407ed9764682fb68a207d212a5cfec47d428b73"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+            "indicator": "removal outpaces growth",
+            "related_kind": "conditions",
+            "related_name": "weaker, more brittle bones",
+            "relationship": "investigated_in_relation_to"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_28d60efa3e2eac5aae82",
+      "focus": "monitoring",
+      "source_id": "source_28df3ab5607abcc44fe7",
+      "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "cc2e8b16a414ac46f0ddcb906c66680699a25b2120bb85fe2d1e2c7e72240ef7"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "behavioral",
+            "evidence_text": "Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size.",
+            "indicator": "accumulation of fat tissue in the muscle",
+            "related_kind": "conditions",
+            "related_name": "muscle atrophy",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_90c1110d0f02d018d0a9",
+      "focus": "monitoring",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "entity_name_not_verbatim",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa.",
+            "indicator": "shelf stability of foods",
+            "related_kind": "risk_factors",
+            "related_name": "food system requirements of the space station",
+            "relationship": "investigated_in_relation_to",
+            "population_text": "participating astronauts",
+            "unit": null
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_8a1ea96b123ac5399cfd",
+      "focus": "microbiome",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "community",
+            "evidence_text": "the gut microbiome",
+            "microbiome_concept": "gut microbiome",
+            "related_kind": "conditions",
+            "related_name": "immune system",
+            "relationship": "investigated_in_relation_to",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_d37fd854c408f37a71d6",
+      "focus": "microbiome",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "fc9963ee80ef9984eba82b26f2266cf55560dab13cd255fe977315517dbdcfdf"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "microbiome",
+            "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+            "microbiome_concept": "microbiome",
+            "related_kind": "conditions",
+            "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+            "relationship": "associated_with",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_50b6f0be495c15678518",
+      "focus": "microbiome",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "cc49863e39656e3bf97e6ac806d6da8aa46078977c43a2374a6fc34ff42f25cb"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "microbiome",
+            "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+            "microbiome_concept": "microbiome",
+            "related_kind": "conditions",
+            "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+            "relationship": "investigated_in_relation_to",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_fb62ad12655363cde354",
+      "focus": "monitoring",
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "source_url": "https://www.nasa.gov/hrp/hazards/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "618d13f111d956a5e0b22e7f70bfb7017e5facdc5a82d210db83653a6f731a5a"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Maintaining a safe ecosystem inside a spacecraft presents unique challenges, from ensuring optimal temperatures, pressures, and lighting, to reducing noise, monitoring microbial communities, and tracking immune responses.",
+            "indicator": "microbial communities",
+            "related_kind": "risk_factors",
+            "related_name": "microbial communities",
+            "relationship": "monitored_by"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_d78f6281d3cb55236a94",
+      "focus": "microbiome",
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "source_url": "https://www.nasa.gov/hrp/hazards/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "618d13f111d956a5e0b22e7f70bfb7017e5facdc5a82d210db83653a6f731a5a"
+      },
+      "status": "committed",
+      "candidates": 0,
+      "valid_records": 0,
+      "rejected": [],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_cbb3c11d0eaa45bc2a89",
+      "focus": "monitoring",
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "source_url": "https://www.nasa.gov/hrp/hazards/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "8fb1428c77b653d728150fc164696412012b4a1c09694226f7ccf6d5e12ca92b"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:population_text",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Watch Hostile/Closed Environments A spacecraft is not only a home, it’s also a machine. The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+            "indicator": "presence of microbes",
+            "related_kind": "risk_factors",
+            "related_name": "presence of microbes",
+            "relationship": "associated_with",
+            "population_text": "astronauts",
+            "study_population": "unknown",
+            "study_schedule": null,
+            "unit": null
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_527941614e1aa2b38f8e",
+      "focus": "microbiome",
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "source_url": "https://www.nasa.gov/hrp/hazards/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "8fb1428c77b653d728150fc164696412012b4a1c09694226f7ccf6d5e12ca92b"
+      },
+      "status": "committed",
+      "candidates": 0,
+      "valid_records": 0,
+      "rejected": [],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_db8c533cc8d7369d00f1",
+      "focus": "monitoring",
+      "source_id": "source_595c9981ebc185e5870a",
+      "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "1be6cc5c5fc1604c2c720abc1c51132517cc38a29dba135a4b2d1af2e61fd5dd"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury.",
+            "indicator": "microgravity",
+            "related_kind": "conditions",
+            "related_name": "weakened bones",
+            "relationship": "investigated_in_relation_to"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_7e216f9a69c04d805dd0",
+      "focus": "monitoring",
+      "source_id": "source_595c9981ebc185e5870a",
+      "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "e51c73917d24f231b30e90652f6c17dc24a143475850b817688715ec49a95bf4"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "physiological",
+            "evidence_text": "The effects of exposure to microgravity can vary substantially between individual astronauts. However, data from International Space Station missions indicates that average losses to strength and aerobic fitness are 10-12% of pre-mission levels. Depending on how it’s measured, between ",
+            "indicator": "losses to strength and aerobic fitness",
+            "related_kind": "conditions",
+            "related_name": "reduced cardiorespiratory and musculoskeletal fitness",
+            "relationship": "associated_with",
+            "population_text": "International Space Station missions",
+            "unit": null
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_8468dcc2067e7b97e3de",
+      "focus": "microbiome",
+      "source_id": "source_5af66404068466682af7",
+      "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "54d2e7d2346766e76865b60cb00112f237d397eebe87b65fcd75e892c8fda2f2"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "community",
+            "evidence_text": "Such space stressors may also trigger allergic reactions or awaken dormant viruses in astronauts’ bodies, like those that cause cold sores and shingles",
+            "microbiome_concept": "dormant viruses",
+            "related_kind": "risk_factors",
+            "related_name": "allergic reactions",
+            "relationship": "associated_with",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_2fc4e6a3dcf7e22e6347",
+      "focus": "microbiome",
+      "source_id": "source_5af66404068466682af7",
+      "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "d992040c64ac4e54faca9b8437b00a5cd92685b58d38cb2aa111cfe9ac0cd452"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "microbiome_concept_not_explicit",
+          "record": {
+            "category": "community",
+            "evidence_text": "Some astronauts aboard the International Space Station have reported cold sores, rashes, atypical allergies, and infections that can be attributed to immune system alterations.",
+            "microbiome_concept": "cold sores, rashes, atypical allergies, and infections",
+            "related_kind": "conditions",
+            "related_name": "immune system alterations",
+            "relationship": "associated_with",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_45e3179c3df89f868abb",
+      "focus": "monitoring",
+      "source_id": "source_5c511e99e567d27ec313",
+      "source_url": "https://www.nasa.gov/hrp",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "d748c76f50ede69c22ff09481a18772520b2f2bf56281bf0cba0e4668b8f9da3"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "missing_exact_source_evidence",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "NASA's HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+            "indicator": "radiation exposure",
+            "related_kind": "risk_factors",
+            "related_name": "radiation exposure",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_ccc0426a25bda7813a64",
+      "focus": "monitoring",
+      "source_id": "source_5c511e99e567d27ec313",
+      "source_url": "https://www.nasa.gov/hrp",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "a3beb340ca157717fc1782cd6a1a7c45ee92057e739b4671c5677fd13400ba8f"
+      },
+      "status": "committed",
+      "candidates": 0,
+      "valid_records": 0,
+      "rejected": [],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_886dac7f67f8a36101ac",
+      "focus": "monitoring",
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "a7b60e43b40324a57a835574c11cbc454dbb677204577e78553158e6c1776236"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "missing_exact_source_evidence",
+          "record": {
+            "category": "cognitive_performance",
+            "evidence_text": "Space radiation exposure may affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions.",
+            "indicator": "cognitive or performance impairments",
+            "related_kind": "conditions",
+            "related_name": "cognitive or performance impairments",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_81772fb91c67f867cce4",
+      "focus": "monitoring",
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "03a9fbaef3bb53a8391ce606dc762616259dd5deed00aa22f24db22810767ff9"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "entity_name_not_verbatim",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble.",
+            "indicator": "space radiation exposure",
+            "related_kind": "risk_factors",
+            "related_name": "missions to the Moon and Mars",
+            "relationship": "investigated_in_relation_to",
+            "population_text": "missions to the Moon and Mars",
+            "study_schedule": null,
+            "unit": null
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_2b036f668f99205c8178",
+      "focus": "monitoring",
+      "source_id": "source_8c833efac46b3f69da00",
+      "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "4cb3cdc7ec193bef67b3c6711b01a91b04258a882e28e26f4c3e27b2536d3eee"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "physiological_measurement_is_not_environmental_exposure",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "By analyzing participants’ blood and saliva samples, researchers expect to better understand how stress hormones, viruses, and cells may be affected by flight conditions.",
+            "indicator": "stress hormones",
+            "related_kind": "conditions",
+            "related_name": "flight conditions",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_86d026ab9543d3e08591",
+      "focus": "microbiome",
+      "source_id": "source_8c833efac46b3f69da00",
+      "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "4cb3cdc7ec193bef67b3c6711b01a91b04258a882e28e26f4c3e27b2536d3eee"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "community",
+            "evidence_text": "one aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space",
+            "microbiome_concept": "dormant viruses",
+            "related_kind": "risk_factors",
+            "related_name": "reawakening of dormant viruses in astronauts' bodies in space",
+            "relationship": "investigated_in_relation_to",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_410eeb1c8e263d715743",
+      "focus": "monitoring",
+      "source_id": "source_8c833efac46b3f69da00",
+      "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "cc8b063baf4f682eabaf6a9d8cbfa1dfa7fee326270d859039c498d916808985"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Risk of Altered Immune System Responses",
+            "indicator": "altered immune system responses",
+            "related_kind": "conditions",
+            "related_name": "altered immune system responses",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_68f37514d92a6cc02d95",
+      "focus": "microbiome",
+      "source_id": "source_8c833efac46b3f69da00",
+      "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "cc8b063baf4f682eabaf6a9d8cbfa1dfa7fee326270d859039c498d916808985"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "microbiome_concept_not_explicit",
+          "record": {
+            "category": "community",
+            "evidence_text": "Risk of Altered Immune System Responses",
+            "microbiome_concept": "Altered Immune System Responses",
+            "related_kind": "conditions",
+            "related_name": "Altered Immune System Responses",
+            "relationship": "associated_with",
+            "scope": "unspecified"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_295036982d6c2e2f506c",
+      "focus": "monitoring",
+      "source_id": "source_964a3b024cff8881b0d4",
+      "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "f0e1c1b73df5082d3e91af5deea3bb8c8abdf0f0dd637c6f536ee342b63d6b2d"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "behavioral",
+            "evidence_text": "HRP Ongoing HRP Research in Space Human Investigations on NASA's Artemis II Mission ARCHeR A study on Artemis II monitored astronauts' well-being, activity, and sleep patterns to learn more about human health and performance in deep space.",
+            "indicator": "well-being, activity, and sleep patterns",
+            "related_kind": "conditions",
+            "related_name": "human health and performance in deep space",
+            "relationship": "monitored_by"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_c89de56f43cac1b587e5",
+      "focus": "microbiome",
+      "source_id": "source_964a3b024cff8881b0d4",
+      "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "c663ebbf043fd46004830b2676c309ff028ff999208b4b94565b3deb27824a3f"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "community",
+            "evidence_text": "Monitoring microbial growth on hardware that stores crops in space to develop a better plant production system and ensure crew safety",
+            "microbiome_concept": "microbial growth",
+            "related_kind": "risk_factors",
+            "related_name": "crew safety",
+            "relationship": "investigated_in_relation_to",
+            "scope": "environmental"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_6b2c3731198639bf765a",
+      "focus": "monitoring",
+      "source_id": "source_a52493076e4308064964",
+      "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "89b6fe46107917ec1704a1c89b61b7023ed1416dc0f8943e70969eefd9500f86"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "behavioral",
+            "evidence_text": "Risk of adverse cognitive or behavioral changes and psychiatric disorders leading to in-mission health and performance and long-term health effects",
+            "indicator": "adverse cognitive or behavioral changes",
+            "related_kind": "conditions",
+            "related_name": "psychiatric disorders",
+            "relationship": "investigated_in_relation_to"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_d6be07949ac7736b8888",
+      "focus": "monitoring",
+      "source_id": "source_b4bd76d26d8b64355543",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "777e19d4c0a31fdae548223199adc783c3873e0b5b2b1662dc9f62830590d8a9"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "entity_name_not_verbatim",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "In microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions.",
+            "indicator": "bone density loss",
+            "related_kind": "conditions",
+            "related_name": "premature osteoporosis",
+            "relationship": "associated_with",
+            "population_text": "crew members",
+            "unit": "percent of density per month"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_c46277c0f5ac85e9a285",
+      "focus": "monitoring",
+      "source_id": "source_dcd2bf837a04a29770e5",
+      "source_url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "842b7fde5498172bbfd43f6a42eec3ea9604824948c9e6a346c3b325fe643f14"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "cognitive_performance",
+            "evidence_text": "radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes.",
+            "indicator": "cognitive function",
+            "related_kind": "conditions",
+            "related_name": "altered cognitive function",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_180dcdb88a64708fd73a",
+      "focus": "monitoring",
+      "source_id": "source_dcd2bf837a04a29770e5",
+      "source_url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "e4833fe91ed0d74b2273a6c29f21f2229fa32423b401db54e8e726f7fcb81522"
+      },
+      "status": "committed",
+      "candidates": 0,
+      "valid_records": 0,
+      "rejected": [],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_9702910bb56891965b25",
+      "focus": "microbiome",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "8a5b0e70569682bb90e99dfc4e1b9d41a8149d53a164b5953e843d47cb8a67e0"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "community",
+            "evidence_text": "The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms.",
+            "microbiome_concept": "viruses",
+            "related_kind": "conditions",
+            "related_name": "rashes",
+            "relationship": "associated_with",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_dc436c3b2fe582cfe83f",
+      "focus": "microbiome",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "microbiome",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+        "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+        "content_hash": "b1e544f7e267f9f53190a512ff62a8d9776e0bdced569095e2301a978ff87cb2"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "community",
+            "evidence_text": "skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick",
+            "microbiome_concept": "skin and gut microbiomes",
+            "related_kind": "risk_factors",
+            "related_name": "getting sick",
+            "relationship": "investigated_in_relation_to",
+            "scope": "human"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_461fd36e67642d0f5480",
+      "focus": "monitoring",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "8e32ce8bb75f227ca6d9063479275cd65054194a5e6554872ec7a85e5e728ab5"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "relationship_semantics_not_supported",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+            "indicator": "low oxygen and high carbon dioxide levels",
+            "related_kind": "risk_factors",
+            "related_name": "decompression sickness",
+            "relationship": "investigated_in_relation_to"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_e3045e93363881b13aea",
+      "focus": "monitoring",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "36a3f1911c088326bb9d54742ae93ff578dcaece8ee584b90a83a6d2b5bb73c6"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "not_a_named_measurable_indicator",
+          "record": {
+            "category": "behavioral",
+            "evidence_text": "They’re also mapping the myriad risks from miscommunications and related team tensions.",
+            "indicator": "miscommunications",
+            "related_kind": "risk_factors",
+            "related_name": "team tensions",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    },
+    {
+      "job_id": "focused_512ca9e09d57657ede1e",
+      "focus": "monitoring",
+      "source_id": "source_e79603c096ca70d9c009",
+      "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+      "page_number": null,
+      "section": "Article",
+      "metadata": {
+        "focus": "monitoring",
+        "model": "qwen3:4b-instruct",
+        "settings": {
+          "temperature": 0.0,
+          "num_ctx": 8192,
+          "num_predict": 2048,
+          "seed": 0,
+          "focused_num_predict": 800,
+          "focused_think": false,
+          "compact_details": true
+        },
+        "prompt_version": "5",
+        "schema_version": "1",
+        "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+        "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+        "content_hash": "fa4c07cda8f6ac59f1be3975652401174fb5c5e406a98530320b2ab2edb427ff"
+      },
+      "status": "committed",
+      "candidates": 1,
+      "valid_records": 0,
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "field_not_verbatim:related_name",
+          "record": {
+            "category": "environmental_exposure",
+            "evidence_text": "Low-gravity conditions and other spaceflight stressors can alter the heart and blood vessels",
+            "indicator": "low-gravity conditions",
+            "related_kind": "conditions",
+            "related_name": "alteration of heart and blood vessels",
+            "relationship": "associated_with"
+          }
+        }
+      ],
+      "new_rows": {},
+      "duplicates_skipped": 0,
+      "reused_entities": []
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": [],
+  "limitations": [
+    "All new records remain pending professional review; exact quotations do not prove semantic or clinical validity.",
+    "Study schedules are stored as research observations, never recommended monitoring frequencies.",
+    "No treatments, protocols, existing records or approved data are modified.",
+    "Cached NASA risk summaries are used when HRR evidence PDFs are unavailable; missing coverage is reported."
+  ],
+  "finished_at": "2026-11-15T14:10:33.339859+00:00"
+}

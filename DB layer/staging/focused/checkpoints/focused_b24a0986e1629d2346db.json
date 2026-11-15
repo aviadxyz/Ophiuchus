@@ -1,0 +1,73 @@
+{
+  "job_id": "focused_b24a0986e1629d2346db",
+  "focus": "monitoring",
+  "source_id": "source_1b74656c820988255936",
+  "source_url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "de7d88bf12cd3b6cd7b491282bae4a171e0ccbcd6d49dbc3cad9ae6bb4e099c8"
+  },
+  "status": "committed",
+  "candidates": 2,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness.",
+        "indicator": "difference between atmospheric pressures",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": null,
+        "related_kind": "conditions",
+        "related_name": "decompression sickness",
+        "relationship": "correlates_with",
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "missing_exact_source_evidence",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "Researchers have created \"prebreathe protocols\" to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness.",
+        "indicator": "exposure to high levels of oxygen",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": "crew members",
+        "related_kind": "risk_factors",
+        "related_name": "decompression sickness",
+        "relationship": "associated_with",
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

@@ -1,0 +1,155 @@
+{
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_6ee6599e2f46ce758448",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1110",
+    "text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": [
+      {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+        "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+        "category": "microbiome",
+        "site": null,
+        "scope": "animal",
+        "measurement_method": null,
+        "study_schedule": null
+      }
+    ]
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_3ba5289c4b03adb3b528",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_6ee6599e2f46ce758448",
+        "page_number": "",
+        "section": "Article",
+        "text_location": "characters 0:1110",
+        "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+        "extraction_method": "ollama_focused_microbiome",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/microbiome": [
+      {
+        "microbiome_id": "microbiome_704dfe5bc8c8416c0c50",
+        "canonical_name": "community of microbes on astronauts’ skin and in their guts",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_c91255eb3f7ab9103609",
+        "subject_entity_id": "microbiome_704dfe5bc8c8416c0c50",
+        "predicate": "described_by",
+        "object_entity_id": "",
+        "claim_text": "{\"category\": \"microbiome\", \"limitations\": null, \"measurement_method\": null, \"microbiome_concept\": \"community of microbes on astronauts’ skin and in their guts\", \"observed_change\": null, \"population_text\": null, \"record_type\": \"microbiome_source_observation\", \"scope\": \"animal\", \"site\": null, \"study_environment\": null, \"study_population\": \"unknown\", \"study_schedule\": null, \"study_schedule_is_not_a_clinical_recommendation\": true}",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_3ba5289c4b03adb3b528",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "incomplete_relationship_endpoints",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk.",
+        "microbiome_concept": "Some microbes",
+        "scope": "environmental",
+        "related_name": "disease risk",
+        "relationship": "associated_with",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    },
+    {
+      "index": 2,
+      "reason": "incomplete_relationship_endpoints",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function.",
+        "microbiome_concept": "microbiome changes",
+        "scope": "human",
+        "related_name": "risk",
+        "relationship": "associated_with",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 3,
+    "valid_records": 1,
+    "rejected": [
+      {
+        "index": 1,
+        "reason": "incomplete_relationship_endpoints",
+        "record": {
+          "category": "microbiome",
+          "evidence_text": "Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk.",
+          "microbiome_concept": "Some microbes",
+          "scope": "environmental",
+          "related_name": "disease risk",
+          "relationship": "associated_with",
+          "study_population": "unknown",
+          "study_schedule": null
+        }
+      },
+      {
+        "index": 2,
+        "reason": "incomplete_relationship_endpoints",
+        "record": {
+          "category": "microbiome",
+          "evidence_text": "Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function.",
+          "microbiome_concept": "microbiome changes",
+          "scope": "human",
+          "related_name": "risk",
+          "relationship": "associated_with",
+          "study_population": "unknown",
+          "study_schedule": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

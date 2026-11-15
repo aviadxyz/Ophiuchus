@@ -1,0 +1,73 @@
+{
+  "job_id": "focused_048696430636f22adb3d",
+  "focus": "monitoring",
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "cc2e8b16a414ac46f0ddcb906c66680699a25b2120bb85fe2d1e2c7e72240ef7"
+  },
+  "status": "committed",
+  "candidates": 2,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "Changes in an astronaut’s qCT scans, for example, reveal the degree to which spaceflight hollows out bones.",
+        "indicator": "degree to which spaceflight hollows out bones",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": "hollows out bones",
+        "population_text": "nine astronauts who each lived on the space station for more than six months",
+        "related_kind": "conditions",
+        "related_name": "osteoporosis",
+        "relationship": "associated_with",
+        "study_environment": "spaceflight",
+        "study_population": "animal_models",
+        "study_schedule": null,
+        "unit": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size.",
+        "indicator": "accumulation of fat tissue in the muscle and shifts in muscle size",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": "atrophy",
+        "population_text": "nine astronauts who each lived on the space station for more than six months",
+        "related_kind": "conditions",
+        "related_name": "osteoporosis",
+        "relationship": "associated_with",
+        "study_environment": "spaceflight",
+        "study_population": "animal_models",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

@@ -1,0 +1,70 @@
+{
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_2ba83dbf566bc099682a",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 3067:4238",
+    "text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews. There’s another set of factors to consider: Future spacecraft will likely have a limited amount of interior space, which must support crews for longer missions. To sustain flight, heavy cargo may need to be kept to a minimum. When deciding what to bring, “food is often targeted for reductions, as it is one of the biggest mass and volume drivers on missions,” Douglas explained. “Many of the healthiest foods are also the least calorically dense. We need to provide evidence for food system health and performance risk/resource trades to inform these program decisions.” _____ NASA’s Human Research Program , or HRP, pursues the best methods and technologies to support safe, productive human space travel. Through science conducted in laboratories, ground-based analogs, and the International Space Station, HRP scrutinizes how spaceflight affects human bodies and behaviors. Such research drives HRP’s quest to innovate ways that keep astronauts healthy and mission-ready as space travel expands to the Moon, Mars, and beyond. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "cc49863e39656e3bf97e6ac806d6da8aa46078977c43a2374a6fc34ff42f25cb"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+        "microbiome_concept": "microbiome",
+        "related_kind": "conditions",
+        "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "microbiome",
+          "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+          "microbiome_concept": "microbiome",
+          "related_kind": "conditions",
+          "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+          "relationship": "investigated_in_relation_to",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

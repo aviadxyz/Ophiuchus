@@ -1,0 +1,46 @@
+{
+  "job_id": "focused_6b2c3731198639bf765a",
+  "focus": "monitoring",
+  "source_id": "source_a52493076e4308064964",
+  "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "89b6fe46107917ec1704a1c89b61b7023ed1416dc0f8943e70969eefd9500f86"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "behavioral",
+        "evidence_text": "Risk of adverse cognitive or behavioral changes and psychiatric disorders leading to in-mission health and performance and long-term health effects",
+        "indicator": "adverse cognitive or behavioral changes",
+        "related_kind": "conditions",
+        "related_name": "psychiatric disorders",
+        "relationship": "investigated_in_relation_to"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

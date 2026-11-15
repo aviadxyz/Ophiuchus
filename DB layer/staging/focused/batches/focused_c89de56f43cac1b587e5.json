@@ -1,0 +1,70 @@
+{
+  "source_id": "source_964a3b024cff8881b0d4",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_4500879d5442406d3371",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 3120:3794",
+    "text": "d About Omics Archive Space Gardening Surveying whether growing fresh vegetables in space can ease astronauts’ sense of isolation and confinement Read About Space Gardening Spinal Health Scrutinizing scans of astronauts’ spines to inform strategies that counter bone and muscle loss in space Read About Spinal Health Tempus Pro Test-driving a commercial telemedicine device used to collect and integrate health data, potentially enabling remote, near real-time diagnoses Read About Tempus Pro Veggie Monitoring Monitoring microbial growth on hardware that stores crops in space to develop a better plant production system and ensure crew safety Read About Veggie Monitoring "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "c663ebbf043fd46004830b2676c309ff028ff999208b4b94565b3deb27824a3f"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "community",
+        "evidence_text": "Monitoring microbial growth on hardware that stores crops in space to develop a better plant production system and ensure crew safety",
+        "microbiome_concept": "microbial growth",
+        "related_kind": "risk_factors",
+        "related_name": "crew safety",
+        "relationship": "investigated_in_relation_to",
+        "scope": "environmental"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "community",
+          "evidence_text": "Monitoring microbial growth on hardware that stores crops in space to develop a better plant production system and ensure crew safety",
+          "microbiome_concept": "microbial growth",
+          "related_kind": "risk_factors",
+          "related_name": "crew safety",
+          "relationship": "investigated_in_relation_to",
+          "scope": "environmental"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

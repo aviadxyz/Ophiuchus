@@ -1,0 +1,83 @@
+{
+  "source_id": "source_13286a5f480896318f1f",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_e1c24e214ded27e84d8b",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2243:3443",
+    "text": "Focusing on Crew Health From studies that examine bone and muscle loss in space to attempts to characterize the microbial environment of the International Space Station, NASA scientists are examining how to best ensure crew health and safety. Article 3 min read Astronauts’ Spines Under Scrutiny May 17, 2021 Article 5 min read Scientists Probe How Long-Term Spaceflight Alters Immunity December 13, 2021 Article 6 min read New Tests Evaluate Mission Readiness of Astronauts Upon Landing April 12, 2022 Article 4 min read Researchers Put Space Garden Microbes Under the Microscope November 29, 2021 Latest HRP News News Release 3 Min Read NASA Invites Media to Crew Completion of Yearlong Mars Simulation Article 3 Min Read NASA’s Simulated Mars Crew Marks One Year Inside Habitat 4 Min Read NASA to Study Human Health, Performance During Crew-13 Mission September 24, 2026 Article 3 Min Read NASA Seeks Volunteers for New Yearlong Simulated Moon, Mars Mission July 1, 2026 Article 5 Min Read NASA’s Artemis II Moon Mission Research Continues on Earth June 5, 2026 Article Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "0ccf9fd4901d736841f3537b3f1b62a73bd70535c47190828e1be77bd34075cb"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "microbiome_concept_not_explicit",
+      "record": {
+        "category": "community",
+        "evidence_text": "Scientists Probe How Long-Term Spaceflight Alters Immunity",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "immunity",
+        "observed_change": null,
+        "population_text": null,
+        "related_kind": "conditions",
+        "related_name": "immunity",
+        "relationship": "associated_with",
+        "scope": "unspecified",
+        "site": null,
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "microbiome_concept_not_explicit",
+        "record": {
+          "category": "community",
+          "evidence_text": "Scientists Probe How Long-Term Spaceflight Alters Immunity",
+          "limitations": null,
+          "measurement_method": null,
+          "microbiome_concept": "immunity",
+          "observed_change": null,
+          "population_text": null,
+          "related_kind": "conditions",
+          "related_name": "immunity",
+          "relationship": "associated_with",
+          "scope": "unspecified",
+          "site": null,
+          "study_environment": null,
+          "study_population": "unknown",
+          "study_schedule": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

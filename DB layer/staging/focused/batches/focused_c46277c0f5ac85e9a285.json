@@ -1,0 +1,68 @@
+{
+  "source_id": "source_dcd2bf837a04a29770e5",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_4a3abd29a5461f3d34ee",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1200:2395",
+    "text": "Although radiation can have negative effects both on biological and mechanical systems, it can also be carefully used to learn more about each of those systems. Read Why Space Radiation Matters Credit: NASA Space Radiation Laboratory Radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes. To learn what can happen above low-Earth orbit, NASA studies how radiation affects biological samples using a ground-based research laboratory. Explore Our Space Radiation Laboratory A scientist at the NASA Space Radiation Laboratory (NSRL) adjusts instrumentation. Credit: NSRL Related Articles Space Radiation Won’t Stop NASA’s Human Exploration NASA is developing technologies and strategies to ensure safe and successful journeys to the Mars. Read About Space Radiation Houston We Have a Podcast: Radiation Episode Catch a conversation among scientists about how NASA is protecting astronauts from harmful space radiation. Listen to Houston We Have a Podcast Monitoring Space Radiation NASA follows specific procedures to continuously monitor space radiation and astronauts' radiation exposure. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "842b7fde5498172bbfd43f6a42eec3ea9604824948c9e6a346c3b325fe643f14"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "cognitive_performance",
+        "evidence_text": "radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes.",
+        "indicator": "cognitive function",
+        "related_kind": "conditions",
+        "related_name": "altered cognitive function",
+        "relationship": "associated_with"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "cognitive_performance",
+          "evidence_text": "radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes.",
+          "indicator": "cognitive function",
+          "related_kind": "conditions",
+          "related_name": "altered cognitive function",
+          "relationship": "associated_with"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

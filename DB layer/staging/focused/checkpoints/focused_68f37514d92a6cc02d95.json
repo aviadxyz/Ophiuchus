@@ -1,0 +1,47 @@
+{
+  "job_id": "focused_68f37514d92a6cc02d95",
+  "focus": "microbiome",
+  "source_id": "source_8c833efac46b3f69da00",
+  "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "cc8b063baf4f682eabaf6a9d8cbfa1dfa7fee326270d859039c498d916808985"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "microbiome_concept_not_explicit",
+      "record": {
+        "category": "community",
+        "evidence_text": "Risk of Altered Immune System Responses",
+        "microbiome_concept": "Altered Immune System Responses",
+        "related_kind": "conditions",
+        "related_name": "Altered Immune System Responses",
+        "relationship": "associated_with",
+        "scope": "unspecified"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

@@ -1,0 +1,92 @@
+{
+  "source_id": "source_b4bd76d26d8b64355543",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_bed2115bdc240601c9a9",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 943:1164",
+    "text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity."
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": [
+      {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "human_astronauts",
+        "population_text": "Astronauts",
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "indicator": "bone density",
+        "category": "physiological",
+        "unit": null,
+        "measurement_method": "bone scans",
+        "device": null,
+        "study_schedule": "before and after spaceflight"
+      }
+    ]
+  },
+  "metadata": {
+    "model": "qwen3:4b-instruct",
+    "prompt_hash": "e7ea383934a58675330ade62fbd86d8ed09a1c1cdde0455476613dbf17e744e0",
+    "curation_version": "source-span-proposals-v1",
+    "focus": "monitoring",
+    "origin": "exact_span_proposal_verified_by_local_model"
+  },
+  "tables": {
+    "entities/biomarkers": [
+      {
+        "biomarker_id": "biomarkers_f882b3494cdaf975b8ac",
+        "canonical_name": "bone density",
+        "unit": "",
+        "measurement_method": "bone scans",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_8e0d36f9b41cfbdd89b2",
+        "subject_entity_id": "biomarkers_f882b3494cdaf975b8ac",
+        "predicate": "described_by",
+        "object_entity_id": "",
+        "claim_text": "{\"category\": \"physiological\", \"device\": null, \"indicator\": \"bone density\", \"limitations\": null, \"measurement_method\": \"bone scans\", \"observed_change\": null, \"population_text\": \"Astronauts\", \"record_type\": \"monitoring_source_observation\", \"study_environment\": null, \"study_population\": \"human_astronauts\", \"study_schedule\": \"before and after spaceflight\", \"study_schedule_is_not_a_clinical_recommendation\": true, \"unit\": null}",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "evidence_status": "unknown",
+        "study_population": "human_astronauts",
+        "study_environment": "",
+        "limitations": "",
+        "review_status": "pending"
+      }
+    ],
+    "monitoring/monitoring_guidance": [
+      {
+        "guidance_id": "guidance_0d14eebd97893630e99f",
+        "biomarker_id": "biomarkers_f882b3494cdaf975b8ac",
+        "related_condition_id": "",
+        "measurement_method": "bone scans",
+        "recommended_frequency": "",
+        "measurement_limitations": "",
+        "applicable_environment_id": "",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 1,
+    "rejected": [],
+    "duplicates_skipped": 1,
+    "reused_entities": []
+  }
+}

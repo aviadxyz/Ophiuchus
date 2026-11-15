@@ -1,0 +1,70 @@
+{
+  "source_id": "source_8c833efac46b3f69da00",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_b23c1bb14d2e9189d937",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1042",
+    "text": "HRP Immune Biomarkers Description This study, which will begin with the Artemis II mission, will examine how deep space may change various aspects of crews’ physiology, including the immune system. By analyzing participants’ blood and saliva samples, researchers expect to better understand how stress hormones, viruses, and cells may be affected by flight conditions. Blood samples will be collected before and after the mission, while saliva will be collected during the mission as well. Crew members will supply liquid saliva on Earth and dry saliva samples in space and on Earth to assess changes over time. The dry sample collection process involves blotting saliva onto special paper stored in pocket-sized booklets. One aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space. Researchers know from earlier work that viruses, including the one that causes shingles, can become activated during the extreme conditions of spaceflight, but details about this phenomenon are still being explored. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "4cb3cdc7ec193bef67b3c6711b01a91b04258a882e28e26f4c3e27b2536d3eee"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "one aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space",
+        "microbiome_concept": "dormant viruses",
+        "related_kind": "risk_factors",
+        "related_name": "reawakening of dormant viruses in astronauts' bodies in space",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "community",
+          "evidence_text": "one aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space",
+          "microbiome_concept": "dormant viruses",
+          "related_kind": "risk_factors",
+          "related_name": "reawakening of dormant viruses in astronauts' bodies in space",
+          "relationship": "investigated_in_relation_to",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

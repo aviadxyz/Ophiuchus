@@ -58,11 +58,12 @@ class OllamaExtractor:
     def cache_settings(self):
         return self.options
 
-    def _chat(self,messages,schema,num_predict=None):
+    def _chat(self,messages,schema,num_predict=None,think=None):
         from ollama import ResponseError
         try:
             response=self.client.chat(model=self.model,messages=messages,format=schema,
-                options={**self.options,**({'num_predict':num_predict} if num_predict else {})},stream=False)
+                options={**self.options,**({'num_predict':num_predict} if num_predict else {})},stream=False,
+                **({'think':think} if think is not None else {}))
         except (ConnectionError,httpx.ConnectError) as exc:
             raise OllamaUnavailable('Ollama server unavailable. Please start Ollama.') from exc
         except httpx.TimeoutException as exc:

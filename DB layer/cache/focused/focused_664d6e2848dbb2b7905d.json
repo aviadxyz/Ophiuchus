@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "ea1b2b83aab04ef559db344d0407ed9764682fb68a207d212a5cfec47d428b73"
+  },
+  "content": "{\"records\": [{\"category\": \"environmental_exposure\", \"evidence_text\": \"Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.\", \"indicator\": \"removal outpaces growth\", \"related_kind\": \"conditions\", \"related_name\": \"weaker, more brittle bones\", \"relationship\": \"investigated_in_relation_to\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"evidence_text\": \"Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.\",\n      \"indicator\": \"removal outpaces growth\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"weaker, more brittle bones\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"details\": null\n    }\n  ]\n}"
+}

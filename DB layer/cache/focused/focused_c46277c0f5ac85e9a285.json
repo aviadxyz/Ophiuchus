@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "842b7fde5498172bbfd43f6a42eec3ea9604824948c9e6a346c3b325fe643f14"
+  },
+  "content": "{\"records\": [{\"category\": \"cognitive_performance\", \"evidence_text\": \"radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes.\", \"indicator\": \"cognitive function\", \"related_kind\": \"conditions\", \"related_name\": \"altered cognitive function\", \"relationship\": \"associated_with\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"cognitive_performance\",\n      \"evidence_text\": \"radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes.\",\n      \"indicator\": \"cognitive function\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"altered cognitive function\",\n      \"relationship\": \"associated_with\",\n      \"details\": null\n    }\n  ]\n}"
+}

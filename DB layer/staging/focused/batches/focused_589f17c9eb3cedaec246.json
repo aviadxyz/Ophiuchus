@@ -1,0 +1,83 @@
+{
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_2a4314dfee3fa84145c0",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1040:1525",
+    "text": "Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "9d684d1767fd74286c849f34ddcb9da8346dddf25f8490055f1b360bf65d2383"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "microbial changes",
+        "observed_change": "changes",
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "host-microorganism interactions",
+        "relationship": "monitored_by",
+        "scope": "human",
+        "site": null,
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "community",
+          "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+          "limitations": null,
+          "measurement_method": null,
+          "microbiome_concept": "microbial changes",
+          "observed_change": "changes",
+          "population_text": "astronauts",
+          "related_kind": "conditions",
+          "related_name": "host-microorganism interactions",
+          "relationship": "monitored_by",
+          "scope": "human",
+          "site": null,
+          "study_environment": null,
+          "study_population": "unknown",
+          "study_schedule": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

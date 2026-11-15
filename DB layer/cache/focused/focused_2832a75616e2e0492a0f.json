@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false
+    },
+    "prompt_version": "4",
+    "schema_version": "1",
+    "prompt_hash": "83b8862525a6abd2a361962210d6a2b78dcaa2e279512452d37dd52abf8749f7",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "de7d88bf12cd3b6cd7b491282bae4a171e0ccbcd6d49dbc3cad9ae6bb4e099c8"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"evidence_text\": \"When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness.\",\n      \"indicator\": \"difference between atmospheric pressures\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"decompression sickness\",\n      \"relationship\": \"correlates_with\",\n      \"population_text\": null,\n      \"unit\": null\n    }\n  ]\n}"
+}

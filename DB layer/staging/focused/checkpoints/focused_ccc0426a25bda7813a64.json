@@ -1,0 +1,33 @@
+{
+  "job_id": "focused_ccc0426a25bda7813a64",
+  "focus": "monitoring",
+  "source_id": "source_5c511e99e567d27ec313",
+  "source_url": "https://www.nasa.gov/hrp",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "a3beb340ca157717fc1782cd6a1a7c45ee92057e739b4671c5677fd13400ba8f"
+  },
+  "status": "committed",
+  "candidates": 0,
+  "valid_records": 0,
+  "rejected": [],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

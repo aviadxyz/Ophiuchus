@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false
+    },
+    "prompt_version": "4",
+    "schema_version": "1",
+    "prompt_hash": "ac690d250198c0775062b2f457ca957fc19af2d2bb6a8d3d037c1e40c1a2009f",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "0ccf9fd4901d736841f3537b3f1b62a73bd70535c47190828e1be77bd34075cb"
+  },
+  "content": "{\n  \"records\": []\n}"
+}

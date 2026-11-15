@@ -1,0 +1,72 @@
+{
+  "source_id": "source_272ff97648e63fa98488",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_35cce27d92116eaa1855",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1064:1477",
+    "text": "Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. Formal risk description: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "28959a754af54b3f9746b51a9bab5a5e71c3464f004b2b02fdcc360c9873a564"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "behavioral",
+        "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+        "indicator": "number of sunrises and sunsets per day",
+        "related_kind": "conditions",
+        "related_name": "sleep-wake cycle disruption",
+        "relationship": "associated_with",
+        "population_text": "astronauts",
+        "unit": "per day"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "behavioral",
+          "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+          "indicator": "number of sunrises and sunsets per day",
+          "related_kind": "conditions",
+          "related_name": "sleep-wake cycle disruption",
+          "relationship": "associated_with",
+          "population_text": "astronauts",
+          "unit": "per day"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

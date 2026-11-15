@@ -1,0 +1,72 @@
+{
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_df82c0c232aff856500d",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1130",
+    "text": "3 min read Astronauts’ Spines Under Scrutiny NASA Mohana Kumar Jennifer Turner May 17, 2021 Article NASA astronaut Kate Rubins adjusts research hardware aboard the International Space Station. Her feet are strapped to the floor to give her leverage as she works in the station’s low gravity. The longer she stays in this low gravity, the more her bone density and muscle mass will change. Credit: NASA Astronauts rocket off Earth to spend months isolated in orbit some 250 miles overhead. By any measure, they have fortitude and backbone in spades. Backbone, however, is exactly what’s at risk as astronauts float in low gravity aboard the International Space Station. For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss. What could be happening? Without the continuous load of Earth’s gravity, the living tissues of bone reshape themselves. Freed from pressures of Earth’s surface, cells that build new bone slow down their work. Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "f09549321014b875012848e99f3d088955bbb9306b9cf910c11a4a39c38ced12"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.",
+        "indicator": "bone density",
+        "related_kind": "conditions",
+        "related_name": "loss of bone density",
+        "relationship": "correlates_with",
+        "population_text": "astronauts",
+        "unit": "1% per month in space"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "environmental_exposure",
+          "evidence_text": "For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.",
+          "indicator": "bone density",
+          "related_kind": "conditions",
+          "related_name": "loss of bone density",
+          "relationship": "correlates_with",
+          "population_text": "astronauts",
+          "unit": "1% per month in space"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

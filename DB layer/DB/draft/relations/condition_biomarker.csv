@@ -1,1 +1,2 @@
 relation_id,source_entity_id,target_entity_id,relationship_type,claim_id,review_status
+relation_67fca7001d8c725423bf,conditions_bde4de35c3f0ef0933ac,biomarkers_cc4fb0e63d6f301640a0,associated_with,claim_9e6768e7db24257d86c2,pending

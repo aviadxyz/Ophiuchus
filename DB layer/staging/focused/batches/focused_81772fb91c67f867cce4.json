@@ -1,0 +1,74 @@
+{
+  "source_id": "source_795fee7d775bf85aca41",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_eef6307fa0eb02fdede7",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1004:2184",
+    "text": "What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. Did you know? Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble. Given this, NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station. They are also contemplating what’s needed for radiation shielding on future ventures to Mars and beyond. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "03a9fbaef3bb53a8391ce606dc762616259dd5deed00aa22f24db22810767ff9"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble.",
+        "indicator": "space radiation exposure",
+        "related_kind": "risk_factors",
+        "related_name": "missions to the Moon and Mars",
+        "relationship": "investigated_in_relation_to",
+        "population_text": "missions to the Moon and Mars",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "environmental_exposure",
+          "evidence_text": "Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble.",
+          "indicator": "space radiation exposure",
+          "related_kind": "risk_factors",
+          "related_name": "missions to the Moon and Mars",
+          "relationship": "investigated_in_relation_to",
+          "population_text": "missions to the Moon and Mars",
+          "study_schedule": null,
+          "unit": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "source_id": "source_1b74656c820988255936",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_dc426b2a663b13275e05",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 993:2190",
+    "text": "When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness. Researchers have created “prebreathe protocols” to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness. NASA engineers are also working to improve the design of spacesuits so they will remain durable and safe while also offering dexterity and biomedical monitoring. Maintaining bone and muscle strength through exercise can also help crew members better sustain the weight of a spacesuit during surface missions, where there will be greater gravity—and thus an increased weight of the suits. Ongoing work aims to balance pressure, oxygen, and the physical and mental demands of spacewalks to ensure crew member health and mission success. Did you know? NASA astronauts James Voss and Susan Helms hold the record for the single longest spacewalk on March 12, 2001. It lasted 8 hours and 56 minutes. Formal risk description: Risk of mission impacting injury and compromised performance and long-term health effects due to EVA operations "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "de7d88bf12cd3b6cd7b491282bae4a171e0ccbcd6d49dbc3cad9ae6bb4e099c8"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness.",
+        "indicator": "difference between atmospheric pressures",
+        "related_kind": "conditions",
+        "related_name": "decompression sickness",
+        "relationship": "correlates_with"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "environmental_exposure",
+          "evidence_text": "When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness.",
+          "indicator": "difference between atmospheric pressures",
+          "related_kind": "conditions",
+          "related_name": "decompression sickness",
+          "relationship": "correlates_with"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

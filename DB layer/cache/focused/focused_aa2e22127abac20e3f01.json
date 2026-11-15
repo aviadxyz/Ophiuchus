@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "2",
+    "schema_version": "1",
+    "prompt_hash": "238f7c173628be63218248462b84cc4f3c68192a3d2e4fea10f5b5c348abfdf4",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"the community of microbes on astronauts’ skin and in their guts changes\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"microbiome_concept\": \"community of microbes on astronauts’ skin and in their guts\",\n      \"observed_change\": \"changes\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"disease risk\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"site\": \"skin, guts\",\n      \"study_environment\": null,\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    },\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"microbiome_concept\": \"some microbes\",\n      \"observed_change\": \"more virulent\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"disease risk\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"site\": null,\n      \"study_environment\": \"spaceflight\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    }\n  ]\n}"
+}

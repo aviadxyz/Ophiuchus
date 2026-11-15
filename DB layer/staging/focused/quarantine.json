@@ -1,0 +1,23 @@
+{
+  "job_ids": [
+    "focused_3fcc9d0a3c3965afef6d",
+    "focused_6c3c252741917abba03f"
+  ],
+  "reason": "Unsupported early pilot category/scope metadata; only task-added CSV rows restored.",
+  "original_data_preserved": true,
+  "staging_and_raw_outputs_retained": true,
+  "removed_task_only_rows": {
+    "evidence/evidence": [
+      "evidence_3ba5289c4b03adb3b528",
+      "evidence_9a1f8f9240c8a8c8d700"
+    ],
+    "entities/microbiome": [
+      "microbiome_2a90eced90ceb7db6620",
+      "microbiome_704dfe5bc8c8416c0c50"
+    ],
+    "evidence/knowledge_claims": [
+      "claim_c91255eb3f7ab9103609",
+      "claim_eb77d51e588b3ec2dd01"
+    ]
+  }
+}

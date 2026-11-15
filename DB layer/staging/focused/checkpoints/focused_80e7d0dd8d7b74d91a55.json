@@ -1,0 +1,73 @@
+{
+  "job_id": "focused_80e7d0dd8d7b74d91a55",
+  "focus": "microbiome",
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "2",
+    "schema_version": "1",
+    "prompt_hash": "238f7c173628be63218248462b84cc4f3c68192a3d2e4fea10f5b5c348abfdf4",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+  },
+  "status": "committed",
+  "candidates": 2,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "microbial changes",
+        "observed_change": "changes",
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "host-microorganism interactions",
+        "relationship": "monitored_by",
+        "scope": "human",
+        "site": null,
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "Multi-Drug Resistant Bacteria",
+        "observed_change": "mutating to become functionally distinct",
+        "population_text": "ISS",
+        "related_kind": "risk_factors",
+        "related_name": "multi-drug resistant bacteria",
+        "relationship": "associated_with",
+        "scope": "environmental",
+        "site": null,
+        "study_environment": "ISS",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

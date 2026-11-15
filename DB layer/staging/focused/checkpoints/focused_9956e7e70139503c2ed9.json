@@ -1,0 +1,52 @@
+{
+  "job_id": "focused_9956e7e70139503c2ed9",
+  "focus": "microbiome",
+  "source_id": "source_13286a5f480896318f1f",
+  "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "0ccf9fd4901d736841f3537b3f1b62a73bd70535c47190828e1be77bd34075cb"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "microbiome_concept_not_explicit",
+      "record": {
+        "category": "community",
+        "evidence_text": "Scientists Probe How Long-Term Spaceflight Alters Immunity",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "immunity",
+        "observed_change": null,
+        "population_text": null,
+        "related_kind": "conditions",
+        "related_name": "immunity",
+        "relationship": "associated_with",
+        "scope": "unspecified",
+        "site": null,
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}
