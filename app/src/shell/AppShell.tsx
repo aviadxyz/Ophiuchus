@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router'
 import { Ophi } from '@/ophi'
 import { getScreen } from '@/registry'
 import { AlertBanner } from './AlertBanner'
+import { AutoAlertBanner } from './AutoAlertBanner'
 import { MobileDrawer } from './MobileDrawer'
 import { ScreenBoundary } from './ScreenBoundary'
 import { ScreenLoading } from './ScreenLoading'
@@ -46,6 +47,7 @@ export function AppShell() {
         tabIndex={-1}
         className="mx-auto w-full max-w-content px-page-phone pt-5 pb-28 outline-none sm:px-page sm:pt-8"
       >
+        <AutoAlertBanner />
         <AlertBanner />
         <ScreenBoundary key={pathname} label={screen?.label}>
           <Suspense fallback={<ScreenLoading />}>

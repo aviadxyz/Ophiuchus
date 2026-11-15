@@ -119,6 +119,27 @@ Every writing function returns a promise. On the demo profile the change is alre
 The shared mood follows the store by itself while sharing is on: the score and first two tags of the latest check-in from the last 24 hours, with its time and source. Never the note. `deleteProfileData` also leaves the network, and `resetDemoProfile` (or the demo's daily rebuild) starts the demo crew over, so the demo profile has to join again.
 
 Social state is saved per profile under `ophiuchus:v1:social`, separate from the main store. The token from `join` stays inside `social/` and travels as `Authorization: Bearer <token>`.
+## Automatic alerts
+
+Built by lane 18 in `autoAlert.ts`. It starts by itself in the browser, like the simulator.
+
+| Name | Does | Use |
+| --- | --- | --- |
+| `useAutoAlert()` | `{ pending, fallDetection, vitalsWatch, motionAvailable, sleepingNow }`. `pending` is `null` or `{ cause, secondsLeft }`, `cause` is `fall`, `heart-rate` or `oxygen` | Show the countdown. The shell's `AutoAlertBanner` and the watch view already do |
+| `setFallDetection(on)` | The movement check on this device's motion sensor. Turning it on asks for access where the browser requires it (iOS). Does nothing while `motionAvailable` is false | A `Switch` |
+| `setVitalsWatch(on)` | Watches the latest vitals of the active member profile. On at the start | A `Switch` |
+| `setSleepingNow(on)` | The person is napping: no-movement sends nothing. Turns itself off at the next 07:00. Added after the contract, at the team's request | A `Switch` |
+| `cancelAutoAlert()` | Stops the countdown. Nothing is raised | The "I'm OK" button |
+| `simulateAutoAlert(cause)` | The same countdown. `fall` shows the no-movement case, `heart-rate` a spike of 182 bpm. The message ends " (test)" | "Try it" buttons |
+
+- **Movement (cause `fall`).** In orbit there is no fall, so the check works with or without gravity: it follows the steady part of the reading and looks only at what changes on top of it. A change of 3 g or more in one reading is a sudden hard movement. No change above 0.04 g for 2 minutes is no movement, but only between 07:00 and 23:00 and while "Sleeping now" is off; it fires once until the device moves again. A sensor that goes silent for 5 seconds restarts the count. A device lying on a table counts as no movement too.
+- **Vitals.** Heart rate at or above 170 or at or below 35, or blood oxygen at or below 88%, for 20 seconds; once per episode, again only after a minute back in range.
+- All limits are in `AUTO_ALERT_LIMITS` and are illustrative. The demo profile and any `simulated` reading never start a countdown; use `simulateAutoAlert`.
+- **The countdown** lasts 10 seconds. When it runs out the module calls `raiseAlert('emergency', origin, message, 'emergency')`, origin `watch` on `/w` and `console` elsewhere. A real detection while an emergency alert is already open starts nothing. Switching profile cancels it.
+- **The message** says what was measured, then the profile's role, never the display name: "Sudden hard movement detected, no response · Flight engineer", "No movement for 2 minutes, no response", "Heart rate 182 bpm for 20 seconds, no response", "Blood oxygen 86% for 20 seconds, no response".
+- The switches are saved on this device under `ophiuchus:v1:autoAlert`.
+
+The crew-network names (`useSocialAccount`, `joinSocial` and the rest of CONTRACTS section 9, "Social") are added by lane 17 in `social/`.
 
 ## Inside the folder
 

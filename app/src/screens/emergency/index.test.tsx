@@ -4,9 +4,15 @@ import { MemoryRouter, Route, Routes, useLocation } from 'react-router'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   acknowledgeAlert,
+  cancelAutoAlert,
+  createProfile,
+  deleteProfileData,
+  joinRoom,
+  leaveRoom,
   raiseAlert,
   resetDemoProfile,
   setActiveProfile,
+  setVitalsWatch,
   useAlerts,
 } from '@/data'
 import EmergencyScreen from './index'
@@ -41,6 +47,7 @@ function renderScreen(initialRoute = '/emergency') {
             </>
           }
         />
+        <Route path="/watch" element={<Where />} />
         <Route
           path="/overview"
           element={
@@ -315,5 +322,123 @@ describe('Emergency screen', () => {
     expect(screen.getByTestId('alert-watcher')).toHaveTextContent('No open alert')
 
     unmount()
+  })
+})
+
+describe('Emergency screen, automatic alerts', () => {
+  beforeEach(() => {
+    setActiveProfile('demo')
+    resetDemoProfile()
+    leaveRoom()
+    setVitalsWatch(true)
+  })
+
+  afterEach(() => {
+    cancelAutoAlert()
+    leaveRoom()
+    setActiveProfile('demo')
+    resetDemoProfile()
+    vi.useRealTimers()
+  })
+
+  it('says when the device is not linked, and links to the Watch screen', () => {
+    renderScreen()
+    expect(
+      screen.getByText('This device is not linked. Alerts stay on this device.'),
+    ).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Link a device' }))
+    expect(screen.getByTestId('where')).toHaveTextContent('/watch')
+  })
+
+  it('names the crew room when linked', () => {
+    joinRoom('ABC234')
+    renderScreen()
+    expect(screen.getByText('ABC234')).toBeInTheDocument()
+    expect(screen.getByText(/Alerts reach every device in this room\./)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Link a device' })).not.toBeInTheDocument()
+  })
+
+  it('shows the two switches and the demonstration buttons', () => {
+    renderScreen()
+    const card = screen.getByRole('heading', { level: 2, name: 'Automatic alerts' }).closest('section')!
+    const vitals = within(card).getByRole('switch', { name: 'Watch my vital signs' })
+    expect(vitals).toHaveAttribute('aria-checked', 'true')
+    fireEvent.click(vitals)
+    expect(vitals).toHaveAttribute('aria-checked', 'false')
+    // This test browser has no motion sensor, so fall detection explains and stays off.
+    const fall = within(card).getByRole('switch', { name: 'Movement check on this device' })
+    expect(fall).toBeDisabled()
+    const sleeping = within(card).getByRole('switch', { name: 'Sleeping now' })
+    expect(sleeping).toHaveAttribute('aria-checked', 'false')
+    fireEvent.click(sleeping)
+    expect(sleeping).toHaveAttribute('aria-checked', 'true')
+    fireEvent.click(sleeping)
+    expect(within(card).getByText(/no motion sensor/)).toBeInTheDocument()
+    expect(
+      within(card).getByText(
+        'Starts the same 10 second countdown as a real detection. Nothing real is sent.',
+      ),
+    ).toBeInTheDocument()
+  })
+
+  it('a simulated no-movement alert that nobody answers is sent automatically', () => {
+    vi.useFakeTimers()
+    renderScreen()
+    fireEvent.click(screen.getByRole('button', { name: 'Simulate no movement' }))
+    expect(screen.getByRole('button', { name: 'Simulate no movement' })).toBeDisabled()
+    act(() => {
+      vi.advanceTimersByTime(10_000)
+    })
+    expect(screen.getByRole('heading', { level: 2, name: 'Alert sent' })).toBeInTheDocument()
+    expect(
+      screen.getByText('Sent automatically: No movement for 2 minutes, no response · Flight engineer (test)'),
+    ).toBeInTheDocument()
+  })
+
+  it('a simulated heart-rate spike answered in time sends nothing', () => {
+    vi.useFakeTimers()
+    renderScreen()
+    fireEvent.click(screen.getByRole('button', { name: 'Simulate a heart-rate spike' }))
+    act(() => {
+      vi.advanceTimersByTime(4000)
+      cancelAutoAlert()
+      vi.advanceTimersByTime(10_000)
+    })
+    expect(screen.getByText('No alerts yet.')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'What is wrong?' })).toBeInTheDocument()
+  })
+
+  it('shows what is out of balance while an alert is open', () => {
+    renderScreen()
+    act(() => {
+      raiseAlert('emergency', 'console', 'Medical emergency', 'emergency')
+    })
+    const card = screen
+      .getByRole('heading', { level: 2, name: 'What is out of balance' })
+      .closest('section')!
+    expect(within(card).getByText('Important')).toBeInTheDocument()
+    expect(within(card).getByText('Heart rate')).toBeInTheDocument()
+    expect(within(card).getByText('Blood oxygen')).toBeInTheDocument()
+    expect(within(card).getByText('Also off target today')).toBeInTheDocument()
+    expect(
+      within(card).getByText('Limits shown here are for demonstration, not clinical limits.'),
+    ).toBeInTheDocument()
+    expect(within(card).getByText(/Source:/)).toHaveTextContent('Source: to be confirmed')
+    expect(within(card).getByText(/tell the flight surgeon/)).toBeInTheDocument()
+  })
+
+  it('shows a missing reading as No data, never as a number', () => {
+    const id = createProfile({ displayName: 'Test member' })
+    setActiveProfile(id)
+    renderScreen()
+    act(() => {
+      raiseAlert('emergency', 'console', 'Medical emergency', 'emergency')
+    })
+    const card = screen
+      .getByRole('heading', { level: 2, name: 'What is out of balance' })
+      .closest('section')!
+    expect(within(card).getAllByText('No data').length).toBeGreaterThanOrEqual(2)
+    setActiveProfile('demo')
+    deleteProfileData(id)
   })
 })

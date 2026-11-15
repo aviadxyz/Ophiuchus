@@ -17,7 +17,10 @@ import {
   type Alert,
 } from '@/data'
 import { askMedbot } from '@/ophi'
+import { AutoAlertsCard, LinkedDevices } from './AutoAlertsCard'
+import { isAutomaticMessage } from './limits'
 import { meta } from './meta'
+import { OutOfBalance } from './OutOfBalance'
 
 const ISSUE_OPTIONS = ['Medical', 'Injury', 'Mental health', 'Cabin problem']
 const HOLD_DURATION_MS = 2000
@@ -147,6 +150,8 @@ export default function EmergencyScreen() {
         ]}
       />
 
+      <LinkedDevices />
+
       {mission.commDelaySeconds > 0 && (
         <div className="rounded-md border border-border bg-surface-raised/40 px-4 py-3 text-sm text-text-secondary">
           <p className="m-0">
@@ -159,10 +164,17 @@ export default function EmergencyScreen() {
         </div>
       )}
 
+      {hasOpenAlert && <OutOfBalance alertOpen />}
+
       {hasOpenAlert && openAlert ? (
         <Card title="Alert sent">
           <div className="flex flex-col gap-5">
             <div className="rounded-md border border-danger/30 bg-danger/10 p-3.5 text-text">
+              {isAutomaticMessage(openAlert.message) && (
+                <p className="m-0 mb-1 text-base font-semibold break-words text-text">
+                  Sent automatically: {openAlert.message}
+                </p>
+              )}
               <p className="m-0 text-sm font-medium text-danger">
                 Alert sent at {formatTime(openAlert.at)}
                 {openAlert.origin === 'watch' ? ' (from Watch)' : ''}
@@ -257,6 +269,10 @@ export default function EmergencyScreen() {
           </div>
         </Card>
       )}
+
+      {!hasOpenAlert && <OutOfBalance alertOpen={false} />}
+
+      <AutoAlertsCard />
 
       <Card title="Alerts">
         {emergencyAlerts.length === 0 ? (
