@@ -115,8 +115,10 @@ export function Ophi() {
   const imageSrc = hasSpecificStateImage ? `/ophi/ophi-${state}.png` : '/ophi/ophi-idle.png'
   const isUsingFallbackIdle = !hasSpecificStateImage && hasIdleImage
 
-  // Route offset class if specified
-  const customBottomOffset = ROUTE_BOTTOM_OFFSETS[screenId] ?? 'bottom-5 sm:bottom-6'
+  // Route offset class if specified. On a phone the default sits just above the shell's
+  // 56 px bottom bar and the safe area.
+  const customBottomOffset =
+    ROUTE_BOTTOM_OFFSETS[screenId] ?? 'bottom-[calc(4.25rem+env(safe-area-inset-bottom))] sm:bottom-6'
 
   return (
     <>

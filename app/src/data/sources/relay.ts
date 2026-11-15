@@ -3,7 +3,8 @@
 //   1. Between views in the same browser (BroadcastChannel). Always on while a room is joined.
 //   2. The events endpoint, by polling every two seconds. Used only when VITE_EVENTS_URL is set
 //      and the active profile has switched "Share live readings" on.
-// Messages carry no name and no profile details. The room code is the only link between devices.
+// Messages carry no name. The only profile detail that travels is the role on emergency.raised.
+// The room code is the only link between devices.
 
 import { useMemo } from 'react'
 import { config } from '@/config'
@@ -96,6 +97,14 @@ export function parseRelayMessage(raw: unknown): RelayMessage | null {
   return { id, room, type: type as RelayType, at, origin, payload }
 }
 
+const ANOTHER_DEVICE = 'Another device'
+
+/** The sender's role as shown on an incoming alert, or "Another device" when there is none. */
+function senderRole(v: unknown): string {
+  if (typeof v !== 'string') return ANOTHER_DEVICE
+  return v.trim().slice(0, 40) || ANOTHER_DEVICE
+}
+
 const asSource = (v: unknown): Source | null =>
   v === 'live' || v === 'entered' || v === 'imported' || v === 'simulated' ? v : null
 const asNumber = (v: unknown): number | undefined =>
@@ -139,7 +148,11 @@ function applyIncoming(message: RelayMessage) {
       const exists = useDataStore.getState().alerts.some((a) => a.id === alertId)
       if (exists) return
       relayed.set(alertId, 'open')
-      raiseAlert('emergency', message.origin, text, undefined, { id: alertId, at: message.at })
+      raiseAlert('emergency', message.origin, text, undefined, {
+        id: alertId,
+        at: message.at,
+        from: senderRole(payload.role),
+      })
       return
     }
     case 'emergency.cancelled':
@@ -294,7 +307,7 @@ function sendAlertChanges() {
       type,
       'console',
       type === 'emergency.raised'
-        ? { alertId: alert.id, message: alert.message }
+        ? { alertId: alert.id, message: alert.message, role: getActiveProfile().role }
         : { alertId: alert.id },
     )
   }

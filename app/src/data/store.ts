@@ -400,7 +400,7 @@ export function raiseAlert(
   origin: AlertOrigin,
   message: string,
   screenId?: string,
-  options: { id?: string; at?: string } = {},
+  options: { id?: string; at?: string; from?: string } = {},
 ): string {
   const id = options.id ?? newId('alert')
   const profileId = activeId()
@@ -415,6 +415,7 @@ export function raiseAlert(
     message: text,
     status: 'open',
     ...(screenId ? { screenId } : {}),
+    ...(options.from ? { from: options.from.trim().slice(0, 40) || 'Another device' } : {}),
   }
   set((state) => ({
     alerts: [alert, ...state.alerts.filter((a) => a.id !== id)].slice(0, MAX_ALERTS),

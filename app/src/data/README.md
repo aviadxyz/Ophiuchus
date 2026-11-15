@@ -76,6 +76,18 @@ Where a target is shown, show `SourceLine` under it with `sourceText`, `href={so
 
 The relay sends a summary to the room when it changes, at most every ten seconds, and the console's emergency changes. Over the network it runs only when `VITE_EVENTS_URL` is set and the active profile has switched on "Share live readings". Between views in the same browser it is always on while a room is joined. Messages carry no name.
 
+## This device (prompt 21)
+
+| Name                    | Gives or does                                                                                                                                                                                                           | Use                                                                                    |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `useDevice()`           | `{ kind, setupDone }`. `kind` is `watch` on `/w`, `phone` under 640 px wide, otherwise `computer`, and follows the window as it is resized. `setupDone` says whether the first-open choice has been made on this device | The shell shows the first-open card while `setupDone` is false. Screens do not need it |
+| `completeDeviceSetup()` | Remembers on this device that the choice is made (`ophiuchus:v1:device`)                                                                                                                                                | Called by the first-open card                                                          |
+| `resetDeviceSetup()`    | Shows the first-open card again. Profiles and their data are kept                                                                                                                                                       | "Set up this device again" in the profile switcher                                     |
+
+Alerts that arrive from another device carry `from`: the sender's profile role, or "Another device" when the message has none. An alert raised on this device never has `from`. `emergency.raised` messages carry the active profile's `role` and never the display name.
+
+Storage is per browser, not per window: two windows of the same browser share the saved store, so after a reload both show whichever profile was made active last.
+
 ## Helpers exported next to them
 
 | Name                                      | Does                                                                                                                             |

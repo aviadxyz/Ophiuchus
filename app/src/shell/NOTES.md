@@ -46,3 +46,39 @@ Owner: lane 01 ([prompt 01](../../../prompts/01-shell-and-design-system.md)). Co
 ## How to see it working
 
 `npm run dev`, then open `/overview` and click through the sidebar; narrow the window under 640 px for the drawer and top bar; open `/dev/components` for every component.
+
+---
+
+# Prompt 21 · three devices, one person each
+
+## Plan
+
+1. `data/device.ts`: `useDevice()` (kind from route and width), `completeDeviceSetup()`, `resetDeviceSetup()`, saved under `ophiuchus:v1:device`.
+2. `data/types.ts`, `store.ts`, `sources/relay.ts`: `Alert.from`; `emergency.raised` carries the sender's role; incoming alerts store it, or "Another device".
+3. `shell/DeviceSetup.tsx`: the first-open card (demo in one tap, or crew name and role).
+4. `shell/BottomBar.tsx`, `shell/QuickLogSheet.tsx`, `TopBar.tsx`: the phone app under 640 px.
+5. `ProfileSwitcher.tsx`: CONSOLE tag from 640 px, "Set up this device again". `AlertBanner.tsx`: "Emergency from [role]".
+6. `router.tsx`: `/` goes to `/w` at 300 px or less; the shell loads on demand so `/w` never downloads it.
+7. `ophi/Ophi.tsx`: on a phone, Ophi sits just above the bottom bar.
+
+## What is built
+
+- Everything in the plan. Tests: `data/device.test.ts` (kind at three widths, resizing, `/w`, setup saved and reset) and `shell/devices.test.tsx` (both first-open paths, set up again, phone bar, Quick log, alert count, the four `from` cases, the banner text).
+- `/w` now downloads only the router entry, `data`, the watch view and one icon. Before this, `AppShell` (sidebar, top bar, Ophi) was in the first download for every route, `/w` included.
+
+## Choices the prompt did not make
+
+- "Start" stays disabled until a name is typed and a role picked, with a line saying so.
+- The demo path also sets the demo profile active, so it works after "Set up this device again" on a crew profile.
+- The bottom bar marks "More" as current on any screen that is not Today, Med bot or Alerts, and marks Log or More while its sheet is open.
+- Between 640 and 1024 px the sidebar is the icon rail, where the DEMO/CREW tag is hidden, so the CONSOLE tag shows from 1024 px, next to that tag.
+- The demo button is the medium size on a phone so its full label fits at 360 px.
+
+## What I could not verify
+
+- A real phone: the safe-area padding of the bottom bar, the iOS home indicator, and the on-screen keyboard over the crew form. Checked in desktop Chrome at 360 px only.
+- Two real devices over the events endpoint. Checked with two windows of one browser (same-browser channel). Over the network the relay only runs when `VITE_EVENTS_URL` is set and the profile has "Share live readings" on; a crew profile made on the first-open card starts with it off.
+
+## How to see it working
+
+`npm run dev` in a fresh browser profile: the card, one tap, the console. Narrow under 640 px for the phone app. For alerts: two windows, set each up as a different role (the second through "Set up this device again"), pair both to one code on the Watch screen, then hold "Hold to send alert" in one.
