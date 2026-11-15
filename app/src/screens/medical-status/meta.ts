@@ -7,7 +7,8 @@ export const meta: ScreenMeta = {
   order: 40,
   icon: 'stethoscope',
   owner: 'Elia / Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · MEDICAL STATUS',
-  description: 'Your latest vital signs and checks in one place, with what each value means.',
+  description:
+    'Your known condition, the markers that track it, and the plan agreed with your flight surgeon.',
 }
