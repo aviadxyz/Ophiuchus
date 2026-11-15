@@ -1,0 +1,194 @@
+// Turns the team's research database (`DB layer/DB/draft/`) into one TypeScript data file,
+// `app/src/screens/risks/research.generated.ts`.
+//
+// Run from the repo root or from `app/`:  node src/screens/risks/tools/export-research.mjs
+//
+// It reads CSV only, adds no dependency, and keeps only rows backed by evidence whose
+// `verification_status` is `exact_match`. Nothing is rewritten: every quote, name, source title
+// and source address is copied from the CSV files.
+
+import { readFileSync, writeFileSync } from 'node:fs'
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const here = dirname(fileURLToPath(import.meta.url))
+const draftDir = resolve(here, '../../../../../DB layer/DB/draft')
+const outFile = resolve(here, '../research.generated.ts')
+
+/** Parses CSV text. Fields may be quoted and may hold commas, doubled quotes and line breaks. */
+export function parseCsv(text) {
+  const rows = []
+  let row = []
+  let field = ''
+  let quoted = false
+  const input = text.charCodeAt(0) === 0xfeff ? text.slice(1) : text
+  for (let i = 0; i < input.length; i += 1) {
+    const char = input[i]
+    if (quoted) {
+      if (char === '"') {
+        if (input[i + 1] === '"') {
+          field += '"'
+          i += 1
+        } else quoted = false
+      } else field += char
+    } else if (char === '"') quoted = true
+    else if (char === ',') {
+      row.push(field)
+      field = ''
+    } else if (char === '\n' || char === '\r') {
+      if (char === '\r' && input[i + 1] === '\n') i += 1
+      row.push(field)
+      field = ''
+      if (row.length > 1 || row[0] !== '') rows.push(row)
+      row = []
+    } else field += char
+  }
+  if (field !== '' || row.length > 0) {
+    row.push(field)
+    rows.push(row)
+  }
+  return rows
+}
+
+function readTable(relativePath) {
+  const [header, ...body] = parseCsv(readFileSync(resolve(draftDir, relativePath), 'utf8'))
+  if (!header) return []
+  return body.map((cells) =>
+    Object.fromEntries(header.map((name, index) => [name, cells[index] ?? ''])),
+  )
+}
+
+const entityTables = [
+  { file: 'entities/risk_factors.csv', idColumn: 'risk_id', kind: 'riskFactor' },
+  { file: 'entities/conditions.csv', idColumn: 'condition_id', kind: 'condition' },
+  { file: 'entities/treatments.csv', idColumn: 'treatment_id', kind: 'countermeasure' },
+  { file: 'entities/environments.csv', idColumn: 'environment_id', kind: 'environment' },
+  { file: 'entities/physical_findings.csv', idColumn: 'physical_id', kind: 'physicalFinding' },
+  { file: 'entities/cognitive_findings.csv', idColumn: 'cognitive_id', kind: 'cognitiveFinding' },
+]
+
+const relationTables = [
+  'relations/risk_condition.csv',
+  'relations/condition_treatment.csv',
+  'relations/environment_risk.csv',
+  'relations/condition_physical.csv',
+  'relations/condition_cognitive.csv',
+]
+
+const sources = new Map(readTable('metadata/sources.csv').map((row) => [row.source_id, row]))
+
+// Only evidence whose quote was found word for word in the source page.
+const verifiedEvidence = new Map()
+for (const row of readTable('evidence/evidence.csv')) {
+  if (row.verification_status !== 'exact_match') continue
+  const source = sources.get(row.source_id)
+  verifiedEvidence.set(row.evidence_id, {
+    id: row.evidence_id,
+    text: row.evidence_text,
+    page: row.page_number === '' ? null : row.page_number,
+    sourceTitle: source?.title ?? '',
+    sourceUrl: source?.source_url || row.source_url,
+  })
+}
+
+const claims = readTable('evidence/knowledge_claims.csv')
+
+const evidenceByEntity = new Map()
+function attach(entityId, evidenceId) {
+  const evidence = verifiedEvidence.get(evidenceId)
+  if (!entityId || !evidence) return
+  const list = evidenceByEntity.get(entityId) ?? new Map()
+  list.set(evidence.id, evidence)
+  evidenceByEntity.set(entityId, list)
+}
+for (const claim of claims) {
+  attach(claim.subject_entity_id, claim.evidence_id)
+  attach(claim.object_entity_id, claim.evidence_id)
+}
+
+const items = []
+const keptIds = new Set()
+for (const table of entityTables) {
+  for (const row of readTable(table.file)) {
+    const id = row[table.idColumn]
+    const evidence = evidenceByEntity.get(id)
+    if (!evidence || evidence.size === 0) continue
+    keptIds.add(id)
+    items.push({
+      id,
+      kind: table.kind,
+      name: row.canonical_name,
+      description: row.description === '' ? null : row.description,
+      evidence: [...evidence.values()],
+    })
+  }
+}
+
+const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]))
+const links = []
+for (const file of relationTables) {
+  for (const row of readTable(file)) {
+    const evidence = verifiedEvidence.get(claimById.get(row.claim_id)?.evidence_id)
+    if (!evidence) continue
+    if (!keptIds.has(row.source_entity_id) || !keptIds.has(row.target_entity_id)) continue
+    links.push({
+      id: row.relation_id,
+      type: row.relationship_type,
+      from: row.source_entity_id,
+      to: row.target_entity_id,
+      evidence,
+    })
+  }
+}
+
+const header = `// GENERATED by tools/export-research.mjs from "DB layer/DB/draft". Do not edit by hand.
+// Re-run:  node src/screens/risks/tools/export-research.mjs   (from the app folder)
+//
+// Only rows backed by evidence marked exact_match are kept. Every row in the research is still
+// "pending": nobody has reviewed it, and it was extracted automatically from NASA and Canadian
+// Space Agency pages.
+
+export type ResearchEvidence = {
+  id: string
+  /** The quoted text, word for word as stored in evidence.csv. */
+  text: string
+  page: string | null
+  sourceTitle: string
+  sourceUrl: string
+}
+
+export type ResearchKind =
+  | 'riskFactor'
+  | 'condition'
+  | 'countermeasure'
+  | 'environment'
+  | 'physicalFinding'
+  | 'cognitiveFinding'
+
+export type ResearchItem = {
+  id: string
+  kind: ResearchKind
+  name: string
+  /** The description stored with the item, or null when the research has none. */
+  description: string | null
+  evidence: ResearchEvidence[]
+}
+
+export type ResearchLink = {
+  id: string
+  /** For example countermeasure_for, investigated_for, increases_risk_of. */
+  type: string
+  from: string
+  to: string
+  evidence: ResearchEvidence
+}
+`
+
+const body = `
+export const researchItems: readonly ResearchItem[] = ${JSON.stringify(items, null, 2)}
+
+export const researchLinks: readonly ResearchLink[] = ${JSON.stringify(links, null, 2)}
+`
+
+writeFileSync(outFile, `${header}${body}`)
+console.log(`Wrote ${items.length} items and ${links.length} links to ${outFile}`)
