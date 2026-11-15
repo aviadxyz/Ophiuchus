@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 70,
   icon: 'bot-message-square',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · MED BOT',
   description:
     'A medical assistant you can ask, which helps you send the right questions to the flight surgeon.',
