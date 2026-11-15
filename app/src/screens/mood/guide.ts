@@ -1,10 +1,14 @@
 import type { Guide } from '@/registry'
 
-// Default wording until this screen's owner writes the real explanation. Keep all four fields.
 export const guide: Guide = {
-  shows:
-    'This screen is still being built. Here is what it will show: Your daily mood check-ins and how they line up with your sleep.',
-  whyItMatters: 'Its owner will add why this matters in space when the screen is built.',
-  howToRead: ['Screens marked "soon" in the sidebar are still being built.'],
-  whenToAct: 'This screen is still being built. For anything urgent, use Emergency.',
+  shows: 'Your own daily check-ins and how they line up with your sleep.',
+  whyItMatters:
+    'Months in a small space, far from home, wear on anyone. Noticing a dip early is the easiest time to do something about it.',
+  howToRead: [
+    'Pick the face that fits, add a word if you like.',
+    'The timeline shows your last two weeks.',
+    'Your notes stay private.',
+  ],
+  whenToAct:
+    'One low day needs nothing more than noticing it. If several days in a row feel heavy, talk to the Med bot or your flight surgeon. If you feel unsafe, use Emergency.',
 }

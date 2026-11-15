@@ -1,0 +1,41 @@
+@keyframes ophi-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes ophi-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20%, 60% {
+    transform: rotate(14deg);
+  }
+  40%, 80% {
+    transform: rotate(-10deg);
+  }
+}
+
+.ophi-floating {
+  animation: ophi-float 3.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ophi-floating {
+    animation: none !important;
+  }
+}
+
+.ophi-waving {
+  transform-origin: 75% 75%;
+  animation: ophi-wave 1.6s ease-in-out 3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ophi-waving {
+    animation: none !important;
+  }
+}
