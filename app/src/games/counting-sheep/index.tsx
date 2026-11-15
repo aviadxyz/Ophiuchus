@@ -200,8 +200,8 @@ export default function CountingSheepGame() {
               </p>
 
               <p className="text-sm text-text-muted mb-6">
-                Calm rhythmic focus eases cognitive arousal and settles respiration in orbital crew
-                quarters.
+                A slow, steady count is a quiet way to settle before the sleep period. This is a
+                game, not a sleep measurement.
               </p>
 
               <div className="flex items-center gap-2 mb-6">
