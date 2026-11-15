@@ -1,10 +1,15 @@
 import type { Guide } from '@/registry'
 
-// Default wording until this screen's owner writes the real explanation. Keep all four fields.
 export const guide: Guide = {
   shows:
-    'This screen is still being built. Here is what it will show: Stay in touch with friends on the crew: chat and, if you choose, share your mood.',
-  whyItMatters: 'Its owner will add why this matters in space when the screen is built.',
-  howToRead: ['Screens marked "soon" in the sidebar are still being built.'],
-  whenToAct: 'This screen is still being built. For anything urgent, use Emergency.',
+    'Your crew: who you are connected to, how each of them is feeling today if they chose to share it, and your conversations.',
+  whyItMatters:
+    'Months in a small space far from home are easier when the crew looks out for each other. Seeing that a crewmate is having a hard day is the first step to helping.',
+  howToRead: [
+    'Search on the left to find people and add them. Your friends and requests are on the right.',
+    'Each friend shows a mood word and a face.',
+    'Tap Chat to write to them.',
+  ],
+  whenToAct:
+    "If a friend's mood is low, send a short message. If you are worried about a crewmate's safety, tell the flight surgeon, and use Emergency for anything urgent.",
 }

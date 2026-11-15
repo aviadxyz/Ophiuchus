@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 40,
   icon: 'users',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · SOCIAL',
   description: 'Stay in touch with friends on the crew: chat and, if you choose, share your mood.',
 }
