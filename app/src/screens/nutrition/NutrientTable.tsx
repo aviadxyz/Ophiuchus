@@ -14,7 +14,7 @@ import {
 } from '@/design'
 import { useFoods, useSeries, useTargets, useToday, type MetricValue, type Target } from '@/data'
 import { formatNumber, shortDate } from './format'
-import { helpfulFoods, nutrients, type NutrientDef } from './nutrients'
+import { helpfulFoods, nutrientSource, nutrients, type NutrientDef } from './nutrients'
 import { useNarrow } from './useNarrow'
 
 function targetText(def: NutrientDef, target: Target): string {
@@ -62,6 +62,10 @@ function NutrientDetail({ def }: { def: NutrientDef }) {
           <TodayCell def={def} metric={metric} target={target} />
         </div>
         <p className="m-0 text-base text-text-secondary">{def.why}</p>
+        <SourceLine
+          text={def.sourced ? nutrientSource.text : ''}
+          href={def.sourced ? nutrientSource.href : undefined}
+        />
       </div>
 
       <div className="flex flex-col gap-2">
@@ -133,7 +137,15 @@ export function NutrientTable() {
   })
 
   return (
-    <Card title="Space-critical nutrients" footer={<SourceLine text="" />}>
+    <Card
+      title="Space-critical nutrients"
+      footer={
+        <SourceLine
+          text={`${nutrientSource.text}. Potassium: to be confirmed`}
+          href={nutrientSource.href}
+        />
+      }
+    >
       <DataTable
         columns={
           narrow ? ['Nutrient', 'Why', 'Today'] : ['Nutrient', 'Why it matters in space', 'Today']

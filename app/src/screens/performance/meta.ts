@@ -7,7 +7,8 @@ export const meta: ScreenMeta = {
   order: 60,
   icon: 'gauge',
   owner: 'Aviad',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · PERFORMANCE',
-  description: 'How alert and steady you are for mission tasks, from short regular tests.',
+  description:
+    'How sharp your thinking is and how strong your body is for mission tasks, from short weekly tests.',
 }

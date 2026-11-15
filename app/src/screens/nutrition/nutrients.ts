@@ -1,5 +1,8 @@
 // The six space-critical nutrients and the helpers that work on them.
-// The "why" phrases are seed wording from docs/SCREENS.md and are still to be confirmed.
+//
+// The "why" phrases were checked on 15 November 2026 against NASA's nutrition evidence report
+// (docs/REFERENCES.md, "Statements still to be confirmed") and reworded to say what the report
+// says. Potassium has no source yet and shows "Source: to be confirmed".
 
 import type { DaySummary, FoodItem, MealWithFood, MetricId, TargetMap } from '@/data'
 
@@ -13,6 +16,14 @@ export type NutrientDef = {
   why: string
   /** `less` for limits (sodium, iron): the foods that help are the ones lowest in it. */
   direction: 'more' | 'less'
+  /** True when the phrase was found in the report below. */
+  sourced: boolean
+}
+
+/** The report the sourced phrases come from. */
+export const nutrientSource = {
+  text: 'Smith SM, Zwart SR, Heer M. Evidence Report: Risk Factor of Inadequate Nutrition. NASA, 2015',
+  href: 'https://ntrs.nasa.gov/citations/20150000512',
 }
 
 export const nutrients: readonly NutrientDef[] = [
@@ -21,31 +32,42 @@ export const nutrients: readonly NutrientDef[] = [
     label: 'Vitamin D',
     why: 'No sunlight in space, so the body makes none.',
     direction: 'more',
+    sourced: true,
   },
   {
     id: 'calciumMg',
     label: 'Calcium',
-    why: 'Bones lose calcium without gravity.',
+    why: 'Bone breaks down faster in weightlessness.',
     direction: 'more',
+    sourced: true,
   },
   {
     id: 'ironMg',
     label: 'Iron',
-    why: 'The body stores more iron in flight, so too much matters.',
+    why: 'Iron stores rise early in flight, so too much matters.',
     direction: 'less',
+    sourced: true,
   },
   {
     id: 'sodiumMg',
     label: 'Sodium',
-    why: 'Too much salt is linked to bone loss.',
+    why: 'A lot of salt in flight can make bone loss worse.',
     direction: 'less',
+    sourced: true,
   },
-  { id: 'omega3G', label: 'Omega-3', why: 'Associated with less bone loss.', direction: 'more' },
+  {
+    id: 'omega3G',
+    label: 'Omega-3',
+    why: 'Crew who ate more fish lost less bone.',
+    direction: 'more',
+    sourced: true,
+  },
   {
     id: 'potassiumMg',
     label: 'Potassium',
     why: 'Offsets some effects of a high-salt diet.',
     direction: 'more',
+    sourced: false,
   },
 ]
 

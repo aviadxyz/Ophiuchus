@@ -1,10 +1,15 @@
 import type { Guide } from '@/registry'
 
-// Default wording until this screen's owner writes the real explanation. Keep all four fields.
 export const guide: Guide = {
   shows:
-    'This screen is still being built. Here is what it will show: How alert and steady you are for mission tasks, from short regular tests.',
-  whyItMatters: 'Its owner will add why this matters in space when the screen is built.',
-  howToRead: ['Screens marked "soon" in the sidebar are still being built.'],
-  whenToAct: 'This screen is still being built. For anything urgent, use Emergency.',
+    'This is how ready you are for mission tasks, in two parts: how sharp your thinking is, and how strong and fit your body is, including bone and muscle. Each comes from a short weekly test.',
+  whyItMatters:
+    'In weightlessness bones and muscles weaken and fitness drops, and lost sleep slows thinking. The changes are small from week to week, so they are measured against your own results from before the flight.',
+  howToRead: [
+    'Choose Cognitive or Physical at the top.',
+    'Each test has a value, a target and a word: on target, watch or act.',
+    'Tap a test to see what it measures and its last three results with dates.',
+  ],
+  whenToAct:
+    'Follow the plan as agreed. If a test says WATCH or ACT, raise it with the flight surgeon at your next contact. Before a critical task, say so if you feel slow or unsteady.',
 }

@@ -67,13 +67,16 @@ describe('Medical status', () => {
     expect(within(tiles).getAllByLabelText(/source: simulated/i)).toHaveLength(4)
   })
 
-  it('says "Source: to be confirmed" under the condition and under each reference', () => {
+  it('links every reference, and says which part of the condition text has no source yet', () => {
     renderScreen()
-    // The condition and two references are unchecked. The third reference links to its paper.
-    expect(screen.getAllByText('Source: to be confirmed')).toHaveLength(3)
-    const links = screen.getAllByRole('link')
-    expect(links).toHaveLength(1)
-    expect(links[0]).toHaveAttribute('href', 'https://pubmed.ncbi.nlm.nih.gov/31289321/')
+    expect(screen.queryByText('Source: to be confirmed')).not.toBeInTheDocument()
+    expect(
+      screen.getByText(/The description of the condition: to be confirmed/),
+    ).toBeInTheDocument()
+    const hrefs = screen.getAllByRole('link').map((link) => link.getAttribute('href'))
+    expect(hrefs).toHaveLength(4)
+    expect(hrefs).toContain('https://pubmed.ncbi.nlm.nih.gov/31289321/')
+    expect(hrefs).toContain('https://pubmed.ncbi.nlm.nih.gov/38670644/')
   })
 
   it('shows the sample record on the demo profile only, and never a name', () => {
@@ -97,7 +100,8 @@ describe('Medical status', () => {
     const text = container.textContent ?? ''
     expect(text).toContain('7 days ago')
     expect(text).toContain('in 8 days')
-    expect(text).not.toMatch(/\b20\d\d\b/)
+    // A reference may name its year of publication; no day of the record is written as a date.
+    expect(text).not.toMatch(/\b\d{1,2} [A-Z][a-z]{2},? 20\d\d\b/)
   })
 
   it('opens a marker from its tile at the top, and the sample schedule from the last tile', async () => {

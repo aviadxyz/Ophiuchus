@@ -209,7 +209,7 @@ export const condition = {
   note: 'Diagnosed before the mission. Four areas of the bowel are active.',
   paragraphs: [
     'Inflammatory bowel disease is a long-term condition in which parts of the gut lining become inflamed. It comes and goes: quiet for months, then a flare-up.',
-    "Spaceflight may make a flare-up more likely. Studies of crews suggest the gut's bacteria change in flight, and the packaged diet is low in fibre. So the condition is watched with regular tests instead of waiting for symptoms.",
+    "Spaceflight may make a flare-up more likely. Studies of crews suggest the gut's bacteria change in flight. So the condition is watched with regular tests instead of waiting for symptoms.",
     'Nothing here is an emergency today. The aim is to keep it that way.',
   ],
 }
@@ -317,17 +317,32 @@ export const symptomsReported = true
 export type Reading = { title: string; href?: string; linkText?: string }
 
 /**
- * The second entry was looked up in PubMed on 15 November 2026 and its title matches the paper
- * exactly, so it carries a link. The other two name a body of work, not one paper, and stay
- * "to be confirmed".
+ * All three were looked up on 15 November 2026 (docs/REFERENCES.md). The first two are papers
+ * whose PubMed record matches the title. The third is NASA's own page for this risk.
  */
 export const reading: readonly Reading[] = [
-  { title: 'Intestinal barrier function and microbiome change during spaceflight (review literature)' },
+  {
+    title:
+      'Akinsuyi OS et al., Gut permeability among astronauts during space missions, Life Sciences in Space Research, 2024',
+    href: 'https://pubmed.ncbi.nlm.nih.gov/38670644/',
+    linkText: 'PubMed 38670644',
+  },
   {
     title:
       'Voorhies AA et al., Study of the impact of long-duration space missions at the International Space Station on the astronaut microbiome, Scientific Reports, 2019',
     href: 'https://pubmed.ncbi.nlm.nih.gov/31289321/',
     linkText: 'PubMed 31289321',
   },
-  { title: 'Risk of altered nutrition and microbiome during spaceflight, NASA Human Research Program' },
+  {
+    title:
+      'Risk of Adverse Health Effects Due to Host-Microorganism Interactions, NASA Human Research Program',
+    href: 'https://www.nasa.gov/directorates/esdmd/hhp/risk-of-adverse-health-effects-due-to-host-microorganism-interactions/',
+    linkText: 'nasa.gov',
+  },
 ]
+
+/** Where the sentence about gut bacteria in flight comes from. The first paragraph has no source yet. */
+export const conditionSource = {
+  text: 'Gut bacteria in flight: Voorhies AA et al., Scientific Reports, 2019. The description of the condition: to be confirmed',
+  href: 'https://pubmed.ncbi.nlm.nih.gov/31289321/',
+}
