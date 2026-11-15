@@ -42,20 +42,19 @@ private const val EMERGENCY = "#F59E0B"
 class DistressScreen(
     private val context: Context,
     private val room: String,
-    private val onClose: () -> Unit,
-) {
+    private val onClose: (() -> Unit)? = null,
+) : Page {
     private val handler = Handler(Looper.getMainLooper())
     private val root = LinearLayout(context).apply {
         orientation = LinearLayout.VERTICAL
         gravity = Gravity.CENTER
-        setBackgroundColor(context.getColor(R.color.background))
     }
     private var alertId: String? = null
     private var sentAt = 0L
     private var stopped = false
     private var cursor: String? = null
 
-    val view: View get() = root
+    override val view: View by lazy { context.scrolling(root) }
 
     init {
         showReady()
@@ -68,12 +67,12 @@ class DistressScreen(
 
     private fun showReady() {
         root.removeAllViews()
-        root.addView(text("Distress", 18f, R.color.text_primary, bold = true))
+        root.addView(text("Emergency", 18f, R.color.text_primary, bold = true))
         val hold = HoldButton(context) { raise() }
-        root.addView(hold, LinearLayout.LayoutParams(dp(120), dp(120)).apply { topMargin = dp(6) })
+        root.addView(hold, LinearLayout.LayoutParams(dp(110), dp(110)).apply { topMargin = dp(4) })
         root.addView(text("Hold for 2 seconds", 14f, R.color.text_primary))
         root.addView(text("Demo. No real alert is sent.", 12f, R.color.text_secondary))
-        root.addView(button("Back") { stop(); onClose() })
+        onClose?.let { close -> root.addView(button("Back") { stop(); close() }) }
     }
 
     private fun raise() {
@@ -129,7 +128,19 @@ class DistressScreen(
         if (!acknowledged && System.currentTimeMillis() - sentAt < CANCEL_WINDOW_MS) {
             cancelButton = button("Cancel alert") { cancel() }.also { root.addView(it) }
         }
-        root.addView(button("Done") { stop(); onClose() })
+        root.addView(button("Done") { finish() })
+    }
+
+    private fun finish() {
+        val close = onClose
+        if (close != null) {
+            stop()
+            close()
+            return
+        }
+        alertId = null
+        handler.removeCallbacksAndMessages(null)
+        showReady()
     }
 
     private fun hideCancel() {

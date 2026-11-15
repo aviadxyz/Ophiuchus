@@ -60,12 +60,14 @@ class HeartRateSender(context: Context, private val room: String) : SensorEventL
         handler.removeCallbacks(tick)
         sensors?.unregisterListener(this)
         latest = null
+        Live.clearHeartRate()
     }
 
     override fun onSensorChanged(event: SensorEvent) {
         val value = event.values.firstOrNull() ?: return
         latest = value
         latestAt = SystemClock.elapsedRealtime()
+        if (value in MIN_BPM..MAX_BPM) Live.setHeartRate(Math.round(value))
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit

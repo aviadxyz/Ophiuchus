@@ -6,4 +6,7 @@
     <color name="text_primary">#E6EAF2</color>
     <color name="text_secondary">#8A93A6</color>
     <color name="accent">#34D399</color>
+    <color name="amber">#E0A93B</color>
+    <color name="red">#F26D6D</color>
+    <color name="emergency">#F59E0B</color>
 </resources>
