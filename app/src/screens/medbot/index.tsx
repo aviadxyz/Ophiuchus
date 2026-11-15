@@ -22,15 +22,18 @@ import {
   useLatestVitals,
   useMission,
   useMoodCheckins,
+  useSeries,
   useSleep,
   useTargets,
   useToday,
+  addDays,
 } from '@/data'
 import { config } from '@/config'
 import { getScreen } from '@/registry'
 import { meta } from './meta'
 import { isForwardingText, isUrgentText } from './words'
 import { buildChatContext, formatDelay } from './context'
+import { medicalRecordFor } from './medicalRecord'
 import { getOpeningLine, getScriptedReply, UNWELL_QUESTION } from './scriptedReplies'
 import { OutOfBalanceCard } from './OutOfBalanceCard'
 
@@ -47,7 +50,17 @@ function formatAlertTime(iso: string): string {
   }
 }
 
+/**
+ * The conversation belongs to one profile. Keying the screen by the profile id throws the whole
+ * conversation away the moment another profile becomes active, so nothing one person asked or was
+ * told is ever shown to, or sent for, another.
+ */
 export default function MedbotScreen() {
+  const profile = useActiveProfile()
+  return <MedbotConversation key={profile.id} />
+}
+
+function MedbotConversation() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const fromParam = searchParams.get('from')
@@ -69,6 +82,15 @@ export default function MedbotScreen() {
   const sleepRecords = useSleep(7)
   const moodCheckins = useMoodCheckins(7)
   const exerciseSessions = useExerciseSessions(today.date, today.date)
+  // This profile's own history, for the Med bot. Every hook reads the active profile only.
+  const weekSessions = useExerciseSessions(addDays(today.date, -6), today.date)
+  const sleepSeries = useSeries('sleepHours', 14)
+  const energySeries = useSeries('energyKcal', 14)
+  const waterSeries = useSeries('waterMl', 14)
+  const proteinSeries = useSeries('proteinG', 14)
+  const exerciseSeries = useSeries('exerciseMinutes', 14)
+  const moodSeries = useSeries('moodScore', 14)
+  const massSeries = useSeries('bodyMassKg', 14)
   const { latest: latestVitals } = useLatestVitals()
 
   // Comms delay
@@ -251,6 +273,24 @@ export default function MedbotScreen() {
       latestVitals,
       alerts: allAlerts,
       replyMode: 'standard',
+      basics: {
+        role: profile.role,
+        sex: profile.sex,
+        birthYear: profile.birthYear,
+        heightCm: profile.heightCm,
+        massKg: profile.massKg,
+      },
+      history: {
+        sleepHours: sleepSeries,
+        energyKcal: energySeries,
+        waterMl: waterSeries,
+        proteinG: proteinSeries,
+        exerciseMinutes: exerciseSeries,
+        moodScore: moodSeries,
+        bodyMassKg: massSeries,
+      },
+      weekSessions,
+      medicalRecord: medicalRecordFor(profile),
     })
 
     try {

@@ -1,4 +1,5 @@
-import { ScreenHeader } from '@/design'
+import { EmptyState, ScreenHeader } from '@/design'
+import { useActiveProfile } from '@/data'
 import { ActionsCard } from './ActionsCard'
 import { AreasTable } from './AreasTable'
 import { ConditionCard } from './ConditionCard'
@@ -11,6 +12,17 @@ import { headerPills } from './derive'
 import { meta } from './meta'
 
 export default function MedicalStatusScreen() {
+  const profile = useActiveProfile()
+  // The sample record belongs to the demo profile. A team member's profile holds only what that
+  // person records, so nothing is invented for a real person.
+  if (profile.kind === 'member') {
+    return (
+      <>
+        <ScreenHeader eyebrow={meta.eyebrow} title={meta.label} description={meta.description} />
+        <EmptyState message="No medical record has been entered for this profile. The demo profile shows a sample record." />
+      </>
+    )
+  }
   return (
     <>
       <ScreenHeader

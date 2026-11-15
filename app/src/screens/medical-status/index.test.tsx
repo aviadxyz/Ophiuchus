@@ -73,17 +73,20 @@ describe('Medical status', () => {
     expect(screen.queryAllByRole('link')).toHaveLength(0)
   })
 
-  it('shows the same record, and no name, on the demo profile and on a member profile', () => {
+  it('shows the sample record on the demo profile only, and never a name', () => {
     const first = renderScreen()
-    const demoText = first.container.textContent
+    expect(first.container.textContent).toContain('Inflammatory bowel disease')
+    expect(first.container.textContent).not.toMatch(/Demo crew member/)
     first.unmount()
     act(() => {
       memberId = createProfile({ displayName: 'Test member' })
       setActiveProfile(memberId)
     })
+    // A member's profile holds only what that person records: no sample condition is shown.
     const second = renderScreen()
-    expect(second.container.textContent).toBe(demoText)
-    expect(second.container.textContent).not.toMatch(/Test member|Demo crew member/)
+    expect(second.container.textContent).not.toContain('Inflammatory bowel disease')
+    expect(second.container.textContent).toContain('No medical record has been entered')
+    expect(second.container.textContent).not.toMatch(/Test member/)
   })
 
   it('shows fixed day counts and no calendar dates', () => {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback, type TouchEvent, type PointerEvent } from 'react'
-import { joinRoom, setActiveProfile, updateProfile } from '@/data'
+import { joinRoom, setActiveProfile, updateProfile, useActiveProfile } from '@/data'
 import { HealthOverviewPage } from './pages/HealthOverviewPage'
 import { MedbotPage } from './pages/MedbotPage'
 import { EmergencyPage } from './pages/EmergencyPage'
@@ -14,6 +14,7 @@ const PAGE_COUNT = 4
 
 export function WatchApp({ round = true, className = '' }: WatchAppProps) {
   const [currentPage, setCurrentPage] = useState(0)
+  const activeProfileId = useActiveProfile().id
 
   // Automatic room joining on load if ?room=CODE is in URL
   useEffect(() => {
@@ -174,7 +175,8 @@ export function WatchApp({ round = true, className = '' }: WatchAppProps) {
 
           {/* Page 1: Med bot */}
           <div className="size-full shrink-0 flex items-center justify-center px-1">
-            <MedbotPage />
+            {/* Keyed by profile: a reply given to one person is never left on screen for another. */}
+            <MedbotPage key={activeProfileId} />
           </div>
 
           {/* Page 2: Emergency */}

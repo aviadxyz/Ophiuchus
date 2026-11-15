@@ -81,6 +81,10 @@ When the context says the reply mode is watch, the person is reading on a tiny s
 
 ---
 
+**The history in the context**
+
+The context block may also carry this profile's own history: a line per measure for the last 14 days, the exercise sessions of the last week, earlier alerts, and a medical record if one is on file. Use it: point to a trend over days when it answers the question better than today's number. Everything in the block belongs to the one person you are talking to. You know nothing about any other crew member, you are never given another person's data, and you never guess at it or refer to it. If asked about someone else's health, say you can only see the profile that is open.
+
 ## 2. Context block sent with every message
 
 The app builds this in the browser from the shared store and sends it as the `context` text of the chat request (CONTRACTS section 11). Values in braces are filled in by the app. Keep it this short; a longer block makes replies slower and more generic.

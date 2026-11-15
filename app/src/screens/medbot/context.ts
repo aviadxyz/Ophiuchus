@@ -20,8 +20,22 @@ export type ContextBuilderData = {
   moodCheckins?: readonly { score: number }[]
   exerciseSessions?: readonly { status: string }[]
   latestVitals?: { heartRate?: number; source?: Source | null } | null
-  alerts?: readonly { status: string; message: string }[]
+  alerts?: readonly { status: string; message: string; kind?: string; at?: string }[]
   replyMode?: 'standard' | 'watch'
+  /** What this profile entered about itself. Missing fields are simply left out. */
+  basics?: { role?: string; sex?: string; birthYear?: number; heightCm?: number; massKg?: number }
+  /** One entry per day, oldest first, for each metric. A missing day is null. */
+  history?: Partial<Record<string, readonly { date: string; value: number | null }[]>>
+  /** This profile's sessions of the last seven days. */
+  weekSessions?: readonly { date: string; kind: string; status: string; skipReason?: string }[]
+  /** This profile's medical record in plain words, or none. */
+  medicalRecord?: string | null
+}
+
+/** "7.2, 6.9, -, 7.4" from a daily series, oldest first. A missing day shows as a dash. */
+function seriesLine(points: readonly { date: string; value: number | null }[] | undefined): string {
+  if (!points || points.length === 0 || points.every((p) => p.value === null)) return 'no data'
+  return points.map((p) => (p.value === null ? '-' : String(round1(p.value)))).join(', ')
 }
 
 function round1(n: number): number {
@@ -88,7 +102,7 @@ export function buildChatContext(data: ContextBuilderData): string {
 
   // Food
   const foodToday = data.today.energyKcal
-  const foodKcal = foodToday.value !== null ? Math.round(foodToday.value) : 0
+  const foodKcal = foodToday.value !== null ? Math.round(foodToday.value) : 'no data'
   const foodTarget = Math.round(data.targets.energyKcal.value)
   const foodStatus = statusLabel(foodToday.level)
   const foodSource = foodToday.source ?? 'no data'
@@ -96,7 +110,7 @@ export function buildChatContext(data: ContextBuilderData): string {
 
   // Water
   const waterToday = data.today.waterMl
-  const waterLitres = waterToday.value !== null ? round1(waterToday.value / 1000) : 0
+  const waterLitres = waterToday.value !== null ? round1(waterToday.value / 1000) : 'no data'
   const waterTarget = round1(data.targets.waterMl.value / 1000)
   const waterStatus = statusLabel(waterToday.level)
   const waterSource = waterToday.source ?? 'no data'
@@ -104,7 +118,7 @@ export function buildChatContext(data: ContextBuilderData): string {
 
   // Exercise
   const exToday = data.today.exerciseMinutes
-  const exMinutes = exToday.value !== null ? Math.round(exToday.value) : 0
+  const exMinutes = exToday.value !== null ? Math.round(exToday.value) : 'no data'
   const exTarget = Math.round(data.targets.exerciseMinutes.value)
   let doneSessions = 0
   let plannedSessions = 0
@@ -114,10 +128,10 @@ export function buildChatContext(data: ContextBuilderData): string {
       (s) => s.status === 'done' || s.status === 'changed',
     ).length
   }
-  const exSessionsStr = plannedSessions > 0 ? `${doneSessions} of ${plannedSessions}` : '1 of 2'
+  const exSessionsStr = plannedSessions > 0 ? `${doneSessions} of ${plannedSessions}` : 'no data'
   const exStatus = statusLabel(exToday.level)
   const exSource = exToday.source ?? 'no data'
-  const exerciseLine = `exercise: today ${exMinutes} of ${exTarget} min, this week ${exSessionsStr} sessions, status ${exStatus}, source ${exSource}`
+  const exerciseLine = `exercise: today ${exMinutes} of ${exTarget} min, today ${exSessionsStr} sessions, status ${exStatus}, source ${exSource}`
 
   // Mood (score only, notes and tags are NEVER included)
   const moodToday = data.today.moodScore
@@ -142,11 +156,59 @@ export function buildChatContext(data: ContextBuilderData): string {
   const alertsStr = openAlerts.length > 0 ? openAlerts.map((a) => a.message).join('; ') : 'none'
   const alertsLine = `open alerts: ${alertsStr}`
 
+  // Who this is, from what the profile entered about itself. Never a name.
+  const b = data.basics
+  const year = new Date().getFullYear()
+  const basicsParts = [
+    b?.role ? `role ${b.role}` : null,
+    b?.sex ? `sex ${b.sex}` : null,
+    b?.birthYear ? `age about ${year - b.birthYear}` : null,
+    b?.heightCm ? `height ${Math.round(b.heightCm)} cm` : null,
+    b?.massKg ? `body mass at start ${round1(b.massKg)} kg` : null,
+  ].filter((part): part is string => part !== null)
+
+  // This profile's own history. Mood is scores only: notes and tags are never included.
+  const h = data.history ?? {}
+  const days = Object.values(h).find((points) => points && points.length > 0)?.length ?? 0
+  const historyLines =
+    days > 0
+      ? [
+          `history, last ${days} days, oldest first, a dash is a day with no data:`,
+          `  sleep hours: ${seriesLine(h.sleepHours)}`,
+          `  energy kcal: ${seriesLine(h.energyKcal)}`,
+          `  water ml: ${seriesLine(h.waterMl)}`,
+          `  protein g: ${seriesLine(h.proteinG)}`,
+          `  exercise minutes: ${seriesLine(h.exerciseMinutes)}`,
+          `  mood score of 5: ${seriesLine(h.moodScore)}`,
+          `  body mass kg: ${seriesLine(h.bodyMassKg)}`,
+        ]
+      : []
+
+  const week = data.weekSessions ?? []
+  const skipped = week.filter((sess) => sess.status === 'skipped')
+  const weekLine =
+    week.length > 0
+      ? `exercise sessions, last 7 days: ${week.filter((sess) => sess.status === 'done' || sess.status === 'changed').length} done, ${skipped.length} skipped${
+          skipped.length > 0
+            ? ` (${skipped.map((sess) => `${sess.date} ${sess.kind}${sess.skipReason ? `: ${sess.skipReason}` : ''}`).join('; ')})`
+            : ''
+        }`
+      : null
+
+  const pastAlerts = (data.alerts ?? []).filter((a) => a.status !== 'open').slice(0, 5)
+  const pastAlertsLine =
+    pastAlerts.length > 0
+      ? `earlier alerts: ${pastAlerts.map((a) => `${a.message} (${a.status})`).join('; ')}`
+      : null
+
+  const recordLine = `medical record on file: ${data.medicalRecord?.trim() || 'none entered for this profile'}`
+
   return [
     '[context]',
     screenLine,
     missionLine,
-    `profile: ${profileDesc}`,
+    `profile: ${profileDesc}${basicsParts.length > 0 ? `; ${basicsParts.join(', ')}` : ''}`,
+    'everything below belongs to this one profile only',
     sleepLine,
     foodLine,
     waterLine,
@@ -154,6 +216,10 @@ export function buildChatContext(data: ContextBuilderData): string {
     moodLine,
     hrLine,
     alertsLine,
+    ...(pastAlertsLine ? [pastAlertsLine] : []),
+    ...(weekLine ? [weekLine] : []),
+    ...historyLines,
+    recordLine,
     replyModeLine,
     '[end context]',
   ].join('\n')

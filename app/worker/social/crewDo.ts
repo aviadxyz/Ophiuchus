@@ -103,6 +103,12 @@ export class CrewNetworkDurableObject {
       CREATE INDEX IF NOT EXISTS idx_messages_to ON messages(to_id, seq);
       CREATE INDEX IF NOT EXISTS idx_messages_from ON messages(from_id, seq);
     `)
+    // Two accounts left behind by a test run on 15 November. Removing them is harmless once gone.
+    for (const row of this.rows(
+      `SELECT social_id FROM accounts WHERE handle_key IN ('probe_alpha', 'probe_beta')`,
+    )) {
+      this.removeAccount(String(row.social_id))
+    }
     this.initialized = true
   }
 
