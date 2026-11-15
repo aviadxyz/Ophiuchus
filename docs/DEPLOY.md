@@ -2,6 +2,10 @@
 
 This document covers deployment, configuration, rollback procedures, environment variables, and fallback hosting plans for Ophiuchus.
 
+> **Hosting is Cloudflare Pages** (decided Sunday 15 November). Sections 1, 2, 4 and 6 below describe the Azure setup that was prepared first and is not in use. GitHub Actions now only runs the four checks (`.github/workflows/ci.yml`); Cloudflare builds and deploys `main` by itself.
+>
+> Cloudflare Pages project settings: production branch `main`, root directory `app`, build command `npm run build`, build output directory `dist`, environment variable `NODE_VERSION` = `24`. The `VITE_` settings are added as environment variables in the same place. Cloudflare serves `index.html` for unknown routes when the build has no `404.html`, so reloading on `/nutrition` works with no extra file. `app/public/staticwebapp.config.json` is ignored by Cloudflare and harmless.
+
 ---
 
 ## 1. How Deploys Happen

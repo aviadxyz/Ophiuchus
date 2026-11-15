@@ -1,0 +1,42 @@
+name: Checks
+
+# Runs the four checks on every push to main and every pull request.
+# Hosting is Cloudflare Pages, which builds and deploys main by itself (docs/DEPLOY.md).
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    name: Lint, typecheck, test, build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+          cache-dependency-path: 'app/package-lock.json'
+
+      - name: Install dependencies
+        run: npm --prefix app ci
+
+      - name: Run lint
+        run: npm --prefix app run lint
+
+      - name: Run typecheck
+        run: npm --prefix app run typecheck
+
+      - name: Run tests
+        run: npm --prefix app run test
+
+      - name: Build app
+        run: npm --prefix app run build
