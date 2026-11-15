@@ -39,3 +39,6 @@
 3. Click "Add 250 ml" on the routine card to see the water tile, routine progress, kidneys system status, and water row update at once.
 4. Click any organ marker on the figure or item in the list to open the `DetailDrawer`.
 5. Switch to a new blank profile to confirm all tracked systems show NO DATA, untracked show NOT TRACKED, routine items are DUE or NOT PLANNED, with no errors or bogus zeros.
+
+## "I don't feel well" (prompt 19, task 2)
+A primary "I don't feel well" button sits next to "Ask the Med bot" in "Ophi's read" and opens the Med bot from Overview.

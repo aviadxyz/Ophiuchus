@@ -31,7 +31,8 @@ import { getScreen } from '@/registry'
 import { meta } from './meta'
 import { isForwardingText, isUrgentText } from './words'
 import { buildChatContext, formatDelay } from './context'
-import { getOpeningLine, getScriptedReply } from './scriptedReplies'
+import { getOpeningLine, getScriptedReply, UNWELL_QUESTION } from './scriptedReplies'
+import { OutOfBalanceCard } from './OutOfBalanceCard'
 
 function formatTime(date: Date): string {
   return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -149,6 +150,7 @@ export default function MedbotScreen() {
       }
     }
     return [
+      UNWELL_QUESTION,
       worst.question,
       'How am I doing today?',
       'What should I do next?',
@@ -358,6 +360,9 @@ export default function MedbotScreen() {
         description={meta.description}
         pills={headerPills}
       />
+
+      {/* What is off target today, kept outside the fixed-height chat column */}
+      <OutOfBalanceCard />
 
       {/* Main Conversation Box with Fixed Height (CONTRACTS & /dev/components) */}
       <section

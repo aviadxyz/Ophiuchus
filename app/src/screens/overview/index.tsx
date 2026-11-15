@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router'
+import { HeartPulse } from 'lucide-react'
 import {
   addWater,
   useAlerts,
@@ -297,7 +298,10 @@ export default function OverviewScreen() {
           <p className="m-0 text-base text-text break-words">
             {healthSummary.ophiLine || 'Log something today and I will tell you how it looks.'}
           </p>
-          <div className="shrink-0 self-start sm:self-center">
+          <div className="flex shrink-0 flex-wrap gap-2 self-start sm:self-center">
+            <Button variant="primary" size="md" icon={HeartPulse} onClick={() => askMedbot('overview')}>
+              I don't feel well
+            </Button>
             <Button variant="quiet" size="md" onClick={() => askMedbot('overview')}>
               Ask the Med bot
             </Button>

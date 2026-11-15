@@ -45,6 +45,9 @@ export function getOpeningLine(fromId?: string | null): string {
   }
 }
 
+/** The suggested question for someone who is not feeling well. */
+export const UNWELL_QUESTION = "I don't feel well. What should I check?"
+
 function round1(n: number): number {
   return Math.round(n * 10) / 10
 }
@@ -107,6 +110,11 @@ export function getScriptedReply(question: string, ctx: ScriptedContext): string
     }
 
     return 'Nothing urgent. A good moment to rest or message home.'
+  }
+
+  // Match: "I don't feel well. What should I check?"
+  if (q.includes("don't feel well") && q.includes('what should i check')) {
+    return "Start with the Out of balance today card above: it lists what is off target today. If you still feel unwell or it gets worse, send this to the flight surgeon. If it is urgent, open Emergency now."
   }
 
   // Match: "I don't feel well."
