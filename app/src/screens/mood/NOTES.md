@@ -37,3 +37,6 @@
 3. Tap "4 Good": check-in is logged immediately, pill changes to "Check-in done", tags and note appear. Enter text (supports Hebrew, emoji, up to 500 chars) and tap "Done".
 4. Type "hurt myself" in the note field to see Safety Card 2 appear with the Emergency button.
 5. In About screen, click "Reset demo data" to verify it undoes the check-in.
+
+## Polish (prompt 19, task 1)
+Timeline dates read "2 Nov". Under 1024 px only every other date label shows, counted back from Today; every day stays tappable.

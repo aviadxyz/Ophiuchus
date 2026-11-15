@@ -36,3 +36,6 @@
 3. Test completing a session with changes or skipping with a reason; verify that tiles and week view update immediately.
 4. Click "Undo" to reset a finished session to planned.
 5. Create a new member profile from the About screen and switch to it to verify clean empty states with no fake zero values.
+
+## Polish (prompt 19, task 1)
+In "Countermeasure coverage", a row at or above its weekly goal says "Goal met this week." instead of advice.

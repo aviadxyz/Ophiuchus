@@ -81,3 +81,6 @@ To replace the SVG shape stand-in with bitmap artwork:
   - Navigate to `/nutrition` and `/mood` to view the specific custom guide copy.
   - Navigate to `/emergency` to see Ophi enter `alert` state (orange glow, no float) ; tap him to open the Emergency guide.
   - Navigate to `/medbot`, `/w`, or `/games/futvolley` to verify Ophi is hidden.
+
+## Polish (prompt 19, task 1)
+Ophi is 48 px under 640 px. His wrapper ignores taps; only his button and first-visit bubble catch them. Main keeps `pb-28`, so any control can be scrolled clear of him.

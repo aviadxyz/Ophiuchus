@@ -109,3 +109,37 @@ if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') {
   installSimulator()
   installRelay()
 }
+
+// ---- Crew network (lane 17, CONTRACTS section 9 "Social") ----------------------------------
+export type {
+  ChatMessage,
+  FriendRequests,
+  JoinResult,
+  SendResult,
+  SharedMood,
+  SocialAccount,
+  SocialAccountState,
+  SocialConnection,
+  SocialPerson,
+  SocialRelation,
+  SocialWriteResult,
+} from './social'
+export {
+  useSocialAccount,
+  useSocialSearch,
+  useFriends,
+  useFriendRequests,
+  useConversation,
+  useMySharedMood,
+  joinSocial,
+  leaveSocial,
+  setShareMood,
+  sendFriendRequest,
+  cancelFriendRequest,
+  acceptFriendRequest,
+  declineFriendRequest,
+  removeFriend,
+  sendChatMessage,
+  markConversationRead,
+} from './social'
+// ---- End crew network -----------------------------------------------------------------------

@@ -46,3 +46,12 @@
 7. Click "Send to flight surgeon". Notice the header pill updates to "1 SENT TO SURGEON", and the item appears in the "Sent to flight surgeon" card with "WAITING FOR REPLY".
 8. Click "Withdraw". The status pill updates to "WITHDRAWN".
 9. Click "Clear conversation". Notice the conversation resets to the opening line, but the sent item in "Sent to flight surgeon" is preserved.
+
+## Polish (prompt 19, task 1)
+The "This is one for the flight surgeon" card sits directly under the conversation column, not inside it, so the thread keeps its height.
+
+## "I don't feel well" (prompt 19, task 2)
+- `offTarget.ts`: every metric in `useToday()` at `watch` or `act`, worst first, with its plain name, value and unit, source and the screen it belongs to (Nutrition, Physical activity, Mood; sleep and body mass have no link).
+- `OutOfBalanceCard.tsx`: the compact "Out of balance today" card with a Hide/Show toggle; "Nothing is off target today." when the list is empty. It sits directly above the conversation column, so it is above the suggested questions without shrinking the thread.
+- New suggested question "I don't feel well. What should I check?" with a scripted offline reply that points to the card, the flight surgeon and Emergency.
+- Overview's "I don't feel well" button calls `askMedbot('overview')`.

@@ -224,6 +224,10 @@ describe('Med bot screen', () => {
         expect(screen.getByText('This is one for the flight surgeon')).toBeInTheDocument()
       })
 
+      // The card sits under the conversation, not inside its fixed-height column
+      const conversation = screen.getByRole('region', { name: 'Med bot conversation' })
+      expect(conversation).not.toContainElement(screen.getByText('This is one for the flight surgeon'))
+
       // Emergency card must NOT be shown
       expect(screen.queryByText('Medical emergency')).not.toBeInTheDocument()
 

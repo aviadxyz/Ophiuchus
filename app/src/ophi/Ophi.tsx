@@ -120,9 +120,10 @@ export function Ophi() {
 
   return (
     <>
+      {/* The wrapper lets taps through; only Ophi's own button and his bubble catch them. */}
       <div
         className={[
-          'fixed right-4 sm:right-6 z-30 select-none',
+          'pointer-events-none fixed right-4 sm:right-6 z-30 select-none',
           customBottomOffset,
         ].join(' ')}
       >
@@ -131,7 +132,7 @@ export function Ophi() {
           <div
             role="status"
             onClick={dismissFirstVisit}
-            className="absolute bottom-full right-0 mb-3 w-48 sm:w-56 cursor-pointer rounded-lg border border-border bg-surface-raised p-2.5 text-xs sm:text-sm text-text shadow-xl"
+            className="pointer-events-auto absolute bottom-full right-0 mb-3 w-48 sm:w-56 cursor-pointer rounded-lg border border-border bg-surface-raised p-2.5 text-xs sm:text-sm text-text shadow-xl"
             data-testid="ophi-first-visit-bubble"
           >
             <p className="m-0 leading-snug">Tap me if you want this screen explained.</p>
@@ -148,7 +149,7 @@ export function Ophi() {
           aria-label="Ask Ophi to explain this screen"
           aria-expanded={panelOpen}
           className={[
-            'group relative flex size-16 sm:size-24 cursor-pointer items-center justify-center rounded-full',
+            'pointer-events-auto group relative flex size-12 sm:size-24 cursor-pointer items-center justify-center rounded-full',
             'transition-transform duration-150 outline-none hover:scale-105 active:scale-95',
             'focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg',
             // Slow idle float when not alert

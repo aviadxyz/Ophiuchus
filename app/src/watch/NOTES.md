@@ -124,3 +124,6 @@ This section documents the exact text, layout, colors, font sizes, and behavior 
   - If paired: "ROOM: {code}" in `10sp font-mono font-bold text-accent`, "Link: {connection}" in `9sp text-text-muted`.
   - If not paired: "Not paired ({connection})" in `10sp font-mono text-text-muted`.
 - **Build Timestamp**: Bottom timestamp in `9sp font-mono text-text-muted`.
+
+## Polish (prompt 19, task 1)
+The summary line under the rings is two thirds wide, centered and clamped to two lines, so it stays inside the round face.

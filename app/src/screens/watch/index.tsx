@@ -222,7 +222,7 @@ export default function WatchScreen() {
               <div className="flex items-start gap-3">
                 <WatchIcon className="size-5 shrink-0 text-accent mt-0.5" />
                 <p className="m-0 text-sm leading-relaxed text-text-secondary">
-                  The Ophiuchus watch app puts vital signs, quick health indicators, and an emergency alert right on the astronaut's wrist. In space, a wrist wearable provides immediate access to health guidance without needing to open the main console. The real companion is a native Wear OS application, while this browser view acts as the reference design and a live testbed.
+                  The Ophiuchus watch app puts vital signs, quick health indicators, and an emergency alert right on the astronaut's wrist. In space, a wrist wearable provides immediate access to health guidance without needing to open the main console. This browser view is what runs today. A native Wear OS app is in progress.
                 </p>
               </div>
             </div>
