@@ -12,6 +12,7 @@ private const val CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
 private const val PREFS = "ophiuchus"
 private const val KEY_NAME = "name"
 private const val KEY_CODE = "code"
+private const val KEY_INTRO = "intro_seen"
 
 /** The only things the app remembers: who wears the watch and the pairing code. */
 class Settings(context: Context) {
@@ -20,6 +21,10 @@ class Settings(context: Context) {
     var name: String?
         get() = prefs.getString(KEY_NAME, null)?.takeIf { it in PEOPLE }
         set(value) = prefs.edit().putString(KEY_NAME, value).apply()
+
+    var introSeen: Boolean
+        get() = prefs.getBoolean(KEY_INTRO, false)
+        set(value) = prefs.edit().putBoolean(KEY_INTRO, value).apply()
 
     /** Made once, on first run, and kept. */
     val code: String
@@ -36,7 +41,3 @@ class Settings(context: Context) {
     }
 }
 
-fun watchFaceUrl(code: String, name: String?): String {
-    val base = "$BASE_URL/w?room=$code"
-    return if (name == null || name == DEMO) base else "$base&as=${name.lowercase()}"
-}
