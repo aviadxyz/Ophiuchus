@@ -17,6 +17,7 @@ import {
 } from './persistence'
 import { forgetLatestVital, setRuntime, useRuntime } from './runtime'
 import { buildDemoSeed, DEMO_PROFILE_ID, plannedSessions } from './seed'
+import { TEAM } from './team'
 import type {
   Alert,
   AlertKind,
@@ -151,10 +152,38 @@ export function initializeStore(now: Date = new Date()) {
   if (!state.profiles.some((p) => p.id === DEMO_PROFILE_ID) || state.demoSeededOn !== today) {
     reseedDemo(now)
   }
+  ensureTeamProfiles(now)
   if (!get().profiles.some((p) => p.id === get().activeProfileId)) {
     set(() => ({ activeProfileId: DEMO_PROFILE_ID }))
   }
   for (const profile of get().profiles) ensureDailyPlan(profile.id)
+}
+
+/** Adds any team member's profile that is missing. Each starts empty, with both consents off. */
+function ensureTeamProfiles(now: Date) {
+  const missing = TEAM.filter((member) => !get().profiles.some((p) => p.id === member.id))
+  if (missing.length === 0) return
+  set((state) => ({
+    profiles: [
+      ...state.profiles,
+      ...missing.map(
+        (member): CrewProfile => ({
+          id: member.id,
+          displayName: member.displayName,
+          role: member.role,
+          kind: 'member',
+          consent: { relay: false, assistant: false },
+          createdAt: now.toISOString(),
+        }),
+      ),
+    ],
+    data: {
+      ...state.data,
+      ...Object.fromEntries(
+        missing.filter((member) => !state.data[member.id]).map((m) => [m.id, emptyProfileData()]),
+      ),
+    },
+  }))
 }
 
 initializeStore()

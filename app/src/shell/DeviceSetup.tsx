@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Button, ChipGroup, SectionLabel, TextField } from '@/design'
+import { Button, ChipGroup, SectionLabel, Switch, TextField } from '@/design'
 import {
   completeDeviceSetup,
   createProfile,
   setActiveProfile,
+  updateProfile,
   useDevice,
   useProfiles,
 } from '@/data'
@@ -23,6 +24,19 @@ export function DeviceSetup() {
   const [name, setName] = useState('')
   const [role, setRole] = useState<string[]>([])
   const ready = name.trim().length > 0 && role.length === 1
+  // The team's own profiles exist on every device. They start empty and fill with live data.
+  const team = profiles.filter((profile) => profile.kind === 'member' && profile.id.startsWith('crew-'))
+  const [member, setMember] = useState<string[]>([])
+  const [shareWithCrew, setShareWithCrew] = useState(true)
+  const [shareWithMedbot, setShareWithMedbot] = useState(true)
+
+  const startAsMember = () => {
+    const id = member[0]
+    if (!id) return
+    updateProfile(id, { consent: { relay: shareWithCrew, assistant: shareWithMedbot } })
+    setActiveProfile(id)
+    completeDeviceSetup()
+  }
 
   const chooseDemo = () => {
     const demo = profiles.find((profile) => profile.kind === 'demo')
@@ -57,6 +71,46 @@ export function DeviceSetup() {
           </Button>
         </div>
 
+        {team.length > 0 && (
+          <section
+            aria-labelledby="device-setup-team"
+            className="flex flex-col gap-4 border-t border-border pt-5"
+          >
+            <h2 id="device-setup-team" className="m-0 text-lg font-semibold text-text">
+              I&apos;m on the team
+            </h2>
+            <ChipGroup
+              label="Team member"
+              options={team.map((profile) => ({ value: profile.id, label: profile.displayName }))}
+              selected={member}
+              onChange={setMember}
+            />
+            {member.length === 1 && (
+              <>
+                <p className="m-0 text-sm text-text-secondary">
+                  Your profile starts empty and fills with what this device records. Nothing is
+                  simulated.
+                </p>
+                <Switch
+                  label="Share my alerts and live readings with the crew's devices"
+                  checked={shareWithCrew}
+                  onChange={setShareWithCrew}
+                  hint="Needed for an emergency on this device to show on the others."
+                />
+                <Switch
+                  label="Let the Med bot see my summary"
+                  checked={shareWithMedbot}
+                  onChange={setShareWithMedbot}
+                  hint="Mood notes are never included."
+                />
+                <div>
+                  <Button onClick={startAsMember}>Start as my profile</Button>
+                </div>
+              </>
+            )}
+          </section>
+        )}
+
         <form
           aria-labelledby="device-setup-crew"
           className="flex flex-col gap-4 border-t border-border pt-5"
@@ -66,7 +120,7 @@ export function DeviceSetup() {
           }}
         >
           <h2 id="device-setup-crew" className="m-0 text-lg font-semibold text-text">
-            I&apos;m on the crew
+            Someone else on the crew
           </h2>
           <TextField
             label="Display name"

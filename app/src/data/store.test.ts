@@ -51,8 +51,14 @@ afterEach(() => {
 describe('first load', () => {
   it('creates the demo profile and makes it active', () => {
     expect(state().activeProfileId).toBe('demo')
-    expect(state().profiles.map((p) => p.id)).toEqual(['demo'])
+    // The demo profile, then the five team profiles, which start empty with both consents off.
+    expect(state().profiles.map((p) => p.id)).toEqual(['demo', 'crew-rami', 'crew-aviad', 'crew-shoval', 'crew-elia', 'crew-tal'])
     expect(state().data['demo']!.sleep).toHaveLength(14)
+    for (const p of state().profiles.filter((p) => p.kind === 'member')) {
+      expect(p.consent).toEqual({ relay: false, assistant: false })
+      expect(state().data[p.id]!.meals).toHaveLength(0)
+      expect(state().data[p.id]!.sleep).toHaveLength(0)
+    }
   })
 
   it('saves everything under the ophiuchus:v1: prefix', () => {
@@ -283,7 +289,7 @@ describe('deleteProfileData', () => {
 
     deleteProfileData(id)
 
-    expect(state().profiles.map((p) => p.id)).toEqual(['demo'])
+    expect(state().profiles.map((p) => p.id)).toEqual(['demo', 'crew-rami', 'crew-aviad', 'crew-shoval', 'crew-elia', 'crew-tal'])
     expect(state().data[id]).toBeUndefined()
     expect(state().alerts.filter((a) => a.profileId === id)).toHaveLength(0)
     expect(state().activeProfileId).toBe('demo')

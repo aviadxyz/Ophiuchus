@@ -51,7 +51,8 @@ export function demoProfile(now: Date): CrewProfile {
     birthYear: 1988,
     heightCm: 178,
     massKg: 76,
-    consent: { relay: false, assistant: false },
+    // The demo profile holds only simulated data, so the Med bot may see its summary.
+    consent: { relay: false, assistant: true },
     createdAt: timestampOn(start, 7),
   }
 }
