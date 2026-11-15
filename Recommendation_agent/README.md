@@ -1,3 +1,5 @@
+**Draft data warning:** The data that was taken from `DB/draft`, including candidate protocols, has not undergone human review and may contain mistakes. It requires human review before clinical use.
+
 # Orbital Health Preventive Recommendation Agent
 
 Single-agent backend MVP for the supplied architecture. All implementation lives here; the ingestion pipeline and its CSV exports are unchanged. This is decision-support software for development, **not production medical software**.

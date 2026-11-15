@@ -1,3 +1,5 @@
+**Draft data warning:** The data in `DB/draft`, including candidate protocols, has not undergone human review and may contain mistakes. It requires human review before clinical use.
+
 # Focused monitoring/microbiome enrichment plan
 1. Record CSV/source-file baselines and constrain every generated path to DB layer.
 2. Add small relationship-first monitoring and microbiome Ollama schemas.

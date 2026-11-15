@@ -1,3 +1,5 @@
+**Draft data warning:** The data that was taken from `DB/draft`, including candidate protocols, has not undergone human review and may contain mistakes. It requires human review before clinical use.
+
 # Orbital Health Med Bot
 
 One local conversational agent for medical questions and emotional support. New files live only in this folder. Existing recommendation, ingestion and frontend code remain unchanged. This is a demonstration, not a medical service or psychiatric treatment system.
