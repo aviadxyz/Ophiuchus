@@ -4,6 +4,7 @@
   // that publishes the source files and a page that cannot run.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ophiuchus",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-11-01",
   // Builds the app before every deploy, so the result does not depend on a dashboard setting.
   "build": {
@@ -11,8 +12,26 @@
   },
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     // Any address that is not a file (for example /nutrition) gets index.html,
     // so reloading on a screen works.
     "not_found_handling": "single-page-application"
-  }
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "ROOM_DO",
+        "class_name": "RoomDurableObject"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["RoomDurableObject"]
+    }
+  ]
 }
