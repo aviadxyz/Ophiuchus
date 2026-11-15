@@ -1,0 +1,73 @@
+{
+  "version": "draft-practices-v1",
+  "candidates": [
+    {
+      "relation_id": "relation_b3dc743027083b17f67c",
+      "expected_evidence": "NASA astronauts practice team-building skills and exercises before their mission",
+      "fields": {"required_conditions": "before their mission"}
+    },
+    {
+      "relation_id": "relation_28c9a61924ebbad99288",
+      "expected_evidence": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+      "fields": {"required_conditions": "prior to missions"}
+    },
+    {
+      "relation_id": "relation_16da88b56b3217ec969f",
+      "expected_evidence": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+      "fields": {"required_conditions": "in microgravity"},
+      "limitations": ["The before/after scan timing describes bone scans, not an exercise schedule."]
+    },
+    {
+      "relation_id": "relation_e127b7063ac6f3c0650c",
+      "expected_evidence": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+      "fields": {"required_conditions": "before a spacewalk"},
+      "limitations": ["The source compares military flight and astronaut practices; no oxygen concentration, duration or administration authorization is supplied."]
+    },
+    {
+      "relation_id": "relation_34c058601b972d0a23d9",
+      "expected_evidence": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+      "fields": {"required_conditions": "during their mission"}
+    },
+    {
+      "relation_id": "relation_03b9814c761bbf71b46b",
+      "expected_evidence": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss",
+      "fields": {"required_conditions": "on the International Space Station", "duration": "1.5 hours", "frequency": "per day"},
+      "limitations": ["The duration and frequency describe the cited practice; they are not an individualized prescription."]
+    },
+    {
+      "relation_id": "relation_9f133da3bc8fd2e3cf75",
+      "expected_evidence": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+      "fields": {"indication": "NASA encourages astronauts to explore self-care options including keeping a regular journal."},
+      "limitations": ["The source describes general self-care, not treatment of an anxiety disorder. The unreviewed condition association requires separate review. The investigational vegetable-growing statement is not promoted into a candidate."]
+    },
+    {
+      "relation_id": "relation_83be51f43f51ac7ee0f7",
+      "expected_evidence": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+      "fields": {"required_conditions": "before launch", "duration": "on average, 300 hours"},
+      "limitations": ["This is a reported prelaunch training average, not a required duration or an in-mission clinical action."]
+    },
+    {
+      "relation_id": "relation_ef67a77da7fb83fcf3aa",
+      "expected_evidence": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+      "fields": {},
+      "limitations": ["No lighting intensity, exposure time, spectrum or individualized schedule is documented in this excerpt."]
+    }
+  ],
+  "exclusions": {
+    "relation_51e5b1f35f350adcdd2b": "Broad program goal; no concrete preventive practice.",
+    "relation_f61c9fd13b5fefd919c2": "Medicines are under development; no specified operational intervention.",
+    "relation_228bb69a0cbff59a27f5": "Broad research goal, not a protocol description.",
+    "relation_0dc3abef28f971456320": "Article heading without an operational intervention description.",
+    "relation_b6afa081a6d3dbe9c7aa": "Quote does not substantiate the linked exercise intervention for muscle weakness.",
+    "relation_e1c6195fe82cc4bd7c23": "Research to inform future strategies; no concrete intervention is described.",
+    "relation_f0f793a0c89236e34d5b": "Engineering development of shielding, not a medical preventive practice.",
+    "relation_088741567e111c1fbf63": "System-design development goal, not an astronaut health protocol.",
+    "relation_29ee0774f7310b07e1e6": "Study-specific diet development, not a documented established intervention.",
+    "relation_5c714efebe6b0ed7cc44": "Ongoing recovery research without an explicitly described intervention.",
+    "relation_0015adf55c3b33398777": "Pressure-adjustment spacesuit capability is explicitly current research.",
+    "relation_10ebcdc4551e304c1b9d": "Variable-pressure suits are explicitly under development.",
+    "relation_63b6eb5747f0afaa60e7": "Broad safety research statement without a vision intervention.",
+    "relation_56b035359f8d41c5ddde": "Radiation detection instrument capability, not a preventive medical protocol.",
+    "relation_16cd8ea1d0c28d1c1663": "B-vitamin prevention is explicitly investigational despite the relationship label."
+  }
+}

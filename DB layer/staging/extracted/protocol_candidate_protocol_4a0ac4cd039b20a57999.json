@@ -1,0 +1,115 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "source_type": "research_paper",
+  "chunk": {
+    "source_id": "source_e7862784beb09526a71c",
+    "source_url": "https://www.nasa.gov/hrp/risks/",
+    "chunk_id": "chunk_a4cecbf245d40bc1b988",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2621:4171",
+    "text": "Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. ",
+    "original_text": "Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "research_paper",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_e5c6d1a0fe078a37f64b",
+        "entity_type": "conditions",
+        "canonical_name": "Reduced Cardiorespiratory and Musculoskeletal Fitness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance."
+      },
+      {
+        "local_id": "treatments_6f86e5cef59c9b7064e8",
+        "entity_type": "treatments",
+        "canonical_name": "Exercise during mission",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_e5c6d1a0fe078a37f64b",
+        "treatment": "treatments_6f86e5cef59c9b7064e8",
+        "indication": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "required_conditions": "during their mission",
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": null,
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance."
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_4a0ac4cd039b20a57999",
+        "related_condition_id": "conditions_e5c6d1a0fe078a37f64b",
+        "treatment_id": "treatments_6f86e5cef59c9b7064e8",
+        "indication": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "required_conditions": "during their mission",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_34c058601b972d0a23d9",
+    "claim_id": "claim_87ed78aef703c9d8e0ab"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}

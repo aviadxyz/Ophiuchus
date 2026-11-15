@@ -1,0 +1,115 @@
+{
+  "source_id": "source_595c9981ebc185e5870a",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_595c9981ebc185e5870a",
+    "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+    "chunk_id": "chunk_d2b64e2df3886374686d",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1521",
+    "text": "HHC Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness JAXA (Japan Aerospace Exploration Agency) astronaut Satoshi Furukawa exercises on a device aboard the International Space Station designed to mimic the forces generated when lifting free weights on Earth. Credit: NASA What are the top risks? Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury. These physiological changes can make falling or tripping more likely, especially during gravitational transitions to the surface of the Moon or Mars, or when returning to their daily living on Earth. What can be done about it? Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss. Crew members also undergo periodic fitness self-evaluations to help researchers monitor their health and fitness and to optimize the astronauts’ training regimen. Spacecraft set to carry astronauts to the Moon and Mars, however, will likely have less space for exercise equipment. Consequently, researchers are working to understand how to optimize both exercise machines and protocols to ensure that astronaut health is maintained on these deep space missions. Did you know? The effects of exposure to microgravity can vary substantially between individual astronauts. ",
+    "original_text": "HHC Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness JAXA (Japan Aerospace Exploration Agency) astronaut Satoshi Furukawa exercises on a device aboard the International Space Station designed to mimic the forces generated when lifting free weights on Earth. Credit: NASA What are the top risks? Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury. These physiological changes can make falling or tripping more likely, especially during gravitational transitions to the surface of the Moon or Mars, or when returning to their daily living on Earth. What can be done about it? Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss. Crew members also undergo periodic fitness self-evaluations to help researchers monitor their health and fitness and to optimize the astronauts’ training regimen. Spacecraft set to carry astronauts to the Moon and Mars, however, will likely have less space for exercise equipment. Consequently, researchers are working to understand how to optimize both exercise machines and protocols to ensure that astronaut health is maintained on these deep space missions. Did you know? The effects of exposure to microgravity can vary substantially between individual astronauts. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_846e8e2e8f336be96c67",
+        "entity_type": "conditions",
+        "canonical_name": "reduced musculoskeletal fitness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss"
+      },
+      {
+        "local_id": "treatments_68595fb19bf2e18d2717",
+        "entity_type": "treatments",
+        "canonical_name": "resistance training and aerobic exercises",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss"
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_846e8e2e8f336be96c67",
+        "treatment": "treatments_68595fb19bf2e18d2717",
+        "indication": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss",
+        "required_conditions": "on the International Space Station",
+        "contraindications": null,
+        "dosage": null,
+        "frequency": "per day",
+        "duration": "1.5 hours",
+        "evidence_text": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss"
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_0e36a7999e9570c2f4bb",
+        "related_condition_id": "conditions_846e8e2e8f336be96c67",
+        "treatment_id": "treatments_68595fb19bf2e18d2717",
+        "indication": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss",
+        "required_conditions": "on the International Space Station",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "per day",
+        "duration": "1.5 hours",
+        "source_id": "source_595c9981ebc185e5870a",
+        "evidence_id": "evidence_30a7c45a3cd5d2543c97",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_03b9814c761bbf71b46b",
+    "claim_id": "claim_22ab3ec7d601de9483c3"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}

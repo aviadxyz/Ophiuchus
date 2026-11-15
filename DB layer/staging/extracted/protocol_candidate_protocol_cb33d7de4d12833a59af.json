@@ -1,0 +1,115 @@
+{
+  "source_id": "source_9fc83afed4c3c844eb53",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+    "chunk_id": "chunk_03296b6e817adff22a5f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1451",
+    "text": "HHC Risk of Decompression Sickness Pictured from left to right: NASA astronauts Suni Williams, Butch Wilmore, and Nick Hague evaluate spacesuit pressure to prepare for a spacewalk. Credit: NASA What are the top risks? When astronauts move from a pressurized environment like a spacecraft to the lower-pressure environment encountered during spacewalks, health complications can arise due to what’s known as decompression sickness. During decompression sickness, dissolved nitrogen in the bloodstream begins to bubble, which can damage body tissues. Also known as “the bends,” decompression sickness can occur on Earth when scuba divers attempt to surface too fast. As they quickly ascend, nitrogen gas dissolved in their body tissues rapidly forms bubbles which can cause pain so severe it may force a diver to double over. In severe cases, these bubbles can impact breathing or even block blood vessels and cause stroke-like symptoms. In space, this same phenomenon can occur when an astronaut moves from a spacecraft to a lower-pressure spacesuit for spacewalks. Spacewalks are one of the highest-risk activities an astronaut will ever do, so decompression sickness is both a health and operational risk. What can be done about it? Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness. ",
+    "original_text": "HHC Risk of Decompression Sickness Pictured from left to right: NASA astronauts Suni Williams, Butch Wilmore, and Nick Hague evaluate spacesuit pressure to prepare for a spacewalk. Credit: NASA What are the top risks? When astronauts move from a pressurized environment like a spacecraft to the lower-pressure environment encountered during spacewalks, health complications can arise due to what’s known as decompression sickness. During decompression sickness, dissolved nitrogen in the bloodstream begins to bubble, which can damage body tissues. Also known as “the bends,” decompression sickness can occur on Earth when scuba divers attempt to surface too fast. As they quickly ascend, nitrogen gas dissolved in their body tissues rapidly forms bubbles which can cause pain so severe it may force a diver to double over. In severe cases, these bubbles can impact breathing or even block blood vessels and cause stroke-like symptoms. In space, this same phenomenon can occur when an astronaut moves from a spacecraft to a lower-pressure spacesuit for spacewalks. Spacewalks are one of the highest-risk activities an astronaut will ever do, so decompression sickness is both a health and operational risk. What can be done about it? Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness. "
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_3978ceaa4d85f511e7e2",
+        "entity_type": "conditions",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness."
+      },
+      {
+        "local_id": "treatments_870eca27e10815231a69",
+        "entity_type": "treatments",
+        "canonical_name": "earth-based training in high- and low-pressure environments",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_3978ceaa4d85f511e7e2",
+        "treatment": "treatments_870eca27e10815231a69",
+        "indication": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+        "required_conditions": "prior to missions",
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": null,
+        "evidence_text": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness."
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_cb33d7de4d12833a59af",
+        "related_condition_id": "conditions_3978ceaa4d85f511e7e2",
+        "treatment_id": "treatments_870eca27e10815231a69",
+        "indication": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+        "required_conditions": "prior to missions",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_19a5ae2ec50e0846261b",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_28c9a61924ebbad99288",
+    "claim_id": "claim_eb7d6825457bda746739"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "source_id": "source_32415f5f7520d38b2e83",
+  "source_type": "risk_description",
+  "chunk": {
+    "source_id": "source_32415f5f7520d38b2e83",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+    "chunk_id": "chunk_e7307f937586c7103583",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1354:1978",
+    "text": "Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More",
+    "original_text": "Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More"
+  },
+  "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": "Pending research-derived candidate only; no clinical authorization or individualized recommendation. Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication. Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+    "entities": [
+      {
+        "local_id": "conditions_baa17a2b545f8d7753c4",
+        "entity_type": "conditions",
+        "canonical_name": "adverse mission outcomes due to Earth independent human-systems operation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+      },
+      {
+        "local_id": "treatments_5b57e3d36812e0e991e5",
+        "entity_type": "treatments",
+        "canonical_name": "simulator training",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": [
+      {
+        "condition": "conditions_baa17a2b545f8d7753c4",
+        "treatment": "treatments_5b57e3d36812e0e991e5",
+        "indication": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "required_conditions": "before launch",
+        "contraindications": null,
+        "dosage": null,
+        "frequency": null,
+        "duration": "on average, 300 hours",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+      }
+    ]
+  },
+  "tables": {
+    "protocols/candidate_protocols": [
+      {
+        "protocol_id": "protocol_93fb50df7e4b6d35e8cd",
+        "related_condition_id": "conditions_baa17a2b545f8d7753c4",
+        "treatment_id": "treatments_5b57e3d36812e0e991e5",
+        "indication": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "required_conditions": "before launch",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "on average, 300 hours",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "evidence_id": "evidence_bc864bfa5cbce17107ae",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "candidate_generation": {
+    "generator": "draft-protocol-candidates-v1",
+    "curation_version": "draft-practices-v1",
+    "relation_id": "relation_83be51f43f51ac7ee0f7",
+    "claim_id": "claim_32b89df6bac74019b7ae"
+  },
+  "extraction_metadata": {
+    "mode": "curated_candidate_derivation",
+    "generator": "draft-protocol-candidates-v1"
+  }
+}
