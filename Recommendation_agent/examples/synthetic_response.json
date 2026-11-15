@@ -1,0 +1,106 @@
+{
+  "assessment_id": "assessment_90e2c39d7d28aec6b2b8a2ff",
+  "astronaut_id": "DEMO_ASTRONAUT",
+  "assessment_status": "completed",
+  "risk_level": "yellow",
+  "escalation_required": false,
+  "escalation_status": "not_required",
+  "recommendations": [
+    {
+      "recommendation_id": "recommendation_265027b442e11e9e1df2ab95",
+      "title": "Synthetic monitoring action 0",
+      "description": "DEMO ONLY: review simulated measurement panel 0.",
+      "category": "monitoring",
+      "priority": 1,
+      "severity": "yellow",
+      "status": "approved_action",
+      "related_risk_ids": [
+        "DEMO_RISK"
+      ],
+      "supporting_metric_ids": [
+        "demo-current-sleep",
+        "demo-history-1",
+        "demo-history-2",
+        "demo-history-3"
+      ],
+      "protocol_id": "DEMO_PROTOCOL_0",
+      "evidence_ids": [
+        "DEMO_EVIDENCE"
+      ],
+      "source_links": [
+        "https://www.nasa.gov/hrp/"
+      ],
+      "frequency_label": null,
+      "recheck_time": null,
+      "requires_medical_approval": false,
+      "reasoning_summary": "Matched configured rule(s) DEMO_RULE; approved protocol and recorded safeguards verified."
+    }
+  ],
+  "findings": [
+    {
+      "metric": "sleep_duration",
+      "current_value": 5.8,
+      "baseline_value": 7.2,
+      "unit": "hours",
+      "deviation": -1.4000000000000004,
+      "moving_average": 6.325,
+      "slope_per_day": -0.4099999915021646,
+      "trend": "decreasing",
+      "finding_type": "statistical_observation",
+      "data_quality": "sufficient",
+      "measurement_ids": [
+        "demo-history-3",
+        "demo-history-2",
+        "demo-history-1",
+        "demo-current-sleep"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "DEMO_RISK",
+      "risk_type": "Synthetic sleep observation",
+      "severity": "yellow",
+      "supporting_measurement_ids": [
+        "demo-history-3",
+        "demo-history-2",
+        "demo-history-1",
+        "demo-current-sleep"
+      ],
+      "rule_ids": [
+        "DEMO_RULE"
+      ],
+      "evidence_ids": [
+        "DEMO_EVIDENCE"
+      ],
+      "uncertainty": "Configured decision-support criterion; not a diagnosis.",
+      "escalation_required": false,
+      "escalation_protocol_id": null
+    }
+  ],
+  "validation": {
+    "status": "valid",
+    "normalized": [
+      {
+        "measurement_id": "demo-current-sleep",
+        "astronaut_id": "DEMO_ASTRONAUT",
+        "metric": "sleep_duration",
+        "value": 5.8,
+        "unit": "hours",
+        "timestamp": "2026-11-15T09:27:25.307615Z",
+        "source": "synthetic-device",
+        "quality": null
+      }
+    ],
+    "rejected": [],
+    "warnings": [],
+    "data_quality": "available"
+  },
+  "limitations": [
+    "SYNTHETIC DEMONSTRATION: mock approvals are not NASA-authorized care."
+  ],
+  "generated_at": "2026-11-15T09:27:25.318783Z",
+  "model_version": "synthetic-selection-stub",
+  "rules_version": "synthetic-demo-v1",
+  "professional_review_status": "not_reviewed"
+}
