@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 10,
   icon: 'siren',
   owner: 'Elia / Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · EMERGENCY',
-  description: 'Raise an emergency alert and follow the first steps while help is on the way.',
+  description: 'Call for help and follow the first steps while it is on the way.',
 }
