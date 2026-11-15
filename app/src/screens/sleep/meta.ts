@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 30,
   icon: 'moon',
   owner: 'Aviad',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · SLEEP',
   description: 'How long and how well you have slept, night by night, against your sleep target.',
 }
