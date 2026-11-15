@@ -70,9 +70,9 @@ describe('Ophi and OphiPanel', () => {
     expect(screen.getByRole('heading', { level: 2, name: 'Nutrition' })).toBeInTheDocument()
 
     // Check guide sections
-    expect(screen.getByRole('heading', { level: 3, name: 'What this shows' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { level: 3, name: 'What this shows' })).toBeInTheDocument()
     expect(
-      screen.getByText(/What you have eaten and drunk today against what your body needs on this mission/),
+      await screen.findByText(/What you have eaten and drunk today against what your body needs on this mission/),
     ).toBeInTheDocument()
 
     expect(screen.getByRole('heading', { level: 3, name: 'Why it matters in space' })).toBeInTheDocument()
@@ -95,7 +95,7 @@ describe('Ophi and OphiPanel', () => {
     const dialog = await screen.findByRole('dialog')
     expect(dialog).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Mood' })).toBeInTheDocument()
-    expect(screen.getByText(/Your own daily check-ins and how they line up with your sleep\./)).toBeInTheDocument()
+    expect(await screen.findByText(/Your own daily check-ins and how they line up with your sleep\./)).toBeInTheDocument()
   })
 
   it('missing guide falls back to the default', async () => {
@@ -107,7 +107,7 @@ describe('Ophi and OphiPanel', () => {
     expect(dialog).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Research' })).toBeInTheDocument()
     expect(
-      screen.getByText(/This screen is still being built\. Here is what it will show:/),
+      await screen.findByText(/This screen is still being built\. Here is what it will show:/),
     ).toBeInTheDocument()
   })
 
