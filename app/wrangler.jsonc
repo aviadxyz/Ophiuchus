@@ -1,0 +1,18 @@
+{
+  // Cloudflare Workers settings for the public link (docs/DEPLOY.md).
+  // The Worker serves the built app from dist/. It must never serve this folder itself:
+  // that publishes the source files and a page that cannot run.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ophiuchus",
+  "compatibility_date": "2026-11-01",
+  // Builds the app before every deploy, so the result does not depend on a dashboard setting.
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./dist",
+    // Any address that is not a file (for example /nutrition) gets index.html,
+    // so reloading on a screen works.
+    "not_found_handling": "single-page-application"
+  }
+}
