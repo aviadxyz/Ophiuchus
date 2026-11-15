@@ -13,6 +13,8 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
+    // Only the server endpoints reach the Worker code. Everything else is a static file.
+    "run_worker_first": ["/api/*"],
     // Any address that is not a file (for example /nutrition) gets index.html,
     // so reloading on a screen works.
     "not_found_handling": "single-page-application"
