@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Card, Switch, TextField } from '@/design'
-import { joinSocial, type JoinResult } from '@/data'
+import { joinSocial, useActiveProfile, type JoinResult } from '@/data'
 
 const REASONS: Record<Exclude<JoinResult, 'ok'>, string> = {
   taken: 'That handle is already taken. Try another one.',
@@ -9,7 +9,10 @@ const REASONS: Record<Exclude<JoinResult, 'ok'>, string> = {
 }
 
 export function JoinCard() {
-  const [handle, setHandle] = useState('')
+  const profile = useActiveProfile()
+  // A team member joins under their first name, and is friends with the rest of the team at once.
+  const onTeam = profile.id.startsWith('crew-')
+  const [handle, setHandle] = useState(onTeam ? profile.displayName.toLowerCase() : '')
   const [shareMood, setShareMood] = useState(false)
   const [error, setError] = useState<string | undefined>()
   const [joining, setJoining] = useState(false)

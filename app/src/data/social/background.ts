@@ -8,7 +8,7 @@
 import { onMinuteTick } from '../clock'
 import { getActiveProfile, useDataStore } from '../store'
 import type { CrewProfile } from '../types'
-import { apiLeave, apiMood, apiSync, socialEnabled, type SyncResult } from './api'
+import { apiLeave, apiMood, apiPing, apiSync, socialEnabled, type SyncResult } from './api'
 import {
   getProfileSocial,
   removeProfileSocial,
@@ -173,7 +173,19 @@ export async function syncNow(): Promise<void> {
   if (profile.kind === 'demo' || !socialEnabled()) return
   const social = getProfileSocial(profile.id)
   const token = social.account?.token
-  if (!token || syncing) return
+  if (syncing) return
+  if (!token) {
+    // Not joined yet: only find out whether the network is there, so the screen can offer to join.
+    syncing = true
+    try {
+      setReachable(await apiPing())
+    } catch {
+      setReachable(false)
+    } finally {
+      syncing = false
+    }
+    return
+  }
   syncing = true
   try {
     await refreshSharedMood(profile.id)

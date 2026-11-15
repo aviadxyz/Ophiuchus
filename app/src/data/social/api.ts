@@ -86,6 +86,12 @@ export async function apiJoin(
   return { error: body.error === 'taken' ? 'taken' : 'invalid' }
 }
 
+/** Asks the network whether it is there. Used before a profile has joined and has a token. */
+export async function apiPing(): Promise<boolean> {
+  const { status } = await call('GET', '/ping', null)
+  return status < 400
+}
+
 export async function apiLeave(token: string): Promise<boolean> {
   const { status } = await call('POST', '/leave', token, {})
   return status < 400

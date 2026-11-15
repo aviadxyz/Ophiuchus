@@ -37,6 +37,10 @@ export interface Env {
     idFromName: (name: string) => DurableObjectId
     get: (id: DurableObjectId) => DurableObjectStub
   }
+  CREW_DO: {
+    idFromName: (name: string) => DurableObjectId
+    get: (id: DurableObjectId) => DurableObjectStub
+  }
   CHAT_MODEL?: string
 }
 
