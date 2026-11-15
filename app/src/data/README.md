@@ -87,7 +87,38 @@ The relay sends a summary to the room when it changes, at most every ten seconds
 | `toDateString(date)` / `addDays(date, n)` | Local `YYYY-MM-DD` helpers, so every screen agrees on "today".                                                                   |
 | `metricIds`, `targetIds`                  | The fixed id lists.                                                                                                              |
 
-The crew-network names (`useSocialAccount`, `joinSocial` and the rest of CONTRACTS section 9, "Social") are added by lane 17 in `social/`.
+## Social (the crew network)
+
+Built by lane 17 in `social/`. Shapes are CONTRACTS section 8 (`SocialAccount`, `SharedMood`, `SocialPerson`, `ChatMessage`).
+
+Three modes, given by `useSocialAccount().connection`:
+
+- `simulated`: the demo profile. A fixed crew of six invented people in the browser: after joining, two friends with moods and a short conversation, one incoming request, three people to find. They reply to a message after about two seconds and accept a request after about three. Everything about them has source `simulated`. Nothing is sent anywhere.
+- `live`: a member profile, `VITE_SOCIAL_URL` set and the network answering.
+- `off`: a member profile and the network cannot be reached (always, while `VITE_SOCIAL_URL` is empty). Reads give what was last received; writes return `offline`, and a chat message is kept with status `failed`. A member profile never sees a simulated person.
+
+| Name | Gives or does |
+| --- | --- |
+| `useSocialAccount()` | `{ account, connection }`: the active profile's `SocialAccount` or `null`, and `live`, `simulated` or `off` |
+| `useSocialSearch(query)` | People whose handle contains `query` (any case), never yourself. Empty query: up to 20 suggestions. `[]` before joining. A mood only for a friend |
+| `useFriends()` | Friends, the one with the newest message first |
+| `useFriendRequests()` | `{ incoming, outgoing }` |
+| `useConversation(socialId)` | Messages with that friend, oldest first. Yours have `fromId` equal to `account.socialId` |
+| `useMySharedMood()` | The `SharedMood` friends see right now, or `null` |
+| `joinSocial(handle, shareMood)` | Joins. Resolves to `ok`, `taken`, `invalid` (not 3 to 20 letters, digits or underscores) or `offline` |
+| `leaveSocial()` | Removes the account, friendships and messages from the network and this device. `ok` or `offline` |
+| `setShareMood(on)` | Sharing on or off; off clears the shared mood at once. `ok` or `offline` |
+| `sendFriendRequest(id)` / `cancelFriendRequest(id)` | `none` to `outgoing`, and back. `ok` or `offline` |
+| `acceptFriendRequest(id)` / `declineFriendRequest(id)` | `incoming` to `friend` or `none`. `ok` or `offline` |
+| `removeFriend(id)` | Ends the friendship and deletes the conversation. `ok` or `offline` |
+| `sendChatMessage(id, text)` | Friends only, 1 to 500 characters after trimming. `ok`, `invalid` or `offline`. Sending the same text again after a `failed` message replaces it, so "Tap to retry" is just calling this again |
+| `markConversationRead(id)` | Sets that friend's `unread` to 0 |
+
+Every writing function returns a promise. On the demo profile the change is already in the hooks when the function returns. An action that does not fit the current relation (accepting someone who did not ask) changes nothing and resolves to `ok`.
+
+The shared mood follows the store by itself while sharing is on: the score and first two tags of the latest check-in from the last 24 hours, with its time and source. Never the note. `deleteProfileData` also leaves the network, and `resetDemoProfile` (or the demo's daily rebuild) starts the demo crew over, so the demo profile has to join again.
+
+Social state is saved per profile under `ophiuchus:v1:social`, separate from the main store. The token from `join` stays inside `social/` and travels as `Authorization: Bearer <token>`.
 
 ## Inside the folder
 
