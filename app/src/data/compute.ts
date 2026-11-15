@@ -245,8 +245,10 @@ function area(level: Level, text: string, source: Source | null): AreaSummary {
 function ophiLineFor(
   areas: Record<'sleep' | 'food' | 'water' | 'exercise' | 'mood', AreaSummary>,
   openAlerts: number,
+  openEmergencies: number,
 ): string {
-  if (openAlerts > 0) return 'There is an open alert. Open Emergency to see it.'
+  if (openEmergencies > 0) return 'There is an open emergency alert. Open Emergency to see it.'
+  if (openAlerts > 0) return 'A question is waiting for the flight surgeon.'
   const names = {
     sleep: 'Sleep',
     food: 'Food',
@@ -321,7 +323,11 @@ export function buildHealthSummary(
   return {
     ...areas,
     openAlerts,
-    ophiLine: ophiLineFor(areas, openAlerts),
+    ophiLine: ophiLineFor(
+      areas,
+      openAlerts,
+      alerts.filter((a) => a.status === 'open' && a.kind === 'emergency').length,
+    ),
     updatedAt: now.toISOString(),
   }
 }
