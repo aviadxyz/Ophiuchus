@@ -45,13 +45,13 @@ describe('mission', () => {
 })
 
 describe('targets', () => {
-  it('has one entry for every target id, all unverified', () => {
+  it('has one entry for every target id, with verified sources where found', () => {
     const { result } = renderHook(() => useTargets())
     expect(Object.keys(result.current).sort()).toEqual([...targetIds].sort())
-    for (const target of Object.values(result.current)) {
-      expect(target.sourceText).toBe('to be confirmed')
-      expect(target.verified).toBe(false)
-    }
+    expect(result.current.moodScore.verified).toBe(false)
+    expect(result.current.moodScore.sourceText).toBe('to be confirmed')
+    expect(result.current.waterMl.verified).toBe(true)
+    expect(result.current.waterMl.sourceText).toContain('NASA')
   })
 
   it('computes energy and protein from body mass, with fixed defaults when it is unknown', () => {

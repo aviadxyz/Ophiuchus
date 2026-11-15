@@ -369,7 +369,7 @@ describe('OverviewScreen UI', () => {
     expect(screen.getByText(/WHAT IT DOES/i)).toBeInTheDocument()
     expect(screen.getByText(/IN SPACE/i)).toBeInTheDocument()
     expect(screen.getByText(/HOW IT IS CHECKED ON A MISSION/i)).toBeInTheDocument()
-    expect(screen.getByText(/Source: to be confirmed/i)).toBeInTheDocument()
+    expect(screen.getByText(/NASA HRP, Risk of Behavioral Conditions/i)).toBeInTheDocument()
 
     // Close drawer
     const closeBtn = screen.getByRole('button', { name: 'Close' })

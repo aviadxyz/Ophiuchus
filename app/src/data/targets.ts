@@ -92,7 +92,92 @@ function fieldsFor(
   }
 }
 
-/** Every target for a profile. All start unverified, with the source "to be confirmed". */
+type TargetSource = Pick<Target, 'sourceText' | 'sourceUrl' | 'verified'>
+
+const TARGET_SOURCES: Record<TargetId, TargetSource> = {
+  sleepHours: {
+    sourceText: 'NASA HRP, Risk from Inadequate Sleep and Irregular Schedules, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/',
+    verified: true,
+  },
+  energyKcal: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  waterMl: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  proteinG: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  sodiumMg: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  calciumMg: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  ironMg: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  vitaminDIu: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  omega3G: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  potassiumMg: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  exerciseMinutes: {
+    sourceText: 'NASA HRP, Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/',
+    verified: true,
+  },
+  moodScore: {
+    sourceText: UNVERIFIED_SOURCE,
+    sourceUrl: '',
+    verified: false,
+  },
+  bodyMassKg: {
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
+    verified: true,
+  },
+  heartRate: {
+    sourceText: 'NASA HRP, Risk of Cardiovascular Adaptations, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/',
+    verified: true,
+  },
+  resistiveSessionsPerWeek: {
+    sourceText: 'NASA HRP, Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/',
+    verified: true,
+  },
+  aerobicSessionsPerWeek: {
+    sourceText: 'NASA HRP, Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/',
+    verified: true,
+  },
+}
+
+/** Every target for a profile. Verified targets carry their citation; unsourced targets remain unverified. */
 export function targetsFor(
   profile: Pick<CrewProfile, 'massKg' | 'heightCm' | 'birthYear' | 'sex'>,
   now = new Date(),
@@ -100,7 +185,7 @@ export function targetsFor(
   const fields = fieldsFor(profile, now)
   const entries = targetIds.map((id) => [
     id,
-    { id, ...fields[id], sourceText: UNVERIFIED_SOURCE, sourceUrl: '', verified: false },
+    { id, ...fields[id], ...TARGET_SOURCES[id] },
   ])
   return Object.fromEntries(entries) as TargetMap
 }
