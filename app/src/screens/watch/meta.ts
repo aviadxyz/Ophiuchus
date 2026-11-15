@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 20,
   icon: 'watch',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'COMPANION · WATCH',
   description: 'The companion watch view: heart rate, quick health rings and an emergency button.',
 }

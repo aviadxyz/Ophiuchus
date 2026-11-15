@@ -1,10 +1,15 @@
 import type { Guide } from '@/registry'
 
-// Default wording until this screen's owner writes the real explanation. Keep all four fields.
 export const guide: Guide = {
   shows:
-    'This screen is still being built. Here is what it will show: The companion watch view: heart rate, quick health rings and an emergency button.',
-  whyItMatters: 'Its owner will add why this matters in space when the screen is built.',
-  howToRead: ['Screens marked "soon" in the sidebar are still being built.'],
-  whenToAct: 'This screen is still being built. For anything urgent, use Emergency.',
+    'The watch companion view simulated in the console, paired via a six-character room code to show live vitals, quick indicators, and an emergency trigger.',
+  whyItMatters:
+    'In microgravity and during high-stress operations, a wrist display gives instantaneous self-assessment when accessing a workstation console is impractical.',
+  howToRead: [
+    'Swipe or use the dots to move across Health Overview, Med bot, Emergency, and About.',
+    'Health rings reflect your console status for sleep, exercise, and mood, with tap-to-inspect details.',
+    'Use the pairing panel to sync this console with a watch or an external browser window.',
+  ],
+  whenToAct:
+    'If feeling acutely unwell or facing a critical hazard, press and hold Emergency for two seconds to raise an alert. For non-urgent questions, consult the Med bot or the flight surgeon.',
 }
