@@ -81,6 +81,7 @@ Screen ids are fixed. The folder name is the id.
 |---|---|---|---|---|
 | `overview` | Overview | console | 10 | Rami |
 | `risks` | Risks | console | 20 | Aviad |
+| `environment` | Environment | console | 25 | Rami |
 | `sleep` | Sleep | console | 30 | Aviad |
 | `medical-status` | Medical status | console | 40 | Elia / Rami |
 | `mental-health` | Mental health | console | 50 | unassigned |
@@ -209,10 +210,31 @@ All defined in `data/types.ts`. Every record that holds a measurement has a `sou
 | `SharedMood` | `score` (1 to 5), `tags` (list, at most two), `at`, `source` |
 | `SocialPerson` | `socialId`, `handle`, `role` (optional), `relation` (`none`, `outgoing`, `incoming`, `friend`), `mood` (a `SharedMood` or none; only ever present for a friend), `unread` (number of unread chat messages), `source` (`entered` for a real person, `simulated` for a simulated crew member) |
 | `ChatMessage` | `id`, `fromId`, `toId`, `at`, `text`, `status` (`sending`, `sent`, `failed`) |
+| `EnvironmentSample` | `at`, then one number per environment metric id below, `source` (always `simulated` in this demo: the app has no cabin sensor) |
+| `ChallengeEntry` | `socialId`, `handle`, `score` (a number), `me` (yes/no), `source` (`entered` for a real person, `simulated` for the demo crew) |
+| `ChallengeBoard` | `id` (a challenge id below), `joined` (yes/no: is the active profile taking part), `myScore` (a number or none), `entries` (list of `ChallengeEntry`, highest score first; empty when not joined) |
 
 Metric ids: `sleepHours`, `energyKcal`, `waterMl`, `proteinG`, `sodiumMg`, `calciumMg`, `ironMg`, `vitaminDIu`, `omega3G`, `potassiumMg`, `exerciseMinutes`, `moodScore`, `bodyMassKg`, `heartRate`.
 
 Target ids are the metric id it applies to, plus `resistiveSessionsPerWeek` and `aerobicSessionsPerWeek`.
+
+Environment metric ids (added Sunday 15 November, built by prompt 25). They describe the station, not a person, so they are the same for every profile and are not part of `DaySummary`:
+
+| Id | What | Unit shown |
+|---|---|---|
+| `temperatureC` | Cabin air temperature | °C |
+| `humidityPct` | Relative humidity | % |
+| `gravityG` | Gravity felt by the crew. Read from the mission's `gravity` | g |
+| `oxygenPct` | Oxygen share of cabin air (air quality, part 1) | % |
+| `co2MmHg` | Carbon dioxide partial pressure (air quality, part 2) | mmHg |
+| `noiseDb` | Noise level in the cabin | dBA |
+| `radiationUSvPerHour` | Radiation dose rate in the cabin, from the area monitor | µSv/h |
+| `mosfetOutsideUGyPerHour` | Dose rate at the MOSFET dosimeter outside the hull | µGy/h |
+| `mosfetInsideUGyPerHour` | Dose rate at the MOSFET dosimeter inside the cabin | µGy/h |
+
+Each environment metric id is also a target id. A target whose limit has not been checked against a published source has `verified` off.
+
+Challenge ids (added Sunday 15 November, built by prompt 26): `exercise` and `nutrition`. The `exercise` score is the percentage of this week's planned exercise minutes that are done, a whole number from 0 to 100. The `nutrition` score is the number of days this week, 0 to 7, on which energy, water and protein were all at level `ok`. A week runs Monday to Sunday. A score is the only thing about a challenge that ever leaves the device: never minutes, meals, mass or any other reading.
 
 The mission is the same for everyone: name "Ophiuchus-1", start date 1 November 2026, so 14 November is mission day 14. Mission day is always computed from the start date.
 
@@ -250,6 +272,9 @@ All exported from `@/data`. Everything reads the **active profile** unless it ta
 | `useFriendRequests()` | `incoming` and `outgoing`, each a list of `SocialPerson` |
 | `useConversation(socialId)` | The `ChatMessage`s between you and that friend, oldest first |
 | `useMySharedMood()` | The `SharedMood` your friends see right now, or none |
+| `useEnvironment()` | The latest `EnvironmentSample`, plus `connection` (`simulated` or `off`) |
+| `useEnvironmentSeries(metricId, hours)` | One entry per hour, oldest first: `at`, `value`, `source`. `metricId` is an environment metric id |
+| `useChallenges()` | The two `ChallengeBoard`s, as `exercise` and `nutrition` |
 
 **Writing (plain functions):**
 
@@ -276,8 +301,9 @@ All exported from `@/data`. Everything reads the **active profile** unless it ta
 | `removeFriend(socialId)` | Ends the friendship for both people and deletes the conversation |
 | `sendChatMessage(socialId, text)` | Friends only. Text of 1 to 500 characters |
 | `markConversationRead(socialId)` | Sets that friend's `unread` to 0 |
+| `setChallengeJoined(challengeId, on)` | Takes the active profile in or out of a challenge. Off removes its score from the network at once. Needs a social account; returns `ok` or `not-joined` |
 
-While `shareMood` is on, a new or edited mood check-in updates the shared mood without the screen doing anything. `deleteProfileData` also leaves the network.
+The environment is worked out from the clock by one function in `data`, the same on every device, and is never stored. While a challenge is joined, the data layer works out the score from the store and sends it without the screen doing anything; nobody is in a challenge until they switch it on. While `shareMood` is on, a new or edited mood check-in updates the shared mood without the screen doing anything. `deleteProfileData` also leaves the network.
 
 **Sensors and sync, from `@/data`:**
 
@@ -345,8 +371,10 @@ Messages carry no name. The only profile detail that may travel is the role on `
 | `POST /api/social/mood` | `score`, `tags`, `at`; or `clear` (yes) | `ok` |
 | `POST /api/social/messages` | `toId`, `text` | `id` |
 | `GET /api/social/sync?after=CURSOR` | | `friends`, `incoming`, `outgoing` (lists of `SocialPerson`), `messages` (new `ChatMessage`s to or from you), `cursor` |
+| `POST /api/social/challenge` | `id` (`exercise` or `nutrition`), `score` (a number); or `id` and `leave` (yes) | `ok` |
+| `GET /api/social/challenges` | | `exercise`, `nutrition`: each a list of `socialId`, `handle`, `score` for you and for your friends who take part. Empty for a challenge you have not joined |
 
-Every social call except `join` carries the `token` that `join` returned. The token stays inside `data/social` and is never given to a screen. The network holds a handle, an optional role, friendships, at most one `SharedMood` per person and chat text. It never holds a display name, a reading, a mood note or anything else from the store.
+Every social call except `join` carries the `token` that `join` returned. The token stays inside `data/social` and is never given to a screen. The network holds a handle, an optional role, friendships, at most one `SharedMood` per person and chat text. For a challenge it holds one score per person per challenge and nothing else, visible to friends who take part in the same challenge, and deleted after 8 days without an update. It never holds a display name, a reading, a mood note or anything else from the store.
 
 Settings read in `config.ts`: `VITE_CHAT_URL`, `VITE_EVENTS_URL`, `VITE_SOCIAL_URL`. When one is empty, that feature uses its offline fallback and nothing breaks.
 
