@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 20,
   icon: 'dumbbell',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · EXERCISE COUNTERMEASURES',
   description: "Today's exercise plan, what you have done, and your heart rate while you train.",
 }
