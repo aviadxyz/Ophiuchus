@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import { Check, ChevronsUpDown } from 'lucide-react'
-import { setActiveProfile, useActiveProfile, useProfiles } from '@/data'
+import { Check, ChevronsUpDown, RotateCcw } from 'lucide-react'
+import { resetDeviceSetup, setActiveProfile, useActiveProfile, useProfiles } from '@/data'
 
 type ProfileSwitcherProps = { compact?: boolean }
 
@@ -17,7 +17,19 @@ function initials(name: string) {
   return ((parts[0]?.[0] ?? '') + (parts[1]?.[0] ?? '')).toUpperCase() || '?'
 }
 
-/** The active person's name and a DEMO or CREW tag. Opens a list of every profile. */
+/** From 640 px only: says this device is the crew console. */
+function ConsoleTag() {
+  return (
+    <span className="hidden shrink-0 rounded-sm border border-border px-1.5 py-px font-mono text-pill uppercase tracking-wider text-text-muted sm:inline">
+      CONSOLE
+    </span>
+  )
+}
+
+/**
+ * The active person's name, a DEMO or CREW tag and, from 640 px, a CONSOLE tag. Opens a list of
+ * every profile, ending with "Set up this device again".
+ */
 export function ProfileSwitcher({ compact = false }: ProfileSwitcherProps) {
   const active = useActiveProfile()
   const profiles = useProfiles()
@@ -66,8 +78,9 @@ export function ProfileSwitcher({ compact = false }: ProfileSwitcherProps) {
           }
         >
           <span className="truncate text-base font-semibold text-text">{active.displayName}</span>
-          <span className="flex items-center gap-2">
+          <span className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
             <Tag kind={active.kind} />
+            <ConsoleTag />
             <span className="truncate text-xs text-text-muted">{active.role}</span>
           </span>
         </span>
@@ -108,6 +121,19 @@ export function ProfileSwitcher({ compact = false }: ProfileSwitcherProps) {
               </li>
             )
           })}
+          <li className="mt-1 border-t border-border pt-1">
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false)
+                resetDeviceSetup()
+              }}
+              className="flex w-full cursor-pointer items-center gap-2 rounded-sm px-2.5 py-2 text-left text-base text-text-secondary hover:bg-surface hover:text-text"
+            >
+              <RotateCcw aria-hidden="true" className="size-4 shrink-0" />
+              <span className="min-w-0 flex-1 truncate">Set up this device again</span>
+            </button>
+          </li>
         </ul>
       )}
     </div>

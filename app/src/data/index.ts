@@ -109,3 +109,8 @@ if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') {
   installSimulator()
   installRelay()
 }
+
+// --- This device (prompt 21, CONTRACTS section 9 "This device") ---
+export { useDevice, completeDeviceSetup, resetDeviceSetup } from './device'
+export type { DeviceKind, DeviceState } from './device'
+// --- end of this device ---

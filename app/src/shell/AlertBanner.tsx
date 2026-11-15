@@ -9,7 +9,10 @@ function timeOf(at: string) {
     : date.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })
 }
 
-/** The newest open emergency alert, above the content on every screen, with a link to Emergency. */
+/**
+ * The newest open emergency alert, above the content on every screen, with a link to Emergency.
+ * An alert that arrived from another device says whose role raised it.
+ */
 export function AlertBanner() {
   const alerts = useAlerts()
   const { pathname } = useLocation()
@@ -23,7 +26,8 @@ export function AlertBanner() {
       <Siren aria-hidden="true" className="size-5 shrink-0 text-emergency" />
       <div className="min-w-0 flex-1">
         <p className="m-0 font-mono text-label font-medium uppercase tracking-wider text-emergency">
-          Emergency alert open{timeOf(alert.at) && ` · ${timeOf(alert.at)}`}
+          {alert.from ? `Emergency from ${alert.from}` : 'Emergency alert open'}
+          {timeOf(alert.at) && ` · ${timeOf(alert.at)}`}
         </p>
         <p className="m-0 text-base break-words text-text">{alert.message}</p>
       </div>

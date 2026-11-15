@@ -127,6 +127,8 @@ export type Alert = {
   screenId?: string
   status: AlertStatus
   acknowledgedAt?: Timestamp
+  /** The role of the person who raised it. Present only on an alert that arrived from another device. */
+  from?: string
 }
 
 export type FoodItem = {
