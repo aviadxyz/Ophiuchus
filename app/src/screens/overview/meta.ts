@@ -7,7 +7,7 @@ export const meta: ScreenMeta = {
   order: 10,
   icon: 'layout-dashboard',
   owner: 'Rami',
-  status: 'placeholder',
+  status: 'ready',
   eyebrow: 'DOMAIN · OVERVIEW',
-  description: "Today's health at a glance, body system by body system, with the mission routine.",
+  description: 'Your whole day on one page: how each part of you is doing and what is still to do.',
 }
