@@ -153,6 +153,16 @@ export function initializeStore(now: Date = new Date()) {
     reseedDemo(now)
   }
   ensureTeamProfiles(now)
+  // A device that opened the app before the demo profile shared its summary with the Med bot
+  // still has the old setting saved. The demo profile holds only simulated data and its consent
+  // cannot be changed by hand, so bring it in line with the seed.
+  if (get().profiles.some((p) => p.id === DEMO_PROFILE_ID && !p.consent.assistant)) {
+    set((state) => ({
+      profiles: state.profiles.map((p) =>
+        p.id === DEMO_PROFILE_ID ? { ...p, consent: { ...p.consent, assistant: true } } : p,
+      ),
+    }))
+  }
   if (!get().profiles.some((p) => p.id === get().activeProfileId)) {
     set(() => ({ activeProfileId: DEMO_PROFILE_ID }))
   }
