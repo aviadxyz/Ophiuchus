@@ -396,7 +396,7 @@ Each game folder has `meta.ts` exporting `meta`, collected automatically like sc
 
 | Field | Meaning |
 |---|---|
-| `id` | Equals the folder name. Fixed ids: `futvolley`, `samba-time` |
+| `id` | Equals the folder name. Fixed ids: `futvolley`, `samba-time`. A game added by prompt 27 chooses its own short id in lower case with hyphens |
 | `label`, `description` | |
 | `screens` | List of screen ids whose `GameLinks` should show it |
 | `countsAsExercise` | yes/no. If yes, the game calls `logGameMinutes` when a round ends |
