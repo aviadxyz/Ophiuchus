@@ -16,9 +16,9 @@ Intent = Literal['general_medical_question', 'personal_health_question', 'health
 
 
 class Consent(Model):
-    personal_health: bool = False
-    save_conversations: bool = False
-    mood_history: bool = False
+    personal_health: bool = True
+    save_conversations: bool = True
+    mood_history: bool = True
 
 
 class ConsentUpdate(Model):

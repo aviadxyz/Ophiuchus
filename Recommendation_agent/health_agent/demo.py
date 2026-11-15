@@ -78,7 +78,7 @@ def build_demo(directory, count=1, category='monitoring', severity='yellow', llm
             raw = dict(measurement_id=f'demo-history-{day}', astronaut_id='DEMO_ASTRONAUT', metric='sleep_duration', value=value,
                        unit='hours', timestamp=(now()-timedelta(days=day)).isoformat(), source='synthetic-device')
             db.execute('INSERT OR IGNORE INTO health_measurements VALUES (?,?,?,?,?)', ('DEMO_ASTRONAUT', raw['measurement_id'], raw['timestamp'], 'sleep_duration', json.dumps(raw)))
-    return PreventiveHealthAgent(store, KnowledgeTools(directory / 'knowledge', governance, demo=True), llm or DemoModel())
+    return PreventiveHealthAgent(store, KnowledgeTools(directory / 'knowledge', governance, demo=True), llm or DemoModel(), protocol_mode='approved')
 
 def main():
     with tempfile.TemporaryDirectory(prefix='orbital-health-demo-') as directory:

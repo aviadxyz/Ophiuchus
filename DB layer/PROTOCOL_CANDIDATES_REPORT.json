@@ -1,0 +1,610 @@
+{
+  "generator": "draft-protocol-candidates-v1",
+  "curation_version": "draft-practices-v1",
+  "generated_at": "2026-11-15T12:03:46.722532+00:00",
+  "clinical_authorization": false,
+  "relations_examined": 30,
+  "accepted_count": 9,
+  "excluded_count": 21,
+  "accepted": [
+    {
+      "relation_id": "relation_b3dc743027083b17f67c",
+      "claim_id": "claim_c0969b040406af1621a6",
+      "related_condition_id": "conditions_14c5f743561cc66e4c7e",
+      "treatment_id": "treatments_5e24dc0bb5823754c367",
+      "protocol_id": "protocol_d66679d9bb707e52af94",
+      "condition_name": "inadequate teamwork",
+      "treatment_name": "team-building exercises",
+      "evidence_id": "evidence_5a0a49a5c7894198394e",
+      "source_id": "source_cf2e7b26631f3a802e27",
+      "source_title": "Risk of inadequate teamwork - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "NASA astronauts practice team-building skills and exercises before their mission",
+      "fields": {
+        "indication": "NASA astronauts practice team-building skills and exercises before their mission",
+        "required_conditions": "before their mission",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_28c9a61924ebbad99288",
+      "claim_id": "claim_eb7d6825457bda746739",
+      "related_condition_id": "conditions_3978ceaa4d85f511e7e2",
+      "treatment_id": "treatments_870eca27e10815231a69",
+      "protocol_id": "protocol_cb33d7de4d12833a59af",
+      "condition_name": "decompression sickness",
+      "treatment_name": "earth-based training in high- and low-pressure environments",
+      "evidence_id": "evidence_19a5ae2ec50e0846261b",
+      "source_id": "source_9fc83afed4c3c844eb53",
+      "source_title": "Risk of Decompression Sickness - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+      "fields": {
+        "indication": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+        "required_conditions": "prior to missions",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_16da88b56b3217ec969f",
+      "claim_id": "claim_34307d9dd15e2af5b99e",
+      "related_condition_id": "conditions_76c231915629d6d91bf5",
+      "treatment_id": "treatments_af11afe44ac92c61efb7",
+      "protocol_id": "protocol_ba6f6133aeb353fe3f75",
+      "condition_name": "bone density loss",
+      "treatment_name": "resistive exercise",
+      "evidence_id": "evidence_3354ad6f2747477a34cf",
+      "source_id": "source_b4bd76d26d8b64355543",
+      "source_title": "Risk of Spaceflight-Induced Bone Changes - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+      "fields": {
+        "indication": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "required_conditions": "in microgravity",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "The before/after scan timing describes bone scans, not an exercise schedule."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_e127b7063ac6f3c0650c",
+      "claim_id": "claim_8793281e57c32f45a8af",
+      "related_condition_id": "conditions_3978ceaa4d85f511e7e2",
+      "treatment_id": "treatments_1f31a27f6c18baceb2a0",
+      "protocol_id": "protocol_805036b8c4327dec7e05",
+      "condition_name": "decompression sickness",
+      "treatment_name": "high oxygen breathing",
+      "evidence_id": "evidence_aa76acf5b92cc74ad419",
+      "source_id": "source_9fc83afed4c3c844eb53",
+      "source_title": "Risk of Decompression Sickness - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+      "fields": {
+        "indication": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "required_conditions": "before a spacewalk",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "The source compares military flight and astronaut practices; no oxygen concentration, duration or administration authorization is supplied."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_34c058601b972d0a23d9",
+      "claim_id": "claim_87ed78aef703c9d8e0ab",
+      "related_condition_id": "conditions_e5c6d1a0fe078a37f64b",
+      "treatment_id": "treatments_6f86e5cef59c9b7064e8",
+      "protocol_id": "protocol_4a0ac4cd039b20a57999",
+      "condition_name": "Reduced Cardiorespiratory and Musculoskeletal Fitness",
+      "treatment_name": "Exercise during mission",
+      "evidence_id": "evidence_c211a96225e9489c2e90",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_title": "Risks of Human Spaceflight - NASA",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+      "fields": {
+        "indication": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "required_conditions": "during their mission",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_03b9814c761bbf71b46b",
+      "claim_id": "claim_22ab3ec7d601de9483c3",
+      "related_condition_id": "conditions_846e8e2e8f336be96c67",
+      "treatment_id": "treatments_68595fb19bf2e18d2717",
+      "protocol_id": "protocol_0e36a7999e9570c2f4bb",
+      "condition_name": "reduced musculoskeletal fitness",
+      "treatment_name": "resistance training and aerobic exercises",
+      "evidence_id": "evidence_30a7c45a3cd5d2543c97",
+      "source_id": "source_595c9981ebc185e5870a",
+      "source_title": "Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss",
+      "fields": {
+        "indication": "astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss",
+        "required_conditions": "on the International Space Station",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "per day",
+        "duration": "1.5 hours"
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "The duration and frequency describe the cited practice; they are not an individualized prescription."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_9f133da3bc8fd2e3cf75",
+      "claim_id": "claim_04235d1fa72b1b6d15c2",
+      "related_condition_id": "conditions_a43ce5e9e0220b25a587",
+      "treatment_id": "treatments_acb57b3cb059a9fa5c7b",
+      "protocol_id": "protocol_18933cb62234938546bb",
+      "condition_name": "anxiety",
+      "treatment_name": "keeping a regular journal",
+      "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+      "source_id": "source_a52493076e4308064964",
+      "source_title": "Risk of behavioral changes and psychiatric disorders - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+      "fields": {
+        "indication": "NASA encourages astronauts to explore self-care options including keeping a regular journal.",
+        "required_conditions": "",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "required_conditions",
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "The source describes general self-care, not treatment of an anxiety disorder. The unreviewed condition association requires separate review. The investigational vegetable-growing statement is not promoted into a candidate."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_83be51f43f51ac7ee0f7",
+      "claim_id": "claim_32b89df6bac74019b7ae",
+      "related_condition_id": "conditions_baa17a2b545f8d7753c4",
+      "treatment_id": "treatments_5b57e3d36812e0e991e5",
+      "protocol_id": "protocol_93fb50df7e4b6d35e8cd",
+      "condition_name": "adverse mission outcomes due to Earth independent human-systems operation",
+      "treatment_name": "simulator training",
+      "evidence_id": "evidence_bc864bfa5cbce17107ae",
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_title": "Risk of inadequate systems operations support - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+      "fields": {
+        "indication": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "required_conditions": "before launch",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": "on average, 300 hours"
+      },
+      "missing_fields": [
+        "contraindications",
+        "dosage",
+        "frequency"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "This is a reported prelaunch training average, not a required duration or an in-mission clinical action."
+      ],
+      "exported_review_status": "pending"
+    },
+    {
+      "relation_id": "relation_ef67a77da7fb83fcf3aa",
+      "claim_id": "claim_ed247eadecf402408a4f",
+      "related_condition_id": "conditions_385f44abcfe940fa01f9",
+      "treatment_id": "treatments_b6ce10da5f1519af93af",
+      "protocol_id": "protocol_73dd2a0c0981099ec8c1",
+      "condition_name": "sleep-wake cycle disruption",
+      "treatment_name": "LED light simulation",
+      "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+      "source_id": "source_272ff97648e63fa98488",
+      "source_title": "Risk from Inadequate Sleep and Irregular Schedules - NASA",
+      "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "source_review_status": "pending",
+      "evidence_review_status": "pending",
+      "supporting_excerpt": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+      "fields": {
+        "indication": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "required_conditions": "",
+        "contraindications": "",
+        "dosage": "",
+        "frequency": "",
+        "duration": ""
+      },
+      "missing_fields": [
+        "required_conditions",
+        "contraindications",
+        "dosage",
+        "frequency",
+        "duration"
+      ],
+      "limitations": [
+        "Pending research-derived candidate only; no clinical authorization or individualized recommendation.",
+        "Condition association is copied from an unreviewed relationship, not independently established as a diagnosis or treatment indication.",
+        "Blank fields mean undocumented, not no contraindications or unrestricted applicability.",
+        "No lighting intensity, exposure time, spectrum or individualized schedule is documented in this excerpt."
+      ],
+      "exported_review_status": "pending"
+    }
+  ],
+  "excluded": [
+    {
+      "relation_id": "relation_51e5b1f35f350adcdd2b",
+      "claim_id": "claim_aa18d49a37a5bd9ba933",
+      "related_condition_id": "conditions_c214349a900135dfa0e7",
+      "treatment_id": "treatments_ca923ef9da78429327f1",
+      "reason": "Broad program goal; no concrete preventive practice.",
+      "evidence_id": "evidence_8292635e27c908574930",
+      "supporting_excerpt": "Human Health Countermeasures Assesses the effects spaceflight has on the human body and develops safeguards to deal with those changes.",
+      "source_id": "source_5c511e99e567d27ec313",
+      "source_url": "https://www.nasa.gov/hrp"
+    },
+    {
+      "relation_id": "relation_f61c9fd13b5fefd919c2",
+      "claim_id": "claim_9135bd88d962fd501046",
+      "related_condition_id": "conditions_427e788df3ca6dd792a0",
+      "treatment_id": "treatments_fc0dde28ab00e47dec28",
+      "reason": "Medicines are under development; no specified operational intervention.",
+      "evidence_id": "evidence_18cd1a1d361c65669010",
+      "supporting_excerpt": "NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.",
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/"
+    },
+    {
+      "relation_id": "relation_228bb69a0cbff59a27f5",
+      "claim_id": "claim_8be70201672648f4e242",
+      "related_condition_id": "conditions_e8021b516e0f123e60af",
+      "treatment_id": "treatments_68a2369cc632d786fdec",
+      "reason": "Broad research goal, not a protocol description.",
+      "evidence_id": "evidence_f6c2aa478ba824004b9a",
+      "supporting_excerpt": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.",
+      "source_id": "source_78a16b9a26f83f3e4b67",
+      "source_url": "https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp"
+    },
+    {
+      "relation_id": "relation_0dc3abef28f971456320",
+      "claim_id": "claim_a14dd3903b2755066e40",
+      "related_condition_id": "conditions_2116aa459872014e0e41",
+      "treatment_id": "treatments_eb32eaf284cfc2de8f62",
+      "reason": "Article heading without an operational intervention description.",
+      "evidence_id": "evidence_0878114cfcbf76de0909",
+      "supporting_excerpt": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+      "source_id": "source_c2699be8927456ed51f5",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/"
+    },
+    {
+      "relation_id": "relation_29fa425ad7cf89c5d2ef",
+      "claim_id": "claim_38b6c00f61bcf6ef3165",
+      "related_condition_id": "conditions_2116aa459872014e0e41",
+      "treatment_id": "treatments_eb32eaf284cfc2de8f62",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_b7772984d65f00f5b0a2",
+      "supporting_excerpt": "Research in support of this risk: Latest evidence",
+      "source_id": "source_c2699be8927456ed51f5",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/"
+    },
+    {
+      "relation_id": "relation_b6afa081a6d3dbe9c7aa",
+      "claim_id": "claim_bec73238c7f2e817f8f2",
+      "related_condition_id": "conditions_9c7b6c6259547a7f00d4",
+      "treatment_id": "treatments_5f96a032684e4ca523b1",
+      "reason": "Quote does not substantiate the linked exercise intervention for muscle weakness.",
+      "evidence_id": "evidence_a72a2b9b313a78807201",
+      "supporting_excerpt": "Ongoing work aims to balance pressure, oxygen, and the physical and mental demands of spacewalks to ensure crew member health and mission success",
+      "source_id": "source_1b74656c820988255936",
+      "source_url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/"
+    },
+    {
+      "relation_id": "relation_e1c6195fe82cc4bd7c23",
+      "claim_id": "claim_3c0444d9297916f7a500",
+      "related_condition_id": "conditions_fe5a20e31b9c03f1666d",
+      "treatment_id": "treatments_7df33957c05fd4af78b0",
+      "reason": "Research to inform future strategies; no concrete intervention is described.",
+      "evidence_id": "evidence_05a6dccd8641e34c583e",
+      "supporting_excerpt": "Scrutinizing scans of astronauts’ spines to inform strategies that counter bone and muscle loss in space",
+      "source_id": "source_964a3b024cff8881b0d4",
+      "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/"
+    },
+    {
+      "relation_id": "relation_f0f793a0c89236e34d5b",
+      "claim_id": "claim_a68813d4a6677574ca15",
+      "related_condition_id": "conditions_48916b2dd53d37788713",
+      "treatment_id": "treatments_012b2b6825acd5040c73",
+      "reason": "Engineering development of shielding, not a medical preventive practice.",
+      "evidence_id": "evidence_85b336dc29647f0d960e",
+      "supporting_excerpt": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station",
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/"
+    },
+    {
+      "relation_id": "relation_665078b6f28839266baf",
+      "claim_id": "claim_3486955dd20d5cbe5bae",
+      "related_condition_id": "conditions_48916b2dd53d37788713",
+      "treatment_id": "treatments_b46d45449488cfc060ee",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_5a30e0ce39858112fb0c",
+      "supporting_excerpt": "NASA Studies Simulated Radiation",
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/"
+    },
+    {
+      "relation_id": "relation_088741567e111c1fbf63",
+      "claim_id": "claim_13f5a26f1f968de0138f",
+      "related_condition_id": "conditions_7c6915035a8e13ad2a50",
+      "treatment_id": "treatments_21256e12625f231c8407",
+      "reason": "System-design development goal, not an astronaut health protocol.",
+      "evidence_id": "evidence_060268e9fa2bf19905a3",
+      "supporting_excerpt": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/"
+    },
+    {
+      "relation_id": "relation_29ee0774f7310b07e1e6",
+      "claim_id": "claim_e2368270e7e9b0109bbb",
+      "related_condition_id": "conditions_05363f751e825bf2d307",
+      "treatment_id": "treatments_554dfe622b5d8d121d2e",
+      "reason": "Study-specific diet development, not a documented established intervention.",
+      "evidence_id": "evidence_e52e324e6bbef05a8cd9",
+      "supporting_excerpt": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet.",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/"
+    },
+    {
+      "relation_id": "relation_dfaf959f5b923d756b64",
+      "claim_id": "claim_381002560cc130a8de6e",
+      "related_condition_id": "conditions_05363f751e825bf2d307",
+      "treatment_id": "treatments_554dfe622b5d8d121d2e",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_9c78ba133f8a8f47c57d",
+      "supporting_excerpt": "Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health.",
+      "source_id": "source_2b0483c9a18eae867cd2",
+      "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/"
+    },
+    {
+      "relation_id": "relation_5c714efebe6b0ed7cc44",
+      "claim_id": "claim_275e6fee1e771cf9ac0d",
+      "related_condition_id": "conditions_b09d56057d64041e2405",
+      "treatment_id": "treatments_256bd35351d5e9321c0a",
+      "reason": "Ongoing recovery research without an explicitly described intervention.",
+      "evidence_id": "evidence_ffa2a17906299a82b706",
+      "supporting_excerpt": "Ongoing research seeks to help astronauts recover faster from these changes so they can perform tasks inside and outside spacecraft.",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/"
+    },
+    {
+      "relation_id": "relation_0015adf55c3b33398777",
+      "claim_id": "claim_a88bcd99f0a7083ccc47",
+      "related_condition_id": "conditions_2d32468bf9622aa09cd7",
+      "treatment_id": "treatments_7c38c1961c36c3e39d9e",
+      "reason": "Pressure-adjustment spacesuit capability is explicitly current research.",
+      "evidence_id": "evidence_82f72294dcffac6e9625",
+      "supporting_excerpt": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+      "source_id": "source_a88298f30673509167a9",
+      "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/"
+    },
+    {
+      "relation_id": "relation_c9ca72357e4c76e428cb",
+      "claim_id": "claim_819a57736ffd1ca5e679",
+      "related_condition_id": "conditions_ad79a253ed9bbc58eac7",
+      "treatment_id": "treatments_44a196b2482a71785ef8",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_1d1ec4e751a4174d1274",
+      "supporting_excerpt": "Research in support of this risk: Latest evidence",
+      "source_id": "source_a8159d920b53fd31fdc6",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/"
+    },
+    {
+      "relation_id": "relation_10ebcdc4551e304c1b9d",
+      "claim_id": "claim_49552c2ae1abf8be92d3",
+      "related_condition_id": "conditions_3978ceaa4d85f511e7e2",
+      "treatment_id": "treatments_ba51435b911ec817a4d8",
+      "reason": "Variable-pressure suits are explicitly under development.",
+      "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+      "supporting_excerpt": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+      "source_id": "source_9fc83afed4c3c844eb53",
+      "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/"
+    },
+    {
+      "relation_id": "relation_0636537f4b1a4e76184b",
+      "claim_id": "claim_b542dce98f60f3de2ff9",
+      "related_condition_id": "conditions_baa17a2b545f8d7753c4",
+      "treatment_id": "treatments_5b57e3d36812e0e991e5",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_7a7f864e80ce947e712c",
+      "supporting_excerpt": "Research in support of this risk: Latest evidence",
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/"
+    },
+    {
+      "relation_id": "relation_63b6eb5747f0afaa60e7",
+      "claim_id": "claim_46bf51637d390fde3648",
+      "related_condition_id": "conditions_b5cd2a0caec019f024c0",
+      "treatment_id": "treatments_7f551c79f5ae880242bd",
+      "reason": "Broad safety research statement without a vision intervention.",
+      "evidence_id": "evidence_21c5325ac89f10415ad6",
+      "supporting_excerpt": "NASA scientists are examining how to best ensure crew health and safety",
+      "source_id": "source_13286a5f480896318f1f",
+      "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/"
+    },
+    {
+      "relation_id": "relation_5407a8d93409da0cdf3e",
+      "claim_id": "claim_af51b201297626a8eb57",
+      "related_condition_id": "conditions_3e4ff7e07bcb78ca2778",
+      "treatment_id": "treatments_deb687c28a7c61d4b698",
+      "reason": "Investigational-only relationship; excluded by selected scope.",
+      "evidence_id": "evidence_3585ab9a1b7fe3a6c9da",
+      "supporting_excerpt": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/"
+    },
+    {
+      "relation_id": "relation_56b035359f8d41c5ddde",
+      "claim_id": "claim_ff88edc0bca54dd5ab77",
+      "related_condition_id": "conditions_48e5a8455efba512fa90",
+      "treatment_id": "treatments_4cfe3ec6f1613ba925c3",
+      "reason": "Radiation detection instrument capability, not a preventive medical protocol.",
+      "evidence_id": "evidence_080007d5141013f460db",
+      "supporting_excerpt": "CANS improves upon previous radiation detection methods with the unique combined capabilities of working continuously and autonomously",
+      "source_id": "source_6eff1432c82f31bbca5a",
+      "source_url": "https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp"
+    },
+    {
+      "relation_id": "relation_16cd8ea1d0c28d1c1663",
+      "claim_id": "claim_c2cb5185becc87f1262e",
+      "related_condition_id": "conditions_a8de785b189902e5beca",
+      "treatment_id": "treatments_8aa668c2b95e4dc4d983",
+      "reason": "B-vitamin prevention is explicitly investigational despite the relationship label.",
+      "evidence_id": "evidence_3162b4e5790a51b3666e",
+      "supporting_excerpt": "Investigating if a daily B vitamin supplement can prevent or mitigate brain and eye changes that may affect some humans in space",
+      "source_id": "source_964a3b024cff8881b0d4",
+      "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/"
+    }
+  ],
+  "mode": "applied",
+  "csv_changes": [],
+  "unrelated_tables_unchanged": true,
+  "approved_exports_unchanged": true,
+  "repeat_export_verified": true,
+  "created_staging_batches": 0,
+  "input_csv_sha256": {
+    "aliases/aliases.csv": "4b55e356106970e535ce0995cd74ccfe0523f5386c28e61ef695fdb9f0ed452e",
+    "entities/biomarkers.csv": "93622e830a39ad398a7f5d25cf86fbe244ae77558ebc5cdc5ca51a82977dedf4",
+    "entities/cognitive_findings.csv": "4c561dad9dd6e58912cf62e2f110030fa9e3d248fcb15a1802d0a80ef26b93ab",
+    "entities/conditions.csv": "e2a68dd448c99de96bb59ad176de651f06449f9692890137f123d90bba69b3c3",
+    "entities/environments.csv": "ce860bdc2617c79282a0bd1b22c63f94bb499433ed01093bd9fa32a87af9c515",
+    "entities/genes.csv": "2b2f6b01ab9cc2dc5afcd03aef3e1e62f4aef12456f7a0b81734d73cae3df8a9",
+    "entities/microbiome.csv": "fad9db981da7102f414826c3abaf0c6b62106e00d1a2b307af748c42945d139f",
+    "entities/physical_findings.csv": "0c7f71eba13a07fcb85cf7e412147af4a24f9ac949c14c7cdeeac65237176747",
+    "entities/risk_factors.csv": "8b4161a5a5b043ec6bb12dac32f0711ac261be5b80665717e0623909682b0191",
+    "entities/treatments.csv": "23e4a808f843eead08a67bff522da65f7e387767d8777d927f15658719b9f7c3",
+    "evidence/evidence.csv": "6871e707ac97c5623395ee6cc0b4febce570aa392d07905d7336c01fe3f903d1",
+    "evidence/knowledge_claims.csv": "ad9d21184062d5b10ffc809fff1d8148cc9269a5c9b24e1a335382c600159400",
+    "inventory/mission_inventory.csv": "daacf8d28c0d6ed91954c6087707d318308a5573fa6f6e4c43ddb45e459691f5",
+    "metadata/risk_categories.csv": "4e3beced0f700c5d2e6f1de9399dfba46f313c31761640d77c6e28ea1fb2d270",
+    "metadata/sources.csv": "10e8c6718fc40c2140c76b7035bc42b3fc15cc590307484189525a4b02ca37a4",
+    "metadata/source_types.csv": "429436a427a9f6769d3985ee033d52c63383e6c5ee7ddce6c6b16c2b8db43b72",
+    "metadata/treatment_types.csv": "9ddb3f42cb971b7887c936bcdcfce735e963e206298bc051276ae3081cfc120d",
+    "monitoring/monitoring_guidance.csv": "61def9a4c31a8b847d3e78e79f94ef6079b089579d5e4f9fc76e08a19e1de899",
+    "protocols/approved_protocols.csv": "8cf24593b037072571625a3343ca5a59bd998a199590a192fb826524014edc11",
+    "protocols/candidate_protocols.csv": "57e137ef4ff00d0dcd20163179561c50e2a226eb4624918d7f3194e286712812",
+    "relations/condition_biomarker.csv": "865f567e6fde5a8b0b4601c8a4a569d7f9b96661fc66be4df41325671ee1574b",
+    "relations/condition_cognitive.csv": "f8138e223159a511b81bad8e1409369510bb6643be668734848a3743f0efa38e",
+    "relations/condition_gene.csv": "865f567e6fde5a8b0b4601c8a4a569d7f9b96661fc66be4df41325671ee1574b",
+    "relations/condition_microbiome.csv": "865f567e6fde5a8b0b4601c8a4a569d7f9b96661fc66be4df41325671ee1574b",
+    "relations/condition_physical.csv": "9f8f4674330b01fb67ee066beeb09ff1a1419af30e895a3f8a593b5ff20b3d39",
+    "relations/condition_treatment.csv": "6c8781621fb68980cb53dd7a6e68ca71cf7889eac7bba8a51e03e12dd1c12460",
+    "relations/environment_risk.csv": "9a17e009852670520065158bef4a03d017e476986545934a15cc12d84c327f39",
+    "relations/risk_condition.csv": "78b6dacad9f7c766efcfcf277633bb9ddeaea2e39d8e8a9a7f68b7b07e1ba848",
+    "relations/treatment_risk.csv": "865f567e6fde5a8b0b4601c8a4a569d7f9b96661fc66be4df41325671ee1574b"
+  }
+}

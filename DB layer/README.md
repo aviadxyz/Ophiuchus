@@ -206,3 +206,14 @@ Offline pytest tests use a local HTML fixture, a locally generated PDF fixture a
 The initial real-source run attempted 12 URLs and cached 11 HTML documents. Later crawling reached 30 successful URLs. After configuring local Ollama, genuine source-backed entity assertions were staged. The HRR upgrade subsequently demonstrated one validated relationship on the cached NASA bone-risk page and exported it to `DB/draft/relations/condition_treatment.csv`. Full HRR crawling is currently blocked by its robots endpoint redirecting to an HTTP 500 error page. See `HRR_UPGRADE_REPORT.md` for exact counts, verification and limitations. No fixture records or fabricated source content were inserted into production.
 
 Known limits: no OCR for scanned PDFs; heuristic source link prioritization; no fuzzy semantic merges; no automated assessment of medical truth or clinical safety; no concurrent writers. Source classification and study populations depend on model output and review. The hackathon MVP retains a single discovery parent per URL and one source classification from the last exported chunk for each document.
+
+## Populate draft protocol candidates from existing CSVs
+
+```powershell
+python -m knowledge_ingestion.protocol_candidates --root .          # Read-only dry run
+python -m knowledge_ingestion.protocol_candidates --root . --apply  # Stage pending candidates and export draft
+```
+
+This offline command uses the explicit selection in `config/protocol_candidates.json`, validates existing relation/claim/evidence/source joins and original source chunks, and copies only documented wording. It does not call an LLM, crawl, approve research or authorize treatment. Generated staging records survive subsequent draft exports. All unrelated draft tables and approved exports are checked for preservation. Existing reviewed overrides are respected.
+
+See `PROTOCOL_CANDIDATES_REPORT.md` and `PROTOCOL_CANDIDATES_REPORT.json` for the nine included practices, 21 excluded relationships, source quotations, pending status and missing fields. These candidates do not bypass the recommendation agent's approved-protocol and governance requirements.

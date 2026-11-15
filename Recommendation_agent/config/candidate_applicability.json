@@ -1,0 +1,60 @@
+{
+  "version": "draft-candidate-context-v1",
+  "metric_biomarker_ids": {},
+  "protocols": {
+    "protocol_0e36a7999e9570c2f4bb": {
+      "expected_evidence_id": "evidence_30a7c45a3cd5d2543c97",
+      "required_conditions": "on the International Space Station",
+      "required_profile": {"mission_phase": "in_mission"},
+      "environment_ids": ["environments_491ddef256589d2376fe", "environments_4df7ec3bb3703a5819b1"]
+    },
+    "protocol_18933cb62234938546bb": {
+      "expected_evidence_id": "evidence_b7dce211375e7f7f7e7c",
+      "required_conditions": "",
+      "required_profile": {},
+      "environment_ids": []
+    },
+    "protocol_4a0ac4cd039b20a57999": {
+      "expected_evidence_id": "evidence_c211a96225e9489c2e90",
+      "required_conditions": "during their mission",
+      "required_profile": {"mission_phase": "in_mission"},
+      "environment_ids": []
+    },
+    "protocol_73dd2a0c0981099ec8c1": {
+      "expected_evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+      "required_conditions": "",
+      "required_profile": {},
+      "environment_ids": []
+    },
+    "protocol_805036b8c4327dec7e05": {
+      "expected_evidence_id": "evidence_aa76acf5b92cc74ad419",
+      "required_conditions": "before a spacewalk",
+      "required_profile": {"mission_phase": "in_mission", "mission_activity": "spacewalk_preparation"},
+      "environment_ids": []
+    },
+    "protocol_93fb50df7e4b6d35e8cd": {
+      "expected_evidence_id": "evidence_bc864bfa5cbce17107ae",
+      "required_conditions": "before launch",
+      "required_profile": {"mission_phase": "preflight"},
+      "environment_ids": []
+    },
+    "protocol_ba6f6133aeb353fe3f75": {
+      "expected_evidence_id": "evidence_3354ad6f2747477a34cf",
+      "required_conditions": "in microgravity",
+      "required_profile": {"mission_phase": "in_mission", "gravity_regime": "microgravity"},
+      "environment_ids": []
+    },
+    "protocol_cb33d7de4d12833a59af": {
+      "expected_evidence_id": "evidence_19a5ae2ec50e0846261b",
+      "required_conditions": "prior to missions",
+      "required_profile": {"mission_phase": "preflight"},
+      "environment_ids": []
+    },
+    "protocol_d66679d9bb707e52af94": {
+      "expected_evidence_id": "evidence_5a0a49a5c7894198394e",
+      "required_conditions": "before their mission",
+      "required_profile": {"mission_phase": "preflight"},
+      "environment_ids": []
+    }
+  }
+}
