@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-11-14T13:19:42.556170+00:00",
+  "root": "C:\\Users\\owner\\Desktop\\New folder",
+  "chunks_attempted": 1,
+  "chunks_succeeded": 1,
+  "chunks_failed": 0,
+  "chunks_skipped": 0,
+  "documents_attempted": 1,
+  "status": "completed",
+  "provider": "OllamaExtractor",
+  "model": "qwen3:4b-instruct",
+  "cache_hits": 0,
+  "mode": "relations_first",
+  "selection": {
+    "source_b4bd76d26d8b64355543": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    }
+  },
+  "finished_at": "2026-11-14T13:21:22.204560+00:00"
+}

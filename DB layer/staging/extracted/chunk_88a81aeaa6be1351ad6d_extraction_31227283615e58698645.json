@@ -1,0 +1,295 @@
+{
+  "source_id": "source_a8159d920b53fd31fdc6",
+  "chunk": {
+    "source_id": "source_a8159d920b53fd31fdc6",
+    "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+    "chunk_id": "chunk_88a81aeaa6be1351ad6d",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1591",
+    "text": "HHC Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) NASA astronaut Karen Nyberg uses a fundoscope to image her eye while in orbit. Using this tool to examine the retina helps scientists track how the spaceflight environment affects the human eye. Credit: NASA What are the top risks? Chronic weightlessness can cause bodily fluids such as blood and cerebrospinal fluid to move toward the head, which can lead to optic nerve swelling, folds in the retina, flattening of the back of the eye, and swelling in the brain. This collection of eye and brain changes is called “spaceflight associated neuro-ocular syndrome,” or SANS. Some astronauts only experience mild changes in space, while others have clinically significant outcomes. The long-term health outcome from these changes is unknown but actively being investigated. The risk of developing SANS is higher during longer-duration missions and remains a top research priority for scientists ahead of a Mars mission. What can be done about it? NASA scientists are investigating potential ways to prevent or treat SANS, including nutritional supplements that could protect the eyes and mechanical interventions that may help reverse headward fluid shifts. They’re also gaining insights from Earth-based studies that replicate the physiological effects of floating in microgravity by requiring participants to lie in bed with a six-degree head-down tilt for weeks or months at a time. Did you know? Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes. ",
+    "original_text": "HHC Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) NASA astronaut Karen Nyberg uses a fundoscope to image her eye while in orbit. Using this tool to examine the retina helps scientists track how the spaceflight environment affects the human eye. Credit: NASA What are the top risks? Chronic weightlessness can cause bodily fluids such as blood and cerebrospinal fluid to move toward the head, which can lead to optic nerve swelling, folds in the retina, flattening of the back of the eye, and swelling in the brain. This collection of eye and brain changes is called “spaceflight associated neuro-ocular syndrome,” or SANS. Some astronauts only experience mild changes in space, while others have clinically significant outcomes. The long-term health outcome from these changes is unknown but actively being investigated. The risk of developing SANS is higher during longer-duration missions and remains a top research priority for scientists ahead of a Mars mission. What can be done about it? NASA scientists are investigating potential ways to prevent or treat SANS, including nutritional supplements that could protect the eyes and mechanical interventions that may help reverse headward fluid shifts. They’re also gaining insights from Earth-based studies that replicate the physiological effects of floating in microgravity by requiring participants to lie in bed with a six-degree head-down tilt for weeks or months at a time. Did you know? Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "swelling in the back of the eye",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "spaceflight associated neuro-ocular syndrome",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: spaceflight associated neuro-ocular syndrome -> associated_with -> swelling in the back of the eye."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+        "chunk_id": "chunk_88a81aeaa6be1351ad6d",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+        "chunk_id": "chunk_88a81aeaa6be1351ad6d",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+        "chunk_id": "chunk_88a81aeaa6be1351ad6d",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_2740db2717a04f4f781a",
+        "canonical_name": "swelling in the back of the eye",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_34dee709af805383dedd",
+        "subject_entity_id": "risk_factors_2740db2717a04f4f781a",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"swelling in the back of the eye\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.\"}",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_aaad1e28ed01257e7662",
+        "subject_entity_id": "conditions_52c351e6c11f394c5da6",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"spaceflight associated neuro-ocular syndrome\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.\"}",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_c0596e8531b90918817a",
+        "subject_entity_id": "risk_factors_2740db2717a04f4f781a",
+        "object_entity_id": "conditions_52c351e6c11f394c5da6",
+        "predicate": "associated_with",
+        "claim_text": "Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.",
+        "source_id": "source_a8159d920b53fd31fdc6",
+        "evidence_id": "evidence_15cd8fd635c29dca8daa",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: spaceflight associated neuro-ocular syndrome -> associated_with -> swelling in the back of the eye.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_52c351e6c11f394c5da6",
+        "canonical_name": "spaceflight associated neuro-ocular syndrome",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_6de7b7e3f3e862490e80",
+        "source_entity_id": "risk_factors_2740db2717a04f4f781a",
+        "target_entity_id": "conditions_52c351e6c11f394c5da6",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_c0596e8531b90918817a",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Chronic weightlessness can cause bodily fluids such as blood and cerebrospinal fluid to move toward the head, which can lead to optic nerve swelling, folds in the retina, flattening of the back of the eye, and swelling in the brain.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "spaceflight associated neuro-ocular syndrome"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "chronic weightlessness"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "The risk of developing SANS is higher during longer-duration missions and remains a top research priority for scientists ahead of a Mars mission.",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "longer-duration missions"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "spaceflight associated neuro-ocular syndrome"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "105"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Chronic weightlessness can cause bodily fluids such as blood and cerebrospinal fluid to move toward the head, which can lead to optic nerve swelling, folds in the retina, flattening of the back of the eye, and swelling in the brain.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight associated neuro-ocular syndrome\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"chronic weightlessness\"\n      }\n    },\n    {\n      \"evidence_text\": \"Approximately 70 percent of astronauts aboard the International Space Station experience some swelling in the back of their eyes.\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"swelling in the back of the eye\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight associated neuro-ocular syndrome\"\n      }\n    },\n    {\n      \"evidence_text\": \"The risk of developing SANS is higher during longer-duration missions and remains a top research priority for scientists ahead of a Mars mission.\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"longer-duration missions\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight associated neuro-ocular syndrome\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "40b0d680d70f8c7059e63a6d72abb67d979f3fcac47381924faba59cd869ce12",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

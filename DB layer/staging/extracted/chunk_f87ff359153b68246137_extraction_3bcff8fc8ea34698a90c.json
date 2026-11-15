@@ -1,0 +1,293 @@
+{
+  "source_id": "source_13286a5f480896318f1f",
+  "chunk": {
+    "source_id": "source_13286a5f480896318f1f",
+    "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+    "chunk_id": "chunk_f87ff359153b68246137",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1283:2486",
+    "text": "Explore Collaboration Opportunities Featured Story NASA Harnesses US Navy Spinning Device to Simulate Spaceflight A monster of a machine is now allowing NASA scientists to study on Earth the disorientation that astronauts may encounter… Read the Story Space Nutrition Astronauts require food that is nutritious, appetizing, long-lasting, easy to make, and more. We strive to continuously improve the quality of space food and to satisfy the dietary needs of crew members on increasingly longer and more distant spaceflight missions. Article 5 min read The Menu for Mars: Designing a Deep Space Food System March 25, 2021 Article 3 min read How Does Spaceflight Change Food Appeal? April 28, 2021 Article 4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight May 4, 2021 Scientists are working hard to better understand why vision changes occur for some astronauts in microgravity, while continuously developing strategies to counter those changes. Focusing on Crew Health From studies that examine bone and muscle loss in space to attempts to characterize the microbial environment of the International Space Station, NASA scientists are examining how to best ensure crew health and safety. ",
+    "original_text": "Explore Collaboration Opportunities Featured Story NASA Harnesses US Navy Spinning Device to Simulate Spaceflight A monster of a machine is now allowing NASA scientists to study on Earth the disorientation that astronauts may encounter… Read the Story Space Nutrition Astronauts require food that is nutritious, appetizing, long-lasting, easy to make, and more. We strive to continuously improve the quality of space food and to satisfy the dietary needs of crew members on increasingly longer and more distant spaceflight missions. Article 5 min read The Menu for Mars: Designing a Deep Space Food System March 25, 2021 Article 3 min read How Does Spaceflight Change Food Appeal? April 28, 2021 Article 4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight May 4, 2021 Scientists are working hard to better understand why vision changes occur for some astronauts in microgravity, while continuously developing strategies to counter those changes. Focusing on Crew Health From studies that examine bone and muscle loss in space to attempts to characterize the microbial environment of the International Space Station, NASA scientists are examining how to best ensure crew health and safety. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "vision changes",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "strategies to counter vision changes",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: vision changes -> countermeasure_for -> strategies to counter vision changes."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "source_id": "source_13286a5f480896318f1f",
+        "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+        "chunk_id": "chunk_f87ff359153b68246137",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1283:2486",
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "source_id": "source_13286a5f480896318f1f",
+        "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+        "chunk_id": "chunk_f87ff359153b68246137",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1283:2486",
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "source_id": "source_13286a5f480896318f1f",
+        "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+        "chunk_id": "chunk_f87ff359153b68246137",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1283:2486",
+        "evidence_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_b5cd2a0caec019f024c0",
+        "canonical_name": "vision changes",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_9a60de971de64843fc0f",
+        "subject_entity_id": "conditions_b5cd2a0caec019f024c0",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"vision changes\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA scientists are examining how to best ensure crew health and safety\"}",
+        "source_id": "source_13286a5f480896318f1f",
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_af81fd7a387bdb7aa1db",
+        "subject_entity_id": "treatments_7f551c79f5ae880242bd",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"strategies to counter vision changes\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA scientists are examining how to best ensure crew health and safety\"}",
+        "source_id": "source_13286a5f480896318f1f",
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_46bf51637d390fde3648",
+        "subject_entity_id": "conditions_b5cd2a0caec019f024c0",
+        "object_entity_id": "treatments_7f551c79f5ae880242bd",
+        "predicate": "countermeasure_for",
+        "claim_text": "NASA scientists are examining how to best ensure crew health and safety",
+        "source_id": "source_13286a5f480896318f1f",
+        "evidence_id": "evidence_21c5325ac89f10415ad6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: vision changes -> countermeasure_for -> strategies to counter vision changes.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_7f551c79f5ae880242bd",
+        "canonical_name": "strategies to counter vision changes",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_63b6eb5747f0afaa60e7",
+        "source_entity_id": "conditions_b5cd2a0caec019f024c0",
+        "target_entity_id": "treatments_7f551c79f5ae880242bd",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_46bf51637d390fde3648",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Scientists are working hard to better understand why vision changes occur for some astronauts in microgravity",
+        "object": {
+          "entity_type": "conditions",
+          "name": "vision changes"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "microgravity"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Focusing on Crew Health From studies that examine bone and muscle loss in space to attempts to characterize the microbial environment of the International Space Station",
+        "object": {
+          "entity_type": "conditions",
+          "name": "bone and muscle loss"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spaceflight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Scientists are working hard to better understand why vision changes occur for some astronauts in microgravity\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"vision changes\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"microgravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA scientists are examining how to best ensure crew health and safety\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"strategies to counter vision changes\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"vision changes\"\n      }\n    },\n    {\n      \"evidence_text\": \"Focusing on Crew Health From studies that examine bone and muscle loss in space to attempts to characterize the microbial environment of the International Space Station\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone and muscle loss\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spaceflight\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "c8d8ffffdf96f3360a3624c437afba416c4afebe1f2e71442224e88edb6ab48a",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

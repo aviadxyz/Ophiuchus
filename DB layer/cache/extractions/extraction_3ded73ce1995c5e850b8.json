@@ -1,0 +1,91 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "f699918cbeed9c4dea915d62c5c27be5afbac2f54109b0408534b86d862f9200",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Researchers know from earlier work that viruses, including the one that causes shingles, can become activated during the extreme conditions of spaceflight",
+        "object": {
+          "entity_type": "conditions",
+          "name": "activated dormant viruses"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "altered immune system responses"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "By analyzing participants’ blood and saliva samples, researchers expect to better understand how stress hormones, viruses, and cells may be affected by flight conditions",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "stress hormones"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "altered immune system responses"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "One aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space",
+        "object": {
+          "entity_type": "conditions",
+          "name": "dormant viruses reawakening"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "immune biomarker analysis"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Researchers know from earlier work that viruses, including the one that causes shingles, can become activated during the extreme conditions of spaceflight\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"activated dormant viruses\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altered immune system responses\"\n      }\n    },\n    {\n      \"evidence_text\": \"By analyzing participants’ blood and saliva samples, researchers expect to better understand how stress hormones, viruses, and cells may be affected by flight conditions\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"stress hormones\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altered immune system responses\"\n      }\n    },\n    {\n      \"evidence_text\": \"One aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"dormant viruses reawakening\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"immune biomarker analysis\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  }
+}

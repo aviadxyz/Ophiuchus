@@ -1,0 +1,50 @@
+{
+  "source_id": "source_13286a5f480896318f1f",
+  "chunk": {
+    "source_id": "source_13286a5f480896318f1f",
+    "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+    "chunk_id": "chunk_3165d7043bfece0207f3",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1283",
+    "text": "HHC Human Health Countermeasures The Human Health Countermeasures (HHC) element of NASA’s Human Research Program (HRP) seeks to understand the physiological effects of spaceflight and develop strategies to mitigate those with detrimental effects on human health and performance. Learn More About HHC About HHC HHC provides biomedical expertise for the development and assessment of medical standards, vehicle and spacesuit requirements, and strategies that ensure crew health during all phases of flight. Read About HHC Spaceflight Risks See the risks of human spaceflight that the HHC element investigate to help ensure the health and safety of astronauts in low-Earth orbit and beyond. See the Risks of Human Spaceflight HHC Risk Approach Plans Explore timelines of how HHC is buying down specific risks faced by astronauts during spaceflight. Explore HHC's Risk Approach Plans Meet the Team Meet the team behind HHC, including element managers and scientists who help facilitate the research aboard the International Space Station and in simulations on Earth. Meet the HHC Team Collaborate With Us Find different ways to collaborate with NASA's HRP and help us discover how to keep the next generation of space explorers thriving on future missions to the Moon, Mars, and beyond. ",
+    "original_text": "HHC Human Health Countermeasures The Human Health Countermeasures (HHC) element of NASA’s Human Research Program (HRP) seeks to understand the physiological effects of spaceflight and develop strategies to mitigate those with detrimental effects on human health and performance. Learn More About HHC About HHC HHC provides biomedical expertise for the development and assessment of medical standards, vehicle and spacesuit requirements, and strategies that ensure crew health during all phases of flight. Read About HHC Spaceflight Risks See the risks of human spaceflight that the HHC element investigate to help ensure the health and safety of astronauts in low-Earth orbit and beyond. See the Risks of Human Spaceflight HHC Risk Approach Plans Explore timelines of how HHC is buying down specific risks faced by astronauts during spaceflight. Explore HHC's Risk Approach Plans Meet the Team Meet the team behind HHC, including element managers and scientists who help facilitate the research aboard the International Space Station and in simulations on Earth. Meet the HHC Team Collaborate With Us Find different ways to collaborate with NASA's HRP and help us discover how to keep the next generation of space explorers thriving on future missions to the Moon, Mars, and beyond. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [],
+  "relation_diagnostics": {
+    "candidate_relationships": 0,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "extraction_metadata": {
+    "input_content_hash": "b9568afc5923f80c73edd15980e29f4465d81345403463e36b969647f0a4401d",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

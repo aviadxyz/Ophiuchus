@@ -1,0 +1,193 @@
+{
+  "started_at": "2026-11-14T14:51:55.914566+00:00",
+  "root": "C:\\Users\\owner\\Desktop\\New folder",
+  "chunks_attempted": 64,
+  "chunks_succeeded": 61,
+  "chunks_failed": 3,
+  "chunks_skipped": 2,
+  "documents_attempted": 28,
+  "status": "failed",
+  "documents_skipped": [
+    {
+      "source_id": "source_abb1bde448b43120ebc7",
+      "url": "https://www.nasa.gov/humans-in-space/astronauts/",
+      "reason": "General astronaut directory, not a medical risk or evidence document"
+    }
+  ],
+  "provider": "OllamaExtractor",
+  "model": "qwen3:4b-instruct",
+  "cache_hits": 0,
+  "mode": "relations_first",
+  "selection": {
+    "source_b4bd76d26d8b64355543": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_595c9981ebc185e5870a": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_795fee7d775bf85aca41": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_a04de5b744ab7f9d06b3": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_e79603c096ca70d9c009": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_a52493076e4308064964": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_5af66404068466682af7": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_272ff97648e63fa98488": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_a8159d920b53fd31fdc6": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_c2699be8927456ed51f5": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_1b74656c820988255936": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_cf2e7b26631f3a802e27": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_32415f5f7520d38b2e83": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_a88298f30673509167a9": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_0bb467f4a071c7fd0a01": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_9fc83afed4c3c844eb53": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_4e0f2521ffc550287338": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_5611ecb4c6d90b86677b": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_e7862784beb09526a71c": {
+      "eligible_chunks": 5,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_964a3b024cff8881b0d4": {
+      "eligible_chunks": 4,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_6eff1432c82f31bbca5a": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_78a16b9a26f83f3e4b67": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_dcd2bf837a04a29770e5": {
+      "eligible_chunks": 2,
+      "selected_chunks": 2,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_5c511e99e567d27ec313": {
+      "eligible_chunks": 5,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_28df3ab5607abcc44fe7": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_13286a5f480896318f1f": {
+      "eligible_chunks": 3,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_8c833efac46b3f69da00": {
+      "eligible_chunks": 1,
+      "selected_chunks": 1,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    },
+    "source_2b0483c9a18eae867cd2": {
+      "eligible_chunks": 4,
+      "selected_chunks": 3,
+      "selection_limit": 3,
+      "bibliography_sections_excluded": 0
+    }
+  },
+  "error": "Invalid relationship output: expected an object with a relationships array",
+  "finished_at": "2026-11-14T16:41:08.817313+00:00"
+}

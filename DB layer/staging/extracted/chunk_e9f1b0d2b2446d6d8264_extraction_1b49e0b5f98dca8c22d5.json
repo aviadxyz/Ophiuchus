@@ -1,0 +1,105 @@
+{
+  "source_id": "source_5c511e99e567d27ec313",
+  "chunk": {
+    "source_id": "source_5c511e99e567d27ec313",
+    "source_url": "https://www.nasa.gov/hrp",
+    "chunk_id": "chunk_e9f1b0d2b2446d6d8264",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2738:4295",
+    "text": "Explore Plant and Animal Data The Lifetime Surveillance of Astronaut Health program uses medical monitoring data for astronaut health surveillance. Explore Human Medical Data Living in Space Learn more about what it takes to prepare humans for the next generation of exploration to the Moon, Mars, and beyond. Learn More About Living in Space NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more! Learn More About HRP Studies Published in FY2024 NASA 5 Hazards of Human Spaceflight Astronauts encounter five hazards as they journey through space. Recognizing these hazards allows NASA to seek ways that overcome the challenges of sending humans to the space station, the Moon, Mars, and beyond. Discover the 5 Hazards of Human Spaceflight NASA Risks of Human Spaceflight HRP seeks to understand specific risks associated with the five hazards of human spaceflight. The effects of these risks vary depending on whether humans are traveling to low Earth orbit, the Moon, or Mars. Learn More About Each Identified Risk NASA HRP Videos Browse videos explaining the science of NASA’s Human Research Program (HRP). Browse HRP Videos about HRP Videos TRISH Through a collaboration with NASA, the Translational Research Institute for Space Health (TRISH) funds scientific studies and technologies to help keep astronauts safe and healthy on deep space missions to the Moon, Mars, and beyond. ",
+    "original_text": "Explore Plant and Animal Data The Lifetime Surveillance of Astronaut Health program uses medical monitoring data for astronaut health surveillance. Explore Human Medical Data Living in Space Learn more about what it takes to prepare humans for the next generation of exploration to the Moon, Mars, and beyond. Learn More About Living in Space NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more! Learn More About HRP Studies Published in FY2024 NASA 5 Hazards of Human Spaceflight Astronauts encounter five hazards as they journey through space. Recognizing these hazards allows NASA to seek ways that overcome the challenges of sending humans to the space station, the Moon, Mars, and beyond. Discover the 5 Hazards of Human Spaceflight NASA Risks of Human Spaceflight HRP seeks to understand specific risks associated with the five hazards of human spaceflight. The effects of these risks vary depending on whether humans are traveling to low Earth orbit, the Moon, or Mars. Learn More About Each Identified Risk NASA HRP Videos Browse videos explaining the science of NASA’s Human Research Program (HRP). Browse HRP Videos about HRP Videos TRISH Through a collaboration with NASA, the Translational Research Institute for Space Health (TRISH) funds scientific studies and technologies to help keep astronauts safe and healthy on deep space missions to the Moon, Mars, and beyond. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+        "object": {
+          "entity_type": "conditions",
+          "name": "vision correction"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "vision correction"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+        "object": {
+          "entity_type": "conditions",
+          "name": "radiation exposure"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "radiation exposure"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "NASA HRP-Funded Science Highlights Read highlights of journal articles published by H-PR scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+        "object": {
+          "entity_type": "conditions",
+          "name": "heart health"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "heart health"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\"relationships\": [\n  {\n    \"evidence_text\": \"NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"vision correction\"\n    },\n    \"predicate\": \"investigated_for\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"vision correction\"\n    }\n  },\n  {\n    \"evidence_text\": \"NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"radiation exposure\"\n    },\n    \"predicate\": \"investigated_for\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"radiation exposure\"\n    }\n  },\n  {\n    \"evidence_text\": \"NASA HRP-Funded Science Highlights Read highlights of journal articles published by H-PR scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"heart health\"\n    },\n    \"predicate\": \"investigated_for\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"heart health\"\n    }\n  }\n]}",
+  "extraction_metadata": {
+    "input_content_hash": "12742fdfca355f5ebf22170d5e7011fe2f354a2b4be7a6fbe3c26d8c509a0c43",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

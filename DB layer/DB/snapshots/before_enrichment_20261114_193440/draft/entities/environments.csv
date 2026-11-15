@@ -1,0 +1,13 @@
+environment_id,canonical_name,environment_type,gravity_description,radiation_context,description,review_status
+environments_bceb2aca97616f3c5b62,ground-based analogs,,,,,pending
+environments_22f467100caa80b05c09,laboratories,,,,,pending
+environments_491ddef256589d2376fe,International Space Station,,,,,pending
+environments_3fc2e68c1fe309ee5174,space exploration,,,,,pending
+environments_4df7ec3bb3703a5819b1,ISS,,,,,pending
+environments_ccd2a679583750a6d3d2,Distance from Earth,,,,,pending
+environments_f8ea6b7ad4c99b918f17,Gravity Fields,,,,,pending
+environments_301f8c9a07d7a0e2bb0b,Hostile/Closed Environments,,,,,pending
+environments_d6af2a83a169cbb25d1d,aircraft cabins,,,,,pending
+environments_538815ab7fb3ca89d6b1,human spaceflight,,,,,pending
+environments_70d445d75131f5f8a8b3,Spacewalk environment,,,,,pending
+environments_7a81306a2b6656e6890b,partial cabin depressurization,,,,,pending

@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_870eca27e10815231a69",
+  "field": "description",
+  "value": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+  "evidence_text": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.",
+  "candidate_id": "attribute_claim_ad660152b3fe2cbbf413",
+  "evidence_id": "evidence_04e0106f19a67e64227f",
+  "job_id": "enrichment_job_50e4d4965222b28c6205",
+  "source_id": "source_9fc83afed4c3c844eb53",
+  "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+    "chunk_id": "chunk_03296b6e817adff22a5f",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1451",
+    "text": "HHC Risk of Decompression Sickness Pictured from left to right: NASA astronauts Suni Williams, Butch Wilmore, and Nick Hague evaluate spacesuit pressure to prepare for a spacewalk. Credit: NASA What are the top risks? When astronauts move from a pressurized environment like a spacecraft to the lower-pressure environment encountered during spacewalks, health complications can arise due to what’s known as decompression sickness. During decompression sickness, dissolved nitrogen in the bloodstream begins to bubble, which can damage body tissues. Also known as “the bends,” decompression sickness can occur on Earth when scuba divers attempt to surface too fast. As they quickly ascend, nitrogen gas dissolved in their body tissues rapidly forms bubbles which can cause pain so severe it may force a diver to double over. In severe cases, these bubbles can impact breathing or even block blood vessels and cause stroke-like symptoms. In space, this same phenomenon can occur when an astronaut moves from a spacecraft to a lower-pressure spacesuit for spacewalks. Spacewalks are one of the highest-risk activities an astronaut will ever do, so decompression sickness is both a health and operational risk. What can be done about it? Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness. ",
+    "original_text": "HHC Risk of Decompression Sickness Pictured from left to right: NASA astronauts Suni Williams, Butch Wilmore, and Nick Hague evaluate spacesuit pressure to prepare for a spacewalk. Credit: NASA What are the top risks? When astronauts move from a pressurized environment like a spacecraft to the lower-pressure environment encountered during spacewalks, health complications can arise due to what’s known as decompression sickness. During decompression sickness, dissolved nitrogen in the bloodstream begins to bubble, which can damage body tissues. Also known as “the bends,” decompression sickness can occur on Earth when scuba divers attempt to surface too fast. As they quickly ascend, nitrogen gas dissolved in their body tissues rapidly forms bubbles which can cause pain so severe it may force a diver to double over. In severe cases, these bubbles can impact breathing or even block blood vessels and cause stroke-like symptoms. In space, this same phenomenon can occur when an astronaut moves from a spacecraft to a lower-pressure spacesuit for spacewalks. Spacewalks are one of the highest-risk activities an astronaut will ever do, so decompression sickness is both a health and operational risk. What can be done about it? Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:48:04.561179+00:00"
+}

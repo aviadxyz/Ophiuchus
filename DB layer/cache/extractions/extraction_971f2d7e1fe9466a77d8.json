@@ -1,0 +1,154 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "b4777ed789dffc72d827a81a92865ccd0aae1fb5f20187fac4acaebfcddd6807",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "radiation carcinogenesis",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "radiation shielding",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station"
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "treatments",
+        "canonical_name": "simulated radiation studies",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA Studies Simulated Radiation"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station",
+        "evidence_text": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: radiation carcinogenesis -> countermeasure_for -> radiation shielding."
+      },
+      {
+        "subject": "e1",
+        "predicate": "investigated_for",
+        "object": "e3",
+        "claim_text": "NASA Studies Simulated Radiation",
+        "evidence_text": "NASA Studies Simulated Radiation",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: simulated radiation studies -> investigated_for -> radiation carcinogenesis."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Risk of radiation carcinogenesis",
+        "object": {
+          "entity_type": "conditions",
+          "name": "radiation carcinogenesis"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "missions beyond Earth's magnetosphere"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Risk of radiation carcinogenesis\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"radiation carcinogenesis\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"missions beyond Earth's magnetosphere\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"radiation shielding\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"radiation carcinogenesis\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA Studies Simulated Radiation\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"radiation carcinogenesis\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"simulated radiation studies\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 0
+  }
+}

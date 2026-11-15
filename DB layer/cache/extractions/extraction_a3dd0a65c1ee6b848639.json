@@ -1,0 +1,88 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "9ba311fc9861ac3e3029aa49ba12c608aed4951e7cf0d118fa41f26f851a5658",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "astronauts moving between different gravitational fields—say, the microgravity of a spacecraft, to the low gravity of the Moon, back to the spacecraft, and then back to Earth—may also have weakened bones and muscles that heighten injury risk",
+        "object": {
+          "entity_type": "conditions",
+          "name": "weakened bones and muscles"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "risk_factors",
+          "name": "gravitational transitions"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "landing, in particular, creates injury risk that scientists work to counter",
+        "object": {
+          "entity_type": "conditions",
+          "name": "injury"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "environments",
+          "name": "landing"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "NASA scientists are building human body models to help characterize how the body is affected in various spaceflight environments. These models help scientists develop the best standards for vehicle designs to reduce injury risks (for instance, standards on seat configurations and the restraints crews use to \"strap in\" during landing)",
+        "object": {
+          "entity_type": "treatments",
+          "name": "vehicle design standards (e.g., seat configurations and restraints)"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "injury from gravitational transitions"
+        }
+      }
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"astronauts moving between different gravitational fields—say, the microgravity of a spacecraft, to the low gravity of the Moon, back to the spacecraft, and then back to Earth—may also have weakened bones and muscles that heighten injury risk\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"weakened bones and muscles\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"gravitational transitions\"\n      }\n    },\n    {\n      \"evidence_text\": \"landing, in particular, creates injury risk that scientists work to counter\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"injury\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"landing\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA scientists are building human body models to help characterize how the body is affected in various spaceflight environments. These models help scientists develop the best standards for vehicle designs to reduce injury risks (for instance, standards on seat configurations and the restraints crews use to \\\"strap in\\\" during landing)\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"vehicle design standards (e.g., seat configurations and restraints)\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"injury from gravitational transitions\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  }
+}

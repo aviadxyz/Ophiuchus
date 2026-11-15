@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_13286a5f480896318f1f",
+    "source_content_hash": "05b331957294a178ef43e78b6f820f31150e74020323b7fe0f2019b1d9937123",
+    "input_content_hash": "c8d8ffffdf96f3360a3624c437afba416c4afebe1f2e71442224e88edb6ab48a",
+    "chunk_id": "chunk_f87ff359153b68246137",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_7f551c79f5ae880242bd",
+        "canonical_name": "strategies to counter vision changes",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "c9423c35b8e80b55a4340f29e30fe37eb72fe8038309f6836abd2648cafa4d5d"
+  },
+  "original_model_output": "{\"additions\": []}"
+}

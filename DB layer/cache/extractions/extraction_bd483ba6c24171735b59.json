@@ -1,0 +1,178 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "8e371835fbab460cb793c0dffce3d4caa7d3225b6ab1d2aa602a67c1a09f3540",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "environments",
+        "canonical_name": "partial cabin depressurization",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Future protocols aim to reduce oxygen needs but they will also elevate the risk of mild hypoxia."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "risk_factors",
+        "canonical_name": "mild hypoxia",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Future protocols aim to reduce oxygen needs but they will also elevate the risk of mild hypoxia."
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "conditions",
+        "canonical_name": "mild hypoxia",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping."
+      },
+      {
+        "local_id": "e4",
+        "entity_type": "physical_findings",
+        "canonical_name": "headaches",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "increases_risk_of",
+        "object": "e2",
+        "claim_text": "Future protocols aim to reduce oxygen needs but they will also elevate the risk of mild hypoxia.",
+        "evidence_text": "Future protocols aim to reduce oxygen needs but they will also elevate the risk of mild hypoxia.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: partial cabin depressurization -> increases_risk_of -> mild hypoxia."
+      },
+      {
+        "subject": "e3",
+        "predicate": "may_contribute_to",
+        "object": "e4",
+        "claim_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.",
+        "evidence_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: mild hypoxia -> may_contribute_to -> headaches."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Astronauts must inhale pure oxygen over several hours prior to spacewalks to avoid decompression sickness, also known as \"the bends.\"",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "inhaling pure oxygen"
+        }
+      }
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Astronauts must inhale pure oxygen over several hours prior to spacewalks to avoid decompression sickness, also known as \\\"the bends.\\\"\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"inhaling pure oxygen\"\n      }\n    },\n    {\n      \"evidence_text\": \"Future protocols aim to reduce oxygen needs but they will also elevate the risk of mild hypoxia.\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"mild hypoxia\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"partial cabin depressurization\"\n      }\n    },\n    {\n      \"evidence_text\": \"Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.\",\n      \"object\": {\n        \"entity_type\": \"physical_findings\",\n        \"name\": \"headaches\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"mild hypoxia\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 0
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "chunk": {
+    "source_id": "source_2b0483c9a18eae867cd2",
+    "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+    "chunk_id": "chunk_30bd24916af9c0e8abf2",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1563",
+    "text": "4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight Nathan Cranford Jennifer Turner May 04, 2021 Article Fresh whole fruits and other food items float around NASA astronaut Chris Cassidy, who on Expedition 63 participated in a study to gauge how an enhanced diet affected his physiology. Credit: NASA Eating healthily benefits the human body, both on Earth and in space. Just as a healthy diet can help improve athletic performance, a healthy diet could help astronauts better adapt to the stresses of spaceflight. But how might eating healthy change the physiology of astronauts? To find out, Dr. Grace Douglas, lead scientist for the Advanced Food Technology project at NASA’s Johnson Space Center in Houston, is conducting a study on the physiological effects of food aboard the International Space Station . Freeze-dried mango salad, seen in the packet above, is one menu item available to astronauts participating in NASA’s study on how an enhanced diet affects human physiology. Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. ",
+    "original_text": "4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight Nathan Cranford Jennifer Turner May 04, 2021 Article Fresh whole fruits and other food items float around NASA astronaut Chris Cassidy, who on Expedition 63 participated in a study to gauge how an enhanced diet affected his physiology. Credit: NASA Eating healthily benefits the human body, both on Earth and in space. Just as a healthy diet can help improve athletic performance, a healthy diet could help astronauts better adapt to the stresses of spaceflight. But how might eating healthy change the physiology of astronauts? To find out, Dr. Grace Douglas, lead scientist for the Advanced Food Technology project at NASA’s Johnson Space Center in Houston, is conducting a study on the physiological effects of food aboard the International Space Station . Freeze-dried mango salad, seen in the packet above, is one menu item available to astronauts participating in NASA’s study on how an enhanced diet affects human physiology. Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Dr. Grace Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an \"enhanced\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "immune system"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "enhanced spaceflight diet"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Dr. Grace Douglas and other researchers are assessing how the current spaceflight diet ... compares to an \"enhanced\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition?",
+        "object": {
+          "entity_type": "conditions",
+          "name": "gut microbiome"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "enhanced spaceflight diet"
+        }
+      }
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "nutrition"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "enhanced spaceflight diet"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 1,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Dr. Grace Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an \\\"enhanced\\\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"immune system\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      }\n    },\n    {\n      \"evidence_text\": \"Dr. Grace Douglas and other researchers are assessing how the current spaceflight diet ... compares to an \\\"enhanced\\\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition?\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"gut microbiome\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      }\n    },\n    {\n      \"evidence_text\": \"How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"nutrition\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "4271111c4396a4555385ab3e8945f5ef0bc6b4bc912c4451487daea3e7d4ded2",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_fc0dde28ab00e47dec28",
+  "field": "medication_or_supplement",
+  "value": "medicines",
+  "evidence_text": "medicines to counter the effects of radiation exposures",
+  "candidate_id": "attribute_claim_621d95ad8216d152ad27",
+  "evidence_id": "evidence_401a005c9d2dd06e02ae",
+  "job_id": "enrichment_job_380fe5eebf3e371b3006",
+  "source_id": "source_795fee7d775bf85aca41",
+  "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_795fee7d775bf85aca41",
+    "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+    "chunk_id": "chunk_316b29128a446f50aea4",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1589",
+    "text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. ",
+    "original_text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:43:52.006787+00:00"
+}

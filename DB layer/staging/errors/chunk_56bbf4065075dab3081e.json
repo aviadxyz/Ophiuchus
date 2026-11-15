@@ -1,0 +1,5 @@
+{
+  "error": "Ollama request timed out. Increase OLLAMA_TIMEOUT_SECONDS or reduce chunk/context size.",
+  "source_id": "source_abb1bde448b43120ebc7",
+  "attempted_at": "2026-11-14T14:07:57.527994+00:00"
+}

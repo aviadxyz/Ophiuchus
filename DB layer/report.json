@@ -1,0 +1,845 @@
+{
+  "urls_crawled": 32,
+  "urls_successfully_processed": 30,
+  "documents_extracted": 28,
+  "chunks_extracted": 75,
+  "entities_extracted": 170,
+  "relations_extracted": 54,
+  "claims_awaiting_review": 255,
+  "records_rejected_for_missing_evidence": 51,
+  "fetch_errors": [
+    {
+      "source_id": "source_7218a569b28bf201e9cd",
+      "source_url": "https://humanresearchroadmap.nasa.gov/Risks/",
+      "parent_source_id": null,
+      "review_status": "pending",
+      "retrieved_at": "2026-11-14T13:19:29.081467+00:00",
+      "fetch_status": "failed",
+      "error": "Cannot verify robots.txt: HTTP 500"
+    },
+    {
+      "source_id": "source_7cfa92b266c9f961aaae",
+      "source_url": "https://humanresearchroadmap.nasa.gov/Evidence/",
+      "parent_source_id": null,
+      "review_status": "pending",
+      "retrieved_at": "2026-11-14T13:20:47.924834+00:00",
+      "fetch_status": "failed",
+      "error": "Cannot verify robots.txt: HTTP 500"
+    }
+  ],
+  "extraction_status": {
+    "started_at": "2026-11-14T14:51:55.914566+00:00",
+    "root": "C:\\Users\\owner\\Desktop\\New folder",
+    "chunks_attempted": 64,
+    "chunks_succeeded": 61,
+    "chunks_failed": 3,
+    "chunks_skipped": 2,
+    "documents_attempted": 28,
+    "status": "failed",
+    "documents_skipped": [
+      {
+        "source_id": "source_abb1bde448b43120ebc7",
+        "url": "https://www.nasa.gov/humans-in-space/astronauts/",
+        "reason": "General astronaut directory, not a medical risk or evidence document"
+      }
+    ],
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "cache_hits": 0,
+    "mode": "relations_first",
+    "selection": {
+      "source_b4bd76d26d8b64355543": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_595c9981ebc185e5870a": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_795fee7d775bf85aca41": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_a04de5b744ab7f9d06b3": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_e79603c096ca70d9c009": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_a52493076e4308064964": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_5af66404068466682af7": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_272ff97648e63fa98488": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_a8159d920b53fd31fdc6": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_c2699be8927456ed51f5": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_1b74656c820988255936": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_cf2e7b26631f3a802e27": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_32415f5f7520d38b2e83": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_a88298f30673509167a9": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_0bb467f4a071c7fd0a01": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_9fc83afed4c3c844eb53": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_4e0f2521ffc550287338": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_5611ecb4c6d90b86677b": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_e7862784beb09526a71c": {
+        "eligible_chunks": 5,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_964a3b024cff8881b0d4": {
+        "eligible_chunks": 4,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_6eff1432c82f31bbca5a": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_78a16b9a26f83f3e4b67": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_dcd2bf837a04a29770e5": {
+        "eligible_chunks": 2,
+        "selected_chunks": 2,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_5c511e99e567d27ec313": {
+        "eligible_chunks": 5,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_28df3ab5607abcc44fe7": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_13286a5f480896318f1f": {
+        "eligible_chunks": 3,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_8c833efac46b3f69da00": {
+        "eligible_chunks": 1,
+        "selected_chunks": 1,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      },
+      "source_2b0483c9a18eae867cd2": {
+        "eligible_chunks": 4,
+        "selected_chunks": 3,
+        "selection_limit": 3,
+        "bibliography_sections_excluded": 0
+      }
+    },
+    "error": "Invalid relationship output: expected an object with a relationships array",
+    "finished_at": "2026-11-14T16:41:08.817313+00:00"
+  },
+  "extraction_errors": [
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m11.040143344s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78791s'}]}}",
+      "source_id": "source_c2699be8927456ed51f5"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h43m4.906901873s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78184s'}]}}",
+      "source_id": "source_5611ecb4c6d90b86677b",
+      "attempted_at": "2026-11-14T10:16:55.001703+00:00"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m2.21765323s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78842s'}]}}",
+      "source_id": "source_5c511e99e567d27ec313"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m43.916574053s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78823s'}]}}",
+      "source_id": "source_795fee7d775bf85aca41"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m34.94615792s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78874s'}]}}",
+      "source_id": "source_e7862784beb09526a71c"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m29.755930442s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78809s'}]}}",
+      "source_id": "source_a52493076e4308064964"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m12.659152589s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78852s'}]}}",
+      "source_id": "source_abb1bde448b43120ebc7"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m34.933042794s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78814s'}]}}",
+      "source_id": "source_e79603c096ca70d9c009"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m39.48747061s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78819s'}]}}",
+      "source_id": "source_a04de5b744ab7f9d06b3"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m29.359767366s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78749s'}]}}",
+      "source_id": "source_13286a5f480896318f1f"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m30.863698807s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78870s'}]}}",
+      "source_id": "source_964a3b024cff8881b0d4"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m6.244144983s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78786s'}]}}",
+      "source_id": "source_1b74656c820988255936"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m53.330820756s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78833s'}]}}",
+      "source_id": "source_b4bd76d26d8b64355543"
+    },
+    {
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "source_id": "source_6eff1432c82f31bbca5a",
+      "attempted_at": "2026-11-14T16:16:52.458935+00:00"
+    },
+    {
+      "source_id": "source_6eff1432c82f31bbca5a",
+      "chunk_id": "chunk_50f765432d0d94e24895",
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "original_model_output": "{}"
+    },
+    {
+      "error": "Ollama request timed out. Increase OLLAMA_TIMEOUT_SECONDS or reduce chunk/context size.",
+      "source_id": "source_abb1bde448b43120ebc7",
+      "attempted_at": "2026-11-14T14:07:57.527994+00:00"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m33.931222616s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78753s'}]}}",
+      "source_id": "source_28df3ab5607abcc44fe7"
+    },
+    {
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "source_id": "source_78a16b9a26f83f3e4b67",
+      "attempted_at": "2026-11-14T16:19:00.476611+00:00"
+    },
+    {
+      "source_id": "source_78a16b9a26f83f3e4b67",
+      "chunk_id": "chunk_5cd692a16ce738d0a55c",
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "original_model_output": "{}"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m57.935065574s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78837s'}]}}",
+      "source_id": "source_5c511e99e567d27ec313"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m55.948307994s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78775s'}]}}",
+      "source_id": "source_32415f5f7520d38b2e83"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m38.818280012s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78758s'}]}}",
+      "source_id": "source_4e0f2521ffc550287338"
+    },
+    {
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "source_id": "source_a52493076e4308064964",
+      "attempted_at": "2026-11-14T15:27:02.223132+00:00"
+    },
+    {
+      "source_id": "source_a52493076e4308064964",
+      "chunk_id": "chunk_7082ab1e6d70a4404386",
+      "error": "Invalid relationship output: expected an object with a relationships array",
+      "original_model_output": "{}"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m24.678310536s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78804s'}]}}",
+      "source_id": "source_5af66404068466682af7"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m19.2126308s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78739s'}]}}",
+      "source_id": "source_2b0483c9a18eae867cd2"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m20.078020036s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78800s'}]}}",
+      "source_id": "source_272ff97648e63fa98488"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m38.965429617s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78878s'}]}}",
+      "source_id": "source_e7862784beb09526a71c"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m51.723532539s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78771s'}]}}",
+      "source_id": "source_a88298f30673509167a9"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m47.121308021s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78767s'}]}}",
+      "source_id": "source_0bb467f4a071c7fd0a01"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m1.124650591s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78781s'}]}}",
+      "source_id": "source_cf2e7b26631f3a802e27"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m17.395556217s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78857s'}]}}",
+      "source_id": "source_abb1bde448b43120ebc7"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h52m43.111736292s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78763s'}]}}",
+      "source_id": "source_9fc83afed4c3c844eb53"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m15.144944924s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78795s'}]}}",
+      "source_id": "source_a8159d920b53fd31fdc6"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m21.803748346s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78861s'}]}}",
+      "source_id": "source_78a16b9a26f83f3e4b67"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h54m7.400748586s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78847s'}]}}",
+      "source_id": "source_dcd2bf837a04a29770e5"
+    },
+    {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h53m48.725044839s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78828s'}]}}",
+      "source_id": "source_595c9981ebc185e5870a"
+    }
+  ],
+  "limitations": [
+    "Exact quote matching verifies provenance, not medical truth or semantic entailment. Human review is required.",
+    "Extraction approval never grants clinical authorization.",
+    "No mission inventory is inferred from literature."
+  ],
+  "records_rejected_total": 164,
+  "records_rejected_for_validation": 20,
+  "relationship_diagnostics": {
+    "stages": {
+      "candidate_relationships": 180,
+      "evidence_verified": 145,
+      "entities_resolved": 54,
+      "relations_validated": 54,
+      "relations_staged": 54,
+      "documents_parsed": 30,
+      "relations_staged_unique": 54,
+      "relations_exported": 54
+    },
+    "rejection_reasons": {
+      "unsupported_entity_pair": 91,
+      "missing_exact_evidence": 33,
+      "invalid_predicate": 2
+    },
+    "per_source": {
+      "source_cf2e7b26631f3a802e27": {
+        "url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "source_9fc83afed4c3c844eb53": {
+        "url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "candidate_relationships": 9,
+        "relations_staged": 4,
+        "rejected": 5
+      },
+      "source_272ff97648e63fa98488": {
+        "url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "source_5611ecb4c6d90b86677b": {
+        "url": "https://www.nasa.gov/hrp/hazards/",
+        "candidate_relationships": 9,
+        "relations_staged": 1,
+        "rejected": 8
+      },
+      "source_e7862784beb09526a71c": {
+        "url": "https://www.nasa.gov/hrp/risks/",
+        "candidate_relationships": 9,
+        "relations_staged": 5,
+        "rejected": 4
+      },
+      "source_78a16b9a26f83f3e4b67": {
+        "url": "https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp",
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "source_a52493076e4308064964": {
+        "url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "source_b4bd76d26d8b64355543": {
+        "url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "source_4e0f2521ffc550287338": {
+        "url": "https://www.nasa.gov/reference/risk-of-altered-sensorimotor-and-vestibular-function/",
+        "candidate_relationships": 6,
+        "relations_staged": 0,
+        "rejected": 6
+      },
+      "source_5c511e99e567d27ec313": {
+        "url": "https://www.nasa.gov/hrp",
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "source_2b0483c9a18eae867cd2": {
+        "url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+        "candidate_relationships": 9,
+        "relations_staged": 2,
+        "rejected": 7
+      },
+      "source_13286a5f480896318f1f": {
+        "url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+        "candidate_relationships": 3,
+        "relations_staged": 1,
+        "rejected": 2
+      },
+      "source_795fee7d775bf85aca41": {
+        "url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "source_c2699be8927456ed51f5": {
+        "url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "source_28df3ab5607abcc44fe7": {
+        "url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+        "candidate_relationships": 9,
+        "relations_staged": 0,
+        "rejected": 9
+      },
+      "source_dcd2bf837a04a29770e5": {
+        "url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+        "candidate_relationships": 6,
+        "relations_staged": 0,
+        "rejected": 6
+      },
+      "source_6eff1432c82f31bbca5a": {
+        "url": "https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp",
+        "candidate_relationships": 3,
+        "relations_staged": 1,
+        "rejected": 2
+      },
+      "source_a04de5b744ab7f9d06b3": {
+        "url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "source_8c833efac46b3f69da00": {
+        "url": "https://www.nasa.gov/reference/immune-biomarkers/",
+        "candidate_relationships": 3,
+        "relations_staged": 0,
+        "rejected": 3
+      },
+      "source_e79603c096ca70d9c009": {
+        "url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+        "candidate_relationships": 6,
+        "relations_staged": 0,
+        "rejected": 6
+      },
+      "source_964a3b024cff8881b0d4": {
+        "url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+        "candidate_relationships": 9,
+        "relations_staged": 3,
+        "rejected": 6
+      },
+      "source_1b74656c820988255936": {
+        "url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/",
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "source_a88298f30673509167a9": {
+        "url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "candidate_relationships": 9,
+        "relations_staged": 5,
+        "rejected": 4
+      },
+      "source_a8159d920b53fd31fdc6": {
+        "url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "source_32415f5f7520d38b2e83": {
+        "url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "source_0bb467f4a071c7fd0a01": {
+        "url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "candidate_relationships": 6,
+        "relations_staged": 4,
+        "rejected": 2
+      },
+      "source_595c9981ebc185e5870a": {
+        "url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "source_5af66404068466682af7": {
+        "url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      }
+    },
+    "per_evidence_report": {},
+    "per_nasa_risk": {
+      "101": {
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "179": {
+        "candidate_relationships": 15,
+        "relations_staged": 4,
+        "rejected": 11
+      },
+      "100": {
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "99": {
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "77": {
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "88": {
+        "candidate_relationships": 6,
+        "relations_staged": 0,
+        "rejected": 6
+      },
+      "96": {
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "167": {
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "176": {
+        "candidate_relationships": 6,
+        "relations_staged": 2,
+        "rejected": 4
+      },
+      "84": {
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      },
+      "85": {
+        "candidate_relationships": 15,
+        "relations_staged": 6,
+        "rejected": 9
+      },
+      "105": {
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "175": {
+        "candidate_relationships": 6,
+        "relations_staged": 3,
+        "rejected": 3
+      },
+      "80": {
+        "candidate_relationships": 6,
+        "relations_staged": 4,
+        "rejected": 2
+      },
+      "180": {
+        "candidate_relationships": 6,
+        "relations_staged": 1,
+        "rejected": 5
+      }
+    },
+    "exports": {
+      "draft": {
+        "relations_per_csv": {
+          "relations/environment_risk": 3,
+          "relations/risk_condition": 16,
+          "relations/condition_biomarker": 0,
+          "relations/condition_treatment": 30,
+          "relations/condition_cognitive": 1,
+          "relations/condition_physical": 4,
+          "relations/condition_gene": 0,
+          "relations/condition_microbiome": 0,
+          "relations/treatment_risk": 0
+        },
+        "audit": {
+          "relations_seen": 54,
+          "relations_rejected_review": 0,
+          "relations_duplicate": 0,
+          "relations_missing_dependencies": 0,
+          "relations_exported": 54
+        }
+      },
+      "approved": {
+        "relations_per_csv": {
+          "relations/environment_risk": 0,
+          "relations/risk_condition": 0,
+          "relations/condition_biomarker": 0,
+          "relations/condition_treatment": 0,
+          "relations/condition_cognitive": 0,
+          "relations/condition_physical": 0,
+          "relations/condition_gene": 0,
+          "relations/condition_microbiome": 0,
+          "relations/treatment_risk": 0
+        },
+        "audit": {}
+      }
+    },
+    "hrr_coverage": {
+      "risks_discovered": 0,
+      "risk_index_reported_count": null,
+      "discovery_complete": false,
+      "inactive_risks": 0,
+      "explicit_targets_not_in_index": [],
+      "documents_discovered": 0,
+      "primary_report_documents": 0,
+      "supplemental_documents": 0,
+      "appendices": 0,
+      "cross_cutting_documents": 0,
+      "documents_downloaded": 0,
+      "documents_parsed": 0,
+      "risk_document_associations": 0,
+      "structural_research_links": 0,
+      "errors": [
+        {
+          "stage": "risk_index",
+          "error": "Risk index unavailable; discovery incomplete"
+        }
+      ]
+    },
+    "export_errors": []
+  },
+  "entity_enrichment": {
+    "latest_run": {
+      "started_at": "2026-11-14T18:07:19.756577+00:00",
+      "status": "pilot_complete",
+      "requests_attempted": 10,
+      "requests_succeeded": 10,
+      "requests_failed": 0,
+      "jobs_skipped": 10,
+      "cache_hits": 0,
+      "fields_proposed": 40,
+      "fields_accepted": 7,
+      "fields_rejected": 23,
+      "remaining_jobs": 237,
+      "model": "qwen3:4b-instruct",
+      "jobs_total": 257,
+      "finished_at": "2026-11-14T18:28:12.849450+00:00"
+    },
+    "candidate_records": 25,
+    "source_backed_candidates": 21,
+    "invalid_staged_records": [
+      {
+        "candidate_id": "attribute_claim_15e42138a2d157c8f3a7",
+        "entity_id": "treatments_ba51435b911ec817a4d8",
+        "field": "description",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_52ee42e7a26514305628",
+        "entity_id": "treatments_21256e12625f231c8407",
+        "field": "treatment_type",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_88811bc315ab9da89dae",
+        "entity_id": "treatments_ba51435b911ec817a4d8",
+        "field": "description",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_c5e7b8ee5946f372d1a1",
+        "entity_id": "treatments_ba51435b911ec817a4d8",
+        "field": "description",
+        "reason": "entity_not_anchored_in_evidence"
+      }
+    ],
+    "pending": 21,
+    "rejected_records": 0,
+    "rejection_reasons": {
+      "unsupported_supervision_boolean": 5,
+      "value_not_verbatim_in_evidence": 26,
+      "entity_not_anchored_in_evidence": 12,
+      "missing_chunk_evidence": 6,
+      "ambiguous_supervision_statement": 2
+    },
+    "revalidation_rejection_reasons": {
+      "entity_not_anchored_in_evidence": 4
+    },
+    "current_queue": {
+      "jobs_total": 257,
+      "completed_jobs_reused": 20,
+      "remaining_jobs": 237,
+      "filters": {
+        "entity_id": null,
+        "entity_type": null,
+        "source_id": null
+      }
+    },
+    "completed_jobs": 20,
+    "failed_jobs": 0,
+    "fields_not_searched": 402,
+    "fields_not_found_in_examined_passages": 75,
+    "fields_with_rejected_suggestions": 48,
+    "fields_with_supported_candidates": 20,
+    "baseline_conflicts": [
+      {
+        "entity_id": "conditions_91a18b574568d8527025",
+        "field": "description",
+        "existing_value": "A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",
+        "candidate_value": "Study of physical differences affecting blood flow and coagulation in space.",
+        "reason": "existing_value_preserved"
+      }
+    ],
+    "draft_export": {
+      "candidates_included": 21,
+      "cells_filled": 19,
+      "cells_filled_by_table": {
+        "entities/treatments": 19
+      },
+      "conflicts": [
+        {
+          "entity_id": "treatments_554dfe622b5d8d121d2e",
+          "field": "treatment_type",
+          "reason": "conflicting_additions",
+          "candidate_ids": [
+            "attribute_claim_a81087ada7e8e6232316",
+            "attribute_claim_b6d1759b1d5969397628"
+          ]
+        }
+      ],
+      "excluded_by_review": 0,
+      "invalid_staged_records": [
+        {
+          "candidate_id": "attribute_claim_15e42138a2d157c8f3a7",
+          "reason": "entity_not_anchored_in_evidence"
+        },
+        {
+          "candidate_id": "attribute_claim_52ee42e7a26514305628",
+          "reason": "entity_not_anchored_in_evidence"
+        },
+        {
+          "candidate_id": "attribute_claim_88811bc315ab9da89dae",
+          "reason": "entity_not_anchored_in_evidence"
+        },
+        {
+          "candidate_id": "attribute_claim_c5e7b8ee5946f372d1a1",
+          "reason": "entity_not_anchored_in_evidence"
+        }
+      ],
+      "baseline_conflicts": [
+        {
+          "entity_id": "conditions_91a18b574568d8527025",
+          "field": "description",
+          "existing_value": "A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",
+          "candidate_value": "Study of physical differences affecting blood flow and coagulation in space.",
+          "reason": "existing_value_preserved"
+        }
+      ]
+    }
+  },
+  "enrichment_claims_awaiting_review": 21
+}

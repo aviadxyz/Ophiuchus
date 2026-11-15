@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_554dfe622b5d8d121d2e",
+  "field": "treatment_type",
+  "value": "a healthy diet could help astronauts better adapt to the stresses of spaceflight",
+  "evidence_text": "a healthy diet could help astronauts better adapt to the stresses of spaceflight",
+  "candidate_id": "attribute_claim_a81087ada7e8e6232316",
+  "evidence_id": "evidence_ede8bf6a1376bb94e230",
+  "job_id": "enrichment_job_6cebc1f4f768db3e1543",
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_2b0483c9a18eae867cd2",
+    "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+    "chunk_id": "chunk_30bd24916af9c0e8abf2",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1563",
+    "text": "4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight Nathan Cranford Jennifer Turner May 04, 2021 Article Fresh whole fruits and other food items float around NASA astronaut Chris Cassidy, who on Expedition 63 participated in a study to gauge how an enhanced diet affected his physiology. Credit: NASA Eating healthily benefits the human body, both on Earth and in space. Just as a healthy diet can help improve athletic performance, a healthy diet could help astronauts better adapt to the stresses of spaceflight. But how might eating healthy change the physiology of astronauts? To find out, Dr. Grace Douglas, lead scientist for the Advanced Food Technology project at NASA’s Johnson Space Center in Houston, is conducting a study on the physiological effects of food aboard the International Space Station . Freeze-dried mango salad, seen in the packet above, is one menu item available to astronauts participating in NASA’s study on how an enhanced diet affects human physiology. Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. ",
+    "original_text": "4 min read Enhanced Diet May Help Astronauts Adapt to Spaceflight Nathan Cranford Jennifer Turner May 04, 2021 Article Fresh whole fruits and other food items float around NASA astronaut Chris Cassidy, who on Expedition 63 participated in a study to gauge how an enhanced diet affected his physiology. Credit: NASA Eating healthily benefits the human body, both on Earth and in space. Just as a healthy diet can help improve athletic performance, a healthy diet could help astronauts better adapt to the stresses of spaceflight. But how might eating healthy change the physiology of astronauts? To find out, Dr. Grace Douglas, lead scientist for the Advanced Food Technology project at NASA’s Johnson Space Center in Houston, is conducting a study on the physiological effects of food aboard the International Space Station . Freeze-dried mango salad, seen in the packet above, is one menu item available to astronauts participating in NASA’s study on how an enhanced diet affects human physiology. Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T18:26:36.230200+00:00"
+}

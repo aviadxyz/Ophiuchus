@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_795fee7d775bf85aca41",
+    "source_content_hash": "a005a1b064fd99344577fad20381eceded2fa4ded8f62f5e8df26c9be444fb8f",
+    "input_content_hash": "dbd5da0a6ecbbe20dffae4164f52f3cc8fe6f20fc7b88e9ac525e8d46d022414",
+    "chunk_id": "chunk_316b29128a446f50aea4",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_fc0dde28ab00e47dec28",
+        "canonical_name": "medicines to counter the effects of radiation exposures",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "541c38483d92067495372bc9226d3799ad9ba74daf750adc1e771de4fc43790d"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"treatment_type\",\n      \"value\": \"medicines to counter the effects of radiation exposures\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"description\",\n      \"value\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"medicines\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"research_priority\"\n    }\n  ]\n}"
+}

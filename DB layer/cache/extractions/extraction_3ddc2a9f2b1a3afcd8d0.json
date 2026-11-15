@@ -1,0 +1,309 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "801011984f0b76ec445f8585fadc42d3467a54a1c67cf5f7b54fb6f19eef4f0b",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_paper",
+    "source_limitations": "All information is derived from research descriptions and does not include clinical data, approved treatments, or diagnostic thresholds. No biomarkers, interventions, or efficacy claims are established. All conditions are described as risks under ongoing research with no definitive findings or approved mitigation strategies. No causal relationships or dosages are implied or supported. This is not operational guidance or medical advice. All claims are limited to what is explicitly stated in the text and are not extrapolated or inferred.",
+    "entities": [
+      {
+        "local_id": "cond_001",
+        "entity_type": "conditions",
+        "canonical_name": "Spaceflight-Induced Bone Change Risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication."
+      },
+      {
+        "local_id": "cond_002",
+        "entity_type": "conditions",
+        "canonical_name": "Behavioral and Psychiatric Risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Isolation, radiation, distance from Earth, and other intense space stressors may all take a toll on the mental health of the crew. Ongoing research seeks to better understand and quantify these psychological risks."
+      },
+      {
+        "local_id": "cond_003",
+        "entity_type": "conditions",
+        "canonical_name": "Inadequate Teamwork Risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Selecting a crew that works well together is essential for mission success and safety. Researchers are studying how to help teams in prolonged isolation and confinement function efficiently and quickly recover after setbacks occur. They’re also mapping the myriad risks from miscommunications and related team tensions."
+      },
+      {
+        "local_id": "cond_004",
+        "entity_type": "conditions",
+        "canonical_name": "Inadequate Sleep and Irregular Schedule Risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Space crews experience multiple hazards simultaneously. Stressors include chronic sleep loss, constant work demands, and irregularities in their internal biological clocks. Understanding how to reduce the effects of these stressors on crew health and safety is an ongoing area of research."
+      },
+      {
+        "local_id": "cond_005",
+        "entity_type": "conditions",
+        "canonical_name": "Inadequate Systems Operations Support Risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Future crews on deep space missions must be able to live and work in an environment where they may face unexpected problems with software, vehicles, or other systems. Research focuses on understanding when crews need information, the types and timing of required training, or other support options."
+      },
+      {
+        "local_id": "cond_006",
+        "entity_type": "conditions",
+        "canonical_name": "Injury Risks from Dynamic Loads",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "During landing activities, crews risk getting injured. Understanding the likelihood of such injuries and how to better prevent them are areas of ongoing research."
+      },
+      {
+        "local_id": "cond_007",
+        "entity_type": "conditions",
+        "canonical_name": "Radiation-Induced Cancers",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Crews exposed to radiation from space may be more likely to develop cancer. Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 0,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_001",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 1,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_002",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Isolation, radiation, distance from Earth, and other intense space stressors may all take a toll on the mental health of the crew. Ongoing research seeks to better understand and quantify these psychological risks."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 2,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_003",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Researchers are studying how to help teams in prolonged isolation and confinement function efficiently and quickly recover after setbacks occur. They’re also mapping the myriad risks from miscommunications and related team tensions."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 3,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_004",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Stressors include chronic sleep loss, constant work demands, and irregularities in their internal biological clocks. Understanding how to reduce the effects of these stressors on crew health and safety is an ongoing area of research."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 4,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_005",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Research focuses on understanding when crews need information, the types and timing of required training, or other support options."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 5,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_006",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Understanding the likelihood of such injuries and how to better prevent them are areas of ongoing research."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    },
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 6,
+      "record": {
+        "biomarker": "null",
+        "condition": "cond_007",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Crews exposed to radiation from space may be more likely to develop cancer. Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    }
+  ],
+  "original_model_output": "{\n  \"source_type\": \"research_paper\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"Spaceflight-Induced Bone Change Risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication.\",\n      \"local_id\": \"cond_001\"\n    },\n    {\n      \"canonical_name\": \"Behavioral and Psychiatric Risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Isolation, radiation, distance from Earth, and other intense space stressors may all take a toll on the mental health of the crew. Ongoing research seeks to better understand and quantify these psychological risks.\",\n      \"local_id\": \"cond_002\"\n    },\n    {\n      \"canonical_name\": \"Inadequate Teamwork Risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Selecting a crew that works well together is essential for mission success and safety. Researchers are studying how to help teams in prolonged isolation and confinement function efficiently and quickly recover after setbacks occur. They’re also mapping the myriad risks from miscommunications and related team tensions.\",\n      \"local_id\": \"cond_003\"\n    },\n    {\n      \"canonical_name\": \"Inadequate Sleep and Irregular Schedule Risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Space crews experience multiple hazards simultaneously. Stressors include chronic sleep loss, constant work demands, and irregularities in their internal biological clocks. Understanding how to reduce the effects of these stressors on crew health and safety is an ongoing area of research.\",\n      \"local_id\": \"cond_004\"\n    },\n    {\n      \"canonical_name\": \"Inadequate Systems Operations Support Risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Future crews on deep space missions must be able to live and work in an environment where they may face unexpected problems with software, vehicles, or other systems. Research focuses on understanding when crews need information, the types and timing of required training, or other support options.\",\n      \"local_id\": \"cond_005\"\n    },\n    {\n      \"canonical_name\": \"Injury Risks from Dynamic Loads\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"During landing activities, crews risk getting injured. Understanding the likelihood of such injuries and how to better prevent them are areas of ongoing research.\",\n      \"local_id\": \"cond_006\"\n    },\n    {\n      \"canonical_name\": \"Radiation-Induced Cancers\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Crews exposed to radiation from space may be more likely to develop cancer. Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities.\",\n      \"local_id\": \"cond_007\"\n    }\n  ],\n  \"monitoring\": [\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication.\",\n      \"condition\": \"cond_001\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Isolation, radiation, distance from Earth, and other intense space stressors may all take a toll on the mental health of the crew. Ongoing research seeks to better understand and quantify these psychological risks.\",\n      \"condition\": \"cond_002\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Researchers are studying how to help teams in prolonged isolation and confinement function efficiently and quickly recover after setbacks occur. They’re also mapping the myriad risks from miscommunications and related team tensions.\",\n      \"condition\": \"cond_003\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Stressors include chronic sleep loss, constant work demands, and irregularities in their internal biological clocks. Understanding how to reduce the effects of these stressors on crew health and safety is an ongoing area of research.\",\n      \"condition\": \"cond_004\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Research focuses on understanding when crews need information, the types and timing of required training, or other support options.\",\n      \"condition\": \"cond_005\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Understanding the likelihood of such injuries and how to better prevent them are areas of ongoing research.\",\n      \"condition\": \"cond_006\"\n    },\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Crews exposed to radiation from space may be more likely to develop cancer. Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities.\",\n      \"condition\": \"cond_007\"\n    }\n  ],\n  \"source_limitations\": \"All information is derived from research descriptions and does not include clinical data, approved treatments, or diagnostic thresholds. No biomarkers, interventions, or efficacy claims are established. All conditions are described as risks under ongoing research with no definitive findings or approved mitigation strategies. No causal relationships or dosages are implied or supported. This is not operational guidance or medical advice. All claims are limited to what is explicitly stated in the text and are not extrapolated or inferred.\"\n}"
+}

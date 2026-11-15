@@ -1,0 +1,85 @@
+condition_id,canonical_name,body_system,description,review_status
+conditions_14c5f743561cc66e4c7e,inadequate teamwork,,,pending
+conditions_3978ceaa4d85f511e7e2,decompression sickness,,Transitioning from pressurized spacecraft to lower-pressure spacesuit causes complications when dissolved nitrogen bubbles in body tissues.,pending
+conditions_60515e09657e6f3d8b5d,performance decrements,,,pending
+conditions_40f6bc7daaf07b0fc9d1,adverse health outcomes,,,pending
+conditions_cea13661e3cfc5c1123c,isolation and confinement,,,pending
+conditions_ccd2a679583750a6d3d2,distance from Earth,,,pending
+conditions_74b517d4dac9d361d65b,Altered Immune System Response,,"Stresses of spaceflight can awaken inactive viruses, leading to rashes and other symptoms.",pending
+conditions_b09d56057d64041e2405,Altered Sensorimotor and Vestibular Function,,"Astronauts experience motion sickness, hand-eye or gait coordination issues, and dizziness during gravitational changes.",pending
+conditions_67b99040c5fbbd8de88b,Cardiovascular Adaptations,,"Weightlessness alters blood circulation and heart/blood vessel function, potentially increasing cardiovascular event risk.",pending
+conditions_0e093881951b9800a20f,Host-Microorganism Interactions,,"Skin and gut microbiomes change in space, potentially increasing crew illness risk.",pending
+conditions_7ff064656a0ea161fb49,Space Radiation,,Risks associated with space radiation are identified as a hazard of human spaceflight.,pending
+conditions_c217c636bd6b2dbada14,Behavioral Performance,,Risks associated with behavioral performance are identified as a hazard of human spaceflight.,pending
+conditions_66a8240d77be54a89a19,Physiological Risks,,Risks involving human physiology are identified as a hazard of human spaceflight.,pending
+conditions_2119a3695570956946e7,Behavioral Performance Risks,,Risks involving behavioral performance are identified as a hazard of human spaceflight.,pending
+conditions_c3fbce8b05aec2eb1635,Space Radiation Risks,,Risks involving space radiation are identified as a hazard of human spaceflight.,pending
+conditions_3ed4349267155ed8462f,astronauts,,,pending
+conditions_7b231deb87bb6970e5a5,bone health,,,pending
+conditions_3ce25f8bc5dabff0a45a,cardiovascular disorders,,,pending
+conditions_76c231915629d6d91bf5,bone density loss,,,pending
+conditions_c214349a900135dfa0e7,spaceflight effects on the human body,,,pending
+conditions_6416dd5d2077ffc23daf,astronaut health,,,pending
+conditions_9e6b235267f63fee6024,Spaceflight-Induced Bone Change Risks,,,pending
+conditions_33bc3ca0511cad59452a,Behavioral and Psychiatric Risks,,,pending
+conditions_6019ece8d04308ff7923,Inadequate Teamwork Risks,,,pending
+conditions_3f5ab9743f9d5b99b114,Inadequate Sleep and Irregular Schedule Risks,,,pending
+conditions_f2c71be99059abb3c7dc,Inadequate Systems Operations Support Risks,,,pending
+conditions_e0a629da25dcf2242ee5,Injury Risks from Dynamic Loads,,,pending
+conditions_ee93f5b1d19a416b20e7,Radiation-Induced Cancers,,,pending
+conditions_427e788df3ca6dd792a0,health complications from space radiation exposure,,,pending
+conditions_9e1b971a27c54fce9fca,neutron radiation,,A form of radiation that contributes to about 30% of total radiation on the ISS and is especially harmful due to its potential to cause serious biological damage.,pending
+conditions_50630af9a966764b1546,inadequate nutrition,,,pending
+conditions_5f3cb330f550de0c5e06,infections,,,pending
+conditions_e8021b516e0f123e60af,effects on astronauts' health,,,pending
+conditions_91a18b574568d8527025,Venous Haemostasis,,"A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",pending
+conditions_6c3fe3ba48e1cff99423,Altered Immunity,,"A condition involving immune system changes due to spaceflight, assessed via blood, saliva, and urine samples.",pending
+conditions_3051fe0c58e86cd77562,Food Acceptability,,"A condition related to the appeal of food during long-term spaceflight, studied to improve space food systems.",pending
+conditions_0264e68898ab46604b4f,Food Physiology,,"A condition assessing dietary adaptation in space, with focus on an enhanced spaceflight diet.",pending
+conditions_5226efac33882386a4dd,Space Gardening,,A condition assessing psychological well-being through the cultivation of fresh vegetables in space.,pending
+conditions_a736d489b9346255cf03,Spinal Health,,"A condition involving spinal health, studied via scans to develop countermeasures for bone and muscle loss in space.",pending
+conditions_2116aa459872014e0e41,in-mission injury and performance decrements and long-term health effects from dynamic loads,,,pending
+conditions_9c7b6c6259547a7f00d4,muscle weakness,,,pending
+conditions_fad29f1d36146ea25f4d,performance decrement,,,pending
+conditions_11f0bc3cdf6f0791e462,reduced crew health and performance,,,pending
+conditions_f4da266058876cab1412,altitude sickness,,,pending
+conditions_fe5a20e31b9c03f1666d,bone and muscle loss,,,pending
+conditions_388b7d8c15f848af95ca,Human Research Roadmap,,,pending
+conditions_2628fb67650e6dd756d4,Five Hazards,,,pending
+conditions_52c351e6c11f394c5da6,spaceflight associated neuro-ocular syndrome,,,pending
+conditions_48916b2dd53d37788713,radiation carcinogenesis,,,pending
+conditions_7c6915035a8e13ad2a50,inadequate systems operations support,,,pending
+conditions_05363f751e825bf2d307,spaceflight-related health changes,,,pending
+conditions_20f1056f9db9ec82cb11,hypoxia,,,pending
+conditions_8029aa45f61d1e64587b,injury and compromised performance from spacewalks,,,pending
+conditions_06280aec02cfd680d8df,ARCHeR,,"A study monitoring astronauts' well-being, activity, and sleep patterns during Artemis II to understand human health and performance in deep space.",pending
+conditions_06ac5d35fb163193b58a,Artemis II Standard Measures,,A consistent set of health data collected by crew to support future research on astronaut health.,pending
+conditions_2e13e3f5c9561c7c786d,Brain Fluid Pressure,,Study of skull fluid pressure and its relationship to eye and brain changes in astronauts.,pending
+conditions_5ba71dbd5888f2a4b36e,CIPHER,,A suite of studies examining multiple body systems to understand human body changes in orbit.,pending
+conditions_4ff7d839e70548a59558,Simulating Manual Piloting for Moon Landings,,Study on how gravity transitions impact astronaut piloting capabilities for Moon landings.,pending
+conditions_23ceacc9001d123a22ed,Spacecraft Occupant Protection,,Assessment of crew discomfort during re-entry and integration with spacecraft sensor data.,pending
+conditions_4ab9e558fad20db091c0,Standard Measures,,Consistent physiological and psychological measurements to understand spaceflight effects on crew.,pending
+conditions_e5c6d1a0fe078a37f64b,Reduced Cardiorespiratory and Musculoskeletal Fitness,,,pending
+conditions_2baab1960be389b4f190,behavioral health decrements,,,pending
+conditions_2d32468bf9622aa09cd7,mild hypoxia,,,pending
+conditions_9f1ece5e1e6a08eeb61d,altered immune system responses,,,pending
+conditions_5a03c3c50053a40c605e,multi-drug resistant bacteria mutation,,,pending
+conditions_70736ed224baf800e4eb,adverse in-mission and long-term health effects,,,pending
+conditions_035f50fbf0bca0fbf66a,radiation-induced cancer risks,,,pending
+conditions_8bd5c8d4cc069023dcbc,ongoing research priorities,,,pending
+conditions_ad79a253ed9bbc58eac7,Spaceflight Associated Neuro-ocular Syndrome (SANS),,,pending
+conditions_846e8e2e8f336be96c67,reduced musculoskeletal fitness,,,pending
+conditions_a43ce5e9e0220b25a587,anxiety,,,pending
+conditions_bf9b684eff27ca5e10e0,human space flight,,,pending
+conditions_a8282d5b5c48a3fc6ce8,longer trips,,,pending
+conditions_4d6afe9b980e69d710af,reduced physical activity,,,pending
+conditions_6f2b4898c95d043848ce,accelerated aging,,,pending
+conditions_9fa8b66984762fe37482,sedentary lifestyle,,,pending
+conditions_baa17a2b545f8d7753c4,adverse mission outcomes due to Earth independent human-systems operation,,,pending
+conditions_b5cd2a0caec019f024c0,vision changes,,,pending
+conditions_385f44abcfe940fa01f9,sleep-wake cycle disruption,,,pending
+conditions_118795129b262b87cbef,increased microbial virulence in spaceflight,,,pending
+conditions_3e4ff7e07bcb78ca2778,infections in astronauts,,,pending
+conditions_48e5a8455efba512fa90,serious biological damage,,,pending
+conditions_a8de785b189902e5beca,brain and eye changes,,,pending
+conditions_79c9251c6c0a7ccc6803,eye and brain changes,,,pending

@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_a88298f30673509167a9",
+    "source_content_hash": "e32fe522029e5dd9e23dd0998d7bea4e707df34b13caf848528944ba79f675d3",
+    "input_content_hash": "4bb88e2d971420a370d2569e5968c05ff29f3df5c3337a80c64de77e476520dd",
+    "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_7c38c1961c36c3e39d9e",
+        "canonical_name": "pressure increases in spacesuits",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "4856011be9cb6ff8e5e077d7bfaad79a64a9c9273dfd5b111619ebb1061c8f81"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"pressure increases in spacesuits\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\",\n      \"field\": \"description\",\n      \"value\": \"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"Scientists are using decades of archived health data on spacewalks to try to extrapolate answers to several questions.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"extrapolated\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization.\",\n      \"field\": \"description\",\n      \"value\": \"Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization.\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions.\",\n      \"field\": \"description\",\n      \"value\": \"Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions.\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks.\",\n      \"field\": \"description\",\n      \"value\": \"NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks.\"\n    },\n    {\n      \"entity_id\": \"treatments_7c38c1961c36c3e39d9e\",\n      \"evidence_text\": \"No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not tested\"\n    }\n  ]\n}"
+}

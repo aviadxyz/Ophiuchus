@@ -1,0 +1,11 @@
+max_depth: 2
+max_pages: 30
+request_delay_seconds: 1
+allowed_domains: [nasa.gov, asc-csa.gc.ca]
+hrr_target_urls: []
+sources:
+  - https://www.nasa.gov/hrp/hazards/
+  - https://www.nasa.gov/hrp/risks/
+  - https://www.nasa.gov/hrp/ongoing-hrp-research/
+  - https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp
+  - https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp

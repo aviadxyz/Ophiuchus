@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_5e24dc0bb5823754c367",
+  "field": "description",
+  "value": "practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission",
+  "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission.",
+  "candidate_id": "attribute_claim_894950a5e83bc2242e5a",
+  "evidence_id": "evidence_747d8cb3aec10bc87b09",
+  "job_id": "enrichment_job_38c28241ef61cab42b59",
+  "source_id": "source_cf2e7b26631f3a802e27",
+  "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_cf2e7b26631f3a802e27",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+    "chunk_id": "chunk_01681a5c7f595f792b87",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1591",
+    "text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. ",
+    "original_text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T18:24:44.516724+00:00"
+}

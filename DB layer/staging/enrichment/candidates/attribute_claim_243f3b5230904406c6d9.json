@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_68595fb19bf2e18d2717",
+  "field": "treatment_type",
+  "value": "resistance training and aerobic exercises",
+  "evidence_text": "resistance training and aerobic exercises",
+  "candidate_id": "attribute_claim_243f3b5230904406c6d9",
+  "evidence_id": "evidence_1729796a399fedf17b5c",
+  "job_id": "enrichment_job_b93401ec6b575fb71c14",
+  "source_id": "source_595c9981ebc185e5870a",
+  "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_595c9981ebc185e5870a",
+    "source_url": "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/",
+    "chunk_id": "chunk_d2b64e2df3886374686d",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1521",
+    "text": "HHC Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness JAXA (Japan Aerospace Exploration Agency) astronaut Satoshi Furukawa exercises on a device aboard the International Space Station designed to mimic the forces generated when lifting free weights on Earth. Credit: NASA What are the top risks? Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury. These physiological changes can make falling or tripping more likely, especially during gravitational transitions to the surface of the Moon or Mars, or when returning to their daily living on Earth. What can be done about it? Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss. Crew members also undergo periodic fitness self-evaluations to help researchers monitor their health and fitness and to optimize the astronauts’ training regimen. Spacecraft set to carry astronauts to the Moon and Mars, however, will likely have less space for exercise equipment. Consequently, researchers are working to understand how to optimize both exercise machines and protocols to ensure that astronaut health is maintained on these deep space missions. Did you know? The effects of exposure to microgravity can vary substantially between individual astronauts. ",
+    "original_text": "HHC Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness JAXA (Japan Aerospace Exploration Agency) astronaut Satoshi Furukawa exercises on a device aboard the International Space Station designed to mimic the forces generated when lifting free weights on Earth. Credit: NASA What are the top risks? Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury. These physiological changes can make falling or tripping more likely, especially during gravitational transitions to the surface of the Moon or Mars, or when returning to their daily living on Earth. What can be done about it? Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss. Crew members also undergo periodic fitness self-evaluations to help researchers monitor their health and fitness and to optimize the astronauts’ training regimen. Spacecraft set to carry astronauts to the Moon and Mars, however, will likely have less space for exercise equipment. Consequently, researchers are working to understand how to optimize both exercise machines and protocols to ensure that astronaut health is maintained on these deep space missions. Did you know? The effects of exposure to microgravity can vary substantially between individual astronauts. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:42:11.756701+00:00"
+}

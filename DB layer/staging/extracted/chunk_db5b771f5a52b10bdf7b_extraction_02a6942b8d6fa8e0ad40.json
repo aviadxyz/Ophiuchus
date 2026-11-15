@@ -1,0 +1,294 @@
+{
+  "source_id": "source_9fc83afed4c3c844eb53",
+  "chunk": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+    "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1451:3038",
+    "text": "Current protocols hold that when experiencing decompression sickness symptoms, astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft. Future missions deeper into space will likely require more frequent spacewalks. NASA is preparing for associated risks in a variety of ways. For instance, new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself. The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return. But astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier – so decisions will need to be made about risk tradeoffs. In addition, the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks. Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment. Did you know? Even flying in an airplane puts a person at risk of decompression sickness due to the large change in environmental pressure at high altitudes. Aircraft cabins are pressurized to counter that risk. ",
+    "original_text": "Current protocols hold that when experiencing decompression sickness symptoms, astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft. Future missions deeper into space will likely require more frequent spacewalks. NASA is preparing for associated risks in a variety of ways. For instance, new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself. The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return. But astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier – so decisions will need to be made about risk tradeoffs. In addition, the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks. Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment. Did you know? Even flying in an airplane puts a person at risk of decompression sickness due to the large change in environmental pressure at high altitudes. Aircraft cabins are pressurized to counter that risk. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "variable pressure space suits",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> countermeasure_for -> variable pressure space suits."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1451:3038",
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1451:3038",
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1451:3038",
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_3978ceaa4d85f511e7e2",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_f48df1859cad6c5e8da7",
+        "subject_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"decompression sickness\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_fd9b7e77e8931585a352",
+        "subject_entity_id": "treatments_ba51435b911ec817a4d8",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"variable pressure space suits\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_49552c2ae1abf8be92d3",
+        "subject_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "object_entity_id": "treatments_ba51435b911ec817a4d8",
+        "predicate": "countermeasure_for",
+        "claim_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_e5966e60c3d64d6f78a7",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> countermeasure_for -> variable pressure space suits.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_ba51435b911ec817a4d8",
+        "canonical_name": "variable pressure space suits",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_10ebcdc4551e304c1b9d",
+        "source_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "target_entity_id": "treatments_ba51435b911ec817a4d8",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_49552c2ae1abf8be92d3",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spacewalk"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment",
+        "object": {
+          "entity_type": "treatments",
+          "name": "breathing calibrated high levels of oxygen"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "179"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spacewalk\"\n      }\n    },\n    {\n      \"evidence_text\": \"new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"variable pressure space suits\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    },\n    {\n      \"evidence_text\": \"science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"breathing calibrated high levels of oxygen\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "9b9298798121e8bed1ae986c29cdb61619efe0962d718bf231e55986211d5bb9",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

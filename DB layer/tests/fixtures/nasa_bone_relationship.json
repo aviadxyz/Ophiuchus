@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+  "source_note": "Exact excerpt from the previously downloaded NASA risk page. Used only in offline tests.",
+  "text": "This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age.",
+  "output": {
+    "relationships": [{
+      "subject": {"name": "Bone loss", "entity_type": "risk_factors"},
+      "predicate": "may_contribute_to",
+      "object": {"name": "Bone fracture", "entity_type": "conditions"},
+      "evidence_text": "This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age.",
+      "evidence_status": "unknown",
+      "study_population": "human_astronauts",
+      "research_context": "NASA risk overview. Susceptibility is described; this is not a diagnostic or treatment protocol."
+    }]
+  }
+}

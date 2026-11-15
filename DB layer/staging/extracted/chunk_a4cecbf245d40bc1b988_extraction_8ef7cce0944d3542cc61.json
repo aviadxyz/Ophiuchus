@@ -1,0 +1,473 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "chunk": {
+    "source_id": "source_e7862784beb09526a71c",
+    "source_url": "https://www.nasa.gov/hrp/risks/",
+    "chunk_id": "chunk_a4cecbf245d40bc1b988",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2621:4171",
+    "text": "Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. ",
+    "original_text": "Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "environments",
+        "canonical_name": "Spacewalk environment",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "risk_factors",
+        "canonical_name": "Low oxygen and high carbon dioxide levels",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels."
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "conditions",
+        "canonical_name": "Reduced Cardiorespiratory and Musculoskeletal Fitness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance."
+      },
+      {
+        "local_id": "e4",
+        "entity_type": "treatments",
+        "canonical_name": "Exercise during mission",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: Low oxygen and high carbon dioxide levels -> associated_with -> Spacewalk environment."
+      },
+      {
+        "subject": "e3",
+        "predicate": "countermeasure_for",
+        "object": "e4",
+        "claim_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: Reduced Cardiorespiratory and Musculoskeletal Fitness -> countermeasure_for -> Exercise during mission."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_a4cecbf245d40bc1b988",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2621:4171",
+        "evidence_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/environments": [
+      {
+        "environment_id": "environments_70d445d75131f5f8a8b3",
+        "canonical_name": "Spacewalk environment",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_2e64fd29b3d68a987ebe",
+        "subject_entity_id": "environments_70d445d75131f5f8a8b3",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"environments\",\"canonical_name\":\"Spacewalk environment\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_d842c1da6e31000e00f6",
+        "subject_entity_id": "risk_factors_3a59532437f77c9324b7",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"Low oxygen and high carbon dioxide levels\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_bad2c22ab010d7212da2",
+        "subject_entity_id": "conditions_e5c6d1a0fe078a37f64b",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"conditions\",\"canonical_name\":\"Reduced Cardiorespiratory and Musculoskeletal Fitness\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_c34be2c4b32a1e0faf32",
+        "subject_entity_id": "treatments_6f86e5cef59c9b7064e8",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e4\",\"entity_type\":\"treatments\",\"canonical_name\":\"Exercise during mission\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_383154af761e0f8f3a6c",
+        "subject_entity_id": "environments_70d445d75131f5f8a8b3",
+        "object_entity_id": "risk_factors_3a59532437f77c9324b7",
+        "predicate": "associated_with",
+        "claim_text": "Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_1f1ce783970257139b5e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: Low oxygen and high carbon dioxide levels -> associated_with -> Spacewalk environment.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_87ed78aef703c9d8e0ab",
+        "subject_entity_id": "conditions_e5c6d1a0fe078a37f64b",
+        "object_entity_id": "treatments_6f86e5cef59c9b7064e8",
+        "predicate": "countermeasure_for",
+        "claim_text": "All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_c211a96225e9489c2e90",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: Reduced Cardiorespiratory and Musculoskeletal Fitness -> countermeasure_for -> Exercise during mission.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_3a59532437f77c9324b7",
+        "canonical_name": "Low oxygen and high carbon dioxide levels",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_e5c6d1a0fe078a37f64b",
+        "canonical_name": "Reduced Cardiorespiratory and Musculoskeletal Fitness",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_6f86e5cef59c9b7064e8",
+        "canonical_name": "Exercise during mission",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/environment_risk": [
+      {
+        "relation_id": "relation_25f8ca3d5dfd58291b32",
+        "source_entity_id": "environments_70d445d75131f5f8a8b3",
+        "target_entity_id": "risk_factors_3a59532437f77c9324b7",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_383154af761e0f8f3a6c",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_34c058601b972d0a23d9",
+        "source_entity_id": "conditions_e5c6d1a0fe078a37f64b",
+        "target_entity_id": "treatments_6f86e5cef59c9b7064e8",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_87ed78aef703c9d8e0ab",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Without gravity, bones break down and become more brittle, boosting the chances of painful breaks.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "Spaceflight-Induced Bone Changes"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "Painful breaks"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Without gravity, bones break down and become more brittle, boosting the chances of painful breaks.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"Spaceflight-Induced Bone Changes\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"Painful breaks\"\n      }\n    },\n    {\n      \"evidence_text\": \"Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"Spacewalk environment\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"Low oxygen and high carbon dioxide levels\"\n      }\n    },\n    {\n      \"evidence_text\": \"All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"Exercise during mission\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"Reduced Cardiorespiratory and Musculoskeletal Fitness\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "bd1933ff75a016bfe0c7d5fd0980417bded538aee2acc837483402d4b5319e74",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

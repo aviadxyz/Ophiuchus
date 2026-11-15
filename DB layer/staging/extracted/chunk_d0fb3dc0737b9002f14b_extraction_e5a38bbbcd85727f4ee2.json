@@ -1,0 +1,108 @@
+{
+  "source_id": "source_b4bd76d26d8b64355543",
+  "chunk": {
+    "source_id": "source_b4bd76d26d8b64355543",
+    "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+    "chunk_id": "chunk_d0fb3dc0737b9002f14b",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1426:1930",
+    "text": "Consequently, the height of crew members can increase as much as 3% in space . Formal risk description: Risk of bone fracture due to spaceflight-induced changes to bone Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Astronauts’ Spines Under Scrutiny Read More The Human Body in Space Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More",
+    "original_text": "Consequently, the height of crew members can increase as much as 3% in space . Formal risk description: Risk of bone fracture due to spaceflight-induced changes to bone Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Astronauts’ Spines Under Scrutiny Read More The Human Body in Space Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "the height of crew members can increase as much as 3% in space",
+        "object": {
+          "entity_type": "physical_findings",
+          "name": "increased height in astronauts"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spaceflight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Risk of bone fracture due to spaceflight-induced changes to bone",
+        "object": {
+          "entity_type": "conditions",
+          "name": "bone fracture"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spaceflight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "spaceflight-induced changes to bone",
+        "object": {
+          "entity_type": "conditions",
+          "name": "bone changes"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spaceflight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [
+    "77"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"the height of crew members can increase as much as 3% in space\",\n      \"object\": {\n        \"entity_type\": \"physical_findings\",\n        \"name\": \"increased height in astronauts\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spaceflight\"\n      }\n    },\n    {\n      \"evidence_text\": \"Risk of bone fracture due to spaceflight-induced changes to bone\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone fracture\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spaceflight\"\n      }\n    },\n    {\n      \"evidence_text\": \"spaceflight-induced changes to bone\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone changes\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spaceflight\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "2799aeb01ab30c1095c3a65f10f2608a6adacc8b00927991ca254c7d791f6829",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

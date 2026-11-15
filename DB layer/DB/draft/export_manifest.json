@@ -1,0 +1,89 @@
+{
+  "draft": true,
+  "generated_at": "2026-11-14T18:28:50.938201+00:00",
+  "clinical_authorization": false,
+  "counts": {
+    "entities/environments": 12,
+    "entities/risk_factors": 20,
+    "entities/conditions": 84,
+    "entities/biomarkers": 7,
+    "entities/treatments": 40,
+    "entities/cognitive_findings": 1,
+    "entities/physical_findings": 4,
+    "entities/genes": 2,
+    "entities/microbiome": 0,
+    "relations/environment_risk": 3,
+    "relations/risk_condition": 16,
+    "relations/condition_biomarker": 0,
+    "relations/condition_treatment": 30,
+    "relations/condition_cognitive": 1,
+    "relations/condition_physical": 4,
+    "relations/condition_gene": 0,
+    "relations/condition_microbiome": 0,
+    "relations/treatment_risk": 0,
+    "evidence/evidence": 137,
+    "evidence/knowledge_claims": 255,
+    "metadata/sources": 32,
+    "metadata/source_types": 8,
+    "metadata/risk_categories": 0,
+    "metadata/treatment_types": 9,
+    "monitoring/monitoring_guidance": 4,
+    "protocols/candidate_protocols": 0,
+    "protocols/approved_protocols": 0,
+    "inventory/mission_inventory": 0,
+    "aliases/aliases": 1
+  },
+  "relation_export_audit": {
+    "relations_seen": 54,
+    "relations_rejected_review": 0,
+    "relations_duplicate": 0,
+    "relations_missing_dependencies": 0,
+    "relations_exported": 54
+  },
+  "enrichment_audit": {
+    "candidates_included": 21,
+    "cells_filled": 19,
+    "cells_filled_by_table": {
+      "entities/treatments": 19
+    },
+    "conflicts": [
+      {
+        "entity_id": "treatments_554dfe622b5d8d121d2e",
+        "field": "treatment_type",
+        "reason": "conflicting_additions",
+        "candidate_ids": [
+          "attribute_claim_a81087ada7e8e6232316",
+          "attribute_claim_b6d1759b1d5969397628"
+        ]
+      }
+    ],
+    "excluded_by_review": 0,
+    "invalid_staged_records": [
+      {
+        "candidate_id": "attribute_claim_15e42138a2d157c8f3a7",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_52ee42e7a26514305628",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_88811bc315ab9da89dae",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_c5e7b8ee5946f372d1a1",
+        "reason": "entity_not_anchored_in_evidence"
+      }
+    ],
+    "baseline_conflicts": [
+      {
+        "entity_id": "conditions_91a18b574568d8527025",
+        "field": "description",
+        "existing_value": "A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",
+        "candidate_value": "Study of physical differences affecting blood flow and coagulation in space.",
+        "reason": "existing_value_preserved"
+      }
+    ]
+  }
+}

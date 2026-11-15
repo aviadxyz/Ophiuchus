@@ -1,0 +1,105 @@
+{
+  "source_id": "source_78a16b9a26f83f3e4b67",
+  "chunk": {
+    "source_id": "source_78a16b9a26f83f3e4b67",
+    "source_url": "https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp",
+    "chunk_id": "chunk_37ba8270d97f1c0bbddd",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1227:2796",
+    "text": "Missions to the Moon and Mars mean longer trips and more risks for astronauts, including: more time in weightlessness more exposure to radiation longer periods of isolation, very far from home increased delays in communication with Earth less ability to rely on Earth for food, materials, and emergency medical assistance Using the knowledge obtained to improve our quality of life on Earth Studying the way our body changes in space help us understand the impacts of reduced levels of physical activity and issues that affect older adult populations on Earth. Living in weightless conditions changes the human body in many ways. The effects observed in astronauts are similar to accelerated aging and health problems caused by a sedentary lifestyle . Studying the human body in space for six months gives us data that would take years to gather on Earth. New information gained in space contributes to improved quality of life on Earth . Canadian scientists use space to study our bones, heart, blood vessels and brain. Their experiments have produced findings that can help people suffering from balance problems , such as seniors; osteoporosis ; cardiovascular disorders; and Type-2 diabetes . How does space affect the human body? How does space affect the human body? - Text version Space has tremendous effects on the human body! By studying astronauts' health, we also help people on Earth. (Credit: Canadian Space Agency) Learn more about Canadian science on the ISS On average, there are 200 international space experiments on board the ISS at any given time. ",
+    "original_text": "Missions to the Moon and Mars mean longer trips and more risks for astronauts, including: more time in weightlessness more exposure to radiation longer periods of isolation, very far from home increased delays in communication with Earth less ability to rely on Earth for food, materials, and emergency medical assistance Using the knowledge obtained to improve our quality of life on Earth Studying the way our body changes in space help us understand the impacts of reduced levels of physical activity and issues that affect older adult populations on Earth. Living in weightless conditions changes the human body in many ways. The effects observed in astronauts are similar to accelerated aging and health problems caused by a sedentary lifestyle . Studying the human body in space for six months gives us data that would take years to gather on Earth. New information gained in space contributes to improved quality of life on Earth . Canadian scientists use space to study our bones, heart, blood vessels and brain. Their experiments have produced findings that can help people suffering from balance problems , such as seniors; osteoporosis ; cardiovascular disorders; and Type-2 diabetes . How does space affect the human body? How does space affect the human body? - Text version Space has tremendous effects on the human body! By studying astronauts' health, we also help people on Earth. (Credit: Canadian Space Agency) Learn more about Canadian science on the ISS On average, there are 200 international space experiments on board the ISS at any given time. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Studying the way our body changes in space help us understand the impacts of reduced levels of physical activity and issues that affect older adult populations on Earth.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "reduced levels of physical activity"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "issues that affect older adult populations on Earth"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "The effects observed in astronauts are similar to accelerated aging and health problems caused by a sedentary lifestyle.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "accelerated aging"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "health problems caused by a sedentary lifestyle"
+        }
+      }
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Canadian scientists use space to study our bones, heart, blood vessels and brain. Their experiments have produced findings that can help people suffering from balance problems , such as seniors; osteoporosis ; cardiovascular disorders; and Type-2 diabetes .",
+        "object": {
+          "entity_type": "conditions",
+          "name": "balance problems"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "environments",
+          "name": "weightless conditions"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Studying the way our body changes in space help us understand the impacts of reduced levels of physical activity and issues that affect older adult populations on Earth.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"reduced levels of physical activity\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"issues that affect older adult populations on Earth\"\n      }\n    },\n    {\n      \"evidence_text\": \"The effects observed in astronauts are similar to accelerated aging and health problems caused by a sedentary lifestyle.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"accelerated aging\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"health problems caused by a sedentary lifestyle\"\n      }\n    },\n    {\n      \"evidence_text\": \"Canadian scientists use space to study our bones, heart, blood vessels and brain. Their experiments have produced findings that can help people suffering from balance problems , such as seniors; osteoporosis ; cardiovascular disorders; and Type-2 diabetes .\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"balance problems\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"weightless conditions\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "2c051788e7e9d71b392374b9fbd03fc278097b54db480fbfeed9f7d26b7df185",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

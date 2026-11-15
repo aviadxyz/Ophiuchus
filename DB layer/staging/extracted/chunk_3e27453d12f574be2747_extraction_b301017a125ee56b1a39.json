@@ -1,0 +1,105 @@
+{
+  "source_id": "source_dcd2bf837a04a29770e5",
+  "chunk": {
+    "source_id": "source_dcd2bf837a04a29770e5",
+    "source_url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+    "chunk_id": "chunk_3e27453d12f574be2747",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1596:3111",
+    "text": "To learn what can happen above low-Earth orbit, NASA studies how radiation affects biological samples using a ground-based research laboratory. Explore Our Space Radiation Laboratory A scientist at the NASA Space Radiation Laboratory (NSRL) adjusts instrumentation. Credit: NSRL Related Articles Space Radiation Won’t Stop NASA’s Human Exploration NASA is developing technologies and strategies to ensure safe and successful journeys to the Mars. Read About Space Radiation Houston We Have a Podcast: Radiation Episode Catch a conversation among scientists about how NASA is protecting astronauts from harmful space radiation. Listen to Houston We Have a Podcast Monitoring Space Radiation NASA follows specific procedures to continuously monitor space radiation and astronauts' radiation exposure. Learn How We're Monitoring Space Radiation Space Radiation Risks NASA has identified several health concerns from space radiation exposure as high research priorities. Discover the Risks of Space Radiation Featured Story NASA Scientists Join White House Cancer Initiative NASA scientists are working with doctors and researchers across the federal government to help cut the nation’s cancer death rate… Read the Story Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story Keep Exploring Discover More Topics From NASA Astronauts Humans In Space Artemis Space Station Research and Technology",
+    "original_text": "To learn what can happen above low-Earth orbit, NASA studies how radiation affects biological samples using a ground-based research laboratory. Explore Our Space Radiation Laboratory A scientist at the NASA Space Radiation Laboratory (NSRL) adjusts instrumentation. Credit: NSRL Related Articles Space Radiation Won’t Stop NASA’s Human Exploration NASA is developing technologies and strategies to ensure safe and successful journeys to the Mars. Read About Space Radiation Houston We Have a Podcast: Radiation Episode Catch a conversation among scientists about how NASA is protecting astronauts from harmful space radiation. Listen to Houston We Have a Podcast Monitoring Space Radiation NASA follows specific procedures to continuously monitor space radiation and astronauts' radiation exposure. Learn How We're Monitoring Space Radiation Space Radiation Risks NASA has identified several health concerns from space radiation exposure as high research priorities. Discover the Risks of Space Radiation Featured Story NASA Scientists Join White House Cancer Initiative NASA scientists are working with doctors and researchers across the federal government to help cut the nation’s cancer death rate… Read the Story Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story Keep Exploring Discover More Topics From NASA Astronauts Humans In Space Artemis Space Station Research and Technology"
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "NASA studies how radiation affects biological samples using a ground-based research laboratory.",
+        "object": {
+          "entity_type": "environments",
+          "name": "ground-based research laboratory"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "radiation effects on biological samples"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "NASA has identified several health concerns from space radiation exposure as high research priorities.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "health concerns from space radiation exposure"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "cancer"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "NASA scientists are working with doctors and researchers across the federal government to help cut the nation’s cancer death rate...",
+        "object": {
+          "entity_type": "treatments",
+          "name": "cancer prevention strategies"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "cancer"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"NASA studies how radiation affects biological samples using a ground-based research laboratory.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"ground-based research laboratory\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"radiation effects on biological samples\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA has identified several health concerns from space radiation exposure as high research priorities.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"health concerns from space radiation exposure\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"cancer\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA scientists are working with doctors and researchers across the federal government to help cut the nation’s cancer death rate...\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"cancer prevention strategies\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"cancer\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "bd0994b78d2966ee81ac513147f51d61f6a18f360d5a9b2b98e86398f78bcf32",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

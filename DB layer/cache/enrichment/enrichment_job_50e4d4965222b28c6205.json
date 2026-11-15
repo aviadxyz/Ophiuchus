@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_content_hash": "a7aee69dd9cea98ba00d8e4fb0b5fa0f1714420c08fde48bbf5cc25a2734451a",
+    "input_content_hash": "5147e2c3cd485f9450f9a6d1e6f37a61bad8a7d15fc8cb73161f3c4b8f8238b2",
+    "chunk_id": "chunk_03296b6e817adff22a5f",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_870eca27e10815231a69",
+        "canonical_name": "earth-based training in high- and low-pressure environments",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "83086c1ba2bb84fb23dfecdcb1faf36043d7676ac2bd7252c38fbf5f5d274973"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"earth-based training in high- and low-pressure environments\"\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"description\",\n      \"value\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\"\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not specified\"\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_870eca27e10815231a69\",\n      \"evidence_text\": \"Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness.\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    }\n  ]\n}"
+}

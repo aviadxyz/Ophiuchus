@@ -1,0 +1,50 @@
+{
+  "source_id": "source_5c511e99e567d27ec313",
+  "chunk": {
+    "source_id": "source_5c511e99e567d27ec313",
+    "source_url": "https://www.nasa.gov/hrp",
+    "chunk_id": "chunk_d67b996fb6f5e294f7b5",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1478",
+    "text": "HRP Human Research Program HRP uses research to develop methods to protect the health and performance of astronauts in space. With the goal of traveling to the Moon, Mars and beyond, HRP is using ground research facilities, the International Space Station, Artemis missions, and analog environments to enable cutting-edge science. Collaborate With HRP HRP offers funding, collaboration, and partnership opportunities to those interested in the future of human spaceflight. Learn More About How to Get Involved With HRP A crew inside NASA’s Human Exploration Research Analog looks up from the habitat’s ladder well for a team photo. Credit: NASA Join Us at the 2027 Investigators’ Workshop Hear from scientists and investigators as they pursue cutting-edge and cross-disciplinary methods to ensure safe, productive, and efficient human spaceflight. Register now! Learn More About the Investigators’ Workshop Credit: NASA Watch: Learn More About HRP! NASA’s Human Research Program, which develops methods to protect the health and performance of astronauts in space, uses ground-based research facilities, the International Space Station, and analog environments to enable cutting-edge science. NASA astronaut Loral O’Hara helps explain why the program matters. Credit: (NASA) Ongoing HRP Research in Space Explore ongoing human health investigations performed in low Earth orbit. Learn More About Human Spaceflight Studies NASA astronaut Scott Kelly floating during a spacewalk. ",
+    "original_text": "HRP Human Research Program HRP uses research to develop methods to protect the health and performance of astronauts in space. With the goal of traveling to the Moon, Mars and beyond, HRP is using ground research facilities, the International Space Station, Artemis missions, and analog environments to enable cutting-edge science. Collaborate With HRP HRP offers funding, collaboration, and partnership opportunities to those interested in the future of human spaceflight. Learn More About How to Get Involved With HRP A crew inside NASA’s Human Exploration Research Analog looks up from the habitat’s ladder well for a team photo. Credit: NASA Join Us at the 2027 Investigators’ Workshop Hear from scientists and investigators as they pursue cutting-edge and cross-disciplinary methods to ensure safe, productive, and efficient human spaceflight. Register now! Learn More About the Investigators’ Workshop Credit: NASA Watch: Learn More About HRP! NASA’s Human Research Program, which develops methods to protect the health and performance of astronauts in space, uses ground-based research facilities, the International Space Station, and analog environments to enable cutting-edge science. NASA astronaut Loral O’Hara helps explain why the program matters. Credit: (NASA) Ongoing HRP Research in Space Explore ongoing human health investigations performed in low Earth orbit. Learn More About Human Spaceflight Studies NASA astronaut Scott Kelly floating during a spacewalk. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [],
+  "relation_diagnostics": {
+    "candidate_relationships": 0,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "extraction_metadata": {
+    "input_content_hash": "77f046b793560bff39038553057d5b4aff36534b95791bd4bdb6b255538b8c2e",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

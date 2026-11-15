@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_deb687c28a7c61d4b698",
+  "field": "description",
+  "value": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+  "evidence_text": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+  "candidate_id": "attribute_claim_4bb337c4a4b293eebb82",
+  "evidence_id": "evidence_54e96683e0bbff858694",
+  "job_id": "enrichment_job_5c6cbb9594f23acd344a",
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_0bb467f4a071c7fd0a01",
+    "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+    "chunk_id": "chunk_fe319fdcaeff6cbfd3d4",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1381",
+    "text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. ",
+    "original_text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:36:48.846834+00:00"
+}

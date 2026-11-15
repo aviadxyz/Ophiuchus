@@ -1,0 +1,52 @@
+{
+  "identity": {
+    "source_id": "source_795fee7d775bf85aca41",
+    "source_content_hash": "a005a1b064fd99344577fad20381eceded2fa4ded8f62f5e8df26c9be444fb8f",
+    "input_content_hash": "b4777ed789dffc72d827a81a92865ccd0aae1fb5f20187fac4acaebfcddd6807",
+    "chunk_id": "chunk_8b4cbd60198c1ca80be4",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_012b2b6825acd5040c73",
+        "canonical_name": "radiation shielding",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      },
+      {
+        "entity_id": "treatments_b46d45449488cfc060ee",
+        "canonical_name": "simulated radiation studies",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "fa74c67198ec366da4378fccc39529b088dc4cb74ce9503251a610df37415b4d"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"description\",\n      \"value\": \"robust radiation shielding for Artemis missions and the planned lunar Gateway space station\"\n    },\n    {\n      \"entity_id\": \"treatments_b46d45449488cfc060ee\",\n      \"evidence_text\": \"Cloudy with a Chance of Radiation: NASA Studies Simulated Radiation\",\n      \"field\": \"description\",\n      \"value\": \"simulated radiation\"\n    },\n    {\n      \"entity_id\": \"treatments_b46d45449488cfc060ee\",\n      \"evidence_text\": \"NASA Studies Simulated Radiation\",\n      \"field\": \"treatment_type\",\n      \"value\": \"simulated radiation\"\n    },\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"radiation shielding\"\n    },\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_b46d45449488cfc060ee\",\n      \"evidence_text\": \"NASA Studies Simulated Radiation\",\n      \"field\": \"evidence_status\",\n      \"value\": \"latest evidence\"\n    },\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"latest evidence\"\n    },\n    {\n      \"entity_id\": \"treatments_b46d45449488cfc060ee\",\n      \"evidence_text\": \"Cloudy with a Chance of Radiation: NASA Studies Simulated Radiation\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"active_ingredient\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_012b2b6825acd5040c73\",\n      \"evidence_text\": \"NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    }\n  ]\n}"
+}

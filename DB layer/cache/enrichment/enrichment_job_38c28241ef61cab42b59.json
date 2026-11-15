@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_cf2e7b26631f3a802e27",
+    "source_content_hash": "144de1d6b2409c8352dc9eff80a7285f7a9b92a949b31b071be6bd0917d54ea9",
+    "input_content_hash": "4713062de3300c33915c65a6b05fd4d34cfbbf4ea1c9bc08fdfadcd5b0bc5a63",
+    "chunk_id": "chunk_01681a5c7f595f792b87",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_5e24dc0bb5823754c367",
+        "canonical_name": "team-building exercises",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "cf89e236500e701f8ddc68b3341c4f4ba9bd7152b05c942ffc81129658a650e5"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_5e24dc0bb5823754c367\",\n      \"evidence_text\": \"NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"team-building exercises\"\n    },\n    {\n      \"entity_id\": \"treatments_5e24dc0bb5823754c367\",\n      \"evidence_text\": \"NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission.\",\n      \"field\": \"description\",\n      \"value\": \"practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission\"\n    },\n    {\n      \"entity_id\": \"treatments_5e24dc0bb5823754c367\",\n      \"evidence_text\": \"They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_5e24dc0bb5823754c367\",\n      \"evidence_text\": \"They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not specified\"\n    }\n  ]\n}"
+}

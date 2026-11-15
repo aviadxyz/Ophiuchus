@@ -1,0 +1,293 @@
+{
+  "source_id": "source_32415f5f7520d38b2e83",
+  "chunk": {
+    "source_id": "source_32415f5f7520d38b2e83",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+    "chunk_id": "chunk_92f16d019e6f7dabcf22",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1505",
+    "text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. ",
+    "original_text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate systems operations support",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "user-friendly system design",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate systems operations support -> countermeasure_for -> user-friendly system design."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+        "chunk_id": "chunk_92f16d019e6f7dabcf22",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+        "chunk_id": "chunk_92f16d019e6f7dabcf22",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+        "chunk_id": "chunk_92f16d019e6f7dabcf22",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_7c6915035a8e13ad2a50",
+        "canonical_name": "inadequate systems operations support",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_72b325f53f2e99bda564",
+        "subject_entity_id": "conditions_7c6915035a8e13ad2a50",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"inadequate systems operations support\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently\"}",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_be6f78ac5d5de8254978",
+        "subject_entity_id": "treatments_21256e12625f231c8407",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"user-friendly system design\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently\"}",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_13f5a26f1f968de0138f",
+        "subject_entity_id": "conditions_7c6915035a8e13ad2a50",
+        "object_entity_id": "treatments_21256e12625f231c8407",
+        "predicate": "countermeasure_for",
+        "claim_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "source_id": "source_32415f5f7520d38b2e83",
+        "evidence_id": "evidence_060268e9fa2bf19905a3",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate systems operations support -> countermeasure_for -> user-friendly system design.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_21256e12625f231c8407",
+        "canonical_name": "user-friendly system design",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_088741567e111c1fbf63",
+        "source_entity_id": "conditions_7c6915035a8e13ad2a50",
+        "target_entity_id": "treatments_21256e12625f231c8407",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_13f5a26f1f968de0138f",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "astronauts rely on real-time assistance when problems arise",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "lack of real-time assistance"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "inadequate systems operations support"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "during longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "inadequate training for remote operations"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "inadequate systems operations support"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 1,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "175"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"astronauts rely on real-time assistance when problems arise\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"lack of real-time assistance\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    },\n    {\n      \"evidence_text\": \"during longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"inadequate training for remote operations\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"user-friendly system design\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "b59559cf65dd38617bbc2212a9bc6aebe19f05c961ba991ee320366200560271",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

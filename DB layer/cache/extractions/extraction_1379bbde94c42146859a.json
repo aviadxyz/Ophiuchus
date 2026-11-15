@@ -1,0 +1,129 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "1b661e9ba6d4544f3cbfed774e524030ce37d2cbb3805e35d034abedb588b279",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "spaceflight-related health changes",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "enhanced spaceflight diet",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet.",
+        "evidence_text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: spaceflight-related health changes -> countermeasure_for -> enhanced spaceflight diet."
+      },
+      {
+        "subject": "e1",
+        "predicate": "investigated_for",
+        "object": "e2",
+        "claim_text": "Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health.",
+        "evidence_text": "Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: enhanced spaceflight diet -> investigated_for -> spaceflight-related health changes."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "spaceflight-related health changes"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "enhanced spaceflight diet"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight-related health changes\"\n      }\n    },\n    {\n      \"evidence_text\": \"The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight-related health changes\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      }\n    },\n    {\n      \"evidence_text\": \"Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight-related health changes\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced spaceflight diet\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 0
+  }
+}

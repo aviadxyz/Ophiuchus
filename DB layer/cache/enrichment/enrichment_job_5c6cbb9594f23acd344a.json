@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_0bb467f4a071c7fd0a01",
+    "source_content_hash": "748e7ec388f2c10c5b63a52d7f8ec46dead7694f9fac8639fe548a4751b46a74",
+    "input_content_hash": "41c51b8595fad755af130e825a630b36c1759ad9701f111e486554336afac6cc",
+    "chunk_id": "chunk_fe319fdcaeff6cbfd3d4",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "canonical_name": "disinfectants, anti-inflammatories, antibiotics",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "0e93ef40179404bd78e6563433114d89582f361e1da11673bb896b2820fcd6d9"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"disinfectants, anti-inflammatories, antibiotics\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"description\",\n      \"value\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"disinfectants, anti-inflammatories, antibiotics\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"unknown\"\n    }\n  ]\n}"
+}

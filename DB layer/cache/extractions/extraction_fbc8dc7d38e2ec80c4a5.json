@@ -1,0 +1,136 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "68deae1565cb0f3e3181b0579329444eecbf81e764eb9b54338003a32db3d51b",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "effects on astronauts' health",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "countermeasures and treatments",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.",
+        "evidence_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: effects on astronauts' health -> countermeasure_for -> countermeasures and treatments."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "effects on astronauts' health"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "human space flight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify,  characterize, and mitigate the effects on astronauts' health in order to make space travel safer.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "effects on astronauts' health"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "human space flight"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"effects on astronauts' health\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"human space flight\"\n      }\n    },\n    {\n      \"evidence_text\": \"We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify, characterize, and mitigate the effects on astronauts' health in order to make space travel safer.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"countermeasures and treatments\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"effects on astronauts' health\"\n      }\n    },\n    {\n      \"evidence_text\": \"We want to better understand the risks associated with human space flight—and help find countermeasures and treatments—to identify,  characterize, and mitigate the effects on astronauts' health in order to make space travel safer.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"effects on astronauts' health\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"human space flight\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 0
+  }
+}

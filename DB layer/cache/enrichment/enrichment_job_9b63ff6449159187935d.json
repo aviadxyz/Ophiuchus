@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_b4bd76d26d8b64355543",
+    "source_content_hash": "9d91e399829c476e2f763f16115f9c7305d59e1fd728d1bcd07d21a63f615ad3",
+    "input_content_hash": "c94e097900832325aff9778c8314773436779959e2ac2b1c091b980cc5ba161e",
+    "chunk_id": "chunk_1a3e0367dd94fd4ea759",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_af11afe44ac92c61efb7",
+        "canonical_name": "resistive exercise",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "242b1cc5c32acbbb2dd2354e03eec32eac36451e6dbad90d54b22243ce397cc5"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"Exercise to reduce the deficits in postflight bone density and strengthen muscle force is an essential component of preventing declines in bone tissue.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"exercise\"\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.\",\n      \"field\": \"description\",\n      \"value\": \"resistive exercise is helping to keep bones strong in microgravity\"\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"resistive exercise is helping to keep bones strong in microgravity\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"resistive exercise is helping to keep bones strong in microgravity\",\n      \"field\": \"active_ingredient\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"resistive exercise is helping to keep bones strong in microgravity\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"exercise to reduce the deficits in postflight bone density and strengthen muscle force is an essential component of preventing declines in bone tissue\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_af11afe44ac92c61efb7\",\n      \"evidence_text\": \"NASA studies have found that medications like bisphosphonate could help mitigate some spaceflight-induced bone loss.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not explicitly documented for resistive exercise\"\n    }\n  ]\n}"
+}

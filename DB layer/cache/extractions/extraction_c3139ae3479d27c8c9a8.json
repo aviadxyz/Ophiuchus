@@ -1,0 +1,244 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "fecb96bb1db607a7f3dba5c51519d699bf4132ee562c84acb759c7687d26f4b5",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": "The provided text does not specify any actual measurements, biomarkers, or monitoring data. All claims are observational and descriptive, not quantitative or diagnostic. No specific studies, frequencies, or thresholds are mentioned. The text does not describe any interventions or treatments for the hazards listed.",
+    "entities": [
+      {
+        "local_id": "H1",
+        "entity_type": "conditions",
+        "canonical_name": "space radiation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight."
+      },
+      {
+        "local_id": "H2",
+        "entity_type": "conditions",
+        "canonical_name": "isolation and confinement",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time."
+      },
+      {
+        "local_id": "H3",
+        "entity_type": "conditions",
+        "canonical_name": "distance from Earth",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Instructions, new supplies, medical care, and more become increasingly challenging to receive from Earth as astronauts venture deeper into space."
+      },
+      {
+        "local_id": "H4",
+        "entity_type": "conditions",
+        "canonical_name": "gravity (and the lack of it)",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Gravity (and the lack of it) is one of the five hazards of human spaceflight."
+      },
+      {
+        "local_id": "H5",
+        "entity_type": "conditions",
+        "canonical_name": "closed or hostile environments",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Closed or hostile environments are one of the five hazards of human spaceflight."
+      },
+      {
+        "local_id": "E1",
+        "entity_type": "environments",
+        "canonical_name": "ground-based analogs",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space."
+      },
+      {
+        "local_id": "E2",
+        "entity_type": "environments",
+        "canonical_name": "laboratories",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space."
+      },
+      {
+        "local_id": "E3",
+        "entity_type": "environments",
+        "canonical_name": "International Space Station",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 0,
+      "record": {
+        "biomarker": "null",
+        "condition": "null",
+        "environment": "null",
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Through meticulous research, NASA is gaining valuable insight into how the human body and mind might respond during extended forays into space."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    }
+  ],
+  "original_model_output": "{\n  \"source_type\": \"research_summary\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"space radiation\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight.\",\n      \"local_id\": \"H1\"\n    },\n    {\n      \"canonical_name\": \"isolation and confinement\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time.\",\n      \"local_id\": \"H2\"\n    },\n    {\n      \"canonical_name\": \"distance from Earth\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Instructions, new supplies, medical care, and more become increasingly challenging to receive from Earth as astronauts venture deeper into space.\",\n      \"local_id\": \"H3\"\n    },\n    {\n      \"canonical_name\": \"gravity (and the lack of it)\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Gravity (and the lack of it) is one of the five hazards of human spaceflight.\",\n      \"local_id\": \"H4\"\n    },\n    {\n      \"canonical_name\": \"closed or hostile environments\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Closed or hostile environments are one of the five hazards of human spaceflight.\",\n      \"local_id\": \"H5\"\n    },\n    {\n      \"canonical_name\": \"ground-based analogs\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space.\",\n      \"local_id\": \"E1\"\n    },\n    {\n      \"canonical_name\": \"laboratories\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space.\",\n      \"local_id\": \"E2\"\n    },\n    {\n      \"canonical_name\": \"International Space Station\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"These locations all serve as test beds to evaluate human performance, as well as the effectiveness of strategies that could keep astronauts safe and healthy in space.\",\n      \"local_id\": \"E3\"\n    }\n  ],\n  \"monitoring\": [\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Through meticulous research, NASA is gaining valuable insight into how the human body and mind might respond during extended forays into space.\",\n      \"condition\": \"null\",\n      \"environment\": \"null\"\n    }\n  ],\n  \"source_limitations\": \"The provided text does not specify any actual measurements, biomarkers, or monitoring data. All claims are observational and descriptive, not quantitative or diagnostic. No specific studies, frequencies, or thresholds are mentioned. The text does not describe any interventions or treatments for the hazards listed.\"\n}"
+}

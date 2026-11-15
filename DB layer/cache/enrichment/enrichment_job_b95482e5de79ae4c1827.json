@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_272ff97648e63fa98488",
+    "source_content_hash": "4d6e7d14985f4d1c38b5274023610a9c0910451190f24ab456ad5b89b9beadd4",
+    "input_content_hash": "b0d55f536f7b71c536330b1439a76eb7951923a442a2e4d170d2cf63d65add35",
+    "chunk_id": "chunk_fc0e62f031682e6d151e",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "canonical_name": "LED light simulation",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "9ec4242da1340f59b14a07efd83a9b2bc21695e5ee21d94c160102f5f3085b3a"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\",\n      \"field\": \"treatment_type\",\n      \"value\": \"LED light simulation\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\",\n      \"field\": \"description\",\n      \"value\": \"simulate Earth’s light-dark cycle to help astronauts sleep better\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"no\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"active_ingredient\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"no mention of medical supervision required or not required\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"no mention of evidence status such as approved, under review, or not evaluated\",\n      \"field\": \"evidence_status\",\n      \"value\": null\n    }\n  ]\n}"
+}

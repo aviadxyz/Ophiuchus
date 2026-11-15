@@ -1,0 +1,41 @@
+treatment_id,canonical_name,treatment_type,description,medication_or_supplement,active_ingredient,route_of_administration,requires_medical_supervision,evidence_status,review_status
+treatments_5e24dc0bb5823754c367,team-building exercises,,,,,,,unknown,pending
+treatments_870eca27e10815231a69,earth-based training in high- and low-pressure environments,,,,,,,unknown,pending
+treatments_d00626eb0b458822cdb9,space experiments,,,,,,,unknown,pending
+treatments_af11afe44ac92c61efb7,resistive exercise,,,,,,,unknown,pending
+treatments_ca923ef9da78429327f1,safeguards against spaceflight effects,,,,,,,unknown,pending
+treatments_fc0dde28ab00e47dec28,medicines to counter the effects of radiation exposures,,,,,,,unknown,pending
+treatments_5dbc8e10256708cc2fef,Canadian Active Neutron Spectrometer,,A compact and autonomous instrument designed to measure neutron radiation exposure in space.,,,,,unknown,pending
+treatments_8e0ea7bb52b614cb3775,MOSFET,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_ed3d6661ba6bff2ae12b,EVARM,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_96bda479fc01e8903783,Radi-N,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_db188104537351756ff6,Radi-N2,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_1f31a27f6c18baceb2a0,high oxygen breathing,,,,,,,unknown,pending
+treatments_68a2369cc632d786fdec,countermeasures and treatments,,,,,,,unknown,pending
+treatments_317925991a13cc867e02,Omics Archive,,A research initiative collecting biological samples to study molecular-level changes during long-duration spaceflight.,,,,,unknown,pending
+treatments_1c1387f7099ef548db14,Tempus Pro,,A telemedicine device being tested for remote health data collection and near real-time diagnosis.,,,,,unknown,pending
+treatments_14972502d017f78e2938,Veggie Monitoring,,A monitoring initiative for microbial growth on crop storage hardware to improve plant production and crew safety.,,,,,unknown,pending
+treatments_eb32eaf284cfc2de8f62,mission readiness assessments,,,,,,,unknown,pending
+treatments_5f96a032684e4ca523b1,exercise regimens,,,,,,,unknown,pending
+treatments_7df33957c05fd4af78b0,strategies that counter bone and muscle loss,,,,,,,unknown,pending
+treatments_012b2b6825acd5040c73,radiation shielding,,,,,,,unknown,pending
+treatments_b46d45449488cfc060ee,simulated radiation studies,,,,,,,unknown,pending
+treatments_21256e12625f231c8407,user-friendly system design,,,,,,,unknown,pending
+treatments_554dfe622b5d8d121d2e,enhanced spaceflight diet,,,,,,,unknown,pending
+treatments_2d4c5a290434a33986d5,medication,,,,,,,unknown,pending
+treatments_30c82e5457b1b81b4e10,B-Complex,,A daily B vitamin supplement study to prevent or mitigate brain and eye changes in space.,,,,,unknown,pending
+treatments_4defdf163aefd4a9ba08,Thigh Cuff,,Testing tight thigh cuffs to retain bodily fluids in legs and prevent eye disorders in space.,,,,,unknown,pending
+treatments_6f86e5cef59c9b7064e8,Exercise during mission,,,,,,,unknown,pending
+treatments_256bd35351d5e9321c0a,recovery interventions,,,,,,,unknown,pending
+treatments_7c38c1961c36c3e39d9e,pressure increases in spacesuits,,,,,,,unknown,pending
+treatments_bf1d32d203254da2f633,interventions for radiation-induced cancer risks,,,,,,,unknown,pending
+treatments_44a196b2482a71785ef8,research interventions,,,,,,,unknown,pending
+treatments_68595fb19bf2e18d2717,resistance training and aerobic exercises,,,,,,,unknown,pending
+treatments_acb57b3cb059a9fa5c7b,keeping a regular journal,,,,,,,unknown,pending
+treatments_ba51435b911ec817a4d8,variable pressure space suits,,,,,,,unknown,pending
+treatments_5b57e3d36812e0e991e5,simulator training,,,,,,,unknown,pending
+treatments_7f551c79f5ae880242bd,strategies to counter vision changes,,,,,,,unknown,pending
+treatments_b6ce10da5f1519af93af,LED light simulation,,,,,,,unknown,pending
+treatments_deb687c28a7c61d4b698,"disinfectants, anti-inflammatories, antibiotics",,,,,,,unknown,pending
+treatments_4cfe3ec6f1613ba925c3,CANS,,,,,,,unknown,pending
+treatments_8aa668c2b95e4dc4d983,daily B vitamin supplement,,,,,,,unknown,pending

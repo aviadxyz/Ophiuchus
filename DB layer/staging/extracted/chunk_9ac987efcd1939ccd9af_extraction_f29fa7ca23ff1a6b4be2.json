@@ -1,0 +1,106 @@
+{
+  "source_id": "source_5611ecb4c6d90b86677b",
+  "chunk": {
+    "source_id": "source_5611ecb4c6d90b86677b",
+    "source_url": "https://www.nasa.gov/hrp/hazards/",
+    "chunk_id": "chunk_9ac987efcd1939ccd9af",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1435:2955",
+    "text": "The resulting data, technology, and methods serve as a knowledge bank from which scientists can extrapolate to multi-year interplanetary missions. Want a deeper dive? Explore different risks to human health linked to the five hazards of spaceflight. Explore the Five Hazards of Human Spacefligh t Space Radiation Invisible to the human eye, space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight. Isolation and Confinement Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time. Distance from Earth Instructions, new supplies, medical care, and more become increasingly challenging to receive from Earth as astronauts venture deeper into space. Gravity Fields Astronauts' entire bodies – muscles, bones, inner ear, and organs – must adjust to the new gravities encountered on the space station or their spacecraft, as well as on the Moon, Mars, and Earth once they return home. Hostile/Closed Environments Maintaining a safe ecosystem inside a spacecraft presents unique challenges, from ensuring optimal temperatures, pressures, and lighting, to reducing noise, monitoring microbial communities, and tracking immune responses. Watch Videos Space Radiation This hazard of a human mission to Mars is the most difficult to visualize because, well, space radiation is invisible to the human eye. Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight. ",
+    "original_text": "The resulting data, technology, and methods serve as a knowledge bank from which scientists can extrapolate to multi-year interplanetary missions. Want a deeper dive? Explore different risks to human health linked to the five hazards of spaceflight. Explore the Five Hazards of Human Spacefligh t Space Radiation Invisible to the human eye, space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight. Isolation and Confinement Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time. Distance from Earth Instructions, new supplies, medical care, and more become increasingly challenging to receive from Earth as astronauts venture deeper into space. Gravity Fields Astronauts' entire bodies – muscles, bones, inner ear, and organs – must adjust to the new gravities encountered on the space station or their spacecraft, as well as on the Moon, Mars, and Earth once they return home. Hostile/Closed Environments Maintaining a safe ecosystem inside a spacecraft presents unique challenges, from ensuring optimal temperatures, pressures, and lighting, to reducing noise, monitoring microbial communities, and tracking immune responses. Watch Videos Space Radiation This hazard of a human mission to Mars is the most difficult to visualize because, well, space radiation is invisible to the human eye. Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight",
+        "object": {
+          "entity_type": "conditions",
+          "name": "space radiation exposure"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "human health risks"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Isolation and Confinement Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time",
+        "object": {
+          "entity_type": "conditions",
+          "name": "behavioral responses"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "environments",
+          "name": "isolation and confinement"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Astronauts' entire bodies – muscles, bones, inner ear, and organs – must adjust to the new gravities encountered on the space station or their spacecraft, as well as on the Moon, Mars, and Earth once they return home",
+        "object": {
+          "entity_type": "physical_findings",
+          "name": "muscle atrophy"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "gravity fields"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"space radiation is not only stealthy but considered one of the most hazardous aspects of spaceflight\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"space radiation exposure\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"human health risks\"\n      }\n    },\n    {\n      \"evidence_text\": \"Isolation and Confinement Behavioral responses occur among groups of people far from Earth who are isolated and confined in a small space over a long period of time\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"behavioral responses\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"isolation and confinement\"\n      }\n    },\n    {\n      \"evidence_text\": \"Astronauts' entire bodies – muscles, bones, inner ear, and organs – must adjust to the new gravities encountered on the space station or their spacecraft, as well as on the Moon, Mars, and Earth once they return home\",\n      \"object\": {\n        \"entity_type\": \"physical_findings\",\n        \"name\": \"muscle atrophy\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"gravity fields\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "836350c10b354cce548df3a384737ca363b1f494a8940e61c192e00384965d7d",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

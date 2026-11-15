@@ -1,0 +1,323 @@
+{
+  "source_id": "source_c2699be8927456ed51f5",
+  "chunk": {
+    "source_id": "source_c2699be8927456ed51f5",
+    "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+    "chunk_id": "chunk_52fbb1e6ae93a947289f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1597:2339",
+    "text": "But on the Moon and Mars, where there will be varying levels of gravity, crews will need to self-egress and function autonomously shortly after landing – challenges that researchers are working to solve. Formal risk description: Risk of in-mission injury and performance decrements and long-term health effects from dynamic loads Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Astronaut’s Record-Setting Mission Helps NASA Plan Deep Space Journeys Read More New Tests Evaluate Mission Readiness of Astronauts Upon Landing Read More",
+    "original_text": "But on the Moon and Mars, where there will be varying levels of gravity, crews will need to self-egress and function autonomously shortly after landing – challenges that researchers are working to solve. Formal risk description: Risk of in-mission injury and performance decrements and long-term health effects from dynamic loads Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Astronaut’s Record-Setting Mission Helps NASA Plan Deep Space Journeys Read More New Tests Evaluate Mission Readiness of Astronauts Upon Landing Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "in-mission injury and performance decrements and long-term health effects from dynamic loads",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "mission readiness assessments",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: in-mission injury and performance decrements and long-term health effects from dynamic loads -> countermeasure_for -> mission readiness assessments."
+      },
+      {
+        "subject": "e1",
+        "predicate": "investigated_for",
+        "object": "e2",
+        "claim_text": "Research in support of this risk: Latest evidence",
+        "evidence_text": "Research in support of this risk: Latest evidence",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: mission readiness assessments -> investigated_for -> in-mission injury and performance decrements and long-term health effects from dynamic loads."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "source_id": "source_c2699be8927456ed51f5",
+        "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+        "chunk_id": "chunk_52fbb1e6ae93a947289f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1597:2339",
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "source_id": "source_c2699be8927456ed51f5",
+        "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+        "chunk_id": "chunk_52fbb1e6ae93a947289f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1597:2339",
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "source_id": "source_c2699be8927456ed51f5",
+        "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+        "chunk_id": "chunk_52fbb1e6ae93a947289f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1597:2339",
+        "evidence_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_b7772984d65f00f5b0a2",
+        "source_id": "source_c2699be8927456ed51f5",
+        "source_url": "https://www.nasa.gov/reference/risk-of-injury-from-dynamic-loads/",
+        "chunk_id": "chunk_52fbb1e6ae93a947289f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1597:2339",
+        "evidence_text": "Research in support of this risk: Latest evidence",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_2116aa459872014e0e41",
+        "canonical_name": "in-mission injury and performance decrements and long-term health effects from dynamic loads",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_41fa85145f9b7e7a5cde",
+        "subject_entity_id": "conditions_2116aa459872014e0e41",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"in-mission injury and performance decrements and long-term health effects from dynamic loads\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"New Tests Evaluate Mission Readiness of Astronauts Upon Landing\"}",
+        "source_id": "source_c2699be8927456ed51f5",
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_6c616fec2af9e83410e4",
+        "subject_entity_id": "treatments_eb32eaf284cfc2de8f62",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"mission readiness assessments\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"New Tests Evaluate Mission Readiness of Astronauts Upon Landing\"}",
+        "source_id": "source_c2699be8927456ed51f5",
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_a14dd3903b2755066e40",
+        "subject_entity_id": "conditions_2116aa459872014e0e41",
+        "object_entity_id": "treatments_eb32eaf284cfc2de8f62",
+        "predicate": "countermeasure_for",
+        "claim_text": "New Tests Evaluate Mission Readiness of Astronauts Upon Landing",
+        "source_id": "source_c2699be8927456ed51f5",
+        "evidence_id": "evidence_0878114cfcbf76de0909",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: in-mission injury and performance decrements and long-term health effects from dynamic loads -> countermeasure_for -> mission readiness assessments.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_38b6c00f61bcf6ef3165",
+        "subject_entity_id": "conditions_2116aa459872014e0e41",
+        "object_entity_id": "treatments_eb32eaf284cfc2de8f62",
+        "predicate": "investigated_for",
+        "claim_text": "Research in support of this risk: Latest evidence",
+        "source_id": "source_c2699be8927456ed51f5",
+        "evidence_id": "evidence_b7772984d65f00f5b0a2",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: mission readiness assessments -> investigated_for -> in-mission injury and performance decrements and long-term health effects from dynamic loads.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_eb32eaf284cfc2de8f62",
+        "canonical_name": "mission readiness assessments",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_0dc3abef28f971456320",
+        "source_entity_id": "conditions_2116aa459872014e0e41",
+        "target_entity_id": "treatments_eb32eaf284cfc2de8f62",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_a14dd3903b2755066e40",
+        "review_status": "pending"
+      },
+      {
+        "relation_id": "relation_29fa425ad7cf89c5d2ef",
+        "source_entity_id": "conditions_2116aa459872014e0e41",
+        "target_entity_id": "treatments_eb32eaf284cfc2de8f62",
+        "relationship_type": "investigated_for",
+        "claim_id": "claim_38b6c00f61bcf6ef3165",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Risk of in-mission injury and performance decrements and long-term health effects from dynamic loads",
+        "object": {
+          "entity_type": "conditions",
+          "name": "in-mission injury and performance decrements and long-term health effects from dynamic loads"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "environments",
+          "name": "varying levels of gravity on the Moon and Mars"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "167"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Risk of in-mission injury and performance decrements and long-term health effects from dynamic loads\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"in-mission injury and performance decrements and long-term health effects from dynamic loads\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"varying levels of gravity on the Moon and Mars\"\n      }\n    },\n    {\n      \"evidence_text\": \"New Tests Evaluate Mission Readiness of Astronauts Upon Landing\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"mission readiness assessments\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"in-mission injury and performance decrements and long-term health effects from dynamic loads\"\n      }\n    },\n    {\n      \"evidence_text\": \"Research in support of this risk: Latest evidence\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"in-mission injury and performance decrements and long-term health effects from dynamic loads\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"mission readiness assessments\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "05db2675cb03ff1c2c71e7d6d6e154e061cc94813912dcf331304e14ec70fece",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

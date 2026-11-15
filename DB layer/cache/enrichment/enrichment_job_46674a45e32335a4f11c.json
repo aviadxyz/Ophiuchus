@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_content_hash": "a7aee69dd9cea98ba00d8e4fb0b5fa0f1714420c08fde48bbf5cc25a2734451a",
+    "input_content_hash": "9b9298798121e8bed1ae986c29cdb61619efe0962d718bf231e55986211d5bb9",
+    "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_ba51435b911ec817a4d8",
+        "canonical_name": "variable pressure space suits",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "d34838b34d77d49519a066e53aa86f1f5773109a22fd6426c5fac5fbc3eb89ce"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself\",\n      \"field\": \"treatment_type\",\n      \"value\": \"variable pressure space suits\"\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return\",\n      \"field\": \"description\",\n      \"value\": \"The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return\"\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier\",\n      \"field\": \"description\",\n      \"value\": \"astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier\"\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks\",\n      \"field\": \"description\",\n      \"value\": \"the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks\"\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment\",\n      \"field\": \"description\",\n      \"value\": \"Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment\"\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"medication_or_supplement\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"active_ingredient\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"route_of_administration\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"requires_medical_supervision\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_ba51435b911ec817a4d8\",\n      \"evidence_text\": \"evidence_status\",\n      \"field\": \"evidence_status\",\n      \"value\": null\n    }\n  ]\n}"
+}

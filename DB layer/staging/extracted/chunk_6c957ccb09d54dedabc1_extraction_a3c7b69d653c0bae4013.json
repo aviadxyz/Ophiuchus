@@ -1,0 +1,293 @@
+{
+  "source_id": "source_a04de5b744ab7f9d06b3",
+  "chunk": {
+    "source_id": "source_a04de5b744ab7f9d06b3",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+    "chunk_id": "chunk_6c957ccb09d54dedabc1",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1485:2223",
+    "text": "Did you know? Astronauts work with scientists to evaluate and select their preferred foods before their mission. Crew members sample menu items, such as soups, meats, and vegetables. More than 200 foods and beverages are available aboard the space station. Formal risk description: Risk of performance decrement and crew illness due to inadequate food and nutrition Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Menu for Mars: Designing a Deep Space Food System Read More Enhanced Diet May Help Astronauts Adapt to Spaceflight Read More How Does Spaceflight Change Food Appeal? Read More Human Adaptation to Spaceflight: The Role of Food and Nutrition Read More",
+    "original_text": "Did you know? Astronauts work with scientists to evaluate and select their preferred foods before their mission. Crew members sample menu items, such as soups, meats, and vegetables. More than 200 foods and beverages are available aboard the space station. Formal risk description: Risk of performance decrement and crew illness due to inadequate food and nutrition Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Menu for Mars: Designing a Deep Space Food System Read More Enhanced Diet May Help Astronauts Adapt to Spaceflight Read More How Does Spaceflight Change Food Appeal? Read More Human Adaptation to Spaceflight: The Role of Food and Nutrition Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "inadequate food and nutrition",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "performance decrement",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "increases_risk_of",
+        "object": "e2",
+        "claim_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate food and nutrition -> increases_risk_of -> performance decrement."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_6c957ccb09d54dedabc1",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1485:2223",
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_6c957ccb09d54dedabc1",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1485:2223",
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_6c957ccb09d54dedabc1",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1485:2223",
+        "evidence_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_ceaa1262f4cdfdfed609",
+        "canonical_name": "inadequate food and nutrition",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_7c65fcb7f69b6480bb85",
+        "subject_entity_id": "risk_factors_ceaa1262f4cdfdfed609",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"inadequate food and nutrition\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Risk of performance decrement and crew illness due to inadequate food and nutrition\"}",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_0ae74059e8cc3f4543ff",
+        "subject_entity_id": "conditions_fad29f1d36146ea25f4d",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"performance decrement\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Risk of performance decrement and crew illness due to inadequate food and nutrition\"}",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_68fa16d3b82dc8a1783a",
+        "subject_entity_id": "risk_factors_ceaa1262f4cdfdfed609",
+        "object_entity_id": "conditions_fad29f1d36146ea25f4d",
+        "predicate": "increases_risk_of",
+        "claim_text": "Risk of performance decrement and crew illness due to inadequate food and nutrition",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_bf10e846c977038421d2",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate food and nutrition -> increases_risk_of -> performance decrement.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_fad29f1d36146ea25f4d",
+        "canonical_name": "performance decrement",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_29784442706a55ba5135",
+        "source_entity_id": "risk_factors_ceaa1262f4cdfdfed609",
+        "target_entity_id": "conditions_fad29f1d36146ea25f4d",
+        "relationship_type": "increases_risk_of",
+        "claim_id": "claim_68fa16d3b82dc8a1783a",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "invalid_predicate",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "More than 200 foods and beverages are available aboard the space station.",
+        "object": {
+          "entity_type": "environments",
+          "name": "space station"
+        },
+        "predicate": "has_available_foods",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "inadequate food and nutrition"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Enhanced diet May Help Astronauts Adapt to Spaceflight",
+        "object": {
+          "entity_type": "treatments",
+          "name": "enhanced diet"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "adaption to spaceflight"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 1,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "176"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"More than 200 foods and beverages are available aboard the space station.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space station\"\n      },\n      \"predicate\": \"has_available_foods\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate food and nutrition\"\n      }\n    },\n    {\n      \"evidence_text\": \"Risk of performance decrement and crew illness due to inadequate food and nutrition\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"performance decrement\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"inadequate food and nutrition\"\n      }\n    },\n    {\n      \"evidence_text\": \"Enhanced diet May Help Astronauts Adapt to Spaceflight\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"enhanced diet\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"adaption to spaceflight\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "43db8749b2e7dc85a110d6def126324e8e1e56f1e3af342c160518cccdef98f2",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

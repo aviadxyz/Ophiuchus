@@ -1,0 +1,134 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "b59559cf65dd38617bbc2212a9bc6aebe19f05c961ba991ee320366200560271",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate systems operations support",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "user-friendly system design",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate systems operations support -> countermeasure_for -> user-friendly system design."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "astronauts rely on real-time assistance when problems arise",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "lack of real-time assistance"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "inadequate systems operations support"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "during longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "inadequate training for remote operations"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "inadequate systems operations support"
+        }
+      }
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"astronauts rely on real-time assistance when problems arise\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"lack of real-time assistance\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    },\n    {\n      \"evidence_text\": \"during longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"inadequate training for remote operations\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"user-friendly system design\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate systems operations support\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 1,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 0
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "status": "completed",
+  "job": {
+    "job_id": "enrichment_job_65ed79607ee7198fc5fa",
+    "identity": {
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_content_hash": "6fdfcf43054bd607b67ca1115d93c749635fa91828bcb82d02ff3b411ea3cd15",
+      "input_content_hash": "b59559cf65dd38617bbc2212a9bc6aebe19f05c961ba991ee320366200560271",
+      "chunk_id": "chunk_92f16d019e6f7dabcf22",
+      "section": null,
+      "targets": [
+        {
+          "entity_id": "treatments_21256e12625f231c8407",
+          "canonical_name": "user-friendly system design",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        },
+        {
+          "entity_id": "treatments_5b57e3d36812e0e991e5",
+          "canonical_name": "simulator training",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        }
+      ],
+      "model": "qwen3:4b-instruct",
+      "settings": {
+        "temperature": 0.0,
+        "num_ctx": 8192,
+        "num_predict": 2048,
+        "seed": 0
+      },
+      "output_limit": 1024,
+      "prompt_version": "1",
+      "schema_version": "1",
+      "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+      "schema_hash": "d1e2cc679c7f05eb250070a4dfac54ffdf6f9578777b3c69889c26f34e1975cc"
+    },
+    "source_id": "source_32415f5f7520d38b2e83",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+    "entity_type": "treatments",
+    "targets": [
+      {
+        "entity_id": "treatments_21256e12625f231c8407",
+        "canonical_name": "user-friendly system design",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      },
+      {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "canonical_name": "simulator training",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "chunk": {
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+      "chunk_id": "chunk_92f16d019e6f7dabcf22",
+      "page_number": null,
+      "section": null,
+      "text_location": "section None; characters 0:1505",
+      "text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. ",
+      "original_text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. "
+    },
+    "original_page_text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More",
+    "priority": [
+      0,
+      false,
+      2,
+      "source_32415f5f7520d38b2e83",
+      "section None; characters 0:1505",
+      0
+    ]
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\",\n      \"field\": \"description\",\n      \"value\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\"\n    },\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"training\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"description\",\n      \"value\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"simulator training\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not applicable\"\n    },\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not applicable\"\n    }\n  ]\n}",
+  "candidate_ids": [
+    "attribute_claim_52ee42e7a26514305628",
+    "attribute_claim_d6e132df8e2be4c0b3c0",
+    "attribute_claim_fc3017224d1f46b33a9a"
+  ],
+  "rejected": [
+    {
+      "index": 3,
+      "record": {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "field": "treatment_type",
+        "value": "simulator training"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 4,
+      "record": {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "field": "route_of_administration",
+        "value": "none"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 5,
+      "record": {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "field": "requires_medical_supervision",
+        "value": false
+      },
+      "reason": "unsupported_supervision_boolean"
+    },
+    {
+      "index": 6,
+      "record": {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "field": "evidence_status",
+        "value": "not applicable"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 7,
+      "record": {
+        "entity_id": "treatments_21256e12625f231c8407",
+        "evidence_text": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.",
+        "field": "evidence_status",
+        "value": "not applicable"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    }
+  ],
+  "proposed": 8,
+  "completed_at": "2026-11-14T17:40:31.543088+00:00"
+}

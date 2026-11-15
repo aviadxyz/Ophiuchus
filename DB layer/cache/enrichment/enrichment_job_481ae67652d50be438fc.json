@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_a8159d920b53fd31fdc6",
+    "source_content_hash": "ed3bf0b571df6808dcd6c88ba16a81653dd00f706123d3638fdb47a87db82506",
+    "input_content_hash": "74fbeefcc0be4218f3d2d998ccdb0e65068062c1ee6810781969104c063e2cc1",
+    "chunk_id": "chunk_d03ea9e4a97d696e7fb0",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_44a196b2482a71785ef8",
+        "canonical_name": "research interventions",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "a6a19619ddb50e40906b7d08ddcdf38c4d6d063289b91677fa5c325e38f5c883"
+  },
+  "original_model_output": "{\"additions\": []}"
+}

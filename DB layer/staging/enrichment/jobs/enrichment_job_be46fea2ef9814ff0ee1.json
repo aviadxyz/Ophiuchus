@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "job": {
+    "job_id": "enrichment_job_be46fea2ef9814ff0ee1",
+    "identity": {
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_content_hash": "6fdfcf43054bd607b67ca1115d93c749635fa91828bcb82d02ff3b411ea3cd15",
+      "input_content_hash": "a3b99c5ec725bc83c1c5fa557d90fbd9966625859810cae50b50391611182d7e",
+      "chunk_id": "chunk_e7307f937586c7103583",
+      "section": null,
+      "targets": [
+        {
+          "entity_id": "treatments_5b57e3d36812e0e991e5",
+          "canonical_name": "simulator training",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        }
+      ],
+      "model": "qwen3:4b-instruct",
+      "settings": {
+        "temperature": 0.0,
+        "num_ctx": 8192,
+        "num_predict": 2048,
+        "seed": 0
+      },
+      "output_limit": 1024,
+      "prompt_version": "1",
+      "schema_version": "1",
+      "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+      "schema_hash": "6bc519896fd6a39fef496ab7a57fbc6c95870f65bb5c2f4488a1195ad2a777de"
+    },
+    "source_id": "source_32415f5f7520d38b2e83",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+    "entity_type": "treatments",
+    "targets": [
+      {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "canonical_name": "simulator training",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "chunk": {
+      "source_id": "source_32415f5f7520d38b2e83",
+      "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+      "chunk_id": "chunk_e7307f937586c7103583",
+      "page_number": null,
+      "section": null,
+      "text_location": "section None; characters 1354:1978",
+      "text": "Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More",
+      "original_text": "Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More"
+    },
+    "original_page_text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More",
+    "priority": [
+      0,
+      false,
+      2,
+      "source_32415f5f7520d38b2e83",
+      "section None; characters 1354:1978",
+      0
+    ]
+  },
+  "original_model_output": "{\"additions\": []}",
+  "candidate_ids": [],
+  "rejected": [],
+  "proposed": 0,
+  "completed_at": "2026-11-14T17:40:38.176762+00:00"
+}

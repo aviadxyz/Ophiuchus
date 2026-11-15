@@ -1,0 +1,400 @@
+{
+  "source_id": "source_cf2e7b26631f3a802e27",
+  "chunk": {
+    "source_id": "source_cf2e7b26631f3a802e27",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+    "chunk_id": "chunk_01681a5c7f595f792b87",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1591",
+    "text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. ",
+    "original_text": "HFBP Risk of Inadequate Teamwork Expedition 68 crew members gather for a snack inside the International Space Station’s Harmony module. From left are Commander Sergey Prokopyev and Flight Engineer Anna Kikina, both from Roscosmos, NASA Flight Engineer Frank Rubio, and Roscosmos Flight Engineer Dmitri Petelin. Team dynamics and cohesion is vital to mission success. Credit: Roscosmos What are the top risks? Selecting a team that will work well together is always a top priority, but deep space missions to Mars will present additional challenges. Examples include communication delays, increased isolation, and numerous resource constraints, since resupply missions will not be possible. Astronauts on Red Planet missions will also live in a space much smaller than the International Space Station, highlighting the need for crews to work through any conflicts. What can be done about it? NASA astronauts practice team-building skills and exercises before their mission to prepare for potential tensions and problem solving during the mission. They also receive medical support during the mission, though communication delays will make some of that care more challenging on a Mars mission. Did you know? NASA scientists use Earth-based facilities to study how effectively people can live and work together in an environment similar to what astronauts will experience on a Mars mission. Though these simulations do not completely replicate the spaceflight experience—crews are not weightless, for example— they provide vital lessons that will shape plans and protocols for future missions. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "communication delays",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate teamwork",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints"
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "treatments",
+        "canonical_name": "team-building exercises",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "communication delays, increased isolation, and numerous resource constraints",
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate teamwork -> associated_with -> communication delays."
+      },
+      {
+        "subject": "e2",
+        "predicate": "countermeasure_for",
+        "object": "e3",
+        "claim_text": "NASA astronauts practice team-building skills and exercises before their mission",
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate teamwork -> countermeasure_for -> team-building exercises."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_01681a5c7f595f792b87",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_01681a5c7f595f792b87",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_5a0a49a5c7894198394e",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_01681a5c7f595f792b87",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_01681a5c7f595f792b87",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "communication delays, increased isolation, and numerous resource constraints",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_5a0a49a5c7894198394e",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_01681a5c7f595f792b87",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1591",
+        "evidence_text": "NASA astronauts practice team-building skills and exercises before their mission",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_041eba0af8b0e98dec65",
+        "canonical_name": "communication delays",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_c94672be20cef60fa13e",
+        "subject_entity_id": "risk_factors_041eba0af8b0e98dec65",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"communication delays\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"communication delays, increased isolation, and numerous resource constraints\"}",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_ba1ba298e40d05e5a54b",
+        "subject_entity_id": "conditions_14c5f743561cc66e4c7e",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"inadequate teamwork\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"communication delays, increased isolation, and numerous resource constraints\"}",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_2018720b217df60bb858",
+        "subject_entity_id": "treatments_5e24dc0bb5823754c367",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"treatments\",\"canonical_name\":\"team-building exercises\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA astronauts practice team-building skills and exercises before their mission\"}",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_5a0a49a5c7894198394e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_9d58c31ab8baceae849e",
+        "subject_entity_id": "risk_factors_041eba0af8b0e98dec65",
+        "object_entity_id": "conditions_14c5f743561cc66e4c7e",
+        "predicate": "associated_with",
+        "claim_text": "communication delays, increased isolation, and numerous resource constraints",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_ab214479459e82a68fa6",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate teamwork -> associated_with -> communication delays.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_c0969b040406af1621a6",
+        "subject_entity_id": "conditions_14c5f743561cc66e4c7e",
+        "object_entity_id": "treatments_5e24dc0bb5823754c367",
+        "predicate": "countermeasure_for",
+        "claim_text": "NASA astronauts practice team-building skills and exercises before their mission",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_5a0a49a5c7894198394e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate teamwork -> countermeasure_for -> team-building exercises.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_14c5f743561cc66e4c7e",
+        "canonical_name": "inadequate teamwork",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_5e24dc0bb5823754c367",
+        "canonical_name": "team-building exercises",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_0a482216574c5798613e",
+        "source_entity_id": "risk_factors_041eba0af8b0e98dec65",
+        "target_entity_id": "conditions_14c5f743561cc66e4c7e",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_9d58c31ab8baceae849e",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_b3dc743027083b17f67c",
+        "source_entity_id": "conditions_14c5f743561cc66e4c7e",
+        "target_entity_id": "treatments_5e24dc0bb5823754c367",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_c0969b040406af1621a6",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Team dynamics and cohesion is vital to mission success.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "inadequate teamwork"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "mission failure"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "101"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Team dynamics and cohesion is vital to mission success.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate teamwork\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"mission failure\"\n      }\n    },\n    {\n      \"evidence_text\": \"communication delays, increased isolation, and numerous resource constraints\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"communication delays\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate teamwork\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA astronauts practice team-building skills and exercises before their mission\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"team-building exercises\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate teamwork\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "4713062de3300c33915c65a6b05fd4d34cfbbf4ea1c9bc08fdfadcd5b0bc5a63",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

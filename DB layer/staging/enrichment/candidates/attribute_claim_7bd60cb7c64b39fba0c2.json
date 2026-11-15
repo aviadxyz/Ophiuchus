@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_b6ce10da5f1519af93af",
+  "field": "description",
+  "value": "simulate Earth’s light-dark cycle to help astronauts sleep better",
+  "evidence_text": "To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+  "candidate_id": "attribute_claim_7bd60cb7c64b39fba0c2",
+  "evidence_id": "evidence_e54910c0e1241004127d",
+  "job_id": "enrichment_job_b95482e5de79ae4c1827",
+  "source_id": "source_272ff97648e63fa98488",
+  "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_272ff97648e63fa98488",
+    "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+    "chunk_id": "chunk_fc0e62f031682e6d151e",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1319",
+    "text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. ",
+    "original_text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:38:24.750703+00:00"
+}
