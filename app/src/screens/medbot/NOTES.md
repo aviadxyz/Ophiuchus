@@ -55,3 +55,8 @@ The "This is one for the flight surgeon" card sits directly under the conversati
 - `OutOfBalanceCard.tsx`: the compact "Out of balance today" card with a Hide/Show toggle; "Nothing is off target today." when the list is empty. It sits directly above the conversation column, so it is above the suggested questions without shrinking the thread.
 - New suggested question "I don't feel well. What should I check?" with a scripted offline reply that points to the card, the flight surgeon and Emergency.
 - Overview's "I don't feel well" button calls `askMedbot('overview')`.
+
+## Research sources (prompt 29)
+- `sources.ts`: `readSources` reads `sources` from the chat response; a missing or malformed field is an empty list. `ChatSource` is declared here because `@/data` does not export it yet.
+- `ResearchSources.tsx`: a "From the team's research" card right under the conversation box (like the forward card, so the thread keeps its height), for the latest reply only. Each quote in quotation marks with a `SourceLine` linking to its page in a new tab; two shown, "Show all" opens the rest; the line "Taken automatically from NASA and Canadian Space Agency pages. Not reviewed by a clinician." Nothing for scripted, offline or urgent replies.
+- Tests: `ResearchSources.test.tsx`. Checked at 360 px in the browser with a stubbed response.

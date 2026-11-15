@@ -36,6 +36,8 @@ import { buildChatContext, formatDelay } from './context'
 import { medicalRecordFor } from './medicalRecord'
 import { getOpeningLine, getScriptedReply, UNWELL_QUESTION } from './scriptedReplies'
 import { OutOfBalanceCard } from './OutOfBalanceCard'
+import { ResearchSources } from './ResearchSources'
+import { readSources, type ChatSource } from './sources'
 
 function formatTime(date: Date): string {
   return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -125,6 +127,11 @@ function MedbotConversation() {
   const [forwardSummary, setForwardSummary] = useState('')
   const [latestQuestion, setLatestQuestion] = useState('')
   const [hasForwardedLatest, setHasForwardedLatest] = useState(false)
+  // The research passages behind the latest reply, keyed by that reply's id. Empty for scripted replies.
+  const [latestSources, setLatestSources] = useState<{ replyId: string; sources: ChatSource[] }>({
+    replyId: '',
+    sources: [],
+  })
 
   // Connection status pill: ONLINE if config.chatUrl is set and last call did not fail; otherwise OFFLINE
   const isOnline = Boolean(config.chatUrl) && lastCallOk !== false
@@ -198,6 +205,7 @@ function MedbotConversation() {
     setDraft('')
     setLatestQuestion(text)
     setHasForwardedLatest(false)
+    setLatestSources({ replyId: '', sources: [] })
 
     // Check urgency directly on input text
     const urgentDirect = isUrgentText(text)
@@ -316,6 +324,7 @@ function MedbotConversation() {
         reply?: string
         urgent?: boolean | string
         forward?: boolean | string
+        sources?: unknown
       }
 
       setLastCallOk(true)
@@ -331,10 +340,13 @@ function MedbotConversation() {
           data.forward === 'yes' ||
           replyStr.includes('This is one for the flight surgeon.'))
 
+      const replyId = `assistant-${nextId.current++}`
+      // An urgent reply shows no sources: nothing competes with the Emergency card.
+      setLatestSources({ replyId, sources: isUrgent ? [] : readSources(data.sources) })
       setMessages((prev) => [
         ...prev,
         {
-          id: `assistant-${nextId.current++}`,
+          id: replyId,
           side: 'them',
           text: replyStr,
           time: formatTime(new Date()),
@@ -378,6 +390,7 @@ function MedbotConversation() {
     setForwardSummary('')
     setLatestQuestion('')
     setHasForwardedLatest(false)
+    setLatestSources({ replyId: '', sources: [] })
   }
 
   // Forwarding alert submission
@@ -506,6 +519,9 @@ function MedbotConversation() {
           Demo assistant. Not medical advice.
         </p>
       </section>
+
+      {/* Research passages behind the latest reply, under the conversation so the thread keeps its height */}
+      <ResearchSources key={latestSources.replyId} sources={latestSources.sources} />
 
       {/* Flight surgeon forwarding card, under the conversation so the thread keeps its height */}
       {!urgentDetected && showForwardCard && (

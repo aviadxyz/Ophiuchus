@@ -1,5 +1,7 @@
 import { MEDBOT_SYSTEM_PROMPT } from './systemPrompt.ts'
-import type { ChatResponseBody, Env } from './types.ts'
+import type { ChatResponseBody, ChatSource, Env } from './types.ts'
+import { findPassages } from './research/search.ts'
+import type { ResearchPassage } from './research/research.generated.ts'
 import { validateChatRequest } from './validation.ts'
 
 export const DEFAULT_TEXT_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast'
@@ -65,7 +67,7 @@ export function capWatchReply(reply: string): string {
  * Returns a friendly scripted fallback reply when model is unreachable or timed out.
  * Derived from Section 4 of prompts/companion/medbot-system-prompt.md.
  */
-export function getScriptedFallback(userMessage: string): string {
+export function getScriptedFallback(userMessage: string, hasResearch = false): string {
   const lower = userMessage.toLowerCase()
   if (
     lower.includes("don't feel well") ||
@@ -76,7 +78,25 @@ export function getScriptedFallback(userMessage: string): string {
   ) {
     return "Sorry to hear that. If it's serious, hold the Emergency button now. If not, sit down, have some water, and tell a crewmate. I'm offline for a moment, so I can't say more yet."
   }
+  if (hasResearch) {
+    return "I can't reach my full brain right now, but the team's research has something on this. The passages are below. Use Emergency if it's urgent."
+  }
   return "I can't reach my full brain right now, so I can only answer the basics. Try one of the quick questions, and use Emergency if it's urgent."
+}
+
+/** The block added to the user turn, after the context and before the question. */
+export function researchBlock(passages: readonly ResearchPassage[]): string {
+  if (passages.length === 0) return ''
+  const lines = passages.map((passage, index) => `${index + 1}. "${passage.quote}" (${passage.sourceTitle})`)
+  return ['[research]', ...lines, '[end research]'].join('\n')
+}
+
+function toChatSources(passages: readonly ResearchPassage[]): ChatSource[] {
+  return passages.map((passage) => ({
+    title: passage.sourceTitle,
+    url: passage.sourceUrl,
+    quote: passage.quote,
+  }))
 }
 
 function extractReply(rawResult: unknown): string {
@@ -113,8 +133,11 @@ export async function handleChat(request: Request, env: Env): Promise<Response> 
     })
   }
 
-  const { message, context, replyMode } = validation.request
+  const { message, context, replyMode, screenLabel } = validation.request
   const model = env.CHAT_MODEL || DEFAULT_TEXT_MODEL
+  // The watch reply is two short sentences: no research block and no sources there.
+  const passages = replyMode === 'watch' ? [] : findPassages(message, screenLabel ?? '')
+  const hasResearch = passages.length > 0
 
   let replyText: string
 
@@ -124,7 +147,8 @@ export async function handleChat(request: Request, env: Env): Promise<Response> 
         setTimeout(() => reject(new Error('Model timeout after 8s')), TIMEOUT_MS),
       )
 
-      const userTurn = `${context}\n\n${message}`
+      const block = researchBlock(passages)
+      const userTurn = block ? `${context}\n\n${block}\n\n${message}` : `${context}\n\n${message}`
       const modelPromise = env.AI.run(model, {
         messages: [
           { role: 'system', content: MEDBOT_SYSTEM_PROMPT },
@@ -137,15 +161,15 @@ export async function handleChat(request: Request, env: Env): Promise<Response> 
       replyText = extractReply(rawResult).trim()
     } catch {
       // Model error or 8-second timeout: fall back gracefully
-      replyText = getScriptedFallback(message)
+      replyText = getScriptedFallback(message, hasResearch)
     }
   } else {
     // No Workers AI binding configured (e.g. mock / offline test)
-    replyText = getScriptedFallback(message)
+    replyText = getScriptedFallback(message, hasResearch)
   }
 
   if (!replyText) {
-    replyText = getScriptedFallback(message)
+    replyText = getScriptedFallback(message, hasResearch)
   }
 
   if (replyMode === 'watch') {
@@ -159,6 +183,8 @@ export async function handleChat(request: Request, env: Env): Promise<Response> 
     reply: replyText,
     urgent,
     forward,
+    // An urgent reply carries no sources: nothing competes with the Emergency instruction.
+    sources: urgent ? [] : toChatSources(passages),
   }
 
   return new Response(JSON.stringify(responseBody), {

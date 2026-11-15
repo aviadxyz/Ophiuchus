@@ -52,10 +52,20 @@ export interface ChatRequestBody {
   replyMode?: 'standard' | 'watch'
 }
 
+/** One passage from the team's research database, as shown under a Med bot reply. */
+export interface ChatSource {
+  title: string
+  url: string
+  /** Word for word from the research database. */
+  quote: string
+}
+
 export interface ChatResponseBody {
   reply: string
   urgent: boolean
   forward: boolean
+  /** The passages given to the model. Empty when nothing matched, in watch mode, and when urgent. */
+  sources: ChatSource[]
 }
 
 export type RelayType =

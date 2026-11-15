@@ -15,6 +15,7 @@ Answers crew medical and health questions without exposing model keys to the bro
 - **Limits**: Maximum 1,000 characters for message text; 4,000 characters for context.
 - **Timeout**: 8 seconds on model calls; falls back gracefully to friendly offline replies on timeout or network error.
 - **Privacy**: Chat messages, context, and responses are **never** stored on the server.
+- **Research**: every standard question is matched against the team's research (`research/`, see 1.1.1). Matching passages go to the model in a `[research]` block and come back as `sources`.
 
 #### Request Shape
 ```json
@@ -32,12 +33,20 @@ Answers crew medical and health questions without exposing model keys to the bro
 {
   "reply": "You're at 1.2 litres toward your 2.5 litre target for today. Drinking another bottle this afternoon will keep you on track.",
   "urgent": false,
-  "forward": false
+  "forward": false,
+  "sources": []
 }
 ```
 
 - `urgent`: `true` when the reply directs the user to the Emergency screen or button; `false` otherwise.
 - `forward`: `true` when the reply ends with the exact forwarding sentence `"This is one for the flight surgeon."`, and **never** `true` when `urgent` is `true`.
+- `sources`: list of `{ "title", "url", "quote" }` (`ChatSource`), the passages from the team's research that were given to the model, best first. Empty when nothing matched, always empty in `watch` mode, and empty when `urgent` is `true`. A client that ignores it works as before.
+
+#### 1.1.1. The research the Med bot reads
+- `tools/export-research.mjs` reads `DB layer/DB/draft/*.csv` and writes `research/research.generated.ts`. It runs as `prebuild`, so every build (including Cloudflare's on each push to `main`) takes the research as it is on GitHub. Without the `DB layer` folder it keeps the committed file and still succeeds. Re-run by hand: `node worker/tools/export-research.mjs` from `app`.
+- Only quotes whose evidence is `exact_match` and whose source address starts with `https://` are kept. `protocols/` and `inventory/` are never read, and no dosage, frequency or duration column is copied.
+- `research/search.ts` `findPassages(question, screenLabel)`: keyword scoring, no model, no network. At most 4 passages, 2 per source, 1,400 characters of quotes. A question with no real match gets none.
+- All of it is draft research: extracted automatically from NASA and Canadian Space Agency pages, not reviewed by a clinician. The Med bot screen says so under the passages.
 
 ---
 
