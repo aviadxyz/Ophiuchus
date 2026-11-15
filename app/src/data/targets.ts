@@ -89,6 +89,25 @@ function fieldsFor(
       value: 6,
       unit: 'sessions',
     },
+    // Station environment (prompt 25). Gravity has no target: the mission sets it.
+    temperatureC: { label: 'Cabin temperature', kind: 'range', value: 18, upper: 27, unit: '°C' },
+    humidityPct: { label: 'Humidity', kind: 'range', value: 25, upper: 75, unit: '%' },
+    oxygenPct: { label: 'Oxygen', kind: 'range', value: 20, upper: 22, unit: '%' },
+    co2MmHg: { label: 'Carbon dioxide', kind: 'max', value: 3, unit: 'mmHg' },
+    noiseDb: { label: 'Noise', kind: 'max', value: 85, unit: 'dBA' },
+    radiationUSvPerHour: { label: 'Radiation in the cabin', kind: 'max', value: 54, unit: 'µSv/h' },
+    mosfetOutsideUGyPerHour: {
+      label: 'Radiation outside the hull',
+      kind: 'max',
+      value: 60,
+      unit: 'µGy/h',
+    },
+    mosfetInsideUGyPerHour: {
+      label: 'Radiation at the inside dosimeter',
+      kind: 'max',
+      value: 20,
+      unit: 'µGy/h',
+    },
   }
 }
 
@@ -175,6 +194,34 @@ const TARGET_SOURCES: Record<TargetId, TargetSource> = {
     sourceUrl: 'https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/',
     verified: true,
   },
+  temperatureC: {
+    sourceText: 'NASA-STD-3001 Technical Brief, ECLSS (OCHMO-TB-002 Rev B), crew health limit [V2 6012]',
+    sourceUrl: 'https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-002-eclss.pdf',
+    verified: true,
+  },
+  humidityPct: {
+    sourceText: 'NASA-STD-3001 Technical Brief, ECLSS (OCHMO-TB-002 Rev B), crew health limit [V2 6012]',
+    sourceUrl: 'https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-002-eclss.pdf',
+    verified: true,
+  },
+  oxygenPct: { sourceText: UNVERIFIED_SOURCE, sourceUrl: '', verified: false },
+  co2MmHg: {
+    sourceText: 'NASA-STD-3001 Technical Brief, Carbon Dioxide (OCHMO-TB-004 Rev D), one-hour limit [V2 6004]',
+    sourceUrl: 'https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-004-carbon-dioxide.pdf',
+    verified: true,
+  },
+  noiseDb: {
+    sourceText: 'NASA-STD-3001 Technical Brief, Acoustics (OCHMO-TB-035 Rev B), hazardous noise limit [V2 6077]',
+    sourceUrl: 'https://www.nasa.gov/wp-content/uploads/2023/07/acoustics-technical-brief-ochmo.pdf',
+    verified: true,
+  },
+  radiationUSvPerHour: {
+    sourceText: 'NASA-STD-3001 Technical Brief, Radiation Protection (OCHMO-TB-020 Rev G), design limit of 1.3 mSv a day in free space [V1 4033]',
+    sourceUrl: 'https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-020-radiation-protection.pdf',
+    verified: true,
+  },
+  mosfetOutsideUGyPerHour: { sourceText: UNVERIFIED_SOURCE, sourceUrl: '', verified: false },
+  mosfetInsideUGyPerHour: { sourceText: UNVERIFIED_SOURCE, sourceUrl: '', verified: false },
 }
 
 /** Every target for a profile. Verified targets carry their citation; unsourced targets remain unverified. */
