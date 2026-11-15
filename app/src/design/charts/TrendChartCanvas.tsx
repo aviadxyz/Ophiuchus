@@ -36,7 +36,7 @@ export default function TrendChartCanvas({
   )
   const muted = tokenColor('--color-text-muted')
   const border = tokenColor('--color-border')
-  const axis = { stroke: border, tick: { fill: muted, fontSize: 11 }, tickLine: false }
+  const axis = { stroke: border, tick: { fill: muted, fontSize: 12 }, tickLine: false }
   const tooltip = (
     <Tooltip
       cursor={{ fill: 'transparent', stroke: border }}
