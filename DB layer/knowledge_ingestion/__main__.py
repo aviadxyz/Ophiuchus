@@ -30,6 +30,7 @@ def main():
     p.add_argument('--risk-id')
     p.add_argument('--source-id')
     p.add_argument('--hrr-only',action='store_true')
+    p.add_argument('--focus',help='Additive local extraction: monitoring,microbiome (existing CSV rows are preserved)')
     for p in (p,commands.choices['run']):
         p.add_argument('--provider',choices=['ollama','gemini'])
         mode=p.add_mutually_exclusive_group()
@@ -57,7 +58,7 @@ def main():
     if getattr(args,'max_requests',None) is not None and args.max_requests<1:
         parser.error('--max-requests must be positive')
     failed=False
-    if args.command in ('extract','run') and args.relations_first is None:
+    if args.command in ('extract','run') and args.relations_first is None and not getattr(args,'focus',None):
         selected_mode=os.getenv('EXTRACTION_MODE','relations_first').strip().lower()
         if selected_mode not in ('relations_first','generic'):
             parser.error('EXTRACTION_MODE must be relations_first or generic')
@@ -65,6 +66,15 @@ def main():
         logging.info('Extraction mode: %s (use --generic for legacy extraction)',selected_mode)
     if getattr(args,'provider',None):
         os.environ['LLM_PROVIDER']=args.provider
+    if args.command=='extract' and args.focus:
+        if args.provider not in (None,'ollama'):
+            parser.error('Focused extraction supports the existing local Ollama provider only')
+        if args.risk_id:
+            parser.error('Use --source-id for a focused one-document pilot')
+        from knowledge_ingestion.focused.runner import extract_focused
+        result=extract_focused(root,focus=args.focus,max_chunks=args.max_chunks,source_id=args.source_id,hrr_only=args.hrr_only)
+        print(json.dumps({key:result[key] for key in ('status','eligible_jobs','processed','resumed','new_rows','errors')},indent=2))
+        return 1 if result['status'] in ('partial_failure','no_eligible_sources','failed') else 0
     if args.command=='enrich':
         from knowledge_ingestion.enrichment import enrich
         result=enrich(root,max_requests=None if args.all_jobs else (args.max_requests or 10),entity_id=args.entity_id,entity_type=args.entity_type,source_id=args.source_id)

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "1be6cc5c5fc1604c2c720abc1c51132517cc38a29dba135a4b2d1af2e61fd5dd"
+  },
+  "content": "{\"records\": [{\"category\": \"environmental_exposure\", \"evidence_text\": \"Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury.\", \"indicator\": \"microgravity\", \"related_kind\": \"conditions\", \"related_name\": \"weakened bones\", \"relationship\": \"investigated_in_relation_to\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"evidence_text\": \"Living in microgravity can weaken the bones, muscles, and cardiopulmonary systems of astronauts, making it difficult for them to carry out critical mission tasks while also increasing the risk of injury.\",\n      \"indicator\": \"microgravity\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"weakened bones\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"details\": null\n    }\n  ]\n}"
+}

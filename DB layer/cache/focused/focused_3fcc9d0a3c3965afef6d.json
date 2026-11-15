@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"the community of microbes on astronauts’ skin and in their guts changes\",\n      \"microbiome_concept\": \"community of microbes on astronauts’ skin and in their guts\",\n      \"scope\": \"animal\",\n      \"related_name\": null,\n      \"relationship\": null,\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    },\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk.\",\n      \"microbiome_concept\": \"Some microbes\",\n      \"scope\": \"environmental\",\n      \"related_name\": \"disease risk\",\n      \"relationship\": \"associated_with\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    },\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function.\",\n      \"microbiome_concept\": \"microbiome changes\",\n      \"scope\": \"human\",\n      \"related_name\": \"risk\",\n      \"relationship\": \"associated_with\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "ea1b2b83aab04ef559db344d0407ed9764682fb68a207d212a5cfec47d428b73"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.\",\n      \"indicator\": \"bone density\",\n      \"limitations\": null,\n      \"measurement_method\": \"quantitative computed tomography\",\n      \"observed_change\": \"weaker, more brittle bones\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"weaker, more brittle bones\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"study_environment\": \"microgravity\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null,\n      \"unit\": null\n    },\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"muscles usually activated by simply standing on Earth start to atrophy because they no longer need to work as hard.\",\n      \"indicator\": \"muscle size\",\n      \"limitations\": null,\n      \"measurement_method\": \"magnetic resonance imaging\",\n      \"observed_change\": \"atrophy\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"atrophy\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"study_environment\": \"microgravity\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null,\n      \"unit\": null\n    }\n  ]\n}"
+}

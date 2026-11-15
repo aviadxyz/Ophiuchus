@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "03a9fbaef3bb53a8391ce606dc762616259dd5deed00aa22f24db22810767ff9"
+  },
+  "content": "{\"records\": [{\"category\": \"environmental_exposure\", \"evidence_text\": \"Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble.\", \"indicator\": \"space radiation exposure\", \"related_kind\": \"risk_factors\", \"related_name\": \"missions to the Moon and Mars\", \"relationship\": \"investigated_in_relation_to\", \"population_text\": \"missions to the Moon and Mars\", \"study_schedule\": null, \"unit\": null}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"evidence_text\": \"Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble.\",\n      \"indicator\": \"space radiation exposure\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"missions to the Moon and Mars\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"details\": {\n        \"population_text\": \"missions to the Moon and Mars\",\n        \"study_schedule\": null,\n        \"unit\": null\n      }\n    }\n  ]\n}"
+}

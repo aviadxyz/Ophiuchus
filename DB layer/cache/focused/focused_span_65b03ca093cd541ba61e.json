@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "model": "qwen3:4b-instruct",
+    "prompt_hash": "e7ea383934a58675330ade62fbd86d8ed09a1c1cdde0455476613dbf17e744e0",
+    "curation_version": "source-span-proposals-v1",
+    "focus": "microbiome",
+    "origin": "exact_span_proposal_verified_by_local_model"
+  },
+  "raw_content": "{\n  \"supported\": true\n}"
+}

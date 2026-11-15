@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "fc9963ee80ef9984eba82b26f2266cf55560dab13cd255fe977315517dbdcfdf"
+  },
+  "content": "{\"records\": [{\"category\": \"microbiome\", \"evidence_text\": \"Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.\", \"microbiome_concept\": \"microbiome\", \"related_kind\": \"conditions\", \"related_name\": \"beneficial immune, microbiome, and nutritional outcomes\", \"relationship\": \"associated_with\", \"scope\": \"human\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.\",\n      \"microbiome_concept\": \"microbiome\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"beneficial immune, microbiome, and nutritional outcomes\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"details\": null\n    }\n  ]\n}"
+}

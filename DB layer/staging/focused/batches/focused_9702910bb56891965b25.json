@@ -1,0 +1,70 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_cc8ded5378d84ba08bc0",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1000",
+    "text": "Human Spaceflight Hazards Risks of Human Spaceflight NASA’s Human Research Program (HRP) seeks to understand specific risks associated with the hazards of human spaceflight. Learn more about these risks below. About Human Spaceflight Risks NASA’s Human Research Program has identified several specific risks to human health associated with five hazards of spaceflight. The effects of these risks vary depending on whether humans are traveling to low Earth orbit, the Moon, or Mars. Learn more about each identified risk. Risks Involving Human Physiology Risks Involving Behavioral Performance Risks Involving Space Radiation For more background, explore the five hazards of human spaceflight . Risks Involving Human Physiology Risk of Altered Immune System Responses The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms. Ongoing work seeks to further understand changes in the immune system to better protect astronaut health. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "8a5b0e70569682bb90e99dfc4e1b9d41a8149d53a164b5953e843d47cb8a67e0"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "community",
+        "evidence_text": "The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms.",
+        "microbiome_concept": "viruses",
+        "related_kind": "conditions",
+        "related_name": "rashes",
+        "relationship": "associated_with",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "community",
+          "evidence_text": "The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms.",
+          "microbiome_concept": "viruses",
+          "related_kind": "conditions",
+          "related_name": "rashes",
+          "relationship": "associated_with",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

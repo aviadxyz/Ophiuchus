@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "content": "{\"records\": [{\"category\": \"environmental_exposure\", \"evidence_text\": \"Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa.\", \"indicator\": \"shelf stability of foods\", \"related_kind\": \"risk_factors\", \"related_name\": \"food system requirements of the space station\", \"relationship\": \"investigated_in_relation_to\", \"population_text\": \"participating astronauts\", \"unit\": null}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"evidence_text\": \"Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa.\",\n      \"indicator\": \"shelf stability of foods\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"food system requirements of the space station\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"details\": {\n        \"population_text\": \"participating astronauts\",\n        \"unit\": null\n      }\n    }\n  ]\n}"
+}

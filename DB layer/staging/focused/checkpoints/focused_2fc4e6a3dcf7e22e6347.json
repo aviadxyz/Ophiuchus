@@ -1,0 +1,47 @@
+{
+  "job_id": "focused_2fc4e6a3dcf7e22e6347",
+  "focus": "microbiome",
+  "source_id": "source_5af66404068466682af7",
+  "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "d992040c64ac4e54faca9b8437b00a5cd92685b58d38cb2aa111cfe9ac0cd452"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "microbiome_concept_not_explicit",
+      "record": {
+        "category": "community",
+        "evidence_text": "Some astronauts aboard the International Space Station have reported cold sores, rashes, atypical allergies, and infections that can be attributed to immune system alterations.",
+        "microbiome_concept": "cold sores, rashes, atypical allergies, and infections",
+        "related_kind": "conditions",
+        "related_name": "immune system alterations",
+        "relationship": "associated_with",
+        "scope": "human"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

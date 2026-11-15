@@ -1,0 +1,42 @@
+{
+  "source_id": "source_dcd2bf837a04a29770e5",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_7e276935e7f4349c9da0",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2395:2993",
+    "text": "Learn How We're Monitoring Space Radiation Space Radiation Risks NASA has identified several health concerns from space radiation exposure as high research priorities. Discover the Risks of Space Radiation Featured Story NASA Scientists Join White House Cancer Initiative NASA scientists are working with doctors and researchers across the federal government to help cut the nation’s cancer death rate… Read the Story Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "e4833fe91ed0d74b2273a6c29f21f2229fa32423b401db54e8e726f7fcb81522"
+  },
+  "tables": {},
+  "rejected": [],
+  "statistics": {
+    "candidates": 0,
+    "valid_records": 0,
+    "rejected": [],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

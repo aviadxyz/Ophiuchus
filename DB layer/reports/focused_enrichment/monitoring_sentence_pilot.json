@@ -1,0 +1,36 @@
+{
+  "job": {
+    "focus": "monitoring",
+    "source": {
+      "source_id": "source_e79603c096ca70d9c009",
+      "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+      "parent_source_id": "source_e7862784beb09526a71c",
+      "review_status": "pending",
+      "retrieved_at": "2026-11-14T09:58:26.079784+00:00",
+      "title": "Risk of Cardiovascular Adaptations - NASA",
+      "fetch_status": "success",
+      "content_hash": "68ede73bcc1f23bb801ea44f2dc7c3db0f881d12c40407043b70aad231b5e99a",
+      "cache_path": "cache\\source_e79603c096ca70d9c009.json",
+      "duplicate_of": null
+    },
+    "source_id": "source_e79603c096ca70d9c009",
+    "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 482:551",
+    "text": "low blood pressure which elevates the chances of fainting at landing.",
+    "original_page_text": "HHC Risk of Cardiovascular Adaptations NASA astronaut Reid Wiseman training how to use an ultrasound device before flight. In space, the heart and blood vessels can change and this tool can help physicians get a better picture of the heartג€™s structure and function. Credit: NASA What are the top risks? Low-gravity conditions and other spaceflight stressors can alter the heart and blood vessels , potentially leading to blood clots, heart arrythmias, cardiovascular disease, and low blood pressure which elevates the chances of fainting at landing. The risk of developing these conditions will increase with longer-duration missions such as a multi-year trip to Mars, so research focused on understanding and treating these risks is a priority for NASA. What can be done about it? Regular exercise and healthy diets help crews maintain cardiovascular fitness. Lower-body compression garments and drinking lots of fluids prior to landing can help to prevent low blood pressure. For future Mars missions, astronauts will also receive enhanced training to respond to cardiovascular emergencies. Did you know? Low gravity can also physically change the shape of the human heart , making it become more spherical. Formal risk description: Risk of cardiovascular adaptations contributing to adverse mission performance and health outcomes Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Station Science 101: Cardiovascular Research on Station Read More Cardiovascular Health in Microgravity Read More How do Dangerous Blood Clots Form in Space? Read More",
+    "chunk_id": "chunk_1292a937c660a77c4485",
+    "metadata": {
+      "model": "qwen3:4b-instruct",
+      "prompt_version": "5",
+      "prompt_hash": "2cf08937f91ae896e589135131ae7394a5591fbb3d4883bb8148ede4bdcd6466",
+      "scope": "bounded_exact_sentence_pilot"
+    },
+    "job_id": "focused_sentence_3fc19f3ab2fcd13e8fb9"
+  },
+  "raw_content": "{\"records\": []}",
+  "records": [],
+  "rejected": [],
+  "candidates": 0
+}

@@ -217,3 +217,60 @@ python -m knowledge_ingestion.protocol_candidates --root . --apply  # Stage pend
 This offline command uses the explicit selection in `config/protocol_candidates.json`, validates existing relation/claim/evidence/source joins and original source chunks, and copies only documented wording. It does not call an LLM, crawl, approve research or authorize treatment. Generated staging records survive subsequent draft exports. All unrelated draft tables and approved exports are checked for preservation. Existing reviewed overrides are respected.
 
 See `PROTOCOL_CANDIDATES_REPORT.md` and `PROTOCOL_CANDIDATES_REPORT.json` for the nine included practices, 21 excluded relationships, source quotations, pending status and missing fields. These candidates do not bypass the recommendation agent's approved-protocol and governance requirements.
+
+## Append-only monitoring and microbiome extraction
+
+```powershell
+python -B -m knowledge_ingestion extract --provider ollama --focus monitoring,microbiome --resume
+# One cached document / bounded pilot:
+python -B -m knowledge_ingestion extract --provider ollama --focus microbiome --source-id SOURCE_ID --max-chunks 1 --resume
+```
+
+This is a separate targeted mode using the existing local Ollama client/model, cached NASA documents, original page/section references, exact-quote validation and deterministic identity utilities. It extracts no treatments or protocols. HRR evidence reports receive priority when cached; missing reports and inaccessible HRR discovery are explicitly reported. It does not crawl the website or download cited papers automatically.
+
+The model receives a small monitoring or microbiome schema, one record per passage, optional typed details, and no permission to invent medical facts. Optional model thinking is disabled only for this new extraction path. Existing provider methods and other extraction modes retain their prior defaults. Each new entity, research observation and relationship is pending review. Exact quotations establish provenance, not clinical truth or semantic validity. Classification and relationship guards are conservative and may reject useful material; rejections remain in the audit.
+
+Existing CSV bytes, headers, ordering, IDs, review statuses and populated values are preserved. Reused entities are not regenerated or filled in place. New rows append at the end. Journals in `staging/focused/transactions` preserve complete validated post-append payloads and allow interrupted commits to resume without duplicating rows. A conflicting external edit causes a stop for review rather than an overwrite. Run without concurrent CSV writers.
+
+After a focused transaction exists, subsequent **draft** exports switch to additive preservation instead of rebuilding those CSVs. Existing IDs/values/review flags are never updated by that mode. Existing approved-export behavior remains separate, and this task never runs it on the real database. General extraction review that would change existing draft rows must be handled explicitly later; this enrichment does not silently apply such changes. Existing focused staging and caches are not deleted.
+
+The established schemas are unchanged. Where evidence supports risk endpoints, additional `relations/risk_biomarker.csv` and `relations/risk_microbiome.csv` files use the existing scalar relation-column convention; risks are not disguised as conditions. These focused relation schemas are local additions, not a change to external application APIs.
+
+Indicator classification, microbial organism/community category, body site, observed changes, study populations, study environments, measurement devices and study schedules are retained as structured JSON in `evidence/knowledge_claims.csv` (`predicate=described_by`). New biomarker rows can also carry source-supported unit/method/device fields already in their schema. No columns are added to old entity files. A research measurement schedule is never placed in `recommended_frequency`; that column remains empty for new research-derived guidance. Unknown details stay empty/null.
+
+Outputs live exclusively under this folder:
+
+- `reports/focused_enrichment/baseline.json`: original schemas, row counts, IDs, review counts, CSV-byte backups and outside-source hashes.
+- `cache/focused`: versioned normalized and raw local-model responses.
+- `staging/focused/batches`, `checkpoints`, `transactions`: source-linked pending records, resume state and append journals.
+- `reports/focused_enrichment/latest.json` and `runs`: per-run counts, source coverage, rejections and errors.
+- `reports/focused_enrichment/final.json`: cumulative additions, preservation/scope checks, HRR limitations and pending data-quality flags.
+
+No professional approval is granted. Review source excerpts, populations, uncertainty and data-quality flags before using this research for clinical decisions. Unsupported additions from this task are restored and quarantined, with raw output and staging retained for audit. Original database rows are preserved; quarantined batches cannot be replayed by resume or draft export.
+
+For short source passages that broad extraction handles poorly, optional explicitly curated proposals are stored in `config/focused_passages.json`. They contain real exact cached NASA excerpts, not illustrative fixtures. Each proposal is checked by the same local model for source support and then by the same typed/evidence guards. A false/invalid model decision never creates a record. This source-support decision is not medical approval; every appended row remains pending.
+
+```powershell
+# Check proposals and save raw local decisions without changing CSVs:
+python -B -m knowledge_ingestion.focused.passages --root .
+# Append only locally supported, source-validated proposals after the main writer finishes:
+python -B -m knowledge_ingestion.focused.passages --root . --apply
+```
+
+The source and raw proposal decisions are recorded separately in `reports/focused_enrichment/exact_span_proposals.json`. This explicitly distinguishes model-assisted curated extraction from automatic passage discovery. The OS-backed single-writer lock rejects simultaneous focused extraction/export writers; it is automatically released on process exit, while its small lock file is retained.
+
+### Run tests without writes outside DB layer
+
+Set `PYTHONDONTWRITEBYTECODE=1` and keep both the OS temporary directory and pytest base directory here. Use a new run directory each time so previous test artifacts are preserved:
+
+```powershell
+$env:PYTHONDONTWRITEBYTECODE='1'
+$taskTemp=Join-Path (Get-Location) ('staging\focused\test_runs\'+[guid]::NewGuid().ToString())
+New-Item -ItemType Directory -Path $taskTemp -Force | Out-Null
+$env:TEMP=$taskTemp
+$env:TMP=$taskTemp
+.\.venv\Scripts\python.exe -B -m pytest tests -q -p no:cacheprovider --basetemp "$taskTemp\pytest"
+# Optional installed-model test; uses source text only, without appending production rows:
+$env:RUN_FOCUSED_OLLAMA_TEST='1'
+.\.venv\Scripts\python.exe -B -m pytest tests/test_focused_ollama.py -q -p no:cacheprovider --basetemp "$taskTemp\live"
+```

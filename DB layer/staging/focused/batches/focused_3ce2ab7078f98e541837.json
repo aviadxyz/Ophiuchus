@@ -1,0 +1,125 @@
+{
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_8375f5abb67b7b24d75f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1019:2192",
+    "text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones. Simultaneously, muscles usually activated by simply standing on Earth start to atrophy because they no longer need to work as hard. To learn more, NASA turns to researchers like Dr. Ashley Weaver, a biomedical engineer at Wake Forest School of Medicine in Winston-Salem, North Carolina. Weaver and her team study how spaceflight affects the network of bones and muscles in the spinal column. This network provides structural support for vital organs, including the brain, heart, and lungs. “Spinal health is integral to postural control and facilitating the core trunk movements required for all activities on mission,” explained Weaver. “So, it’s crucial that we understand how these muscle changes are influenced by long-duration exposure to microgravity.” Weaver’s team compares detailed scans of astronauts’ spines immediately before and after spaceflight. Techniques such as quantitative computed tomography, or “qCT,” and magnetic resonance imaging, or MRI, allow researchers to pinpoint subtle shifts in bone density and muscle size upon return to Earth. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "ea1b2b83aab04ef559db344d0407ed9764682fb68a207d212a5cfec47d428b73"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+        "indicator": "bone density",
+        "limitations": null,
+        "measurement_method": "quantitative computed tomography",
+        "observed_change": "weaker, more brittle bones",
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "weaker, more brittle bones",
+        "relationship": "investigated_in_relation_to",
+        "study_environment": "microgravity",
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "muscles usually activated by simply standing on Earth start to atrophy because they no longer need to work as hard.",
+        "indicator": "muscle size",
+        "limitations": null,
+        "measurement_method": "magnetic resonance imaging",
+        "observed_change": "atrophy",
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "atrophy",
+        "relationship": "investigated_in_relation_to",
+        "study_environment": "microgravity",
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 2,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "environmental_exposure",
+          "device": null,
+          "evidence_text": "Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+          "indicator": "bone density",
+          "limitations": null,
+          "measurement_method": "quantitative computed tomography",
+          "observed_change": "weaker, more brittle bones",
+          "population_text": "astronauts",
+          "related_kind": "conditions",
+          "related_name": "weaker, more brittle bones",
+          "relationship": "investigated_in_relation_to",
+          "study_environment": "microgravity",
+          "study_population": "unknown",
+          "study_schedule": null,
+          "unit": null
+        }
+      },
+      {
+        "index": 1,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "environmental_exposure",
+          "device": null,
+          "evidence_text": "muscles usually activated by simply standing on Earth start to atrophy because they no longer need to work as hard.",
+          "indicator": "muscle size",
+          "limitations": null,
+          "measurement_method": "magnetic resonance imaging",
+          "observed_change": "atrophy",
+          "population_text": "astronauts",
+          "related_kind": "conditions",
+          "related_name": "atrophy",
+          "relationship": "investigated_in_relation_to",
+          "study_environment": "microgravity",
+          "study_population": "unknown",
+          "study_schedule": null,
+          "unit": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

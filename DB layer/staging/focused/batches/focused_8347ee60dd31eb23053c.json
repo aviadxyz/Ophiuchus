@@ -1,0 +1,70 @@
+{
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_6ee6599e2f46ce758448",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1110",
+    "text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+        "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+        "related_kind": "conditions",
+        "related_name": "disease risk",
+        "relationship": "associated_with",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "community",
+          "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+          "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+          "related_kind": "conditions",
+          "related_name": "disease risk",
+          "relationship": "associated_with",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

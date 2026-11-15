@@ -1,0 +1,46 @@
+{
+  "job_id": "focused_461fd36e67642d0f5480",
+  "focus": "monitoring",
+  "source_id": "source_e7862784beb09526a71c",
+  "source_url": "https://www.nasa.gov/hrp/risks/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "8e32ce8bb75f227ca6d9063479275cd65054194a5e6554872ec7a85e5e728ab5"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels.",
+        "indicator": "low oxygen and high carbon dioxide levels",
+        "related_kind": "risk_factors",
+        "related_name": "decompression sickness",
+        "relationship": "investigated_in_relation_to"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

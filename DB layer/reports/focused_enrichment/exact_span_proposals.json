@@ -1,0 +1,86 @@
+{
+  "curation_version": "source-span-proposals-v1",
+  "model": "qwen3:4b-instruct",
+  "applied": false,
+  "clinical_authorization": false,
+  "records": [
+    {
+      "job_id": "focused_span_af56c4b994ab19f8a709",
+      "focus": "monitoring",
+      "source_id": "source_e79603c096ca70d9c009",
+      "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+      "record": {
+        "related_name": "fainting",
+        "related_kind": "conditions",
+        "relationship": "associated_with",
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "low blood pressure which elevates the chances of fainting at landing.",
+        "indicator": "blood pressure",
+        "category": "physiological",
+        "unit": null,
+        "measurement_method": null,
+        "device": null,
+        "study_schedule": null
+      },
+      "model_source_support": true,
+      "status": "supported_pending_review",
+      "new_rows": {}
+    },
+    {
+      "job_id": "focused_span_501e29dcee500ecf00f6",
+      "focus": "monitoring",
+      "source_id": "source_b4bd76d26d8b64355543",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+      "record": {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "human_astronauts",
+        "population_text": "Astronauts",
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "indicator": "bone density",
+        "category": "physiological",
+        "unit": null,
+        "measurement_method": "bone scans",
+        "device": null,
+        "study_schedule": "before and after spaceflight"
+      },
+      "model_source_support": true,
+      "status": "supported_pending_review",
+      "new_rows": {}
+    },
+    {
+      "job_id": "focused_span_65b03ca093cd541ba61e",
+      "focus": "microbiome",
+      "source_id": "source_e7862784beb09526a71c",
+      "source_url": "https://www.nasa.gov/hrp/risks/",
+      "record": {
+        "related_name": "risk of crew members getting sick",
+        "related_kind": "risk_factors",
+        "relationship": "associated_with",
+        "observed_change": "can change in space",
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "evidence_text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "microbiome_concept": "gut microbiomes",
+        "category": "microbiome",
+        "site": "gut",
+        "scope": "human",
+        "measurement_method": null,
+        "study_schedule": null
+      },
+      "model_source_support": true,
+      "status": "supported_pending_review",
+      "new_rows": {}
+    }
+  ]
+}

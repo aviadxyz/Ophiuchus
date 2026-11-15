@@ -1,0 +1,47 @@
+{
+  "job_id": "focused_86d026ab9543d3e08591",
+  "focus": "microbiome",
+  "source_id": "source_8c833efac46b3f69da00",
+  "source_url": "https://www.nasa.gov/reference/immune-biomarkers/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "4cb3cdc7ec193bef67b3c6711b01a91b04258a882e28e26f4c3e27b2536d3eee"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "one aspect of this study will investigate how dormant viruses reawaken in astronauts’ bodies in space",
+        "microbiome_concept": "dormant viruses",
+        "related_kind": "risk_factors",
+        "related_name": "reawakening of dormant viruses in astronauts' bodies in space",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

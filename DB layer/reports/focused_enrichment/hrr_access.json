@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://humanresearchroadmap.nasa.gov/Evidence/",
+    "status": "blocked_access",
+    "error": "Cannot verify robots.txt: HTTP 500"
+  },
+  {
+    "url": "https://humanresearchroadmap.nasa.gov/Risks/",
+    "status": "blocked_access",
+    "error": "Cannot verify robots.txt: HTTP 500"
+  }
+]

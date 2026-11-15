@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "b1e544f7e267f9f53190a512ff62a8d9776e0bdced569095e2301a978ff87cb2"
+  },
+  "content": "{\"records\": [{\"category\": \"community\", \"evidence_text\": \"skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick\", \"microbiome_concept\": \"skin and gut microbiomes\", \"related_kind\": \"risk_factors\", \"related_name\": \"getting sick\", \"relationship\": \"investigated_in_relation_to\", \"scope\": \"human\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick\",\n      \"microbiome_concept\": \"skin and gut microbiomes\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"getting sick\",\n      \"relationship\": \"investigated_in_relation_to\",\n      \"scope\": \"human\",\n      \"details\": null\n    }\n  ]\n}"
+}

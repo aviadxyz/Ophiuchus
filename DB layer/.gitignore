@@ -3,3 +3,5 @@
 __pycache__/
 .pytest_cache/
 .deps/
+/staging/focused/test_runs/
+/staging/focused/writer.lock

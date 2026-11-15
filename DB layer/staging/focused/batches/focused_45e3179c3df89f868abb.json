@@ -1,0 +1,68 @@
+{
+  "source_id": "source_5c511e99e567d27ec313",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_93952ba6f0aba0ae55cb",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2119:3308",
+    "text": "Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story NASA's Databases for Life Sciences HRP invests in diverse projects that include animal, cell, plant, and human research data that are archived in NASA Life Science Databases. The NASA Life Sciences Portal provides access to human research data from spaceflight and ground-analog studies dating back to 1961. Explore Human Research Data NASA's Open Science Data Repository provides access to human cellular and non-human life science data. Explore Plant and Animal Data The Lifetime Surveillance of Astronaut Health program uses medical monitoring data for astronaut health surveillance. Explore Human Medical Data Living in Space Learn more about what it takes to prepare humans for the next generation of exploration to the Moon, Mars, and beyond. Learn More About Living in Space NASA HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more! "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "d748c76f50ede69c22ff09481a18772520b2f2bf56281bf0cba0e4668b8f9da3"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "missing_exact_source_evidence",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "NASA's HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+        "indicator": "radiation exposure",
+        "related_kind": "risk_factors",
+        "related_name": "radiation exposure",
+        "relationship": "associated_with"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "missing_exact_source_evidence",
+        "record": {
+          "category": "environmental_exposure",
+          "evidence_text": "NASA's HRP-Funded Science Highlights Read highlights of journal articles published by HRP scientists and collaborators spanning Fiscal Year 2024. Explore research on vision correction, radiation exposure, heart health, and more!",
+          "indicator": "radiation exposure",
+          "related_kind": "risk_factors",
+          "related_name": "radiation exposure",
+          "relationship": "associated_with"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

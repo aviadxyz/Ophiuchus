@@ -1,0 +1,52 @@
+{
+  "job_id": "focused_b070ce5e852aca5826e7",
+  "focus": "microbiome",
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "the gut microbiome",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "gut microbiome",
+        "observed_change": null,
+        "population_text": "participating astronauts",
+        "related_kind": "conditions",
+        "related_name": "immune system",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human",
+        "site": null,
+        "study_environment": null,
+        "study_population": "animal_models",
+        "study_schedule": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

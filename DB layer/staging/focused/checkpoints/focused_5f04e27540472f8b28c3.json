@@ -1,0 +1,73 @@
+{
+  "job_id": "focused_5f04e27540472f8b28c3",
+  "focus": "microbiome",
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "e19aa6308459dd9f9d48b1e5e473a39c7cfb555454e200154aa942ff55205eca",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "status": "committed",
+  "candidates": 2,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+        "observed_change": "changes",
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "disease risk",
+        "relationship": "associated_with",
+        "scope": "human",
+        "site": "skin, guts",
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "field_not_verbatim:population_text",
+      "record": {
+        "category": "organism",
+        "evidence_text": "Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk.",
+        "limitations": null,
+        "measurement_method": null,
+        "microbiome_concept": "some microbes",
+        "observed_change": "more virulent",
+        "population_text": "astronauts",
+        "related_kind": "risk_factors",
+        "related_name": "disease risk",
+        "relationship": "associated_with",
+        "scope": "human",
+        "site": null,
+        "study_environment": "spaceflight",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

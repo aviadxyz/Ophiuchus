@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an \\\"enhanced\\\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids.\",\n      \"indicator\": \"nutrients such as flavonoids, lycopene, and omega-3 fatty acids\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"observed_change\": null,\n      \"population_text\": \"Participating astronauts\",\n      \"related_kind\": null,\n      \"related_name\": null,\n      \"relationship\": null,\n      \"study_environment\": \"space station\",\n      \"study_population\": \"animal_models\",\n      \"study_schedule\": null,\n      \"unit\": null\n    },\n    {\n      \"category\": \"physiological\",\n      \"device\": null,\n      \"evidence_text\": \"How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how.\",\n      \"indicator\": \"immune system\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"observed_change\": null,\n      \"population_text\": \"Participating astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"immune system\",\n      \"relationship\": \"associated_with\",\n      \"study_environment\": \"space station\",\n      \"study_population\": \"animal_models\",\n      \"study_schedule\": null,\n      \"unit\": null\n    }\n  ]\n}"
+}

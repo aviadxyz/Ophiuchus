@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "f09549321014b875012848e99f3d088955bbb9306b9cf910c11a4a39c38ced12"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.\",\n      \"indicator\": \"bone density\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"observed_change\": \"1% less dense\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"loss of bone density\",\n      \"relationship\": \"correlates_with\",\n      \"study_environment\": \"low gravity\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null,\n      \"unit\": \"percent density loss per month\"\n    }\n  ]\n}"
+}

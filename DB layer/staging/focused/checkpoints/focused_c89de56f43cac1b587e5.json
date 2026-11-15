@@ -1,0 +1,47 @@
+{
+  "job_id": "focused_c89de56f43cac1b587e5",
+  "focus": "microbiome",
+  "source_id": "source_964a3b024cff8881b0d4",
+  "source_url": "https://www.nasa.gov/hrp/ongoing-hrp-research/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "c663ebbf043fd46004830b2676c309ff028ff999208b4b94565b3deb27824a3f"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "community",
+        "evidence_text": "Monitoring microbial growth on hardware that stores crops in space to develop a better plant production system and ensure crew safety",
+        "microbiome_concept": "microbial growth",
+        "related_kind": "risk_factors",
+        "related_name": "crew safety",
+        "relationship": "investigated_in_relation_to",
+        "scope": "environmental"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

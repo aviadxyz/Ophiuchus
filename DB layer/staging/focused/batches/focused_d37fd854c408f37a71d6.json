@@ -1,0 +1,70 @@
+{
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_c3562819dcfae5b427e2",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2097:3208",
+    "text": "They stick to the enhanced diet aboard the space station, logging their food intake daily. Every week, participants discuss their diet with a member of Douglas’s team, who provides feedback about their dietary status and information to help them continually meet requirements. Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health. Eight individuals in total are needed for the study. Victor Glover , NASA’s SpaceX Crew-1 astronaut and Expedition 64 flight engineer, contributed during his recent stay aboard the space station. Expedition 63 astronaut Chris Cassidy already participated. The results of the investigation will help NASA researchers determine how an enhanced diet affects human physiology, and the way those physiological changes improve human adaptability to spaceflight. Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "fc9963ee80ef9984eba82b26f2266cf55560dab13cd255fe977315517dbdcfdf"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "relationship_semantics_not_supported",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+        "microbiome_concept": "microbiome",
+        "related_kind": "conditions",
+        "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+        "relationship": "associated_with",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "relationship_semantics_not_supported",
+        "record": {
+          "category": "microbiome",
+          "evidence_text": "Results will also provide evidence for dietary interventions that support beneficial immune, microbiome, and nutritional outcomes for crews.",
+          "microbiome_concept": "microbiome",
+          "related_kind": "conditions",
+          "related_name": "beneficial immune, microbiome, and nutritional outcomes",
+          "relationship": "associated_with",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "job_id": "focused_span_501e29dcee500ecf00f6",
+  "focus": "monitoring",
+  "source_id": "source_b4bd76d26d8b64355543",
+  "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+  "metadata": {
+    "model": "qwen3:4b-instruct",
+    "prompt_hash": "e7ea383934a58675330ade62fbd86d8ed09a1c1cdde0455476613dbf17e744e0",
+    "curation_version": "source-span-proposals-v1",
+    "focus": "monitoring",
+    "origin": "exact_span_proposal_verified_by_local_model"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 1,
+  "rejected": [],
+  "new_rows": {
+    "entities/biomarkers": 1,
+    "evidence/knowledge_claims": 1,
+    "monitoring/monitoring_guidance": 1
+  },
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

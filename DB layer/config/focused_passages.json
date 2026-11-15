@@ -1,0 +1,45 @@
+{
+  "version": "source-span-proposals-v1",
+  "passages": [
+    {
+      "source_id": "source_e79603c096ca70d9c009",
+      "focus": "monitoring",
+      "record": {
+        "indicator": "blood pressure",
+        "category": "physiological",
+        "related_name": "fainting",
+        "related_kind": "conditions",
+        "relationship": "associated_with",
+        "evidence_text": "low blood pressure which elevates the chances of fainting at landing."
+      }
+    },
+    {
+      "source_id": "source_b4bd76d26d8b64355543",
+      "focus": "monitoring",
+      "record": {
+        "indicator": "bone density",
+        "category": "physiological",
+        "measurement_method": "bone scans",
+        "study_schedule": "before and after spaceflight",
+        "study_population": "human_astronauts",
+        "population_text": "Astronauts",
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity."
+      }
+    },
+    {
+      "source_id": "source_e7862784beb09526a71c",
+      "focus": "microbiome",
+      "record": {
+        "microbiome_concept": "gut microbiomes",
+        "category": "microbiome",
+        "scope": "human",
+        "site": "gut",
+        "observed_change": "can change in space",
+        "related_name": "risk of crew members getting sick",
+        "related_kind": "risk_factors",
+        "relationship": "associated_with",
+        "evidence_text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick."
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_433ce063521883ddf62d",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2192:3222",
+    "text": "Changes in an astronaut’s qCT scans, for example, reveal the degree to which spaceflight hollows out bones. Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size. By studying muscle and bone together, Weaver hopes to tease out their “cross-talk”— how loss of bone density affects muscles, as well as how changes in muscle function and strength influence bone density. After scrutinizing trends found through these scans, scientists and engineers will brainstorm strategies — such as specific resistive exercises — to counter bone and muscle loss in space. These strategies may prove useful as missions stretch longer, to the Moon and Mars. On Earth, similar strategies could help people with bone diseases such as osteoporosis to strengthen their weakened spines. Nine astronauts who each lived on the space station for more than six months have been scanned. Expedition 64 crew were among the last examined for this study. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "cc2e8b16a414ac46f0ddcb906c66680699a25b2120bb85fe2d1e2c7e72240ef7"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "behavioral",
+        "evidence_text": "Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size.",
+        "indicator": "accumulation of fat tissue in the muscle",
+        "related_kind": "conditions",
+        "related_name": "muscle atrophy",
+        "relationship": "associated_with"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "behavioral",
+          "evidence_text": "Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size.",
+          "indicator": "accumulation of fat tissue in the muscle",
+          "related_kind": "conditions",
+          "related_name": "muscle atrophy",
+          "relationship": "associated_with"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

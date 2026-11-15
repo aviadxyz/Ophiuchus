@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "cc2e8b16a414ac46f0ddcb906c66680699a25b2120bb85fe2d1e2c7e72240ef7"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"Changes in an astronaut’s qCT scans, for example, reveal the degree to which spaceflight hollows out bones.\",\n      \"indicator\": \"degree to which spaceflight hollows out bones\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"observed_change\": \"hollows out bones\",\n      \"population_text\": \"nine astronauts who each lived on the space station for more than six months\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"osteoporosis\",\n      \"relationship\": \"associated_with\",\n      \"study_environment\": \"spaceflight\",\n      \"study_population\": \"animal_models\",\n      \"study_schedule\": null,\n      \"unit\": null\n    },\n    {\n      \"category\": \"environmental_exposure\",\n      \"device\": null,\n      \"evidence_text\": \"Changes in MRI scans reveal how much spaceflight causes muscles to atrophy, seen through the accumulation of fat tissue in the muscle and shifts in muscle size.\",\n      \"indicator\": \"accumulation of fat tissue in the muscle and shifts in muscle size\",\n     \"limitations\": null,\n      \"measurement_method\": null,\n      \"observed_change\": \"atrophy\",\n      \"population_text\": \"nine astronauts who each lived on the space station for more than six months\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"osteoporosis\",\n      \"relationship\": \"associated_with\",\n      \"study_environment\": \"spaceflight\",\n      \"study_population\": \"animal_models\",\n      \"study_schedule\": null,\n      \"unit\": null\n    }\n  ]\n}"
+}

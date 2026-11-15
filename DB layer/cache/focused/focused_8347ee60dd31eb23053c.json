@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "842f1814f55c195977cc221b1cb831712af0d96ebe42dea2ef3e659a2baab8f9"
+  },
+  "content": "{\"records\": [{\"category\": \"community\", \"evidence_text\": \"the community of microbes on astronauts’ skin and in their guts changes\", \"microbiome_concept\": \"community of microbes on astronauts’ skin and in their guts\", \"related_kind\": \"conditions\", \"related_name\": \"disease risk\", \"relationship\": \"associated_with\", \"scope\": \"human\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"the community of microbes on astronauts’ skin and in their guts changes\",\n      \"microbiome_concept\": \"community of microbes on astronauts’ skin and in their guts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"disease risk\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"details\": null\n    }\n  ]\n}"
+}

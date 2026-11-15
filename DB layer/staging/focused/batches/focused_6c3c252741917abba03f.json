@@ -1,0 +1,127 @@
+{
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_3addd78a2ff39e034f99",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1040:1890",
+    "text": "Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Human Body in Space Read More Researchers Put Space Garden Microbes Under the Microscope Read More Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct Read More"
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": [
+      {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+        "microbiome_concept": "microbial changes in space",
+        "category": "microbiome",
+        "site": null,
+        "scope": "environmental",
+        "measurement_method": null,
+        "study_schedule": null
+      }
+    ]
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_9a1f8f9240c8a8c8d700",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_3addd78a2ff39e034f99",
+        "page_number": "",
+        "section": "Article",
+        "text_location": "characters 1040:1890",
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+        "extraction_method": "ollama_focused_microbiome",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/microbiome": [
+      {
+        "microbiome_id": "microbiome_2a90eced90ceb7db6620",
+        "canonical_name": "microbial changes in space",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_eb77d51e588b3ec2dd01",
+        "subject_entity_id": "microbiome_2a90eced90ceb7db6620",
+        "predicate": "described_by",
+        "object_entity_id": "",
+        "claim_text": "{\"category\": \"microbiome\", \"limitations\": null, \"measurement_method\": null, \"microbiome_concept\": \"microbial changes in space\", \"observed_change\": null, \"population_text\": null, \"record_type\": \"microbiome_source_observation\", \"scope\": \"environmental\", \"site\": null, \"study_environment\": null, \"study_population\": \"unknown\", \"study_schedule\": null, \"study_schedule_is_not_a_clinical_recommendation\": true}",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_9a1f8f9240c8a8c8d700",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "incomplete_relationship_endpoints",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "microbiome_concept": "Multi-Drug Resistant Bacteria",
+        "scope": "environmental",
+        "related_name": "ISS",
+        "relationship": "monitored_by",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 2,
+    "valid_records": 1,
+    "rejected": [
+      {
+        "index": 1,
+        "reason": "incomplete_relationship_endpoints",
+        "record": {
+          "category": "microbiome",
+          "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+          "microbiome_concept": "Multi-Drug Resistant Bacteria",
+          "scope": "environmental",
+          "related_name": "ISS",
+          "relationship": "monitored_by",
+          "study_population": "unknown",
+          "study_schedule": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

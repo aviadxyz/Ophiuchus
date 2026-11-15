@@ -1,0 +1,70 @@
+{
+  "source_id": "source_5af66404068466682af7",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_a316974e9876da495d2d",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 838:1631",
+    "text": "To better understand what may trigger reactivation of latent viruses, one area of research involves monitoring blood, saliva, and urine samples. Although astronauts have previously provided biological samples before and after their time in space, to better track changes to the immune system and other bodily systems, a recent focus is providing researchers with inflight biological samples returned to Earth to track immune system changes during spaceflight. Did you know? Some astronauts aboard the International Space Station have reported cold sores, rashes, atypical allergies, and infections that can be attributed to immune system alterations. Formal risk description: Risk of in mission impacts, adverse health events, or long-term health impacts due to altered immune system response "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "d992040c64ac4e54faca9b8437b00a5cd92685b58d38cb2aa111cfe9ac0cd452"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "microbiome_concept_not_explicit",
+      "record": {
+        "category": "community",
+        "evidence_text": "Some astronauts aboard the International Space Station have reported cold sores, rashes, atypical allergies, and infections that can be attributed to immune system alterations.",
+        "microbiome_concept": "cold sores, rashes, atypical allergies, and infections",
+        "related_kind": "conditions",
+        "related_name": "immune system alterations",
+        "relationship": "associated_with",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "microbiome_concept_not_explicit",
+        "record": {
+          "category": "community",
+          "evidence_text": "Some astronauts aboard the International Space Station have reported cold sores, rashes, atypical allergies, and infections that can be attributed to immune system alterations.",
+          "microbiome_concept": "cold sores, rashes, atypical allergies, and infections",
+          "related_kind": "conditions",
+          "related_name": "immune system alterations",
+          "relationship": "associated_with",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

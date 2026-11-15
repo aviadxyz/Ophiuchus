@@ -1,0 +1,126 @@
+{
+  "source_id": "source_e79603c096ca70d9c009",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_96090338a056834788c6",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 480:549",
+    "text": "low blood pressure which elevates the chances of fainting at landing."
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": [
+      {
+        "related_name": "fainting",
+        "related_kind": "conditions",
+        "relationship": "associated_with",
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "low blood pressure which elevates the chances of fainting at landing.",
+        "indicator": "blood pressure",
+        "category": "physiological",
+        "unit": null,
+        "measurement_method": null,
+        "device": null,
+        "study_schedule": null
+      }
+    ]
+  },
+  "metadata": {
+    "model": "qwen3:4b-instruct",
+    "prompt_hash": "e7ea383934a58675330ade62fbd86d8ed09a1c1cdde0455476613dbf17e744e0",
+    "curation_version": "source-span-proposals-v1",
+    "focus": "monitoring",
+    "origin": "exact_span_proposal_verified_by_local_model"
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_b2ebda4fd4c3bc419e9c",
+        "source_id": "source_e79603c096ca70d9c009",
+        "source_url": "https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/",
+        "chunk_id": "chunk_96090338a056834788c6",
+        "page_number": "",
+        "section": "Article",
+        "text_location": "characters 480:549",
+        "evidence_text": "low blood pressure which elevates the chances of fainting at landing.",
+        "extraction_method": "ollama_focused_monitoring",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/biomarkers": [
+      {
+        "biomarker_id": "biomarkers_cc4fb0e63d6f301640a0",
+        "canonical_name": "blood pressure",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_909c97940beff2dc0ad6",
+        "subject_entity_id": "biomarkers_cc4fb0e63d6f301640a0",
+        "predicate": "described_by",
+        "object_entity_id": "",
+        "claim_text": "{\"category\": \"physiological\", \"device\": null, \"indicator\": \"blood pressure\", \"limitations\": null, \"measurement_method\": null, \"observed_change\": null, \"population_text\": null, \"record_type\": \"monitoring_source_observation\", \"study_environment\": null, \"study_population\": \"unknown\", \"study_schedule\": null, \"study_schedule_is_not_a_clinical_recommendation\": true, \"unit\": null}",
+        "source_id": "source_e79603c096ca70d9c009",
+        "evidence_id": "evidence_b2ebda4fd4c3bc419e9c",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_9e6768e7db24257d86c2",
+        "subject_entity_id": "conditions_bde4de35c3f0ef0933ac",
+        "predicate": "associated_with",
+        "object_entity_id": "biomarkers_cc4fb0e63d6f301640a0",
+        "claim_text": "low blood pressure which elevates the chances of fainting at landing.",
+        "source_id": "source_e79603c096ca70d9c009",
+        "evidence_id": "evidence_b2ebda4fd4c3bc419e9c",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_bde4de35c3f0ef0933ac",
+        "canonical_name": "fainting",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_biomarker": [
+      {
+        "relation_id": "relation_67fca7001d8c725423bf",
+        "source_entity_id": "conditions_bde4de35c3f0ef0933ac",
+        "target_entity_id": "biomarkers_cc4fb0e63d6f301640a0",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_9e6768e7db24257d86c2",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 1,
+    "rejected": [],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

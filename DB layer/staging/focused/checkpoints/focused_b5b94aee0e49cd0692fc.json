@@ -1,0 +1,33 @@
+{
+  "job_id": "focused_b5b94aee0e49cd0692fc",
+  "focus": "microbiome",
+  "source_id": "source_13286a5f480896318f1f",
+  "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "0ccf9fd4901d736841f3537b3f1b62a73bd70535c47190828e1be77bd34075cb"
+  },
+  "status": "committed",
+  "candidates": 0,
+  "valid_records": 0,
+  "rejected": [],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

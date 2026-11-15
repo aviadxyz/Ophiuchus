@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "f0e1c1b73df5082d3e91af5deea3bb8c8abdf0f0dd637c6f536ee342b63d6b2d"
+  },
+  "content": "{\"records\": [{\"category\": \"behavioral\", \"evidence_text\": \"HRP Ongoing HRP Research in Space Human Investigations on NASA's Artemis II Mission ARCHeR A study on Artemis II monitored astronauts' well-being, activity, and sleep patterns to learn more about human health and performance in deep space.\", \"indicator\": \"well-being, activity, and sleep patterns\", \"related_kind\": \"conditions\", \"related_name\": \"human health and performance in deep space\", \"relationship\": \"monitored_by\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"behavioral\",\n      \"evidence_text\": \"HRP Ongoing HRP Research in Space Human Investigations on NASA's Artemis II Mission ARCHeR A study on Artemis II monitored astronauts' well-being, activity, and sleep patterns to learn more about human health and performance in deep space.\",\n      \"indicator\": \"well-being, activity, and sleep patterns\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"human health and performance in deep space\",\n      \"relationship\": \"monitored_by\",\n      \"details\": null\n    }\n  ]\n}"
+}

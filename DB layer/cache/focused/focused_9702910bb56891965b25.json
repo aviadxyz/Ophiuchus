@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "8a5b0e70569682bb90e99dfc4e1b9d41a8149d53a164b5953e843d47cb8a67e0"
+  },
+  "content": "{\"records\": [{\"category\": \"community\", \"evidence_text\": \"The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms.\", \"microbiome_concept\": \"viruses\", \"related_kind\": \"conditions\", \"related_name\": \"rashes\", \"relationship\": \"associated_with\", \"scope\": \"human\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"The stresses of spaceflight can awaken inactive viruses inside the bodies of astronauts, leading to rashes and other symptoms.\",\n      \"microbiome_concept\": \"viruses\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"rashes\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"details\": null\n    }\n  ]\n}"
+}

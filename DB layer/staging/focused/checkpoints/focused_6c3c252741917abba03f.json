@@ -1,0 +1,49 @@
+{
+  "job_id": "focused_6c3c252741917abba03f",
+  "focus": "microbiome",
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+  },
+  "status": "committed",
+  "candidates": 2,
+  "valid_records": 1,
+  "rejected": [
+    {
+      "index": 1,
+      "reason": "incomplete_relationship_endpoints",
+      "record": {
+        "category": "microbiome",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "microbiome_concept": "Multi-Drug Resistant Bacteria",
+        "scope": "environmental",
+        "related_name": "ISS",
+        "relationship": "monitored_by",
+        "study_population": "unknown",
+        "study_schedule": null
+      }
+    }
+  ],
+  "new_rows": {
+    "evidence/evidence": 1,
+    "entities/microbiome": 1,
+    "evidence/knowledge_claims": 1
+  },
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

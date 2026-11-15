@@ -1,0 +1,48 @@
+{
+  "job_id": "focused_dcc01553cbc46d01e322",
+  "focus": "monitoring",
+  "source_id": "source_28df3ab5607abcc44fe7",
+  "source_url": "https://www.nasa.gov/missions/station/astronauts-spines-under-scrutiny/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "f09549321014b875012848e99f3d088955bbb9306b9cf910c11a4a39c38ced12"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.",
+        "indicator": "bone density",
+        "related_kind": "conditions",
+        "related_name": "loss of bone density",
+        "relationship": "correlates_with",
+        "population_text": "astronauts",
+        "unit": "1% per month in space"
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

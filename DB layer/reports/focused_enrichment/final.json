@@ -1,0 +1,200 @@
+{
+  "db_root": "C:\\Users\\owner\\Desktop\\Ophiuchus\\DB layer",
+  "checks": {
+    "existing_csv_prefixes_preserved": true,
+    "approved_and_snapshots_unchanged": true,
+    "existing_ids_order_statuses_preserved": true,
+    "no_existing_files_deleted": true,
+    "outside_sources_unchanged": true
+  },
+  "failures": [],
+  "new_csv_rows": {
+    "DB/draft/entities/biomarkers.csv": 2,
+    "DB/draft/entities/conditions.csv": 1,
+    "DB/draft/entities/microbiome.csv": 1,
+    "DB/draft/entities/risk_factors.csv": 1,
+    "DB/draft/evidence/evidence.csv": 1,
+    "DB/draft/evidence/knowledge_claims.csv": 5,
+    "DB/draft/monitoring/monitoring_guidance.csv": 1,
+    "DB/draft/relations/condition_biomarker.csv": 1,
+    "DB/draft/relations/risk_microbiome.csv": 1
+  },
+  "pending_review_rows": {
+    "DB/draft/entities/biomarkers.csv": 2,
+    "DB/draft/entities/conditions.csv": 1,
+    "DB/draft/entities/microbiome.csv": 1,
+    "DB/draft/entities/risk_factors.csv": 1,
+    "DB/draft/evidence/evidence.csv": 1,
+    "DB/draft/evidence/knowledge_claims.csv": 5,
+    "DB/draft/monitoring/monitoring_guidance.csv": 1,
+    "DB/draft/relations/condition_biomarker.csv": 1,
+    "DB/draft/relations/risk_microbiome.csv": 1
+  },
+  "monitoring": {
+    "sources_processed": 15,
+    "chunks_processed": 36,
+    "candidate_records": 40,
+    "valid_records": 2,
+    "evidence_verification_failures": 24,
+    "rejected_reasons": {
+      "field_not_verbatim:related_name": 8,
+      "relationship_semantics_not_supported": 5,
+      "not_a_named_measurable_indicator": 8,
+      "physiological_measurement_is_not_environmental_exposure": 1,
+      "entity_name_not_verbatim": 9,
+      "field_not_verbatim:population_text": 3,
+      "missing_exact_source_evidence": 4
+    },
+    "errors": [],
+    "reused_entities": []
+  },
+  "microbiome": {
+    "sources_processed": 8,
+    "chunks_processed": 27,
+    "candidate_records": 29,
+    "valid_records": 3,
+    "evidence_verification_failures": 14,
+    "rejected_reasons": {
+      "microbiome_concept_not_explicit": 3,
+      "field_not_verbatim:related_name": 12,
+      "incomplete_relationship_endpoints": 3,
+      "relationship_semantics_not_supported": 6,
+      "field_not_verbatim:population_text": 1,
+      "missing_exact_source_evidence": 1
+    },
+    "errors": [],
+    "reused_entities": []
+  },
+  "duplicates_skipped": 0,
+  "pending_data_quality_issues": [],
+  "quarantined_pilot_issues": [
+    {
+      "job_id": "focused_3fcc9d0a3c3965afef6d",
+      "reason": "community_or_organism_is_not_automatically_a_microbiome",
+      "record": {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "the community of microbes on astronauts’ skin and in their guts changes",
+        "microbiome_concept": "community of microbes on astronauts’ skin and in their guts",
+        "category": "microbiome",
+        "site": null,
+        "scope": "animal",
+        "measurement_method": null,
+        "study_schedule": null
+      },
+      "claim_ids": [
+        "claim_c91255eb3f7ab9103609"
+      ],
+      "action": "Unsupported task-only pilot CSV appends restored; raw output and staging retained in quarantine. Original records untouched."
+    },
+    {
+      "job_id": "focused_6c3c252741917abba03f",
+      "reason": "community_or_organism_is_not_automatically_a_microbiome",
+      "record": {
+        "related_name": null,
+        "related_kind": null,
+        "relationship": null,
+        "observed_change": null,
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": null,
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.",
+        "microbiome_concept": "microbial changes in space",
+        "category": "microbiome",
+        "site": null,
+        "scope": "environmental",
+        "measurement_method": null,
+        "study_schedule": null
+      },
+      "claim_ids": [
+        "claim_eb77d51e588b3ec2dd01"
+      ],
+      "action": "Unsupported task-only pilot CSV appends restored; raw output and staging retained in quarantine. Original records untouched."
+    }
+  ],
+  "task_only_restoration": {
+    "job_ids": [
+      "focused_3fcc9d0a3c3965afef6d",
+      "focused_6c3c252741917abba03f"
+    ],
+    "reason": "Unsupported early pilot category/scope metadata; only task-added CSV rows restored.",
+    "original_data_preserved": true,
+    "staging_and_raw_outputs_retained": true,
+    "removed_task_only_rows": {
+      "evidence/evidence": [
+        "evidence_3ba5289c4b03adb3b528",
+        "evidence_9a1f8f9240c8a8c8d700"
+      ],
+      "entities/microbiome": [
+        "microbiome_2a90eced90ceb7db6620",
+        "microbiome_704dfe5bc8c8416c0c50"
+      ],
+      "evidence/knowledge_claims": [
+        "claim_c91255eb3f7ab9103609",
+        "claim_eb77d51e588b3ec2dd01"
+      ]
+    }
+  },
+  "preexisting_data_quality_issues": [
+    {
+      "table": "DB/draft/entities/biomarkers.csv",
+      "id": "biomarkers_bd5bdd70d98c9de545c5",
+      "name": "heart",
+      "reason": "Possible pre-existing anatomy/community classified as a measurable biomarker.",
+      "action": "Reported only; original record and review status preserved."
+    },
+    {
+      "table": "DB/draft/entities/biomarkers.csv",
+      "id": "biomarkers_82c09f702b2a5fef10f0",
+      "name": "blood vessels",
+      "reason": "Possible pre-existing anatomy/community classified as a measurable biomarker.",
+      "action": "Reported only; original record and review status preserved."
+    },
+    {
+      "table": "DB/draft/entities/biomarkers.csv",
+      "id": "biomarkers_e19cb16a0b253108ee5b",
+      "name": "brain",
+      "reason": "Possible pre-existing anatomy/community classified as a measurable biomarker.",
+      "action": "Reported only; original record and review status preserved."
+    },
+    {
+      "table": "DB/draft/entities/biomarkers.csv",
+      "id": "biomarkers_ff7d1a77e3476bf8c936",
+      "name": "microbial ecosystems",
+      "reason": "Possible pre-existing anatomy/community classified as a measurable biomarker.",
+      "action": "Reported only; original record and review status preserved."
+    },
+    {
+      "table": "DB/draft/entities/biomarkers.csv",
+      "id": "biomarkers_b1e72459b4be0e5f9be0",
+      "name": "bones",
+      "reason": "Possible pre-existing anatomy/community classified as a measurable biomarker.",
+      "action": "Reported only; original record and review status preserved."
+    }
+  ],
+  "hrr_access": [
+    {
+      "url": "https://humanresearchroadmap.nasa.gov/Evidence/",
+      "status": "blocked_access",
+      "error": "Cannot verify robots.txt: HTTP 500"
+    },
+    {
+      "url": "https://humanresearchroadmap.nasa.gov/Risks/",
+      "status": "blocked_access",
+      "error": "Cannot verify robots.txt: HTTP 500"
+    }
+  ],
+  "new_biomarkers": 2,
+  "new_microbiome_entities": 1,
+  "new_condition_biomarker_relations": 1,
+  "new_risk_biomarker_relations": 0,
+  "new_condition_microbiome_relations": 0,
+  "new_risk_microbiome_relations": 1
+}

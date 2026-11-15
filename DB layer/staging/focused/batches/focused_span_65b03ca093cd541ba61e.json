@@ -1,0 +1,107 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_e3fc1bfbec2abd4daa26",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 2089:2196",
+    "text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick."
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": [
+      {
+        "related_name": "risk of crew members getting sick",
+        "related_kind": "risk_factors",
+        "relationship": "associated_with",
+        "observed_change": "can change in space",
+        "study_population": "unknown",
+        "population_text": null,
+        "study_environment": null,
+        "limitations": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "evidence_text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "microbiome_concept": "gut microbiomes",
+        "category": "microbiome",
+        "site": "gut",
+        "scope": "human",
+        "measurement_method": null,
+        "study_schedule": null
+      }
+    ]
+  },
+  "metadata": {
+    "model": "qwen3:4b-instruct",
+    "prompt_hash": "e7ea383934a58675330ade62fbd86d8ed09a1c1cdde0455476613dbf17e744e0",
+    "curation_version": "source-span-proposals-v1",
+    "focus": "microbiome",
+    "origin": "exact_span_proposal_verified_by_local_model"
+  },
+  "tables": {
+    "entities/microbiome": [
+      {
+        "microbiome_id": "microbiome_d93fe4e606ff6595040f",
+        "canonical_name": "gut microbiomes",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_e3e9d32603c564c602a6",
+        "subject_entity_id": "microbiome_d93fe4e606ff6595040f",
+        "predicate": "described_by",
+        "object_entity_id": "",
+        "claim_text": "{\"category\": \"microbiome\", \"limitations\": \"Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.\", \"measurement_method\": null, \"microbiome_concept\": \"gut microbiomes\", \"observed_change\": \"can change in space\", \"population_text\": null, \"record_type\": \"microbiome_source_observation\", \"scope\": \"human\", \"site\": \"gut\", \"study_environment\": null, \"study_population\": \"unknown\", \"study_schedule\": null, \"study_schedule_is_not_a_clinical_recommendation\": true}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_0e4e23c8abf1285fc9e4",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_ed9b9fafea40c95939e3",
+        "subject_entity_id": "risk_factors_2f1f7b28799a0cf5396e",
+        "predicate": "associated_with",
+        "object_entity_id": "microbiome_d93fe4e606ff6595040f",
+        "claim_text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_0e4e23c8abf1285fc9e4",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": "",
+        "limitations": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_2f1f7b28799a0cf5396e",
+        "canonical_name": "risk of crew members getting sick",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_microbiome": [
+      {
+        "relation_id": "relation_fe46b8bbde4519aa82ed",
+        "source_entity_id": "risk_factors_2f1f7b28799a0cf5396e",
+        "target_entity_id": "microbiome_d93fe4e606ff6595040f",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_ed9b9fafea40c95939e3",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 1,
+    "rejected": [],
+    "duplicates_skipped": 1,
+    "reused_entities": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "source_id": "source_795fee7d775bf85aca41",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_35fd54fbba01d08a4bcc",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 0:1031",
+    "text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "db88a1720fc5945e88c16fb303d4139e2baa34fa5538723381ed9c24302659a8",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "a7b60e43b40324a57a835574c11cbc454dbb677204577e78553158e6c1776236"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "missing_exact_source_evidence",
+      "record": {
+        "category": "cognitive_performance",
+        "evidence_text": "Space radiation exposure may affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions.",
+        "indicator": "cognitive or performance impairments",
+        "related_kind": "conditions",
+        "related_name": "cognitive or performance impairments",
+        "relationship": "associated_with"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "missing_exact_source_evidence",
+        "record": {
+          "category": "cognitive_performance",
+          "evidence_text": "Space radiation exposure may affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions.",
+          "indicator": "cognitive or performance impairments",
+          "related_kind": "conditions",
+          "related_name": "cognitive or performance impairments",
+          "relationship": "associated_with"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

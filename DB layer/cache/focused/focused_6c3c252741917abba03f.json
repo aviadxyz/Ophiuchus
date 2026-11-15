@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "c9da42859463471c72c5e9a32a0e2fe9dc43f12142272b85d14dd34b7cfaa88e",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.\",\n      \"microbiome_concept\": \"microbial changes in space\",\n      \"scope\": \"environmental\",\n      \"related_name\": null,\n      \"relationship\": null,\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    },\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct\",\n      \"microbiome_concept\": \"Multi-Drug Resistant Bacteria\",\n      \"scope\": \"environmental\",\n      \"related_name\": \"ISS\",\n      \"relationship\": \"monitored_by\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    }\n  ]\n}"
+}

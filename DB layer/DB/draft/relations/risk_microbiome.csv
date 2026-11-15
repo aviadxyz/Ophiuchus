@@ -1,0 +1,2 @@
+relation_id,source_entity_id,target_entity_id,relationship_type,claim_id,review_status
+relation_fe46b8bbde4519aa82ed,risk_factors_2f1f7b28799a0cf5396e,microbiome_d93fe4e606ff6595040f,associated_with,claim_ed9b9fafea40c95939e3,pending

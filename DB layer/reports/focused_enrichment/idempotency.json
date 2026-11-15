@@ -1,0 +1,9 @@
+{
+  "all_csv_hashes_identical": true,
+  "csv_files_checked": 175,
+  "jobs_resumed": 40,
+  "jobs_reextracted": 0,
+  "curated_transactions_skipped": 3,
+  "draft_export_preserved_csvs": true,
+  "quarantined_pilots_not_reintroduced": true
+}

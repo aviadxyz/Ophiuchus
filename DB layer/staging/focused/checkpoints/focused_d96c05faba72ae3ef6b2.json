@@ -1,0 +1,47 @@
+{
+  "job_id": "focused_d96c05faba72ae3ef6b2",
+  "focus": "monitoring",
+  "source_id": "source_272ff97648e63fa98488",
+  "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+  "page_number": null,
+  "section": "Article",
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false
+    },
+    "prompt_version": "4",
+    "schema_version": "1",
+    "prompt_hash": "83b8862525a6abd2a361962210d6a2b78dcaa2e279512452d37dd52abf8749f7",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "e7dfffda4d5a5111aa59ee39befeb9cdbe4af98d7b7196671aa6dc910faa911c"
+  },
+  "status": "committed",
+  "candidates": 1,
+  "valid_records": 0,
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "environmental_exposure",
+        "evidence_text": "Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions.",
+        "indicator": "irregular light-dark cycles",
+        "related_kind": "risk_factors",
+        "related_name": "irregular sleep and schedules",
+        "relationship": "associated_with",
+        "population_text": "astronauts",
+        "unit": null
+      }
+    }
+  ],
+  "new_rows": {},
+  "duplicates_skipped": 0,
+  "reused_entities": []
+}

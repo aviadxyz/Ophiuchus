@@ -1,0 +1,125 @@
+{
+  "source_id": "source_272ff97648e63fa98488",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_35cce27d92116eaa1855",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 1064:1477",
+    "text": "Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. Formal risk description: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "28959a754af54b3f9746b51a9bab5a5e71c3464f004b2b02fdcc360c9873a564"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "entity_name_not_verbatim",
+      "record": {
+        "category": "behavioral",
+        "device": null,
+        "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+        "indicator": "number of sunrises and sunsets per day",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": "astronauts",
+        "related_kind": null,
+        "related_name": null,
+        "relationship": null,
+        "study_environment": "space station",
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "field_not_verbatim:population_text",
+      "record": {
+        "category": "behavioral",
+        "device": null,
+        "evidence_text": "Formal risk description: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+        "indicator": "performance decrements",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": "astronauts",
+        "related_kind": "conditions",
+        "related_name": "performance decrements",
+        "relationship": "associated_with",
+        "study_environment": null,
+        "study_population": "unknown",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 2,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "entity_name_not_verbatim",
+        "record": {
+          "category": "behavioral",
+          "device": null,
+          "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+          "indicator": "number of sunrises and sunsets per day",
+          "limitations": null,
+          "measurement_method": null,
+          "observed_change": null,
+          "population_text": "astronauts",
+          "related_kind": null,
+          "related_name": null,
+          "relationship": null,
+          "study_environment": "space station",
+          "study_population": "unknown",
+          "study_schedule": null,
+          "unit": null
+        }
+      },
+      {
+        "index": 1,
+        "reason": "field_not_verbatim:population_text",
+        "record": {
+          "category": "behavioral",
+          "device": null,
+          "evidence_text": "Formal risk description: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+          "indicator": "performance decrements",
+          "limitations": null,
+          "measurement_method": null,
+          "observed_change": null,
+          "population_text": "astronauts",
+          "related_kind": "conditions",
+          "related_name": "performance decrements",
+          "relationship": "associated_with",
+          "study_environment": null,
+          "study_population": "unknown",
+          "study_schedule": null,
+          "unit": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

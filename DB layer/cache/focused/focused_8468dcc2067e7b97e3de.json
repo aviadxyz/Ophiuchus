@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "54d2e7d2346766e76865b60cb00112f237d397eebe87b65fcd75e892c8fda2f2"
+  },
+  "content": "{\"records\": [{\"category\": \"community\", \"evidence_text\": \"Such space stressors may also trigger allergic reactions or awaken dormant viruses in astronauts’ bodies, like those that cause cold sores and shingles\", \"microbiome_concept\": \"dormant viruses\", \"related_kind\": \"risk_factors\", \"related_name\": \"allergic reactions\", \"relationship\": \"associated_with\", \"scope\": \"human\"}]}",
+  "raw_content": "{\n  \"records\": [\n    {\n      \"category\": \"community\",\n      \"evidence_text\": \"Such space stressors may also trigger allergic reactions or awaken dormant viruses in astronauts’ bodies, like those that cause cold sores and shingles\",\n      \"microbiome_concept\": \"dormant viruses\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"allergic reactions\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"human\",\n      \"details\": null\n    }\n  ]\n}"
+}

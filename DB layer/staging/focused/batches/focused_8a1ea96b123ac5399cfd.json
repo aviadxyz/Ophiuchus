@@ -1,0 +1,70 @@
+{
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_942770b26481f6d535fe",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 999:2188",
+    "text": "Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. This diet is generally more diverse in foods rich in bioactive compounds — specifically fruits, vegetables, and fish — than standard spaceflight fare. Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa. The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily. "
+  },
+  "focused_mode": "microbiome",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0,
+      "focused_num_predict": 800,
+      "focused_think": false,
+      "compact_details": true
+    },
+    "prompt_version": "5",
+    "schema_version": "1",
+    "prompt_hash": "6f0a335bc4924742cad1be9904d1f6fddffb898f71d8d857accaee1ac8cb72ec",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "field_not_verbatim:related_name",
+      "record": {
+        "category": "community",
+        "evidence_text": "the gut microbiome",
+        "microbiome_concept": "gut microbiome",
+        "related_kind": "conditions",
+        "related_name": "immune system",
+        "relationship": "investigated_in_relation_to",
+        "scope": "human"
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 1,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "field_not_verbatim:related_name",
+        "record": {
+          "category": "community",
+          "evidence_text": "the gut microbiome",
+          "microbiome_concept": "gut microbiome",
+          "related_kind": "conditions",
+          "related_name": "immune system",
+          "relationship": "investigated_in_relation_to",
+          "scope": "human"
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

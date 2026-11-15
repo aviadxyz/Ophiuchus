@@ -1,3 +1,17 @@
+# Focused monitoring/microbiome enrichment plan
+1. Record CSV/source-file baselines and constrain every generated path to DB layer.
+2. Add small relationship-first monitoring and microbiome Ollama schemas.
+3. Reuse cached NASA documents, evidence verification, exact entity resolution and local transport.
+4. Add append-only, resumable persistence with field-level research provenance.
+5. Add only pending, deduplicated entities, relationships, claims and monitoring records.
+6. Test classification, evidence, preservation, interruption recovery and scope containment.
+7. Run one-source pilot, then the eligible cached collection; record HRR access gaps.
+8. Verify original CSV byte prefixes, approved files, existing paths and outside source hashes.
+
+## Focused enrichment result
+
+Added 14 pending draft rows from three exact cached NASA source proposals verified by local Ollama and typed/source guards. The 40-job automatic pass yielded no accepted new relationships. Unsupported early pilot additions were restored and quarantined; original rows, approved data, snapshots and outside source hashes are unchanged. Repeat extraction, proposal application and draft export preserve all CSV hashes. HRR access remains blocked by its robots endpoint; no evidence PDFs were available. Full DB tests: 134 passed, one optional live-model test skipped. See `FOCUSED_ENRICHMENT_REPORT.md` for scope and limitations.
+
 # Candidate protocol implementation plan
 1. Add a curated relation/evidence selection with verbatim documented fields.
 2. Add a dry-run/apply command using existing schemas and dependencies.

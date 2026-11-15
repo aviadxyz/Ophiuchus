@@ -1,0 +1,125 @@
+{
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_type": "research_summary",
+  "chunk": {
+    "chunk_id": "chunk_942770b26481f6d535fe",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "characters 999:2188",
+    "text": "Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an “enhanced” spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids. How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how. Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. This diet is generally more diverse in foods rich in bioactive compounds — specifically fruits, vegetables, and fish — than standard spaceflight fare. Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa. The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily. "
+  },
+  "focused_mode": "monitoring",
+  "raw_extraction": {
+    "records": []
+  },
+  "metadata": {
+    "focus": "monitoring",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "3",
+    "schema_version": "1",
+    "prompt_hash": "8ebe76d0c1ae14714b20ca0e57719f0e76bb0a54d1ef13894fd300ee0cb7d831",
+    "schema_hash": "4af6b52b9ceb9a03ce824c656f7862269ecefb493514c4158e451ce0486ae5b9",
+    "content_hash": "c7d8574f7f6ab943c96746cdff59f543165cc336da07de643fd7d13e79ff9992"
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "index": 0,
+      "reason": "missing_exact_source_evidence",
+      "record": {
+        "category": "environmental_exposure",
+        "device": null,
+        "evidence_text": "Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an \"enhanced\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids.",
+        "indicator": "nutrients such as flavonoids, lycopene, and omega-3 fatty acids",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": "Participating astronauts",
+        "related_kind": null,
+        "related_name": null,
+        "relationship": null,
+        "study_environment": "space station",
+        "study_population": "animal_models",
+        "study_schedule": null,
+        "unit": null
+      }
+    },
+    {
+      "index": 1,
+      "reason": "field_not_verbatim:population_text",
+      "record": {
+        "category": "physiological",
+        "device": null,
+        "evidence_text": "How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how.",
+        "indicator": "immune system",
+        "limitations": null,
+        "measurement_method": null,
+        "observed_change": null,
+        "population_text": "Participating astronauts",
+        "related_kind": "conditions",
+        "related_name": "immune system",
+        "relationship": "associated_with",
+        "study_environment": "space station",
+        "study_population": "animal_models",
+        "study_schedule": null,
+        "unit": null
+      }
+    }
+  ],
+  "statistics": {
+    "candidates": 2,
+    "valid_records": 0,
+    "rejected": [
+      {
+        "index": 0,
+        "reason": "missing_exact_source_evidence",
+        "record": {
+          "category": "environmental_exposure",
+          "device": null,
+          "evidence_text": "Credit: NASA Douglas and other researchers are assessing how the current spaceflight diet — by any assessment a healthy offering — compares to an \"enhanced\" spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids.",
+          "indicator": "nutrients such as flavonoids, lycopene, and omega-3 fatty acids",
+          "limitations": null,
+          "measurement_method": null,
+          "observed_change": null,
+          "population_text": "Participating astronauts",
+          "related_kind": null,
+          "related_name": null,
+          "relationship": null,
+          "study_environment": "space station",
+          "study_population": "animal_models",
+          "study_schedule": null,
+          "unit": null
+        }
+      },
+      {
+        "index": 1,
+        "reason": "field_not_verbatim:population_text",
+        "record": {
+          "category": "physiological",
+          "device": null,
+          "evidence_text": "How does such a diet affect the immune system, the gut microbiome, and nutrition? These factors are known to influence each other, and the researchers want to discover how.",
+          "indicator": "immune system",
+          "limitations": null,
+          "measurement_method": null,
+          "observed_change": null,
+          "population_text": "Participating astronauts",
+          "related_kind": "conditions",
+          "related_name": "immune system",
+          "relationship": "associated_with",
+          "study_environment": "space station",
+          "study_population": "animal_models",
+          "study_schedule": null,
+          "unit": null
+        }
+      }
+    ],
+    "duplicates_skipped": 0,
+    "reused_entities": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "focus": "microbiome",
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "prompt_version": "2",
+    "schema_version": "1",
+    "prompt_hash": "238f7c173628be63218248462b84cc4f3c68192a3d2e4fea10f5b5c348abfdf4",
+    "schema_hash": "f2efa0b320d08bb914422cc8e66dd64a49117384e2cb61e994afe221491f6353",
+    "content_hash": "35b1837ef44147ab6283a70d677805c70702e48fa27dcf5cd8688de86e47e87a"
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space.\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"microbiome_concept\": \"microbial changes\",\n      \"observed_change\": \"changes\",\n      \"population_text\": \"astronauts\",\n      \"related_kind\": \"conditions\",\n      \"related_name\": \"host-microorganism interactions\",\n      \"relationship\": \"monitored_by\",\n      \"scope\": \"human\",\n      \"site\": null,\n      \"study_environment\": null,\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    },\n    {\n      \"category\": \"microbiome\",\n      \"evidence_text\": \"Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct\",\n      \"limitations\": null,\n      \"measurement_method\": null,\n      \"microbiome_concept\": \"Multi-Drug Resistant Bacteria\",\n      \"observed_change\": \"mutating to become functionally distinct\",\n      \"population_text\": \"ISS\",\n      \"related_kind\": \"risk_factors\",\n      \"related_name\": \"multi-drug resistant bacteria\",\n      \"relationship\": \"associated_with\",\n      \"scope\": \"environmental\",\n      \"site\": null,\n      \"study_environment\": \"ISS\",\n      \"study_population\": \"unknown\",\n      \"study_schedule\": null\n    }\n  ]\n}"
+}
