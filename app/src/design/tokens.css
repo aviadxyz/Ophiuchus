@@ -1,0 +1,103 @@
+/*
+ * Ophiuchus design tokens. The only place colors, type sizes, spacing and radii are defined.
+ * Values come from docs/DESIGN_SYSTEM.md. Everything here is a CSS variable and a Tailwind
+ * theme value at the same time, so `bg-surface`, `text-muted`, `p-card` and so on all work.
+ * Tailwind's default palette, shadows and radii are switched off on purpose: no other color exists.
+ */
+
+@theme {
+  /* Colors. Reset the defaults so only these can be used. */
+  --color-*: initial;
+  --color-bg: #07090f;
+  --color-surface: #0d111a;
+  --color-surface-raised: #141a26;
+  --color-border: #1e2533;
+  --color-text: #e6eaf2;
+  --color-text-secondary: #8a93a6;
+  /* Design system starting value was #566074 (3.2:1 on the page). Lightened to pass WCAG AA. */
+  --color-text-muted: #78829a;
+  --color-accent: #34d399;
+  --color-danger: #f26d6d;
+  --color-warn: #e0a93b;
+  --color-info: #5b8def;
+  --color-emergency: #f59e0b;
+
+  /* Fonts. Bundled with the app through Fontsource. */
+  --font-*: initial;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Type sizes. The four small ones rise to 12 px on phones (see :root below). */
+  --text-*: initial;
+  --text-pill: var(--size-pill);
+  --text-label: var(--size-label);
+  --text-eyebrow: var(--size-eyebrow);
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 13px;
+  --text-sm--line-height: 20px;
+  --text-base: 14px;
+  --text-base--line-height: 22px;
+  --text-lg: 16px;
+  --text-lg--line-height: 24px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-title: 28px;
+  --text-title--line-height: 34px;
+  --text-number: 30px;
+  --text-number--line-height: 36px;
+
+  --tracking-wide: 0.08em;
+  --tracking-wider: 0.12em;
+
+  /* Spacing. A 4 px grid, plus the named steps from the layout table. */
+  --spacing: 4px;
+  --spacing-card: 20px;
+  --spacing-page: 32px;
+  --spacing-page-phone: 16px;
+  --spacing-sidebar: 260px;
+  --spacing-sidebar-icons: 72px;
+  --spacing-drawer: 420px;
+
+  /* Widths. */
+  --container-content: 1200px;
+  --container-description: 90ch;
+  --container-dialog: 440px;
+
+  /* Radii. */
+  --radius-*: initial;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* No shadows anywhere. */
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+
+  /* Breakpoints from the layout table: phone under 640, icon sidebar 640 to 1024, PC 1024 and up. */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+
+  --default-transition-duration: 150ms;
+  --animate-pulse: pulse 2s ease-in-out infinite;
+}
+
+:root {
+  --size-pill: 10px;
+  --size-label: 11px;
+  --size-eyebrow: 11px;
+  color-scheme: dark;
+}
+
+/* Accessibility floor: text does not go below 12 px on phone. */
+@media (max-width: 639.98px) {
+  :root {
+    --size-pill: 12px;
+    --size-label: 12px;
+    --size-eyebrow: 12px;
+  }
+}
