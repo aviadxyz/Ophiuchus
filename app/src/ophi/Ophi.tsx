@@ -41,14 +41,14 @@ export function Ophi() {
 
   const screenId = location.pathname.replace(/^\//, '').split('/')[0] || 'overview'
 
-  // Emergency screen: on visit, switch state to alert and open panel once per visit
+  // Emergency screen: on visit, switch state to alert. The panel stays closed so it never
+  // covers the Emergency controls; the person can still tap Ophi to open it.
   useEffect(() => {
     const isEmergency = location.pathname === '/emergency' || location.pathname.startsWith('/emergency/')
     const wasEmergency = lastPathnameRef.current === '/emergency' || lastPathnameRef.current?.startsWith('/emergency/')
 
     if (isEmergency && !wasEmergency) {
       setOphiState('alert')
-      setPanelOpen(true)
     } else if (!isEmergency && wasEmergency && state === 'alert') {
       setOphiState('idle')
     }
@@ -154,7 +154,7 @@ export function Ophi() {
             // Slow idle float when not alert
             !isAlert ? 'ophi-floating' : '',
             // Orange glow for alert
-            isAlert ? 'drop-shadow-[0_0_14px_#f59e0b]' : '',
+            isAlert ? 'drop-shadow-[0_0_14px_var(--color-emergency)]' : '',
           ].join(' ')}
         >
           {useBitmap ? (

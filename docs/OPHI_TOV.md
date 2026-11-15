@@ -13,7 +13,7 @@ The name plays on Ophiuchus, the serpent-bearer constellation tied to the healer
 | Every screen, PC | Fixed in the bottom-right corner, about 96 px tall, above all content |
 | Every screen, phone | Bottom-right, about 64 px tall, raised above any bottom bar. Never on top of a primary button |
 | Med bot screen | Hidden. The Med bot is a different character, and two helpers on one screen would be confusing |
-| Emergency screen | Stays in the corner, switches to his alert state, and his panel opens with what to do first |
+| Emergency screen | Stays in the corner and switches to his alert state. His panel stays closed until he is tapped, so it never covers the Emergency controls |
 | Watch | His face on the About screen |
 
 ## What happens when you click him

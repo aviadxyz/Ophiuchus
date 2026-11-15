@@ -26,7 +26,7 @@ Ophi Tov is a small astronaut who floats above every screen of this health conso
    - A slow idle float, off when the system asks for reduced motion.
    - It is a button with the accessible name "Ask Ophi to explain this screen".
    - Hidden on the route `/medbot`, on `/w`, and on `/games/...`.
-   - On the route `/emergency`, state becomes `alert` and the panel opens automatically once per visit.
+   - On the route `/emergency`, state becomes `alert`. The panel stays closed there until he is tapped, so it never covers the Emergency controls.
 3. **`OphiPanel.tsx`:** the explanation panel.
    - Anchored beside him on PC, a bottom sheet under 640 px.
    - Title: the current screen's label. Then four parts from that screen's `guide` (CONTRACTS section 5): "What this shows" (`shows`), "Why it matters in space" (`whyItMatters`), "How to read it" (`howToRead`, up to three bullets), "When to act" (`whenToAct`). If `whenToAct` is empty, leave that part out.

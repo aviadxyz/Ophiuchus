@@ -156,16 +156,19 @@ describe('Ophi and OphiPanel', () => {
     })
   })
 
-  it('on the route /emergency, state becomes alert and the panel opens automatically once per visit', async () => {
+  it('on the route /emergency, state becomes alert and the panel stays closed until Ophi is tapped', async () => {
     renderOphiOnRoute('/emergency')
 
-    // Panel automatically opened
-    const dialog = await screen.findByRole('dialog')
-    expect(dialog).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: 'Emergency' })).toBeInTheDocument()
-
     // Button has alert styling / state
-    const button = screen.getByRole('button', { name: 'Ask Ophi to explain this screen' })
-    expect(button.className).toContain('drop-shadow-[0_0_14px_#f59e0b]')
+    const button = await screen.findByRole('button', { name: 'Ask Ophi to explain this screen' })
+    expect(button.className).toContain('drop-shadow-[0_0_14px_var(--color-emergency)]')
+
+    // The panel never covers the Emergency controls by itself
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+
+    // Tapping Ophi still opens the Emergency guide
+    await userEvent.click(button)
+    expect(await screen.findByRole('dialog')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Emergency' })).toBeInTheDocument()
   })
 })

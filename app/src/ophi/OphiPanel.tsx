@@ -118,9 +118,9 @@ export function OphiPanel({ open, onClose, onAskMedbot, returnFocusRef }: OphiPa
         className={[
           'absolute flex flex-col border-border bg-surface outline-none shadow-2xl transition-all duration-200',
           // Phone: bottom sheet
-          'inset-x-0 bottom-0 max-h-[85dvh] rounded-t-xl border-t',
+          'inset-x-0 bottom-0 max-h-[85dvh] rounded-t-lg border-t',
           // PC (sm: >= 640px): anchored beside Ophi in the bottom-right corner
-          'sm:inset-auto sm:bottom-6 sm:right-32 sm:w-[420px] sm:max-h-[80vh] sm:rounded-xl sm:border',
+          'sm:inset-auto sm:bottom-6 sm:right-32 sm:w-[420px] sm:max-h-[80vh] sm:rounded-lg sm:border',
         ].join(' ')}
         data-testid="ophi-panel-dialog"
       >

@@ -66,7 +66,7 @@ To replace the SVG shape stand-in with bitmap artwork:
   - `ophiState.ts`: External store state management for `OphiState`.
   - `OphiStandIn.tsx`: Scalable SVG astronaut stand-in with chibi suit, helmet, visor, face, green curl snake, and visual state indicators.
   - `OphiPanel.tsx`: Accessible dialog with screen label, 4 guide sections, and primary Medbot action.
-  - `Ophi.tsx`: Bottom-right floating character, route filtering (`/medbot`, `/w`, `/games/...`), auto-alert/open on `/emergency`, and one-time first-visit welcome bubble stored in `localStorage` under `ophiuchus:v1:`.
+  - `Ophi.tsx`: Bottom-right floating character, route filtering (`/medbot`, `/w`, `/games/...`), auto-alert on `/emergency` (the panel stays closed so it never covers the Emergency controls), and one-time first-visit welcome bubble stored in `localStorage` under `ophiuchus:v1:`.
   - `index.ts`: CONTRACTS section 12 exports.
   - `guide.ts` for `nutrition`, `physical-activity`, and `mood` populated with exact copy.
   - Comprehensive unit tests in `Ophi.test.tsx`.
@@ -79,5 +79,5 @@ To replace the SVG shape stand-in with bitmap artwork:
   - Notice Ophi floating in the bottom-right corner with his first-visit welcome bubble.
   - Click Ophi to open the screen guide dialog; press Escape to close and verify focus returns to Ophi.
   - Navigate to `/nutrition` and `/mood` to view the specific custom guide copy.
-  - Navigate to `/emergency` to see Ophi enter `alert` state (orange glow, no float) and automatically open the emergency panel.
+  - Navigate to `/emergency` to see Ophi enter `alert` state (orange glow, no float) ; tap him to open the Emergency guide.
   - Navigate to `/medbot`, `/w`, or `/games/futvolley` to verify Ophi is hidden.
