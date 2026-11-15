@@ -58,10 +58,10 @@ describe('Nutrition on the demo profile', () => {
     expect(screen.getByText(/ OFF TARGET$/)).toBeInTheDocument()
   })
 
-  it('shows a source line under targets as "to be confirmed"', () => {
+  it('shows source lines under targets', () => {
     renderScreen()
     expect(screen.getAllByText(/Source:/).length).toBeGreaterThanOrEqual(3)
-    expect(screen.queryAllByText(/to be confirmed/).length).toBeGreaterThanOrEqual(3)
+    expect(screen.getAllByText(/NASA HRP.*Evidence Report/).length).toBeGreaterThanOrEqual(2)
   })
 
   it('adds water with one tap and shows it in the water line', async () => {
@@ -118,7 +118,7 @@ describe('Nutrition on the demo profile', () => {
     const drawer = screen.getByRole('dialog', { name: 'Vitamin D' })
     expect(within(drawer).getByText('Richest in Vitamin D')).toBeInTheDocument()
     expect(within(drawer).getByText('Vitamin D supplement')).toBeInTheDocument()
-    expect(within(drawer).getByText(/Source: to be confirmed/)).toBeInTheDocument()
+    expect(within(drawer).getByText(/NASA HRP.*Evidence Report/)).toBeInTheDocument()
     expect(within(drawer).getByTestId('trend')).toBeInTheDocument()
   })
 

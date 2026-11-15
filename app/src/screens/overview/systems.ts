@@ -32,8 +32,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Isolation, a shifted day and night, a heavy workload and radiation all press on sleep, mood and thinking speed.',
     howChecked: 'Sleep logs, mood check-ins, and short tests of reaction time and thinking.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Behavioral Conditions and Psychiatric Disorders, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/',
   },
   {
     id: 'eyes',
@@ -47,8 +47,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Body fluid moves toward the head in weightlessness. In many crew members on long missions the back of the eye changes shape, which can blur vision.',
     howChecked: 'Regular vision tests and images of the back of the eye.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS), 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/',
   },
   {
     id: 'ears',
@@ -63,8 +63,8 @@ export const systems: readonly BodySystemDef[] = [
       'With no up or down, the balance organs send confusing signals. That causes motion sickness in the first days and unsteadiness after landing. Constant machine noise can wear on hearing.',
     howChecked:
       'Balance and coordination tests, hearing tests, and noise measurements in the cabin.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Altered Sensorimotor and Vestibular Function, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-altered-sensorimotor-and-vestibular-function/',
   },
   {
     id: 'face',
@@ -78,8 +78,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Fluid moving toward the head makes the face puffy and the nose stuffy, like a mild cold. Food tastes dull and appetite can drop.',
     howChecked: 'Asking how you feel, and watching how much you eat.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
   },
   {
     id: 'heart',
@@ -93,8 +93,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Without gravity the heart has less work to do and blood shifts toward the head. Fitness drops unless you train, and standing up after landing can make you faint.',
     howChecked: 'Heart rate, blood pressure, heart tracings and ultrasound scans.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Cardiovascular Adaptations, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-cardiovascular-adaptations/',
   },
   {
     id: 'lungs',
@@ -109,8 +109,8 @@ export const systems: readonly BodySystemDef[] = [
       'The lungs cope well, but a closed cabin can build up carbon dioxide, and dust floats instead of settling. The air you breathe matters more.',
     howChecked:
       'Blood oxygen from a finger or wrist sensor, breathing tests, and cabin air monitors.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, 5 Hazards of Human Spaceflight: Hostile/Closed Environments, 2023',
+    sourceUrl: 'https://www.nasa.gov/hrp/hazards/',
   },
   {
     id: 'digestive',
@@ -125,8 +125,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Crews often eat less than they need, and the mix of gut bacteria shifts in flight.',
     howChecked: 'Food logs and body mass.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Host-Microorganism Interactions, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/',
   },
   {
     id: 'kidneys',
@@ -140,8 +140,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Bones release calcium in weightlessness and crews tend to drink too little. Together these raise the chance of kidney stones.',
     howChecked: 'Tracking water and salt intake, and urine tests.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
   },
   {
     id: 'spine',
@@ -156,8 +156,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'Without weight pressing down, the spine lengthens and the back muscles weaken. Back pain is common in flight, and the discs are more easily hurt after return.',
     howChecked: 'Height and back-pain reports, and scans before and after flight.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Spaceflight-Induced Bone Changes, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/',
   },
   {
     id: 'bones',
@@ -172,8 +172,8 @@ export const systems: readonly BodySystemDef[] = [
       'Unloaded bones lose mineral month after month, most of all in the hips, thigh bones and spine. Without sunlight the body makes no vitamin D.',
     howChecked:
       'Bone scans before and after flight, blood and urine markers during it, and calcium and vitamin D intake.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Spaceflight-Induced Bone Changes, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/',
   },
   {
     id: 'muscles',
@@ -187,8 +187,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'With no weight to carry, muscles shrink and weaken quickly, most of all in the legs and back.',
     howChecked: 'Strength tests, exercise logs and body mass.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/',
   },
   {
     id: 'reproductive',
@@ -204,8 +204,8 @@ export const systems: readonly BodySystemDef[] = [
       'Radiation is the main concern for these organs. Less is known here than for most systems, because few people have flown long missions.',
     howChecked:
       'Hormone levels in blood samples, and health checks before and after flight.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'Mishra & Luderer, Reproductive hazards of space travel, Nat Rev Endocrinol, 2019',
+    sourceUrl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7371565/',
   },
   {
     id: 'blood',
@@ -219,8 +219,8 @@ export const systems: readonly BodySystemDef[] = [
     inSpace:
       'The body holds less blood fluid in space and breaks down red blood cells faster than on Earth. Iron stores tend to rise, so too much iron matters more than too little.',
     howChecked: 'Blood samples.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Evidence Report: Risk Factor of Inadequate Nutrition, 2015',
+    sourceUrl: 'https://ntrs.nasa.gov/citations/20150000512',
   },
   {
     id: 'immune',
@@ -236,8 +236,8 @@ export const systems: readonly BodySystemDef[] = [
       'Stress, poor sleep and radiation change how immune cells behave. Viruses that normally lie dormant can wake up, and rashes and allergies are more common.',
     howChecked:
       'Blood and saliva samples, and a record of any illness or rash.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'NASA HRP, Risk of Altered Immune System Responses, 2024',
+    sourceUrl: 'https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/',
   },
   {
     id: 'skin',
@@ -253,8 +253,8 @@ export const systems: readonly BodySystemDef[] = [
       'Skin gets drier and more easily irritated, small wounds heal more slowly, and the soles of the feet soften because they are no longer walked on.',
     howChecked:
       'Skin checks and a record of rashes or wounds. Some watches read skin temperature.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'Farkas & Farkas, Effects of Spaceflight on Human Skin, Skin Pharmacol Physiol, 2021',
+    sourceUrl: 'https://doi.org/10.1159/000515963',
   },
   {
     id: 'hormones',
@@ -270,7 +270,7 @@ export const systems: readonly BodySystemDef[] = [
       'Stress hormones run higher, the body clock drifts without a normal day and night, and the body may handle sugar less well.',
     howChecked:
       'Blood, urine and saliva samples, plus sleep timing and body mass.',
-    sourceText: '',
-    sourceUrl: '',
+    sourceText: 'Canadian Space Agency, Why do we conduct science experiments in space?, 2025',
+    sourceUrl: 'https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp',
   },
 ]
