@@ -5,14 +5,17 @@ from pathlib import Path
 from fastapi import FastAPI, Depends, HTTPException, Header, Query
 from .models import AssessmentRequest, Assessment
 from .agent import PreventiveHealthAgent
-from .knowledge import KnowledgeTools
+from .knowledge import KnowledgeTools, DB_LAYER
 from .storage import HealthStore
 
 def create_app(agent=None, tokens=None):
     if agent is None:
         governance_path = os.getenv('HEALTH_GOVERNANCE_FILE')
         governance = json.loads(Path(governance_path).read_text()) if governance_path else None
-        agent = PreventiveHealthAgent(HealthStore(os.getenv('HEALTH_DB_PATH', str(Path(__file__).resolve().parents[1] / 'data' / 'health.sqlite3'))), KnowledgeTools(governance=governance))
+        mode = os.getenv('HEALTH_KNOWLEDGE_MODE', 'draft')
+        if mode not in ('draft', 'approved'):
+            raise ValueError('HEALTH_KNOWLEDGE_MODE must be draft or approved')
+        agent = PreventiveHealthAgent(HealthStore(os.getenv('HEALTH_DB_PATH', str(Path(__file__).resolve().parents[1] / 'data' / 'health.sqlite3'))), KnowledgeTools(root=DB_LAYER / 'DB' / mode, governance=governance))
     tokens = tokens if tokens is not None else json.loads(os.getenv('HEALTH_API_TOKENS', '{}'))
     app = FastAPI(title='Orbital Health Recommendation Agent', version='0.1.0')
 

@@ -55,6 +55,8 @@ class PreventiveHealthAgent:
         protocols = self.knowledge.retrieve_protocol(risks, profile, context)
         eligible = protocols['protocols']
         limitations = []
+        if self.knowledge.draft_mode:
+            limitations.append('Draft CSV research is unreviewed informational context; it does not authorize medical actions.')
         if history['baseline_status'] == 'missing':
             limitations.append('Personal baseline is missing; no population baseline substituted.')
         if validation.rejected:
@@ -136,5 +138,6 @@ class PreventiveHealthAgent:
             risk_level=min(risks, key=lambda r: severity_rank[r.severity]).severity if risks else 'undetermined',
             escalation_required=bool(urgent), escalation_status=escalation_status, recommendations=recommendations,
             findings=findings, risks=risks, validation=validation, limitations=sorted(set(limitations)),
-            model_version=getattr(self.llm, 'model', 'unavailable'), rules_version=self.knowledge.governance['version'])
+            model_version=getattr(self.llm, 'model', 'unavailable'), rules_version=self.knowledge.governance['version'],
+            research_knowledge=knowledge_results)
         return self.store.persist_health_event(request, result, evidence, allowed)

@@ -92,6 +92,7 @@ class Assessment(Model):
     model_version: str
     rules_version: str
     professional_review_status: str = 'not_reviewed'
+    research_knowledge: list[dict[str, Any]] = Field(default_factory=list)
 
 class LLMSelection(Model):
     protocol_ids: list[str] = Field(max_length=5)

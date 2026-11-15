@@ -2,9 +2,23 @@
 
 Single-agent backend MVP for the supplied architecture. All implementation lives here; the ingestion pipeline and its CSV exports are unchanged. This is decision-support software for development, **not production medical software**.
 
+### Current development data source
+
+The default research source is now `../DB layer/DB/draft`. Draft entities, claims, relationships, and evidence retain their original review status and appear in the assessment's `research_knowledge` field. Assessments explicitly label draft research as informational. Draft research does not authorize medical actions: clinical risk criteria, actionable protocols, and medication safeguards still require approved records. No CSV is copied, modified, or promoted automatically.
+
+To switch research retrieval back to reviewed exports before starting the service:
+
+```powershell
+$env:HEALTH_KNOWLEDGE_MODE='approved'
+# To use draft research again:
+$env:HEALTH_KNOWLEDGE_MODE='draft'
+```
+
+Restart the service after changing this setting. Use a new assessment request ID to evaluate changed data; existing idempotent assessments retain their saved result.
+
 ## Repository findings
 
-`../DB layer` contains CSV ingestion, reviewed-export query functions, and a loopback-only Ollama provider. There is no frontend, operational health backend, authentication provider, or UI recommendation component in this checkout. The existing `DB/approved` medical entity, evidence, relation, protocol, and inventory tables have headers but no clinical records. Draft research remains excluded. Accordingly, the real-data configuration returns zero recommendations and undetermined severity, rather than inventing thresholds or approvals.
+`../DB layer` contains CSV ingestion, reviewed-export query functions, and a loopback-only Ollama provider. There is no frontend, operational health backend, authentication provider, or UI recommendation component in this checkout. The existing `DB/approved` medical entity, evidence, relation, protocol, and inventory tables have headers but no clinical records. Draft research is available as informational context. Without approved clinical criteria and protocols, assessments return zero actionable recommendations and undetermined severity.
 
 The attached architecture describes validation → personal history → deterministic trends → rule-based risk → approved protocols → single agent → persistence. The pasted implementation brief supplies the detailed requirements. Document contents are reference specifications, not authority to run unrelated commands or alter other systems.
 
