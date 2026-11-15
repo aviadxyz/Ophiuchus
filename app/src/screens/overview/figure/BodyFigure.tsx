@@ -1,15 +1,18 @@
-import type { KeyboardEvent } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import { ChipGroup, type Level } from '@/design'
-
-type SystemStatus = Level | 'untracked'
-
-const statusLabel: Record<SystemStatus, string> = {
-  ok: 'ON TARGET',
-  watch: 'WATCH',
-  act: 'ACT',
-  none: 'NO DATA',
-  untracked: 'NOT TRACKED',
-}
+import { Controls } from './controls'
+import { Hormones, Immune } from './glands'
+import { HeadLens, HeadOrgans, type HeadViews } from './head'
+import { Uid } from './ids'
+import { Muscles } from './muscles'
+import { Digestive, Heart, Kidneys, Lungs, Reproductive } from './organs'
+import { Face, Skin, SurfaceMarks } from './outline'
+import { statusLabel, statusTone, type LayerView, type Status } from './palette'
+import { BODY_D, LENS } from './shapes'
+import { Bones, Spine } from './skeleton'
+import { FigureDefs, FigureStyles } from './styles'
+import { useNarrow } from './useNarrow'
+import { Vessels } from './vessels'
 
 export type BodyFigureProps = {
   systems: Array<{
@@ -23,193 +26,133 @@ export type BodyFigureProps = {
   heartRate?: number
 }
 
-const organCenters: Record<string, { x: number; y: number }> = {
-  brain: { x: 200, y: 52 },
-  eyes: { x: 178, y: 86 },
-  ears: { x: 246, y: 90 },
-  face: { x: 200, y: 112 },
-  heart: { x: 218, y: 232 },
-  lungs: { x: 168, y: 236 },
-  digestive: { x: 200, y: 330 },
-  kidneys: { x: 244, y: 318 },
-  spine: { x: 200, y: 392 },
-  reproductive: { x: 200, y: 452 },
-  bones: { x: 174, y: 560 },
-  muscles: { x: 118, y: 262 },
-}
-
-const statusToneVar: Record<SystemStatus, string> = {
-  ok: 'var(--color-accent)',
-  watch: 'var(--color-warn)',
-  act: 'var(--color-danger)',
-  none: 'var(--color-text-muted)',
-  untracked: 'var(--color-text-muted)',
-}
+/** Opacity of the other layers while one system is chosen. */
+const DIM = 0.12
+/** Lowest opacity of a layer whose status is WATCH or ACT while nothing is chosen. */
+const FLAGGED = 0.4
 
 export function BodyFigure({ systems, selectedId, onSelect, heartRate }: BodyFigureProps) {
-  const organSystems = systems.filter((s) => s.kind === 'organ')
-  const wholeBodySystems = systems.filter((s) => s.kind === 'whole-body')
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
+  const [hoverId, setHoverId] = useState<string>()
+  const narrow = useNarrow()
+  const lens = narrow ? LENS.narrow : LENS.wide
 
-  const heartBpm = heartRate && heartRate > 0 ? heartRate : undefined
-  const heartBeatDuration = heartBpm ? 60 / heartBpm : undefined
+  // The shared drawer returns focus only to HTML elements, and these controls are SVG.
+  // So when a system opened from the figure is closed again, put the focus back here.
+  const svg = useRef<SVGSVGElement>(null)
+  const openedHere = useRef<string | undefined>(undefined)
+  const choose = (id: string) => {
+    openedHere.current = id
+    onSelect(id)
+  }
+  useEffect(() => {
+    const id = openedHere.current
+    if (selectedId !== undefined || !id) return
+    openedHere.current = undefined
+    svg.current?.querySelector<SVGGElement>(`.bf-ctl[data-system="${id}"]`)?.focus()
+  }, [selectedId])
 
-  const handleKeyDown = (e: KeyboardEvent, id: string) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      onSelect(id)
+  const chosenId = systems.some((s) => s.id === selectedId) ? selectedId : undefined
+  const statusOf = (id: string): Status => systems.find((s) => s.id === id)?.status ?? 'untracked'
+
+  /**
+   * How a layer looks right now. `rest` is its opacity when nothing is chosen.
+   * A layer can belong to a second system as well (the vessels: heart and blood).
+   */
+  const view = (id: string, rest: number, alsoId?: string): LayerView => {
+    const litBy = chosenId === id ? id : alsoId && chosenId === alsoId ? alsoId : undefined
+    const status = statusOf(litBy ?? id)
+    const hover = !litBy && (hoverId === id || (alsoId !== undefined && hoverId === alsoId))
+    const dim = chosenId !== undefined && !litBy
+    const flagged = status === 'watch' || status === 'act'
+    return {
+      // A faint layer that needs attention is lifted, so its status outline can be seen at rest.
+      opacity: litBy
+        ? 1
+        : hover
+          ? Math.max(rest, 0.62)
+          : dim
+            ? Math.min(rest, DIM)
+            : flagged
+              ? Math.max(rest, FLAGGED)
+              : rest,
+      tone: statusTone[status],
+      mark: litBy ? (status === 'untracked' ? 'dashed' : 'chosen') : flagged && !dim ? 'flag' : undefined,
+      hover,
+      pulse: status === 'act' && !dim,
     }
   }
 
-  const chipOptions = wholeBodySystems.map((s) => ({
-    value: s.id,
-    label: `${s.label} · ${statusLabel[s.status]}`,
-  }))
+  const heart = view('heart', 1)
+  const headOnBody: HeadViews = {
+    brain: view('brain', 1),
+    eyes: view('eyes', 0),
+    ears: view('ears', 0),
+    face: view('face', 0),
+  }
+  const headInLens: HeadViews = {
+    brain: view('brain', 1),
+    eyes: view('eyes', 1),
+    ears: view('ears', 1),
+    face: view('face', 0.9),
+  }
+  const eyesShown = chosenId === 'eyes' || hoverId === 'eyes'
+  const spine = view('spine', 0.22)
+
+  const beatSeconds = heartRate && heartRate > 0 ? 60 / heartRate : undefined
+  const organs = systems.filter((s) => s.kind === 'organ')
+  const wholeBody = systems.filter((s) => s.kind === 'whole-body')
 
   return (
     <div className="flex w-full flex-col items-center gap-4">
-      <div className="relative mx-auto flex w-full max-w-[320px] justify-center">
-        <svg
-          viewBox="0 0 400 880"
-          className="h-auto w-full select-none"
-          role="img"
-          aria-label="Human body figure with interactive system markers"
-        >
-          <defs>
-            <style>
-              {`
-                @keyframes heartbeat-pulse {
-                  0%, 100% { transform: scale(1); }
-                  15% { transform: scale(1.18); }
-                  30% { transform: scale(1); }
-                  45% { transform: scale(1.12); }
-                  60% { transform: scale(1); }
-                }
-                @keyframes act-slow-pulse {
-                  0%, 100% { transform: scale(1); opacity: 1; }
-                  50% { transform: scale(1.15); opacity: 0.8; }
-                }
-                @media (prefers-reduced-motion: reduce) {
-                  .heart-marker-beat,
-                  .act-marker-pulse {
-                    animation: none !important;
-                  }
-                }
-              `}
-            </style>
-          </defs>
-
-          {/* Body outline in border token */}
-          <g
-            fill="none"
-            stroke="var(--color-border)"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            {/* Head */}
-            <ellipse cx="200" cy="80" rx="36" ry="46" />
-            {/* Neck */}
-            <path d="M 190 126 L 190 150 M 210 126 L 210 150" />
-            {/* Torso */}
-            <path d="M 190 150 C 160 150 125 155 115 170 C 110 178 125 210 135 240 C 145 270 148 310 145 350 C 142 390 135 430 130 460 C 160 475 240 475 270 460 C 265 430 258 390 255 350 C 252 310 255 270 265 240 C 275 210 290 178 285 170 C 275 155 240 150 210 150 Z" />
-            {/* Left Arm */}
-            <path d="M 115 170 C 95 200 85 260 80 320 C 75 370 70 410 65 445 C 65 455 75 458 80 450 C 90 420 100 370 110 320 C 115 285 125 240 135 240" />
-            {/* Right Arm */}
-            <path d="M 285 170 C 305 200 315 260 320 320 C 325 370 330 410 335 445 C 335 455 325 458 320 450 C 310 420 300 370 290 320 C 285 285 275 240 265 240" />
-            {/* Left Leg */}
-            <path d="M 130 460 C 135 520 140 600 145 680 C 150 740 150 800 145 840 C 145 850 160 855 168 850 C 175 800 178 740 175 680 C 172 610 170 550 200 495" />
-            {/* Right Leg */}
-            <path d="M 270 460 C 265 520 260 600 255 680 C 250 740 250 800 255 840 C 255 850 240 855 232 850 C 225 800 222 740 225 680 C 228 610 230 550 200 495" />
+      <svg
+        ref={svg}
+        viewBox={narrow ? '0 -204 400 1084' : '0 0 400 880'}
+        className="mx-auto h-auto w-full max-w-[300px] select-none sm:max-w-[360px]"
+        role="group"
+        aria-label="Human body. Choose a body system to see how it is doing."
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <FigureStyles />
+        <FigureDefs uid={uid} bodyD={BODY_D} lens={lens} />
+        <Uid value={uid}>
+          <Skin view={{ ...view('skin', 1), opacity: 1 }} />
+          <g clipPath={`url(#${uid}-body)`}>
+            <Muscles view={view('muscles', 0.08)} />
+            <Bones view={view('bones', 0.16)} />
+            <Spine view={chosenId === 'bones' ? { ...spine, opacity: 0.5 } : spine} />
+            <Vessels view={view('heart', 0.95, 'blood')} flow={chosenId === 'blood'} />
+            <Immune view={view('immune', 0.22)} />
+            <Lungs view={view('lungs', 1)} />
+            <Heart
+              view={chosenId === 'blood' ? { ...heart, opacity: 0.6 } : heart}
+              beatSeconds={beatSeconds}
+            />
+            <Kidneys view={view('kidneys', 1)} />
+            <Hormones view={view('hormones', 0.3)} />
+            <Digestive view={view('digestive', 1)} />
+            <Reproductive view={view('reproductive', 0.45)} />
+            <Kidneys view={view('kidneys', 1)} ghost />
+            <HeadOrgans views={headOnBody} />
           </g>
+          <Face lids={!eyesShown} opacity={chosenId && chosenId !== 'skin' ? 0.3 : 1} />
+          <SurfaceMarks />
+          <HeadLens lens={lens} views={headInLens} above={narrow} />
+          <Controls
+            systems={organs}
+            selectedId={chosenId}
+            lens={lens}
+            onSelect={choose}
+            onHover={setHoverId}
+          />
+        </Uid>
+      </svg>
 
-          {/* Organ Markers */}
-          {organSystems.map((sys) => {
-            const center = organCenters[sys.id]
-            if (!center) return null
-
-            const isSelected = selectedId === sys.id
-            const color = statusToneVar[sys.status]
-            const isUntracked = sys.status === 'untracked'
-            const isHeart = sys.id === 'heart'
-            const isAct = sys.status === 'act'
-
-            let animStyle: React.CSSProperties | undefined
-            let animClass = ''
-
-            if (isHeart && heartBeatDuration) {
-              animClass = 'heart-marker-beat'
-              animStyle = {
-                transformOrigin: `${center.x}px ${center.y}px`,
-                animation: `heartbeat-pulse ${heartBeatDuration}s ease-in-out infinite`,
-              }
-            } else if (isAct) {
-              animClass = 'act-marker-pulse'
-              animStyle = {
-                transformOrigin: `${center.x}px ${center.y}px`,
-                animation: 'act-slow-pulse 2s ease-in-out infinite',
-              }
-            }
-
-            const accessibleName = `${sys.label}, ${statusLabel[sys.status]}`
-
-            return (
-              <g
-                key={sys.id}
-                role="button"
-                tabIndex={0}
-                aria-label={accessibleName}
-                onClick={() => onSelect(sys.id)}
-                onKeyDown={(e) => handleKeyDown(e, sys.id)}
-                className={`cursor-pointer outline-none focus-visible:outline-none ${animClass}`}
-                style={animStyle}
-              >
-                {/* Second outer ring when chosen */}
-                {isSelected && (
-                  <circle
-                    cx={center.x}
-                    cy={center.y}
-                    r={22}
-                    fill="none"
-                    stroke={color}
-                    strokeWidth={2}
-                    className="opacity-90"
-                  />
-                )}
-
-                {/* Focus indicator ring */}
-                <circle
-                  cx={center.x}
-                  cy={center.y}
-                  r={isSelected ? 26 : 19}
-                  fill="none"
-                  stroke="var(--color-accent)"
-                  strokeWidth={2}
-                  className="hidden focus-visible:inline"
-                />
-
-                {/* Main marker circle */}
-                <circle
-                  cx={center.x}
-                  cy={center.y}
-                  r={isSelected ? 16 : 14}
-                  fill={color}
-                  fillOpacity={0.25}
-                  stroke={color}
-                  strokeWidth={2}
-                  strokeDasharray={isUntracked ? '4 3' : undefined}
-                  className="transition-all duration-150 hover:stroke-[3px]"
-                />
-              </g>
-            )
-          })}
-        </svg>
-      </div>
-
-      {/* Whole-body systems chips */}
       <div className="w-full">
         <ChipGroup
           label="Whole-body systems"
-          options={chipOptions}
+          options={wholeBody.map((s) => ({ value: s.id, label: `${s.label} · ${statusLabel[s.status]}` }))}
           selected={selectedId ? [selectedId] : []}
           onChange={(vals) => {
             if (vals[0]) onSelect(vals[0])
