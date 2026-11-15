@@ -75,7 +75,7 @@ Wait until you arrive for step 5 (you need Elia) and for anything with the watch
   Then run the two "push an existing repository" lines GitHub shows you on the new repo's page.
 - [ ] **3.** Claim the Azure credit (needed for the public link in step 9 and for the Med bot's model in step 19). Claim the Google Cloud credit only if you expect to run out of subscription usage.
 - [ ] **4.** Send the team: the repo link, [docs/CONTRACTS.md](docs/CONTRACTS.md), and the open questions in section 9 of [docs/BUILD_PLAN.md](docs/BUILD_PLAN.md). Tell them their tabs will exist as placeholders after step 7. Tell Aviad that Med bot and Social are now yours, since Med bot was listed as his.
-- [ ] **5.** Sit with Elia and fill in one intake sheet for Medical status and one for Emergency (the sheet is in [docs/SCREENS.md](docs/SCREENS.md)). You need them at step 17, so start early.
+- [ ] **5.** Intake sheets for step 17. Medical status is done: [docs/intake/medical-status.md](docs/intake/medical-status.md), made from a teammate's mockup. Emergency still needs one (the blank sheet is in [docs/SCREENS.md](docs/SCREENS.md)).
 
 ## B. Foundation. One agent, alone
 
