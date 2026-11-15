@@ -180,18 +180,51 @@ export const metricIds = [
 
 export type MetricId = (typeof metricIds)[number]
 
+// Environment metric ids (CONTRACTS section 8, prompt 25). They describe the station, not a person.
+export const environmentMetricIds = [
+  'temperatureC',
+  'humidityPct',
+  'gravityG',
+  'oxygenPct',
+  'co2MmHg',
+  'noiseDb',
+  'radiationUSvPerHour',
+  'mosfetOutsideUGyPerHour',
+  'mosfetInsideUGyPerHour',
+] as const
+
+export type EnvironmentMetricId = (typeof environmentMetricIds)[number]
+
+/** Every environment metric except gravity, which has no target: the mission sets it. */
+export const environmentTargetIds = [
+  'temperatureC',
+  'humidityPct',
+  'oxygenPct',
+  'co2MmHg',
+  'noiseDb',
+  'radiationUSvPerHour',
+  'mosfetOutsideUGyPerHour',
+  'mosfetInsideUGyPerHour',
+] as const
+
+export type EnvironmentTargetId = (typeof environmentTargetIds)[number]
+
 export const targetIds = [
   ...metricIds,
   'resistiveSessionsPerWeek',
   'aerobicSessionsPerWeek',
+  ...environmentTargetIds,
 ] as const
 
 export type TargetId = (typeof targetIds)[number]
 
+/** The targets of a person's own metrics. Always present in a `TargetMap`. */
+export type CoreTargetId = Exclude<TargetId, EnvironmentTargetId>
+
 export type MetricValue = {
   /** null means no data. */
   value: number | null
-  targetId: TargetId
+  targetId: CoreTargetId
   level: Level
   /** null when there is no data. */
   source: Source | null
@@ -226,7 +259,8 @@ export type SeriesPoint = {
   source: Source | null
 }
 
-export type TargetMap = Record<TargetId, Target>
+/** Every core target is always present. The environment targets are optional for callers that build a map by hand. */
+export type TargetMap = Record<CoreTargetId, Target> & Partial<Record<EnvironmentTargetId, Target>>
 
 export type VitalsConnection = 'live' | 'simulated' | 'off'
 
@@ -266,3 +300,13 @@ export type VitalInput = {
   skinTempC?: number
   source: Source
 }
+
+/** The station around the crew at one moment. The same for every profile; never stored. */
+export type EnvironmentSample = {
+  at: Timestamp
+  /** Always simulated: the app has no cabin sensor. */
+  source: 'simulated'
+} & Record<EnvironmentMetricId, number>
+
+/** One hour of an environment value, oldest first in a series. */
+export type EnvironmentPoint = { at: Timestamp; value: number; source: 'simulated' }

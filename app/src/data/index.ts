@@ -159,3 +159,13 @@ if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') installAut
 export { useDevice, completeDeviceSetup, resetDeviceSetup } from './device'
 export type { DeviceKind, DeviceState } from './device'
 // --- end of this device ---
+// --- Station environment (prompt 25, CONTRACTS section 9) ---
+export { useEnvironment, useEnvironmentSeries, environmentAt } from './environment'
+export { environmentMetricIds, environmentTargetIds } from './types'
+export type {
+  EnvironmentMetricId,
+  EnvironmentPoint,
+  EnvironmentSample,
+  EnvironmentTargetId,
+} from './types'
+// --- end of station environment ---

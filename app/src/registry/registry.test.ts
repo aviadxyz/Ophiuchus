@@ -4,6 +4,7 @@ import { getScreen, loadGuide, screens, screensByGroup } from '@/registry'
 const contractIds = [
   'overview',
   'risks',
+  'environment',
   'sleep',
   'medical-status',
   'mental-health',
@@ -20,7 +21,7 @@ const contractIds = [
 ]
 
 describe('registry', () => {
-  it('collects all fifteen screens from CONTRACTS section 3', () => {
+  it('collects all sixteen screens from CONTRACTS section 3', () => {
     expect(screens.map((s) => s.id).sort()).toEqual([...contractIds].sort())
   })
 
@@ -28,6 +29,7 @@ describe('registry', () => {
     expect(screensByGroup('console').map((s) => s.id)).toEqual([
       'overview',
       'risks',
+      'environment',
       'sleep',
       'medical-status',
       'mental-health',
