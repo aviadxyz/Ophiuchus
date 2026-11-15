@@ -1,0 +1,293 @@
+{
+  "source_id": "source_5611ecb4c6d90b86677b",
+  "chunk": {
+    "source_id": "source_5611ecb4c6d90b86677b",
+    "source_url": "https://www.nasa.gov/hrp/hazards/",
+    "chunk_id": "chunk_45420138431d3ea03543",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2858:4171",
+    "text": "Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight. Watch Isolation and Confinement Behavioral responses occur among groups of people isolated and confined in a small space over a long period of time. Crews must be carefully chosen, trained, and supported to ensure they can work effectively as a team for months or years in space. Watch Distance From Earth Mars is, on average, 140 million miles from Earth. Rather than a three-day lunar trip, astronauts would be leaving our planet for roughly three years. Planning and self-sufficiency will be key to successful deep space missions. Watch Gravity Fields On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads. Watch Hostile/Closed Environments A spacecraft is not only a home, it’s also a machine. The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more. Watch Keep Exploring Discover More Topics From NASA Astronauts Humans In Space Risks of Human Spaceflight Space Station Research and Technology",
+    "original_text": "Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight. Watch Isolation and Confinement Behavioral responses occur among groups of people isolated and confined in a small space over a long period of time. Crews must be carefully chosen, trained, and supported to ensure they can work effectively as a team for months or years in space. Watch Distance From Earth Mars is, on average, 140 million miles from Earth. Rather than a three-day lunar trip, astronauts would be leaving our planet for roughly three years. Planning and self-sufficiency will be key to successful deep space missions. Watch Gravity Fields On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads. Watch Hostile/Closed Environments A spacecraft is not only a home, it’s also a machine. The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more. Watch Keep Exploring Discover More Topics From NASA Astronauts Humans In Space Risks of Human Spaceflight Space Station Research and Technology"
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "microbial exposure",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "infections",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: infections -> associated_with -> microbial exposure."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "source_url": "https://www.nasa.gov/hrp/hazards/",
+        "chunk_id": "chunk_45420138431d3ea03543",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2858:4171",
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "source_url": "https://www.nasa.gov/hrp/hazards/",
+        "chunk_id": "chunk_45420138431d3ea03543",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2858:4171",
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "source_url": "https://www.nasa.gov/hrp/hazards/",
+        "chunk_id": "chunk_45420138431d3ea03543",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2858:4171",
+        "evidence_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_6a2b2145067044432806",
+        "canonical_name": "microbial exposure",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_e65623643245482e1538",
+        "subject_entity_id": "risk_factors_6a2b2145067044432806",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"microbial exposure\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.\"}",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_c856bdbc1829a67fc80b",
+        "subject_entity_id": "conditions_5f3cb330f550de0c5e06",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"infections\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.\"}",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_caf94595cd2e7b85779e",
+        "subject_entity_id": "risk_factors_6a2b2145067044432806",
+        "object_entity_id": "conditions_5f3cb330f550de0c5e06",
+        "predicate": "associated_with",
+        "claim_text": "The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.",
+        "source_id": "source_5611ecb4c6d90b86677b",
+        "evidence_id": "evidence_51eb7dac5f93207affef",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: infections -> associated_with -> microbial exposure.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_5f3cb330f550de0c5e06",
+        "canonical_name": "infections",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_83eedde33e9a2b4fba6a",
+        "source_entity_id": "risk_factors_6a2b2145067044432806",
+        "target_entity_id": "conditions_5f3cb330f550de0c5e06",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_caf94595cd2e7b85779e",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight.",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "radiation"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "spaceflight-related health conditions"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "muscle atrophy"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "physical_findings",
+          "name": "bone density loss"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\"relationships\": [\n  {\n    \"evidence_text\": \"Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight.\",\n    \"object\": {\n      \"entity_type\": \"risk_factors\",\n      \"name\": \"radiation\"\n    },\n    \"predicate\": \"increases_risk_of\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"spaceflight-related health conditions\"\n    }\n  },\n  {\n    \"evidence_text\": \"On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads.\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"muscle atrophy\"\n    },\n    \"predicate\": \"may_contribute_to\",\n    \"subject\": {\n      \"entity_type\": \"physical_findings\",\n      \"name\": \"bone density loss\"\n    }\n  },\n  {\n    \"evidence_text\": \"The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.\",\n    \"object\": {\n      \"entity_type\": \"risk_factors\",\n      \"name\": \"microbial exposure\"\n    },\n    \"predicate\": \"associated_with\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"infections\"\n    }\n  }\n]}",
+  "extraction_metadata": {
+    "input_content_hash": "3a6c1a8d2afd01f51accc66df699fbe5a9109da3879b46b1545c2c7cee68d5c6",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "source_id": "source_272ff97648e63fa98488",
+  "chunk": {
+    "source_id": "source_272ff97648e63fa98488",
+    "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+    "chunk_id": "chunk_fc0e62f031682e6d151e",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1319",
+    "text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. ",
+    "original_text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "sleep-wake cycle disruption",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "LED light simulation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: sleep-wake cycle disruption -> countermeasure_for -> LED light simulation."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "source_id": "source_272ff97648e63fa98488",
+        "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+        "chunk_id": "chunk_fc0e62f031682e6d151e",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1319",
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "source_id": "source_272ff97648e63fa98488",
+        "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+        "chunk_id": "chunk_fc0e62f031682e6d151e",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1319",
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "source_id": "source_272ff97648e63fa98488",
+        "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+        "chunk_id": "chunk_fc0e62f031682e6d151e",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1319",
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_385f44abcfe940fa01f9",
+        "canonical_name": "sleep-wake cycle disruption",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_3cd37475f4a3f24e1405",
+        "subject_entity_id": "conditions_385f44abcfe940fa01f9",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"sleep-wake cycle disruption\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\"}",
+        "source_id": "source_272ff97648e63fa98488",
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8147d789f87e1cf02016",
+        "subject_entity_id": "treatments_b6ce10da5f1519af93af",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"LED light simulation\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\"}",
+        "source_id": "source_272ff97648e63fa98488",
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_ed247eadecf402408a4f",
+        "subject_entity_id": "conditions_385f44abcfe940fa01f9",
+        "object_entity_id": "treatments_b6ce10da5f1519af93af",
+        "predicate": "countermeasure_for",
+        "claim_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "source_id": "source_272ff97648e63fa98488",
+        "evidence_id": "evidence_4070e6fcc8a6f75b0cc5",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: sleep-wake cycle disruption -> countermeasure_for -> LED light simulation.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_b6ce10da5f1519af93af",
+        "canonical_name": "LED light simulation",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_ef67a77da7fb83fcf3aa",
+        "source_entity_id": "conditions_385f44abcfe940fa01f9",
+        "target_entity_id": "treatments_b6ce10da5f1519af93af",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_ed247eadecf402408a4f",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "irregular sleep and schedules",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "irregular sleep and schedules"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "spaceflight stressors"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle",
+        "object": {
+          "entity_type": "risk_factors",
+          "name": "irregular light-dark cycles"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "sleep-wake cycle disruption"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "100"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"irregular sleep and schedules\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"irregular sleep and schedules\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spaceflight stressors\"\n      }\n    },\n    {\n      \"evidence_text\": \"astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"irregular light-dark cycles\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"sleep-wake cycle disruption\"\n      }\n    },\n    {\n      \"evidence_text\": \"light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"LED light simulation\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"sleep-wake cycle disruption\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "b0d55f536f7b71c536330b1439a76eb7951923a442a2e4d170d2cf63d65add35",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "1ad4748a4167d32a1b91e4f1cfad17433ca6222d9fa10587ddc5af39a15ddd12",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": "The provided text does not contain specific details about the five hazards, their individual components, or associated monitoring or interventions. It only references the Human Research Roadmap in general terms and its association with risks and knowledge gaps in human spaceflight. No specific biomarkers, conditions, or treatments are described or linked in the text. Therefore, all monitoring and intervention data are missing or unsupported by the text.",
+    "entities": [
+      {
+        "local_id": "HRP_cond_001",
+        "entity_type": "conditions",
+        "canonical_name": "Human Research Roadmap",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight."
+      },
+      {
+        "local_id": "HRP_cond_002",
+        "entity_type": "conditions",
+        "canonical_name": "Five Hazards",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight."
+      },
+      {
+        "local_id": "HRP_env_001",
+        "entity_type": "environments",
+        "canonical_name": "human spaceflight",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight."
+      },
+      {
+        "local_id": "HRP_gene_001",
+        "entity_type": "genes",
+        "canonical_name": "HRP",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [],
+  "original_model_output": "{\n  \"source_type\": \"research_summary\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"Human Research Roadmap\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight.\",\n      \"local_id\": \"HRP_cond_001\"\n    },\n    {\n      \"canonical_name\": \"Five Hazards\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight.\",\n      \"local_id\": \"HRP_cond_002\"\n    },\n    {\n      \"canonical_name\": \"human spaceflight\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight.\",\n      \"local_id\": \"HRP_env_001\"\n    },\n    {\n      \"canonical_name\": \"HRP\",\n      \"entity_type\": \"genes\",\n      \"evidence_text\": \"The Human Research Roadmap provides an overview of the risks and knowledge gaps that HRP associates with human spaceflight.\",\n      \"local_id\": \"HRP_gene_001\"\n    }\n  ],\n  \"monitoring\": [],\n  \"source_limitations\": \"The provided text does not contain specific details about the five hazards, their individual components, or associated monitoring or interventions. It only references the Human Research Roadmap in general terms and its association with risks and knowledge gaps in human spaceflight. No specific biomarkers, conditions, or treatments are described or linked in the text. Therefore, all monitoring and intervention data are missing or unsupported by the text.\"\n}"
+}

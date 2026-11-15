@@ -1,0 +1,246 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "00e8802ce9051510cf8b2005aa48adabed22c6acc42d16ae2cfcd0f2ab2e3b08",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_paper",
+    "source_limitations": "The provided text does not contain specific data on radiation exposure levels, biological damage metrics, or health outcomes for astronauts. All claims are based on general descriptions of technology and radiation risks. No clinical efficacy, dosages, or health thresholds are specified. The information is limited to technological development and experimental context.",
+    "entities": [
+      {
+        "local_id": "CANS",
+        "entity_type": "treatments",
+        "canonical_name": "Canadian Active Neutron Spectrometer",
+        "description": "A compact and autonomous instrument designed to measure neutron radiation exposure in space.",
+        "aliases": [
+          "CANS"
+        ],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "The CSA has awarded a contract of $5.5 million to Bubble Technology Industries for the continued development of the CANS , a compact and autonomous instrument designed to measure neutron radiation exposure in space."
+      },
+      {
+        "local_id": "neutron_radiation",
+        "entity_type": "conditions",
+        "canonical_name": "neutron radiation",
+        "description": "A form of radiation that contributes to about 30% of total radiation on the ISS and is especially harmful due to its potential to cause serious biological damage.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Neutron radiation, which contributes to about 30% of total radiation on the ISS , is especially harmful because it can cause serious biological damage and require specialized protective measures."
+      },
+      {
+        "local_id": "ISS",
+        "entity_type": "environments",
+        "canonical_name": "International Space Station",
+        "description": "A space station that has served as a test bed for new technology for over 25 years.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "As Canada and its international partners advance plans for missions to the Moon, and eventually Mars, the CSA continues to invest in technology to better understand exposure levels. For over 25 years, the ISS has been a test bed for new technology."
+      },
+      {
+        "local_id": "MOSFET",
+        "entity_type": "treatments",
+        "canonical_name": "MOSFET",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 ."
+      },
+      {
+        "local_id": "EVARM",
+        "entity_type": "treatments",
+        "canonical_name": "EVARM",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 ."
+      },
+      {
+        "local_id": "Radi-N",
+        "entity_type": "treatments",
+        "canonical_name": "Radi-N",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 ."
+      },
+      {
+        "local_id": "Radi-N2",
+        "entity_type": "treatments",
+        "canonical_name": "Radi-N2",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 ."
+      },
+      {
+        "local_id": "bubble_detectors",
+        "entity_type": "treatments",
+        "canonical_name": "bubble detectors",
+        "description": "A predecessor technology to the Canadian Active Neutron Spectrometer (CANS) used by astronauts on the ISS.",
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Canadian Space Agency (CSA) astronaut David Saint-Jacques using bubble detectors, a predecessor to Canadian Active Neutron Spectrometer (CANS), on the International Space Station (ISS)."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 0,
+      "record": {
+        "biomarker": "null",
+        "condition": "neutron_radiation",
+        "environment": "ISS",
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Data collected could help develop better measures to reduce risks for astronauts’ health and also has potential applications on Earth, including cancer therapy, radiation protection for aircrews, nuclear threat detection and public safety, among others."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    }
+  ],
+  "original_model_output": "{\n  \"source_type\": \"research_paper\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"Canadian Active Neutron Spectrometer\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"The CSA has awarded a contract of $5.5 million to Bubble Technology Industries for the continued development of the CANS , a compact and autonomous instrument designed to measure neutron radiation exposure in space.\",\n      \"local_id\": \"CANS\",\n      \"aliases\": [\n        \"CANS\"\n      ],\n      \"description\": \"A compact and autonomous instrument designed to measure neutron radiation exposure in space.\"\n    },\n    {\n      \"canonical_name\": \"neutron radiation\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Neutron radiation, which contributes to about 30% of total radiation on the ISS , is especially harmful because it can cause serious biological damage and require specialized protective measures.\",\n      \"local_id\": \"neutron_radiation\",\n      \"description\": \"A form of radiation that contributes to about 30% of total radiation on the ISS and is especially harmful due to its potential to cause serious biological damage.\"\n    },\n    {\n      \"canonical_name\": \"International Space Station\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"As Canada and its international partners advance plans for missions to the Moon, and eventually Mars, the CSA continues to invest in technology to better understand exposure levels. For over 25 years, the ISS has been a test bed for new technology.\",\n      \"local_id\": \"ISS\",\n      \"description\": \"A space station that has served as a test bed for new technology for over 25 years.\"\n    },\n    {\n      \"canonical_name\": \"MOSFET\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 .\",\n      \"local_id\": \"MOSFET\",\n      \"description\": \"A radiation detection experiment conducted on the ISS.\"\n    },\n    {\n      \"canonical_name\": \"EVARM\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 .\",\n      \"local_id\": \"EVARM\",\n      \"description\": \"A radiation detection experiment conducted on the ISS.\"\n    },\n    {\n      \"canonical_name\": \"Radi-N\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 .\",\n      \"local_id\": \"Radi-N\",\n      \"description\": \"A radiation detection experiment conducted on the ISS.\"\n    },\n    {\n      \"canonical_name\": \"Radi-N2\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"Canada has significant expertise in radiation detection experiments on the ISS , including MOSFET , EVARM and Radi-N and Radi-N2 .\",\n      \"local_id\": \"Radi-N2\",\n      \"description\": \"A radiation detection experiment conducted on the ISS.\"\n    },\n    {\n      \"canonical_name\": \"bubble detectors\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"Canadian Space Agency (CSA) astronaut David Saint-Jacques using bubble detectors, a predecessor to Canadian Active Neutron Spectrometer (CANS), on the International Space Station (ISS).\",\n      \"local_id\": \"bubble_detectors\",\n      \"description\": \"A predecessor technology to the Canadian Active Neutron Spectrometer (CANS) used by astronauts on the ISS.\"\n    }\n  ],\n  \"monitoring\": [\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Data collected could help develop better measures to reduce risks for astronauts’ health and also has potential applications on Earth, including cancer therapy, radiation protection for aircrews, nuclear threat detection and public safety, among others.\",\n      \"condition\": \"neutron_radiation\",\n      \"environment\": \"ISS\"\n    }\n  ],\n  \"source_limitations\": \"The provided text does not contain specific data on radiation exposure levels, biological damage metrics, or health outcomes for astronauts. All claims are based on general descriptions of technology and radiation risks. No clinical efficacy, dosages, or health thresholds are specified. The information is limited to technological development and experimental context.\"\n}"
+}

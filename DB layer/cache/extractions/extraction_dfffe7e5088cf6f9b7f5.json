@@ -1,0 +1,129 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "a3b99c5ec725bc83c1c5fa557d90fbd9966625859810cae50b50391611182d7e",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "adverse mission outcomes due to Earth independent human-systems operation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "simulator training",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "evidence_text": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: adverse mission outcomes due to Earth independent human-systems operation -> countermeasure_for -> simulator training."
+      },
+      {
+        "subject": "e1",
+        "predicate": "investigated_for",
+        "object": "e2",
+        "claim_text": "Research in support of this risk: Latest evidence",
+        "evidence_text": "Research in support of this risk: Latest evidence",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: simulator training -> investigated_for -> adverse mission outcomes due to Earth independent human-systems operation."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "The Human Body in Space Read More",
+        "object": {
+          "entity_type": "conditions",
+          "name": "adverse mission outcomes due to Earth independent human-systems operation"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "cognitive_findings",
+          "name": "human physiological responses in space"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\"relationships\": [\n  {\n    \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n    \"object\": {\n      \"entity_type\": \"treatments\",\n      \"name\": \"simulator training\"\n    },\n    \"predicate\": \"countermeasure_for\",\n    \"subject\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"adverse mission outcomes due to Earth independent human-systems operation\"\n    }\n  },\n  {\n    \"evidence_text\": \"Research in support of this risk: Latest evidence\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"adverse mission outcomes due to Earth independent human-systems operation\"\n    },\n    \"predicate\": \"investigated_for\",\n    \"subject\": {\n      \"entity_type\": \"treatments\",\n      \"name\": \"simulator training\"\n    }\n  },\n  {\n    \"evidence_text\": \"The Human Body in Space Read More\",\n    \"object\": {\n      \"entity_type\": \"conditions\",\n      \"name\": \"adverse mission outcomes due to Earth independent human-systems operation\"\n    },\n    \"predicate\": \"monitored_by\",\n    \"subject\": {\n      \"entity_type\": \"cognitive_findings\",\n      \"name\": \"human physiological responses in space\"\n    }\n  }\n]}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 0
+  }
+}

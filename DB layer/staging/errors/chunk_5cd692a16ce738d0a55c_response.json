@@ -1,0 +1,6 @@
+{
+  "source_id": "source_78a16b9a26f83f3e4b67",
+  "chunk_id": "chunk_5cd692a16ce738d0a55c",
+  "error": "Invalid relationship output: expected an object with a relationships array",
+  "original_model_output": "{}"
+}

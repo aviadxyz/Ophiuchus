@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_1b74656c820988255936",
+    "source_content_hash": "515039e07d399830c716beef830af9a525a7647e4b0a53ae90f5facf753b8b87",
+    "input_content_hash": "219b32b38810807ec1e01e5b86e1a7d911d924feb80531a2212533aec5d0cc01",
+    "chunk_id": "chunk_56356bce87edec9e42be",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_5f96a032684e4ca523b1",
+        "canonical_name": "exercise regimens",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "05f60281fb8d0cbd98dc369231e4f192a945f975efc401b139c6d82a97fbbe86"
+  },
+  "original_model_output": "{\"additions\": []}"
+}

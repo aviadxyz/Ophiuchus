@@ -1,0 +1,395 @@
+{
+  "source_id": "source_a88298f30673509167a9",
+  "chunk": {
+    "source_id": "source_a88298f30673509167a9",
+    "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+    "chunk_id": "chunk_75f00f80932129147da0",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2857:3820",
+    "text": "These new protocols are being incorporated into medical operations and planning for future missions. Did you know? NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low. Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community. Of course, it’s one more stressor on top of the other stressors of human spaceflight. That’s why scientists are continuing to study and assess this risk on its own and in the context of other spaceflight risks. Formal risk description: Risk of reduced crew health and performance due to hypoxia Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Locked In, Pressure Low Read More Risk of Decompression Sickness Read More Artemis Spacesuits Read More",
+    "original_text": "These new protocols are being incorporated into medical operations and planning for future missions. Did you know? NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low. Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community. Of course, it’s one more stressor on top of the other stressors of human spaceflight. That’s why scientists are continuing to study and assess this risk on its own and in the context of other spaceflight risks. Formal risk description: Risk of reduced crew health and performance due to hypoxia Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Locked In, Pressure Low Read More Risk of Decompression Sickness Read More Artemis Spacesuits Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "hypoxia",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "reduced crew health and performance",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low."
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "conditions",
+        "canonical_name": "altitude sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: reduced crew health and performance -> associated_with -> hypoxia."
+      },
+      {
+        "subject": "e1",
+        "predicate": "may_contribute_to",
+        "object": "e3",
+        "claim_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.",
+        "evidence_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: hypoxia -> may_contribute_to -> altitude sickness."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_75f00f80932129147da0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2857:3820",
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_75f00f80932129147da0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2857:3820",
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_2f2e5ec2a2e39ccb2fde",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_75f00f80932129147da0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2857:3820",
+        "evidence_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_75f00f80932129147da0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2857:3820",
+        "evidence_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_2f2e5ec2a2e39ccb2fde",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_75f00f80932129147da0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2857:3820",
+        "evidence_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_20f1056f9db9ec82cb11",
+        "canonical_name": "hypoxia",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_2811c29230d59817de5d",
+        "subject_entity_id": "risk_factors_20f1056f9db9ec82cb11",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"hypoxia\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.\"}",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_fdfe7a3ddd35ad355d94",
+        "subject_entity_id": "conditions_11f0bc3cdf6f0791e462",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"reduced crew health and performance\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.\"}",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_15eb2fc0cfe5332cebf6",
+        "subject_entity_id": "conditions_f4da266058876cab1412",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"conditions\",\"canonical_name\":\"altitude sickness\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.\"}",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_2f2e5ec2a2e39ccb2fde",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_00ba0815fc166fddbcd4",
+        "subject_entity_id": "risk_factors_20f1056f9db9ec82cb11",
+        "object_entity_id": "conditions_11f0bc3cdf6f0791e462",
+        "predicate": "associated_with",
+        "claim_text": "NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_ea29431277699706d8c0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: reduced crew health and performance -> associated_with -> hypoxia.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_396c06fc2bc2a5cad2ec",
+        "subject_entity_id": "risk_factors_20f1056f9db9ec82cb11",
+        "object_entity_id": "conditions_f4da266058876cab1412",
+        "predicate": "may_contribute_to",
+        "claim_text": "Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_2f2e5ec2a2e39ccb2fde",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: hypoxia -> may_contribute_to -> altitude sickness.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_11f0bc3cdf6f0791e462",
+        "canonical_name": "reduced crew health and performance",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      {
+        "condition_id": "conditions_f4da266058876cab1412",
+        "canonical_name": "altitude sickness",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_52a9e506dafbb7d31257",
+        "source_entity_id": "risk_factors_20f1056f9db9ec82cb11",
+        "target_entity_id": "conditions_11f0bc3cdf6f0791e462",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_00ba0815fc166fddbcd4",
+        "review_status": "pending"
+      },
+      {
+        "relation_id": "relation_e00caa3683d6216b26b4",
+        "source_entity_id": "risk_factors_20f1056f9db9ec82cb11",
+        "target_entity_id": "conditions_f4da266058876cab1412",
+        "relationship_type": "may_contribute_to",
+        "claim_id": "claim_396c06fc2bc2a5cad2ec",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Scientists are continuing to study and assess this risk on its own and in the context of other spaceflight risks.",
+        "object": {
+          "entity_type": "environments",
+          "name": "spaceflight"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "reduced crew health and performance"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "85"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"NASA scientists currently consider the hypoxia risk associated with future spaceflight missions to be relatively low.\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"hypoxia\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"reduced crew health and performance\"\n      }\n    },\n    {\n      \"evidence_text\": \"Most likely, hypoxia experienced on a mission would be similar to the altitude sickness a person may experience after newly arriving in a high mountain community.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altitude sickness\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"hypoxia\"\n      }\n    },\n    {\n      \"evidence_text\": \"Scientists are continuing to study and assess this risk on its own and in the context of other spaceflight risks.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spaceflight\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"reduced crew health and performance\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "1ae2ca60c161c864c9fa3d3b5fdc4d081938c06520dd6d47c24ee00d680a4ffa",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

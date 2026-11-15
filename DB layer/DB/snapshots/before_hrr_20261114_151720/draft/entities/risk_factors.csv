@@ -1,0 +1,4 @@
+risk_id,canonical_name,category,description,review_status
+risk_factors_7ff064656a0ea161fb49,Space Radiation,,,pending
+risk_factors_cea13661e3cfc5c1123c,Isolation and Confinement,,,pending
+risk_factors_1af5a43374f9fb98be01,mitigation of radiation-induced cancer risks,,,pending

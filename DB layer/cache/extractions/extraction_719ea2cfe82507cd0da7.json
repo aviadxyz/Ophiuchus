@@ -1,0 +1,90 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "37d019b11ec44895f1de55743b84e333f705081ea51d3e2ecd5ad324161ba8be",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "reduced bone density"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "low gravity"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Without the continuous load of Earth’s gravity, the living tissues of bone reshape themselves. Freed from pressures of Earth’s surface, cells that build new bone slow down their work. Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "weaker, more brittle bones"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "low gravity"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Dr. Ashley Weaver and her team study how spaceflight affects the network of bones and muscles in the spinal column.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "spinal bone and muscle network changes"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "countermeasures against bone loss"
+        }
+      }
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"For every month in space, astronauts’ weight-bearing bones become roughly 1% less dense if they don’t take precautions to counter this loss.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"reduced bone density\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"low gravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"Without the continuous load of Earth’s gravity, the living tissues of bone reshape themselves. Freed from pressures of Earth’s surface, cells that build new bone slow down their work. Cells that remove old bone keep chugging along. Removal outpaces growth, producing weaker, more brittle bones.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"weaker, more brittle bones\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"low gravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"Dr. Ashley Weaver and her team study how spaceflight affects the network of bones and muscles in the spinal column.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spinal bone and muscle network changes\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"countermeasures against bone loss\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  }
+}

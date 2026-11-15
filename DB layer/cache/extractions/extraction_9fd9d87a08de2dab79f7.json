@@ -1,0 +1,169 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "ab2964b1f64b3827e3742440e21d9513229961693fead69a56f7041e71577f48",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": "This summary is based on general descriptions of deep space mission challenges and does not include specific data, clinical studies, or approved medical interventions. All information is observational and descriptive, not prescriptive or diagnostic. No claims of efficacy, approval, or dosage are made. The source does not provide quantitative data on health outcomes or radiation exposure levels. Behavioral and environmental observations are presented without causal inference or experimental validation.",
+    "entities": [
+      {
+        "local_id": "E1",
+        "entity_type": "environments",
+        "canonical_name": "Distance from Earth",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Mars is, on average, 140 million miles from Earth. Rather than a three-day lunar trip, astronauts would be leaving our planet for roughly three years."
+      },
+      {
+        "local_id": "E2",
+        "entity_type": "environments",
+        "canonical_name": "Gravity Fields",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads."
+      },
+      {
+        "local_id": "E3",
+        "entity_type": "environments",
+        "canonical_name": "Hostile/Closed Environments",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "A spacecraft is not only a home, it’s also a machine. The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more."
+      },
+      {
+        "local_id": "R1",
+        "entity_type": "risk_factors",
+        "canonical_name": "Space Radiation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "This hazard of a human mission to Mars is the most difficult to visualize because, well, space radiation is invisible to the human eye. Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight."
+      },
+      {
+        "local_id": "R2",
+        "entity_type": "risk_factors",
+        "canonical_name": "Isolation and Confinement",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Behavioral responses occur among groups of people isolated and confined in a small space over a long period of time. Crews must be carefully chosen, trained, and supported to ensure they can work effectively as a team for months or years in space."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "invalid_entity_reference",
+      "group": "monitoring",
+      "index": 0,
+      "record": {
+        "biomarker": "null",
+        "condition": "null",
+        "environment": "E3",
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "Monitoring microbial communities, and tracking immune responses."
+      },
+      "error": "1 validation error for Extraction\n  Value error, Invalid monitoring reference [type=value_error, input_value={'source_type': 'research...}], 'interventions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+    }
+  ],
+  "original_model_output": "{\n  \"source_type\": \"research_summary\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"Distance from Earth\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"Mars is, on average, 140 million miles from Earth. Rather than a three-day lunar trip, astronauts would be leaving our planet for roughly three years.\",\n      \"local_id\": \"E1\"\n    },\n    {\n      \"canonical_name\": \"Gravity Fields\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"On Mars, astronauts would need to live and work in three-eighths of Earth’s gravitational pull for up to two years. Throughout this time, their bodies – muscles, bones, inner ear, and organs – will be adjusting to new gravitational loads.\",\n      \"local_id\": \"E2\"\n    },\n    {\n      \"canonical_name\": \"Hostile/Closed Environments\",\n      \"entity_type\": \"environments\",\n      \"evidence_text\": \"A spacecraft is not only a home, it’s also a machine. The ecosystem inside a vehicle plays a big role in everyday astronaut life. Important habitability factors include temperature, pressure, lighting, noise, the presence of microbes, and more.\",\n      \"local_id\": \"E3\"\n    },\n    {\n      \"canonical_name\": \"Space Radiation\",\n      \"entity_type\": \"risk_factors\",\n      \"evidence_text\": \"This hazard of a human mission to Mars is the most difficult to visualize because, well, space radiation is invisible to the human eye. Radiation is not only stealthy, but considered one of the most hazardous aspects of spaceflight.\",\n      \"local_id\": \"R1\"\n    },\n    {\n      \"canonical_name\": \"Isolation and Confinement\",\n      \"entity_type\": \"risk_factors\",\n      \"evidence_text\": \"Behavioral responses occur among groups of people isolated and confined in a small space over a long period of time. Crews must be carefully chosen, trained, and supported to ensure they can work effectively as a team for months or years in space.\",\n      \"local_id\": \"R2\"\n    }\n  ],\n  \"monitoring\": [\n    {\n      \"biomarker\": \"null\",\n      \"evidence_text\": \"Monitoring microbial communities, and tracking immune responses.\",\n      \"condition\": \"null\",\n      \"environment\": \"E3\"\n    }\n  ],\n  \"source_limitations\": \"This summary is based on general descriptions of deep space mission challenges and does not include specific data, clinical studies, or approved medical interventions. All information is observational and descriptive, not prescriptive or diagnostic. No claims of efficacy, approval, or dosage are made. The source does not provide quantitative data on health outcomes or radiation exposure levels. Behavioral and environmental observations are presented without causal inference or experimental validation.\"\n}"
+}

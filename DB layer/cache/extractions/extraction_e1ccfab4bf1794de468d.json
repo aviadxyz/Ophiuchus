@@ -1,0 +1,179 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "7dace20c92387008233b46788a60a03bc415dbba360d32164067e8cd680c61a1",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "sleep loss",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "performance decrements",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload"
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "risk_factors",
+        "canonical_name": "circadian desynchronization",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload"
+      },
+      {
+        "local_id": "e4",
+        "entity_type": "conditions",
+        "canonical_name": "adverse health outcomes",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "increases_risk_of",
+        "object": "e2",
+        "claim_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: sleep loss -> increases_risk_of -> performance decrements."
+      },
+      {
+        "subject": "e3",
+        "predicate": "increases_risk_of",
+        "object": "e4",
+        "claim_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+        "evidence_text": "Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: circadian desynchronization -> increases_risk_of -> adverse health outcomes."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.",
+        "object": {
+          "entity_type": "environments",
+          "name": "space station"
+        },
+        "predicate": "associated_with",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "sleep-wake cycle disruption"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space station\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"sleep-wake cycle disruption\"\n      }\n    },\n    {\n      \"evidence_text\": \"Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"performance decrements\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"sleep loss\"\n      }\n    },\n    {\n      \"evidence_text\": \"Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"adverse health outcomes\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"circadian desynchronization\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 0
+  }
+}

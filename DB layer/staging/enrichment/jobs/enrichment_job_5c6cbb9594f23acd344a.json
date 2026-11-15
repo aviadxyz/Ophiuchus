@@ -1,0 +1,127 @@
+{
+  "status": "completed",
+  "job": {
+    "job_id": "enrichment_job_5c6cbb9594f23acd344a",
+    "identity": {
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_content_hash": "748e7ec388f2c10c5b63a52d7f8ec46dead7694f9fac8639fe548a4751b46a74",
+      "input_content_hash": "41c51b8595fad755af130e825a630b36c1759ad9701f111e486554336afac6cc",
+      "chunk_id": "chunk_fe319fdcaeff6cbfd3d4",
+      "section": null,
+      "targets": [
+        {
+          "entity_id": "treatments_deb687c28a7c61d4b698",
+          "canonical_name": "disinfectants, anti-inflammatories, antibiotics",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        }
+      ],
+      "model": "qwen3:4b-instruct",
+      "settings": {
+        "temperature": 0.0,
+        "num_ctx": 8192,
+        "num_predict": 2048,
+        "seed": 0
+      },
+      "output_limit": 1024,
+      "prompt_version": "1",
+      "schema_version": "1",
+      "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+      "schema_hash": "0e93ef40179404bd78e6563433114d89582f361e1da11673bb896b2820fcd6d9"
+    },
+    "source_id": "source_0bb467f4a071c7fd0a01",
+    "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+    "entity_type": "treatments",
+    "targets": [
+      {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "canonical_name": "disinfectants, anti-inflammatories, antibiotics",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "chunk": {
+      "source_id": "source_0bb467f4a071c7fd0a01",
+      "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+      "chunk_id": "chunk_fe319fdcaeff6cbfd3d4",
+      "page_number": null,
+      "section": null,
+      "text_location": "section None; characters 0:1381",
+      "text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. ",
+      "original_text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. "
+    },
+    "original_page_text": "HHC Risk of Host-Microorganism Interactions Petri dishes are used to grow and store microbes. Researchers are interested in studying microbes like these to see how they change in space since studies suggest some microbes can become more virulent in space or even reawaken. Credit: NASA What are the top risks? Ongoing studies suggest that in space, the community of microbes on astronauts’ skin and in their guts changes, but how these alterations may affect the crews’ chances of contracting diseases remains unknown. Some microbes have been found to be more virulent in spaceflight, potentially elevating disease risk. Researchers remain uncertain if risk arises from microbiome changes , alterations in the ability of the microbes to cause disease, or shifts in immune system function. The interaction of these changes may be amplifying these risks. What can be done about it? Precautions to help minimize infections and other microbe-based threats include limiting flight crew exposure to large groups in the two weeks prior to launch. Yet despite such steps, some astronauts may still get sick in space . Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help. Did you know? Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Human Body in Space Read More Researchers Put Space Garden Microbes Under the Microscope Read More Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct Read More",
+    "priority": [
+      0,
+      false,
+      2,
+      "source_0bb467f4a071c7fd0a01",
+      "section None; characters 0:1381",
+      0
+    ]
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"disinfectants, anti-inflammatories, antibiotics\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"description\",\n      \"value\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"disinfectants, anti-inflammatories, antibiotics\"\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_deb687c28a7c61d4b698\",\n      \"evidence_text\": \"Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"unknown\"\n    }\n  ]\n}",
+  "candidate_ids": [
+    "attribute_claim_4bb337c4a4b293eebb82"
+  ],
+  "rejected": [
+    {
+      "index": 0,
+      "record": {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "evidence_text": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+        "field": "treatment_type",
+        "value": "disinfectants, anti-inflammatories, antibiotics"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 2,
+      "record": {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "evidence_text": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+        "field": "medication_or_supplement",
+        "value": "disinfectants, anti-inflammatories, antibiotics"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 5,
+      "record": {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "evidence_text": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+        "field": "requires_medical_supervision",
+        "value": false
+      },
+      "reason": "ambiguous_supervision_statement"
+    },
+    {
+      "index": 6,
+      "record": {
+        "entity_id": "treatments_deb687c28a7c61d4b698",
+        "evidence_text": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help.",
+        "field": "evidence_status",
+        "value": "unknown"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    }
+  ],
+  "proposed": 7,
+  "completed_at": "2026-11-14T17:36:48.850836+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-11-14T18:07:19.756577+00:00",
+  "status": "pilot_complete",
+  "requests_attempted": 10,
+  "requests_succeeded": 10,
+  "requests_failed": 0,
+  "jobs_skipped": 10,
+  "cache_hits": 0,
+  "fields_proposed": 40,
+  "fields_accepted": 7,
+  "fields_rejected": 23,
+  "remaining_jobs": 237,
+  "model": "qwen3:4b-instruct",
+  "jobs_total": 257,
+  "finished_at": "2026-11-14T18:28:12.849450+00:00"
+}

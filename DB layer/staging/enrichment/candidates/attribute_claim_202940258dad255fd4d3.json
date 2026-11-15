@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_acb57b3cb059a9fa5c7b",
+  "field": "description",
+  "value": "keeping a regular journal",
+  "evidence_text": "keeping a regular journal",
+  "candidate_id": "attribute_claim_202940258dad255fd4d3",
+  "evidence_id": "evidence_d367101ef16a3e6593d1",
+  "job_id": "enrichment_job_95de645c4a3d85ea0f18",
+  "source_id": "source_a52493076e4308064964",
+  "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_a52493076e4308064964",
+    "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+    "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 0:1421",
+    "text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. ",
+    "original_text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T18:09:02.810665+00:00"
+}

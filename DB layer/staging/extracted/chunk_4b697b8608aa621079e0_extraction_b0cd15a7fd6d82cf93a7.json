@@ -1,0 +1,475 @@
+{
+  "source_id": "source_9fc83afed4c3c844eb53",
+  "chunk": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+    "chunk_id": "chunk_4b697b8608aa621079e0",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2984:3636",
+    "text": "Aircraft cabins are pressurized to counter that risk. People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness. Formal risk description: Risk of mission impacts and long-term health issues due to decompression sickness Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Locked In, Pressure Low Read More Risk of Injury and Compromised Performance from Spacewalks Read More Artemis Spacesuits Read More",
+    "original_text": "Aircraft cabins are pressurized to counter that risk. People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness. Formal risk description: Risk of mission impacts and long-term health issues due to decompression sickness Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Locked In, Pressure Low Read More Risk of Injury and Compromised Performance from Spacewalks Read More Artemis Spacesuits Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "environments",
+        "canonical_name": "aircraft cabins",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "risk_factors",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk."
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "conditions",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness."
+      },
+      {
+        "local_id": "e4",
+        "entity_type": "treatments",
+        "canonical_name": "high oxygen breathing",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "Aircraft cabins are pressurized to counter that risk.",
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> associated_with -> aircraft cabins."
+      },
+      {
+        "subject": "e3",
+        "predicate": "countermeasure_for",
+        "object": "e4",
+        "claim_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> countermeasure_for -> high oxygen breathing."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "Aircraft cabins are pressurized to counter that risk.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+        "chunk_id": "chunk_4b697b8608aa621079e0",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 2984:3636",
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/environments": [
+      {
+        "environment_id": "environments_d6af2a83a169cbb25d1d",
+        "canonical_name": "aircraft cabins",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_d4b4e33bd3780413f961",
+        "subject_entity_id": "environments_d6af2a83a169cbb25d1d",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"environments\",\"canonical_name\":\"aircraft cabins\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Aircraft cabins are pressurized to counter that risk.\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_753478977e222f6624af",
+        "subject_entity_id": "risk_factors_3978ceaa4d85f511e7e2",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"decompression sickness\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Aircraft cabins are pressurized to counter that risk.\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_2e8c9cae8a40bd3da33b",
+        "subject_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"conditions\",\"canonical_name\":\"decompression sickness\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_0cf71919d3187f3245d4",
+        "subject_entity_id": "treatments_1f31a27f6c18baceb2a0",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e4\",\"entity_type\":\"treatments\",\"canonical_name\":\"high oxygen breathing\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.\"}",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_0cdad6252a53b50aa155",
+        "subject_entity_id": "environments_d6af2a83a169cbb25d1d",
+        "object_entity_id": "risk_factors_3978ceaa4d85f511e7e2",
+        "predicate": "associated_with",
+        "claim_text": "Aircraft cabins are pressurized to counter that risk.",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_f61626830a13aa8f406d",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> associated_with -> aircraft cabins.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8793281e57c32f45a8af",
+        "subject_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "object_entity_id": "treatments_1f31a27f6c18baceb2a0",
+        "predicate": "countermeasure_for",
+        "claim_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "source_id": "source_9fc83afed4c3c844eb53",
+        "evidence_id": "evidence_aa76acf5b92cc74ad419",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> countermeasure_for -> high oxygen breathing.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_3978ceaa4d85f511e7e2",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_3978ceaa4d85f511e7e2",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_1f31a27f6c18baceb2a0",
+        "canonical_name": "high oxygen breathing",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/environment_risk": [
+      {
+        "relation_id": "relation_2ae9c63b440d7e2ec4ad",
+        "source_entity_id": "environments_d6af2a83a169cbb25d1d",
+        "target_entity_id": "risk_factors_3978ceaa4d85f511e7e2",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_0cdad6252a53b50aa155",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_e127b7063ac6f3c0650c",
+        "source_entity_id": "conditions_3978ceaa4d85f511e7e2",
+        "target_entity_id": "treatments_1f31a27f6c18baceb2a0",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_8793281e57c32f45a8af",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "high-altitude aircraft cabins"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "179"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"high-altitude aircraft cabins\"\n      }\n    },\n    {\n      \"evidence_text\": \"Aircraft cabins are pressurized to counter that risk.\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"aircraft cabins\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"decompression sickness\"\n      }\n    },\n    {\n      \"evidence_text\": \"People who plan to fly in high-altitude military aircraft breathe high levels of oxygen before the flight – much like astronauts do before a spacewalk – to help avoid decompression sickness.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"high oxygen breathing\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "5e7ef26aeb8a3cd85092fe92ecae632b90116ddca2e7ad526512e3584d73eb90",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "source_id": "source_4e0f2521ffc550287338",
+  "chunk": {
+    "source_id": "source_4e0f2521ffc550287338",
+    "source_url": "https://www.nasa.gov/reference/risk-of-altered-sensorimotor-and-vestibular-function/",
+    "chunk_id": "chunk_fb65847e86bbbb58465f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1416",
+    "text": "HHC Risk of Altered Sensorimotor and Vestibular Function A NASA spacewalk training volunteer moves a 30-pound object through a boulder field while in a spacesuit connected to NASA’s Active Response Gravity Offload System, or ARGOS. The system simulates the gravity on Mars, helping researchers better understand mission readiness in that environment. Credit: NASA What are the top risks? Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves. Those issues are particularly concerning because ill crew members may have trouble with mission tasks, vehicle controls, or leaving the spacecraft to perform spacewalks. Finding ways to improve human performance when dealing with these issues are key priorities for missions to the Moon and Mars, and for any activities on their surfaces. What can be done about it? Ongoing research seeks to characterize the extent of disorientation astronauts face immediately after they land back on Earth . Such information gives scientists a baseline for how crews may react upon landing on other planetary bodies. Research also focuses on developing medicine in combination with other training or orientation aids to help address or prevent motion sickness and spatial disorientation. These efforts include astronaut surveys to evaluate motion sickness medications used, teaming up with the U.S. ",
+    "original_text": "HHC Risk of Altered Sensorimotor and Vestibular Function A NASA spacewalk training volunteer moves a 30-pound object through a boulder field while in a spacesuit connected to NASA’s Active Response Gravity Offload System, or ARGOS. The system simulates the gravity on Mars, helping researchers better understand mission readiness in that environment. Credit: NASA What are the top risks? Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves. Those issues are particularly concerning because ill crew members may have trouble with mission tasks, vehicle controls, or leaving the spacecraft to perform spacewalks. Finding ways to improve human performance when dealing with these issues are key priorities for missions to the Moon and Mars, and for any activities on their surfaces. What can be done about it? Ongoing research seeks to characterize the extent of disorientation astronauts face immediately after they land back on Earth . Such information gives scientists a baseline for how crews may react upon landing on other planetary bodies. Research also focuses on developing medicine in combination with other training or orientation aids to help address or prevent motion sickness and spatial disorientation. These efforts include astronaut surveys to evaluate motion sickness medications used, teaming up with the U.S. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "motion sickness"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "altered gravity"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "spatial disorientation"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "altered gravity"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Ongoing research seeks to characterize the extent of disorientation astronauts face immediately after they land back on Earth",
+        "object": {
+          "entity_type": "conditions",
+          "name": "spatial disorientation"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "treatments",
+          "name": "astronaut surveys"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [
+    "88"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"motion sickness\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"altered gravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"Altered gravity and shifts between different types of gravity may trigger motion sickness and affect astronauts’ ability to orient themselves.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spatial disorientation\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"altered gravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"Ongoing research seeks to characterize the extent of disorientation astronauts face immediately after they land back on Earth\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"spatial disorientation\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"astronaut surveys\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "652d94542ce653e2fab3c81a826505904ce7a90e801972f5ff891a0dae9ea2f9",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

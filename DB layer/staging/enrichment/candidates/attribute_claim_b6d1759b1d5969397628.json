@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_554dfe622b5d8d121d2e",
+  "field": "treatment_type",
+  "value": "enhanced spaceflight diet",
+  "evidence_text": "an enhanced spaceflight diet",
+  "candidate_id": "attribute_claim_b6d1759b1d5969397628",
+  "evidence_id": "evidence_44b24bedaa24adf6609d",
+  "job_id": "enrichment_job_dd3b0f164e2c92fa0009",
+  "source_id": "source_2b0483c9a18eae867cd2",
+  "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_2b0483c9a18eae867cd2",
+    "source_url": "https://www.nasa.gov/missions/station/enhanced-diet-may-help-astronauts-adapt-to-spaceflight/",
+    "chunk_id": "chunk_95b0a6276ad98280ce86",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 1442:2867",
+    "text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. This diet is generally more diverse in foods rich in bioactive compounds — specifically fruits, vegetables, and fish — than standard spaceflight fare. Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa. The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily. Every week, participants discuss their diet with a member of Douglas’s team, who provides feedback about their dietary status and information to help them continually meet requirements. Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health. Eight individuals in total are needed for the study. Victor Glover , NASA’s SpaceX Crew-1 astronaut and Expedition 64 flight engineer, contributed during his recent stay aboard the space station. Expedition 63 astronaut Chris Cassidy already participated. ",
+    "original_text": "Participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet. This diet is generally more diverse in foods rich in bioactive compounds — specifically fruits, vegetables, and fish — than standard spaceflight fare. Although these foods must all be shelf stable for multiple years at room temperature to be compatible with the food system requirements of the space station, a variety of options are available, such as freeze-dried butternut squash or fish with mango salsa. The study works like this: Participating astronauts consult with Douglas’s team to develop an enhanced diet that suits them. They stick to the enhanced diet aboard the space station, logging their food intake daily. Every week, participants discuss their diet with a member of Douglas’s team, who provides feedback about their dietary status and information to help them continually meet requirements. Blood, urine, saliva, and fecal samples are taken before, during, and after spaceflight. The team tracks changes in these vitals and samples over the course of the mission to pinpoint any observed benefits to a given astronaut’s health. Eight individuals in total are needed for the study. Victor Glover , NASA’s SpaceX Crew-1 astronaut and Expedition 64 flight engineer, contributed during his recent stay aboard the space station. Expedition 63 astronaut Chris Cassidy already participated. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T18:28:12.830479+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "relations_verified": 1,
+  "records": [
+    {
+      "table": "condition_treatment.csv",
+      "relation_id": "relation_16da88b56b3217ec969f",
+      "claim_id": "claim_34307d9dd15e2af5b99e",
+      "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+      "review_status": "pending"
+    }
+  ]
+}

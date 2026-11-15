@@ -1,0 +1,128 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "1c14a4b0faad75c8cf75e0ecaa26a41c224338dbd1cd4a0657762f7aa0697f03",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  },
+  "raw_extraction": {
+    "source_type": "research_paper",
+    "source_limitations": "The provided text does not contain specific data on monitoring measurements, biomarkers, or environmental conditions related to radiation-induced cancer risks. It only references the existence of ongoing research priorities without detailing any actual monitoring or intervention outcomes.",
+    "entities": [
+      {
+        "local_id": "cond_001",
+        "entity_type": "conditions",
+        "canonical_name": "radiation-induced cancer risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities. Read About Radiation-Induced Cancer Risks"
+      },
+      {
+        "local_id": "risk_001",
+        "entity_type": "risk_factors",
+        "canonical_name": "mitigation of radiation-induced cancer risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities."
+      },
+      {
+        "local_id": "treat_001",
+        "entity_type": "treatments",
+        "canonical_name": "interventions for radiation-induced cancer risks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "understand what interventions may help are ongoing research priorities."
+      },
+      {
+        "local_id": "research_001",
+        "entity_type": "conditions",
+        "canonical_name": "ongoing research priorities",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities."
+      }
+    ],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [],
+  "original_model_output": "{\n  \"source_type\": \"research_paper\",\n  \"entities\": [\n    {\n      \"canonical_name\": \"radiation-induced cancer risks\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities. Read About Radiation-Induced Cancer Risks\",\n      \"local_id\": \"cond_001\"\n    },\n    {\n      \"canonical_name\": \"mitigation of radiation-induced cancer risks\",\n      \"entity_type\": \"risk_factors\",\n      \"evidence_text\": \"Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities.\",\n      \"local_id\": \"risk_001\"\n    },\n    {\n      \"canonical_name\": \"interventions for radiation-induced cancer risks\",\n      \"entity_type\": \"treatments\",\n      \"evidence_text\": \"understand what interventions may help are ongoing research priorities.\",\n      \"local_id\": \"treat_001\"\n    },\n    {\n      \"canonical_name\": \"ongoing research priorities\",\n      \"entity_type\": \"conditions\",\n      \"evidence_text\": \"Identifying the best ways to mitigate this risk and understand what interventions may help are ongoing research priorities.\",\n      \"local_id\": \"research_001\"\n    }\n  ],\n  \"monitoring\": [],\n  \"source_limitations\": \"The provided text does not contain specific data on monitoring measurements, biomarkers, or environmental conditions related to radiation-induced cancer risks. It only references the existence of ongoing research priorities without detailing any actual monitoring or intervention outcomes.\"\n}"
+}

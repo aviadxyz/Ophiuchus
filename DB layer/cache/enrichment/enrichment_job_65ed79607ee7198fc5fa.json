@@ -1,0 +1,52 @@
+{
+  "identity": {
+    "source_id": "source_32415f5f7520d38b2e83",
+    "source_content_hash": "6fdfcf43054bd607b67ca1115d93c749635fa91828bcb82d02ff3b411ea3cd15",
+    "input_content_hash": "b59559cf65dd38617bbc2212a9bc6aebe19f05c961ba991ee320366200560271",
+    "chunk_id": "chunk_92f16d019e6f7dabcf22",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_21256e12625f231c8407",
+        "canonical_name": "user-friendly system design",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      },
+      {
+        "entity_id": "treatments_5b57e3d36812e0e991e5",
+        "canonical_name": "simulator training",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "d1e2cc679c7f05eb250070a4dfac54ffdf6f9578777b3c69889c26f34e1975cc"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\",\n      \"field\": \"description\",\n      \"value\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\"\n    },\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"training\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"description\",\n      \"value\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"simulator training\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_5b57e3d36812e0e991e5\",\n      \"evidence_text\": \"NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not applicable\"\n    },\n    {\n      \"entity_id\": \"treatments_21256e12625f231c8407\",\n      \"evidence_text\": \"NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not applicable\"\n    }\n  ]\n}"
+}

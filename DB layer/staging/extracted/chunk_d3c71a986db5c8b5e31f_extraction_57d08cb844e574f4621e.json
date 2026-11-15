@@ -1,0 +1,400 @@
+{
+  "source_id": "source_a52493076e4308064964",
+  "chunk": {
+    "source_id": "source_a52493076e4308064964",
+    "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+    "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1421",
+    "text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. ",
+    "original_text": "HFBP Risk of Behavioral Changes and Psychiatric Disorders NASA astronaut Tracy Caldwell Dyson looks through a window in the cupola of the International Space Station. Astronauts on the space station can routinely connect with family and medical professionals back on Earth for support, but deep space missions will present new challenges, including extended communication delays. Credit: NASA/Tracy Caldwell Dyson What are the top risks? The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression. These factors may impact a crew member’s sleep, morale, and decision making, so ongoing research about how to help crews maintain psychological health is essential for the success and safety of future missions. Crew members aboard the International Space Station can virtually talk with family and medical professionals for support, but extended communication delays with a multi-year trip to Mars will create new challenges. What can be done about it? Astronauts aboard the space station cope with isolation and confinement in myriad ways. To improve mental health, NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "anxiety",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "cognitive_findings",
+        "canonical_name": "decision making",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making"
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "treatments",
+        "canonical_name": "keeping a regular journal",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "may_contribute_to",
+        "object": "e2",
+        "claim_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: anxiety -> may_contribute_to -> decision making."
+      },
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e3",
+        "claim_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: anxiety -> countermeasure_for -> keeping a regular journal."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "source_id": "source_a52493076e4308064964",
+        "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1421",
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "source_id": "source_a52493076e4308064964",
+        "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1421",
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+        "source_id": "source_a52493076e4308064964",
+        "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1421",
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "source_id": "source_a52493076e4308064964",
+        "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1421",
+        "evidence_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+        "source_id": "source_a52493076e4308064964",
+        "source_url": "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/",
+        "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1421",
+        "evidence_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_a43ce5e9e0220b25a587",
+        "canonical_name": "anxiety",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_47942e29776f4eb0b5de",
+        "subject_entity_id": "conditions_a43ce5e9e0220b25a587",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"anxiety\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"These factors may impact a crew member’s sleep, morale, and decision making\"}",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_7c2337bd6f61ac0f0464",
+        "subject_entity_id": "cognitive_findings_60d6c71e421ac15df5b0",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"cognitive_findings\",\"canonical_name\":\"decision making\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"These factors may impact a crew member’s sleep, morale, and decision making\"}",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_cce13184d781b9d0ceb5",
+        "subject_entity_id": "treatments_acb57b3cb059a9fa5c7b",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"treatments\",\"canonical_name\":\"keeping a regular journal\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.\"}",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_64f94dadf345469b77c7",
+        "subject_entity_id": "conditions_a43ce5e9e0220b25a587",
+        "object_entity_id": "cognitive_findings_60d6c71e421ac15df5b0",
+        "predicate": "may_contribute_to",
+        "claim_text": "These factors may impact a crew member’s sleep, morale, and decision making",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_d54221440d829db77f12",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: anxiety -> may_contribute_to -> decision making.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_04235d1fa72b1b6d15c2",
+        "subject_entity_id": "conditions_a43ce5e9e0220b25a587",
+        "object_entity_id": "treatments_acb57b3cb059a9fa5c7b",
+        "predicate": "countermeasure_for",
+        "claim_text": "NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.",
+        "source_id": "source_a52493076e4308064964",
+        "evidence_id": "evidence_b7dce211375e7f7f7e7c",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: anxiety -> countermeasure_for -> keeping a regular journal.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/cognitive_findings": [
+      {
+        "cognitive_id": "cognitive_findings_60d6c71e421ac15df5b0",
+        "canonical_name": "decision making",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_acb57b3cb059a9fa5c7b",
+        "canonical_name": "keeping a regular journal",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_cognitive": [
+      {
+        "relation_id": "relation_e92861179a163490c6e6",
+        "source_entity_id": "conditions_a43ce5e9e0220b25a587",
+        "target_entity_id": "cognitive_findings_60d6c71e421ac15df5b0",
+        "relationship_type": "may_contribute_to",
+        "claim_id": "claim_64f94dadf345469b77c7",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_9f133da3bc8fd2e3cf75",
+        "source_entity_id": "conditions_a43ce5e9e0220b25a587",
+        "target_entity_id": "treatments_acb57b3cb059a9fa5c7b",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_04235d1fa72b1b6d15c2",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "anxiety"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "prolonged isolation and confinement in space"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "99"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"The prolonged isolation and confinement that astronauts face in space can increase risks of behavioral issues and psychiatric disorders, such as anxiety and depression.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"anxiety\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"prolonged isolation and confinement in space\"\n      }\n    },\n    {\n      \"evidence_text\": \"These factors may impact a crew member’s sleep, morale, and decision making\",\n      \"object\": {\n        \"entity_type\": \"cognitive_findings\",\n        \"name\": \"decision making\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"anxiety\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal. In addition, research suggests growing fresh vegetables in space may provide therapeutic benefits by providing a tangible reminder of life back on Earth.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"keeping a regular journal\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"anxiety\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "0d2183997c246ad4a0235baa2d5d0649aba8de07d44246f928fec1297d4d68fa",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

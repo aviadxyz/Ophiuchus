@@ -1,0 +1,10 @@
+treatment_type,description
+medication,medication
+supplement,supplement
+exercise,exercise
+nutritional,nutritional
+behavioral,behavioral
+monitoring,monitoring
+environmental,environmental
+medical procedure,medical procedure
+operational countermeasure,operational countermeasure

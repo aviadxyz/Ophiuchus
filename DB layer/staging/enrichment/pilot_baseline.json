@@ -1,0 +1,1506 @@
+{
+  "snapshot": "DB\\snapshots\\before_enrichment_20261114_193440",
+  "entities": {
+    "biomarkers": {
+      "biomarkers_bd5bdd70d98c9de545c5": {
+        "biomarker_id": "biomarkers_bd5bdd70d98c9de545c5",
+        "canonical_name": "heart",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "biomarkers_82c09f702b2a5fef10f0": {
+        "biomarker_id": "biomarkers_82c09f702b2a5fef10f0",
+        "canonical_name": "blood vessels",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "biomarkers_e19cb16a0b253108ee5b": {
+        "biomarker_id": "biomarkers_e19cb16a0b253108ee5b",
+        "canonical_name": "brain",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "biomarkers_ff7d1a77e3476bf8c936": {
+        "biomarker_id": "biomarkers_ff7d1a77e3476bf8c936",
+        "canonical_name": "microbial ecosystems",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "biomarkers_aa65e01179a04a745483": {
+        "biomarker_id": "biomarkers_aa65e01179a04a745483",
+        "canonical_name": "Immune Biomarkers",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "Analysis of blood and saliva samples to assess immune system changes due to deep space exposure.",
+        "review_status": "pending"
+      },
+      "biomarkers_06c0fc298ba7230ee9d4": {
+        "biomarker_id": "biomarkers_06c0fc298ba7230ee9d4",
+        "canonical_name": "Spinal Fluid Biomarkers",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "Detection of substances in spinal fluid linked to space-related brain and eye changes.",
+        "review_status": "pending"
+      },
+      "biomarkers_b1e72459b4be0e5f9be0": {
+        "biomarker_id": "biomarkers_b1e72459b4be0e5f9be0",
+        "canonical_name": "bones",
+        "unit": "",
+        "measurement_method": "",
+        "measurement_frequency": "",
+        "monitoring_device": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "cognitive_findings": {
+      "cognitive_findings_60d6c71e421ac15df5b0": {
+        "cognitive_id": "cognitive_findings_60d6c71e421ac15df5b0",
+        "canonical_name": "decision making",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "conditions": {
+      "conditions_14c5f743561cc66e4c7e": {
+        "condition_id": "conditions_14c5f743561cc66e4c7e",
+        "canonical_name": "inadequate teamwork",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_3978ceaa4d85f511e7e2": {
+        "condition_id": "conditions_3978ceaa4d85f511e7e2",
+        "canonical_name": "decompression sickness",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_60515e09657e6f3d8b5d": {
+        "condition_id": "conditions_60515e09657e6f3d8b5d",
+        "canonical_name": "performance decrements",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_40f6bc7daaf07b0fc9d1": {
+        "condition_id": "conditions_40f6bc7daaf07b0fc9d1",
+        "canonical_name": "adverse health outcomes",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_cea13661e3cfc5c1123c": {
+        "condition_id": "conditions_cea13661e3cfc5c1123c",
+        "canonical_name": "isolation and confinement",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_ccd2a679583750a6d3d2": {
+        "condition_id": "conditions_ccd2a679583750a6d3d2",
+        "canonical_name": "distance from Earth",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_74b517d4dac9d361d65b": {
+        "condition_id": "conditions_74b517d4dac9d361d65b",
+        "canonical_name": "Altered Immune System Response",
+        "body_system": "",
+        "description": "Stresses of spaceflight can awaken inactive viruses, leading to rashes and other symptoms.",
+        "review_status": "pending"
+      },
+      "conditions_b09d56057d64041e2405": {
+        "condition_id": "conditions_b09d56057d64041e2405",
+        "canonical_name": "Altered Sensorimotor and Vestibular Function",
+        "body_system": "",
+        "description": "Astronauts experience motion sickness, hand-eye or gait coordination issues, and dizziness during gravitational changes.",
+        "review_status": "pending"
+      },
+      "conditions_67b99040c5fbbd8de88b": {
+        "condition_id": "conditions_67b99040c5fbbd8de88b",
+        "canonical_name": "Cardiovascular Adaptations",
+        "body_system": "",
+        "description": "Weightlessness alters blood circulation and heart/blood vessel function, potentially increasing cardiovascular event risk.",
+        "review_status": "pending"
+      },
+      "conditions_0e093881951b9800a20f": {
+        "condition_id": "conditions_0e093881951b9800a20f",
+        "canonical_name": "Host-Microorganism Interactions",
+        "body_system": "",
+        "description": "Skin and gut microbiomes change in space, potentially increasing crew illness risk.",
+        "review_status": "pending"
+      },
+      "conditions_7ff064656a0ea161fb49": {
+        "condition_id": "conditions_7ff064656a0ea161fb49",
+        "canonical_name": "Space Radiation",
+        "body_system": "",
+        "description": "Risks associated with space radiation are identified as a hazard of human spaceflight.",
+        "review_status": "pending"
+      },
+      "conditions_c217c636bd6b2dbada14": {
+        "condition_id": "conditions_c217c636bd6b2dbada14",
+        "canonical_name": "Behavioral Performance",
+        "body_system": "",
+        "description": "Risks associated with behavioral performance are identified as a hazard of human spaceflight.",
+        "review_status": "pending"
+      },
+      "conditions_66a8240d77be54a89a19": {
+        "condition_id": "conditions_66a8240d77be54a89a19",
+        "canonical_name": "Physiological Risks",
+        "body_system": "",
+        "description": "Risks involving human physiology are identified as a hazard of human spaceflight.",
+        "review_status": "pending"
+      },
+      "conditions_2119a3695570956946e7": {
+        "condition_id": "conditions_2119a3695570956946e7",
+        "canonical_name": "Behavioral Performance Risks",
+        "body_system": "",
+        "description": "Risks involving behavioral performance are identified as a hazard of human spaceflight.",
+        "review_status": "pending"
+      },
+      "conditions_c3fbce8b05aec2eb1635": {
+        "condition_id": "conditions_c3fbce8b05aec2eb1635",
+        "canonical_name": "Space Radiation Risks",
+        "body_system": "",
+        "description": "Risks involving space radiation are identified as a hazard of human spaceflight.",
+        "review_status": "pending"
+      },
+      "conditions_3ed4349267155ed8462f": {
+        "condition_id": "conditions_3ed4349267155ed8462f",
+        "canonical_name": "astronauts",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_7b231deb87bb6970e5a5": {
+        "condition_id": "conditions_7b231deb87bb6970e5a5",
+        "canonical_name": "bone health",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_3ce25f8bc5dabff0a45a": {
+        "condition_id": "conditions_3ce25f8bc5dabff0a45a",
+        "canonical_name": "cardiovascular disorders",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_76c231915629d6d91bf5": {
+        "condition_id": "conditions_76c231915629d6d91bf5",
+        "canonical_name": "bone density loss",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_c214349a900135dfa0e7": {
+        "condition_id": "conditions_c214349a900135dfa0e7",
+        "canonical_name": "spaceflight effects on the human body",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_6416dd5d2077ffc23daf": {
+        "condition_id": "conditions_6416dd5d2077ffc23daf",
+        "canonical_name": "astronaut health",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_9e6b235267f63fee6024": {
+        "condition_id": "conditions_9e6b235267f63fee6024",
+        "canonical_name": "Spaceflight-Induced Bone Change Risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_33bc3ca0511cad59452a": {
+        "condition_id": "conditions_33bc3ca0511cad59452a",
+        "canonical_name": "Behavioral and Psychiatric Risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_6019ece8d04308ff7923": {
+        "condition_id": "conditions_6019ece8d04308ff7923",
+        "canonical_name": "Inadequate Teamwork Risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_3f5ab9743f9d5b99b114": {
+        "condition_id": "conditions_3f5ab9743f9d5b99b114",
+        "canonical_name": "Inadequate Sleep and Irregular Schedule Risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_f2c71be99059abb3c7dc": {
+        "condition_id": "conditions_f2c71be99059abb3c7dc",
+        "canonical_name": "Inadequate Systems Operations Support Risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_e0a629da25dcf2242ee5": {
+        "condition_id": "conditions_e0a629da25dcf2242ee5",
+        "canonical_name": "Injury Risks from Dynamic Loads",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_ee93f5b1d19a416b20e7": {
+        "condition_id": "conditions_ee93f5b1d19a416b20e7",
+        "canonical_name": "Radiation-Induced Cancers",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_427e788df3ca6dd792a0": {
+        "condition_id": "conditions_427e788df3ca6dd792a0",
+        "canonical_name": "health complications from space radiation exposure",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_9e1b971a27c54fce9fca": {
+        "condition_id": "conditions_9e1b971a27c54fce9fca",
+        "canonical_name": "neutron radiation",
+        "body_system": "",
+        "description": "A form of radiation that contributes to about 30% of total radiation on the ISS and is especially harmful due to its potential to cause serious biological damage.",
+        "review_status": "pending"
+      },
+      "conditions_50630af9a966764b1546": {
+        "condition_id": "conditions_50630af9a966764b1546",
+        "canonical_name": "inadequate nutrition",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_5f3cb330f550de0c5e06": {
+        "condition_id": "conditions_5f3cb330f550de0c5e06",
+        "canonical_name": "infections",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_e8021b516e0f123e60af": {
+        "condition_id": "conditions_e8021b516e0f123e60af",
+        "canonical_name": "effects on astronauts' health",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_91a18b574568d8527025": {
+        "condition_id": "conditions_91a18b574568d8527025",
+        "canonical_name": "Venous Haemostasis",
+        "body_system": "",
+        "description": "A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",
+        "review_status": "pending"
+      },
+      "conditions_6c3fe3ba48e1cff99423": {
+        "condition_id": "conditions_6c3fe3ba48e1cff99423",
+        "canonical_name": "Altered Immunity",
+        "body_system": "",
+        "description": "A condition involving immune system changes due to spaceflight, assessed via blood, saliva, and urine samples.",
+        "review_status": "pending"
+      },
+      "conditions_3051fe0c58e86cd77562": {
+        "condition_id": "conditions_3051fe0c58e86cd77562",
+        "canonical_name": "Food Acceptability",
+        "body_system": "",
+        "description": "A condition related to the appeal of food during long-term spaceflight, studied to improve space food systems.",
+        "review_status": "pending"
+      },
+      "conditions_0264e68898ab46604b4f": {
+        "condition_id": "conditions_0264e68898ab46604b4f",
+        "canonical_name": "Food Physiology",
+        "body_system": "",
+        "description": "A condition assessing dietary adaptation in space, with focus on an enhanced spaceflight diet.",
+        "review_status": "pending"
+      },
+      "conditions_5226efac33882386a4dd": {
+        "condition_id": "conditions_5226efac33882386a4dd",
+        "canonical_name": "Space Gardening",
+        "body_system": "",
+        "description": "A condition assessing psychological well-being through the cultivation of fresh vegetables in space.",
+        "review_status": "pending"
+      },
+      "conditions_a736d489b9346255cf03": {
+        "condition_id": "conditions_a736d489b9346255cf03",
+        "canonical_name": "Spinal Health",
+        "body_system": "",
+        "description": "A condition involving spinal health, studied via scans to develop countermeasures for bone and muscle loss in space.",
+        "review_status": "pending"
+      },
+      "conditions_2116aa459872014e0e41": {
+        "condition_id": "conditions_2116aa459872014e0e41",
+        "canonical_name": "in-mission injury and performance decrements and long-term health effects from dynamic loads",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_9c7b6c6259547a7f00d4": {
+        "condition_id": "conditions_9c7b6c6259547a7f00d4",
+        "canonical_name": "muscle weakness",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_fad29f1d36146ea25f4d": {
+        "condition_id": "conditions_fad29f1d36146ea25f4d",
+        "canonical_name": "performance decrement",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_11f0bc3cdf6f0791e462": {
+        "condition_id": "conditions_11f0bc3cdf6f0791e462",
+        "canonical_name": "reduced crew health and performance",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_f4da266058876cab1412": {
+        "condition_id": "conditions_f4da266058876cab1412",
+        "canonical_name": "altitude sickness",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_fe5a20e31b9c03f1666d": {
+        "condition_id": "conditions_fe5a20e31b9c03f1666d",
+        "canonical_name": "bone and muscle loss",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_388b7d8c15f848af95ca": {
+        "condition_id": "conditions_388b7d8c15f848af95ca",
+        "canonical_name": "Human Research Roadmap",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_2628fb67650e6dd756d4": {
+        "condition_id": "conditions_2628fb67650e6dd756d4",
+        "canonical_name": "Five Hazards",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_52c351e6c11f394c5da6": {
+        "condition_id": "conditions_52c351e6c11f394c5da6",
+        "canonical_name": "spaceflight associated neuro-ocular syndrome",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_48916b2dd53d37788713": {
+        "condition_id": "conditions_48916b2dd53d37788713",
+        "canonical_name": "radiation carcinogenesis",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_7c6915035a8e13ad2a50": {
+        "condition_id": "conditions_7c6915035a8e13ad2a50",
+        "canonical_name": "inadequate systems operations support",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_05363f751e825bf2d307": {
+        "condition_id": "conditions_05363f751e825bf2d307",
+        "canonical_name": "spaceflight-related health changes",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_20f1056f9db9ec82cb11": {
+        "condition_id": "conditions_20f1056f9db9ec82cb11",
+        "canonical_name": "hypoxia",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_8029aa45f61d1e64587b": {
+        "condition_id": "conditions_8029aa45f61d1e64587b",
+        "canonical_name": "injury and compromised performance from spacewalks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_06280aec02cfd680d8df": {
+        "condition_id": "conditions_06280aec02cfd680d8df",
+        "canonical_name": "ARCHeR",
+        "body_system": "",
+        "description": "A study monitoring astronauts' well-being, activity, and sleep patterns during Artemis II to understand human health and performance in deep space.",
+        "review_status": "pending"
+      },
+      "conditions_06ac5d35fb163193b58a": {
+        "condition_id": "conditions_06ac5d35fb163193b58a",
+        "canonical_name": "Artemis II Standard Measures",
+        "body_system": "",
+        "description": "A consistent set of health data collected by crew to support future research on astronaut health.",
+        "review_status": "pending"
+      },
+      "conditions_2e13e3f5c9561c7c786d": {
+        "condition_id": "conditions_2e13e3f5c9561c7c786d",
+        "canonical_name": "Brain Fluid Pressure",
+        "body_system": "",
+        "description": "Study of skull fluid pressure and its relationship to eye and brain changes in astronauts.",
+        "review_status": "pending"
+      },
+      "conditions_5ba71dbd5888f2a4b36e": {
+        "condition_id": "conditions_5ba71dbd5888f2a4b36e",
+        "canonical_name": "CIPHER",
+        "body_system": "",
+        "description": "A suite of studies examining multiple body systems to understand human body changes in orbit.",
+        "review_status": "pending"
+      },
+      "conditions_4ff7d839e70548a59558": {
+        "condition_id": "conditions_4ff7d839e70548a59558",
+        "canonical_name": "Simulating Manual Piloting for Moon Landings",
+        "body_system": "",
+        "description": "Study on how gravity transitions impact astronaut piloting capabilities for Moon landings.",
+        "review_status": "pending"
+      },
+      "conditions_23ceacc9001d123a22ed": {
+        "condition_id": "conditions_23ceacc9001d123a22ed",
+        "canonical_name": "Spacecraft Occupant Protection",
+        "body_system": "",
+        "description": "Assessment of crew discomfort during re-entry and integration with spacecraft sensor data.",
+        "review_status": "pending"
+      },
+      "conditions_4ab9e558fad20db091c0": {
+        "condition_id": "conditions_4ab9e558fad20db091c0",
+        "canonical_name": "Standard Measures",
+        "body_system": "",
+        "description": "Consistent physiological and psychological measurements to understand spaceflight effects on crew.",
+        "review_status": "pending"
+      },
+      "conditions_e5c6d1a0fe078a37f64b": {
+        "condition_id": "conditions_e5c6d1a0fe078a37f64b",
+        "canonical_name": "Reduced Cardiorespiratory and Musculoskeletal Fitness",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_2baab1960be389b4f190": {
+        "condition_id": "conditions_2baab1960be389b4f190",
+        "canonical_name": "behavioral health decrements",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_2d32468bf9622aa09cd7": {
+        "condition_id": "conditions_2d32468bf9622aa09cd7",
+        "canonical_name": "mild hypoxia",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_9f1ece5e1e6a08eeb61d": {
+        "condition_id": "conditions_9f1ece5e1e6a08eeb61d",
+        "canonical_name": "altered immune system responses",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_5a03c3c50053a40c605e": {
+        "condition_id": "conditions_5a03c3c50053a40c605e",
+        "canonical_name": "multi-drug resistant bacteria mutation",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_70736ed224baf800e4eb": {
+        "condition_id": "conditions_70736ed224baf800e4eb",
+        "canonical_name": "adverse in-mission and long-term health effects",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_035f50fbf0bca0fbf66a": {
+        "condition_id": "conditions_035f50fbf0bca0fbf66a",
+        "canonical_name": "radiation-induced cancer risks",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_8bd5c8d4cc069023dcbc": {
+        "condition_id": "conditions_8bd5c8d4cc069023dcbc",
+        "canonical_name": "ongoing research priorities",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_ad79a253ed9bbc58eac7": {
+        "condition_id": "conditions_ad79a253ed9bbc58eac7",
+        "canonical_name": "Spaceflight Associated Neuro-ocular Syndrome (SANS)",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_846e8e2e8f336be96c67": {
+        "condition_id": "conditions_846e8e2e8f336be96c67",
+        "canonical_name": "reduced musculoskeletal fitness",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_a43ce5e9e0220b25a587": {
+        "condition_id": "conditions_a43ce5e9e0220b25a587",
+        "canonical_name": "anxiety",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_bf9b684eff27ca5e10e0": {
+        "condition_id": "conditions_bf9b684eff27ca5e10e0",
+        "canonical_name": "human space flight",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_a8282d5b5c48a3fc6ce8": {
+        "condition_id": "conditions_a8282d5b5c48a3fc6ce8",
+        "canonical_name": "longer trips",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_4d6afe9b980e69d710af": {
+        "condition_id": "conditions_4d6afe9b980e69d710af",
+        "canonical_name": "reduced physical activity",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_6f2b4898c95d043848ce": {
+        "condition_id": "conditions_6f2b4898c95d043848ce",
+        "canonical_name": "accelerated aging",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_9fa8b66984762fe37482": {
+        "condition_id": "conditions_9fa8b66984762fe37482",
+        "canonical_name": "sedentary lifestyle",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_baa17a2b545f8d7753c4": {
+        "condition_id": "conditions_baa17a2b545f8d7753c4",
+        "canonical_name": "adverse mission outcomes due to Earth independent human-systems operation",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_b5cd2a0caec019f024c0": {
+        "condition_id": "conditions_b5cd2a0caec019f024c0",
+        "canonical_name": "vision changes",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_385f44abcfe940fa01f9": {
+        "condition_id": "conditions_385f44abcfe940fa01f9",
+        "canonical_name": "sleep-wake cycle disruption",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_118795129b262b87cbef": {
+        "condition_id": "conditions_118795129b262b87cbef",
+        "canonical_name": "increased microbial virulence in spaceflight",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_3e4ff7e07bcb78ca2778": {
+        "condition_id": "conditions_3e4ff7e07bcb78ca2778",
+        "canonical_name": "infections in astronauts",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_48e5a8455efba512fa90": {
+        "condition_id": "conditions_48e5a8455efba512fa90",
+        "canonical_name": "serious biological damage",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_a8de785b189902e5beca": {
+        "condition_id": "conditions_a8de785b189902e5beca",
+        "canonical_name": "brain and eye changes",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "conditions_79c9251c6c0a7ccc6803": {
+        "condition_id": "conditions_79c9251c6c0a7ccc6803",
+        "canonical_name": "eye and brain changes",
+        "body_system": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "environments": {
+      "environments_bceb2aca97616f3c5b62": {
+        "environment_id": "environments_bceb2aca97616f3c5b62",
+        "canonical_name": "ground-based analogs",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_22f467100caa80b05c09": {
+        "environment_id": "environments_22f467100caa80b05c09",
+        "canonical_name": "laboratories",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_491ddef256589d2376fe": {
+        "environment_id": "environments_491ddef256589d2376fe",
+        "canonical_name": "International Space Station",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_3fc2e68c1fe309ee5174": {
+        "environment_id": "environments_3fc2e68c1fe309ee5174",
+        "canonical_name": "space exploration",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_4df7ec3bb3703a5819b1": {
+        "environment_id": "environments_4df7ec3bb3703a5819b1",
+        "canonical_name": "ISS",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_ccd2a679583750a6d3d2": {
+        "environment_id": "environments_ccd2a679583750a6d3d2",
+        "canonical_name": "Distance from Earth",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_f8ea6b7ad4c99b918f17": {
+        "environment_id": "environments_f8ea6b7ad4c99b918f17",
+        "canonical_name": "Gravity Fields",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_301f8c9a07d7a0e2bb0b": {
+        "environment_id": "environments_301f8c9a07d7a0e2bb0b",
+        "canonical_name": "Hostile/Closed Environments",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_d6af2a83a169cbb25d1d": {
+        "environment_id": "environments_d6af2a83a169cbb25d1d",
+        "canonical_name": "aircraft cabins",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_538815ab7fb3ca89d6b1": {
+        "environment_id": "environments_538815ab7fb3ca89d6b1",
+        "canonical_name": "human spaceflight",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_70d445d75131f5f8a8b3": {
+        "environment_id": "environments_70d445d75131f5f8a8b3",
+        "canonical_name": "Spacewalk environment",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "environments_7a81306a2b6656e6890b": {
+        "environment_id": "environments_7a81306a2b6656e6890b",
+        "canonical_name": "partial cabin depressurization",
+        "environment_type": "",
+        "gravity_description": "",
+        "radiation_context": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "genes": {
+      "genes_d79fffa8151094a6bf7b": {
+        "gene_id": "genes_d79fffa8151094a6bf7b",
+        "canonical_name": "Canadian universities and companies",
+        "description": "",
+        "review_status": "pending"
+      },
+      "genes_0b1200da801ef7e28bae": {
+        "gene_id": "genes_0b1200da801ef7e28bae",
+        "canonical_name": "HRP",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "microbiome": {},
+    "physical_findings": {
+      "physical_findings_d51f910784ac2e61136d": {
+        "physical_id": "physical_findings_d51f910784ac2e61136d",
+        "canonical_name": "headaches",
+        "description": "",
+        "review_status": "pending"
+      },
+      "physical_findings_9870d02496c53f39b761": {
+        "physical_id": "physical_findings_9870d02496c53f39b761",
+        "canonical_name": "motion sickness",
+        "description": "",
+        "review_status": "pending"
+      },
+      "physical_findings_7ad3f586cb273ae61ed0": {
+        "physical_id": "physical_findings_7ad3f586cb273ae61ed0",
+        "canonical_name": "swelling in the back of the eyes",
+        "description": "",
+        "review_status": "pending"
+      },
+      "physical_findings_396759591dd26961407d": {
+        "physical_id": "physical_findings_396759591dd26961407d",
+        "canonical_name": "fluid pressure inside the skull",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "risk_factors": {
+      "risk_factors_041eba0af8b0e98dec65": {
+        "risk_id": "risk_factors_041eba0af8b0e98dec65",
+        "canonical_name": "communication delays",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_edfbf1dad0a892ee2ea7": {
+        "risk_id": "risk_factors_edfbf1dad0a892ee2ea7",
+        "canonical_name": "sleep loss",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_8cde227adc17127ed4f3": {
+        "risk_id": "risk_factors_8cde227adc17127ed4f3",
+        "canonical_name": "circadian desynchronization",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_6a7cb5bcd45d924e225a": {
+        "risk_id": "risk_factors_6a7cb5bcd45d924e225a",
+        "canonical_name": "spaceflight",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_ea0917ca9556f4c3a369": {
+        "risk_id": "risk_factors_ea0917ca9556f4c3a369",
+        "canonical_name": "menu fatigue",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_6a2b2145067044432806": {
+        "risk_id": "risk_factors_6a2b2145067044432806",
+        "canonical_name": "microbial exposure",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_7ff064656a0ea161fb49": {
+        "risk_id": "risk_factors_7ff064656a0ea161fb49",
+        "canonical_name": "Space Radiation",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_cea13661e3cfc5c1123c": {
+        "risk_id": "risk_factors_cea13661e3cfc5c1123c",
+        "canonical_name": "Isolation and Confinement",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_3978ceaa4d85f511e7e2": {
+        "risk_id": "risk_factors_3978ceaa4d85f511e7e2",
+        "canonical_name": "decompression sickness",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_ceaa1262f4cdfdfed609": {
+        "risk_id": "risk_factors_ceaa1262f4cdfdfed609",
+        "canonical_name": "inadequate food and nutrition",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_20f1056f9db9ec82cb11": {
+        "risk_id": "risk_factors_20f1056f9db9ec82cb11",
+        "canonical_name": "hypoxia",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_2740db2717a04f4f781a": {
+        "risk_id": "risk_factors_2740db2717a04f4f781a",
+        "canonical_name": "swelling in the back of the eye",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_3a59532437f77c9324b7": {
+        "risk_id": "risk_factors_3a59532437f77c9324b7",
+        "canonical_name": "Low oxygen and high carbon dioxide levels",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_6655ed29f022b8d62b1c": {
+        "risk_id": "risk_factors_6655ed29f022b8d62b1c",
+        "canonical_name": "inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_2d32468bf9622aa09cd7": {
+        "risk_id": "risk_factors_2d32468bf9622aa09cd7",
+        "canonical_name": "mild hypoxia",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_ff227e93057d2e903648": {
+        "risk_id": "risk_factors_ff227e93057d2e903648",
+        "canonical_name": "stresses of spaceflight",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_0e093881951b9800a20f": {
+        "risk_id": "risk_factors_0e093881951b9800a20f",
+        "canonical_name": "host-microorganism interactions",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_332be969922c22fb9581": {
+        "risk_id": "risk_factors_332be969922c22fb9581",
+        "canonical_name": "in mission impacts",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_1af5a43374f9fb98be01": {
+        "risk_id": "risk_factors_1af5a43374f9fb98be01",
+        "canonical_name": "mitigation of radiation-induced cancer risks",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      },
+      "risk_factors_fb13a067274c6e038625": {
+        "risk_id": "risk_factors_fb13a067274c6e038625",
+        "canonical_name": "microbiome changes in astronauts",
+        "category": "",
+        "description": "",
+        "review_status": "pending"
+      }
+    },
+    "treatments": {
+      "treatments_5e24dc0bb5823754c367": {
+        "treatment_id": "treatments_5e24dc0bb5823754c367",
+        "canonical_name": "team-building exercises",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_870eca27e10815231a69": {
+        "treatment_id": "treatments_870eca27e10815231a69",
+        "canonical_name": "earth-based training in high- and low-pressure environments",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_d00626eb0b458822cdb9": {
+        "treatment_id": "treatments_d00626eb0b458822cdb9",
+        "canonical_name": "space experiments",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_af11afe44ac92c61efb7": {
+        "treatment_id": "treatments_af11afe44ac92c61efb7",
+        "canonical_name": "resistive exercise",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_ca923ef9da78429327f1": {
+        "treatment_id": "treatments_ca923ef9da78429327f1",
+        "canonical_name": "safeguards against spaceflight effects",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_fc0dde28ab00e47dec28": {
+        "treatment_id": "treatments_fc0dde28ab00e47dec28",
+        "canonical_name": "medicines to counter the effects of radiation exposures",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_5dbc8e10256708cc2fef": {
+        "treatment_id": "treatments_5dbc8e10256708cc2fef",
+        "canonical_name": "Canadian Active Neutron Spectrometer",
+        "treatment_type": "",
+        "description": "A compact and autonomous instrument designed to measure neutron radiation exposure in space.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_8e0ea7bb52b614cb3775": {
+        "treatment_id": "treatments_8e0ea7bb52b614cb3775",
+        "canonical_name": "MOSFET",
+        "treatment_type": "",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_ed3d6661ba6bff2ae12b": {
+        "treatment_id": "treatments_ed3d6661ba6bff2ae12b",
+        "canonical_name": "EVARM",
+        "treatment_type": "",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_96bda479fc01e8903783": {
+        "treatment_id": "treatments_96bda479fc01e8903783",
+        "canonical_name": "Radi-N",
+        "treatment_type": "",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_db188104537351756ff6": {
+        "treatment_id": "treatments_db188104537351756ff6",
+        "canonical_name": "Radi-N2",
+        "treatment_type": "",
+        "description": "A radiation detection experiment conducted on the ISS.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_1f31a27f6c18baceb2a0": {
+        "treatment_id": "treatments_1f31a27f6c18baceb2a0",
+        "canonical_name": "high oxygen breathing",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_68a2369cc632d786fdec": {
+        "treatment_id": "treatments_68a2369cc632d786fdec",
+        "canonical_name": "countermeasures and treatments",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_317925991a13cc867e02": {
+        "treatment_id": "treatments_317925991a13cc867e02",
+        "canonical_name": "Omics Archive",
+        "treatment_type": "",
+        "description": "A research initiative collecting biological samples to study molecular-level changes during long-duration spaceflight.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_1c1387f7099ef548db14": {
+        "treatment_id": "treatments_1c1387f7099ef548db14",
+        "canonical_name": "Tempus Pro",
+        "treatment_type": "",
+        "description": "A telemedicine device being tested for remote health data collection and near real-time diagnosis.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_14972502d017f78e2938": {
+        "treatment_id": "treatments_14972502d017f78e2938",
+        "canonical_name": "Veggie Monitoring",
+        "treatment_type": "",
+        "description": "A monitoring initiative for microbial growth on crop storage hardware to improve plant production and crew safety.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_eb32eaf284cfc2de8f62": {
+        "treatment_id": "treatments_eb32eaf284cfc2de8f62",
+        "canonical_name": "mission readiness assessments",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_5f96a032684e4ca523b1": {
+        "treatment_id": "treatments_5f96a032684e4ca523b1",
+        "canonical_name": "exercise regimens",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_7df33957c05fd4af78b0": {
+        "treatment_id": "treatments_7df33957c05fd4af78b0",
+        "canonical_name": "strategies that counter bone and muscle loss",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_012b2b6825acd5040c73": {
+        "treatment_id": "treatments_012b2b6825acd5040c73",
+        "canonical_name": "radiation shielding",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_b46d45449488cfc060ee": {
+        "treatment_id": "treatments_b46d45449488cfc060ee",
+        "canonical_name": "simulated radiation studies",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_21256e12625f231c8407": {
+        "treatment_id": "treatments_21256e12625f231c8407",
+        "canonical_name": "user-friendly system design",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_554dfe622b5d8d121d2e": {
+        "treatment_id": "treatments_554dfe622b5d8d121d2e",
+        "canonical_name": "enhanced spaceflight diet",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_2d4c5a290434a33986d5": {
+        "treatment_id": "treatments_2d4c5a290434a33986d5",
+        "canonical_name": "medication",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_30c82e5457b1b81b4e10": {
+        "treatment_id": "treatments_30c82e5457b1b81b4e10",
+        "canonical_name": "B-Complex",
+        "treatment_type": "",
+        "description": "A daily B vitamin supplement study to prevent or mitigate brain and eye changes in space.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_4defdf163aefd4a9ba08": {
+        "treatment_id": "treatments_4defdf163aefd4a9ba08",
+        "canonical_name": "Thigh Cuff",
+        "treatment_type": "",
+        "description": "Testing tight thigh cuffs to retain bodily fluids in legs and prevent eye disorders in space.",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_6f86e5cef59c9b7064e8": {
+        "treatment_id": "treatments_6f86e5cef59c9b7064e8",
+        "canonical_name": "Exercise during mission",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_256bd35351d5e9321c0a": {
+        "treatment_id": "treatments_256bd35351d5e9321c0a",
+        "canonical_name": "recovery interventions",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_7c38c1961c36c3e39d9e": {
+        "treatment_id": "treatments_7c38c1961c36c3e39d9e",
+        "canonical_name": "pressure increases in spacesuits",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_bf1d32d203254da2f633": {
+        "treatment_id": "treatments_bf1d32d203254da2f633",
+        "canonical_name": "interventions for radiation-induced cancer risks",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_44a196b2482a71785ef8": {
+        "treatment_id": "treatments_44a196b2482a71785ef8",
+        "canonical_name": "research interventions",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_68595fb19bf2e18d2717": {
+        "treatment_id": "treatments_68595fb19bf2e18d2717",
+        "canonical_name": "resistance training and aerobic exercises",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_acb57b3cb059a9fa5c7b": {
+        "treatment_id": "treatments_acb57b3cb059a9fa5c7b",
+        "canonical_name": "keeping a regular journal",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_ba51435b911ec817a4d8": {
+        "treatment_id": "treatments_ba51435b911ec817a4d8",
+        "canonical_name": "variable pressure space suits",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_5b57e3d36812e0e991e5": {
+        "treatment_id": "treatments_5b57e3d36812e0e991e5",
+        "canonical_name": "simulator training",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_7f551c79f5ae880242bd": {
+        "treatment_id": "treatments_7f551c79f5ae880242bd",
+        "canonical_name": "strategies to counter vision changes",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_b6ce10da5f1519af93af": {
+        "treatment_id": "treatments_b6ce10da5f1519af93af",
+        "canonical_name": "LED light simulation",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_deb687c28a7c61d4b698": {
+        "treatment_id": "treatments_deb687c28a7c61d4b698",
+        "canonical_name": "disinfectants, anti-inflammatories, antibiotics",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_4cfe3ec6f1613ba925c3": {
+        "treatment_id": "treatments_4cfe3ec6f1613ba925c3",
+        "canonical_name": "CANS",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      "treatments_8aa668c2b95e4dc4d983": {
+        "treatment_id": "treatments_8aa668c2b95e4dc4d983",
+        "canonical_name": "daily B vitamin supplement",
+        "treatment_type": "",
+        "description": "",
+        "medication_or_supplement": "",
+        "active_ingredient": "",
+        "route_of_administration": "",
+        "requires_medical_supervision": "",
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    }
+  },
+  "relation_ids": [
+    "relation_e92861179a163490c6e6",
+    "relation_0c2e76f87a0cbabefbae",
+    "relation_e6a0df24793190396c29",
+    "relation_9b7bd7d647ccd48b0ce7",
+    "relation_63a4c81b33789aa2b1d0",
+    "relation_b3dc743027083b17f67c",
+    "relation_28c9a61924ebbad99288",
+    "relation_16da88b56b3217ec969f",
+    "relation_51e5b1f35f350adcdd2b",
+    "relation_f61c9fd13b5fefd919c2",
+    "relation_e127b7063ac6f3c0650c",
+    "relation_228bb69a0cbff59a27f5",
+    "relation_0dc3abef28f971456320",
+    "relation_29fa425ad7cf89c5d2ef",
+    "relation_b6afa081a6d3dbe9c7aa",
+    "relation_e1c6195fe82cc4bd7c23",
+    "relation_f0f793a0c89236e34d5b",
+    "relation_665078b6f28839266baf",
+    "relation_088741567e111c1fbf63",
+    "relation_29ee0774f7310b07e1e6",
+    "relation_dfaf959f5b923d756b64",
+    "relation_34c058601b972d0a23d9",
+    "relation_5c714efebe6b0ed7cc44",
+    "relation_0015adf55c3b33398777",
+    "relation_c9ca72357e4c76e428cb",
+    "relation_03b9814c761bbf71b46b",
+    "relation_9f133da3bc8fd2e3cf75",
+    "relation_10ebcdc4551e304c1b9d",
+    "relation_83be51f43f51ac7ee0f7",
+    "relation_0636537f4b1a4e76184b",
+    "relation_63b6eb5747f0afaa60e7",
+    "relation_ef67a77da7fb83fcf3aa",
+    "relation_5407a8d93409da0cdf3e",
+    "relation_56b035359f8d41c5ddde",
+    "relation_16cd8ea1d0c28d1c1663",
+    "relation_2ae9c63b440d7e2ec4ad",
+    "relation_25f8ca3d5dfd58291b32",
+    "relation_63f9722a7099f6fdaa89",
+    "relation_0a482216574c5798613e",
+    "relation_5cb1aec295ce1770c49e",
+    "relation_81691421e605d212b28d",
+    "relation_be14d9e9738fea9bef4f",
+    "relation_52f7748f9930b1e3a3c1",
+    "relation_83eedde33e9a2b4fba6a",
+    "relation_29784442706a55ba5135",
+    "relation_52a9e506dafbb7d31257",
+    "relation_e00caa3683d6216b26b4",
+    "relation_6de7b7e3f3e862490e80",
+    "relation_04fda7a157a22f5af0b4",
+    "relation_5f4a0fa11843c23ec44b",
+    "relation_c8283819c8e2a2f362e6",
+    "relation_69e64775e82e98806fd7",
+    "relation_cd219e2b5903ef8c7588",
+    "relation_05fa281219c1e3b4de00"
+  ]
+}

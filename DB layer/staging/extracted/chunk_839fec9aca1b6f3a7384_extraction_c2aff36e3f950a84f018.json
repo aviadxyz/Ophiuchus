@@ -1,0 +1,106 @@
+{
+  "source_id": "source_1b74656c820988255936",
+  "chunk": {
+    "source_id": "source_1b74656c820988255936",
+    "source_url": "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/",
+    "chunk_id": "chunk_839fec9aca1b6f3a7384",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1521",
+    "text": "HHC Risk of Injury and Compromised Performance from Spacewalks An astronaut performing work outside of the International Space Station. Spacewalks come with significant physical and mental demands, elevating injury risk. Credit: NASA What are the top risks? Conducting real or simulated spacewalks creates a risk that crew members could be compromised or injured. Spacewalks are only conducted periodically at the International Space Station for various maintenance and research tasks. Spacewalks during Artemis III and beyond will build on NASA’s experience from Apollo, Shuttle, and the space station, but also come with unique challenges such as navigating new, unexplored, and unfamiliar regions of the Moon’s surface with new technologies. During deep space missions, spacewalks will occur more frequently and last longer, creating new physical and mental demands. What can be done about it? Researchers must consider the pressure and oxygen levels in both the habitat and the spacesuit. When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness. Researchers have created “prebreathe protocols” to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness. NASA engineers are also working to improve the design of spacesuits so they will remain durable and safe while also offering dexterity and biomedical monitoring. ",
+    "original_text": "HHC Risk of Injury and Compromised Performance from Spacewalks An astronaut performing work outside of the International Space Station. Spacewalks come with significant physical and mental demands, elevating injury risk. Credit: NASA What are the top risks? Conducting real or simulated spacewalks creates a risk that crew members could be compromised or injured. Spacewalks are only conducted periodically at the International Space Station for various maintenance and research tasks. Spacewalks during Artemis III and beyond will build on NASA’s experience from Apollo, Shuttle, and the space station, but also come with unique challenges such as navigating new, unexplored, and unfamiliar regions of the Moon’s surface with new technologies. During deep space missions, spacewalks will occur more frequently and last longer, creating new physical and mental demands. What can be done about it? Researchers must consider the pressure and oxygen levels in both the habitat and the spacesuit. When the difference between atmospheric pressures is large, transitioning from the habitat to the spacesuit can cause decompression sickness. Researchers have created “prebreathe protocols” to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness. NASA engineers are also working to improve the design of spacesuits so they will remain durable and safe while also offering dexterity and biomedical monitoring. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "conducting real or simulated spacewalks creates a risk that crew members could be compromised or injured",
+        "object": {
+          "entity_type": "conditions",
+          "name": "compromised performance"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spacewalks"
+        }
+      }
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "transitioning from the habitat to the spacesuit can cause decompression sickness",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spacewalks"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "researchers have created 'prebreathe protocols' to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness",
+        "object": {
+          "entity_type": "treatments",
+          "name": "prebreathe protocols"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 1,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [
+    "84"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"conducting real or simulated spacewalks creates a risk that crew members could be compromised or injured\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"compromised performance\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spacewalks\"\n      }\n    },\n    {\n      \"evidence_text\": \"transitioning from the habitat to the spacesuit can cause decompression sickness\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spacewalks\"\n      }\n    },\n    {\n      \"evidence_text\": \"researchers have created 'prebreathe protocols' to ensure crew members are exposed to high levels of oxygen before spacewalks, primarily to help remove nitrogen from the body and mitigate the risk of decompression sickness\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"prebreathe protocols\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "ce1a4ec5dc23800dc3b53e81d00b62bf19df0f60e57a6c8555efae372848e74e",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

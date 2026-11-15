@@ -1,0 +1,50 @@
+{
+  "source_id": "source_13286a5f480896318f1f",
+  "chunk": {
+    "source_id": "source_13286a5f480896318f1f",
+    "source_url": "https://www.nasa.gov/hrp/human-health-countermeasures/",
+    "chunk_id": "chunk_67d99ab2d1ecfe49a180",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 2486:3767",
+    "text": "Article 3 min read Astronauts’ Spines Under Scrutiny May 17, 2021 Article 5 min read Scientists Probe How Long-Term Spaceflight Alters Immunity December 13, 2021 Article 6 min read New Tests Evaluate Mission Readiness of Astronauts Upon Landing April 12, 2022 Article 4 min read Researchers Put Space Garden Microbes Under the Microscope November 29, 2021 Latest HRP News News Release 3 Min Read NASA Invites Media to Crew Completion of Yearlong Mars Simulation Article 3 Min Read NASA’s Simulated Mars Crew Marks One Year Inside Habitat 4 Min Read NASA to Study Human Health, Performance During Crew-13 Mission September 24, 2026 Article 3 Min Read NASA Seeks Volunteers for New Yearlong Simulated Moon, Mars Mission July 1, 2026 Article 5 Min Read NASA’s Artemis II Moon Mission Research Continues on Earth June 5, 2026 Article Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story Keep Exploring Discover More Topics From NASA Human Factors and Behavioral Performance Human Health Countermeasures Space Radiation Research Operations & Integration Human Research Program Science dedicated to protecting the health and performance of astronauts in space.",
+    "original_text": "Article 3 min read Astronauts’ Spines Under Scrutiny May 17, 2021 Article 5 min read Scientists Probe How Long-Term Spaceflight Alters Immunity December 13, 2021 Article 6 min read New Tests Evaluate Mission Readiness of Astronauts Upon Landing April 12, 2022 Article 4 min read Researchers Put Space Garden Microbes Under the Microscope November 29, 2021 Latest HRP News News Release 3 Min Read NASA Invites Media to Crew Completion of Yearlong Mars Simulation Article 3 Min Read NASA’s Simulated Mars Crew Marks One Year Inside Habitat 4 Min Read NASA to Study Human Health, Performance During Crew-13 Mission September 24, 2026 Article 3 Min Read NASA Seeks Volunteers for New Yearlong Simulated Moon, Mars Mission July 1, 2026 Article 5 Min Read NASA’s Artemis II Moon Mission Research Continues on Earth June 5, 2026 Article Featured Story The Human Body in Space For more than 50 years, NASA’s Human Research Program (HRP) has studied what happens to the human body in space. Researchers… Read the Story Keep Exploring Discover More Topics From NASA Human Factors and Behavioral Performance Human Health Countermeasures Space Radiation Research Operations & Integration Human Research Program Science dedicated to protecting the health and performance of astronauts in space."
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [],
+  "relation_diagnostics": {
+    "candidate_relationships": 0,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "extraction_metadata": {
+    "input_content_hash": "757423d08b7af204dbc2493a55a79ec62f8add856fb124e41aead0129a77b930",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

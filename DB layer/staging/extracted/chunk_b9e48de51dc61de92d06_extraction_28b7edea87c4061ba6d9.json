@@ -1,0 +1,396 @@
+{
+  "source_id": "source_0bb467f4a071c7fd0a01",
+  "chunk": {
+    "source_id": "source_0bb467f4a071c7fd0a01",
+    "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+    "chunk_id": "chunk_b9e48de51dc61de92d06",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1231:1890",
+    "text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Human Body in Space Read More Researchers Put Space Garden Microbes Under the Microscope Read More Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct Read More",
+    "original_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space. Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More The Human Body in Space Read More Researchers Put Space Garden Microbes Under the Microscope Read More Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "host-microorganism interactions",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "multi-drug resistant bacteria mutation",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct"
+      },
+      {
+        "local_id": "e3",
+        "entity_type": "conditions",
+        "canonical_name": "adverse in-mission and long-term health effects",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "may_contribute_to",
+        "object": "e2",
+        "claim_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: host-microorganism interactions -> may_contribute_to -> multi-drug resistant bacteria mutation."
+      },
+      {
+        "subject": "e1",
+        "predicate": "increases_risk_of",
+        "object": "e3",
+        "claim_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions",
+        "evidence_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: host-microorganism interactions -> increases_risk_of -> adverse in-mission and long-term health effects."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_b9e48de51dc61de92d06",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1231:1890",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_b9e48de51dc61de92d06",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1231:1890",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_c16ac3cf24d63d22ae6e",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_b9e48de51dc61de92d06",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1231:1890",
+        "evidence_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_b9e48de51dc61de92d06",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1231:1890",
+        "evidence_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_c16ac3cf24d63d22ae6e",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "source_url": "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/",
+        "chunk_id": "chunk_b9e48de51dc61de92d06",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1231:1890",
+        "evidence_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_0e093881951b9800a20f",
+        "canonical_name": "host-microorganism interactions",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_071a7ac2072917628523",
+        "subject_entity_id": "risk_factors_0e093881951b9800a20f",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"host-microorganism interactions\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct\"}",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8741c2fdcd5d804aa908",
+        "subject_entity_id": "conditions_5a03c3c50053a40c605e",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"multi-drug resistant bacteria mutation\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct\"}",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_6cd5a5387c2ebe48e0be",
+        "subject_entity_id": "conditions_70736ed224baf800e4eb",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e3\",\"entity_type\":\"conditions\",\"canonical_name\":\"adverse in-mission and long-term health effects\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions\"}",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_c16ac3cf24d63d22ae6e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_80369166511fd51f078e",
+        "subject_entity_id": "risk_factors_0e093881951b9800a20f",
+        "object_entity_id": "conditions_5a03c3c50053a40c605e",
+        "predicate": "may_contribute_to",
+        "claim_text": "Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_48144dbcafb9c39b3dcd",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: host-microorganism interactions -> may_contribute_to -> multi-drug resistant bacteria mutation.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_620bd0702efc2d00041a",
+        "subject_entity_id": "risk_factors_0e093881951b9800a20f",
+        "object_entity_id": "conditions_70736ed224baf800e4eb",
+        "predicate": "increases_risk_of",
+        "claim_text": "Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions",
+        "source_id": "source_0bb467f4a071c7fd0a01",
+        "evidence_id": "evidence_c16ac3cf24d63d22ae6e",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: host-microorganism interactions -> increases_risk_of -> adverse in-mission and long-term health effects.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_5a03c3c50053a40c605e",
+        "canonical_name": "multi-drug resistant bacteria mutation",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      {
+        "condition_id": "conditions_70736ed224baf800e4eb",
+        "canonical_name": "adverse in-mission and long-term health effects",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_c8283819c8e2a2f362e6",
+        "source_entity_id": "risk_factors_0e093881951b9800a20f",
+        "target_entity_id": "conditions_5a03c3c50053a40c605e",
+        "relationship_type": "may_contribute_to",
+        "claim_id": "claim_80369166511fd51f078e",
+        "review_status": "pending"
+      },
+      {
+        "relation_id": "relation_69e64775e82e98806fd7",
+        "source_entity_id": "risk_factors_0e093881951b9800a20f",
+        "target_entity_id": "conditions_70736ed224baf800e4eb",
+        "relationship_type": "increases_risk_of",
+        "claim_id": "claim_620bd0702efc2d00041a",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space",
+        "object": {
+          "entity_type": "conditions",
+          "name": "microbial changes in space"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "environments",
+          "name": "space station surface"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 2,
+    "relations_validated": 2,
+    "relations_staged": 2
+  },
+  "nasa_risk_ids": [
+    "80"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Multi-Drug Resistant Bacteria Found on ISS Mutating to Become Functionally Distinct\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"multi-drug resistant bacteria mutation\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"host-microorganism interactions\"\n      }\n    },\n    {\n      \"evidence_text\": \"Astronauts provide biological samples and collect swabs from the surface of the space station to help researchers monitor microbial changes in space\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"microbial changes in space\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space station surface\"\n      }\n    },\n    {\n      \"evidence_text\": \"Formal risk description: Risk of adverse in-mission and long-term health effects and performance effects due to host-microorganism interactions\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"adverse in-mission and long-term health effects\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"host-microorganism interactions\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "6c6e62906f21bea954ac291ac8d2a681b4387cfd6877c5e67e8fda0eeb4c85d7",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

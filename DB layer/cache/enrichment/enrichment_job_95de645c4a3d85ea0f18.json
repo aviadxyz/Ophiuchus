@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_a52493076e4308064964",
+    "source_content_hash": "de2ed066db53eb883b53c0d7f78599f70a93b7fee776bd789c8c7ba92eb952c5",
+    "input_content_hash": "0d2183997c246ad4a0235baa2d5d0649aba8de07d44246f928fec1297d4d68fa",
+    "chunk_id": "chunk_d3c71a986db5c8b5e31f",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_acb57b3cb059a9fa5c7b",
+        "canonical_name": "keeping a regular journal",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "80ef6f87014c54c766e7db99e8db9249b3f22b338d49fc1a49d1e28bd5220d4e"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"treatment_type\",\n      \"value\": \"self-care\"\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"keeping a regular journal\",\n      \"field\": \"description\",\n      \"value\": \"keeping a regular journal\"\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_acb57b3cb059a9fa5c7b\",\n      \"evidence_text\": \"NASA encourages astronauts to explore self-care options including keeping a regular journal.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"suggested\"\n    }\n  ]\n}"
+}

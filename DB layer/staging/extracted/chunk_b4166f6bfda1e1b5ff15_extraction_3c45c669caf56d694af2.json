@@ -1,0 +1,295 @@
+{
+  "source_id": "source_a88298f30673509167a9",
+  "chunk": {
+    "source_id": "source_a88298f30673509167a9",
+    "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+    "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1444:2972",
+    "text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping. What can be done about it? NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks. Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research. No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight. Instead, scientists are using decades of archived health data on spacewalks to try to extrapolate answers to several questions. For example, will a mildly hypoxic, reduced-pressure environment make any known astronaut health issues worse? If so, what oxygen levels might be tolerable? Scientists are also gathering data from studies conducted in pressure chambers that can simulate spaceflight atmospheres. Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions. Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization. These new protocols are being incorporated into medical operations and planning for future missions. Did you know? ",
+    "original_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping. What can be done about it? NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks. Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research. No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight. Instead, scientists are using decades of archived health data on spacewalks to try to extrapolate answers to several questions. For example, will a mildly hypoxic, reduced-pressure environment make any known astronaut health issues worse? If so, what oxygen levels might be tolerable? Scientists are also gathering data from studies conducted in pressure chambers that can simulate spaceflight atmospheres. Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions. Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization. These new protocols are being incorporated into medical operations and planning for future missions. Did you know? "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "mild hypoxia",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "pressure increases in spacesuits",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: mild hypoxia -> countermeasure_for -> pressure increases in spacesuits."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1444:2972",
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1444:2972",
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "source_id": "source_a88298f30673509167a9",
+        "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+        "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1444:2972",
+        "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_2d32468bf9622aa09cd7",
+        "canonical_name": "mild hypoxia",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_8dd1d3ca88b3e044ea4f",
+        "subject_entity_id": "conditions_2d32468bf9622aa09cd7",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"mild hypoxia\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\"}",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_96c7706fda6fa9364f0c",
+        "subject_entity_id": "treatments_7c38c1961c36c3e39d9e",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"pressure increases in spacesuits\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\"}",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_a88bcd99f0a7083ccc47",
+        "subject_entity_id": "conditions_2d32468bf9622aa09cd7",
+        "object_entity_id": "treatments_7c38c1961c36c3e39d9e",
+        "predicate": "countermeasure_for",
+        "claim_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+        "source_id": "source_a88298f30673509167a9",
+        "evidence_id": "evidence_82f72294dcffac6e9625",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: mild hypoxia -> countermeasure_for -> pressure increases in spacesuits.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_7c38c1961c36c3e39d9e",
+        "canonical_name": "pressure increases in spacesuits",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_0015adf55c3b33398777",
+        "source_entity_id": "conditions_2d32468bf9622aa09cd7",
+        "target_entity_id": "treatments_7c38c1961c36c3e39d9e",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_a88bcd99f0a7083ccc47",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "confusion"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "mild hypoxia"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "headaches"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "mild hypoxia"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "85"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"confusion\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"mild hypoxia\"\n      }\n    },\n    {\n      \"evidence_text\": \"Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"headaches\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"mild hypoxia\"\n      }\n    },\n    {\n      \"evidence_text\": \"Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"pressure increases in spacesuits\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"mild hypoxia\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "4bb88e2d971420a370d2569e5968c05ff29f3df5c3337a80c64de77e476520dd",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "source_id": "source_5af66404068466682af7",
+  "chunk": {
+    "source_id": "source_5af66404068466682af7",
+    "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+    "chunk_id": "chunk_c95e568d9059981cf7ab",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1489:1976",
+    "text": "Formal risk description: Risk of in mission impacts, adverse health events, or long-term health impacts due to altered immune system response Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA Investigates How Dormant Viruses Behave During Spaceflight Read More Scientists Probe How Long-Term Spaceflight Alters Immunity Read More The Human Body in Space Read More",
+    "original_text": "Formal risk description: Risk of in mission impacts, adverse health events, or long-term health impacts due to altered immune system response Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA Investigates How Dormant Viruses Behave During Spaceflight Read More Scientists Probe How Long-Term Spaceflight Alters Immunity Read More The Human Body in Space Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "in mission impacts",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "altered immune system response"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "altered immune system response",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "altered immune system response"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "may_contribute_to",
+        "object": "e2",
+        "claim_text": "altered immune system response",
+        "evidence_text": "altered immune system response",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: in mission impacts -> may_contribute_to -> altered immune system response."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "source_id": "source_5af66404068466682af7",
+        "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+        "chunk_id": "chunk_c95e568d9059981cf7ab",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1489:1976",
+        "evidence_text": "altered immune system response",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "source_id": "source_5af66404068466682af7",
+        "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+        "chunk_id": "chunk_c95e568d9059981cf7ab",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1489:1976",
+        "evidence_text": "altered immune system response",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "source_id": "source_5af66404068466682af7",
+        "source_url": "https://www.nasa.gov/reference/risk-of-altered-immune-system-responses/",
+        "chunk_id": "chunk_c95e568d9059981cf7ab",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1489:1976",
+        "evidence_text": "altered immune system response",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_332be969922c22fb9581",
+        "canonical_name": "in mission impacts",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_9634e32ec22c69765bcf",
+        "subject_entity_id": "risk_factors_332be969922c22fb9581",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"in mission impacts\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"altered immune system response\"}",
+        "source_id": "source_5af66404068466682af7",
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_222bdb8cb590d217129c",
+        "subject_entity_id": "conditions_74b517d4dac9d361d65b",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"altered immune system response\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"altered immune system response\"}",
+        "source_id": "source_5af66404068466682af7",
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8e924b637f8fff53ebbb",
+        "subject_entity_id": "risk_factors_332be969922c22fb9581",
+        "object_entity_id": "conditions_74b517d4dac9d361d65b",
+        "predicate": "may_contribute_to",
+        "claim_text": "altered immune system response",
+        "source_id": "source_5af66404068466682af7",
+        "evidence_id": "evidence_85c1e7d976e3c81baae0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: in mission impacts -> may_contribute_to -> altered immune system response.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_74b517d4dac9d361d65b",
+        "canonical_name": "altered immune system response",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_cd219e2b5903ef8c7588",
+        "source_entity_id": "risk_factors_332be969922c22fb9581",
+        "target_entity_id": "conditions_74b517d4dac9d361d65b",
+        "relationship_type": "may_contribute_to",
+        "claim_id": "claim_8e924b637f8fff53ebbb",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "altered immune system response",
+        "object": {
+          "entity_type": "conditions",
+          "name": "altered immune system response"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "adverse health events"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "altered immune system response",
+        "object": {
+          "entity_type": "conditions",
+          "name": "altered immune system response"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "long-term health impacts"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "85"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"altered immune system response\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altered immune system response\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"in mission impacts\"\n      }\n    },\n    {\n      \"evidence_text\": \"altered immune system response\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altered immune system response\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"adverse health events\"\n      }\n    },\n    {\n      \"evidence_text\": \"altered immune system response\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"altered immune system response\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"long-term health impacts\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "5ed9db8539fb91efaa6033bddffe7d5765ee2e6194a188174447f3eea2835d63",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

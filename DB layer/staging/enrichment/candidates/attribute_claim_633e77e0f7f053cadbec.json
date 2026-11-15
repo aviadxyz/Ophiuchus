@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_7c38c1961c36c3e39d9e",
+  "field": "description",
+  "value": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+  "evidence_text": "Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research.",
+  "candidate_id": "attribute_claim_633e77e0f7f053cadbec",
+  "evidence_id": "evidence_bbf333d2ea0802691c07",
+  "job_id": "enrichment_job_3b09e98c85c850e67256",
+  "source_id": "source_a88298f30673509167a9",
+  "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_a88298f30673509167a9",
+    "source_url": "https://www.nasa.gov/reference/risk-of-hypoxia/",
+    "chunk_id": "chunk_b4166f6bfda1e1b5ff15",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 1444:2972",
+    "text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping. What can be done about it? NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks. Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research. No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight. Instead, scientists are using decades of archived health data on spacewalks to try to extrapolate answers to several questions. For example, will a mildly hypoxic, reduced-pressure environment make any known astronaut health issues worse? If so, what oxygen levels might be tolerable? Scientists are also gathering data from studies conducted in pressure chambers that can simulate spaceflight atmospheres. Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions. Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization. These new protocols are being incorporated into medical operations and planning for future missions. Did you know? ",
+    "original_text": "Mild hypoxia, if untreated, can cause confusion, headaches, vision impairment, and trouble sleeping. What can be done about it? NASA’s health experts are researching hypoxia to design protocols that balance oxygen concentration and pressure to optimize astronaut health and performance before and during spacewalks. Creating spacesuits that have the option for crews to be able to toggle pressure increases inside their suits while conducting spacewalks is another area of current research. No current ground-based study exists to test different oxygen exposure levels on humans while they’re experiencing all the stressors of spaceflight. Instead, scientists are using decades of archived health data on spacewalks to try to extrapolate answers to several questions. For example, will a mildly hypoxic, reduced-pressure environment make any known astronaut health issues worse? If so, what oxygen levels might be tolerable? Scientists are also gathering data from studies conducted in pressure chambers that can simulate spaceflight atmospheres. Studying volunteers that spend hours or days in these chambers allows scientists to learn more about hypoxia and decompression sickness risks and to test potential interventions. Researchers are using all these areas of research to build new health monitoring protocols and treatment strategies to track how future astronauts will adapt to partial depressurization. These new protocols are being incorporated into medical operations and planning for future missions. Did you know? "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T18:11:23.882292+00:00"
+}

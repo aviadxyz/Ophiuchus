@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_content_hash": "a7aee69dd9cea98ba00d8e4fb0b5fa0f1714420c08fde48bbf5cc25a2734451a",
+    "input_content_hash": "5e7ef26aeb8a3cd85092fe92ecae632b90116ddca2e7ad526512e3584d73eb90",
+    "chunk_id": "chunk_4b697b8608aa621079e0",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_1f31a27f6c18baceb2a0",
+        "canonical_name": "high oxygen breathing",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "a9775f1708d53de45755fb05aaf4753535d3dbb14e870d1ac82d3b4fe42a128f"
+  },
+  "original_model_output": "{\n  \"additions\": []\n}"
+}

@@ -1,0 +1,5 @@
+{
+  "error": "Invalid relationship output: expected an object with a relationships array",
+  "source_id": "source_a52493076e4308064964",
+  "attempted_at": "2026-11-14T15:27:02.223132+00:00"
+}

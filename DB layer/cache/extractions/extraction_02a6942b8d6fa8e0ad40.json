@@ -1,0 +1,135 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "9b9298798121e8bed1ae986c29cdb61619efe0962d718bf231e55986211d5bb9",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "decompression sickness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "variable pressure space suits",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "evidence_text": "new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: decompression sickness -> countermeasure_for -> variable pressure space suits."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "environments",
+          "name": "spacewalk"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment",
+        "object": {
+          "entity_type": "treatments",
+          "name": "breathing calibrated high levels of oxygen"
+        },
+        "predicate": "countermeasure_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        }
+      }
+    }
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"spacewalk\"\n      }\n    },\n    {\n      \"evidence_text\": \"new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"variable pressure space suits\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    },\n    {\n      \"evidence_text\": \"science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"breathing calibrated high levels of oxygen\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      }\n    }\n  ]\n}",
+  "relation_stats": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 0
+  }
+}

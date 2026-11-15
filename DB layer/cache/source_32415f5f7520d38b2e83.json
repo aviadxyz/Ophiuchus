@@ -1,0 +1,55 @@
+{
+  "title": "Risk of inadequate systems operations support - NASA",
+  "pages": [
+    {
+      "page_number": null,
+      "text": "HFBP Risk of Inadequate Systems Operations Support Tissue chambers inside the Life Sciences Glovebox aboard the International Space Station for an investigation focused on better understanding heart function in response to external factors. The glovebox and other tools help astronauts conduct research and maintenance on the space station independently, though real-time assistance is available on the ground. Credit: NASA/Drew Morgan What are the top risks? NASA’s Mission Control Center trains astronauts to operate various systems on the International Space Station, including ultrasound and computer-based equipment. However, crews still rely on real-time assistance when problems arise. During longer and more distant missions from Earth, crew members will need more extensive training to know how to identify and fix any issues with systems, software, and equipment without real-time support from mission control. What can be done about it? NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed. Crew members also receive training before a mission to familiarize themselves with various systems and respond to emergencies themselves. NASA researchers continue to work with industry partners and other experts to make spaceflight systems and vehicles easier to operate. Did you know? NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems. Formal risk description: Risk of adverse mission outcomes due to Earth independent human-systems operation Research in support of this risk: Latest evidence Explore more: Human S ystem Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA to Test Telemedicine, Gather Essential Health Data with Polaris Dawn Crew Read More Step 3, Artemis: Moon Missions as an Astronaut Testbed for Mars Read More The Human Body in Space Read More"
+    }
+  ],
+  "links": [
+    [
+      "https://www.nasa.gov/wp-content/uploads/2024/10/iss062e115359-1.png",
+      ""
+    ],
+    [
+      "https://www.nasa.gov/wp-content/uploads/2015/10/160410main_space_training_fact_sheet.pdf?emrc=6cb004",
+      "300 hours"
+    ],
+    [
+      "https://humanresearchroadmap.nasa.gov/Risks/risk.aspx?i=175",
+      "Risk of adverse mission outcomes due to Earth independent human-systems operation"
+    ],
+    [
+      "https://humanresearchroadmap.nasa.gov/evidence/",
+      "Latest evidence"
+    ],
+    [
+      "https://www.nasa.gov/directorates/esdmd/hhp/team-risk/",
+      "Human S"
+    ],
+    [
+      "https://www.nasa.gov/directorates/esdmd/hhp/eihso-risk/",
+      "ystem Risk Board resources"
+    ],
+    [
+      "https://www.nasa.gov/hhp/human-system-risks/",
+      "Read More"
+    ],
+    [
+      "https://www.nasa.gov/humans-in-space/nasa-to-test-telemedicine-gather-essential-health-data-with-polaris-dawn-crew/",
+      "Read More"
+    ],
+    [
+      "https://www.nasa.gov/humans-in-space/step-3-artemis-moon-missions-as-an-astronaut-testbed-for-mars/",
+      "Read More"
+    ],
+    [
+      "https://www.nasa.gov/humans-in-space/the-human-body-in-space/",
+      "Read More"
+    ]
+  ],
+  "source_id": "source_32415f5f7520d38b2e83",
+  "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+  "final_url": "https://www.nasa.gov/reference/risk-of-inadequate-systems-operations-support/",
+  "content_hash": "6fdfcf43054bd607b67ca1115d93c749635fa91828bcb82d02ff3b411ea3cd15"
+}

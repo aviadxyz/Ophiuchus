@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_2b0483c9a18eae867cd2",
+    "source_content_hash": "58d3a04752c7a82e6bf97a7ad9f4df4ede7bdcb178c539b2c3aa751a7fe18505",
+    "input_content_hash": "4271111c4396a4555385ab3e8945f5ef0bc6b4bc912c4451487daea3e7d4ded2",
+    "chunk_id": "chunk_30bd24916af9c0e8abf2",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_554dfe622b5d8d121d2e",
+        "canonical_name": "enhanced spaceflight diet",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "cc16b4361ca02b39f24eb2ceb6ab6938d0a693c7c072e4d45528d3ec01b591c9"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"an enhanced spaceflight diet: one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids\",\n      \"field\": \"description\",\n      \"value\": \"one packed with foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids\"\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"a healthy diet could help astronauts better adapt to the stresses of spaceflight\",\n      \"field\": \"treatment_type\",\n      \"value\": \"a healthy diet could help astronauts better adapt to the stresses of spaceflight\"\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"freeze-dried mango salad, seen in the packet above, is one menu item available to astronauts participating in NASA’s study on how an enhanced diet affects human physiology\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"freeze-dried mango salad\"\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"foods rich in nutrients such as flavonoids, lycopene, and omega-3 fatty acids\",\n      \"field\": \"active_ingredient\",\n      \"value\": \"flavonoids, lycopene, and omega-3 fatty acids\"\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"participants in the study receive a consultation before their mission, to help in creating an enhanced spaceflight diet\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"participants in the study receive a consultation before their mission\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_554dfe622b5d8d121d2e\",\n      \"evidence_text\": \"NASA’s study on how an enhanced diet affects human physiology\",\n      \"field\": \"evidence_status\",\n      \"value\": \"ongoing study\"\n    }\n  ]\n}"
+}

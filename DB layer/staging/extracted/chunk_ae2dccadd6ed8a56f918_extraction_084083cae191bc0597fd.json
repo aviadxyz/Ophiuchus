@@ -1,0 +1,295 @@
+{
+  "source_id": "source_cf2e7b26631f3a802e27",
+  "chunk": {
+    "source_id": "source_cf2e7b26631f3a802e27",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+    "chunk_id": "chunk_ae2dccadd6ed8a56f918",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1591:2199",
+    "text": "Formal risk description: Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Clowning Around Lightens the Load: NASA Studies Team Dynamics in Antarctica Read More Crew Returns from Simulated Trip to Mars—Take a Peek Inside Their Journey Read More First Mars Crew Completes Yearlong Simulated Red Planet NASA Mission Read More",
+    "original_text": "Formal risk description: Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Clowning Around Lightens the Load: NASA Studies Team Dynamics in Antarctica Read More Crew Returns from Simulated Trip to Mars—Take a Peek Inside Their Journey Read More First Mars Crew Completes Yearlong Simulated Red Planet NASA Mission Read More"
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "behavioral health decrements",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "increases_risk_of",
+        "object": "e2",
+        "claim_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate cooperation, coordination, communication, and psychosocial adaptation within a team -> increases_risk_of -> behavioral health decrements."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_ae2dccadd6ed8a56f918",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1591:2199",
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_ae2dccadd6ed8a56f918",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1591:2199",
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/",
+        "chunk_id": "chunk_ae2dccadd6ed8a56f918",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 1591:2199",
+        "evidence_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_6655ed29f022b8d62b1c",
+        "canonical_name": "inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_bec68b207bfda75b60ee",
+        "subject_entity_id": "risk_factors_6655ed29f022b8d62b1c",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"inadequate cooperation, coordination, communication, and psychosocial adaptation within a team\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team\"}",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_20b31882729017382d76",
+        "subject_entity_id": "conditions_2baab1960be389b4f190",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"behavioral health decrements\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team\"}",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_d8ec0bb22c81896c360a",
+        "subject_entity_id": "risk_factors_6655ed29f022b8d62b1c",
+        "object_entity_id": "conditions_2baab1960be389b4f190",
+        "predicate": "increases_risk_of",
+        "claim_text": "Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team",
+        "source_id": "source_cf2e7b26631f3a802e27",
+        "evidence_id": "evidence_4929a2a96e20dce97702",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate cooperation, coordination, communication, and psychosocial adaptation within a team -> increases_risk_of -> behavioral health decrements.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_2baab1960be389b4f190",
+        "canonical_name": "behavioral health decrements",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_04fda7a157a22f5af0b4",
+        "source_entity_id": "risk_factors_6655ed29f022b8d62b1c",
+        "target_entity_id": "conditions_2baab1960be389b4f190",
+        "relationship_type": "increases_risk_of",
+        "claim_id": "claim_d8ec0bb22c81896c360a",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "NASA Studies Team Dynamics in Antarctica",
+        "object": {
+          "entity_type": "environments",
+          "name": "Antarctica"
+        },
+        "predicate": "investigated_for",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "behavioral health decrements"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Crew Returns from Simulated Trip to Mars—Take a Peek Inside Their Journey",
+        "object": {
+          "entity_type": "environments",
+          "name": "simulated trip to Mars"
+        },
+        "predicate": "monitored_by",
+        "subject": {
+          "entity_type": "physical_findings",
+          "name": "team dynamics"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "101"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Risk of in-mission performance and behavioral health decrements due to inadequate cooperation, coordination, communication, and psychosocial adaptation within a team\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"behavioral health decrements\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"inadequate cooperation, coordination, communication, and psychosocial adaptation within a team\"\n      }\n    },\n    {\n      \"evidence_text\": \"NASA Studies Team Dynamics in Antarctica\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"Antarctica\"\n      },\n      \"predicate\": \"investigated_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"behavioral health decrements\"\n      }\n    },\n    {\n      \"evidence_text\": \"Crew Returns from Simulated Trip to Mars—Take a Peek Inside Their Journey\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"simulated trip to Mars\"\n      },\n      \"predicate\": \"monitored_by\",\n      \"subject\": {\n        \"entity_type\": \"physical_findings\",\n        \"name\": \"team dynamics\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "ea21d7d46d088bac46fc7ec1cf034874f96cc0ccb5c5d38a5847b6bcac54b271",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

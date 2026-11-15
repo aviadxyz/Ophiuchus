@@ -1,0 +1,103 @@
+{
+  "source_id": "source_dcd2bf837a04a29770e5",
+  "chunk": {
+    "source_id": "source_dcd2bf837a04a29770e5",
+    "source_url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+    "chunk_id": "chunk_f235174b6945d3bddcce",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1596",
+    "text": "Human Spaceflight Hazards Hazard: Space Radiation Space radiation is invisible to the human eye. It’s not only stealthy, but considered one of the most hazardous aspects of human spaceflight. What is Space Radiation? Why Space Radiation Matters Space Radiation Laboratory What Is Space Radiation? Outside Earth’s protective magnetic field and atmosphere, the ionizing radiation in space will pose a serious risk to astronauts as they travel to Mars. High-energy galactic cosmic rays, which are remnants from supernovas, and solar storms like solar particle events and coronal mass ejections can harm the body and spacecraft. When astronauts travel in space, they can’t see or even feel radiation. However, NASA scientists are studying the effects radiation plays on the human body and developing ways to monitor and protect against this silent hazard. Read About Space Radiation Credit: NASA Why Space Radiation Matters Radiation is energy emitted in the form of rays, electromagnetic waves, and particles. In some cases, radiation can be seen (visible light) or felt (infrared radiation), while other forms—like x-rays and gamma rays—are not visible and can only be observed with special equipment. Although radiation can have negative effects both on biological and mechanical systems, it can also be carefully used to learn more about each of those systems. Read Why Space Radiation Matters Credit: NASA Space Radiation Laboratory Radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes. ",
+    "original_text": "Human Spaceflight Hazards Hazard: Space Radiation Space radiation is invisible to the human eye. It’s not only stealthy, but considered one of the most hazardous aspects of human spaceflight. What is Space Radiation? Why Space Radiation Matters Space Radiation Laboratory What Is Space Radiation? Outside Earth’s protective magnetic field and atmosphere, the ionizing radiation in space will pose a serious risk to astronauts as they travel to Mars. High-energy galactic cosmic rays, which are remnants from supernovas, and solar storms like solar particle events and coronal mass ejections can harm the body and spacecraft. When astronauts travel in space, they can’t see or even feel radiation. However, NASA scientists are studying the effects radiation plays on the human body and developing ways to monitor and protect against this silent hazard. Read About Space Radiation Credit: NASA Why Space Radiation Matters Radiation is energy emitted in the form of rays, electromagnetic waves, and particles. In some cases, radiation can be seen (visible light) or felt (infrared radiation), while other forms—like x-rays and gamma rays—are not visible and can only be observed with special equipment. Although radiation can have negative effects both on biological and mechanical systems, it can also be carefully used to learn more about each of those systems. Read Why Space Radiation Matters Credit: NASA Space Radiation Laboratory Radiation exposure increases cancer risk, damages the central nervous system, can alter cognitive function, reduce motor function, and prompt behavioral changes. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Space radiation increases cancer risk",
+        "object": {
+          "entity_type": "conditions",
+          "name": "cancer"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "space radiation"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Space radiation damages the central nervous system",
+        "object": {
+          "entity_type": "conditions",
+          "name": "central nervous system damage"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "space radiation"
+        }
+      }
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Space radiation can alter cognitive function",
+        "object": {
+          "entity_type": "cognitive_findings",
+          "name": "altered cognitive function"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "environments",
+          "name": "space radiation"
+        }
+      }
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Space radiation increases cancer risk\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"cancer\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space radiation\"\n      }\n    },\n    {\n      \"evidence_text\": \"Space radiation damages the central nervous system\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"central nervous system damage\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space radiation\"\n      }\n    },\n    {\n      \"evidence_text\": \"Space radiation can alter cognitive function\",\n      \"object\": {\n        \"entity_type\": \"cognitive_findings\",\n        \"name\": \"altered cognitive function\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"space radiation\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "d0822418d7d12c95e1b109468b1a88f376c0feab47db82ffe6c9b4937bd089f4",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

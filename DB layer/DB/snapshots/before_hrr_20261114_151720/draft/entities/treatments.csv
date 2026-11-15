@@ -1,0 +1,14 @@
+treatment_id,canonical_name,treatment_type,description,medication_or_supplement,active_ingredient,route_of_administration,requires_medical_supervision,evidence_status,review_status
+treatments_d00626eb0b458822cdb9,space experiments,,,,,,,unknown,pending
+treatments_5dbc8e10256708cc2fef,Canadian Active Neutron Spectrometer,,A compact and autonomous instrument designed to measure neutron radiation exposure in space.,,,,,unknown,pending
+treatments_8e0ea7bb52b614cb3775,MOSFET,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_ed3d6661ba6bff2ae12b,EVARM,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_96bda479fc01e8903783,Radi-N,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_db188104537351756ff6,Radi-N2,,A radiation detection experiment conducted on the ISS.,,,,,unknown,pending
+treatments_317925991a13cc867e02,Omics Archive,,A research initiative collecting biological samples to study molecular-level changes during long-duration spaceflight.,,,,,unknown,pending
+treatments_1c1387f7099ef548db14,Tempus Pro,,A telemedicine device being tested for remote health data collection and near real-time diagnosis.,,,,,unknown,pending
+treatments_14972502d017f78e2938,Veggie Monitoring,,A monitoring initiative for microbial growth on crop storage hardware to improve plant production and crew safety.,,,,,unknown,pending
+treatments_2d4c5a290434a33986d5,medication,,,,,,,unknown,pending
+treatments_30c82e5457b1b81b4e10,B-Complex,,A daily B vitamin supplement study to prevent or mitigate brain and eye changes in space.,,,,,unknown,pending
+treatments_4defdf163aefd4a9ba08,Thigh Cuff,,Testing tight thigh cuffs to retain bodily fluids in legs and prevent eye disorders in space.,,,,,unknown,pending
+treatments_bf1d32d203254da2f633,interventions for radiation-induced cancer risks,,,,,,,unknown,pending

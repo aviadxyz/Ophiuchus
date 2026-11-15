@@ -1,0 +1,36 @@
+{
+  "extraction_metadata": {
+    "input_content_hash": "757423d08b7af204dbc2493a55a79ec62f8add856fb124e41aead0129a77b930",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  },
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "validation_rejections": [],
+  "original_model_output": "{\"relationships\": []}",
+  "relation_stats": {
+    "candidate_relationships": 0,
+    "evidence_verified": 0,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  }
+}

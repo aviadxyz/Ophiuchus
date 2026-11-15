@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_ba51435b911ec817a4d8",
+  "field": "description",
+  "value": "The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return",
+  "evidence_text": "The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return",
+  "candidate_id": "attribute_claim_5a52959d620d55c91efe",
+  "evidence_id": "evidence_51333a4f2af2ab79b67a",
+  "job_id": "enrichment_job_46674a45e32335a4f11c",
+  "source_id": "source_9fc83afed4c3c844eb53",
+  "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_9fc83afed4c3c844eb53",
+    "source_url": "https://www.nasa.gov/reference/risk-of-decompression-sickness/",
+    "chunk_id": "chunk_db5b771f5a52b10bdf7b",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 1451:3038",
+    "text": "Current protocols hold that when experiencing decompression sickness symptoms, astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft. Future missions deeper into space will likely require more frequent spacewalks. NASA is preparing for associated risks in a variety of ways. For instance, new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself. The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return. But astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier – so decisions will need to be made about risk tradeoffs. In addition, the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks. Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment. Did you know? Even flying in an airplane puts a person at risk of decompression sickness due to the large change in environmental pressure at high altitudes. Aircraft cabins are pressurized to counter that risk. ",
+    "original_text": "Current protocols hold that when experiencing decompression sickness symptoms, astronauts should safely but rapidly end their spacewalk and return to the pressurized environment of their spacecraft. Future missions deeper into space will likely require more frequent spacewalks. NASA is preparing for associated risks in a variety of ways. For instance, new variable pressure space suits currently in development may provide some initial ways to address decompression sickness during the spacewalk itself. The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return. But astronauts who wear such suits may also experience reduced mobility, decreased manual dexterity, and increased fatigue during spacewalks – since pressurized suits are heavier – so decisions will need to be made about risk tradeoffs. In addition, the spacecraft for future deep space missions could be designed to operate at lower pressures, helping to limit the pressure changes between habitat and spacesuit, which will reduce risks. Science-backed protocols prior to spacewalks that involve breathing carefully calibrated high levels of oxygen to displace the nitrogen in the body will also help prevent nitrogen bubbles from forming when traveling to a lower-pressure environment. Did you know? Even flying in an airplane puts a person at risk of decompression sickness due to the large change in environmental pressure at high altitudes. Aircraft cabins are pressurized to counter that risk. "
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:50:35.409752+00:00"
+}

@@ -1,0 +1,150 @@
+{
+  "entity_ids_preserved": true,
+  "existing_nonempty_values_preserved": true,
+  "relationships_preserved": 54,
+  "enrichment_claims_verified": 14,
+  "newly_populated_cells": 15,
+  "changes": [
+    {
+      "table": "conditions",
+      "entity_id": "conditions_3978ceaa4d85f511e7e2",
+      "field": "description",
+      "before": "",
+      "value": "Transitioning from pressurized spacecraft to lower-pressure spacesuit causes complications when dissolved nitrogen bubbles in body tissues."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_870eca27e10815231a69",
+      "field": "description",
+      "before": "",
+      "value": "Earth-based training in both high- and low-pressure environments prior to missions helps astronauts know what to expect in altered pressure situations, including when they might be at risk for decompression sickness."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_fc0dde28ab00e47dec28",
+      "field": "treatment_type",
+      "before": "",
+      "value": "medicines to counter the effects of radiation exposures"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_fc0dde28ab00e47dec28",
+      "field": "description",
+      "before": "",
+      "value": "NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_fc0dde28ab00e47dec28",
+      "field": "medication_or_supplement",
+      "before": "",
+      "value": "medicines"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_012b2b6825acd5040c73",
+      "field": "treatment_type",
+      "before": "",
+      "value": "radiation shielding"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_012b2b6825acd5040c73",
+      "field": "description",
+      "before": "",
+      "value": "robust radiation shielding for Artemis missions and the planned lunar Gateway space station"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_21256e12625f231c8407",
+      "field": "description",
+      "before": "",
+      "value": "NASA technologists strive to design user-friendly spaceflight systems so that astronauts can perform tasks independently, as needed."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_68595fb19bf2e18d2717",
+      "field": "treatment_type",
+      "before": "",
+      "value": "resistance training and aerobic exercises"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_68595fb19bf2e18d2717",
+      "field": "description",
+      "before": "",
+      "value": "Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_ba51435b911ec817a4d8",
+      "field": "treatment_type",
+      "before": "",
+      "value": "variable pressure space suits"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_ba51435b911ec817a4d8",
+      "field": "description",
+      "before": "",
+      "value": "The suits’ technology aims to allow astronauts to quickly increase the pressure within their suits, which could help stabilize the afflicted crew member and allow for safer return"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_5b57e3d36812e0e991e5",
+      "field": "description",
+      "before": "",
+      "value": "NASA astronauts train, on average, 300 hours in simulators before launch to help familiarize themselves with space vehicles and systems."
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_b6ce10da5f1519af93af",
+      "field": "description",
+      "before": "",
+      "value": "simulate Earth’s light-dark cycle to help astronauts sleep better"
+    },
+    {
+      "table": "treatments",
+      "entity_id": "treatments_deb687c28a7c61d4b698",
+      "field": "description",
+      "before": "",
+      "value": "Researchers continue to assess how various disinfectants, anti-inflammatories, and antibiotics could help."
+    }
+  ],
+  "export_audit": {
+    "candidates_included": 14,
+    "cells_filled": 14,
+    "cells_filled_by_table": {
+      "entities/treatments": 14
+    },
+    "conflicts": [],
+    "excluded_by_review": 0,
+    "invalid_staged_records": [
+      {
+        "candidate_id": "attribute_claim_15e42138a2d157c8f3a7",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_52ee42e7a26514305628",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_88811bc315ab9da89dae",
+        "reason": "entity_not_anchored_in_evidence"
+      },
+      {
+        "candidate_id": "attribute_claim_c5e7b8ee5946f372d1a1",
+        "reason": "entity_not_anchored_in_evidence"
+      }
+    ],
+    "baseline_conflicts": [
+      {
+        "entity_id": "conditions_91a18b574568d8527025",
+        "field": "description",
+        "existing_value": "A condition related to blood flow and coagulation changes in space, studied in the context of exercise without a treadmill.",
+        "candidate_value": "Study of physical differences affecting blood flow and coagulation in space.",
+        "reason": "existing_value_preserved"
+      }
+    ]
+  }
+}

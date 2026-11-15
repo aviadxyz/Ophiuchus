@@ -1,0 +1,13 @@
+{
+  "risks": {},
+  "documents": {},
+  "associations": [],
+  "structural_links": [],
+  "errors": [
+    {
+      "stage": "risk_index",
+      "error": "Risk index unavailable; discovery incomplete"
+    }
+  ],
+  "last_run_started_at": "2026-11-14T13:19:29.081338+00:00"
+}

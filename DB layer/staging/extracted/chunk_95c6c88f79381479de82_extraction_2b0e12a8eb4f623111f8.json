@@ -1,0 +1,626 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "chunk": {
+    "source_id": "source_e7862784beb09526a71c",
+    "source_url": "https://www.nasa.gov/hrp/risks/",
+    "chunk_id": "chunk_95c6c88f79381479de82",
+    "page_number": null,
+    "section": null,
+    "text_location": "characters 2197:4314",
+    "text": "To help keep crews healthy, researchers are exploring these microbial ecosystems and how they evolve in space. Read About Host-Microorganism Interaction Risks Risk of Hypoxia Astronauts on future deep space missions will take steps to avoid “the bends” during spacewalks, but following those steps also elevates the risk of mild hypoxia — a condition that occurs when oxygen levels in body tissues become lower than normal. Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication. ",
+    "original_text": "To help keep crews healthy, researchers are exploring these microbial ecosystems and how they evolve in space. Read About Host-Microorganism Interaction Risks Risk of Hypoxia Astronauts on future deep space missions will take steps to avoid “the bends” during spacewalks, but following those steps also elevates the risk of mild hypoxia — a condition that occurs when oxygen levels in body tissues become lower than normal. Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. Ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions and understanding the consequences of inadequate nutrition. Read About Inadequate Food and Nutrition Risks Risk of Injury and Compromised Performance from Spacewalks Working in a spacesuit is challenging. In addition to cognitive fatigue and injury, crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels. Research focuses on characterizing human performance in spacesuits and balancing pressure and oxygen levels. Read About Spacewalk Risks Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness All astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance. Researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks. Read About Reduced Fitness Risks Risk of Spaceflight Associated Neuro-ocular Syndrome (SANS) The structure of the eyes and brain can change with spaceflight. Research focuses on understanding the long-term health consequences of these changes and preventing them from occurring. Read About SANS Risks Risk of Spaceflight-Induced Bone Changes Without gravity, bones break down and become more brittle, boosting the chances of painful breaks. Ongoing research seeks to better understand and quantify these losses, and help preserve bone strength through diet, exercise, and medication. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+    "entities": [
+      {
+        "local_id": "cond_001",
+        "entity_type": "conditions",
+        "canonical_name": "hypoxia",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "a condition that occurs when oxygen levels in body tissues become lower than normal"
+      },
+      {
+        "local_id": "cond_002",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate food and nutrition",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "a healthy, balanced diet is an essential element of crew health and performance"
+      },
+      {
+        "local_id": "cond_003",
+        "entity_type": "conditions",
+        "canonical_name": "injury and compromised performance from spacewalks",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels"
+      },
+      {
+        "local_id": "cond_004",
+        "entity_type": "conditions",
+        "canonical_name": "reduced cardiorespiratory and musculoskeletal fitness",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks"
+      },
+      {
+        "local_id": "cond_005",
+        "entity_type": "conditions",
+        "canonical_name": "spaceflight-associated neuro-ocular syndrome (SANS)",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "the structure of the eyes and brain can change with spaceflight"
+      },
+      {
+        "local_id": "cond_006",
+        "entity_type": "conditions",
+        "canonical_name": "spaceflight-induced bone changes",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "without gravity, bones break down and become more brittle, boosting the chances of painful breaks"
+      },
+      {
+        "local_id": "bio_001",
+        "entity_type": "biomarkers",
+        "canonical_name": "microbial ecosystems",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "local_id": "treat_001",
+        "entity_type": "treatments",
+        "canonical_name": "exercise",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "all astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance"
+      },
+      {
+        "local_id": "treat_002",
+        "entity_type": "treatments",
+        "canonical_name": "diet",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions"
+      },
+      {
+        "local_id": "treat_003",
+        "entity_type": "treatments",
+        "canonical_name": "medication",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "help preserve bone strength through diet, exercise, and medication"
+      }
+    ],
+    "claims": [],
+    "monitoring": [
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_001",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_002",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_003",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_004",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_005",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      },
+      {
+        "biomarker": "bio_001",
+        "condition": "cond_006",
+        "environment": null,
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null,
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space"
+      }
+    ],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_6cd98e2123da8d2ae01b",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "a condition that occurs when oxygen levels in body tissues become lower than normal",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_71e3e6f76b3b37958f34",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_ab76bd22d6995c78f6c7",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "help preserve bone strength through diet, exercise, and medication",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "source_id": "source_e7862784beb09526a71c",
+        "source_url": "https://www.nasa.gov/hrp/risks/",
+        "chunk_id": "chunk_95c6c88f79381479de82",
+        "page_number": null,
+        "section": null,
+        "text_location": "characters 2197:4314",
+        "evidence_text": "researchers are exploring these microbial ecosystems and how they evolve in space",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_20f1056f9db9ec82cb11",
+        "canonical_name": "hypoxia",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      },
+      {
+        "condition_id": "conditions_8029aa45f61d1e64587b",
+        "canonical_name": "injury and compromised performance from spacewalks",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_fdf485f918dc251273fc",
+        "subject_entity_id": "conditions_20f1056f9db9ec82cb11",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"cond_001\",\"entity_type\":\"conditions\",\"canonical_name\":\"hypoxia\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"a condition that occurs when oxygen levels in body tissues become lower than normal\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_6cd98e2123da8d2ae01b",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8dab6fa6d596d6f7d20f",
+        "subject_entity_id": "conditions_8029aa45f61d1e64587b",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"cond_003\",\"entity_type\":\"conditions\",\"canonical_name\":\"injury and compromised performance from spacewalks\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"crew members must also manage risks in the spacewalk environment, including decompression sickness, and low oxygen and high carbon dioxide levels\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_71e3e6f76b3b37958f34",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_3ac6a2b3394b4247d0c5",
+        "subject_entity_id": "biomarkers_ff7d1a77e3476bf8c936",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"bio_001\",\"entity_type\":\"biomarkers\",\"canonical_name\":\"microbial ecosystems\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"researchers are exploring these microbial ecosystems and how they evolve in space\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_f71233228b7c9587f0cc",
+        "subject_entity_id": "treatments_2d4c5a290434a33986d5",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"treat_003\",\"entity_type\":\"treatments\",\"canonical_name\":\"medication\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"help preserve bone strength through diet, exercise, and medication\"}",
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_ab76bd22d6995c78f6c7",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "This summary is based on research summaries and does not include clinical data, efficacy, or approval information. All claims are observational and derived from research summaries. No causal relationships or treatment recommendations are established. The source does not provide diagnostic thresholds or reference ranges. Monitoring is inferred from the presence of microbial ecosystem research in relation to health risks, but no specific measurements are described. The environment is not explicitly defined in the text for any monitoring instance.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/biomarkers": [
+      {
+        "biomarker_id": "biomarkers_ff7d1a77e3476bf8c936",
+        "canonical_name": "microbial ecosystems",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_2d4c5a290434a33986d5",
+        "canonical_name": "medication",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "monitoring/monitoring_guidance": [
+      {
+        "guidance_id": "guidance_4323fef74d79b8f8c328",
+        "biomarker_id": "biomarkers_ff7d1a77e3476bf8c936",
+        "related_condition_id": "conditions_20f1056f9db9ec82cb11",
+        "applicable_environment_id": null,
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "review_status": "pending",
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null
+      },
+      {
+        "guidance_id": "guidance_dfc84829dc69210dd80e",
+        "biomarker_id": "biomarkers_ff7d1a77e3476bf8c936",
+        "related_condition_id": "conditions_8029aa45f61d1e64587b",
+        "applicable_environment_id": null,
+        "source_id": "source_e7862784beb09526a71c",
+        "evidence_id": "evidence_d7fdeccc3ea72ee2e7a0",
+        "review_status": "pending",
+        "measurement_method": null,
+        "recommended_frequency": null,
+        "measurement_limitations": null
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "a healthy, balanced diet is an essential element of crew health and performance"
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "researchers are studying what types of exercise will best protect their health and their ability to perform spacewalks"
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "the structure of the eyes and brain can change with spaceflight"
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "without gravity, bones break down and become more brittle, boosting the chances of painful breaks"
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "all astronauts perform exercise during their mission to counteract losses in bone density, muscle strength, and heart and blood vessel performance"
+    },
+    {
+      "reason": "missing_exact_evidence",
+      "excerpt": "ongoing research focuses on designing enjoyable, long-lasting, and nutritious meals for deep space missions"
+    }
+  ],
+  "extraction_metadata": {
+    "input_content_hash": "4ae368d0c573a69af00bd4fe5a89fc84d62a191adc48ad3088aad16b1bceee07",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "3",
+    "schema_hash": "3ddf7f17e74c79cfa0756bba9504c05c02f619da629c5a1388fbec56e593f23b",
+    "prompt_hash": "889b71d69229c6084c2e76f1e3bab8d7df8fb770f58c95b841d06ffb21f1983c",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    }
+  }
+}

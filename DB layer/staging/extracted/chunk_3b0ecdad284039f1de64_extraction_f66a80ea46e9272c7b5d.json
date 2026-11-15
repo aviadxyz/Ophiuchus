@@ -1,0 +1,106 @@
+{
+  "source_id": "source_e7862784beb09526a71c",
+  "chunk": {
+    "source_id": "source_e7862784beb09526a71c",
+    "source_url": "https://www.nasa.gov/hrp/risks/",
+    "chunk_id": "chunk_3b0ecdad284039f1de64",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 1281:2759",
+    "text": "Ongoing research seeks to help astronauts recover faster from these changes so they can perform tasks inside and outside spacecraft. Read About Altered Function Risks Risk of Cardiovascular Adaptations Weightlessness alters blood circulation and how the heart and blood vessels function, potentially increasing the risk of cardiovascular events. Research focuses on minimizing these unhealthy changes. Read About Cardiovascular Adaptation Risks Risk of Decompression Sickness Transitioning from a pressurized spacecraft to a lower-pressure spacesuit can cause health and mission complications when dissolved nitrogen starts to bubble within body tissues. Research focuses on developing better prevention and faster treatment options. Read About Decompression Sickness Risk of Host-Microorganism Interactions Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick. To help keep crews healthy, researchers are exploring these microbial ecosystems and how they evolve in space. Read About Host-Microorganism Interaction Risks Risk of Hypoxia Astronauts on future deep space missions will take steps to avoid “the bends” during spacewalks, but following those steps also elevates the risk of mild hypoxia — a condition that occurs when oxygen levels in body tissues become lower than normal. Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. ",
+    "original_text": "Ongoing research seeks to help astronauts recover faster from these changes so they can perform tasks inside and outside spacecraft. Read About Altered Function Risks Risk of Cardiovascular Adaptations Weightlessness alters blood circulation and how the heart and blood vessels function, potentially increasing the risk of cardiovascular events. Research focuses on minimizing these unhealthy changes. Read About Cardiovascular Adaptation Risks Risk of Decompression Sickness Transitioning from a pressurized spacecraft to a lower-pressure spacesuit can cause health and mission complications when dissolved nitrogen starts to bubble within body tissues. Research focuses on developing better prevention and faster treatment options. Read About Decompression Sickness Risk of Host-Microorganism Interactions Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick. To help keep crews healthy, researchers are exploring these microbial ecosystems and how they evolve in space. Read About Host-Microorganism Interaction Risks Risk of Hypoxia Astronauts on future deep space missions will take steps to avoid “the bends” during spacewalks, but following those steps also elevates the risk of mild hypoxia — a condition that occurs when oxygen levels in body tissues become lower than normal. Read About Hypoxia Risk of Inadequate Food and Nutrition A healthy, balanced diet is an essential element of crew health and performance. "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [],
+    "claims": [],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {},
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Weightlessness alters blood circulation and how the heart and blood vessels function, potentially increasing the risk of cardiovascular events.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "cardiovascular events"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "weightlessness"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "Transitioning from a pressurized spacecraft to a lower-pressure spacesuit can cause health and mission complications when dissolved nitrogen starts to bubble within body tissues.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "decompression sickness"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "transitioning from pressurized spacecraft to lower-pressure spacesuit"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "infection"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "host-microorganism interactions"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 0,
+    "relations_validated": 0,
+    "relations_staged": 0
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Weightlessness alters blood circulation and how the heart and blood vessels function, potentially increasing the risk of cardiovascular events.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"cardiovascular events\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"weightlessness\"\n      }\n    },\n    {\n      \"evidence_text\": \"Transitioning from a pressurized spacecraft to a lower-pressure spacesuit can cause health and mission complications when dissolved nitrogen starts to bubble within body tissues.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"decompression sickness\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"transitioning from pressurized spacecraft to lower-pressure spacesuit\"\n      }\n    },\n    {\n      \"evidence_text\": \"Skin and gut microbiomes can change in space, potentially increasing the risk of crew members getting sick.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"infection\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"host-microorganism interactions\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "dd7544a400f91858b115770fe2f8d42360687fd6d98344b0cc3dfdb4899b1c51",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

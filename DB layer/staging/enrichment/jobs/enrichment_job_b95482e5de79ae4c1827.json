@@ -1,0 +1,127 @@
+{
+  "status": "completed",
+  "job": {
+    "job_id": "enrichment_job_b95482e5de79ae4c1827",
+    "identity": {
+      "source_id": "source_272ff97648e63fa98488",
+      "source_content_hash": "4d6e7d14985f4d1c38b5274023610a9c0910451190f24ab456ad5b89b9beadd4",
+      "input_content_hash": "b0d55f536f7b71c536330b1439a76eb7951923a442a2e4d170d2cf63d65add35",
+      "chunk_id": "chunk_fc0e62f031682e6d151e",
+      "section": null,
+      "targets": [
+        {
+          "entity_id": "treatments_b6ce10da5f1519af93af",
+          "canonical_name": "LED light simulation",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        }
+      ],
+      "model": "qwen3:4b-instruct",
+      "settings": {
+        "temperature": 0.0,
+        "num_ctx": 8192,
+        "num_predict": 2048,
+        "seed": 0
+      },
+      "output_limit": 1024,
+      "prompt_version": "1",
+      "schema_version": "1",
+      "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+      "schema_hash": "9ec4242da1340f59b14a07efd83a9b2bc21695e5ee21d94c160102f5f3085b3a"
+    },
+    "source_id": "source_272ff97648e63fa98488",
+    "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+    "entity_type": "treatments",
+    "targets": [
+      {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "canonical_name": "LED light simulation",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "chunk": {
+      "source_id": "source_272ff97648e63fa98488",
+      "source_url": "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/",
+      "chunk_id": "chunk_fc0e62f031682e6d151e",
+      "page_number": null,
+      "section": null,
+      "text_location": "section None; characters 0:1319",
+      "text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. ",
+      "original_text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. "
+    },
+    "original_page_text": "HFBP Risk from Inadequate Sleep and Irregular Schedules NASA astronaut Scott Kelly, who spent one-year aboard the International Space Station, seen confined inside a Soyuz simulator at the Gagarin Cosmonaut Training Center. Spaceflight stressors, including irregular sleep and schedules, were among the factors that scientists explored as part of his long-duration mission. Credit: NASA/Bill Ingalls What are the top risks? Astronauts are exposed to numerous stressors during spaceflight, such as work overload, irregular light-dark cycles, and sleep-pattern disruptions. These stressors take a toll on the human body and can lead to short- and long-term health consequences that can affect mission success. What can be done about it? To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better. Researchers are looking into how factors including light and caffeine use affect the biological clocks of crews and influence sleep quality. Astronauts are also given designated times for relaxation and self-care as part of their routine to help prevent burnout. Did you know? Astronauts witness 16 sunrises and sunsets per day aboard the space station, which can disrupt their sleep-wake cycle. Formal risk description: Risk of performance decrements and adverse health outcomes resulting from sleep loss, circadian desynchronization, and work overload Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More Goodbye HERA, Hello Sleep: NASA’s HERA XIII Crew Returns Home to Slumber Read More Wearable Tech for Space Station Research Read More Spaceflight Standard Measures: Characterizing How Humans Adapt in Space Read More The Human Body in Space Read More",
+    "priority": [
+      0,
+      false,
+      2,
+      "source_272ff97648e63fa98488",
+      "section None; characters 0:1319",
+      0
+    ]
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\",\n      \"field\": \"treatment_type\",\n      \"value\": \"LED light simulation\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"To help minimize some of the stresses of spaceflight on the International Space Station, light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better\",\n      \"field\": \"description\",\n      \"value\": \"simulate Earth’s light-dark cycle to help astronauts sleep better\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"no\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"active_ingredient\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"light-emitting diodes, or LEDs\",\n      \"field\": \"route_of_administration\",\n      \"value\": \"none\"\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"no mention of medical supervision required or not required\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_b6ce10da5f1519af93af\",\n      \"evidence_text\": \"no mention of evidence status such as approved, under review, or not evaluated\",\n      \"field\": \"evidence_status\",\n      \"value\": null\n    }\n  ]\n}",
+  "candidate_ids": [
+    "attribute_claim_7bd60cb7c64b39fba0c2"
+  ],
+  "rejected": [
+    {
+      "index": 0,
+      "record": {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "evidence_text": "light-emitting diodes, or LEDs, simulate Earth’s light-dark cycle to help astronauts sleep better",
+        "field": "treatment_type",
+        "value": "LED light simulation"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 2,
+      "record": {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "evidence_text": "light-emitting diodes, or LEDs",
+        "field": "medication_or_supplement",
+        "value": "no"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 3,
+      "record": {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "evidence_text": "light-emitting diodes, or LEDs",
+        "field": "active_ingredient",
+        "value": "none"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    },
+    {
+      "index": 4,
+      "record": {
+        "entity_id": "treatments_b6ce10da5f1519af93af",
+        "evidence_text": "light-emitting diodes, or LEDs",
+        "field": "route_of_administration",
+        "value": "none"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    }
+  ],
+  "proposed": 7,
+  "completed_at": "2026-11-14T17:38:24.754584+00:00"
+}

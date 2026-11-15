@@ -1,0 +1,295 @@
+{
+  "source_id": "source_a04de5b744ab7f9d06b3",
+  "chunk": {
+    "source_id": "source_a04de5b744ab7f9d06b3",
+    "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+    "chunk_id": "chunk_444038e7e6f2eb2596f2",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1598",
+    "text": "HHC Risk of Inadequate Food and Nutrition NASA astronaut Kjell Lindgren smells an orange unpacked from a cargo spacecraft. Future deep space missions to Mars and beyond will need to maintain nutrition and safety without regular resupply shipments of items like fresh fruit. Credit: NASA What are the top risks? Keeping astronauts’ bodies and minds healthy during space flight requires adequate nutrition . Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue . At the International Space Station, resupply shipments include a small portion of fresh fruits and vegetables, alongside limited shelf-life options like pizza kits. Providing desired foods and extending their shelf-life will become even more complex with longer-duration missions to the Moon and Mars, since food must last longer and be optimized for mass and volume, all without regular resupply shipments. What can be done about it? Significant strides have been made toward improving the space food system over the years, like reducing the sodium content and adding new foods for variety. In preparation for a trip to the Red Planet, NASA researchers are focused on enhancing diets to boost nutritional value, designing a space food system that will meet the needs of a long-duration mission, and testing the food system in long-duration analogs and spaceflight. Did you know? Astronauts work with scientists to evaluate and select their preferred foods before their mission. ",
+    "original_text": "HHC Risk of Inadequate Food and Nutrition NASA astronaut Kjell Lindgren smells an orange unpacked from a cargo spacecraft. Future deep space missions to Mars and beyond will need to maintain nutrition and safety without regular resupply shipments of items like fresh fruit. Credit: NASA What are the top risks? Keeping astronauts’ bodies and minds healthy during space flight requires adequate nutrition . Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue . At the International Space Station, resupply shipments include a small portion of fresh fruits and vegetables, alongside limited shelf-life options like pizza kits. Providing desired foods and extending their shelf-life will become even more complex with longer-duration missions to the Moon and Mars, since food must last longer and be optimized for mass and volume, all without regular resupply shipments. What can be done about it? Significant strides have been made toward improving the space food system over the years, like reducing the sodium content and adding new foods for variety. In preparation for a trip to the Red Planet, NASA researchers are focused on enhancing diets to boost nutritional value, designing a space food system that will meet the needs of a long-duration mission, and testing the food system in long-duration analogs and spaceflight. Did you know? Astronauts work with scientists to evaluate and select their preferred foods before their mission. "
+  },
+  "source_type": "risk_description",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "risk_description",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "risk_factors",
+        "canonical_name": "menu fatigue",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue"
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "conditions",
+        "canonical_name": "inadequate nutrition",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue"
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "associated_with",
+        "object": "e2",
+        "claim_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate nutrition -> associated_with -> menu fatigue."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_444038e7e6f2eb2596f2",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1598",
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_444038e7e6f2eb2596f2",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1598",
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "source_url": "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/",
+        "chunk_id": "chunk_444038e7e6f2eb2596f2",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1598",
+        "evidence_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/risk_factors": [
+      {
+        "risk_id": "risk_factors_ea0917ca9556f4c3a369",
+        "canonical_name": "menu fatigue",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_1e0d68ac58179de5bf0d",
+        "subject_entity_id": "risk_factors_ea0917ca9556f4c3a369",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"risk_factors\",\"canonical_name\":\"menu fatigue\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue\"}",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_641137ba008e6065d133",
+        "subject_entity_id": "conditions_50630af9a966764b1546",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"conditions\",\"canonical_name\":\"inadequate nutrition\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue\"}",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_9f3de49be06f377371fd",
+        "subject_entity_id": "risk_factors_ea0917ca9556f4c3a369",
+        "object_entity_id": "conditions_50630af9a966764b1546",
+        "predicate": "associated_with",
+        "claim_text": "Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue",
+        "source_id": "source_a04de5b744ab7f9d06b3",
+        "evidence_id": "evidence_67e1f671c3f6d948a409",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: inadequate nutrition -> associated_with -> menu fatigue.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_50630af9a966764b1546",
+        "canonical_name": "inadequate nutrition",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/risk_condition": [
+      {
+        "relation_id": "relation_52f7748f9930b1e3a3c1",
+        "source_entity_id": "risk_factors_ea0917ca9556f4c3a369",
+        "target_entity_id": "conditions_50630af9a966764b1546",
+        "relationship_type": "associated_with",
+        "claim_id": "claim_9f3de49be06f377371fd",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "Keeping astronauts’ bodies and minds healthy during space flight requires adequate nutrition",
+        "object": {
+          "entity_type": "conditions",
+          "name": "inadequate nutrition"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "astronaut health"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 2,
+      "record": {
+        "evidence_text": "Providing desired foods and extending their shelf-life will become even more complex with longer-duration missions to the Moon and Mars, since food must last longer and be optimized for mass and volume, all without regular resupply shipments",
+        "object": {
+          "entity_type": "environments",
+          "name": "long-duration space missions"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "risk_factors",
+          "name": "inadequate food and nutrition"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 3,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [
+    "176"
+  ],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"Keeping astronauts’ bodies and minds healthy during space flight requires adequate nutrition\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate nutrition\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"astronaut health\"\n      }\n    },\n    {\n      \"evidence_text\": \"Designing meals for a lengthy mission, however, is a complex undertaking. Scientists need to ensure meals are acceptable, safe, nutritious, long-lasting, easy to prepare, and varied enough to avoid menu fatigue\",\n      \"object\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"menu fatigue\"\n      },\n      \"predicate\": \"associated_with\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"inadequate nutrition\"\n      }\n    },\n    {\n      \"evidence_text\": \"Providing desired foods and extending their shelf-life will become even more complex with longer-duration missions to the Moon and Mars, since food must last longer and be optimized for mass and volume, all without regular resupply shipments\",\n      \"object\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"long-duration space missions\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"risk_factors\",\n        \"name\": \"inadequate food and nutrition\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "e04224b65e4fd2f379e9b0bc3c5eefe9de93f9a48d46724afeba951ab1d0e4f0",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

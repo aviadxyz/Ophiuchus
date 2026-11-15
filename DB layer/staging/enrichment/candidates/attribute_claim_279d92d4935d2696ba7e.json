@@ -1,0 +1,24 @@
+{
+  "entity_id": "treatments_012b2b6825acd5040c73",
+  "field": "description",
+  "value": "robust radiation shielding for Artemis missions and the planned lunar Gateway space station",
+  "evidence_text": "NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station.",
+  "candidate_id": "attribute_claim_279d92d4935d2696ba7e",
+  "evidence_id": "evidence_6ad2b9cff5ef0c4c4e32",
+  "job_id": "enrichment_job_b8a7044b3561e259a871",
+  "source_id": "source_795fee7d775bf85aca41",
+  "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+  "entity_type": "treatments",
+  "chunk": {
+    "source_id": "source_795fee7d775bf85aca41",
+    "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+    "chunk_id": "chunk_8b4cbd60198c1ca80be4",
+    "page_number": null,
+    "section": null,
+    "text_location": "section None; characters 1589:2621",
+    "text": "Did you know? Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble. Given this, NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station. They are also contemplating what’s needed for radiation shielding on future ventures to Mars and beyond. Formal risk description: Risk of radiation carcinogenesis Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA Scientists Join White House Cancer Initiative Read More Cloudy with a Chance of Radiation: NASA Studies Simulated Radiation Read More Why Space Radiation Matters Read More The Human Body in Space Read More",
+    "original_text": "Did you know? Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble. Given this, NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station. They are also contemplating what’s needed for radiation shielding on future ventures to Mars and beyond. Formal risk description: Risk of radiation carcinogenesis Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA Scientists Join White House Cancer Initiative Read More Cloudy with a Chance of Radiation: NASA Studies Simulated Radiation Read More Why Space Radiation Matters Read More The Human Body in Space Read More"
+  },
+  "review_status": "pending",
+  "created_at": "2026-11-14T17:46:01.732575+00:00"
+}

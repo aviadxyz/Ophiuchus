@@ -1,0 +1,109 @@
+{
+  "status": "completed",
+  "job": {
+    "job_id": "enrichment_job_380fe5eebf3e371b3006",
+    "identity": {
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_content_hash": "a005a1b064fd99344577fad20381eceded2fa4ded8f62f5e8df26c9be444fb8f",
+      "input_content_hash": "dbd5da0a6ecbbe20dffae4164f52f3cc8fe6f20fc7b88e9ac525e8d46d022414",
+      "chunk_id": "chunk_316b29128a446f50aea4",
+      "section": null,
+      "targets": [
+        {
+          "entity_id": "treatments_fc0dde28ab00e47dec28",
+          "canonical_name": "medicines to counter the effects of radiation exposures",
+          "fields": [
+            "treatment_type",
+            "description",
+            "medication_or_supplement",
+            "active_ingredient",
+            "route_of_administration",
+            "requires_medical_supervision",
+            "evidence_status"
+          ],
+          "associated_source": true
+        }
+      ],
+      "model": "qwen3:4b-instruct",
+      "settings": {
+        "temperature": 0.0,
+        "num_ctx": 8192,
+        "num_predict": 2048,
+        "seed": 0
+      },
+      "output_limit": 1024,
+      "prompt_version": "1",
+      "schema_version": "1",
+      "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+      "schema_hash": "541c38483d92067495372bc9226d3799ad9ba74daf750adc1e771de4fc43790d"
+    },
+    "source_id": "source_795fee7d775bf85aca41",
+    "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+    "entity_type": "treatments",
+    "targets": [
+      {
+        "entity_id": "treatments_fc0dde28ab00e47dec28",
+        "canonical_name": "medicines to counter the effects of radiation exposures",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "chunk": {
+      "source_id": "source_795fee7d775bf85aca41",
+      "source_url": "https://www.nasa.gov/reference/risk-of-radiation-induced-cancers/",
+      "chunk_id": "chunk_316b29128a446f50aea4",
+      "page_number": null,
+      "section": null,
+      "text_location": "section None; characters 0:1589",
+      "text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. ",
+      "original_text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. "
+    },
+    "original_page_text": "Space Radiation Risk of Radiation-Induced Cancers At the NASA Space Radiation Laboratory, located at Brookhaven National Laboratory in New York, scientists can send a beam of heavy ions through cells and tissues. The work helps NASA gain better insights into radiation risks faced by humans in space. Identifying the best ways to mitigate these risks and understand what interventions may help are ongoing NASA research priorities. Credit: NASA/Brookhaven National Laboratory What are the top risks? Astronauts are exposed to higher levels of radiation in space than on Earth, which can lead to the development of certain cancers. Exposure to space radiation may also increase the risk of other degenerative disorders that affect multiple tissues, such as the heart, blood vessels and eyes. Space radiation exposure may also affect the central nervous system, causing cognitive or performance impairments during missions, and may increase the risk of astronauts developing later degenerative conditions. What can be done about it? NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight. In addition, various instruments that measure radiation exposure are in place aboard the International Space Station. Scientists are also conducting tissue research on Earth aimed at developing personalized cancer risk assessments for each astronaut, based on radiation dose and genetic factors. Did you know? Earth’s protective magnetosphere , the region around the planet dominated by its magnetic field, acts like a bubble that largely shields the planet from space radiation. While missions to the space station are entirely within the magnetosphere, missions to the Moon and Mars will extend beyond this protective bubble. Given this, NASA scientists and engineers are currently building robust radiation shielding for Artemis missions and the planned lunar Gateway space station. They are also contemplating what’s needed for radiation shielding on future ventures to Mars and beyond. Formal risk description: Risk of radiation carcinogenesis Research in support of this risk: Latest evidence Explore more: Human System Risk Board resources Related Content View the Complete List of Human System Risks Read More NASA Scientists Join White House Cancer Initiative Read More Cloudy with a Chance of Radiation: NASA Studies Simulated Radiation Read More Why Space Radiation Matters Read More The Human Body in Space Read More",
+    "priority": [
+      0,
+      false,
+      2,
+      "source_795fee7d775bf85aca41",
+      "section None; characters 0:1589",
+      0
+    ]
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"treatment_type\",\n      \"value\": \"medicines to counter the effects of radiation exposures\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"description\",\n      \"value\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": \"medicines\"\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"medicines to counter the effects of radiation exposures\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_fc0dde28ab00e47dec28\",\n      \"evidence_text\": \"NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.\",\n      \"field\": \"evidence_status\",\n      \"value\": \"research_priority\"\n    }\n  ]\n}",
+  "candidate_ids": [
+    "attribute_claim_621d95ad8216d152ad27",
+    "attribute_claim_77ff824d1eb291e02140",
+    "attribute_claim_a387bca8ef93ca6cc9e5"
+  ],
+  "rejected": [
+    {
+      "index": 5,
+      "record": {
+        "entity_id": "treatments_fc0dde28ab00e47dec28",
+        "evidence_text": "NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.",
+        "field": "requires_medical_supervision",
+        "value": false
+      },
+      "reason": "unsupported_supervision_boolean"
+    },
+    {
+      "index": 6,
+      "record": {
+        "entity_id": "treatments_fc0dde28ab00e47dec28",
+        "evidence_text": "NASA scientists are working to develop strategies to identify and prevent health complications from space radiation exposure, including best practices for health surveillance as well as medicines to counter the effects of radiation exposures during spaceflight.",
+        "field": "evidence_status",
+        "value": "research_priority"
+      },
+      "reason": "value_not_verbatim_in_evidence"
+    }
+  ],
+  "proposed": 7,
+  "completed_at": "2026-11-14T17:43:52.010432+00:00"
+}

@@ -1,0 +1,292 @@
+{
+  "source_id": "source_b4bd76d26d8b64355543",
+  "chunk": {
+    "source_id": "source_b4bd76d26d8b64355543",
+    "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+    "chunk_id": "chunk_1a3e0367dd94fd4ea759",
+    "page_number": null,
+    "section": "Article",
+    "text_location": "section Article; characters 0:1505",
+    "text": "HHC Risk of Spaceflight-Induced Bone Changes An artist’s rendition of the interior of a bone. In space, bone density loss, which is known to occur during short-term missions, is a concern for health and safety. Credit: NASA What are the top risks? In microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions. This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age. More research is needed to determine if the rate of bone loss persists on lengthy missions and how to counter or reverse such changes. What can be done about it? Exercise to reduce the deficits in postflight bone density and strengthen muscle force is an essential component of preventing declines in bone tissue. Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity. Moreover, NASA studies have found that medications like bisphosphonate could help mitigate some spaceflight-induced bone loss. Did you know? In addition to bones becoming weaker in astronauts, the spines of astronauts will straighten out and elongate in space. Consequently, the height of crew members can increase as much as 3% in space . ",
+    "original_text": "HHC Risk of Spaceflight-Induced Bone Changes An artist’s rendition of the interior of a bone. In space, bone density loss, which is known to occur during short-term missions, is a concern for health and safety. Credit: NASA What are the top risks? In microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions. This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age. More research is needed to determine if the rate of bone loss persists on lengthy missions and how to counter or reverse such changes. What can be done about it? Exercise to reduce the deficits in postflight bone density and strengthen muscle force is an essential component of preventing declines in bone tissue. Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity. Moreover, NASA studies have found that medications like bisphosphonate could help mitigate some spaceflight-induced bone loss. Did you know? In addition to bones becoming weaker in astronauts, the spines of astronauts will straighten out and elongate in space. Consequently, the height of crew members can increase as much as 3% in space . "
+  },
+  "source_type": "research_summary",
+  "source_limitations": null,
+  "raw_extraction": {
+    "source_type": "research_summary",
+    "source_limitations": null,
+    "entities": [
+      {
+        "local_id": "e1",
+        "entity_type": "conditions",
+        "canonical_name": "bone density loss",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity."
+      },
+      {
+        "local_id": "e2",
+        "entity_type": "treatments",
+        "canonical_name": "resistive exercise",
+        "description": null,
+        "aliases": [],
+        "attributes": {
+          "environment_type": null,
+          "gravity_description": null,
+          "radiation_context": null,
+          "category": null,
+          "body_system": null,
+          "unit": null,
+          "measurement_method": null,
+          "measurement_frequency": null,
+          "monitoring_device": null,
+          "treatment_type": null,
+          "medication_or_supplement": null,
+          "active_ingredient": null,
+          "route_of_administration": null,
+          "requires_medical_supervision": null,
+          "evidence_status": "unknown"
+        },
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity."
+      }
+    ],
+    "claims": [
+      {
+        "subject": "e1",
+        "predicate": "countermeasure_for",
+        "object": "e2",
+        "claim_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: bone density loss -> countermeasure_for -> resistive exercise."
+      }
+    ],
+    "monitoring": [],
+    "interventions": []
+  },
+  "tables": {
+    "evidence/evidence": [
+      {
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+        "chunk_id": "chunk_1a3e0367dd94fd4ea759",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+        "chunk_id": "chunk_1a3e0367dd94fd4ea759",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      },
+      {
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "source_url": "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/",
+        "chunk_id": "chunk_1a3e0367dd94fd4ea759",
+        "page_number": null,
+        "section": "Article",
+        "text_location": "section Article; characters 0:1505",
+        "evidence_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "extraction_method": "llm_structured",
+        "verification_status": "exact_match",
+        "review_status": "pending"
+      }
+    ],
+    "entities/conditions": [
+      {
+        "condition_id": "conditions_76c231915629d6d91bf5",
+        "canonical_name": "bone density loss",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "evidence/knowledge_claims": [
+      {
+        "claim_id": "claim_c0799920d1f96c8595e3",
+        "subject_entity_id": "conditions_76c231915629d6d91bf5",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e1\",\"entity_type\":\"conditions\",\"canonical_name\":\"bone density loss\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.\"}",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_8ee2c720c94e9a6857ae",
+        "subject_entity_id": "treatments_af11afe44ac92c61efb7",
+        "predicate": "described_by",
+        "object_entity_id": null,
+        "claim_text": "{\"local_id\":\"e2\",\"entity_type\":\"treatments\",\"canonical_name\":\"resistive exercise\",\"description\":null,\"aliases\":[],\"attributes\":{\"environment_type\":null,\"gravity_description\":null,\"radiation_context\":null,\"category\":null,\"body_system\":null,\"unit\":null,\"measurement_method\":null,\"measurement_frequency\":null,\"monitoring_device\":null,\"treatment_type\":null,\"medication_or_supplement\":null,\"active_ingredient\":null,\"route_of_administration\":null,\"requires_medical_supervision\":null,\"evidence_status\":\"unknown\"},\"evidence_text\":\"Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.\"}",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": null,
+        "review_status": "pending"
+      },
+      {
+        "claim_id": "claim_34307d9dd15e2af5b99e",
+        "subject_entity_id": "conditions_76c231915629d6d91bf5",
+        "object_entity_id": "treatments_af11afe44ac92c61efb7",
+        "predicate": "countermeasure_for",
+        "claim_text": "Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.",
+        "source_id": "source_b4bd76d26d8b64355543",
+        "evidence_id": "evidence_3354ad6f2747477a34cf",
+        "evidence_status": "unknown",
+        "study_population": "unknown",
+        "study_environment": null,
+        "limitations": "Original extracted predicate/direction: bone density loss -> countermeasure_for -> resistive exercise.",
+        "review_status": "pending"
+      }
+    ],
+    "entities/treatments": [
+      {
+        "treatment_id": "treatments_af11afe44ac92c61efb7",
+        "canonical_name": "resistive exercise",
+        "description": null,
+        "environment_type": null,
+        "gravity_description": null,
+        "radiation_context": null,
+        "category": null,
+        "body_system": null,
+        "unit": null,
+        "measurement_method": null,
+        "measurement_frequency": null,
+        "monitoring_device": null,
+        "treatment_type": null,
+        "medication_or_supplement": null,
+        "active_ingredient": null,
+        "route_of_administration": null,
+        "requires_medical_supervision": null,
+        "evidence_status": "unknown",
+        "review_status": "pending"
+      }
+    ],
+    "relations/condition_treatment": [
+      {
+        "relation_id": "relation_16da88b56b3217ec969f",
+        "source_entity_id": "conditions_76c231915629d6d91bf5",
+        "target_entity_id": "treatments_af11afe44ac92c61efb7",
+        "relationship_type": "countermeasure_for",
+        "claim_id": "claim_34307d9dd15e2af5b99e",
+        "review_status": "pending"
+      }
+    ]
+  },
+  "rejected": [
+    {
+      "reason": "missing_exact_evidence",
+      "group": "relationships",
+      "index": 0,
+      "record": {
+        "evidence_text": "in microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "bone density loss"
+        },
+        "predicate": "increases_risk_of",
+        "subject": {
+          "entity_type": "environments",
+          "name": "microgravity"
+        }
+      }
+    },
+    {
+      "reason": "unsupported_entity_pair",
+      "group": "relationships",
+      "index": 1,
+      "record": {
+        "evidence_text": "This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age.",
+        "object": {
+          "entity_type": "conditions",
+          "name": "premature osteoporosis"
+        },
+        "predicate": "may_contribute_to",
+        "subject": {
+          "entity_type": "conditions",
+          "name": "bone density loss"
+        }
+      },
+      "detail": "No existing CSV relation table represents this pair; original candidate retained for review."
+    }
+  ],
+  "relation_diagnostics": {
+    "candidate_relationships": 3,
+    "evidence_verified": 2,
+    "entities_resolved": 1,
+    "relations_validated": 1,
+    "relations_staged": 1
+  },
+  "nasa_risk_ids": [],
+  "original_model_output": "{\n  \"relationships\": [\n    {\n      \"evidence_text\": \"in microgravity, weight-bearing bones like the spine and hips don’t need to be as strong to support the human body. Consequently, on average, bones lose between 1% and 1.5% of their density each month during four-to-six-month missions.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone density loss\"\n      },\n      \"predicate\": \"increases_risk_of\",\n      \"subject\": {\n        \"entity_type\": \"environments\",\n        \"name\": \"microgravity\"\n      }\n    },\n    {\n      \"evidence_text\": \"This rate of bone loss can make crew members susceptible to fractures and to premature osteoporosis, a disease that weakens bones as people age.\",\n      \"object\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"premature osteoporosis\"\n      },\n      \"predicate\": \"may_contribute_to\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone density loss\"\n      }\n    },\n    {\n      \"evidence_text\": \"Astronauts undergo routine bone scans before and after spaceflight to help researchers keep track of bone density changes, as well as the degree to which resistive exercise is helping to keep bones strong in microgravity.\",\n      \"object\": {\n        \"entity_type\": \"treatments\",\n        \"name\": \"resistive exercise\"\n      },\n      \"predicate\": \"countermeasure_for\",\n      \"subject\": {\n        \"entity_type\": \"conditions\",\n        \"name\": \"bone density loss\"\n      }\n    }\n  ]\n}",
+  "extraction_metadata": {
+    "input_content_hash": "c94e097900832325aff9778c8314773436779959e2ac2b1c091b980cc5ba161e",
+    "provider": "OllamaExtractor",
+    "model": "qwen3:4b-instruct",
+    "schema_version": "1",
+    "prompt_version": "1",
+    "schema_hash": "f14ca8963f560eeb11bc94d061125a6b8de63c2b31c6857381aced5c282fde3e",
+    "prompt_hash": "7624240df4ffb5188e8ce450efe3727eaf8c634872b2ff70e4b1e2d26824b448",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "mode": "relations_first",
+    "relation_num_predict": "1024"
+  }
+}

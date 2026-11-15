@@ -1,0 +1,38 @@
+{
+  "identity": {
+    "source_id": "source_595c9981ebc185e5870a",
+    "source_content_hash": "43cdc319c6a182028d4e98b59bfc2c2c5bb4cd2e8c98b03b65e3bea8d0e55aab",
+    "input_content_hash": "74be48fee0ee32ada2b933fbb184d361f198e7732a929f751d17115bf9c1ae40",
+    "chunk_id": "chunk_d2b64e2df3886374686d",
+    "section": null,
+    "targets": [
+      {
+        "entity_id": "treatments_68595fb19bf2e18d2717",
+        "canonical_name": "resistance training and aerobic exercises",
+        "fields": [
+          "treatment_type",
+          "description",
+          "medication_or_supplement",
+          "active_ingredient",
+          "route_of_administration",
+          "requires_medical_supervision",
+          "evidence_status"
+        ],
+        "associated_source": true
+      }
+    ],
+    "model": "qwen3:4b-instruct",
+    "settings": {
+      "temperature": 0.0,
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "seed": 0
+    },
+    "output_limit": 1024,
+    "prompt_version": "1",
+    "schema_version": "1",
+    "prompt_hash": "01f4539f8f91c9f8c4caafbf10f0d353b81626b46bb72e4a8fc570ce6112246b",
+    "schema_hash": "631a1a2b5d684b3eab9167b6cde872a7c61678126aee1a4da4534afc80263555"
+  },
+  "original_model_output": "{\n  \"additions\": [\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"treatment_type\",\n      \"value\": \"resistance training and aerobic exercises\"\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss.\",\n      \"field\": \"description\",\n      \"value\": \"Six to seven days a week, astronauts on the International Space Station perform resistance training and aerobic exercises for 1.5 hours per day to maintain their fitness and protect against muscle and bone loss.\"\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"medication_or_supplement\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"active_ingredient\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"route_of_administration\",\n      \"value\": null\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"requires_medical_supervision\",\n      \"value\": false\n    },\n    {\n      \"entity_id\": \"treatments_68595fb19bf2e18d2717\",\n      \"evidence_text\": \"resistance training and aerobic exercises\",\n      \"field\": \"evidence_status\",\n      \"value\": \"not specified\"\n    }\n  ]\n}"
+}
