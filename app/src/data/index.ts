@@ -142,6 +142,16 @@ export {
   sendChatMessage,
   markConversationRead,
 } from './social'
+// ---- Crew challenges (prompt 26, CONTRACTS section 9) ----
+export type {
+  ChallengeBoard,
+  ChallengeBoards,
+  ChallengeEntry,
+  ChallengeId,
+  ChallengeJoinResult,
+} from './social'
+export { useChallenges, setChallengeJoined } from './social'
+// ---- End crew challenges ----
 // ---- End crew network -----------------------------------------------------------------------
 // --- Automatic alerts (CONTRACTS section 9, built by lane 18) ---
 export {

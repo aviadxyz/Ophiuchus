@@ -16,6 +16,7 @@ import {
   useFriends,
   useSocialAccount,
 } from '@/data'
+import { CrewChallenges } from './Challenges'
 import { ChatDrawer } from './ChatDrawer'
 import { FindCrew } from './FindCrew'
 import { JoinCard } from './JoinCard'
@@ -93,6 +94,7 @@ export default function SocialScreen() {
         {header}
         <EmptyState message="The crew network is not connected in this demonstration." />
         <p className="m-0 text-sm text-text-muted">{PRIVACY_LINE}</p>
+        <CrewChallenges hasAccount={false} connection={connection} />
       </div>
     )
   }
@@ -102,6 +104,7 @@ export default function SocialScreen() {
       <div className="flex flex-col gap-6">
         {header}
         <JoinCard />
+        <CrewChallenges hasAccount={false} connection={connection} />
       </div>
     )
   }
@@ -156,6 +159,8 @@ export default function SocialScreen() {
           )}
         </div>
       )}
+
+      <CrewChallenges hasAccount connection={connection} />
 
       <div className="flex flex-col gap-3 border-t border-border pt-4">
         <p className="m-0 text-sm text-text-muted">{PRIVACY_LINE}</p>
