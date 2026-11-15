@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback, type TouchEvent, type PointerEvent } from 'react'
-import { joinRoom } from '@/data'
+import { joinRoom, setActiveProfile, updateProfile } from '@/data'
 import { HealthOverviewPage } from './pages/HealthOverviewPage'
 import { MedbotPage } from './pages/MedbotPage'
 import { EmergencyPage } from './pages/EmergencyPage'
@@ -19,6 +19,19 @@ export function WatchApp({ round = true, className = '' }: WatchAppProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
+      // ?as=rami makes this watch that team member's: their profile becomes active and shares
+      // alerts with the crew's devices. The person picks their name in the watch app, so the
+      // choice is theirs. Only the five team profiles (ids crew-<name>) can be picked this way.
+      const as = (params.get('as') ?? '').toLowerCase()
+      if (/^[a-z]{2,20}$/.test(as)) {
+        const id = `crew-${as}`
+        try {
+          setActiveProfile(id)
+          updateProfile(id, { consent: { relay: true } })
+        } catch {
+          // Not a team profile: stay on the profile already active.
+        }
+      }
       const roomCode = params.get('room')
       if (roomCode) {
         joinRoom(roomCode)

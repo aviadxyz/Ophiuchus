@@ -29,6 +29,12 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     if (hadController) reloadOnce()
   })
+  // Look for a newer version on load and once a minute, so a deploy reaches open pages quickly.
+  void navigator.serviceWorker.ready.then((registration) => {
+    const check = () => void registration.update().catch(() => {})
+    check()
+    setInterval(check, 60_000)
+  })
 }
 
 const root = document.getElementById('root')
