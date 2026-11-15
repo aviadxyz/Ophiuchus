@@ -122,13 +122,13 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
           {/* Top section: Mood score plot (14 columns) */}
           <div className="relative h-28 w-full border-b border-border/60 pt-2 pb-1">
             {/* Guide lines for scores 5, 3, 1 */}
-            <div className="pointer-events-none absolute inset-x-0 top-2 border-b border-border/20 text-[9px] text-text-muted">
+            <div className="pointer-events-none absolute inset-x-0 top-2 border-b border-border/20 text-xs text-text-muted">
               <span className="absolute -top-2 right-1 font-mono">5 Very good</span>
             </div>
-            <div className="pointer-events-none absolute inset-x-0 top-14 border-b border-border/20 text-[9px] text-text-muted">
+            <div className="pointer-events-none absolute inset-x-0 top-14 border-b border-border/20 text-xs text-text-muted">
               <span className="absolute -top-2 right-1 font-mono">3 Okay</span>
             </div>
-            <div className="pointer-events-none absolute inset-x-0 bottom-2 border-b border-border/20 text-[9px] text-text-muted">
+            <div className="pointer-events-none absolute inset-x-0 bottom-2 border-b border-border/20 text-xs text-text-muted">
               <span className="absolute -top-2 right-1 font-mono">1 Very low</span>
             </div>
 
@@ -163,7 +163,7 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
                         ].join(' ')}
                         title={`${d}: mood ${score}`}
                       >
-                        <span className="text-[10px] font-bold sm:text-xs">
+                        <span className="text-xs font-bold sm:text-xs">
                           {Number.isInteger(score) ? score : score.toFixed(1)}
                         </span>
                       </div>
@@ -206,7 +206,7 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
                 >
                   <span
                     className={[
-                      'whitespace-nowrap text-[9px] sm:text-[11px] font-medium leading-none',
+                      'whitespace-nowrap text-xs sm:text-xs font-medium leading-none',
                       labelWhenNarrow ? '' : 'invisible lg:visible',
                       isToday ? 'font-bold text-accent' : '',
                     ].join(' ')}
@@ -222,7 +222,7 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
           <div className="flex flex-col gap-1 border-t border-border/60 pt-2">
             <div className="flex items-center justify-between text-xs text-text-muted">
               <span className="font-mono uppercase tracking-wider">Sleep hours</span>
-              <span className="text-[11px] text-text-muted">6h target marked</span>
+              <span className="text-xs text-text-muted">6h target marked</span>
             </div>
             <div className="grid h-16 grid-cols-[repeat(14,minmax(0,1fr))] items-end gap-0.5 pt-1">
               {dates.map((d) => {
@@ -244,7 +244,7 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
                     {hours !== undefined ? (
                       <div className="flex w-full flex-col items-center gap-0.5">
                         <span
-                          className={`text-[8px] sm:text-[10px] font-mono leading-none ${
+                          className={`text-[8px] sm:text-xs font-mono leading-none ${
                             isShort ? 'font-bold text-warn' : 'text-text-muted'
                           }`}
                         >
@@ -258,7 +258,7 @@ export function TimelineCard({ checkins, sleepRecords, today }: TimelineCardProp
                         />
                       </div>
                     ) : (
-                      <div className="mb-1 text-[9px] text-text-muted">—</div>
+                      <div className="mb-1 text-xs text-text-muted">—</div>
                     )}
                   </div>
                 )

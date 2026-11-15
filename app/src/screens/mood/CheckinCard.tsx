@@ -165,7 +165,7 @@ export function CheckinCard({ checkins, today }: CheckinCardProps) {
                       aria-pressed={isSelected}
                     >
                       <Icon className="size-6 text-accent sm:size-7" aria-hidden="true" />
-                      <span className="text-[11px] font-medium leading-tight sm:text-xs">
+                      <span className="text-xs font-medium leading-tight sm:text-xs">
                         {opt.label}
                       </span>
                     </button>
