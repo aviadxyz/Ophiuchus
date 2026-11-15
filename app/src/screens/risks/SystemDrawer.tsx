@@ -11,6 +11,7 @@ import {
   levelLabel,
   levelTone,
 } from '@/design'
+import { furtherReading } from './reading'
 import { formatReading, type Reading, type SystemSigns } from './readings'
 import type { RiskSystem } from './systems'
 
@@ -103,6 +104,19 @@ function DrawerBody({ system, signs }: { system: RiskSystem; signs: SystemSigns 
           </ul>
         )}
       </Section>
+
+      {furtherReading[system.id].length > 0 && (
+        <Section title="Further reading">
+          <ul className="m-0 flex list-none flex-col gap-3 p-0">
+            {furtherReading[system.id].map((item) => (
+              <li key={item.url} className="min-w-0">
+                <p className="m-0 text-sm break-words text-text">{item.citation}</p>
+                <SourceLine text={item.linkText} href={item.url} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       <div className="flex flex-col items-start gap-2">
         {needsAction && <p className="m-0 text-base text-text">{SURGEON_LINE}</p>}

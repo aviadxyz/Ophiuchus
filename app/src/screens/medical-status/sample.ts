@@ -3,7 +3,8 @@
 // record is shown for every profile (demo and team members) and it carries no name.
 //
 // There are no medicine amounts here and there must never be: this app does not give doses.
-// "8 days" and "7 days ago" are fixed numbers, not dates.
+// "8 days" and "7 days ago" are fixed numbers. Sample times are worked out from today (see
+// SAMPLE_DAYS_AGO), so the record never goes stale and no calendar date is written here.
 
 import type { Level, Tone } from '@/design'
 
@@ -23,6 +24,28 @@ export type Marker = {
   trend?: number[]
   /** The numbers behind `targetText`, so a test can check `level` against the level rules. */
   rule?: { kind: 'max' | 'range'; value: number; upper?: number; now: number }
+}
+
+/**
+ * When the last three samples were taken, as days before today, oldest first. Samples are taken
+ * every 14 days, the last one 6 days ago, which is why the next is due in 8 days.
+ */
+export const SAMPLE_DAYS_AGO: readonly number[] = [34, 20, 6]
+/** The time of day every sample in this record was taken. */
+export const SAMPLE_TIME = '07:30'
+export const NEXT_SAMPLE_IN_DAYS = 8
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+/** "9 Nov" for a day that many days before (or, when negative, after) today. */
+export function sampleDay(daysAgo: number, now: Date = new Date()): string {
+  const day = new Date(now.getFullYear(), now.getMonth(), now.getDate() - daysAgo)
+  return `${day.getDate()} ${MONTHS[day.getMonth()]}`
+}
+
+/** "9 Nov, 07:30". */
+export function sampleDateTime(daysAgo: number, now: Date = new Date()): string {
+  return `${sampleDay(daysAgo, now)}, ${SAMPLE_TIME}`
 }
 
 export const markers: readonly Marker[] = [
@@ -291,8 +314,20 @@ export const actions: readonly ActionItem[] = [
 /** True in this sample: the record is fixed in the "something is wrong" state on purpose. */
 export const symptomsReported = true
 
-export const reading: readonly string[] = [
-  'Intestinal barrier function and microbiome change during spaceflight (review literature)',
-  'Voorhies AA et al., Study of the impact of long-duration space missions at the International Space Station on the human gut microbiome, Scientific Reports, 2019',
-  'Risk of altered nutrition and microbiome during spaceflight, NASA Human Research Program',
+export type Reading = { title: string; href?: string; linkText?: string }
+
+/**
+ * The second entry was looked up in PubMed on 15 November 2026 and its title matches the paper
+ * exactly, so it carries a link. The other two name a body of work, not one paper, and stay
+ * "to be confirmed".
+ */
+export const reading: readonly Reading[] = [
+  { title: 'Intestinal barrier function and microbiome change during spaceflight (review literature)' },
+  {
+    title:
+      'Voorhies AA et al., Study of the impact of long-duration space missions at the International Space Station on the astronaut microbiome, Scientific Reports, 2019',
+    href: 'https://pubmed.ncbi.nlm.nih.gov/31289321/',
+    linkText: 'PubMed 31289321',
+  },
+  { title: 'Risk of altered nutrition and microbiome during spaceflight, NASA Human Research Program' },
 ]

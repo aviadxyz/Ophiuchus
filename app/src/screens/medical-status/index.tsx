@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { EmptyState, ScreenHeader } from '@/design'
 import { useActiveProfile } from '@/data'
 import { ActionsCard } from './ActionsCard'
@@ -7,12 +8,15 @@ import { MarkersTable } from './MarkersTable'
 import { PlanCard } from './PlanCard'
 import { ReadingCard } from './ReadingCard'
 import { RiskCard } from './RiskCard'
+import { ScheduleDrawer } from './ScheduleDrawer'
 import { Tiles } from './Tiles'
 import { headerPills } from './derive'
 import { meta } from './meta'
 
 export default function MedicalStatusScreen() {
   const profile = useActiveProfile()
+  const [openMarkerId, setOpenMarkerId] = useState<string | null>(null)
+  const [scheduleOpen, setScheduleOpen] = useState(false)
   // The sample record belongs to the demo profile. A team member's profile holds only what that
   // person records, so nothing is invented for a real person.
   if (profile.kind === 'member') {
@@ -36,13 +40,14 @@ export default function MedicalStatusScreen() {
           Sample medical record for demonstration.
         </p>
         <ConditionCard />
-        <Tiles />
-        <MarkersTable />
+        <Tiles onOpenMarker={setOpenMarkerId} onOpenSchedule={() => setScheduleOpen(true)} />
+        <MarkersTable openId={openMarkerId} onOpen={setOpenMarkerId} />
         <AreasTable />
         <RiskCard />
         <PlanCard />
         <ActionsCard />
         <ReadingCard />
+        <ScheduleDrawer open={scheduleOpen} onClose={() => setScheduleOpen(false)} />
       </div>
     </>
   )

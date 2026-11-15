@@ -69,8 +69,11 @@ describe('Medical status', () => {
 
   it('says "Source: to be confirmed" under the condition and under each reference', () => {
     renderScreen()
-    expect(screen.getAllByText('Source: to be confirmed')).toHaveLength(4)
-    expect(screen.queryAllByRole('link')).toHaveLength(0)
+    // The condition and two references are unchecked. The third reference links to its paper.
+    expect(screen.getAllByText('Source: to be confirmed')).toHaveLength(3)
+    const links = screen.getAllByRole('link')
+    expect(links).toHaveLength(1)
+    expect(links[0]).toHaveAttribute('href', 'https://pubmed.ncbi.nlm.nih.gov/31289321/')
   })
 
   it('shows the sample record on the demo profile only, and never a name', () => {
@@ -97,6 +100,19 @@ describe('Medical status', () => {
     expect(text).not.toMatch(/\b20\d\d\b/)
   })
 
+  it('opens a marker from its tile at the top, and the sample schedule from the last tile', async () => {
+    const user = userEvent.setup()
+    renderScreen()
+    const tiles = within(screen.getByRole('region', { name: 'Key markers' }))
+    await user.click(tiles.getByRole('button', { name: /Haemoglobin/ }))
+    expect(screen.getByRole('dialog', { name: 'Haemoglobin' })).toBeInTheDocument()
+    await user.keyboard('{Escape}')
+    await user.click(tiles.getByRole('button', { name: /Next sample/ }))
+    const schedule = screen.getByRole('dialog', { name: 'Sample schedule' })
+    expect(within(schedule).getByText(/in 8 days/)).toBeInTheDocument()
+    expect(within(schedule).getAllByText(/, 07:30/)).toHaveLength(4)
+  })
+
   it('opens a marker with its plain-words meaning, its trend and the baseline line', async () => {
     const user = userEvent.setup()
     renderScreen()
@@ -104,9 +120,14 @@ describe('Medical status', () => {
     await user.click(row)
     const drawer = screen.getByRole('dialog', { name: 'Gut inflammation marker' })
     expect(within(drawer).getByText(/protein from white blood cells/)).toBeInTheDocument()
-    expect(within(drawer).getByText('312 µg/g')).toBeInTheDocument()
+    expect(within(drawer).getAllByText('312 µg/g').length).toBeGreaterThan(0)
     expect(within(drawer).getByText('under 250')).toBeInTheDocument()
-    expect(within(drawer).getByRole('img', { name: /150, 180, 312/ })).toBeInTheDocument()
+    // Each of the three samples is listed with the day and time it was taken.
+    expect(within(drawer).getByText('150 µg/g')).toBeInTheDocument()
+    expect(within(drawer).getByText('180 µg/g')).toBeInTheDocument()
+    expect(within(drawer).getAllByText(/days ago/)).toHaveLength(3)
+    expect(within(drawer).getByText(/34 days ago/)).toBeInTheDocument()
+    expect(within(drawer).getAllByText(/, 07:30/).length).toBeGreaterThanOrEqual(3)
     expect(
       within(drawer).getByText('Target: personal baseline in this sample record.'),
     ).toBeInTheDocument()

@@ -1,16 +1,15 @@
-import { useState } from 'react'
 import {
   Card,
   DataTable,
   DetailDrawer,
   SourceBadge,
-  Sparkline,
   StatusPill,
+  TrendChart,
   levelLabel,
   levelTone,
   type DataTableRow,
 } from '@/design'
-import { markers, type Marker } from './sample'
+import { markers, sampleDateTime, sampleDay, SAMPLE_DAYS_AGO, type Marker } from './sample'
 
 function NameCell({ plain, technical }: { plain: string; technical: string }) {
   return (
@@ -49,18 +48,41 @@ function MarkerDetail({ marker }: { marker: Marker }) {
         <dd className="m-0 text-base text-text">{marker.targetText}</dd>
       </dl>
       {marker.trend && (
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <span className="font-mono text-label uppercase tracking-wider text-text-muted">
             Last three samples
           </span>
-          <Sparkline
-            values={marker.trend}
-            tone={levelTone[marker.level]}
-            summary={`Last three samples of ${marker.plainName}, oldest first: ${marker.trend.join(', ')}.`}
+          <TrendChart
+            kind="line"
+            height={160}
+            labels={SAMPLE_DAYS_AGO.map((days) => sampleDay(days))}
+            series={[
+              { name: marker.plainName, values: marker.trend, tone: levelTone[marker.level] },
+            ]}
+            {...(marker.rule?.kind === 'max' ? { targetValue: marker.rule.value } : {})}
+            summary={`Last three samples of ${marker.plainName}, oldest first: ${marker.trend
+              .map((value, i) => `${value} on ${sampleDateTime(SAMPLE_DAYS_AGO[i] ?? 0)}`)
+              .join(', ')}.`}
           />
-          <span className="text-sm tabular-nums text-text-secondary">
-            {marker.trend.join(' → ')}
-          </span>
+          <ul className="m-0 flex list-none flex-col gap-1 p-0">
+            {marker.trend.map((value, i) => (
+              <li
+                key={SAMPLE_DAYS_AGO[i]}
+                className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm"
+              >
+                <span className="text-text-secondary">
+                  {sampleDateTime(SAMPLE_DAYS_AGO[i] ?? 0)}
+                  <span className="text-text-muted"> · {SAMPLE_DAYS_AGO[i]} days ago</span>
+                </span>
+                <span className="flex items-baseline gap-2">
+                  <span className="font-semibold tabular-nums text-text">
+                    {value} {unitOf(marker)}
+                  </span>
+                  <SourceBadge source="simulated" />
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
       <p className="m-0 text-xs text-text-muted">
@@ -70,9 +92,20 @@ function MarkerDetail({ marker }: { marker: Marker }) {
   )
 }
 
-/** Seven markers with their value, target and level. A row opens its detail. */
-export function MarkersTable() {
-  const [openId, setOpenId] = useState<string | null>(null)
+/** The unit after the number in a marker's value, for example "µg/g". */
+function unitOf(marker: Marker): string {
+  return marker.nowText.split(' ').slice(1).join(' ')
+}
+
+/** Seven markers with their value, target and level. A row, or its tile above, opens its detail. */
+export function MarkersTable({
+  openId,
+  onOpen,
+}: {
+  openId: string | null
+  onOpen: (id: string | null) => void
+}) {
+  const setOpenId = onOpen
   const open = markers.find((m) => m.id === openId)
 
   const rows: DataTableRow[] = markers.map((marker) => ({

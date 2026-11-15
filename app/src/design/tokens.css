@@ -25,7 +25,8 @@
   /* Fonts. Bundled with the app through Fontsource. */
   --font-*: initial;
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  /* One family for the whole app: labels, pills and eyebrows that used a monospace face are Inter too. */
+  --font-mono: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
   /* Type sizes. The four small ones rise to 12 px on phones (see :root below). */
   --text-*: initial;
