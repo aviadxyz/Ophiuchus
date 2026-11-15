@@ -5,7 +5,7 @@ import { ProgressRing } from '@/design'
 const COUNTDOWN_SECONDS = 10
 
 const DETECTED: Record<'fall' | 'heart-rate' | 'oxygen', string> = {
-  fall: 'A fall was detected',
+  fall: 'Unusual movement detected',
   'heart-rate': 'Heart rate far out of range for 20 seconds',
   oxygen: 'Blood oxygen low for 20 seconds',
 }

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router'
 import { Button, Card, SectionLabel, Switch } from '@/design'
 import {
   setFallDetection,
+  setSleepingNow,
   setVitalsWatch,
   simulateAutoAlert,
   useActiveProfile,
@@ -34,14 +35,14 @@ export function LinkedDevices() {
   )
 }
 
-/** The two automatic watchers and a way to try them. */
+/** The two automatic watchers, the sleep switch, and a way to try them. */
 export function AutoAlertsCard() {
-  const { pending, fallDetection, vitalsWatch, motionAvailable } = useAutoAlert()
+  const { pending, fallDetection, vitalsWatch, motionAvailable, sleepingNow } = useAutoAlert()
   const profile = useActiveProfile()
   const seconds = LIMITS.countdownSeconds
 
   const fallHint = motionAvailable
-    ? `Uses this device's motion sensor. An alert is sent if you do not answer within ${seconds} seconds.`
+    ? `Uses this device's motion sensor. Starts the countdown after a sudden hard movement, or after ${LIMITS.stillMinutes} minutes with no movement at all while you are awake. An alert is sent if you do not answer within ${seconds} seconds.`
     : 'Not available here: this device has no motion sensor the browser can read, or access to it was refused.'
 
   const vitalsHint =
@@ -54,11 +55,17 @@ export function AutoAlertsCard() {
     <Card title="Automatic alerts">
       <div className="flex flex-col gap-5">
         <Switch
-          label="Fall detection on this device"
+          label="Movement check on this device"
           hint={fallHint}
           checked={fallDetection && motionAvailable}
           disabled={!motionAvailable}
           onChange={setFallDetection}
+        />
+        <Switch
+          label="Sleeping now"
+          hint={`No movement is expected while you sleep, so it sends no alert. This is always the case from ${LIMITS.awakeUntil} to ${LIMITS.awakeFrom}; turn this on for a nap. It turns itself off at ${LIMITS.awakeFrom}. A sudden hard movement still starts the countdown.`}
+          checked={sleepingNow}
+          onChange={setSleepingNow}
         />
         <Switch
           label="Watch my vital signs"
@@ -75,7 +82,7 @@ export function AutoAlertsCard() {
               disabled={pending !== null}
               onClick={() => simulateAutoAlert('fall')}
             >
-              Simulate a fall
+              Simulate no movement
             </Button>
             <Button
               variant="quiet"

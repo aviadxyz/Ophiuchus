@@ -1,10 +1,12 @@
 import { useState, useRef, useEffect, useCallback, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
+import { Moon } from 'lucide-react'
 import {
   acknowledgeAlert,
   cancelAlert,
   cancelAutoAlert,
   raiseAlert,
+  setSleepingNow,
   useAlerts,
   useAutoAlert,
 } from '@/data'
@@ -14,7 +16,7 @@ const HOLD_DURATION_MS = 2000
 const COUNTDOWN_SECONDS = 10
 
 const DETECTED: Record<'fall' | 'heart-rate' | 'oxygen', string> = {
-  fall: 'Fall detected',
+  fall: 'Unusual movement',
   'heart-rate': 'Heart rate out of range',
   oxygen: 'Blood oxygen low',
 }
@@ -45,7 +47,7 @@ function FullFace({ host, children }: { host: HTMLElement | null; children: Reac
 
 export function EmergencyPage() {
   const alerts = useAlerts()
-  const { pending } = useAutoAlert()
+  const { pending, sleepingNow } = useAutoAlert()
   const [faceHost, setFaceHost] = useState<HTMLElement | null>(null)
   const [acknowledgedHere, setAcknowledgedHere] = useState<string | null>(null)
   const pageRef = useCallback((node: HTMLDivElement | null) => {
@@ -323,6 +325,25 @@ export function EmergencyPage() {
                 tone="danger"
               />
             </div>
+
+            {/* Sleeping now: turns off the no-movement alert for a nap */}
+            {phase === 'idle' && (
+              <button
+                type="button"
+                aria-pressed={sleepingNow}
+                aria-label="Sleeping now"
+                title="Sleeping now: no alert for lying still"
+                onClick={() => setSleepingNow(!sleepingNow)}
+                className={`absolute top-1/2 left-full ml-2 flex size-8 -translate-y-1/2 cursor-pointer flex-col items-center justify-center rounded-full border ${
+                  sleepingNow ? 'border-accent text-accent' : 'border-border text-text-muted'
+                }`}
+              >
+                <Moon aria-hidden="true" className="size-3" />
+                <span aria-hidden="true" className="font-mono text-[8px] leading-none">
+                  {sleepingNow ? 'ON' : 'OFF'}
+                </span>
+              </button>
+            )}
 
             {/* Hold button */}
             <button

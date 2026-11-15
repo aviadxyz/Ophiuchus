@@ -117,6 +117,7 @@ export {
   setVitalsWatch,
   cancelAutoAlert,
   simulateAutoAlert,
+  setSleepingNow,
 } from './autoAlert'
 import { installAutoAlert } from './autoAlert'
 if (typeof window !== 'undefined' && import.meta.env.MODE !== 'test') installAutoAlert()

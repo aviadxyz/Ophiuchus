@@ -1,16 +1,19 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
-  AUTO_ALERT_LIMITS,
   autoAlertMessage,
+  AUTO_ALERT_LIMITS,
   cancelAutoAlert,
   considerVital,
+  createMotionWatch,
   createVitalsWatch,
-  detectFall,
   getAutoAlertState,
+  nextCrewDayStart,
+  outsideCrewDay,
   resetAutoAlertForTests,
+  setSleepingNow,
   setVitalsWatch,
   simulateAutoAlert,
-  type MotionSample,
+  type MotionTrigger,
 } from './autoAlert'
 import {
   createProfile,
@@ -23,76 +26,132 @@ import type { VitalSample } from './types'
 
 const G = 9.80665
 const STEP_MS = 20 // 50 readings a second
+type Vec = [number, number, number]
 
-/** Builds samples from segments: each holds `ms` of a vector (in g) produced per time step. */
-function samples(...segments: { ms: number; at: (t: number) => [number, number, number] }[]) {
-  const out: MotionSample[] = []
-  let t = 0
-  for (const segment of segments) {
-    const end = t + segment.ms
-    for (; t < end; t += STEP_MS) {
-      const [x, y, z] = segment.at(t)
-      out.push({ t, x: x * G, y: y * G, z: z * G })
-    }
+/** Feeds `ms` of readings (vectors in g, produced per time step) and returns what was found, with when. */
+function feed(
+  watch: ReturnType<typeof createMotionWatch>,
+  from: number,
+  ms: number,
+  at: (t: number) => Vec,
+  asleep = false,
+) {
+  const found: { t: number; what: MotionTrigger }[] = []
+  for (let t = from; t < from + ms; t += STEP_MS) {
+    const [x, y, z] = at(t)
+    const what = watch.push({ t, x: x * G, y: y * G, z: z * G }, asleep)
+    if (what) found.push({ t, what })
   }
-  return out
+  return found
 }
 
-const upright = { ms: 1500, at: (): [number, number, number] => [0, 1, 0] }
-const weightless = (ms: number) => ({ ms, at: (): [number, number, number] => [0, 0.1, 0.05] })
-const impact = { ms: 60, at: (): [number, number, number] => [1.5, 3, 1] }
-const lyingStill = { ms: 3500, at: (): [number, number, number] => [0.02, 0.05, 1] }
-const standingStill = { ms: 3500, at: (): [number, number, number] => [0.02, 1, 0.03] }
+/** Sensor noise of a few thousandths of a g. */
+const noise = (t: number) => 0.004 * Math.sin(t * 0.37)
+/** Floating in orbit: no gravity, the device reads almost nothing. */
+const floating = (t: number): Vec => [noise(t), noise(t + 1), noise(t + 2)]
+/** Lying on a table on Earth: 1 g, always the same way. */
+const onTable = (t: number): Vec => [noise(t), noise(t + 1), 1 + noise(t + 2)]
+/** Ordinary work with the arms: changes of up to about 1.5 g. */
+const working = (t: number): Vec => [0.8 * Math.sin(t / 150), 0.6 * Math.sin(t / 90), 0.3]
 
-describe('detectFall', () => {
-  it('finds a fall: weightless, impact, then still in a new position', () => {
-    expect(detectFall(samples(upright, weightless(300), impact, lyingStill))).toBe(true)
+const minute = 60_000
+const still = AUTO_ALERT_LIMITS.motion.stillMs
+
+describe('the motion check', () => {
+  it('finds a sudden hard movement while floating in orbit', () => {
+    const watch = createMotionWatch()
+    expect(feed(watch, 0, 1000, floating)).toEqual([])
+    expect(watch.push({ t: 1000, x: 2.5 * G, y: 2 * G, z: 1 * G }, false)).toBe('sudden')
   })
 
-  it('needs the stillness to be complete before deciding', () => {
-    const shortStill = { ...lyingStill, ms: 1500 }
-    expect(detectFall(samples(upright, weightless(300), impact, shortStill))).toBe(false)
+  it('finds the same blow on Earth, on top of gravity', () => {
+    const watch = createMotionWatch()
+    feed(watch, 0, 1000, onTable)
+    expect(watch.push({ t: 1000, x: 0, y: 3.5 * G, z: 1 * G }, false)).toBe('sudden')
   })
 
-  it('ignores a jump: the person lands and stands, held the same way', () => {
-    expect(detectFall(samples(upright, weightless(350), impact, standingStill))).toBe(false)
+  it('ignores ordinary movement', () => {
+    expect(feed(createMotionWatch(), 0, 3 * minute, working)).toEqual([])
   })
 
-  it('ignores a jump followed by walking away', () => {
-    const walking = {
-      ms: 3500,
-      at: (t: number): [number, number, number] => [0.1, 1 + 0.35 * Math.sin(t / 80), 0.1],
+  it('finds no movement for two minutes, once, while awake', () => {
+    const found = feed(createMotionWatch(), 0, 5 * minute, floating)
+    expect(found).toHaveLength(1)
+    expect(found[0]?.what).toBe('still')
+    expect(found[0]?.t).toBeGreaterThanOrEqual(still)
+    expect(found[0]?.t).toBeLessThan(still + 1000)
+  })
+
+  it('counts a device lying still on Earth as no movement too', () => {
+    const found = feed(createMotionWatch(), 0, 3 * minute, onTable)
+    expect(found.map((f) => f.what)).toEqual(['still'])
+  })
+
+  it('never reports no movement while the person is asleep, but still reports a blow', () => {
+    const watch = createMotionWatch()
+    expect(feed(watch, 0, 10 * minute, floating, true)).toEqual([])
+    expect(watch.push({ t: 10 * minute, x: 3.5 * G, y: 0, z: 0 }, true)).toBe('sudden')
+  })
+
+  it('starts the two minutes when the person should be awake, not from when they fell asleep', () => {
+    const watch = createMotionWatch()
+    feed(watch, 0, 10 * minute, floating, true)
+    const found = feed(watch, 10 * minute, 3 * minute, floating, false)
+    expect(found).toHaveLength(1)
+    expect(found[0]!.t - 10 * minute).toBeGreaterThanOrEqual(still - STEP_MS)
+  })
+
+  it('fires again only after the device has moved', () => {
+    const watch = createMotionWatch()
+    let t = 0
+    expect(feed(watch, t, 4 * minute, floating)).toHaveLength(1)
+    t += 4 * minute
+    feed(watch, t, 1000, (u) => [0.3 * Math.sin(u / 50), 0, 0]) // a small movement
+    t += 1000
+    expect(feed(watch, t, 3 * minute, floating)).toHaveLength(1)
+  })
+
+  it('stays quiet when the person moves a little every minute', () => {
+    const watch = createMotionWatch()
+    let found: unknown[] = []
+    for (let t = 0; t < 10 * minute; t += minute) {
+      found = found.concat(feed(watch, t, minute - 1000, floating))
+      found = found.concat(
+        feed(watch, t + minute - 1000, 1000, (u) => [0.2 * Math.sin(u / 40), 0, 0]),
+      )
     }
-    expect(detectFall(samples(upright, weightless(350), impact, walking))).toBe(false)
+    expect(found).toEqual([])
   })
 
-  it('ignores a phone put down on a table', () => {
-    // It turns from upright to flat over half a second with a small bump, never weightless.
-    const turning = {
-      ms: 500,
-      at: (t: number): [number, number, number] => {
-        const k = Math.min(1, (t - 1500) / 500)
-        return [0, Math.cos((k * Math.PI) / 2), Math.sin((k * Math.PI) / 2)]
-      },
-    }
-    const bump = { ms: 40, at: (): [number, number, number] => [0, 0.1, 1.3] }
-    expect(detectFall(samples(upright, turning, bump, lyingStill))).toBe(false)
+  it('does not count a silent sensor as stillness', () => {
+    const watch = createMotionWatch()
+    feed(watch, 0, 100_000, floating)
+    // Ten seconds with no readings at all (page hidden, sensor paused), then more stillness.
+    expect(feed(watch, 110_000, 100_000, floating)).toEqual([])
+  })
+})
+
+describe('the crew day', () => {
+  const at = (h: number, m = 0) => new Date(2026, 10, 15, h, m)
+
+  it('is 07:00 to 23:00', () => {
+    expect(outsideCrewDay(at(6, 59))).toBe(true)
+    expect(outsideCrewDay(at(7, 0))).toBe(false)
+    expect(outsideCrewDay(at(22, 59))).toBe(false)
+    expect(outsideCrewDay(at(23, 0))).toBe(true)
   })
 
-  it('ignores walking', () => {
-    const walking = {
-      ms: 6000,
-      at: (t: number): [number, number, number] => [
-        0.15 * Math.sin(t / 160),
-        1 + 0.4 * Math.sin(t / 80),
-        0.1,
-      ],
-    }
-    expect(detectFall(samples(walking))).toBe(false)
+  it('ends a nap switch at the next 07:00', () => {
+    expect(nextCrewDayStart(at(14, 0))).toEqual(new Date(2026, 10, 16, 7, 0))
+    expect(nextCrewDayStart(at(5, 0))).toEqual(new Date(2026, 10, 15, 7, 0))
   })
 
-  it('ignores a weightless moment too short to be a fall', () => {
-    expect(detectFall(samples(upright, weightless(40), impact, lyingStill))).toBe(false)
+  it('remembers the switch on this device', () => {
+    resetAutoAlertForTests()
+    setSleepingNow(true)
+    expect(getAutoAlertState().sleepingNow).toBe(true)
+    setSleepingNow(false)
+    expect(getAutoAlertState().sleepingNow).toBe(false)
   })
 })
 
@@ -154,18 +213,20 @@ describe('the vital-sign watch', () => {
 
 describe('the message', () => {
   it('uses the exact forms, with and without a role', () => {
-    expect(autoAlertMessage('fall', null, '', false)).toBe('Fall detected, no response')
-    expect(autoAlertMessage('fall', null, 'Flight engineer', false)).toBe(
-      'Fall detected, no response · Flight engineer',
+    const sudden = { cause: 'fall', motion: 'sudden' } as const
+    const stillness = { cause: 'fall', motion: 'still' } as const
+    expect(autoAlertMessage(sudden, '', false)).toBe('Sudden hard movement detected, no response')
+    expect(autoAlertMessage(stillness, 'Flight engineer', false)).toBe(
+      'No movement for 2 minutes, no response · Flight engineer',
     )
-    expect(autoAlertMessage('heart-rate', 182, '', false)).toBe(
+    expect(autoAlertMessage({ cause: 'heart-rate', value: 182 }, '', false)).toBe(
       'Heart rate 182 bpm for 20 seconds, no response',
     )
-    expect(autoAlertMessage('oxygen', 86, 'Commander', false)).toBe(
+    expect(autoAlertMessage({ cause: 'oxygen', value: 86 }, 'Commander', false)).toBe(
       'Blood oxygen 86% for 20 seconds, no response · Commander',
     )
-    expect(autoAlertMessage('fall', null, 'Flight engineer', true)).toBe(
-      'Fall detected, no response · Flight engineer (test)',
+    expect(autoAlertMessage(stillness, 'Flight engineer', true)).toBe(
+      'No movement for 2 minutes, no response · Flight engineer (test)',
     )
   })
 })
@@ -200,7 +261,9 @@ describe('the countdown', () => {
       screenId: 'emergency',
     })
     const role = getActiveProfile().role
-    expect(alert?.message).toBe(`Fall detected, no response${role ? ` · ${role}` : ''} (test)`)
+    expect(alert?.message).toBe(
+      `No movement for 2 minutes, no response${role ? ` · ${role}` : ''} (test)`,
+    )
     expect(alert?.message).not.toContain(getActiveProfile().displayName)
   })
 

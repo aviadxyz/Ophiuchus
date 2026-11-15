@@ -366,8 +366,13 @@ describe('Emergency screen, automatic alerts', () => {
     fireEvent.click(vitals)
     expect(vitals).toHaveAttribute('aria-checked', 'false')
     // This test browser has no motion sensor, so fall detection explains and stays off.
-    const fall = within(card).getByRole('switch', { name: 'Fall detection on this device' })
+    const fall = within(card).getByRole('switch', { name: 'Movement check on this device' })
     expect(fall).toBeDisabled()
+    const sleeping = within(card).getByRole('switch', { name: 'Sleeping now' })
+    expect(sleeping).toHaveAttribute('aria-checked', 'false')
+    fireEvent.click(sleeping)
+    expect(sleeping).toHaveAttribute('aria-checked', 'true')
+    fireEvent.click(sleeping)
     expect(within(card).getByText(/no motion sensor/)).toBeInTheDocument()
     expect(
       within(card).getByText(
@@ -376,17 +381,17 @@ describe('Emergency screen, automatic alerts', () => {
     ).toBeInTheDocument()
   })
 
-  it('a simulated fall that nobody answers is sent automatically', () => {
+  it('a simulated no-movement alert that nobody answers is sent automatically', () => {
     vi.useFakeTimers()
     renderScreen()
-    fireEvent.click(screen.getByRole('button', { name: 'Simulate a fall' }))
-    expect(screen.getByRole('button', { name: 'Simulate a fall' })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Simulate no movement' }))
+    expect(screen.getByRole('button', { name: 'Simulate no movement' })).toBeDisabled()
     act(() => {
       vi.advanceTimersByTime(10_000)
     })
     expect(screen.getByRole('heading', { level: 2, name: 'Alert sent' })).toBeInTheDocument()
     expect(
-      screen.getByText('Sent automatically: Fall detected, no response · Flight engineer (test)'),
+      screen.getByText('Sent automatically: No movement for 2 minutes, no response · Flight engineer (test)'),
     ).toBeInTheDocument()
   })
 

@@ -1,7 +1,13 @@
 // Automatic emergency alerts (CONTRACTS section 9, "Automatic alerts"). Two watchers can start a
-// 10 second countdown: a fall seen by this device's motion sensor, and a vital sign that stays far
-// out of range. If nobody answers "I'm OK" before it runs out, an emergency alert is raised the
-// normal way, so the relay, the banners and the watch all follow it with nothing extra.
+// 10 second countdown: this device's motion sensor (a sudden hard movement, or no movement at all
+// while the person should be awake), and a vital sign that stays far out of range. If nobody
+// answers "I'm OK" before it runs out, an emergency alert is raised the normal way, so the relay,
+// the banners and the watch all follow it with nothing extra.
+//
+// In orbit there is no gravity, so there is no fall to look for. The motion check works the same
+// with or without gravity: it follows the steady part of the reading (gravity on Earth, nothing in
+// orbit) and only looks at what changes on top of it. The cause is still called `fall`, the
+// contract's name for "something is wrong with movement"; the alert message says which one.
 //
 // The countdown and the switches live only on this device. Nothing here sends data anywhere.
 
@@ -14,7 +20,7 @@ import type { VitalSample } from './types'
 
 // ---------------------------------------------------------------------------------------------
 // Limits. ILLUSTRATIVE ONLY: chosen for a demonstration, not clinical limits and not validated
-// against any fall-detection data set. Every number the watchers use is here.
+// against any data set. Every number the watchers use is here.
 // ---------------------------------------------------------------------------------------------
 
 export const AUTO_ALERT_LIMITS = {
@@ -32,33 +38,30 @@ export const AUTO_ALERT_LIMITS = {
   recoverMs: 60_000,
   /** A longer silence between readings breaks a run: we do not assume what happened in between. */
   maxSampleGapMs: 15_000,
-  fall: {
-    /** Below this total acceleration (in g) the device is close to weightless. */
-    freeFallG: 0.5,
-    /** Weightlessness must last at least this long. A fall from standing gives a few hundred ms. */
-    freeFallMinMs: 100,
-    /** The impact that follows, in g. */
-    impactG: 2.5,
-    /** The impact must come this soon after the weightless stretch ends. */
-    impactWithinMs: 800,
-    /** Stillness is checked starting this long after the impact... */
-    stillAfterMs: 1000,
-    /** ...for this long... */
-    stillForMs: 2000,
-    /** ...and every reading in it must stay this close to 1 g. */
-    stillToleranceG: 0.25,
-    /** The device must end up turned at least this much from how it was held before. */
-    orientationChangeDeg: 45,
-    /** How much motion history is kept. */
-    bufferMs: 6000,
+  motion: {
+    /** A change of at least this much (in g) in one reading is a sudden hard movement: a blow or a collision. */
+    suddenG: 3,
+    /** A change smaller than this (in g) is sensor noise, not movement. */
+    stillG: 0.04,
+    /** No movement for this long, while awake, starts the countdown. */
+    stillMs: 120_000,
+    /** How quickly the steady part of the reading follows a slow change, in ms. */
+    baselineMs: 1000,
+    /** The steady part needs this much data before a sudden movement can be judged. */
+    warmUpMs: 500,
+    /** A longer silence from the sensor (page hidden, sensor paused) starts the stillness count again. */
+    maxGapMs: 5000,
   },
+  /** The crew day. Outside it the person is assumed asleep and no-movement never triggers. */
+  awakeFromHour: 7,
+  awakeUntilHour: 23,
 } as const
 
 const STANDARD_GRAVITY = 9.80665
 const SETTINGS_KEY = `${STORAGE_PREFIX}autoAlert`
 const TICK_MS = 250
 const MOTION_PROBE_MS = 5000
-const DETECT_EVERY_MS = 200
+const SLEEP_CHECK_MS = 30_000
 
 // ---------------------------------------------------------------------------------------------
 // Shapes
@@ -71,100 +74,106 @@ export type PendingAutoAlert = { cause: AutoAlertCause; secondsLeft: number }
 export type AutoAlertState = {
   /** The running countdown, or null. */
   pending: PendingAutoAlert | null
+  /** The motion check on this device: sudden movement or no movement. Named by the contract. */
   fallDetection: boolean
   vitalsWatch: boolean
   /** False when this device has no motion sensor the browser can read, or access was refused. */
   motionAvailable: boolean
+  /** The person said they are asleep (a nap). Turns itself off at the start of the next crew day. */
+  sleepingNow: boolean
 }
 
 /** One reading of the motion sensor, acceleration including gravity, in m/s². `t` in ms. */
 export type MotionSample = { t: number; x: number; y: number; z: number }
+
+/** What the motion check found: a sudden hard movement, or no movement for two minutes. */
+export type MotionTrigger = 'sudden' | 'still'
 
 /** One vital reading for the watcher. `t` in ms. */
 export type VitalReading = { t: number; heartRate?: number; spo2?: number }
 
 export type VitalTrigger = { cause: 'heart-rate' | 'oxygen'; value: number }
 
+type Detection =
+  | { cause: 'fall'; motion: MotionTrigger }
+  | { cause: 'heart-rate' | 'oxygen'; value: number | null }
+
 // ---------------------------------------------------------------------------------------------
-// Fall detection: a pure function over samples, oldest first
+// The motion check: pure apart from its own memory, so it can be tested with made-up samples
 // ---------------------------------------------------------------------------------------------
-
-const inG = (s: MotionSample) => Math.hypot(s.x, s.y, s.z) / STANDARD_GRAVITY
-
-function meanVector(samples: readonly MotionSample[]): [number, number, number] {
-  let x = 0
-  let y = 0
-  let z = 0
-  for (const s of samples) {
-    x += s.x
-    y += s.y
-    z += s.z
-  }
-  const n = Math.max(1, samples.length)
-  return [x / n, y / n, z / n]
-}
-
-function angleDeg(a: [number, number, number], b: [number, number, number]): number {
-  const la = Math.hypot(...a)
-  const lb = Math.hypot(...b)
-  if (la === 0 || lb === 0) return 0
-  const cos = (a[0] * b[0] + a[1] * b[1] + a[2] * b[2]) / (la * lb)
-  return (Math.acos(Math.min(1, Math.max(-1, cos))) * 180) / Math.PI
-}
-
-/** After a weightless stretch: an impact, then stillness in a new orientation. */
-function impactThenStill(
-  samples: readonly MotionSample[],
-  stretchStart: number,
-  stretchEnd: number,
-): boolean {
-  const L = AUTO_ALERT_LIMITS.fall
-  const startT = samples[stretchStart]!.t
-  const endT = samples[stretchEnd]!.t
-  let impactT: number | null = null
-  for (let k = stretchEnd + 1; k < samples.length; k++) {
-    const s = samples[k]!
-    if (s.t - endT > L.impactWithinMs) break
-    if (inG(s) >= L.impactG) {
-      impactT = s.t
-      break
-    }
-  }
-  if (impactT === null) return false
-  const from = impactT + L.stillAfterMs
-  const to = from + L.stillForMs
-  const last = samples.at(-1)
-  if (!last || last.t < to) return false
-  const still = samples.filter((s) => s.t >= from && s.t <= to)
-  if (still.length < 5) return false
-  if (!still.every((s) => Math.abs(inG(s) - 1) <= L.stillToleranceG)) return false
-  const before = samples.filter((s) => s.t >= startT - 1000 && s.t < startT)
-  // With no history before the fall we cannot compare orientation, so we do not require it.
-  if (before.length === 0) return true
-  return angleDeg(meanVector(before), meanVector(still)) >= L.orientationChangeDeg
-}
 
 /**
- * True when the samples hold a fall: a short stretch of near weightlessness, then a hard impact,
- * then stillness with the device turned to a new position. A jump fails the stillness or the
- * orientation test, a phone put down gently has no weightless stretch, walking has neither.
+ * Feed it readings, oldest first. It answers `sudden` for one reading that jumps far from the
+ * steady part, and `still` once nothing has moved for two minutes while the person is awake.
+ * `still` fires once per episode: it can fire again only after the device has moved.
  */
-export function detectFall(samples: readonly MotionSample[]): boolean {
-  const L = AUTO_ALERT_LIMITS.fall
-  let i = 0
-  while (i < samples.length) {
-    if (inG(samples[i]!) >= L.freeFallG) {
-      i++
-      continue
-    }
-    let j = i
-    while (j + 1 < samples.length && inG(samples[j + 1]!) < L.freeFallG) j++
-    if (samples[j]!.t - samples[i]!.t >= L.freeFallMinMs && impactThenStill(samples, i, j)) {
-      return true
-    }
-    i = j + 1
+export function createMotionWatch() {
+  const L = AUTO_ALERT_LIMITS.motion
+  let baseline: [number, number, number] | null = null
+  let firstT = 0
+  let lastT: number | null = null
+  let lastMoveT = 0
+  let stillFired = false
+
+  return {
+    push(sample: MotionSample, asleep: boolean): MotionTrigger | null {
+      const { t } = sample
+      if (lastT !== null && t <= lastT) return null
+      if (baseline === null || lastT === null || t - lastT > L.maxGapMs) {
+        baseline = [sample.x, sample.y, sample.z]
+        firstT = t
+        lastT = t
+        lastMoveT = t
+        return null
+      }
+      const dt = t - lastT
+      lastT = t
+      const change =
+        Math.hypot(sample.x - baseline[0], sample.y - baseline[1], sample.z - baseline[2]) /
+        STANDARD_GRAVITY
+      const k = Math.min(1, dt / L.baselineMs)
+      baseline = [
+        baseline[0] + (sample.x - baseline[0]) * k,
+        baseline[1] + (sample.y - baseline[1]) * k,
+        baseline[2] + (sample.z - baseline[2]) * k,
+      ]
+
+      if (change >= L.stillG) {
+        lastMoveT = t
+        stillFired = false
+      }
+      if (change >= L.suddenG && t - firstT >= L.warmUpMs) return 'sudden'
+      // Asleep, stillness is expected: the count starts again when the person should be awake.
+      if (asleep) {
+        lastMoveT = t
+        return null
+      }
+      if (!stillFired && t - lastMoveT >= L.stillMs) {
+        stillFired = true
+        return 'still'
+      }
+      return null
+    },
+    reset() {
+      baseline = null
+      lastT = null
+      stillFired = false
+    },
   }
-  return false
+}
+
+/** True outside the crew day (07:00 to 23:00, local time). */
+export function outsideCrewDay(now: Date): boolean {
+  const hour = now.getHours()
+  return hour < AUTO_ALERT_LIMITS.awakeFromHour || hour >= AUTO_ALERT_LIMITS.awakeUntilHour
+}
+
+/** The next start of the crew day after `from`. A "Sleeping now" switch lasts until then. */
+export function nextCrewDayStart(from: Date): Date {
+  const next = new Date(from)
+  next.setHours(AUTO_ALERT_LIMITS.awakeFromHour, 0, 0, 0)
+  if (next.getTime() <= from.getTime()) next.setDate(next.getDate() + 1)
+  return next
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -246,38 +255,41 @@ export function createVitalsWatch() {
 // Messages: what was measured, never a conclusion, never a name
 // ---------------------------------------------------------------------------------------------
 
-/** The alert text for a cause. `value` is the reading for heart rate and oxygen. */
-export function autoAlertMessage(
-  cause: AutoAlertCause,
-  value: number | null,
-  role: string,
-  test: boolean,
-): string {
+/** The alert text for a detection, then the role, then " (test)" for a simulation. */
+export function autoAlertMessage(detection: Detection, role: string, test: boolean): string {
   const seconds = AUTO_ALERT_LIMITS.sustainMs / 1000
-  const base =
-    cause === 'fall'
-      ? 'Fall detected, no response'
-      : cause === 'heart-rate'
-        ? `Heart rate ${value ?? '?'} bpm for ${seconds} seconds, no response`
-        : `Blood oxygen ${value ?? '?'}% for ${seconds} seconds, no response`
+  const stillMinutes = AUTO_ALERT_LIMITS.motion.stillMs / 60_000
+  let base: string
+  if (detection.cause === 'fall') {
+    base =
+      detection.motion === 'sudden'
+        ? 'Sudden hard movement detected, no response'
+        : `No movement for ${stillMinutes} minutes, no response`
+  } else if (detection.cause === 'heart-rate') {
+    base = `Heart rate ${detection.value ?? '?'} bpm for ${seconds} seconds, no response`
+  } else {
+    base = `Blood oxygen ${detection.value ?? '?'}% for ${seconds} seconds, no response`
+  }
   const trimmedRole = role.trim()
   return `${base}${trimmedRole ? ` · ${trimmedRole}` : ''}${test ? ' (test)' : ''}`
 }
 
-/** Example readings used by `simulateAutoAlert`. They are not measured. */
-const SIMULATED_VALUE: Record<'fall' | 'heart-rate', number | null> = {
-  fall: null,
-  'heart-rate': 182,
+/** What `simulateAutoAlert` pretends to have seen. The heart-rate value is an example, not measured. */
+const SIMULATED: Record<'fall' | 'heart-rate', Detection> = {
+  fall: { cause: 'fall', motion: 'still' },
+  'heart-rate': { cause: 'heart-rate', value: 182 },
 }
 
 // ---------------------------------------------------------------------------------------------
 // Settings on this device
 // ---------------------------------------------------------------------------------------------
 
-type Settings = { fallDetection: boolean; vitalsWatch: boolean }
+type Settings = { fallDetection: boolean; vitalsWatch: boolean; sleepingUntil: number }
+
+let sleepingUntil = 0
 
 function loadSettings(): Settings {
-  const fallback: Settings = { fallDetection: false, vitalsWatch: true }
+  const fallback: Settings = { fallDetection: false, vitalsWatch: true, sleepingUntil: 0 }
   const raw = safeStorage.getItem(SETTINGS_KEY)
   if (typeof raw !== 'string') return fallback
   try {
@@ -288,6 +300,10 @@ function loadSettings(): Settings {
       fallDetection:
         typeof p.fallDetection === 'boolean' ? p.fallDetection : fallback.fallDetection,
       vitalsWatch: typeof p.vitalsWatch === 'boolean' ? p.vitalsWatch : fallback.vitalsWatch,
+      sleepingUntil:
+        typeof p.sleepingUntil === 'number' && Number.isFinite(p.sleepingUntil)
+          ? p.sleepingUntil
+          : 0,
     }
   } catch {
     return fallback
@@ -296,7 +312,10 @@ function loadSettings(): Settings {
 
 function saveSettings() {
   const { fallDetection, vitalsWatch } = useAutoAlertStore.getState()
-  void safeStorage.setItem(SETTINGS_KEY, JSON.stringify({ fallDetection, vitalsWatch }))
+  void safeStorage.setItem(
+    SETTINGS_KEY,
+    JSON.stringify({ fallDetection, vitalsWatch, sleepingUntil }),
+  )
 }
 
 type MotionPermission = () => Promise<'granted' | 'denied' | string>
@@ -319,13 +338,18 @@ function motionLikelyAvailable(): boolean {
 // The state screens read
 // ---------------------------------------------------------------------------------------------
 
+const initialSettings = loadSettings()
+sleepingUntil = initialSettings.sleepingUntil
+
 const useAutoAlertStore = create<AutoAlertState>()(() => ({
   pending: null,
-  ...loadSettings(),
+  fallDetection: initialSettings.fallDetection,
+  vitalsWatch: initialSettings.vitalsWatch,
   motionAvailable: motionLikelyAvailable(),
+  sleepingNow: sleepingUntil > Date.now(),
 }))
 
-/** The countdown, if any, and the two switches. */
+/** The countdown, if any, and the switches. */
 export function useAutoAlert(): AutoAlertState {
   return useAutoAlertStore()
 }
@@ -333,6 +357,29 @@ export function useAutoAlert(): AutoAlertState {
 /** The same state outside React. For the data folder and tests. */
 export function getAutoAlertState(): AutoAlertState {
   return useAutoAlertStore.getState()
+}
+
+/** True when stillness is expected: outside the crew day, or "Sleeping now" is on. */
+function isAsleep(now: Date = new Date()): boolean {
+  return outsideCrewDay(now) || sleepingUntil > now.getTime()
+}
+
+/** Turns "Sleeping now" off once the crew day starts again. */
+function refreshSleeping() {
+  const sleeping = sleepingUntil > Date.now()
+  if (useAutoAlertStore.getState().sleepingNow !== sleeping) {
+    useAutoAlertStore.setState({ sleepingNow: sleeping })
+  }
+}
+
+/**
+ * The person is going to sleep (a nap) or has woken up. While on, no-movement never triggers; a
+ * sudden hard movement still does. It turns itself off at the start of the next crew day.
+ */
+export function setSleepingNow(on: boolean): void {
+  sleepingUntil = on ? nextCrewDayStart(new Date()).getTime() : 0
+  useAutoAlertStore.setState({ sleepingNow: on })
+  saveSettings()
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -391,14 +438,14 @@ function hasOpenEmergency(): boolean {
     .alerts.some((a) => a.profileId === profileId && a.kind === 'emergency' && a.status === 'open')
 }
 
-function startCountdown(cause: AutoAlertCause, value: number | null, test: boolean) {
+function startCountdown(detection: Detection, test: boolean) {
   if (useAutoAlertStore.getState().pending) return
   // A real detection while an emergency alert is already open adds nothing: help is already asked for.
   if (!test && hasOpenEmergency()) return
   const seconds = AUTO_ALERT_LIMITS.countdownSeconds
-  countdownMessage = autoAlertMessage(cause, value, getActiveProfile().role ?? '', test)
+  countdownMessage = autoAlertMessage(detection, getActiveProfile().role ?? '', test)
   countdownDeadline = Date.now() + seconds * 1000
-  useAutoAlertStore.setState({ pending: { cause, secondsLeft: seconds } })
+  useAutoAlertStore.setState({ pending: { cause: detection.cause, secondsLeft: seconds } })
   vibrate(200)
   stopCountdown()
   countdownTimer = setInterval(tick, TICK_MS)
@@ -413,10 +460,13 @@ export function cancelAutoAlert(): void {
   }
 }
 
-/** Starts the same countdown as a real detection, for demonstration. The message ends "(test)". */
+/**
+ * Starts the same countdown as a real detection, for demonstration. The message ends "(test)".
+ * `fall` shows the no-movement case, the one that takes two minutes to see for real.
+ */
 export function simulateAutoAlert(cause: 'fall' | 'heart-rate'): void {
   if (cause !== 'fall' && cause !== 'heart-rate') return
-  startCountdown(cause, SIMULATED_VALUE[cause], true)
+  startCountdown(SIMULATED[cause], true)
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -438,7 +488,7 @@ export function considerVital(sample: VitalSample): void {
   if (sample.heartRate !== undefined) reading.heartRate = sample.heartRate
   if (sample.spo2 !== undefined) reading.spo2 = sample.spo2
   const trigger = vitalsWatch.push(reading)
-  if (trigger) startCountdown(trigger.cause, trigger.value, false)
+  if (trigger) startCountdown(trigger, false)
 }
 
 /** Switches the vital-sign watch on this device. */
@@ -453,10 +503,9 @@ export function setVitalsWatch(on: boolean): void {
 // The motion listener
 // ---------------------------------------------------------------------------------------------
 
+const motionWatch = createMotionWatch()
 let installed = false
 let listening = false
-let motionBuffer: MotionSample[] = []
-let lastDetectAt = 0
 let sawMotionData = false
 let probeTimer: ReturnType<typeof setTimeout> | undefined
 let removePermissionRetry: (() => void) | undefined
@@ -471,25 +520,18 @@ function onMotion(event: DeviceMotionEvent) {
   sawMotionData = true
   if (!useAutoAlertStore.getState().motionAvailable)
     useAutoAlertStore.setState({ motionAvailable: true })
-  // A page in the background is not the one the person is holding.
+  // A page in the background is not the one the person is holding. The gap rule restarts the count.
   if (typeof document !== 'undefined' && document.visibilityState === 'hidden') return
   const t = event.timeStamp || performance.now()
-  motionBuffer.push({ t, x: a.x, y: a.y, z: a.z })
-  const oldest = t - AUTO_ALERT_LIMITS.fall.bufferMs
-  while (motionBuffer.length > 0 && motionBuffer[0]!.t < oldest) motionBuffer.shift()
-  if (t - lastDetectAt < DETECT_EVERY_MS) return
-  lastDetectAt = t
-  if (detectFall(motionBuffer)) {
-    motionBuffer = []
-    startCountdown('fall', null, false)
-  }
+  const found = motionWatch.push({ t, x: a.x, y: a.y, z: a.z }, isAsleep())
+  if (found) startCountdown({ cause: 'fall', motion: found }, false)
 }
 
 function startListening() {
   if (listening || typeof window === 'undefined') return
   listening = true
   sawMotionData = false
-  motionBuffer = []
+  motionWatch.reset()
   window.addEventListener('devicemotion', onMotion)
   probeTimer = setTimeout(() => {
     probeTimer = undefined
@@ -523,7 +565,7 @@ function stopListening() {
   if (probeTimer !== undefined) clearTimeout(probeTimer)
   probeTimer = undefined
   removePermissionRetry?.()
-  motionBuffer = []
+  motionWatch.reset()
 }
 
 function syncMotion() {
@@ -537,7 +579,7 @@ function enableFallDetection() {
   syncMotion()
 }
 
-/** Switches fall detection on this device. Turning it on asks for motion access where needed. */
+/** Switches the motion check on this device. Turning it on asks for motion access where needed. */
 export function setFallDetection(on: boolean): void {
   if (!on) {
     useAutoAlertStore.setState({ fallDetection: false })
@@ -571,6 +613,8 @@ export function setFallDetection(on: boolean): void {
 export function installAutoAlert(): () => void {
   installed = true
   syncMotion()
+  refreshSleeping()
+  const sleepTimer = setInterval(refreshSleeping, SLEEP_CHECK_MS)
   const stopVitals = useRuntime.subscribe((state, previous) => {
     const id = getActiveProfile().id
     const sample = state.latestVital[id]
@@ -583,6 +627,7 @@ export function installAutoAlert(): () => void {
     cancelAutoAlert()
   })
   return () => {
+    clearInterval(sleepTimer)
     stopVitals()
     stopProfile()
     installed = false
@@ -595,10 +640,13 @@ export function installAutoAlert(): () => void {
 export function resetAutoAlertForTests(): void {
   stopCountdown()
   vitalsWatch.reset()
+  motionWatch.reset()
+  sleepingUntil = 0
   useAutoAlertStore.setState({
     pending: null,
     fallDetection: false,
     vitalsWatch: true,
     motionAvailable: motionLikelyAvailable(),
+    sleepingNow: false,
   })
 }

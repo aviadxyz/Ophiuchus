@@ -8,6 +8,9 @@ export const LIMITS = {
   heartRateHigh: 170,
   heartRateLow: 35,
   spo2Low: 88,
+  stillMinutes: 2,
+  awakeFrom: '07:00',
+  awakeUntil: '23:00',
 } as const
 
 export const heartRateOut = (bpm: number) =>

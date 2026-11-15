@@ -2,8 +2,8 @@
 
 ## Plan for prompt 18 (automatic alerts)
 
-1. `data/autoAlert.ts`: fall detection (pure `detectFall`), vital-sign watch (20 s rule, one per episode), 10 s countdown that calls `raiseAlert`, two saved switches. Started from the marked block at the end of `data/index.ts`.
-2. `data/autoAlert.test.ts`: falls, jumps, a phone put down, walking; the 20 s and episode rules; countdown and cancel; exact messages; no trigger from simulated readings.
+1. `data/autoAlert.ts`: movement check that works without gravity (pure `createMotionWatch`: a sudden hard movement, or 2 minutes with no movement while awake), a "Sleeping now" switch, vital-sign watch (20 s rule, one per episode), 10 s countdown that calls `raiseAlert`, two saved switches. Started from the marked block at the end of `data/index.ts`.
+2. `data/autoAlert.test.ts`: blows in orbit and on Earth, ordinary movement, stillness awake and asleep, the crew day; the 20 s and episode rules; countdown and cancel; exact messages; no trigger from simulated readings.
 3. `shell/AutoAlertBanner.tsx`, rendered once in `AppShell`: the countdown on every screen with "I'm OK, cancel".
 4. `watch/pages/EmergencyPage.tsx`: the countdown and any open emergency alert fill the watch face.
 5. Here: `AutoAlertsCard.tsx` (linked-devices line, switches, "Try it"), `OutOfBalance.tsx` (important readings, then today's off-target metrics), `limits.ts`, the "Sent automatically:" line, `guide.ts`.
@@ -13,17 +13,18 @@
 - **Order on the screen.** Header, linked-devices line, delay line. With no alert open: trigger card, then "What is out of balance", then "Automatic alerts", then the alert list. With an alert open: "What is out of balance", then "Alert sent" with the steps, as Elia sketched (readings first, then what to do). This keeps the hold button near the top when nothing is wrong (intake sheet question 6) instead of placing two new cards above it.
 - **"What is out of balance"** shows while an alert is open or anything is off. Heart rate and blood oxygen show value, source badge, time, the alert limit and IN RANGE / OUT OF RANGE / NO DATA. The other rows are every metric at WATCH or ACT, with target and a link to its screen. A last box says to tell the flight surgeon and offers the Med bot. Limits line and "Source: to be confirmed" under it.
 - **"Sent automatically:"** is recognised by the fixed message form (", no response"), so it works for alerts that came in from another device as well.
+- **Movement, not falls (changed at Rami's request).** In orbit there is no gravity, so there is no fall to detect. The motion check (cause still named `fall`, as the contract says) starts the countdown after a sudden hard movement (3 g or more in one reading) or after 2 minutes with no movement at all. No movement counts only from 07:00 to 23:00 and while "Sleeping now" is off; that switch is on the Emergency screen and as a moon button beside SOS on the watch, and turns itself off at 07:00. The countdown card says "Unusual movement detected"; the alert message says which: "Sudden hard movement detected, no response" or "No movement for 2 minutes, no response". "Simulate no movement" shows the second, which takes two minutes to see for real.
 - **Watch.** The countdown and any open emergency alert are drawn into the watch face (a React portal into the `watch-app` element), because the page sits in a sliding strip that clips it. The watch's own hold-to-send alert keeps its "Alert sent / Cancel" view for its ten seconds; after that it also shows full-face with "Acknowledge".
 
 ## Prompt 18: what is faked or not verified
 
-- Fall thresholds are illustrative and have only been tried on synthetic samples. No real fall, and no real phone, has been tested. iOS motion permission is written but has not been tried on an iPhone.
+- Movement thresholds are illustrative and have only been tried on synthetic samples and synthetic browser motion events. No real phone or watch, and nothing in orbit, has been tested. A device lying on a table during the day counts as no movement; a person who sleeps past 07:00 gets the countdown after 2 minutes, which works like an alarm. iOS motion permission is written but has not been tried on an iPhone.
 - The vital-sign limits are illustrative, as the screen says.
 - The two-window test ran in one browser (BroadcastChannel). There is no events server on `main`, so the relay has not been tried between two separate devices.
 
 ## Prompt 18: how to see it
 
-Open any screen, go to Emergency, press "Simulate a fall", then go to another screen: the countdown follows. Press "I'm OK, cancel", or let it run out and the alert is raised. For the watch: Watch screen, create a room, open `/w?room=CODE` in a second window.
+Open any screen, go to Emergency, press "Simulate no movement", then go to another screen: the countdown follows. Press "I'm OK, cancel", or let it run out and the alert is raised. For the watch: Watch screen, create a room, open `/w?room=CODE` in a second window.
 
 **Owner:** Elia / Rami. Screen id `emergency`, route `/emergency`.
 **Designer:** Rami, drafted from the plan's defaults (reviewed with Elia). The design is in [docs/intake/emergency.md](../../../../docs/intake/emergency.md). No sketch.
