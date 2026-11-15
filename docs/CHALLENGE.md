@@ -28,9 +28,13 @@ For data and resources related to this challenge, refer to the Resources tab at 
 
 ## Resources
 
-Not read yet. **Rami: paste the links from the Resources tab of the challenge page here when the hackathon starts**, one per line with its title. [Prompt 16](../prompts/16-sources.md) reads this list to fill in the sources shown in the app.
+Links from the Resources tab of the challenge page (https://www.spaceappschallenge.org/2026/challenges/health-monitoring-software/?tab=resources), pasted by Rami on 15 Nov 2026. Titles are from the address only; the pages have not been read yet. [Prompt 16](../prompts/16-sources.md) reads this list to fill in the sources shown in the app.
 
-- (none yet)
+- NASA Human Research Program, Hazards: https://www.nasa.gov/hrp/hazards/
+- NASA Human Research Program, Risks: https://www.nasa.gov/hrp/risks/
+- NASA Human Research Program, Ongoing research: https://www.nasa.gov/hrp/ongoing-hrp-research/
+- Canadian Space Agency, Monitoring radiation and astronaut health (26 Feb 2026): https://www.asc-csa.gc.ca/eng/news/articles/2026/2026-02-26-monitoring-radiation-astronaut-health.asp
+- Canadian Space Agency, Why do we conduct science experiments in space?: https://www.asc-csa.gc.ca/eng/iss/science/why-do-we-conduct-science-experiments-in-space.asp
 
 ## The five questions every screen answers
 
